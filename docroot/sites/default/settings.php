@@ -212,6 +212,15 @@
  */
 $databases = array();
 
+$databases['default']['default'] = array(
+	'driver' => 'mysql',
+	'database' => 'pubteach4all',
+	'username' => 'root',
+	'password' => '',
+	'host' => 'localhost',
+	'prefix' => '',
+);
+
 /**
  * Access control for update.php script.
  *
