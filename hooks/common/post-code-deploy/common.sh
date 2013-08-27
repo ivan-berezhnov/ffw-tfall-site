@@ -2,7 +2,6 @@
 #
 # Cloud Hook: Common stuff :)
 #
-# Runs this bash script on any [env] once code is deployed.
 
 site=$1
 target_env=$2
