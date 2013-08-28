@@ -19,8 +19,6 @@
       <a class="donate" href="/donate">DONATE</a>
       <a class="social-media icon-twitter-sign"></a>
       <a class="social-media icon-facebook-sign"></a>
-      <a class="social-media icon-linkedin-sign"></a>
-      <a class="social-media icon-youtube-sign"></a>
     </div>
   </div>
   <div class="row-fluid site-name">
