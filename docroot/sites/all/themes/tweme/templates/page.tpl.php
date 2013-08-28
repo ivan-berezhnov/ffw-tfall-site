@@ -6,7 +6,7 @@
  */
 
 ?>
-
+<h1>Teach For All</h1>
 <!-- Navbar -->
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">

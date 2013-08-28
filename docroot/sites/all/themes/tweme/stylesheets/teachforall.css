@@ -1,0 +1,32 @@
+/**
+*   #Table of Contents
+**/
+/** #Imports #Styleguide - Typography
+**/
+/**
+*   #Imports
+**/
+/**
+*	#Table of Contents
+**/
+/**
+	#Colours
+**/
+/**
+*   #Styleguide - Typography
+**/
+h1, .h1 { font-size: 42px; font-size: 2.47059rem; }
+
+h2, .h2 { font-size: 25px; font-size: 1.47059rem; }
+
+h3, .h3 { font-size: 18px; font-size: 1.05882rem; }
+
+h4, .h4 { font-size: 16px; font-size: 0.94118rem; }
+
+body { font-size: 17px; font-size: 1rem; }
+
+.small-body { font-size: 16px; font-size: 0.94118rem; }
+
+.blurb { font-size: 36px; font-size: 2.11765rem; }
+
+/**/

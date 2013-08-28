@@ -1,0 +1,52 @@
+/**
+*   #Table of Contents
+**/
+
+/**
+    #Imports
+    #Styleguide - Typography
+**/
+
+/**
+*   #Imports
+**/
+
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "variables";
+@import "mixins";
+
+/**
+*   #Styleguide - Typography
+**/
+
+h1, .h1 {
+  @include font-size(42);
+}
+
+h2, .h2 {
+  @include font-size(25);
+}
+
+h3, .h3 {
+  @include font-size(18);
+}
+
+h4, .h4 {
+  @include font-size(16);
+}
+
+body {
+  @include font-size(17);
+}
+
+.small-body {
+  @include font-size(16);
+}
+
+.blurb {
+  @include font-size(36);
+}
+
+/**/
