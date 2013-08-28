@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Styleguide - Typography
+/** #Imports #Font-Face #Styleguide - Typography #Header #Main Navigation #Uber Navigation
 **/
 /**
 *   #Imports
@@ -13,7 +13,19 @@
 	#Colours
 **/
 /**
-*   #Styleguide - Typography
+* #Font-Face
+**/
+@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Book.otf"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Bold.otf"); font-style: normal; font-weight: bold; }
+
+@font-face { font-family: "News Gothic"; src: url("../fonts/FSerStdA-Medium.otf"); font-style: normal; font-weight: normal; }
+
+@font-face { font-family: "News Gothic"; src: url("../NewsGothic-DemiBold.otf"); font-style: normal; font-weight: bold; }
+
+/**/
+/**
+* #Styleguide - Typography
 **/
 h1, .h1 { font-size: 42px; font-size: 2.47059rem; }
 
@@ -23,10 +35,52 @@ h3, .h3 { font-size: 18px; font-size: 1.05882rem; }
 
 h4, .h4 { font-size: 16px; font-size: 0.94118rem; }
 
-body { font-size: 17px; font-size: 1rem; }
+a { color: #cf4753; }
+a:hover { color: #cf4753; text-decoration: none; }
+
+body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Serif", serif; }
 
 .small-body { font-size: 16px; font-size: 0.94118rem; }
 
 .blurb { font-size: 36px; font-size: 2.11765rem; }
+
+/**/
+/**
+* #Header
+**/
+.header { margin-top: 10px; }
+
+.site-name { text-align: center; }
+.site-name img { margin-bottom: 20px; }
+
+.donate { background-color: #e69740; color: white; letter-spacing: 2px; margin-top: -4px; padding: 5px; font-size: 11px; font-size: 0.64706rem; }
+.donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
+
+.social-media { font-size: 24px; font-size: 1.41176rem; color: #91998c; padding-top: 3px; }
+.social-media:hover { color: #cf4753; text-decoration: none; }
+.social-media[class*=" icon-"] { vertical-align: middle; }
+
+/**/
+/**
+* #Main Navigation
+**/
+.navbar-medium .nav > li > a { color: #dfd9c9; font-weight: bold; padding-top: 2px; }
+.navbar-medium .nav > li > a:hover { color: #e69740; }
+.navbar-medium .navbar-inner { background-color: #3c3835; background-image: none; text-align: center; }
+
+.navbar { font-weight: bold; }
+.navbar .nav { float: none; margin: 15px auto 0; letter-spacing: 2px; text-transform: uppercase; width: 86%; font-size: 12px; font-size: 0.70588rem; }
+.navbar .nav li { border-right: 1px solid #ffb151; height: 12px; }
+.navbar .nav li:last-child { border-right: none; }
+
+/**/
+/**
+* #Uber Navigation
+**/
+.uber-nav { font-family: "News Gothic"; font-weight: bold; }
+.uber-nav a { border-right: 1px solid #e69740; color: #91998c; padding: 0 10px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+.uber-nav a:hover { color: #cf4753; }
+.uber-nav a:last-child { border-right: none; }
+.uber-nav a:first-child { padding-left: 0; }
 
 /**/

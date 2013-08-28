@@ -15,10 +15,12 @@ stylesheets[all][] = assets/css/bootstrap-extra.css
 stylesheets[all][] = assets/css/drupal.css
 stylesheets[all][] = assets/css/style.css
 stylesheets[all][] = stylesheets/teachforall.css
+stylesheets[all][] = font-awesome/css/font-awesome.min.css
 
 scripts[] = assets/js/drupal.js
 
 regions[header] = Header
+regions[main_navigation] = Main Navigation
 regions[help] = Help
 regions[body_top] = Body top
 regions[body_bottom] = Body bottom

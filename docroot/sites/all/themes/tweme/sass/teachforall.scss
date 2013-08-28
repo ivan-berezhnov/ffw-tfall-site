@@ -4,7 +4,11 @@
 
 /**
     #Imports
+    #Font-Face
     #Styleguide - Typography
+    #Header
+    #Main Navigation
+    #Uber Navigation
 **/
 
 /**
@@ -18,7 +22,41 @@
 @import "mixins";
 
 /**
-*   #Styleguide - Typography
+* #Font-Face
+**/
+
+@font-face {
+  font-family: "Fedra Serif";
+  src: url('../fonts/FSerStdA-Book.otf');
+       font-style: normal;
+       font-weight: normal;
+}
+
+@font-face {
+  font-family: "Fedra Serif";
+  src: url('../fonts/FSerStdA-Bold.otf');
+       font-style: normal;
+       font-weight: bold;
+}
+
+@font-face {
+  font-family: "News Gothic";
+  src: url('../fonts/FSerStdA-Medium.otf');
+       font-style: normal;
+       font-weight: normal;
+}
+
+@font-face {
+  font-family: "News Gothic";
+  src: url('../NewsGothic-DemiBold.otf');
+       font-style: normal;
+       font-weight: bold;
+}
+
+/**/
+
+/**
+* #Styleguide - Typography
 **/
 
 h1, .h1 {
@@ -37,8 +75,18 @@ h4, .h4 {
   @include font-size(16);
 }
 
+a {
+  color: $red;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
+}
+
 body {
+  color: $grey1;
   @include font-size(17);
+  font-family: "Fedra Serif", serif;
 }
 
 .small-body {
@@ -47,6 +95,122 @@ body {
 
 .blurb {
   @include font-size(36);
+}
+
+/**/
+
+/**
+* #Header
+**/
+
+.header {
+  margin-top: 10px;
+}
+
+.site-name {
+  text-align: center;
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.donate {
+  background-color: $orange1;
+  color: $white;
+  letter-spacing: 2px;
+  margin-top: -4px;
+  padding: 5px;
+  @include font-size(11);
+  &:hover {
+    background-color: $red;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.social-media {
+  @include font-size(24);
+  color: $grey1;
+  padding-top: 3px;
+  &:hover {
+    color: $red;
+    text-decoration: none;
+  }
+  &[class*=" icon-"] {
+    vertical-align: middle;
+  }
+}
+
+/**/
+
+/**
+* #Main Navigation
+**/
+
+.navbar-medium {
+  .nav {
+    > li {
+      > a {
+        color: $beige;
+        font-weight: bold;
+        padding-top: 2px;
+        &:hover {
+          color: $orange1;
+        }
+      }
+    }
+  }
+  .navbar-inner {
+    background-color: $grey3;
+    background-image: none;
+    text-align: center;
+  }
+}
+
+.navbar {
+  font-weight: bold;
+  .nav {
+    float: none;
+    margin: 15px auto 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 86%;
+    @include font-size(12);
+    li {
+      border-right: 1px solid $orange2;
+      height: 12px;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+/**/
+
+/**
+* #Uber Navigation
+**/
+
+.uber-nav {
+  font-family: "News Gothic";
+  font-weight: bold;
+  a {
+    border-right: 1px solid $orange1;
+    color: $grey1;
+    padding: 0 10px;
+    text-transform: uppercase;
+    @include font-size(11);
+    &:hover {
+      color: $red;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }
 
 /**/

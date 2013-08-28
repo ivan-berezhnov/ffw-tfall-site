@@ -6,17 +6,39 @@
  */
 
 ?>
-<h1>Teach For All</h1>
+<div class="container header">
+  <div class="row-fluid">
+    <div class="uber-nav pull-left">
+      <?php if ($secondary_menu): ?>
+        <?php foreach ($secondary_menu as $item): ?>
+          <?php print l($item['title'], $item['href']) ?>
+        <?php endforeach ?>
+      <?php endif ?>
+    </div>
+    <div class="pull-right">
+      <a class="donate" href="/donate">DONATE</a>
+      <a class="social-media icon-twitter-sign"></a>
+      <a class="social-media icon-facebook-sign"></a>
+      <a class="social-media icon-linkedin-sign"></a>
+      <a class="social-media icon-youtube-sign"></a>
+    </div>
+  </div>
+  <div class="row-fluid site-name">
+    <div class="span12">
+      <a href="/"><img src="/sites/all/themes/tweme/images/logo.png" /></a>
+    </div>
+  </div>
+</div>
+
 <!-- Navbar -->
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
 		<div class="container">
       <?php print $navbar_toggler ?>
-			<?php print $navbar_brand ?>
-      <?php print $navbar_search ?>
       <?php if ($navbar_menu): ?>
 			<nav class="nav-collapse collapse" role="navigation">
         <?php print $navbar_menu ?>
+        <?php print render($page['main_navigation']) ?>
       </nav>
 			<?php endif ?>
 		</div>
@@ -73,12 +95,6 @@
 	<div class="container">
     <div class="footer-links pull-right">
       <?php if ($feed_icons): ?><?php print $feed_icons ?><?php endif ?>
-      <?php if ($secondary_menu): ?>
-			<?php foreach ($secondary_menu as $item): ?>
-			<?php print l($item['title'], $item['href']) ?>
-			<?php endforeach ?>
-      <a href="#"><?php print t('Back to top') ?> </a>
-      <?php endif ?>
     </div>
     <?php print $copyright ?>
 	</div>
