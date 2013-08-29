@@ -1,3 +1,6 @@
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<?php drupal_add_js(drupal_get_path('theme', 'tweme').'/script/homepage.js'); ?>
+
 <div class="container header">
   <div class="row-fluid">
     <div class="uber-nav pull-left">
@@ -72,9 +75,9 @@
 					<h2>The Global Network for Expanding Educational Opportunity</h2>
 				</div>
 				<br />
-				<div style="border:2px red solid;padding:5px;background-color:skyblue">
-					todo:googlemap
-				</div>
+			
+				<div id="googlemap" style="height:400px"></div>
+				
 				<br />
 				<div style="border:2px red solid;padding:5px">
 					todo:insights
