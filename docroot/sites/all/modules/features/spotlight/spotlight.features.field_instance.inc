@@ -55,8 +55,8 @@ function spotlight_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-spotlight-field_img'
-  $field_instances['node-spotlight-field_img'] = array(
+  // Exported field_instance: 'node-spotlight-field_spotlight_image'
+  $field_instances['node-spotlight-field_spotlight_image'] = array(
     'bundle' => 'spotlight',
     'deleted' => 0,
     'description' => '',
@@ -69,7 +69,7 @@ function spotlight_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -79,9 +79,9 @@ function spotlight_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_img',
+    'field_name' => 'field_spotlight_image',
     'label' => 'Image',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
