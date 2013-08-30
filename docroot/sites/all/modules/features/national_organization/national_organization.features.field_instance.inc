@@ -88,6 +88,40 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_ceo_profile-field_ceo_name'
+  $field_instances['field_collection_item-field_ceo_profile-field_ceo_name'] = array(
+    'bundle' => 'field_ceo_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_ceo_name',
+    'label' => 'CEO name',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'field_collection_item-field_local_context_info-field_avg_total_years_of_edu'
   $field_instances['field_collection_item-field_local_context_info-field_avg_total_years_of_edu'] = array(
     'bundle' => 'field_local_context_info',
@@ -769,6 +803,7 @@ function national_organization_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('CEO Bio');
   t('CEO Image');
+  t('CEO name');
   t('CEO profile');
   t('Image');
   t('Links');
