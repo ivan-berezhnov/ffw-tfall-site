@@ -84,3 +84,11 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 .uber-nav a:first-child { padding-left: 0; }
 
 /**/
+/**
+* #Images
+**/
+img { max-width: 100%; }
+
+#googlemap img { max-width: none; }
+
+/**/
