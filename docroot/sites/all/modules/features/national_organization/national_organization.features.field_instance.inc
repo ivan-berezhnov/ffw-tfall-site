@@ -96,7 +96,7 @@ function national_organization_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -122,9 +122,9 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_local_context_info-field_avg_total_years_of_edu'
-  $field_instances['field_collection_item-field_local_context_info-field_avg_total_years_of_edu'] = array(
-    'bundle' => 'field_local_context_info',
+  // Exported field_instance: 'node-national_organization-field_alumni'
+  $field_instances['node-national_organization-field_alumni'] = array(
+    'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -134,115 +134,16 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 2,
+        'weight' => 10,
       ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_avg_total_years_of_edu',
-    'label' => 'avg. total years of edu',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_local_context_info-field_living_below_poverty_line'
-  $field_instances['field_collection_item-field_local_context_info-field_living_below_poverty_line'] = array(
-    'bundle' => 'field_local_context_info',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
+      'teaser' => array(
+        'label' => 'above',
         'settings' => array(),
-        'type' => 'number_unformatted',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_living_below_poverty_line',
-    'label' => 'living below poverty line',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_local_context_info-field_population'
-  $field_instances['field_collection_item-field_local_context_info-field_population'] = array(
-    'bundle' => 'field_local_context_info',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_population',
-    'label' => 'population',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_program_snapshot-field_alumni'
-  $field_instances['field_collection_item-field_program_snapshot-field_alumni'] = array(
-    'bundle' => 'field_program_snapshot',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
+    'entity_type' => 'node',
     'field_name' => 'field_alumni',
     'label' => 'alumni',
     'required' => 0,
@@ -258,13 +159,13 @@ function national_organization_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 4,
+      'weight' => 12,
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_program_snapshot-field_cohorts_placed'
-  $field_instances['field_collection_item-field_program_snapshot-field_cohorts_placed'] = array(
-    'bundle' => 'field_program_snapshot',
+  // Exported field_instance: 'node-national_organization-field_avg_total_years_of_edu'
+  $field_instances['node-national_organization-field_avg_total_years_of_edu'] = array(
+    'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -274,47 +175,18 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 1,
+        'weight' => 14,
       ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_cohorts_placed',
-    'label' => 'cohorts placed',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_program_snapshot-field_program_launched'
-  $field_instances['field_collection_item-field_program_snapshot-field_program_launched'] = array(
-    'bundle' => 'field_program_snapshot',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
+      'teaser' => array(
+        'label' => 'above',
         'settings' => array(),
-        'type' => 'number_unformatted',
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_program_launched',
-    'label' => 'Program launched',
+    'entity_type' => 'node',
+    'field_name' => 'field_avg_total_years_of_edu',
+    'label' => 'avg. total years of edu',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -328,77 +200,7 @@ function national_organization_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_program_snapshot-field_schools'
-  $field_instances['field_collection_item-field_program_snapshot-field_schools'] = array(
-    'bundle' => 'field_program_snapshot',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_schools',
-    'label' => 'schools',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_program_snapshot-field_teachers_active'
-  $field_instances['field_collection_item-field_program_snapshot-field_teachers_active'] = array(
-    'bundle' => 'field_program_snapshot',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_teachers_active',
-    'label' => 'teachers active',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 3,
+      'weight' => 16,
     ),
   );
 
@@ -438,7 +240,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 33,
+      'weight' => 4,
     ),
   );
 
@@ -477,7 +279,48 @@ function national_organization_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 37,
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organization-field_cohorts_placed'
+  $field_instances['node-national_organization-field_cohorts_placed'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number_unformatted',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_cohorts_placed',
+    'label' => 'cohorts placed',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 10,
     ),
   );
 
@@ -517,12 +360,12 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 34,
+      'weight' => 7,
     ),
   );
 
-  // Exported field_instance: 'node-national_organization-field_local_context_info'
-  $field_instances['node-national_organization-field_local_context_info'] = array(
+  // Exported field_instance: 'node-national_organization-field_living_below_poverty_line'
+  $field_instances['node-national_organization-field_living_below_poverty_line'] = array(
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
@@ -530,12 +373,10 @@ function national_organization_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_fields',
-        'weight' => 8,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number_unformatted',
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -545,18 +386,22 @@ function national_organization_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_local_context_info',
-    'label' => 'Local context info',
+    'field_name' => 'field_living_below_poverty_line',
+    'label' => 'living below poverty line',
     'required' => 0,
     'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'field_collection',
+      'module' => 'number',
       'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 39,
+      'type' => 'number',
+      'weight' => 15,
     ),
   );
 
@@ -606,7 +451,7 @@ function national_organization_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 32,
+      'weight' => 3,
     ),
   );
 
@@ -656,7 +501,7 @@ function national_organization_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 35,
+      'weight' => 5,
     ),
   );
 
@@ -706,7 +551,7 @@ function national_organization_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 36,
+      'weight' => 6,
     ),
   );
 
@@ -756,12 +601,12 @@ function national_organization_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 31,
+      'weight' => 2,
     ),
   );
 
-  // Exported field_instance: 'node-national_organization-field_program_snapshot'
-  $field_instances['node-national_organization-field_program_snapshot'] = array(
+  // Exported field_instance: 'node-national_organization-field_population'
+  $field_instances['node-national_organization-field_population'] = array(
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
@@ -769,11 +614,55 @@ function national_organization_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'field_collection',
+        'module' => 'number',
         'settings' => array(
-          'view_mode' => 'full',
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
         ),
-        'type' => 'field_collection_fields',
+        'type' => 'number_integer',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_population',
+    'label' => 'population',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organization-field_program_launched'
+  $field_instances['node-national_organization-field_program_launched'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number_unformatted',
         'weight' => 7,
       ),
       'teaser' => array(
@@ -784,18 +673,104 @@ function national_organization_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_program_snapshot',
-    'label' => 'Program snapshot',
+    'field_name' => 'field_program_launched',
+    'label' => 'program launched',
     'required' => 0,
     'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'field_collection',
+      'module' => 'number',
       'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 38,
+      'type' => 'number',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organization-field_schools'
+  $field_instances['node-national_organization-field_schools'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number_unformatted',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_schools',
+    'label' => 'schools',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organization-field_teachers_active'
+  $field_instances['node-national_organization-field_teachers_active'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number_unformatted',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_teachers_active',
+    'label' => 'teachers active',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 11,
     ),
   );
 
@@ -807,12 +782,9 @@ function national_organization_field_default_field_instances() {
   t('CEO profile');
   t('Image');
   t('Links');
-  t('Local context info');
   t('Logo');
   t('Main image');
   t('Map image');
-  t('Program launched');
-  t('Program snapshot');
   t('Static image');
   t('alumni');
   t('avg. total years of edu');
@@ -822,6 +794,7 @@ function national_organization_field_default_field_instances() {
   t('link(s) to organization\'s website');
   t('living below poverty line');
   t('population');
+  t('program launched');
   t('schools');
   t('teachers active');
 
