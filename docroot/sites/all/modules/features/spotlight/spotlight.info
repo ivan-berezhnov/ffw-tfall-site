@@ -15,6 +15,7 @@ features[field_base][] = body
 features[field_base][] = field_spotlight_image
 features[field_instance][] = node-spotlight-body
 features[field_instance][] = node-spotlight-field_spotlight_image
+features[image][] = spotlight_thumbnail
 features[node][] = spotlight
 features[variable][] = comment_anonymous_spotlight
 features[variable][] = comment_default_mode_spotlight
