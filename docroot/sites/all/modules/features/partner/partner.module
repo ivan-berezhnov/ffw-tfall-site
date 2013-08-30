@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the partner feature.
- */
-
-include_once 'partner.features.inc';
