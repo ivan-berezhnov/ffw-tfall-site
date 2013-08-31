@@ -122,6 +122,47 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_active_flag'
+  $field_instances['node-national_organization-field_active_flag'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_active_flag',
+    'label' => 'Active flag',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 22,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_alumni'
   $field_instances['node-national_organization-field_alumni'] = array(
     'bundle' => 'national_organization',
@@ -942,6 +983,7 @@ function national_organization_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Active flag');
   t('Alumni Spotlight');
   t('CEO Bio');
   t('CEO Image');
@@ -953,6 +995,7 @@ function national_organization_field_default_field_instances() {
   t('Logo');
   t('Main Image');
   t('Map image');
+  t('Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there');
   t('Teacher Spotlight');
   t('Twitter API key');
   t('alumni');
