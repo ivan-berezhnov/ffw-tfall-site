@@ -1,0 +1,3 @@
+name = Misc
+description = Misc functions and helpers
+core = 7.x
