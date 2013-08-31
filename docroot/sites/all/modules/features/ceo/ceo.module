@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ceo feature.
+ */
+
+include_once 'ceo.features.inc';

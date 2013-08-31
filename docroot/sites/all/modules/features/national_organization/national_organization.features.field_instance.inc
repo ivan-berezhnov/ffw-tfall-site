@@ -10,118 +10,6 @@
 function national_organization_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_ceo_profile-field_ceo_bio'
-  $field_instances['field_collection_item-field_ceo_profile-field_ceo_bio'] = array(
-    'bundle' => 'field_ceo_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_ceo_bio',
-    'label' => 'CEO Bio',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_ceo_profile-field_ceo_image'
-  $field_instances['field_collection_item-field_ceo_profile-field_ceo_image'] = array(
-    'bundle' => 'field_ceo_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_ceo_image',
-    'label' => 'CEO Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'field_collection_item-field_ceo_profile-field_ceo_name'
-  $field_instances['field_collection_item-field_ceo_profile-field_ceo_name'] = array(
-    'bundle' => 'field_ceo_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_ceo_name',
-    'label' => 'CEO name',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 0,
-    ),
-  );
-
   // Exported field_instance: 'node-national_organization-field_active_flag'
   $field_instances['node-national_organization-field_active_flag'] = array(
     'bundle' => 'national_organization',
@@ -159,7 +47,7 @@ function national_organization_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 22,
+      'weight' => 15,
     ),
   );
 
@@ -244,7 +132,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 11,
     ),
   );
 
@@ -337,13 +225,13 @@ function national_organization_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'field_collection',
+        'label' => 'above',
+        'module' => 'entityreference',
         'settings' => array(
-          'view_mode' => 'full',
+          'link' => FALSE,
         ),
-        'type' => 'field_collection_fields',
-        'weight' => 6,
+        'type' => 'entityreference_label',
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -360,11 +248,15 @@ function national_organization_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 7,
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 6,
     ),
   );
 
@@ -445,7 +337,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 19,
+      'weight' => 12,
     ),
   );
 
@@ -485,7 +377,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 13,
     ),
   );
 
@@ -525,7 +417,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -614,7 +506,7 @@ function national_organization_field_default_field_instances() {
       'module' => 'google_map_field',
       'settings' => array(),
       'type' => 'google_map_field_widget',
-      'weight' => 21,
+      'weight' => 14,
     ),
   );
 
@@ -936,7 +828,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 10,
     ),
   );
 
@@ -985,9 +877,6 @@ function national_organization_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Active flag');
   t('Alumni Spotlight');
-  t('CEO Bio');
-  t('CEO Image');
-  t('CEO name');
   t('CEO profile');
   t('Facebook API key');
   t('Links');
