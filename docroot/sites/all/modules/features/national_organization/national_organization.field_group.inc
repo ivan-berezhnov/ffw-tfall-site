@@ -21,11 +21,11 @@ function national_organization_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Local context info',
-    'weight' => '10',
+    'weight' => '9',
     'children' => array(
-      0 => 'field_population',
+      0 => 'field_avg_total_years_of_edu',
       1 => 'field_living_below_poverty_line',
-      2 => 'field_avg_total_years_of_edu',
+      2 => 'field_population',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -50,13 +50,13 @@ function national_organization_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program snapshot info',
-    'weight' => '9',
+    'weight' => '8',
     'children' => array(
-      0 => 'field_program_launched',
+      0 => 'field_alumni',
       1 => 'field_cohorts_placed',
-      2 => 'field_teachers_active',
-      3 => 'field_alumni',
-      4 => 'field_schools',
+      2 => 'field_program_launched',
+      3 => 'field_schools',
+      4 => 'field_teachers_active',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
