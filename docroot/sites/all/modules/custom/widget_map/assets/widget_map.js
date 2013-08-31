@@ -1,5 +1,5 @@
 (function ($) {
-	Drupal.behaviors.homepage = {
+	Drupal.behaviors.widget_map = {
 	  attach: function (context, settings) {
 
 			var map;

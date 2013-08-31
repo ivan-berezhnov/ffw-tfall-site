@@ -13,7 +13,10 @@
 			print render($content['field_no_image_static']);
 			print render($content['field_ceo_profile']);
 			print render($content['field_program_snapshot']);
-			print render($content['field_local_context_info']);			
+			print render($content['field_local_context_info']);
+			
+			print render(widget_map_embed());
+			
     ?>
   </div>
 
