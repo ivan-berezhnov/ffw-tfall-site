@@ -38,4 +38,4 @@ features[variable][] = menu_parent_supporter
 features[variable][] = node_options_supporter
 features[variable][] = node_preview_supporter
 features[variable][] = node_submitted_supporter
-features[views_view][] = nodequeue_1
+features[views_view][] = nodequeue_supporter_list

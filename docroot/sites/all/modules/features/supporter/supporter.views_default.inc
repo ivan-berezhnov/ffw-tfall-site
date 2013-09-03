@@ -11,7 +11,7 @@ function supporter_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'nodequeue_1';
+  $view->name = 'nodequeue_supporter_list';
   $view->description = 'Display a list of all nodes in queue \'supporter list\'';
   $view->tag = 'nodequeue';
   $view->base_table = 'node';
@@ -66,7 +66,7 @@ function supporter_views_default_views() {
   $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
   $handler->display->display_options['filters']['status_extra']['group'] = 0;
   $handler->display->display_options['filters']['status_extra']['expose']['operator'] = FALSE;
-  $export['nodequeue_1'] = $view;
+  $export['nodequeue_supporter_list'] = $view;
 
   return $export;
 }
