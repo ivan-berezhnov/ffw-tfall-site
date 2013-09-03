@@ -19,6 +19,9 @@ stylesheets[all][] = font-awesome/css/font-awesome.min.css
 
 scripts[] = assets/js/drupal.js
 
+;probably shared!
+scripts[] = assets/js/jquery.flexslider-min.js
+
 regions[header] = Header
 regions[main_navigation] = Main Navigation
 regions[help] = Help

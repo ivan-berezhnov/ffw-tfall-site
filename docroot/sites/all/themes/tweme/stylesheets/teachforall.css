@@ -91,4 +91,7 @@ img { max-width: 100%; }
 
 #googlemap img { max-width: none; }
 
+.widget_supporters { width: 235px; height: 185px; background-color: white; float: right; }
+.widget_supporters ul { padding: 0px; margin: 0px; }
+
 /**/

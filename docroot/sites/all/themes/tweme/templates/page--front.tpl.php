@@ -98,5 +98,8 @@
 			<?php if ($feed_icons): ?><?php print $feed_icons ?><?php endif ?>
     </div>
 		<?php print $copyright ?>
+
+		<?php print render(widget_supporter_embed()); ?>
+
 	</div>
 </footer>
