@@ -21,12 +21,9 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<?php print $navbar_toggler ?>
-			<?php if ($navbar_menu): ?>
-				<nav class="nav-collapse collapse" role="navigation">
-					<?php print $navbar_menu ?>
-					<?php print render($page['main_navigation']) ?>
-	      </nav>
-			<?php endif ?>
+			<nav class="nav-collapse collapse" role="navigation">
+				<?php print render($page['main_navigation']) ?>
+      </nav>
 		</div>
 	</div>
 </div>

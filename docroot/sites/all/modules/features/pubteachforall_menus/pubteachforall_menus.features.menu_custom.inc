@@ -16,6 +16,12 @@ function pubteachforall_menus_menu_default_menu_custom() {
     'title' => 'Main menu',
     'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
   );
+  // Exported menu: menu-primary-navigation.
+  $menus['menu-primary-navigation'] = array(
+    'menu_name' => 'menu-primary-navigation',
+    'title' => 'Primary Navigation',
+    'description' => 'Primary Navigation',
+  );
   // Exported menu: menu-uber-nav.
   $menus['menu-uber-nav'] = array(
     'menu_name' => 'menu-uber-nav',
@@ -31,6 +37,7 @@ function pubteachforall_menus_menu_default_menu_custom() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Main menu');
+  t('Primary Navigation');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
   t('The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.');
   t('Uber Nav');

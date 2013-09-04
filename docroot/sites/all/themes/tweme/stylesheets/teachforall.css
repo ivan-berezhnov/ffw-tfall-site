@@ -53,7 +53,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 .site-name { text-align: center; }
 .site-name img { margin-bottom: 20px; }
 
-.donate { background-color: #e69740; color: white; letter-spacing: 2px; margin-top: -4px; padding: 5px; font-size: 11px; font-size: 0.64706rem; }
+.donate { background-color: #e69740; color: white; letter-spacing: 2px; margin-top: -4px; padding: 5px 5px 3px 5px; font-size: 14px; font-size: 0.82353rem; }
 .donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
 
 .social-media { font-size: 24px; font-size: 1.41176rem; color: #91998c; padding-top: 3px; }
@@ -64,14 +64,20 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 /**
 * #Main Navigation
 **/
-.navbar-medium .nav > li > a { color: #dfd9c9; font-weight: bold; padding-top: 2px; }
-.navbar-medium .nav > li > a:hover { color: #e69740; }
-.navbar-medium .navbar-inner { background-color: #3c3835; background-image: none; text-align: center; }
+.navbar-medium .region-main-navigation li a { color: #dfd9c9; padding: 15px 15px 12px 15px; }
+.navbar-medium .region-main-navigation li a:hover { background-color: #e69740; color: white; }
+.navbar-medium .navbar-inner { background-color: #3c3835; background-image: none; border: none; padding: 0; text-align: center; }
 
 .navbar { font-weight: bold; }
-.navbar .nav { float: none; margin: 15px auto 0; letter-spacing: 2px; text-transform: uppercase; width: 86%; font-size: 12px; font-size: 0.70588rem; }
-.navbar .nav li { border-right: 1px solid #ffb151; height: 12px; }
-.navbar .nav li:last-child { border-right: none; }
+.navbar .region-main-navigation { letter-spacing: 2px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
+.navbar .region-main-navigation ul { margin-bottom: 0; margin-top: 12px; }
+.navbar .region-main-navigation .content .menu .menu { background-color: #4d4d4d; left: 0; margin-left: 0; margin: 8px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
+.navbar .region-main-navigation .content .menu .menu li { border-bottom: 1px solid #92998d; margin: 0; padding: 0; width: 100%; }
+.navbar .region-main-navigation .content .menu .menu li.last { border: none; margin-bottom: 0; }
+.navbar .region-main-navigation .content .menu .menu a { display: block; padding: 8px 8px 5px 15px; }
+.navbar .region-main-navigation li { float: left; list-style-type: none; list-style-image: none; margin: 0; padding: 0; position: relative; }
+.navbar .region-main-navigation li:hover { border-color: #3c3835; }
+.navbar .region-main-navigation li.expanded:hover .menu { display: block; }
 
 /**/
 /**

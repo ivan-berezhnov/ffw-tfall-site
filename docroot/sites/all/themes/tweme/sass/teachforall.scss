@@ -119,8 +119,8 @@ body {
   color: $white;
   letter-spacing: 2px;
   margin-top: -4px;
-  padding: 5px;
-  @include font-size(11);
+  padding: 5px 5px 3px 5px;
+  @include font-size(14);
   &:hover {
     background-color: $red;
     color: $white;
@@ -149,14 +149,14 @@ body {
 **/
 
 .navbar-medium {
-  .nav {
-    > li {
-      > a {
+  .region-main-navigation {
+    li {
+      a {
         color: $beige;
-        font-weight: bold;
-        padding-top: 2px;
+        padding: 15px 15px 12px 15px;
         &:hover {
-          color: $orange1;
+          background-color: $orange1;
+          color: $white;
         }
       }
     }
@@ -164,27 +164,74 @@ body {
   .navbar-inner {
     background-color: $grey3;
     background-image: none;
+    border: none;
+    padding: 0;
     text-align: center;
   }
 }
 
 .navbar {
   font-weight: bold;
-  .nav {
-    float: none;
-    margin: 15px auto 0;
+  .region-main-navigation {
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 86%;
-    @include font-size(12);
+    @include font-size(14);
+    ul {
+      margin-bottom: 0;
+      margin-top: 12px;
+    }
+    .content {
+      .menu {
+        .menu {
+          //display: none;
+          background-color: $grey2;
+          left: 0;
+          margin-left: 0;
+          margin: 8px 0 0 0;
+          padding: 0;
+          position: absolute;
+          text-transform: none;
+          width: 100%;
+          z-index: 9999;
+          li {
+            border-bottom: 1px solid $border_color1;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            &.last {
+              border: none;
+              margin-bottom: 0;
+            }
+          }
+          a {
+            display: block;
+            padding: 8px 8px 5px 15px;
+          }
+        }
+      }
+    }
     li {
-      border-right: 1px solid $orange2;
-      height: 12px;
-      &:last-child {
-        border-right: none;
+      float: left;
+      list-style-type: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      &:hover {
+        border-color: $grey3;
+      }
+      &.expanded:hover {
+        .menu {
+          display: block;
+        }
       }
     }
   }
+}
+
+
+#block-menu-menu-primary-navigation {
+
 }
 
 /**/
