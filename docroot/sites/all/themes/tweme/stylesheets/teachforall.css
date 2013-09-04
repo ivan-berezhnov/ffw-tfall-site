@@ -71,7 +71,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 .navbar { font-weight: bold; }
 .navbar .region-main-navigation { letter-spacing: 2px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
 .navbar .region-main-navigation ul { margin-bottom: 0; margin-top: 12px; }
-.navbar .region-main-navigation .content .menu .menu { background-color: #4d4d4d; left: 0; margin-left: 0; margin: 8px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
+.navbar .region-main-navigation .content .menu .menu { display: none; background-color: #4d4d4d; left: 0; margin-left: 0; margin: 8px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
 .navbar .region-main-navigation .content .menu .menu li { border-bottom: 1px solid #92998d; margin: 0; padding: 0; width: 100%; }
 .navbar .region-main-navigation .content .menu .menu li.last { border: none; margin-bottom: 0; }
 .navbar .region-main-navigation .content .menu .menu a { display: block; padding: 8px 8px 5px 15px; }
