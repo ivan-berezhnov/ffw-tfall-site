@@ -5,11 +5,8 @@
 
 ?>
 
-<div class="widget_supporters">
+<div>
 	<span class="title">SUPPORTERS</span>
-	<br />
 	<p>Teach For All is grateful<br />to our global partners for their generous support</p>
-
 	<?php print $logos; ?>
-
 </div>

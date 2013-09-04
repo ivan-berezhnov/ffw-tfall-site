@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Header #Main Navigation #Uber Navigation
+/** #Imports #Font-Face #Styleguide - Typography #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
 **/
 /**
 *   #Imports
@@ -106,13 +106,31 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 
 /**/
 /**
+* #Footer
+**/
+#footer { background-color: #4d4d4d; border: none; }
+
+.footer-menu ul { margin: 0; }
+.footer-menu ul li { list-style-type: none; list-style-image: none; margin: 0; }
+.footer-menu ul li a { font-size: 12px; font-size: 0.70588rem; }
+.footer-menu .content > ul > li > a { color: #dfd9c9; text-transform: uppercase; }
+.footer-menu .content > ul > li:nth-child(3), .footer-menu .content > ul > li:nth-child(4) { float: right; }
+
+/**/
+/**
 * #Images
 **/
 img { max-width: 100%; }
 
 #googlemap img { max-width: none; }
 
-.widget_supporters { width: 235px; height: 185px; background-color: white; float: right; }
+/**/
+/**
+* #Supporters Widget
+**/
+.widget_supporters { background-color: white; text-align: center; }
+.widget_supporters .title { color: #ffb151; display: block; padding: 10px 0; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
+.widget_supporters p { line-height: 1.5em; }
 
 /**/

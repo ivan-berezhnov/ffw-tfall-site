@@ -9,6 +9,9 @@
     #Header
     #Main Navigation
     #Uber Navigation
+    #Footer
+    #Images
+    #Supporters Widget
 **/
 
 /**
@@ -334,22 +337,78 @@ body {
 /**/
 
 /**
+* #Footer
+**/
+
+#footer {
+  background-color: $grey2;
+  border: none;
+}
+
+.footer-menu {
+  ul {
+    margin: 0;
+    li {
+      list-style-type: none;
+      list-style-image: none;
+      margin: 0;
+      a {
+        @include font-size(12);
+      }
+    }
+  }
+  .content {
+    > ul {
+      > li {
+        > a {
+          color: $beige;
+          text-transform: uppercase;
+        }
+        &:nth-child(1),
+        &:nth-child(2) {
+        }
+        &:nth-child(3),
+        &:nth-child(4) {
+          float: right;
+        }
+        &:nth-child(5) {
+        }
+      }
+    }
+  }
+
+}
+
+/**/
+
+/**
 * #Images
 **/
 
 img {max-width: 100%;}
 #googlemap img { max-width: none; }
 
-.widget_supporters {
-	width:235px;
-	height:185px;
-	background-color:white;
-	float:right;
+/**/
 
-	ul {
-		padding:0px;
-		margin:0px;
-	}
+/**
+* #Supporters Widget
+**/
+
+.widget_supporters {
+  background-color: $white;
+  text-align: center;
+  .title {
+    color: $orange2;
+    display: block;
+    padding: 10px 0;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  p {
+    line-height: 1.5em;
+  }
 }
 
 /**/

@@ -83,10 +83,17 @@
 
 <!-- Footer -->
 <footer id="footer" class="container-wrapper">
-	<div class="container">
-    <div class="footer-links pull-right">
-      <?php if ($feed_icons): ?><?php print $feed_icons ?><?php endif ?>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6 footer-menu footer-links">
+        <?php print render($page['footer']) ?>
+      </div>
+      <div class="span3 footer-links">
+        <?php print $copyright ?>
+      </div>
+      <div class="span3 footer-links widget_supporters">
+        <?php print render(widget_supporter_embed()); ?>
+      </div>
     </div>
-    <?php print $copyright ?>
-	</div>
+  </div>
 </footer>
