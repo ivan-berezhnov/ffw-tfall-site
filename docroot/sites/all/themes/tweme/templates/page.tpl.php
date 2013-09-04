@@ -9,11 +9,7 @@
 <div class="container header">
   <div class="row-fluid">
     <div class="uber-nav pull-left">
-      <?php if ($secondary_menu): ?>
-        <?php foreach ($secondary_menu as $item): ?>
-          <?php print l($item['title'], $item['href']) ?>
-        <?php endforeach ?>
-      <?php endif ?>
+      <?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
       <a class="donate" href="/donate">DONATE</a>

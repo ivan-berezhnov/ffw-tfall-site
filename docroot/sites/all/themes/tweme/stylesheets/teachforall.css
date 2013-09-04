@@ -78,10 +78,25 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 * #Uber Navigation
 **/
 .uber-nav { font-family: "News Gothic"; font-weight: bold; }
-.uber-nav a { border-right: 1px solid #e69740; color: #91998c; padding: 0 10px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+.uber-nav .content > .menu { position: relative; }
+.uber-nav .content > .menu li:hover .menu { display: block; }
+.uber-nav .content > .menu li { position: relative; }
+.uber-nav .content > .menu li a { letter-spacing: 1px; }
+.uber-nav .content > .menu li a.active { color: #cf4753; }
+.uber-nav .content > .menu li.last a { border-right: none; }
+.uber-nav a { border-right: 1px solid #e69740; color: #92998d; margin-left: -4px; padding: 3px 10px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
 .uber-nav a:hover { color: #cf4753; }
-.uber-nav a:last-child { border-right: none; }
-.uber-nav a:first-child { padding-left: 0; }
+.uber-nav ul { margin-left: 0; }
+.uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -5px; position: absolute; width: 100px; z-index: 9999; padding-left: 3px; text-align: left; }
+.uber-nav .menu .menu a { border: none; font-size: 14px; font-size: 0.82353rem; display: block; margin: 0 3px 5px 3px; padding: 0; text-transform: none; }
+.uber-nav .menu .menu a:hover { background-color: transparent; color: #cf4753; }
+.uber-nav .menu .menu a:first-child { margin-top: 5px; }
+.uber-nav .menu .menu a.active { background-color: transparent; }
+.uber-nav .menu .menu li { display: block; }
+.uber-nav .menu > li { display: inline; margin: 0; padding: 0; }
+.uber-nav .menu > li a:hover { background-color: #e69740; color: white; }
+.uber-nav ul li { line-height: 1em; }
+.uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
 
 /**/
 /**

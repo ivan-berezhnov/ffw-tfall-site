@@ -1,11 +1,7 @@
 <div class="container header">
   <div class="row-fluid">
     <div class="uber-nav pull-left">
-			<?php if ($secondary_menu): ?>
-				<?php foreach ($secondary_menu as $item): ?>
-					<?php print l($item['title'], $item['href']) ?>
-				<?php endforeach ?>
-			<?php endif ?>
+			<?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
       <a class="donate" href="/donate">DONATE</a>
@@ -71,11 +67,6 @@
 				<div style="border:2px pink solid;padding:5px">
 					<h2>The Global Network for Expanding Educational Opportunity</h2>
 				</div>
-				<br />
-
-				<?php print render(widget_map_embed()); ?>
-
-				<br />
 				<div style="border:2px red solid;padding:5px">
 					todo:insights
 				</div>

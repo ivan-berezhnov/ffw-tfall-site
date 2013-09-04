@@ -196,26 +196,100 @@ body {
 .uber-nav {
   font-family: "News Gothic";
   font-weight: bold;
+  .content {
+    > .menu {
+      position: relative;
+      li:hover {
+        .menu {
+          display: block;
+        }
+      }
+      li {
+        position: relative;
+        a {
+          letter-spacing: 1px;
+          &.active {
+            color: $red;
+          }
+        }
+        &.last {
+          a {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
   a {
     border-right: 1px solid $orange1;
-    color: $grey1;
-    padding: 0 10px;
+    color: $grey5;
+    margin-left: -4px;
+    padding: 3px 10px;
     text-transform: uppercase;
-    @include font-size(11);
+    @include font-size(14);
     &:hover {
       color: $red;
     }
-    &:last-child {
-      border-right: none;
+  }
+  ul {
+    margin-left: 0;
+  }
+  .menu {
+    .menu {
+      display: none;
+      background-color: $white;
+      border: 1px solid $orange1;
+      left: -5px;
+      position: absolute;
+      width: 100px;
+      z-index: 9999;
+      padding-left: 3px;
+      text-align: left;
+      a {
+        border: none;
+        @include font-size(14);
+        display: block;
+        margin: 0 3px 5px 3px;
+        padding: 0;
+        text-transform: none;
+        &:hover {
+          background-color: transparent;
+          color: $red;
+        }
+        &:first-child {
+          margin-top: 5px;
+        }
+        &.active {
+          background-color: transparent;
+        }
+      }
+      li {
+        display: block;
+      }
     }
-    &:first-child {
-      padding-left: 0;
+    > li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      a:hover {
+        background-color: $orange1;
+        color: $white;
+      }
+    }
+  }
+  ul {
+    li {
+      line-height: 1em;
+      &.expanded,
+      &.leaf {
+        list-style-type: none;
+        list-style-image: none;
+      }
     }
   }
 }
 
 /**/
-
 
 /**
 * #Images
@@ -229,7 +303,7 @@ img {max-width: 100%;}
 	height:185px;
 	background-color:white;
 	float:right;
-	
+
 	ul {
 		padding:0px;
 		margin:0px;
