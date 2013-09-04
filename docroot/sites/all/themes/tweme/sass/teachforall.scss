@@ -134,6 +134,7 @@ body {
   padding-top: 3px;
   &:hover {
     color: $red;
+    cursor: pointer;
     text-decoration: none;
   }
   &[class*=" icon-"] {

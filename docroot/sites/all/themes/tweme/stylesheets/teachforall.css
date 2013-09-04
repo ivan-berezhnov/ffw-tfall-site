@@ -57,7 +57,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 .donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
 
 .social-media { font-size: 24px; font-size: 1.41176rem; color: #91998c; padding-top: 3px; }
-.social-media:hover { color: #cf4753; text-decoration: none; }
+.social-media:hover { color: #cf4753; cursor: pointer; text-decoration: none; }
 .social-media[class*=" icon-"] { vertical-align: middle; }
 
 /**/
