@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the national organization feature.
+ */
+
+include_once 'national_organization.features.inc';

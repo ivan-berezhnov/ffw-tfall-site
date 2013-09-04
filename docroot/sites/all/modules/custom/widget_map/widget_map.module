@@ -1,0 +1,21 @@
+<?php
+
+/*
+ * implements hook_theme
+ */
+function widget_map_theme($existing, $type, $theme, $path) {
+  return array(
+    'widget_map' => array(
+      'template' => 'templates/widget-map',
+    ),
+  );
+
+  return array();
+}
+
+function widget_map_embed() {
+	drupal_add_js(drupal_get_path('module','widget_map').'/assets/widget_map.js');
+	drupal_add_js('external','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false');
+
+	return theme('widget_map');	
+}

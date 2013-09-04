@@ -6,11 +6,6 @@
  */
 
 print $breadcrumb;
-if ($title) {
-  print render($title_prefix);
-  print '<h1>' . $title . ($subtitle ? ' <small>' . $subtitle . '</small>' : '') . '</h1>';
-  print render($title_suffix);
-}
 print render($help);
 print render($tabs);
 if ($actions) {

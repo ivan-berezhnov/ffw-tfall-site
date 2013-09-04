@@ -1,24 +1,22 @@
 <?php
 /**
  * @file
- * spotlight.features.field_base.inc
+ * ceo.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function spotlight_field_default_field_bases() {
+function ceo_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
-  $field_bases['body'] = array(
+  // Exported field_base: 'field_ceo_bio'
+  $field_bases['field_ceo_bio'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
-    'entity_types' => array(
-      0 => 'node',
-    ),
-    'field_name' => 'body',
+    'entity_types' => array(),
+    'field_name' => 'field_ceo_bio',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -36,16 +34,16 @@ function spotlight_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(),
     'translatable' => 0,
-    'type' => 'text_with_summary',
+    'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_spotlight_image'
-  $field_bases['field_spotlight_image'] = array(
+  // Exported field_base: 'field_ceo_image'
+  $field_bases['field_ceo_image'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_spotlight_image',
+    'field_name' => 'field_ceo_image',
     'foreign keys' => array(
       'fid' => array(
         'columns' => array(

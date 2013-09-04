@@ -1,0 +1,1 @@
+<div id="googlemap" style="height:550px;width:1000px"></div>

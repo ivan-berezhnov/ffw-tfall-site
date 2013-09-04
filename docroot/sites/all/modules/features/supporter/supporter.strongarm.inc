@@ -1,68 +1,68 @@
 <?php
 /**
  * @file
- * spotlight.strongarm.inc
+ * supporter.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function spotlight_strongarm() {
+function supporter_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_spotlight';
+  $strongarm->name = 'comment_anonymous_supporter';
   $strongarm->value = 0;
-  $export['comment_anonymous_spotlight'] = $strongarm;
+  $export['comment_anonymous_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_spotlight';
+  $strongarm->name = 'comment_default_mode_supporter';
   $strongarm->value = 0;
-  $export['comment_default_mode_spotlight'] = $strongarm;
+  $export['comment_default_mode_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_spotlight';
+  $strongarm->name = 'comment_default_per_page_supporter';
   $strongarm->value = '50';
-  $export['comment_default_per_page_spotlight'] = $strongarm;
+  $export['comment_default_per_page_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_spotlight';
+  $strongarm->name = 'comment_form_location_supporter';
   $strongarm->value = 0;
-  $export['comment_form_location_spotlight'] = $strongarm;
+  $export['comment_form_location_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_spotlight';
+  $strongarm->name = 'comment_preview_supporter';
   $strongarm->value = '0';
-  $export['comment_preview_spotlight'] = $strongarm;
+  $export['comment_preview_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_spotlight';
-  $strongarm->value = '0';
-  $export['comment_spotlight'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_spotlight';
+  $strongarm->name = 'comment_subject_field_supporter';
   $strongarm->value = 0;
-  $export['comment_subject_field_spotlight'] = $strongarm;
+  $export['comment_subject_field_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__spotlight';
+  $strongarm->name = 'comment_supporter';
+  $strongarm->value = '0';
+  $export['comment_supporter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__supporter';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -99,44 +99,44 @@ function spotlight_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__spotlight'] = $strongarm;
+  $export['field_bundle_settings_node__supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_spotlight';
+  $strongarm->name = 'menu_options_supporter';
   $strongarm->value = array();
-  $export['menu_options_spotlight'] = $strongarm;
+  $export['menu_options_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_spotlight';
+  $strongarm->name = 'menu_parent_supporter';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_spotlight'] = $strongarm;
+  $export['menu_parent_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_spotlight';
+  $strongarm->name = 'node_options_supporter';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_spotlight'] = $strongarm;
+  $export['node_options_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_spotlight';
+  $strongarm->name = 'node_preview_supporter';
   $strongarm->value = '1';
-  $export['node_preview_spotlight'] = $strongarm;
+  $export['node_preview_supporter'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_spotlight';
+  $strongarm->name = 'node_submitted_supporter';
   $strongarm->value = 1;
-  $export['node_submitted_spotlight'] = $strongarm;
+  $export['node_submitted_supporter'] = $strongarm;
 
   return $export;
 }

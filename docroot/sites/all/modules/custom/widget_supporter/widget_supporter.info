@@ -1,0 +1,4 @@
+name = Widget supporter
+description = Generate flexslider carousel of supporters on homepage and/or selected pages
+core = 7.x
+package = pubteach4all

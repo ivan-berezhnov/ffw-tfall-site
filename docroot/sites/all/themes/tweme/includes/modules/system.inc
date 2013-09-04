@@ -51,6 +51,11 @@ function tweme_preprocess_page(&$vars) {
 
   // Add custom classes to navbar search form:
   $vars['navbar_search_form']['#attributes']['class'][] = 'pull-right';
+
+	if (isset($vars['node'])) {
+		$vars['theme_hook_suggestions'][] = 'page__' . $vars['node']->type;
+	}
+
 }
 
 /**

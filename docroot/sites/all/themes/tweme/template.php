@@ -78,3 +78,35 @@ function tweme_css_alter(&$css) {
 function tweme_js_alter(&$js) {
   _tweme_upgrade_jquery($js['misc/jquery.js']);
 }
+
+/*
+ * Implements hook_preprocess_field
+ * extend support for fields
+ */
+function tweme_preprocess_field(&$vars, $hook) {
+	$element = $vars['element'];
+	$function_name = __FUNCTION__ . '__' . $element['#field_name'];
+	if (function_exists($function_name)) {
+		$function_name($vars);
+	}
+}
+
+/*
+ * Implements hook_preprocess_node
+ * extend support for node view modes templates if needed
+ */
+function tweme_preprocess_node(&$vars) {
+
+	if (empty($vars['node'])) {
+		return;
+	}
+
+	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['node']->nid;
+	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
+	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'] . '__' . $vars['node']->nid;
+
+	$function_name = __FUNCTION__ . '__' . $vars['node']->type;
+	if (function_exists($function_name)) {
+		$function_name($vars);
+	}
+}
