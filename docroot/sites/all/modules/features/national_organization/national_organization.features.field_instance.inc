@@ -37,7 +37,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_active_flag',
-    'label' => 'Active flag',
+    'label' => 'Active Flag',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -74,7 +74,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_alumni',
-    'label' => 'alumni',
+    'label' => 'Alumni',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -159,7 +159,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_avg_total_years_of_edu',
-    'label' => 'avg. total years of edu',
+    'label' => 'Avg. Total Years of Education',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -200,7 +200,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_blurb',
-    'label' => 'blurb',
+    'label' => 'Blurb',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -242,7 +242,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ceo_profile',
-    'label' => 'CEO profile',
+    'label' => 'CEO Profile',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -283,7 +283,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_cohorts_placed',
-    'label' => 'cohorts placed',
+    'label' => 'Cohorts Placed',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -444,7 +444,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_living_below_poverty_line',
-    'label' => 'living below poverty line',
+    'label' => 'Living below Poverty Line',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -585,7 +585,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_no_image_map',
-    'label' => 'Map image',
+    'label' => 'Map Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -688,7 +688,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_population',
-    'label' => 'population',
+    'label' => 'Population',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -729,7 +729,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_program_launched',
-    'label' => 'program launched',
+    'label' => 'Program Launched',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -770,7 +770,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_schools',
-    'label' => 'schools',
+    'label' => 'Schools',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -855,7 +855,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_teachers_active',
-    'label' => 'teachers active',
+    'label' => 'Teachers Active',
     'required' => 0,
     'settings' => array(
       'max' => '',
@@ -875,29 +875,29 @@ function national_organization_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Active flag');
+  t('Active Flag');
+  t('Alumni');
   t('Alumni Spotlight');
-  t('CEO profile');
+  t('Avg. Total Years of Education');
+  t('Blurb');
+  t('CEO Profile');
+  t('Cohorts Placed');
   t('Facebook API key');
   t('Links');
+  t('Living below Poverty Line');
   t('Location');
   t('Logo');
   t('Main Image');
-  t('Map image');
+  t('Map Image');
   t('Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there');
+  t('Population');
+  t('Program Launched');
+  t('Schools');
   t('Teacher Spotlight');
+  t('Teachers Active');
   t('Twitter API key');
-  t('alumni');
-  t('avg. total years of edu');
-  t('blurb');
   t('blurb/compelling statistic text');
-  t('cohorts placed');
   t('link(s) to organization\'s website');
-  t('living below poverty line');
-  t('population');
-  t('program launched');
-  t('schools');
-  t('teachers active');
 
   return $field_instances;
 }

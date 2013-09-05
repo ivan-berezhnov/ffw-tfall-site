@@ -143,6 +143,7 @@ img { max-width: 100%; }
 .widget_supporters { background-color: white; text-align: center; }
 .widget_supporters .title { color: #ffb151; display: block; padding: 10px 0; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
+.widget_supporters ul li a { margin: 0px; }
 .widget_supporters p { font-size: 13px; font-size: 0.76471rem; line-height: 1.5em; }
 
 /**/
