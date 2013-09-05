@@ -6,6 +6,7 @@
     #Imports
     #Font-Face
     #Styleguide - Typography
+    #Global Elements
     #Header
     #Main Navigation
     #Uber Navigation
@@ -98,6 +99,16 @@ body {
 
 .blurb {
   @include font-size(36);
+}
+
+/**/
+
+/**
+* #Global Elements
+**/
+
+.page-title {
+  text-align: center;
 }
 
 /**/
@@ -407,6 +418,7 @@ img {max-width: 100%;}
     margin: 0px;
   }
   p {
+    @include font-size(13);
     line-height: 1.5em;
   }
 }

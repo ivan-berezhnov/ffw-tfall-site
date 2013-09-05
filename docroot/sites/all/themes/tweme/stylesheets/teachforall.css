@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
 **/
 /**
 *   #Imports
@@ -43,6 +43,12 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 .small-body { font-size: 16px; font-size: 0.94118rem; }
 
 .blurb { font-size: 36px; font-size: 2.11765rem; }
+
+/**/
+/**
+* #Global Elements
+**/
+.page-title { text-align: center; }
 
 /**/
 /**
@@ -131,6 +137,6 @@ img { max-width: 100%; }
 .widget_supporters { background-color: white; text-align: center; }
 .widget_supporters .title { color: #ffb151; display: block; padding: 10px 0; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
-.widget_supporters p { line-height: 1.5em; }
+.widget_supporters p { font-size: 13px; font-size: 0.76471rem; line-height: 1.5em; }
 
 /**/

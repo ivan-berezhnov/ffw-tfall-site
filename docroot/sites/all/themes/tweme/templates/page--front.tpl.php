@@ -61,7 +61,7 @@
 					todo:carousel
 				</div>
 				<br />
-				<div style="border:2px pink solid;padding:5px">
+				<div class="page-title">
 					<h2>The Global Network for Expanding Educational Opportunity</h2>
 				</div>
 				<div style="border:2px red solid;padding:5px">
