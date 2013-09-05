@@ -121,6 +121,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 
 .footer-links a { margin-left: 0; }
 
+.footer-menu .menu .menu .last { margin-bottom: 10px; }
 .footer-menu .menu .menu a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
 .footer-menu .menu .menu a:hover { color: #cf4753; }
 .footer-menu ul { margin: 0; }
@@ -128,7 +129,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .footer-menu .content > ul > li { float: left; padding: 0; width: 33%; }
 .footer-menu .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
 
-.footer__contact { margin-top: 20px; padding-top: 10px; font-size: 12px; font-size: 0.70588rem; text-align: center; }
+.footer__contact { padding-top: 10px; font-size: 12px; font-size: 0.70588rem; text-align: center; }
 
 /**/
 /**

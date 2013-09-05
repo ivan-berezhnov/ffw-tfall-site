@@ -383,6 +383,9 @@ body {
 .footer-menu {
   .menu {
     .menu {
+      .last {
+        margin-bottom: 10px;
+      }
       a {
         color: $grey4;
         @include font-size(14);
@@ -420,7 +423,6 @@ body {
 }
 
 .footer__contact {
-  margin-top: 20px;
   padding-top: 10px;
   @include font-size(12);
   text-align: center;
