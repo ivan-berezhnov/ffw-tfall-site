@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
  ### NODES ### #National Organizations
 **/
 /**
@@ -51,7 +51,11 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 **/
 .page-title { text-align: center; }
 
-.slug { font-size: 12px; font-size: 0.70588rem; color: #e69740; text-transform: uppercase; }
+/**/
+/**
+* #Objects
+**/
+.slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; }
 
 /**/
 /**
@@ -157,5 +161,10 @@ img { max-width: 100%; }
 * #National Organizations
 **/
 .node-type-national-organization .title { color: #e69740; }
+
+.field-name-field-blurb { font-size: 32px; font-size: 1.88235rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
+
+.no__info-block { color: #cf4753; margin-bottom: 40px; }
+.no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
 
 /**/

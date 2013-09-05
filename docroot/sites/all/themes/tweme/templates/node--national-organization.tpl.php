@@ -6,13 +6,35 @@
     </div>
     <div class="row-fluid">
       <div class="span3">
-      <?php print render($content['field_no_logo']); ?>
-      <div class="slug">Websites</div>
-      <?php print render($content['field_links']); ?>
-      <?php print render($content['field_ceo_profile']); ?>
-      <?php print render($content['field_program_snapshot']); ?>
-      <?php print render($content['field_no_image_map']); ?>
-      <?php print render($content['field_local_context_info']); ?>
+
+        <div class="no__info-block">
+          <?php print render($content['field_no_logo']); ?>
+        </div>
+
+        <div class="no__website-info no__info-block">
+          <div class="slug"><?php print t('Website'); ?></div>
+          <?php print render($content['field_links']); ?>
+        </div>
+
+        <div class="no__info-block">
+          <div class="slug"><?php print t('CEO'); ?></div>
+          <?php print render($content['field_ceo_profile']); ?>
+        </div>
+
+        <div class="no__info-block">
+          <div class="slug"><?php print t('Program Snapshot'); ?></div>
+          <?php print render($content['field_program_snapshot']); ?>
+        </div>
+
+        <div class="no__info-block">
+          <?php print render($content['field_no_image_map']); ?>
+        </div>
+
+        <div class="no__info-block">
+          <div class="slug"><?php print t('Local Context'); ?></div>
+          <?php print render($content['field_local_context_info']); ?>
+        </div>
+
       </div>
       <div class="span6">
         <?php print render($content['field_no_image']); ?>
