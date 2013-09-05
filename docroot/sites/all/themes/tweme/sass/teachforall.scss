@@ -13,6 +13,9 @@
     #Footer
     #Images
     #Supporters Widget
+
+    ### NODES ###
+    #National Organizations
 **/
 
 /**
@@ -69,6 +72,7 @@ h1, .h1 {
 
 h2, .h2 {
   @include font-size(25);
+  font-family: "Fedra Serif", serif;
 }
 
 h3, .h3 {
@@ -90,7 +94,7 @@ a {
 body {
   color: $grey1;
   @include font-size(17);
-  font-family: "Fedra Serif", serif;
+  font-family: "News Gothic", sans-serif;
 }
 
 .small-body {
@@ -109,6 +113,12 @@ body {
 
 .page-title {
   text-align: center;
+}
+
+.slug {
+  @include font-size(12);
+  color: $orange1;
+  text-transform: uppercase;
 }
 
 /**/
@@ -131,10 +141,12 @@ body {
 .donate {
   background-color: $orange1;
   color: $white;
+  font-family: "Fedra Serif";
+  font-weight: bold;
   letter-spacing: 2px;
   margin-top: -4px;
   padding: 5px 5px 3px 5px;
-  @include font-size(14);
+  @include font-size(11);
   &:hover {
     background-color: $red;
     color: $white;
@@ -167,7 +179,7 @@ body {
     li {
       a {
         color: $beige;
-        padding: 15px 15px 12px 15px;
+        padding: 16px 15px 13px 15px;
         &:hover {
           background-color: $orange1;
           color: $white;
@@ -187,9 +199,11 @@ body {
 .navbar {
   font-weight: bold;
   .region-main-navigation {
+    font-family: "Fedra Serif";
+    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    @include font-size(14);
+    @include font-size(12);
     ul {
       margin-bottom: 0;
       margin-top: 12px;
@@ -209,6 +223,9 @@ body {
           z-index: 9999;
           li {
             border-bottom: 1px solid $border_color1;
+            font-family: "News Gothic", sans-serif;
+            font-weight: normal;
+            letter-spacing: 0;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -220,6 +237,7 @@ body {
           a {
             display: block;
             padding: 8px 8px 5px 15px;
+            @include font-size(16);
           }
         }
       }
@@ -250,7 +268,6 @@ body {
 **/
 
 .uber-nav {
-  font-family: "News Gothic";
   font-weight: bold;
   .content {
     > .menu {
@@ -282,7 +299,7 @@ body {
     margin-left: -4px;
     padding: 3px 10px;
     text-transform: uppercase;
-    @include font-size(14);
+    @include font-size(11);
     &:hover {
       color: $red;
     }
@@ -299,10 +316,11 @@ body {
       position: absolute;
       width: 100px;
       z-index: 9999;
-      padding-left: 3px;
+      padding-left: 6px;
       text-align: left;
       a {
         border: none;
+        font-weight: normal;
         @include font-size(14);
         display: block;
         margin: 0 3px 5px 3px;
@@ -356,11 +374,21 @@ body {
   border: none;
 }
 
+.footer-links {
+  a {
+    margin-left: 0;
+  }
+}
+
 .footer-menu {
   .menu {
     .menu {
       a {
         color: $grey4;
+        @include font-size(14);
+        &:hover {
+          color: $red;
+        }
       }
     }
   }
@@ -370,19 +398,21 @@ body {
       list-style-type: none;
       list-style-image: none;
       margin: 0;
-      a {
-        @include font-size(12);
-      }
     }
   }
   .content {
     > ul {
       > li {
         float: left;
-        width: 26%;
+        padding: 0;
+        width: 33%;
         > a {
           color: $beige;
+          font-family: "Fedra", serif;
+          font-weight: bold;
+          letter-spacing: 1px;
           text-transform: uppercase;
+          @include font-size(11);
         }
       }
     }
@@ -412,9 +442,6 @@ img {max-width: 100%;}
 **/
 
 .flexslider_supporter {
-  li {
-    margin-bottom: 20px;
-  }
   a {
     margin: 0;
   }
@@ -422,11 +449,14 @@ img {max-width: 100%;}
 
 .widget_supporters {
   background-color: $white;
+  padding: 20px;
   text-align: center;
   .title {
     color: $orange2;
+    font-family: "Fedra", serif;
+    letter-spacing: 1px;
     display: block;
-    padding: 10px 0;
+    margin-bottom: 10px;
   }
   ul {
     padding: 0px;
@@ -438,6 +468,20 @@ img {max-width: 100%;}
   p {
     @include font-size(13);
     line-height: 1.5em;
+  }
+}
+
+/**/
+
+/* ### NODES ### */
+
+/**
+* #National Organizations
+**/
+
+.node-type-national-organization {
+  .title {
+    color: $orange1;
   }
 }
 

@@ -2,11 +2,12 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <div class="page-title">
-      <?php print $title; ?>
+      <h2 class="title"><?php print $title; ?></h2>
     </div>
     <div class="row-fluid">
       <div class="span3">
       <?php print render($content['field_no_logo']); ?>
+      <div class="slug">Websites</div>
       <?php print render($content['field_links']); ?>
       <?php print render($content['field_ceo_profile']); ?>
       <?php print render($content['field_program_snapshot']); ?>
