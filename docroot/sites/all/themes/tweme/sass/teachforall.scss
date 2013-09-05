@@ -416,6 +416,9 @@ img {max-width: 100%;}
   ul {
     padding: 0px;
     margin: 0px;
+		li a {
+			margin:0px;
+		}
   }
   p {
     @include font-size(13);
