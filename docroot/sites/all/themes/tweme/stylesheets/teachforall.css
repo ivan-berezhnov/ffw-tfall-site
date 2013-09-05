@@ -116,11 +116,14 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "Fedra Ser
 **/
 #footer { background-color: #4d4d4d; border: none; }
 
+.footer-menu .menu .menu a { color: #999999; }
 .footer-menu ul { margin: 0; }
 .footer-menu ul li { list-style-type: none; list-style-image: none; margin: 0; }
 .footer-menu ul li a { font-size: 12px; font-size: 0.70588rem; }
+.footer-menu .content > ul > li { float: left; width: 26%; }
 .footer-menu .content > ul > li > a { color: #dfd9c9; text-transform: uppercase; }
-.footer-menu .content > ul > li:nth-child(3), .footer-menu .content > ul > li:nth-child(4) { float: right; }
+
+.footer__contact { margin-top: 20px; padding-top: 10px; font-size: 12px; font-size: 0.70588rem; text-align: center; }
 
 /**/
 /**
@@ -134,6 +137,9 @@ img { max-width: 100%; }
 /**
 * #Supporters Widget
 **/
+.flexslider_supporter li { margin-bottom: 20px; }
+.flexslider_supporter a { margin: 0; }
+
 .widget_supporters { background-color: white; text-align: center; }
 .widget_supporters .title { color: #ffb151; display: block; padding: 10px 0; }
 .widget_supporters ul { padding: 0px; margin: 0px; }

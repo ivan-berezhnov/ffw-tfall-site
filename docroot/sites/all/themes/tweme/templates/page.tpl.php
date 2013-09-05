@@ -85,14 +85,16 @@
 <footer id="footer" class="container-wrapper">
   <div class="container">
     <div class="row-fluid">
-      <div class="span6 footer-menu footer-links">
+      <div class="span9 footer-menu footer-links">
         <?php print render($page['footer']) ?>
-      </div>
-      <div class="span3 footer-links">
-        <?php print $copyright ?>
       </div>
       <div class="span3 footer-links widget_supporters">
         <?php print render(widget_supporter_embed()); ?>
+      </div>
+    </div>
+    <div class="row-fluid footer__contact">
+      <div class="span12">
+        <?php print $copyright ?> <?php print t('All rights reserved. | 315 W. 36th St. New York, NY 10018 | +1 646 898 4900'); ?>
       </div>
     </div>
   </div>

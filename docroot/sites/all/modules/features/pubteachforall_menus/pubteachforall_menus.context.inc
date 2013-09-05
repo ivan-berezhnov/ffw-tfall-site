@@ -15,7 +15,7 @@ function pubteachforall_menus_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'primary_nav';
   $context->description = 'Primary Navigation';
-  $context->tag = 'navigation';
+  $context->tag = 'Navigation';
   $context->conditions = array(
     'sitewide' => array(
       'values' => array(
@@ -39,8 +39,8 @@ function pubteachforall_menus_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Navigation');
   t('Primary Navigation');
-  t('navigation');
   $export['primary_nav'] = $context;
 
   $context = new stdClass();

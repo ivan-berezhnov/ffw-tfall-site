@@ -24,6 +24,7 @@ features[field_instance][] = node-supporter-field_supporter_logo
 features[field_instance][] = node-supporter-field_supporter_type
 features[field_instance][] = node-supporter-field_supporter_url
 features[image][] = supporter_carousel
+features[image][] = supporter_logo
 features[node][] = supporter
 features[variable][] = comment_anonymous_supporter
 features[variable][] = comment_default_mode_supporter

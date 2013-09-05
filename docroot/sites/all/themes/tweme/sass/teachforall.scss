@@ -357,6 +357,13 @@ body {
 }
 
 .footer-menu {
+  .menu {
+    .menu {
+      a {
+        color: $grey4;
+      }
+    }
+  }
   ul {
     margin: 0;
     li {
@@ -371,23 +378,22 @@ body {
   .content {
     > ul {
       > li {
+        float: left;
+        width: 26%;
         > a {
           color: $beige;
           text-transform: uppercase;
         }
-        &:nth-child(1),
-        &:nth-child(2) {
-        }
-        &:nth-child(3),
-        &:nth-child(4) {
-          float: right;
-        }
-        &:nth-child(5) {
-        }
       }
     }
   }
+}
 
+.footer__contact {
+  margin-top: 20px;
+  padding-top: 10px;
+  @include font-size(12);
+  text-align: center;
 }
 
 /**/
@@ -404,6 +410,15 @@ img {max-width: 100%;}
 /**
 * #Supporters Widget
 **/
+
+.flexslider_supporter {
+  li {
+    margin-bottom: 20px;
+  }
+  a {
+    margin: 0;
+  }
+}
 
 .widget_supporters {
   background-color: $white;
