@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Main Navigation #Uber Navigation #Footer #Images #Supporters Widget
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Main Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget
  ### NODES ### #National Organizations
 **/
 /**
@@ -120,17 +120,17 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
 
 /**/
-/** 
-* #Feeds 
+/**
+* #Feeds
 **/
-#feeds { background-color: #e69740; min-height: 250px; }
-#feeds div.container { padding: 10px 0px; }
+#feeds { background-color: #e69740; padding: 40px 0; }
+#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
 
 /**
 * #Footer
 **/
-#footer { background-color: #4d4d4d; border: none; }
-#footer .block-block { font-size: 12px; font-size: 0.70588rem; }
+#footer { background-color: #4d4d4d; border: none; padding: 40px 0; }
+#footer .block-block { font-size: 12px; font-size: 0.70588rem; width: 30%; }
 
 .footer-links a { margin-left: 0; }
 

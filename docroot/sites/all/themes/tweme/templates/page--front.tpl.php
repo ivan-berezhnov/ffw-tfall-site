@@ -80,7 +80,9 @@
 <div id="feeds" class="container-wrapper">
 	<div class="container">
 		<div class="row-fluid">
-			<div class="span9">twitter feeds</div>
+			<div class="span9">
+        <h2><?php print t('Twitter'); ?></h2>
+      </div>
 			<div class="span3">
 				<?php if (module_exists('widget_facebook')): ?>
 					<?php print render(widget_facebook_embed_homepage()); ?>

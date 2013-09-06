@@ -11,6 +11,7 @@
     #Header
     #Main Navigation
     #Uber Navigation
+    #Feeds
     #Footer
     #Images
     #Supporters Widget
@@ -382,15 +383,20 @@ body {
 
 /**/
 
-/** 
-* #Feeds 
-**/ 
+/**
+* #Feeds
+**/
+
 #feeds {
 	background-color: $orange1;
-	min-height:250px;
-	div.container {
-		padding:10px 0px;
-	}
+  padding: 40px 0;
+  h2 {
+    color: $white;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 /**
@@ -400,8 +406,10 @@ body {
 #footer {
   background-color: $grey2;
   border: none;
+  padding: 40px 0;
   .block-block {
     @include font-size(12);
+    width: 30%;
   }
 }
 
@@ -499,7 +507,7 @@ img {max-width: 100%;}
 }
 
 .fb-like-box {
-	background-color:white;
+	background-color: $white;
 }
 
 /**/
