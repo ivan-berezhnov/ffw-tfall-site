@@ -65,8 +65,18 @@
       <div class="span6">
         <?php print render($content['field_no_image']); ?>
         <?php print render($content['field_blurb']); ?>
-        Spotlight 1<br />
-        Spotlight 2
+				
+				
+				<div class="row-fluid">
+					<div class="span6">
+						<?php print render($content['field_teacher_spotlight']); ?> 
+					</div>
+					<div class="span6">
+						<?php print render($content['field_alumni_spotlight']); ?>
+					</div>
+				</div>
+				
+				
       </div>
       <div class="span3">
         Twitter Feed<br />

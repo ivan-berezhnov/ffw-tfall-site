@@ -103,8 +103,8 @@ function national_organization_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => 1,
-          'view_mode' => 'full',
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 16,
@@ -799,8 +799,8 @@ function national_organization_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => 1,
-          'view_mode' => 'full',
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 15,

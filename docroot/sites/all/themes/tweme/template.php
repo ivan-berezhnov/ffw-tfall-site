@@ -100,7 +100,7 @@ function tweme_preprocess_node(&$vars) {
 	if (empty($vars['node'])) {
 		return;
 	}
-
+	
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['node']->nid;
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'] . '__' . $vars['node']->nid;
