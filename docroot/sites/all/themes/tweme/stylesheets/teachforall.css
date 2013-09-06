@@ -121,6 +121,11 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 
 /**/
 /**
+* #worldmap
+**/
+#worldmap { background-color: #80b4e4; padding: 0px; }
+
+/**
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
