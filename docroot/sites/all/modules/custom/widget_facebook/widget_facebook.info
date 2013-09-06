@@ -1,0 +1,4 @@
+name = Widget facebook
+description = Generate facebook like-box, for homepage and NO pages.
+core = 7.x
+package = pubteach4all

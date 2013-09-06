@@ -80,7 +80,13 @@
       </div>
       <div class="span3">
         Twitter Feed<br />
-        Facebook Feed
+				
+				<?php //temporary! generic facebook like-box... awaiting response TFAPW-56 ?>
+				<?php if (module_exists('widget_facebook')): ?>
+					<?php print render(widget_facebook_embed_homepage()); ?>
+				<?php endif; ?>
+				
+				
       </div>
     </div>
       <?php //print render(widget_map_embed()); ?>

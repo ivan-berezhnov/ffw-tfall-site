@@ -68,11 +68,17 @@
 					todo:insights
 				</div>
 				<br />
-				<div style="border:2px red solid;padding:5px;background-color:orange">
-					todo:twitter
-				</div>
-				<br />
 
+				<div class="row">
+					<div class="span9">twitter feeds</div>
+					<div class="span3">
+						<?php if (module_exists('widget_facebook')): ?>
+							<?php print render(widget_facebook_embed_homepage()); ?>
+						<?php endif; ?>
+					</div>
+					
+				</div>
+				
       </section>
     </div>
 	</div>
@@ -86,7 +92,9 @@
         <?php print render($page['footer']) ?>
       </div>
       <div class="span3 footer-links widget_supporters">
-        <?php print render(widget_supporter_embed()); ?>
+				<?php if (module_exists('widget_supporter')): ?>
+					<?php print render(widget_supporter_embed()); ?>
+				<?php endif; ?>
       </div>
     </div>
   </div>
