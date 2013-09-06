@@ -170,10 +170,10 @@ img { max-width: 100%; }
 .flexslider_supporter a { margin: 0; }
 
 .widget_supporters { background-color: white; padding: 20px; text-align: center; }
-.widget_supporters .title { color: #ffb151; font-family: "Fedra", serif; letter-spacing: 1px; display: block; margin-bottom: 10px; }
+.widget_supporters .title { color: #ffb151; font-family: "Fedra", serif; letter-spacing: 4px; display: block; margin-bottom: 10px; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
 .widget_supporters ul li a { margin: 0px; }
-.widget_supporters p { font-size: 13px; font-size: 0.76471rem; line-height: 1.5em; }
+.widget_supporters p { font-size: 16px; font-size: 0.94118rem; line-height: 1.5em; }
 
 .fb-like-box { background-color: white; }
 
@@ -183,6 +183,8 @@ img { max-width: 100%; }
 * #National Organizations
 **/
 .node-type-national-organization .title { color: #e69740; }
+
+.no__image img { width: 100%; }
 
 .no__blurb { font-size: 32px; font-size: 1.88235rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
 

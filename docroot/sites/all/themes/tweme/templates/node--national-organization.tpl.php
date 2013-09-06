@@ -85,7 +85,9 @@
 
       </div>
       <div class="span6">
-        <?php print render($content['field_no_image']); ?>
+        <div class="no__image">
+          <?php print render($content['field_no_image']); ?>
+        </div>
         <div class="no__blurb">
           <?php print render($content['field_blurb']); ?>
         </div>

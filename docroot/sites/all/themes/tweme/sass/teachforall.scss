@@ -517,7 +517,7 @@ img {max-width: 100%;}
   .title {
     color: $orange2;
     font-family: "Fedra", serif;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     display: block;
     margin-bottom: 10px;
   }
@@ -529,7 +529,7 @@ img {max-width: 100%;}
 		}
   }
   p {
-    @include font-size(13);
+    @include font-size(16);
     line-height: 1.5em;
   }
 }
@@ -549,6 +549,12 @@ img {max-width: 100%;}
 .node-type-national-organization {
   .title {
     color: $orange1;
+  }
+}
+
+.no__image {
+  img {
+    width: 100%;
   }
 }
 
