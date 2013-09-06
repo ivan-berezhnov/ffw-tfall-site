@@ -382,6 +382,17 @@ body {
 
 /**/
 
+/** 
+* #Feeds 
+**/ 
+#feeds {
+	background-color: $orange1;
+	min-height:250px;
+	div.container {
+		padding:10px 0px;
+	}
+}
+
 /**
 * #Footer
 **/
@@ -485,6 +496,10 @@ img {max-width: 100%;}
     @include font-size(13);
     line-height: 1.5em;
   }
+}
+
+.fb-like-box {
+	background-color:white;
 }
 
 /**/

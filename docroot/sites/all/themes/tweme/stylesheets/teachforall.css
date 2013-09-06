@@ -120,6 +120,12 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
 
 /**/
+/** 
+* #Feeds 
+**/
+#feeds { background-color: #e69740; min-height: 250px; }
+#feeds div.container { padding: 10px 0px; }
+
 /**
 * #Footer
 **/
@@ -155,6 +161,8 @@ img { max-width: 100%; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
 .widget_supporters ul li a { margin: 0px; }
 .widget_supporters p { font-size: 13px; font-size: 0.76471rem; line-height: 1.5em; }
+
+.fb-like-box { background-color: white; }
 
 /**/
 /* ### NODES ### */

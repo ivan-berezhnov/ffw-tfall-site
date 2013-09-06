@@ -69,18 +69,24 @@
 				</div>
 				<br />
 
-				<div class="row">
-					<div class="span9">twitter feeds</div>
-					<div class="span3">
-						<?php if (module_exists('widget_facebook')): ?>
-							<?php print render(widget_facebook_embed_homepage()); ?>
-						<?php endif; ?>
-					</div>
-					
-				</div>
+
 				
       </section>
     </div>
+	</div>
+</div>
+
+<!-- feeds -->
+<div id="feeds" class="container-wrapper">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span9">twitter feeds</div>
+			<div class="span3">
+				<?php if (module_exists('widget_facebook')): ?>
+					<?php print render(widget_facebook_embed_homepage()); ?>
+				<?php endif; ?>
+			</div>
+		</div>
 	</div>
 </div>
 
