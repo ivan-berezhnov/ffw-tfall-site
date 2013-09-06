@@ -9,7 +9,7 @@
     #Global Elements
     #Objects
     #Header
-    #Main Navigation
+    #Primary Navigation
     #Uber Navigation
     #Feeds
     #Footer
@@ -181,7 +181,7 @@ body {
 /**/
 
 /**
-* #Main Navigation
+* #Primary Navigation
 **/
 
 .navbar-medium {
@@ -203,6 +203,12 @@ body {
     border: none;
     padding: 0;
     text-align: center;
+    ul {
+      margin: 0;
+    }
+    .container {
+      min-height: 40px;
+    }
   }
 }
 

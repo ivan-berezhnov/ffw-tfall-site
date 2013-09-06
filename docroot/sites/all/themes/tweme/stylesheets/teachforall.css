@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Main Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget
  ### NODES ### #National Organizations
 **/
 /**
@@ -75,11 +75,13 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 
 /**/
 /**
-* #Main Navigation
+* #Primary Navigation
 **/
 .navbar-medium .region-main-navigation li a { color: #dfd9c9; padding: 16px 15px 13px 15px; }
 .navbar-medium .region-main-navigation li a:hover { background-color: #e69740; color: white; }
-.navbar-medium .navbar-inner { background-color: #3c3835; background-image: none; border: none; padding: 0; text-align: center; }
+.navbar-medium .navbar-inner { background-color: #3b3835; background-image: none; border: none; padding: 0; text-align: center; }
+.navbar-medium .navbar-inner ul { margin: 0; }
+.navbar-medium .navbar-inner .container { min-height: 40px; }
 
 .navbar { font-weight: bold; }
 .navbar .region-main-navigation { font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
@@ -91,7 +93,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .navbar .region-main-navigation .content > .menu .menu li.last { border: none; margin-bottom: 0; }
 .navbar .region-main-navigation .content > .menu .menu a { display: block; padding: 8px 8px 5px 15px; font-size: 16px; font-size: 0.94118rem; }
 .navbar .region-main-navigation li { float: left; list-style-type: none; list-style-image: none; margin: 0; padding: 0; position: relative; }
-.navbar .region-main-navigation li:hover { border-color: #3c3835; }
+.navbar .region-main-navigation li:hover { border-color: #3b3835; }
 .navbar .region-main-navigation li.expanded:hover .menu { display: block; }
 
 /**/
