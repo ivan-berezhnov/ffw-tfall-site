@@ -68,13 +68,36 @@
 					todo: insights
 				</div>
 				<br />
-
-
-
       </section>
     </div>
 	</div>
 </div>
+
+<!-- world map -->
+<div id="worldmap" class="container-wrapper">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<?php if (module_exists('widget_facebook')): ?>
+					<?php print render(widget_map_embed()); ?>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- insights -->
+<div id="insights" class="container-wrapper">
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+        <h2><?php print t('Insights'); ?></h2>
+				coming soon
+      </div>
+		</div>
+	</div>
+</div>
+
 
 <!-- feeds -->
 <div id="feeds" class="container-wrapper">

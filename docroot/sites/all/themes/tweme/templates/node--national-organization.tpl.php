@@ -89,6 +89,6 @@
 				
       </div>
     </div>
-      <?php //print render(widget_map_embed()); ?>
+
   </div>
 </div>
