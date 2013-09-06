@@ -305,8 +305,8 @@ body {
   a {
     border-right: 1px solid $orange1;
     color: $grey5;
-    margin-left: -4px;
-    padding: 3px 10px;
+    margin-left: -5px;
+    padding: 5px 10px 4px;
     text-transform: uppercase;
     @include font-size(11);
     &:hover {

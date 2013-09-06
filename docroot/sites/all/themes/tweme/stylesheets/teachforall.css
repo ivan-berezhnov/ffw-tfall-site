@@ -103,7 +103,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .uber-nav .content > .menu li a { letter-spacing: 1px; }
 .uber-nav .content > .menu li a.active { color: #cf4753; }
 .uber-nav .content > .menu li.last a { border-right: none; }
-.uber-nav a { border-right: 1px solid #e69740; color: #92998d; margin-left: -4px; padding: 3px 10px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+.uber-nav a { border-right: 1px solid #e69740; color: #92998d; margin-left: -5px; padding: 5px 10px 4px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
 .uber-nav a:hover { color: #cf4753; }
 .uber-nav ul { margin-left: 0; }
 .uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -5px; position: absolute; width: 100px; z-index: 9999; padding-left: 6px; text-align: left; }
