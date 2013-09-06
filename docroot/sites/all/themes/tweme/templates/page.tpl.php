@@ -89,7 +89,9 @@
         <?php print render($page['footer']) ?>
       </div>
       <div class="span3 footer-links widget_supporters">
-        <?php print render(widget_supporter_embed()); ?>
+				<?php if (module_exists('widget_supporter')): ?>
+					<?php print render(widget_supporter_embed()); ?>
+				<?php endif; ?>
       </div>
     </div>
   </div>
