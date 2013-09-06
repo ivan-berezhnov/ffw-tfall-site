@@ -48,7 +48,17 @@
 
         <div class="no__info-block">
           <div class="slug"><?php print t('Local Context'); ?></div>
-          <?php print render($content['field_local_context_info']); ?>
+
+					<?php if (isset($content['field_population'])): ?>
+						<b><?php print render($content['field_population']); ?></b> population<br />
+					<?php endif; ?>
+					<?php if (isset($content['field_living_below_poverty_line'])): ?>
+						<b><?php print render($content['field_living_below_poverty_line']); ?>%</b> living below poverty line<br />
+					<?php endif; ?>
+					<?php if (isset($content['field_avg_total_years_of_edu'])): ?>
+						<b><?php print render($content['field_avg_total_years_of_edu']); ?></b> avr. total years of education<br />
+					<?php endif; ?>
+
         </div>
 
       </div>
