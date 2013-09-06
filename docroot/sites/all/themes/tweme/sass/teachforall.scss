@@ -218,13 +218,21 @@ body {
       margin-top: 12px;
     }
     .content {
-      .menu {
+      > .menu {
+        > li {
+          border-right: 1px solid $orange1;
+          height: 12px;
+          line-height: 1.2em;
+          margin-top: 3px;
+          &.last {
+            border: none;
+          }
+        }
         .menu {
           display: none;
           background-color: $grey2;
           left: 0;
-          margin-left: 0;
-          margin: 8px 0 0 0;
+          margin: 12px 0 0 0;
           padding: 0;
           position: absolute;
           text-transform: none;
@@ -381,6 +389,9 @@ body {
 #footer {
   background-color: $grey2;
   border: none;
+  .block-block {
+    @include font-size(12);
+  }
 }
 
 .footer-links {
@@ -429,12 +440,6 @@ body {
       }
     }
   }
-}
-
-.footer__contact {
-  padding-top: 10px;
-  @include font-size(12);
-  text-align: center;
 }
 
 /**/

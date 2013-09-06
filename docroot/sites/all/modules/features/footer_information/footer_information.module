@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the footer_information feature.
+ */
+
+include_once 'footer_information.features.inc';

@@ -84,10 +84,12 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .navbar { font-weight: bold; }
 .navbar .region-main-navigation { font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
 .navbar .region-main-navigation ul { margin-bottom: 0; margin-top: 12px; }
-.navbar .region-main-navigation .content .menu .menu { display: none; background-color: #4d4d4d; left: 0; margin-left: 0; margin: 8px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
-.navbar .region-main-navigation .content .menu .menu li { border-bottom: 1px solid #92998d; font-family: "News Gothic", sans-serif; font-weight: normal; letter-spacing: 0; margin: 0; padding: 0; width: 100%; }
-.navbar .region-main-navigation .content .menu .menu li.last { border: none; margin-bottom: 0; }
-.navbar .region-main-navigation .content .menu .menu a { display: block; padding: 8px 8px 5px 15px; font-size: 16px; font-size: 0.94118rem; }
+.navbar .region-main-navigation .content > .menu > li { border-right: 1px solid #e69740; height: 12px; line-height: 1.2em; margin-top: 3px; }
+.navbar .region-main-navigation .content > .menu > li.last { border: none; }
+.navbar .region-main-navigation .content > .menu .menu { display: none; background-color: #4d4d4d; left: 0; margin: 12px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
+.navbar .region-main-navigation .content > .menu .menu li { border-bottom: 1px solid #92998d; font-family: "News Gothic", sans-serif; font-weight: normal; letter-spacing: 0; margin: 0; padding: 0; width: 100%; }
+.navbar .region-main-navigation .content > .menu .menu li.last { border: none; margin-bottom: 0; }
+.navbar .region-main-navigation .content > .menu .menu a { display: block; padding: 8px 8px 5px 15px; font-size: 16px; font-size: 0.94118rem; }
 .navbar .region-main-navigation li { float: left; list-style-type: none; list-style-image: none; margin: 0; padding: 0; position: relative; }
 .navbar .region-main-navigation li:hover { border-color: #3c3835; }
 .navbar .region-main-navigation li.expanded:hover .menu { display: block; }
@@ -122,6 +124,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 * #Footer
 **/
 #footer { background-color: #4d4d4d; border: none; }
+#footer .block-block { font-size: 12px; font-size: 0.70588rem; }
 
 .footer-links a { margin-left: 0; }
 
@@ -132,8 +135,6 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 .footer-menu ul li { list-style-type: none; list-style-image: none; margin: 0; }
 .footer-menu .content > ul > li { float: left; padding: 0; width: 33%; }
 .footer-menu .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
-
-.footer__contact { padding-top: 10px; font-size: 12px; font-size: 0.70588rem; text-align: center; }
 
 /**/
 /**
