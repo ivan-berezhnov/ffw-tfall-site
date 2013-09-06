@@ -113,6 +113,18 @@ body {
 * #Global Elements
 **/
 
+div.messages {
+  margin: 20px 0;
+}
+
+.node .content h2 {
+  padding-top: 0;
+}
+
+#main {
+  padding: 0;
+}
+
 .page-title {
   text-align: center;
 }
@@ -540,7 +552,7 @@ img {max-width: 100%;}
   }
 }
 
-.field-name-field-blurb {
+.no__blurb {
   @include font-size(32);
   line-height: 1.1em;
   color: $grey1;
@@ -555,8 +567,24 @@ img {max-width: 100%;}
   }
 }
 
-.no__website-info {
+.no__stats {
+  color: $grey1;
+  @include font-size(18);
+  strong {
+    color: $black;
+  }
+}
 
+.no__stat {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.no__spotlights {
+  @extend h2;
+  line-height: 1em;
 }
 
 /**/

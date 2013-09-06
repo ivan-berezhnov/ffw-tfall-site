@@ -30,7 +30,7 @@
 **/
 h1, .h1 { font-size: 42px; font-size: 2.47059rem; }
 
-h2, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; }
+h2, .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; }
 
 h3, .h3 { font-size: 18px; font-size: 1.05882rem; }
 
@@ -49,6 +49,12 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 /**
 * #Global Elements
 **/
+div.messages { margin: 20px 0; }
+
+.node .content h2, .node .content .no__spotlights { padding-top: 0; }
+
+#main { padding: 0; }
+
 .page-title { text-align: center; }
 
 /**/
@@ -131,7 +137,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
-#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
+#feeds h2, #feeds .no__spotlights { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
 
 /**
 * #Footer
@@ -178,9 +184,17 @@ img { max-width: 100%; }
 **/
 .node-type-national-organization .title { color: #e69740; }
 
-.field-name-field-blurb { font-size: 32px; font-size: 1.88235rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
+.no__blurb { font-size: 32px; font-size: 1.88235rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
 
 .no__info-block { color: #cf4753; margin-bottom: 40px; }
 .no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
+
+.no__stats { color: #91998c; font-size: 18px; font-size: 1.05882rem; }
+.no__stats strong { color: black; }
+
+.no__stat { margin-bottom: 10px; }
+.no__stat:last-child { margin-bottom: 0; }
+
+.no__spotlights { line-height: 1em; }
 
 /**/
