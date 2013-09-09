@@ -16,7 +16,7 @@
           <?php print render($content['field_links']); ?>
         </div>
 
-        <div class="no__info-block">
+        <div class="no__info-block no__ceo">
           <div class="slug"><?php print t('CEO'); ?></div>
           <?php print render($content['field_ceo_profile']); ?>
         </div>

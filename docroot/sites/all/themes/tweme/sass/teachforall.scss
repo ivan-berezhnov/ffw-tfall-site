@@ -174,7 +174,9 @@ div.messages {
 }
 
 .node .content h2 {
+  font-weight: normal;
   padding-top: 0;
+  text-transform: uppercase;
 }
 
 #main {
@@ -593,6 +595,7 @@ img {max-width: 100%;}
 		}
   }
   p {
+    color: $grey4;
     @include font-size(16);
     line-height: 1.5em;
   }
@@ -616,6 +619,12 @@ img {max-width: 100%;}
   }
 }
 
+.no__ceo {
+  a {
+    display: block;
+  }
+}
+
 .no__image {
   img {
     width: 100%;
@@ -623,7 +632,7 @@ img {max-width: 100%;}
 }
 
 .no__blurb {
-  @include font-size(32);
+  @include font-size(36);
   line-height: 1.1em;
   color: $grey1;
   margin: 20px 0;
@@ -652,9 +661,14 @@ img {max-width: 100%;}
   }
 }
 
-.no__spotlights {
-  @extend h2;
-  line-height: 1em;
+.node {
+  .content {
+    .no__spotlights {
+      @extend h2;
+      line-height: 1em;
+      text-transform: none;
+    }
+  }
 }
 
 /**/

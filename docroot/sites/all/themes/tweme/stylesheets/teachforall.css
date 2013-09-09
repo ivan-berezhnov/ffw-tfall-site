@@ -48,7 +48,7 @@ you can use the generic selector below, but it's slower:
 **/
 h1, .h1 { font-size: 42px; font-size: 2.47059rem; }
 
-h2, .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; }
+h2, .node .content .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; }
 
 h3, .h3 { font-size: 18px; font-size: 1.05882rem; }
 
@@ -74,7 +74,7 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 
 div.messages { margin: 20px 0; }
 
-.node .content h2, .node .content .no__spotlights { padding-top: 0; }
+.node .content h2, .node .content .no__spotlights { font-weight: normal; padding-top: 0; text-transform: uppercase; }
 
 #main { padding: 20px 0 0 0; }
 
@@ -163,7 +163,7 @@ div.messages { margin: 20px 0; }
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
-#feeds h2, #feeds .no__spotlights { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
+#feeds h2, #feeds .node .content .no__spotlights, .node .content #feeds .no__spotlights { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
 
 /**
 * #Footer
@@ -199,7 +199,7 @@ img { max-width: 100%; }
 .widget_supporters .title { color: #ffb151; font-family: "Fedra", serif; letter-spacing: 4px; display: block; margin-bottom: 10px; }
 .widget_supporters ul { padding: 0px; margin: 0px; }
 .widget_supporters ul li a { margin: 0px; }
-.widget_supporters p { font-size: 16px; font-size: 0.94118rem; line-height: 1.5em; }
+.widget_supporters p { color: #999999; font-size: 16px; font-size: 0.94118rem; line-height: 1.5em; }
 
 .fb-like-box { background-color: white; }
 
@@ -210,9 +210,11 @@ img { max-width: 100%; }
 **/
 .node-type-national-organization .title { color: #e69740; }
 
+.no__ceo a { display: block; }
+
 .no__image img { width: 100%; }
 
-.no__blurb { font-size: 32px; font-size: 1.88235rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
+.no__blurb { font-size: 36px; font-size: 2.11765rem; line-height: 1.1em; color: #91998c; margin: 20px 0; }
 
 .no__info-block { color: #cf4753; margin-bottom: 40px; }
 .no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
@@ -223,6 +225,6 @@ img { max-width: 100%; }
 .no__stat { margin-bottom: 10px; }
 .no__stat:last-child { margin-bottom: 0; }
 
-.no__spotlights { line-height: 1em; }
+.node .content .no__spotlights { line-height: 1em; text-transform: none; }
 
 /**/
