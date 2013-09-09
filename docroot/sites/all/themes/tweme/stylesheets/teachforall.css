@@ -2,7 +2,7 @@
 *   #Table of Contents
 **/
 /** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget
- ### NODES ### #National Organizations
+ ### NODES ### #National Organizations #Spotlight
 **/
 /**
 *   #Imports
@@ -67,16 +67,25 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 /**
 * #Global Elements
 **/
-.btn-primary { background-color: #e69740; background-image: none; border-radius: 0; border: none; box-shadow: none; font-family: inherit; }
+.content p:last-child { margin-bottom: 0; }
+
+label, input, button, select, textarea { font-size: 17px; font-size: 1rem; }
+
+html.js input.form-autocomplete { background-position: 100% 9px; }
+html.js input.throbbing { background-position: 100% -12px; }
+
+.btn { background-color: #dfd9c9; background-image: none; border-radius: 0; border: none; box-shadow: none; font-family: inherit; }
+
+.btn-primary { background-color: #e69740; }
 .btn-primary:hover { background-color: #cf4753; }
 
 .nav-tabs { padding-top: 20px; }
 
 div.messages { margin: 20px 0; }
 
-.node .content h2, .node .content .no__spotlights { font-weight: normal; padding-top: 0; text-transform: uppercase; }
+.page-node .content h2, .page-node .node .content .no__spotlights, .node .page-node .content .no__spotlights { color: #e69740; font-weight: normal; padding-top: 0; }
 
-#main { padding: 20px 0 0 0; }
+#main { padding: 20px 0; }
 
 .page-title { text-align: center; }
 
@@ -225,6 +234,10 @@ img { max-width: 100%; }
 .no__stat { margin-bottom: 10px; }
 .no__stat:last-child { margin-bottom: 0; }
 
-.node .content .no__spotlights { line-height: 1em; text-transform: none; }
+.node .content .no__spotlights { color: #e69740; line-height: 1em; text-transform: none; }
 
 /**/
+/**
+* #Spotlight
+**/
+.node-type-spotlight .content img { background-color: #dfd9c9; float: right; margin: 0 0 10px 5px; padding: 10px; }

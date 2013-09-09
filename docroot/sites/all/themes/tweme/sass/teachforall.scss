@@ -18,6 +18,7 @@
 
     ### NODES ###
     #National Organizations
+    #Spotlight
 **/
 
 /**
@@ -153,13 +154,40 @@ body {
 * #Global Elements
 **/
 
-.btn-primary {
-  background-color: $orange1;
+.content {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+label, input, button, select, textarea {
+  @include font-size(17);
+}
+
+html {
+  &.js {
+    input {
+      &.form-autocomplete {
+        background-position: 100% 9px;
+      }
+      &.throbbing {
+        background-position: 100% -12px;
+      }
+    }
+  }
+}
+
+.btn {
+  background-color: $beige;
   background-image: none;
   border-radius: 0;
   border: none;
   box-shadow: none;
   font-family: inherit;
+}
+
+.btn-primary {
+  background-color: $orange1;
   &:hover {
     background-color: $red;
   }
@@ -173,14 +201,14 @@ div.messages {
   margin: 20px 0;
 }
 
-.node .content h2 {
+.page-node .content h2 {
+  color: $orange1;
   font-weight: normal;
   padding-top: 0;
-  text-transform: uppercase;
 }
 
 #main {
-  padding: 20px 0 0 0;
+  padding: 20px 0;
 }
 
 .page-title {
@@ -664,6 +692,7 @@ img {max-width: 100%;}
 .node {
   .content {
     .no__spotlights {
+      color: $orange1;
       @extend h2;
       line-height: 1em;
       text-transform: none;
@@ -672,3 +701,18 @@ img {max-width: 100%;}
 }
 
 /**/
+
+/**
+* #Spotlight
+**/
+
+.node-type-spotlight {
+  .content {
+    img {
+      background-color: $beige;
+      float: right;
+      margin: 0 0 10px 5px;
+      padding: 10px;
+    }
+  }
+}
