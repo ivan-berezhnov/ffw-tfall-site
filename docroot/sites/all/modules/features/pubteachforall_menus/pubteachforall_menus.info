@@ -21,6 +21,5 @@ features[menu_custom][] = menu-uber-nav
 features[menu_custom][] = user-menu
 features[menu_links][] = main-menu:<front>
 features[menu_links][] = menu-primary-navigation:<front>
-features[menu_links][] = menu-uber-nav:<front>
 features[menu_links][] = user-menu:user
 features[menu_links][] = user-menu:user/logout

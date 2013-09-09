@@ -5,8 +5,8 @@
     </div>
     <div class="pull-right">
       <a class="donate" href="#">DONATE</a>
-      <a href="https://facebook.com/teachforall" class="social-media icon-twitter-sign"></a>
-      <a href="https://twitter.com/TeachForAll" class="social-media icon-facebook-sign"></a>
+      <a href="https://facebook.com/teachforall" class="social-media icon-twitter"></a>
+      <a href="https://twitter.com/TeachForAll" class="social-media icon-facebook"></a>
     </div>
   </div>
   <div class="row-fluid site-name">

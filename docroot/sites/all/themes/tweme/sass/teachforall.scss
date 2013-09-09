@@ -50,16 +50,56 @@
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/FSerStdA-Medium.otf');
+  src: url('../fonts/NewsGothic-Medium.otf');
        font-style: normal;
        font-weight: normal;
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../NewsGothic-DemiBold.otf');
+  src: url('../fonts/NewsGothic-DemiBold.otf');
        font-style: normal;
        font-weight: bold;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src:url('../fonts/icomoon.svg#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-vimeo2, .icon-facebook, .icon-linkedin, .icon-twitter {
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-vimeo2:before {
+  content: "\e000";
+}
+.icon-facebook:before {
+  content: "\e001";
+}
+.icon-linkedin:before {
+  content: "\e002";
+}
+.icon-twitter:before {
+  content: "\e003";
 }
 
 /**/
@@ -112,6 +152,10 @@ body {
 /**
 * #Global Elements
 **/
+
+.nav-tabs {
+  padding-top: 20px;
+}
 
 div.messages {
   margin: 20px 0;
