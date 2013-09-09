@@ -4,9 +4,13 @@
 			<?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
-      <a class="donate" href="#">DONATE</a>
-      <a href="https://facebook.com/teachforall" class="social-media icon-twitter"></a>
-      <a href="https://twitter.com/TeachForAll" class="social-media icon-facebook"></a>
+      <div class="donate pull-left">
+        <a href="#">DONATE</a>
+      </div>
+      <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-twitter"></a>
+      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-facebook"></a>
+      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
+      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo2"></a>
     </div>
   </div>
   <div class="row-fluid site-name">

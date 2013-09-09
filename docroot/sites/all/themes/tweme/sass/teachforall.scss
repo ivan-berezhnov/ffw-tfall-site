@@ -153,6 +153,18 @@ body {
 * #Global Elements
 **/
 
+.btn-primary {
+  background-color: $orange1;
+  background-image: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+  &:hover {
+    background-color: $red;
+  }
+}
+
 .nav-tabs {
   padding-top: 20px;
 }
@@ -166,7 +178,7 @@ div.messages {
 }
 
 #main {
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 
 .page-title {
@@ -206,13 +218,15 @@ div.messages {
 
 .donate {
   background-color: $orange1;
-  color: $white;
   font-family: "Fedra Serif";
   font-weight: bold;
   letter-spacing: 2px;
-  margin-top: -4px;
-  padding: 5px 5px 3px 5px;
+  margin: 5px 4px 0 0;
+  padding: 0 5px;
   @include font-size(11);
+  a {
+    color: $white;
+  }
   &:hover {
     background-color: $red;
     color: $white;
@@ -221,9 +235,9 @@ div.messages {
 }
 
 .social-media {
-  @include font-size(24);
   color: $grey1;
-  padding-top: 3px;
+  margin-right: 5px;
+  @include font-size(21);
   &:hover {
     color: $red;
     cursor: pointer;
@@ -245,7 +259,7 @@ div.messages {
     li {
       a {
         color: $beige;
-        padding: 16px 15px 13px 15px;
+        padding: 16px 25px 13px 25px;
         &:hover {
           background-color: $orange1;
           color: $white;
@@ -277,8 +291,8 @@ div.messages {
     text-transform: uppercase;
     @include font-size(12);
     ul {
-      margin-bottom: 0;
-      margin-top: 12px;
+      margin: 0 auto 12px;
+      width: 77.6%;
     }
     .content {
       > .menu {
@@ -316,7 +330,7 @@ div.messages {
           }
           a {
             display: block;
-            padding: 8px 8px 5px 15px;
+            padding: 8px 8px 5px 25px;
             @include font-size(16);
           }
         }
@@ -351,6 +365,9 @@ div.messages {
   font-weight: bold;
   .content {
     > .menu {
+      .menu a {
+        letter-spacing: 1px;
+      }
       position: relative;
       li:hover {
         .menu {
@@ -360,9 +377,12 @@ div.messages {
       li {
         position: relative;
         a {
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           &.active {
             color: $red;
+            &:hover {
+              color: $white;
+            }
           }
         }
         &.last {
@@ -403,7 +423,7 @@ div.messages {
         font-weight: normal;
         @include font-size(14);
         display: block;
-        margin: 0 3px 5px 3px;
+        margin: 0 3px 3px 3px;
         padding: 0;
         text-transform: none;
         &:hover {
