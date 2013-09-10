@@ -201,10 +201,11 @@ div.messages {
   margin: 20px 0;
 }
 
-.page-node .content h2 {
-  color: $orange1;
+.page-node .content .title {
   font-weight: normal;
+  letter-spacing: 2px;
   padding-top: 0;
+  text-transform: uppercase;
 }
 
 #main {
@@ -290,6 +291,7 @@ div.messages {
       a {
         color: $beige;
         padding: 16px 25px 13px 25px;
+        margin-left: -1px;
         &:hover {
           background-color: $orange1;
           color: $white;
@@ -322,7 +324,6 @@ div.messages {
     @include font-size(12);
     ul {
       margin: 0 auto 12px;
-      width: 77.6%;
     }
     .content {
       > .menu {
@@ -330,7 +331,10 @@ div.messages {
           border-right: 1px solid $orange1;
           height: 12px;
           line-height: 1.2em;
-          margin-top: 3px;
+          margin: 3px 0 0 0;
+          &:hover {
+            border-color: $grey2;
+          }
           &.last {
             border: none;
           }
@@ -339,7 +343,7 @@ div.messages {
           display: none;
           background-color: $grey2;
           left: 0;
-          margin: 12px 0 0 0;
+          margin: 12px 0 0 -1px;
           padding: 0;
           position: absolute;
           text-transform: none;
@@ -360,6 +364,7 @@ div.messages {
           }
           a {
             display: block;
+            margin: 0;
             padding: 8px 8px 5px 25px;
             @include font-size(16);
           }
@@ -490,6 +495,12 @@ div.messages {
         list-style-image: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar .region-main-navigation ul {
+    width: 77.6%;
   }
 }
 
@@ -692,10 +703,13 @@ img {max-width: 100%;}
 .node {
   .content {
     .no__spotlights {
-      color: $orange1;
       @extend h2;
       line-height: 1em;
       text-transform: none;
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
   }
 }
@@ -707,12 +721,30 @@ img {max-width: 100%;}
 **/
 
 .node-type-spotlight {
+  .title {
+    color: $orange1;
+  }
   .content {
     img {
       background-color: $beige;
       float: right;
       margin: 0 0 10px 5px;
       padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .node-type-spotlight {
+    .content {
+      img {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 2%;
+        width: 96%;
+        height: auto;
+      }
     }
   }
 }
