@@ -1,6 +1,6 @@
 <div class="container header">
   <div class="row-fluid">
-    <div class="uber-nav pull-left">
+    <div class="uber-nav pull-left hidden-phone">
 			<?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
