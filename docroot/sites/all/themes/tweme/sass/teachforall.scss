@@ -411,19 +411,30 @@ div.messages {
   font-weight: bold;
   .content {
     > .menu {
-      .menu a {
-        letter-spacing: 1px;
-      }
       position: relative;
-      li:hover {
-        .menu {
-          display: block;
-        }
-      }
-      li {
+      > li {
+        border-right: 1px solid $orange1;
+        float: left;
+        height: 8px;
+        line-height: .4em;
+        margin: 0;
+        padding: 0;
         position: relative;
-        a {
+        &:hover,
+        &.active {
+          border-color: $white;
+        }
+        &:last-child {
+          border-right: none;
+        }
+        > a {
           letter-spacing: 2px;
+          margin-left: -1px;
+          padding-left: 12px;
+          &:hover {
+            background-color: $orange1;
+            color: $white;
+          }
           &.active {
             color: $red;
             &:hover {
@@ -431,19 +442,17 @@ div.messages {
             }
           }
         }
-        &.last {
-          a {
-            border-right: none;
-          }
+      }
+      li:hover {
+        .menu {
+          display: block;
         }
       }
     }
   }
   a {
-    border-right: 1px solid $orange1;
     color: $grey5;
-    margin-left: -5px;
-    padding: 5px 10px 4px;
+    padding: 5px 10px;
     text-transform: uppercase;
     @include font-size(11);
     &:hover {
@@ -458,26 +467,23 @@ div.messages {
       display: none;
       background-color: $white;
       border: 1px solid $orange1;
-      left: -5px;
+      left: -1px;
+      top: 14px;
       position: absolute;
       width: 100px;
       z-index: 9999;
-      padding-left: 6px;
       text-align: left;
       a {
         border: none;
         font-weight: normal;
         @include font-size(14);
         display: block;
-        margin: 0 3px 3px 3px;
+        margin: 0 3px;
         padding: 0;
         text-transform: none;
         &:hover {
           background-color: transparent;
           color: $red;
-        }
-        &:first-child {
-          margin-top: 5px;
         }
         &.active {
           background-color: transparent;
@@ -485,21 +491,20 @@ div.messages {
       }
       li {
         display: block;
+        padding-top: 0;
+        &:first-child {
+          margin-top: 2px;
+        }
       }
     }
     > li {
-      display: inline;
-      margin: 0;
-      padding: 0;
-      a:hover {
-        background-color: $orange1;
-        color: $white;
-      }
+
     }
   }
   ul {
     li {
-      line-height: 1em;
+      list-style-type: none;
+      list-style-image: none;
       &.expanded,
       &.leaf {
         list-style-type: none;
