@@ -23,7 +23,7 @@
   </div>
   <div class="row-fluid site-name">
     <div class="span12">
-      <a href="/"><img src="/sites/all/themes/tweme/images/logo.png" /></a>
+      <a href="/"><img src="/sites/all/themes/tweme/images/teach-for-all-logo@x2.png" /></a>
     </div>
   </div>
 </div>
