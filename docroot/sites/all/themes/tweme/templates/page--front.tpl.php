@@ -101,8 +101,8 @@
 					todo: carousel
 				</div>
 				<br />
-				<div class="page-title">
-					<h2>The Global Network for Expanding Educational Opportunity</h2>
+				<div>
+					<h2 class="page-title">The Global Network for Expanding Educational Opportunity</h2>
 				</div>
 				<div style="border:2px red solid;padding:5px">
 					todo: insights
