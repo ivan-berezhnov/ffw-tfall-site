@@ -24,23 +24,25 @@
 
 @font-face { font-family: "News Gothic"; src: url("../fonts/NewsGothic-DemiBold.otf"); font-style: normal; font-weight: bold; }
 
-@font-face { font-family: "icomoon"; src: url("../fonts/icomoon.svg#icomoon") format("svg"); src: url("../fonts/icomoon.eot"); src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "icomoon"; src: url("../fonts/icomoon.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "icomoon"; src: url("../fonts/icomoon.svg") format("svg"); font-weight: normal; font-style: normal; }
 
 /* Use the following CSS code if you want to have a class per icon */
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
-[class*="icon-"] {
+[class*="ico-"] {
 */
-.icon-vimeo2, .icon-facebook, .icon-linkedin, .icon-twitter { font-family: "icomoon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
+.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
 
-.icon-vimeo2:before { content: "\e000"; }
+.ico-facebook:before { content: "\e000"; }
 
-.icon-facebook:before { content: "\e001"; }
+.ico-vimeo:before { content: "\e001"; }
 
-.icon-linkedin:before { content: "\e002"; }
+.ico-twitter:before { content: "\e002"; }
 
-.icon-twitter:before { content: "\e003"; }
+.ico-linkedin:before { content: "\e003"; }
 
 /**/
 /**
@@ -106,12 +108,12 @@ div.messages { margin: 20px 0; }
 .site-name { text-align: center; }
 .site-name img { margin-bottom: 20px; width: 65%; }
 
-.donate { background-color: #e69740; font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; margin: 5px 4px 0 0; padding: 0 5px; font-size: 11px; font-size: 0.64706rem; }
+.donate { background-color: #e69740; font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; margin-right: 4px; padding: 0 5px; font-size: 11px; font-size: 0.64706rem; }
 .donate a { color: white; }
 .donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
 
-.social-media { color: #91998c; margin-right: 5px; font-size: 21px; font-size: 1.23529rem; }
-.social-media:hover { color: #cf4753; cursor: pointer; text-decoration: none; }
+.social-media { background-color: #91998c; color: white; line-height: 1.3em; padding: 2px 3px; font-size: 17px; font-size: 1rem; }
+.social-media:hover { background-color: #cf4753; color: white; cursor: pointer; text-decoration: none; }
 .social-media[class*=" icon-"] { vertical-align: middle; }
 
 /**/
@@ -164,7 +166,7 @@ div.messages { margin: 20px 0; }
 .uber-nav ul li { list-style-type: none; list-style-image: none; }
 .uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
 
-@media screen and (min-width: 1200px) { .navbar .region-main-navigation ul { width: 77.6%; } }
+@media screen and (min-width: 1200px) { .navbar .region-main-navigation ul { width: 78.7%; } }
 /**/
 /**
 * #worldmap
@@ -219,6 +221,7 @@ img { max-width: 100%; }
 /**
 * #Marquee
 **/
+.marquee { background-color: #91998c; }
 .marquee img { display: block; height: auto; width: 100%; }
 
 .marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }

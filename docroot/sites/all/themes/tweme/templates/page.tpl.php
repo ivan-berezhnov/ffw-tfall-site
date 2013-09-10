@@ -15,10 +15,10 @@
       <div class="donate pull-left">
         <a href="#">DONATE</a>
       </div>
-      <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-twitter"></a>
-      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-facebook"></a>
-      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
-      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo2"></a>
+      <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-twitter"></a>
+      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
+      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
+      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
     </div>
   </div>
   <div class="row-fluid site-name">

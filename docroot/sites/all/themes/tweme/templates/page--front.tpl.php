@@ -5,12 +5,12 @@
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="#">DONATE</a>
+        <a href="#"><?php print t('DONATE'); ?></a>
       </div>
-      <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-twitter"></a>
-      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-facebook"></a>
-      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
-      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo2"></a>
+      <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-twitter"></a>
+      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
+      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
+      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
     </div>
   </div>
   <div class="row-fluid site-name">
@@ -41,34 +41,36 @@
 	</div>
 <?php endif ?>
 
-<div class="container marquee">
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="marquee__large">
-        <div class="marquee__1" data-effeckt-type="cover-fade">
-          <img src="/sites/all/themes/tweme/images/marquee_large.jpg" />
-          <div class="marquee__hover">
-            <div class="marquee__info-wrapper">
-              <div class="marquee__category slug">Supporter Spotlight</div>
-              <h2 class="marquee__title">Student Voice: Learning to be a Super Hero</h2>
-              <div class="marquee__preview">The students of Nirali Vasisht (Teach For India)
-                talk about their vision and the skills they learn in the classroom.</div>
-              <div class="marquee__link">Watch Video >></div>
+<div class="container-wrapper marquee">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="marquee__large">
+          <div class="marquee__1" data-effeckt-type="cover-fade">
+            <img src="/sites/all/themes/tweme/images/marquee_large.jpg" />
+            <div class="marquee__hover">
+              <div class="marquee__info-wrapper">
+                <div class="marquee__category slug">Supporter Spotlight</div>
+                <h2 class="marquee__title">Student Voice: Learning to be a Super Hero</h2>
+                <div class="marquee__preview">The students of Nirali Vasisht (Teach For India)
+                  talk about their vision and the skills they learn in the classroom.</div>
+                <div class="marquee__link">Watch Video >></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="marquee__small hidden-phone">
-        <div class="marquee__2">
-          <img src="/sites/all/themes/tweme/images/marquee-small1.jpg" />
+        <div class="marquee__small hidden-phone">
+          <div class="marquee__2">
+            <img src="/sites/all/themes/tweme/images/marquee-small1.jpg" />
+          </div>
+          <div class="marquee__3">
+            <img src="/sites/all/themes/tweme/images/marquee-small2.jpg" />
+          </div>
         </div>
-        <div class="marquee__3">
-          <img src="/sites/all/themes/tweme/images/marquee-small2.jpg" />
-        </div>
-      </div>
-      <div class="marquee__medium hidden-phone">
-        <div class="marquee__4">
-          <img src="/sites/all/themes/tweme/images/marquee-vertical1.jpg" />
+        <div class="marquee__medium hidden-phone">
+          <div class="marquee__4">
+            <img src="/sites/all/themes/tweme/images/marquee-vertical1.jpg" />
+          </div>
         </div>
       </div>
     </div>

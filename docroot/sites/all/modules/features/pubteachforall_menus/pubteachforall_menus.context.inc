@@ -32,6 +32,12 @@ function pubteachforall_menus_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'menu-menu-uber-nav' => array(
+          'module' => 'menu',
+          'delta' => 'menu-uber-nav',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
       ),
     ),
   );

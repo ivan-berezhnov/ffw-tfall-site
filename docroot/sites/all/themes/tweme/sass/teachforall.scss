@@ -66,11 +66,14 @@
 
 @font-face {
   font-family: "icomoon";
-  src:url('../fonts/icomoon.svg#icomoon') format('svg');
-  src:url('../fonts/icomoon.eot');
-  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.ttf') format('truetype');
+  src:url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src:url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -79,10 +82,10 @@
 /*
 Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
-[class*="icon-"] {
+[class*="ico-"] {
 */
-.icon-vimeo2, .icon-facebook, .icon-linkedin, .icon-twitter {
-  font-family: "icomoon";
+.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin {
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -91,16 +94,16 @@ you can use the generic selector below, but it's slower:
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-vimeo2:before {
+.ico-facebook:before {
   content: "\e000";
 }
-.icon-facebook:before {
+.ico-vimeo:before {
   content: "\e001";
 }
-.icon-linkedin:before {
+.ico-twitter:before {
   content: "\e002";
 }
-.icon-twitter:before {
+.ico-linkedin:before {
   content: "\e003";
 }
 
@@ -263,7 +266,7 @@ div.messages {
   font-family: "Fedra Serif";
   font-weight: bold;
   letter-spacing: 2px;
-  margin: 5px 4px 0 0;
+  margin-right: 4px;
   padding: 0 5px;
   @include font-size(11);
   a {
@@ -277,11 +280,14 @@ div.messages {
 }
 
 .social-media {
-  color: $grey1;
-  margin-right: 5px;
-  @include font-size(21);
+  background-color: $grey1;
+  color: $white;
+  line-height: 1.3em;
+  padding: 2px 3px;
+  @include font-size(17);
   &:hover {
-    color: $red;
+    background-color: $red;
+    color: $white;
     cursor: pointer;
     text-decoration: none;
   }
@@ -516,7 +522,7 @@ div.messages {
 
 @media screen and (min-width: 1200px) {
   .navbar .region-main-navigation ul {
-    width: 77.6%;
+    width: 78.7%;
   }
 }
 
@@ -667,6 +673,7 @@ img {max-width: 100%;}
 **/
 
 .marquee {
+  background-color: $grey1;
   img {
     display: block;
     height: auto;

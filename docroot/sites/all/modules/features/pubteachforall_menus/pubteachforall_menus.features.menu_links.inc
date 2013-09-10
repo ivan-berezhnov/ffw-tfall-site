@@ -42,7 +42,7 @@ function pubteachforall_menus_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => 0,
     'external' => 1,
-    'has_children' => 1,
+    'has_children' => 0,
     'expanded' => 1,
     'weight' => -50,
   );
