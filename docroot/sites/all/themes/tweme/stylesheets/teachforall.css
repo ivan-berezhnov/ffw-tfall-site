@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee
  ### NODES ### #National Organizations #Spotlight
 **/
 /**
@@ -48,7 +48,7 @@ you can use the generic selector below, but it's slower:
 **/
 h1, .h1 { font-size: 42px; font-size: 2.47059rem; }
 
-h2, .node .content .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; }
+h2, .node .content .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; line-height: 1em; }
 
 h3, .h3 { font-size: 18px; font-size: 1.05882rem; }
 
@@ -67,6 +67,8 @@ body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Goth
 /**
 * #Global Elements
 **/
+.search-form .input-append .btn { border: 1px solid #ccc; }
+
 .content p:last-child { margin-bottom: 0; }
 
 label, input, button, select, textarea { font-size: 17px; font-size: 1rem; }
@@ -102,7 +104,7 @@ div.messages { margin: 20px 0; }
 .header { margin-top: 10px; }
 
 .site-name { text-align: center; }
-.site-name img { margin-bottom: 20px; }
+.site-name img { margin-bottom: 20px; width: 65%; }
 
 .donate { background-color: #e69740; font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; margin: 5px 4px 0 0; padding: 0 5px; font-size: 11px; font-size: 0.64706rem; }
 .donate a { color: white; }
@@ -214,6 +216,27 @@ img { max-width: 100%; }
 
 .fb-like-box { background-color: white; }
 
+/**/
+/**
+* #Marquee
+**/
+.marquee img { display: block; height: auto; width: 100%; }
+
+.marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }
+
+.marquee__title { color: white; font-weight: normal; }
+
+.marquee__large { background-color: black; float: left; position: relative; width: 50%; }
+
+.marquee__medium { background-color: #cf4753; float: right; width: 25%; }
+
+.marquee__small { background-color: #e69740; float: left; width: 25%; }
+
+.marquee__hover { background-color: #3b3835; box-sizing: border-box; -moz-box-sizing: border-box; opacity: 0; height: 100%; position: absolute; top: 0; left: 0; width: 100%; -webkit-transition: 500ms; -o-transition: 500ms; transition: 500ms; }
+
+.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover { opacity: .8; }
+
+@media screen and (max-width: 767px) { .marquee__large { width: 100%; } }
 /**/
 /* ### NODES ### */
 /**

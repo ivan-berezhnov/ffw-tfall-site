@@ -15,6 +15,7 @@
     #Footer
     #Images
     #Supporters Widget
+    #Marquee
 
     ### NODES ###
     #National Organizations
@@ -116,6 +117,7 @@ h1, .h1 {
 h2, .h2 {
   @include font-size(25);
   font-family: "Fedra Serif", serif;
+  line-height: 1em;
 }
 
 h3, .h3 {
@@ -153,6 +155,14 @@ body {
 /**
 * #Global Elements
 **/
+
+.search-form {
+  .input-append {
+    .btn {
+      border: 1px solid #ccc;
+    }
+  }
+}
 
 .content {
   p:last-child {
@@ -244,6 +254,7 @@ div.messages {
   text-align: center;
   img {
     margin-bottom: 20px;
+    width: 65%;
   }
 }
 
@@ -642,6 +653,77 @@ img {max-width: 100%;}
 
 .fb-like-box {
 	background-color: $white;
+}
+
+/**/
+
+/**
+* #Marquee
+**/
+
+.marquee {
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.marquee__info-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 70%;
+}
+
+.marquee__title {
+  color: $white;
+  font-weight: normal;
+}
+
+.marquee__large {
+  background-color: $black;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.marquee__medium {
+  background-color: $red;
+  float: right;
+  width: 25%;
+}
+
+.marquee__small {
+  background-color: $orange1;
+  float: left;
+  width: 25%;
+}
+
+.marquee__hover {
+  background-color: $grey3;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover,
+.marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 767px) {
+  .marquee__large {
+    width: 100%;
+  }
 }
 
 /**/
