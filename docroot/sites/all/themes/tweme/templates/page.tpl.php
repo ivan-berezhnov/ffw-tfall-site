@@ -8,7 +8,7 @@
 ?>
 <div class="container header">
   <div class="row-fluid">
-    <div class="uber-nav pull-left">
+    <div class="uber-nav pull-left hidden-phone">
       <?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
@@ -22,8 +22,8 @@
     </div>
   </div>
   <div class="row-fluid site-name">
-    <div class="span12">
-      <a href="/"><img src="/sites/all/themes/tweme/images/teach-for-all-logo@x2.png" /></a>
+    <div class="span6 offset3">
+      <a href="/"><img src="/sites/all/themes/tweme/images/teach-for-all-logo@x2.png" srcset="/sites/all/themes/tweme/images/logo.png 1x, /sites/all/themes/tweme/images/logo.png 1.5x, /sites/all/themes/tweme/images/teach-for-all-logo@x2.png 2x"></a>
     </div>
   </div>
 </div>

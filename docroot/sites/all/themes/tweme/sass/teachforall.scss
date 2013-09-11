@@ -214,10 +214,12 @@ div.messages {
 }
 
 .page-node .content .title {
+  color: $orange1;
   font-weight: normal;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   padding-top: 0;
   text-transform: uppercase;
+  @include font-size(26);
 }
 
 #main {
@@ -354,7 +356,7 @@ div.messages {
           line-height: 1.2em;
           margin: 3px 0 0 0;
           &:hover {
-            border-color: $grey2;
+            border-color: $grey3;
           }
           &.last {
             border: none;
@@ -776,12 +778,6 @@ img {max-width: 100%;}
 * #National Organizations
 **/
 
-.node-type-national-organization {
-  .title {
-    color: $orange1;
-  }
-}
-
 .no__ceo {
   a {
     display: block;
@@ -803,9 +799,13 @@ img {max-width: 100%;}
 
 .no__info-block {
   color: $red;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   .field-item {
     @include font-size(18);
+  }
+  a {
+    @include font-size(18);
+    font-weight: bold;
   }
 }
 

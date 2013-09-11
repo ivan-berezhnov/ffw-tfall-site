@@ -15,7 +15,7 @@
   </div>
   <div class="row-fluid site-name">
     <div class="span12">
-      <a href="/"><img src="/sites/all/themes/tweme/images/logo.png" /></a>
+      <a href="/"><img src="/sites/all/themes/tweme/images/teach-for-all-logo@x2.png" srcset="/sites/all/themes/tweme/images/logo.png 1x, /sites/all/themes/tweme/images/logo.png 1.5x, /sites/all/themes/tweme/images/teach-for-all-logo@x2.png 2x"></a>
     </div>
   </div>
 </div>
