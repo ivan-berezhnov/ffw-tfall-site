@@ -20,6 +20,7 @@
     ### NODES ###
     #National Organizations
     #Spotlight
+    #News
 **/
 
 /**
@@ -112,21 +113,43 @@ you can use the generic selector below, but it's slower:
 **/
 
 h1, .h1 {
+  color: $grey2;
+  font-family: "Fedra Serif", serif;
+  font-weight: normal;
+  line-height: 48px;
+  margin-bottom: 5px;
   @include font-size(42);
+  @media screen and (max-width: 767px) {
+    @include font-size(25);
+    line-height: 29px;
+  }
 }
 
 h2, .h2 {
   @include font-size(25);
   font-family: "Fedra Serif", serif;
   font-weight: normal;
-  line-height: 1em;
+  line-height: 29px;
+  @media screen and (max-width: 767px) {
+    @include font-size(18);
+    line-height: 22px;
+  }
 }
 
 h3, .h3 {
+  font-family: "Fedra Serif", serif;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0 0 5px 0;
   @include font-size(18);
+  @media screen and (max-width: 767px) {
+    line-height: 20px;
+    @include font-size(16);
+  }
 }
 
 h4, .h4 {
+  line-height: 20px;
   @include font-size(16);
 }
 
@@ -157,6 +180,17 @@ body {
 /**
 * #Global Elements
 **/
+
+.full-list {
+  background-color: $grey1;
+  color: $white;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 6px 12px 5px 12px;
+  text-transform: uppercase;
+  @include font-size(14);
+}
 
 .search-form {
   .input-append {
@@ -875,3 +909,22 @@ img {max-width: 100%;}
     }
   }
 }
+
+/**/
+
+/**
+* #News
+**/
+
+.news__image {
+  margin: 10px 0;
+  img {
+    width: 100%;
+  }
+}
+
+.news__content {
+  margin-bottom: 10px;
+}
+
+/**/

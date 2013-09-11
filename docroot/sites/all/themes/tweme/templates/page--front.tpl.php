@@ -94,7 +94,7 @@
 			<!-- Content -->
 			<section id="content" class="span<?php print $content_cols ?>">
 				<div>
-					<h2 class="page-title">The Global Network for Expanding Educational Opportunity</h2>
+					<h2 class="page-title"><?php print t('The Global Network for Expanding Educational Opportunity'); ?></h2>
 				</div>
 			</section>
 		</div>
@@ -103,15 +103,9 @@
 
 <!-- world map -->
 <div id="worldmap" class="container-wrapper">
-	<div class="container">
-		<div class="row-fluid">
-			<div class="span12">
 				<?php if (module_exists('widget_map')): ?>
 					<?php print render(widget_map_embed()); ?>
 				<?php endif; ?>
-			</div>
-		</div>
-	</div>
 </div>
 
 <!-- insights -->
