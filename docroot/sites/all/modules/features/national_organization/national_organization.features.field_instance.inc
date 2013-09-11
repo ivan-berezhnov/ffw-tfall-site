@@ -92,6 +92,50 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_alumni_spotlight'
+  $field_instances['node-national_organization-field_alumni_spotlight'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'teaser',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_alumni_spotlight',
+    'label' => 'Alumni Spotlight',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_avg_total_years_of_edu'
   $field_instances['node-national_organization-field_avg_total_years_of_edu'] = array(
     'bundle' => 'national_organization',
@@ -789,6 +833,50 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_teacher_spotlight'
+  $field_instances['node-national_organization-field_teacher_spotlight'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'teaser',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_teacher_spotlight',
+    'label' => 'Teacher Spotlight',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_teachers_active'
   $field_instances['node-national_organization-field_teachers_active'] = array(
     'bundle' => 'national_organization',
@@ -834,6 +922,7 @@ function national_organization_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Active Flag');
   t('Alumni');
+  t('Alumni Spotlight');
   t('Avg. Total Years of Education');
   t('Blurb');
   t('CEO Profile');
@@ -850,6 +939,7 @@ function national_organization_field_default_field_instances() {
   t('Program Launched');
   t('Schools');
   t('Spotlights');
+  t('Teacher Spotlight');
   t('Teachers Active');
   t('Twitter API key');
   t('blurb/compelling statistic text');

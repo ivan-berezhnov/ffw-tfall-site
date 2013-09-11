@@ -103,9 +103,9 @@
 
 <!-- world map -->
 <div id="worldmap" class="container-wrapper">
-				<?php if (module_exists('widget_map')): ?>
-					<?php print render(widget_map_embed()); ?>
-				<?php endif; ?>
+	<?php if (module_exists('widget_map')): ?>
+		<?php print render(widget_map_embed()); ?>
+	<?php endif; ?>
 </div>
 
 <!-- insights -->

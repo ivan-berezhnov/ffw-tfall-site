@@ -15,7 +15,7 @@
 				</div>
 
 				<div class="news__date">
-					<?php print format_date($node->published_at, 'short'); ?> | <?php print render($content['field_category']); ?>
+					<?php print format_date($node->published_at, 'short'); ?> | <span class="news__category"><?php print render($content['field_category']); ?></span>
 				</div>
 
 				<div class="news__image">
@@ -32,6 +32,8 @@
 
 				<div class="row-fluid">
 				  <div class="span12">
+				  	#Todo: Share on FB<br />
+				  	#Todo: Share on TW<br />
 				  	<a href="/">
 							<div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
 						</a>
@@ -42,7 +44,7 @@
 
   	  <div class="span3">
   	  	<?php print render($page['sidebar_second']) ?>
-  	  	<div class="twitter__sidebar">Todo: Twitter</div>
+  	  	<div class="twitter__sidebar">#Todo: Twitter</div>
   	  	<div class="facebook__sidebar hidden-tablet">
   	  		<?php if (module_exists('widget_facebook')): ?>
 						<?php print render(widget_facebook_embed_homepage()); ?>

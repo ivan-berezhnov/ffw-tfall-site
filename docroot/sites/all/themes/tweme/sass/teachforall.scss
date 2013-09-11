@@ -153,6 +153,14 @@ h4, .h4 {
   @include font-size(16);
 }
 
+.blurb {
+  font-weight: bold;
+  @include font-size(36);
+  line-height: 38px;
+  color: $grey1;
+  margin: 20px 0;
+}
+
 a {
   color: $red;
   &:hover {
@@ -169,10 +177,6 @@ body {
 
 .small-body {
   @include font-size(16);
-}
-
-.blurb {
-  @include font-size(36);
 }
 
 /**/
@@ -251,6 +255,7 @@ div.messages {
   color: $orange1;
   font-weight: normal;
   letter-spacing: 5px;
+  line-height: 30px;
   padding-top: 0;
   text-transform: uppercase;
   @include font-size(26);
@@ -455,6 +460,7 @@ div.messages {
 
 .uber-nav {
   font-weight: bold;
+  margin-top: -5px;
   .content {
     > .menu {
       position: relative;
@@ -828,10 +834,7 @@ img {max-width: 100%;}
 }
 
 .no__blurb {
-  @include font-size(36);
-  line-height: 1.1em;
-  color: $grey1;
-  margin: 20px 0;
+  @extend .blurb;
 }
 
 .no__info-block {
@@ -891,20 +894,13 @@ img {max-width: 100%;}
       float: right;
       margin: 0 0 10px 5px;
       padding: 10px;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .node-type-spotlight {
-    .content {
-      img {
+      width: 35%;
+      @media screen and (max-width: 500px) {
         float: none;
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 2%;
         width: 96%;
-        height: auto;
       }
     }
   }
@@ -917,7 +913,7 @@ img {max-width: 100%;}
 **/
 
 .news__image {
-  margin: 10px 0;
+  margin: 20px 0;
   img {
     width: 100%;
   }

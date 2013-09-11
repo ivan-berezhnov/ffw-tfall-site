@@ -97,7 +97,7 @@
 					<div class="span12">
 						<?php print render($content['field_spotlights']); ?>
 					</div>
-					
+
 				</div>
       </div>
       <div class="span3">
@@ -110,11 +110,12 @@
       </div>
     </div>
 
-		<div class="row-fluid">
-				<?php if (module_exists('widget_map')): ?>
-					<?php print render(widget_map_embed()); ?>
-				<?php endif; ?>
-		</div>
-		
   </div>
+</div>
+
+<!-- world map -->
+<div id="worldmap" class="container-wrapper">
+  <?php if (module_exists('widget_map')): ?>
+    <?php print render(widget_map_embed()); ?>
+  <?php endif; ?>
 </div>
