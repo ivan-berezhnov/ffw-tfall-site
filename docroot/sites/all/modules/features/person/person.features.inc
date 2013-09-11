@@ -26,7 +26,7 @@ function person_views_api($module = NULL, $api = NULL) {
 function person_node_info() {
   $items = array(
     'person' => array(
-      'name' => t('Person'),
+      'name' => t('person'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
