@@ -86,21 +86,19 @@
       </div>
       <div class="span6">
         <div class="no__image">
-          <?php print render($content['field_no_image']); ?>
+					<?php print render($content['field_no_image']); ?>
         </div>
         <div class="no__blurb">
-          <?php print render($content['field_blurb']); ?>
+					<?php print render($content['field_blurb']); ?>
         </div>
 
 				<div class="row-fluid no__spotlights">
-					<div class="span6">
-						<?php print render($content['field_teacher_spotlight']); ?>
-					</div>
-					<div class="span6">
-						<?php print render($content['field_alumni_spotlight']); ?>
-					</div>
-				</div>
 
+					<div class="span12">
+						<?php print render($content['field_spotlights']); ?>
+					</div>
+					
+				</div>
       </div>
       <div class="span3">
 
@@ -112,5 +110,11 @@
       </div>
     </div>
 
+		<div class="row-fluid">
+				<?php if (module_exists('widget_map')): ?>
+					<?php print render(widget_map_embed()); ?>
+				<?php endif; ?>
+		</div>
+		
   </div>
 </div>

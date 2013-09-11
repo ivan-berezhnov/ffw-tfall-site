@@ -22,11 +22,11 @@ function national_organization_field_default_field_instances() {
     'description' => 'Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 20,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -47,7 +47,7 @@ function national_organization_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -63,7 +63,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -92,50 +92,6 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-national_organization-field_alumni_spotlight'
-  $field_instances['node-national_organization-field_alumni_spotlight'] = array(
-    'bundle' => 'national_organization',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => 0,
-          'view_mode' => 'teaser',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_alumni_spotlight',
-    'label' => 'Alumni Spotlight',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 11,
-    ),
-  );
-
   // Exported field_instance: 'node-national_organization-field_avg_total_years_of_edu'
   $field_instances['node-national_organization-field_avg_total_years_of_edu'] = array(
     'bundle' => 'national_organization',
@@ -148,7 +104,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -228,10 +184,11 @@ function national_organization_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => 1,
+          'links' => 0,
+          'view_mode' => 'teaser',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 21,
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -272,7 +229,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -313,7 +270,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -337,7 +294,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -353,7 +310,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -377,7 +334,7 @@ function national_organization_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -393,7 +350,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -433,7 +390,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -484,7 +441,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'google_map_field',
         'settings' => array(),
         'type' => 'google_map_field_formatter_wkt',
-        'weight' => 19,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -506,7 +463,7 @@ function national_organization_field_default_field_instances() {
       'module' => 'google_map_field',
       'settings' => array(),
       'type' => 'google_map_field_widget',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -574,7 +531,7 @@ function national_organization_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -677,7 +634,7 @@ function national_organization_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_integer',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -718,7 +675,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -759,7 +716,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -788,8 +745,8 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-national_organization-field_teacher_spotlight'
-  $field_instances['node-national_organization-field_teacher_spotlight'] = array(
+  // Exported field_instance: 'node-national_organization-field_spotlights'
+  $field_instances['node-national_organization-field_spotlights'] = array(
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
@@ -803,7 +760,7 @@ function national_organization_field_default_field_instances() {
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -813,8 +770,8 @@ function national_organization_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_teacher_spotlight',
-    'label' => 'Teacher Spotlight',
+    'field_name' => 'field_spotlights',
+    'label' => 'Spotlights',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -844,7 +801,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number_unformatted',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -877,7 +834,6 @@ function national_organization_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Active Flag');
   t('Alumni');
-  t('Alumni Spotlight');
   t('Avg. Total Years of Education');
   t('Blurb');
   t('CEO Profile');
@@ -893,7 +849,7 @@ function national_organization_field_default_field_instances() {
   t('Population');
   t('Program Launched');
   t('Schools');
-  t('Teacher Spotlight');
+  t('Spotlights');
   t('Teachers Active');
   t('Twitter API key');
   t('blurb/compelling statistic text');

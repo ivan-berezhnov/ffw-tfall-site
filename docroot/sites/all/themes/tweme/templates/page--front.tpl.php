@@ -88,28 +88,16 @@
 
 <!-- Main -->
 <div id="main">
-  <div class="container">
+	<div class="container">
 		<?php print $messages ?>
-    <div class="row row-toggle">
-
-
-      <!-- Content -->
-      <section id="content" class="span<?php print $content_cols ?>">
-
-
-				<div style="border:2px red solid;padding:5px">
-					todo: carousel
-				</div>
-				<br />
+		<div class="row row-toggle">
+			<!-- Content -->
+			<section id="content" class="span<?php print $content_cols ?>">
 				<div>
 					<h2 class="page-title">The Global Network for Expanding Educational Opportunity</h2>
 				</div>
-				<div style="border:2px red solid;padding:5px">
-					todo: insights
-				</div>
-				<br />
-      </section>
-    </div>
+			</section>
+		</div>
 	</div>
 </div>
 
@@ -118,7 +106,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-				<?php if (module_exists('widget_facebook')): ?>
+				<?php if (module_exists('widget_map')): ?>
 					<?php print render(widget_map_embed()); ?>
 				<?php endif; ?>
 			</div>

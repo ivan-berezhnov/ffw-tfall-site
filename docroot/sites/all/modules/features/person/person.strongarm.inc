@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * ceo.strongarm.inc
+ * person.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function ceo_strongarm() {
+function person_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__ceo';
+  $strongarm->name = 'field_bundle_settings_node__person';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -50,44 +50,47 @@ function ceo_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__ceo'] = $strongarm;
+  $export['field_bundle_settings_node__person'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_ceo';
-  $strongarm->value = array();
-  $export['menu_options_ceo'] = $strongarm;
+  $strongarm->name = 'menu_options_person';
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
+  $export['menu_options_person'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_ceo';
+  $strongarm->name = 'menu_parent_person';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_ceo'] = $strongarm;
+  $export['menu_parent_person'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_ceo';
+  $strongarm->name = 'node_options_person';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
-  $export['node_options_ceo'] = $strongarm;
+  $export['node_options_person'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_ceo';
-  $strongarm->value = '1';
-  $export['node_preview_ceo'] = $strongarm;
+  $strongarm->name = 'node_preview_person';
+  $strongarm->value = '0';
+  $export['node_preview_person'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_ceo';
+  $strongarm->name = 'node_submitted_person';
   $strongarm->value = 1;
-  $export['node_submitted_ceo'] = $strongarm;
+  $export['node_submitted_person'] = $strongarm;
 
   return $export;
 }
