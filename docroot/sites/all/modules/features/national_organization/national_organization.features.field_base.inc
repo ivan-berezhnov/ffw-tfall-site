@@ -52,49 +52,6 @@ function national_organization_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_alumni_spotlight'
-  $field_bases['field_alumni_spotlight'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_alumni_spotlight',
-    'foreign keys' => array(
-      'node' => array(
-        'columns' => array(
-          'target_id' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'spotlight' => 'spotlight',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
   // Exported field_base: 'field_avg_total_years_of_edu'
   $field_bases['field_avg_total_years_of_edu'] = array(
     'active' => 1,
@@ -163,18 +120,17 @@ function national_organization_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'ceo' => 'ceo',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'person_entity_reference',
         ),
       ),
       'target_type' => 'node',
@@ -456,13 +412,13 @@ function national_organization_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
-  // Exported field_base: 'field_teacher_spotlight'
-  $field_bases['field_teacher_spotlight'] = array(
+  // Exported field_base: 'field_spotlights'
+  $field_bases['field_spotlights'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => 2,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_teacher_spotlight',
+    'field_name' => 'field_spotlights',
     'foreign keys' => array(
       'node' => array(
         'columns' => array(

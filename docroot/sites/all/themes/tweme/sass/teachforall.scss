@@ -543,6 +543,10 @@ div.messages {
 	padding:0px;
 }
 
+#map {
+	width:100%;
+	height:580px;
+}
 
 /**
 * #Feeds
@@ -629,7 +633,6 @@ div.messages {
 **/
 
 img {max-width: 100%;}
-#googlemap img { max-width: none; }
 
 /**/
 

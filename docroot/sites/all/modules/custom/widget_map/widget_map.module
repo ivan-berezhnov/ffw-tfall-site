@@ -15,7 +15,8 @@ function widget_map_theme($existing, $type, $theme, $path) {
 
 function widget_map_embed() {
 	drupal_add_js(drupal_get_path('module','widget_map').'/assets/widget_map.js');
-	drupal_add_js('external','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false');
+	drupal_add_js(drupal_get_path('module','widget_map').'/assets/mapbox.js');
+	drupal_add_css(drupal_get_path('module','widget_map').'/assets/mapbox.css');
 
 	return theme('widget_map');	
 }
