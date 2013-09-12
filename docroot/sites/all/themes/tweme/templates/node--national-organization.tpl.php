@@ -101,7 +101,9 @@
 
 				<?php //temporary! generic facebook like-box... awaiting response TFAPW-56 ?>
 				<?php if (module_exists('widget_facebook')): ?>
-					<?php print render(widget_facebook_embed_homepage()); ?>
+					<?php $widget_facebook = widget_facebook_embed_homepage();
+            print render($widget_facebook);
+          ?>
 				<?php endif; ?>
 
       </div>
@@ -113,6 +115,8 @@
 <!-- world map -->
 <div id="worldmap" class="container-wrapper">
   <?php if (module_exists('widget_map')): ?>
-    <?php print render(widget_map_embed()); ?>
+    <?php $widget_map = widget_map_embed();
+      print render($widget_map);
+    ?>
   <?php endif; ?>
 </div>

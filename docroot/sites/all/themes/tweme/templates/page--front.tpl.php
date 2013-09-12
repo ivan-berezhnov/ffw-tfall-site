@@ -94,7 +94,7 @@
 			<!-- Content -->
 			<section id="content" class="span<?php print $content_cols ?>">
 				<div>
-					<h2 class="page-title"><?php print t('The Global Network for Expanding Educational Opportunity'); ?></h2>
+					<h2 class="site-slogan"><?php print t('The Global Network for Expanding Educational Opportunity'); ?></h2>
 				</div>
 			</section>
 		</div>
@@ -104,7 +104,9 @@
 <!-- world map -->
 <div id="worldmap" class="container-wrapper">
 	<?php if (module_exists('widget_map')): ?>
-		<?php print render(widget_map_embed()); ?>
+    <?php $widget_map = widget_map_embed();
+      print render($widget_map);
+    ?>
 	<?php endif; ?>
 </div>
 
@@ -130,7 +132,9 @@
       </div>
 			<div class="span3">
 				<?php if (module_exists('widget_facebook')): ?>
-					<?php print render(widget_facebook_embed_homepage()); ?>
+          <?php $widget_facebook = widget_facebook_embed_homepage();
+            print render($widget_facebook);
+          ?>
 				<?php endif; ?>
 			</div>
 		</div>
@@ -146,8 +150,10 @@
       </div>
       <div class="span3 footer-links widget_supporters">
 				<?php if (module_exists('widget_supporter')): ?>
-					<?php print render(widget_supporter_embed()); ?>
-				<?php endif; ?>
+          <?php $supporter = widget_supporter_embed();
+            print render($supporter);
+          ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>

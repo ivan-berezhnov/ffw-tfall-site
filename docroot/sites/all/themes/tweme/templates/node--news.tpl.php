@@ -38,7 +38,7 @@
 				  <div class="span12">
 				  	#Todo: Share on FB<br />
 				  	#Todo: Share on TW<br />
-				  	<a href="/">
+				  	<a href="/news/latest">
 							<div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
 						</a>
 				  </div>
