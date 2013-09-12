@@ -29,9 +29,9 @@ function news_image_default_styles() {
   // Exported image style: news_thumbnail.
   $styles['news_thumbnail'] = array(
     'name' => 'news_thumbnail',
-    'label' => 'news thumbnail',
+    'label' => 'News Thumbnail',
     'effects' => array(
-      1 => array(
+      2 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -41,8 +41,8 @@ function news_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 236,
-          'height' => 133,
+          'width' => 250,
+          'height' => 140,
         ),
         'weight' => 1,
       ),

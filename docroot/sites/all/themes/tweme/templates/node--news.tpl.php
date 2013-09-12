@@ -15,10 +15,11 @@
 				</div>
 
 				<div class="news__date">
-					<div class="news__author-date">By <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?></div>
-					<?php if (isset($content['field_category'])): ?>
-						 | <span class="news__category"><?php print render($content['field_category']); ?></span>
-					<?php endif; ?>
+					<div class="news__author-date">By <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?>
+            <?php if (isset($content['field_category'])): ?>
+             | <span class="news__category"><?php print render($content['field_category']); ?></span>
+            <?php endif; ?>
+          </div>
 				</div>
 
 				<div class="news__image">

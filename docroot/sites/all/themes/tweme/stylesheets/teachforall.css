@@ -2,6 +2,7 @@
 *   #Table of Contents
 **/
 /** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee
+ ### VIEWS ### # News Listing
  ### NODES ### #National Organizations #Spotlight #News
 **/
 /**
@@ -71,7 +72,7 @@ a:hover { color: #cf4753; text-decoration: none; }
 
 body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px; font-family: "News Gothic", sans-serif; }
 
-.small-body { font-size: 16px; font-size: 0.94118rem; }
+.small-body { font-size: 16px; font-size: 0.94118rem; color: #4d4d4d; }
 
 /**/
 /**
@@ -254,6 +255,23 @@ img { max-width: 100%; }
   .marquee__hover { background-color: transparent; opacity: 1; position: static; }
   .marquee__info-wrapper { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; bottom: 0; left: 0; padding: 10px; position: static; width: 100%; }
   .marquee__preview { display: none; } }
+/**/
+/* ### VIEWS ### */
+/**
+* #News Listing
+**/
+.view-news .views-row-odd { border-bottom: 1px dashed #dfd9c9; margin-bottom: 20px; padding-bottom: 20px; }
+.view-news .views-row-last { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+@media screen and (max-width: 767px) { .view-news .span3 { float: left; margin-right: 2%; width: 30%; } }
+@media screen and (max-width: 767px) { .view-news .span9 { float: left; width: 68%; } }
+.view-news img { width: 100%; }
+@media screen and (max-width: 767px) { .view-news img { margin-bottom: 5px; } }
+.view-news h3 a { color: #4d4d4d; }
+.view-news h3 a:hover { color: #cf4753; }
+.view-news .small-body { margin-bottom: 5px; }
+
+.news__author-info { font-size: 14px; font-size: 0.82353rem; }
+
 /**/
 /* ### NODES ### */
 /**

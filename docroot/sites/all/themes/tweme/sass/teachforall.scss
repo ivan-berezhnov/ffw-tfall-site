@@ -17,6 +17,9 @@
     #Supporters Widget
     #Marquee
 
+    ### VIEWS ###
+    # News Listing
+
     ### NODES ###
     #National Organizations
     #Spotlight
@@ -178,6 +181,7 @@ body {
 
 .small-body {
   @include font-size(16);
+  color: $grey2;
 }
 
 /**/
@@ -814,6 +818,63 @@ img {max-width: 100%;}
   }
   .marquee__preview {
     display: none;
+  }
+}
+
+/**/
+
+/* ### VIEWS ### */
+
+/**
+* #News Listing
+**/
+
+.view-news {
+  .views-row-odd {
+    border-bottom: 1px dashed $beige;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .views-row-last {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .span3 {
+    @media screen and (max-width: 767px) {
+      float: left;
+      margin-right: 2%;
+      width: 30%;
+    }
+  }
+  .span9 {
+    @media screen and (max-width: 767px) {
+      float: left;
+      width: 68%;
+    }
+  }
+  img {
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 5px;
+    }
+  }
+  h3 {
+    a {
+      color: $grey2;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  .small-body {
+    margin-bottom: 5px;
+  }
+}
+
+.news__author-info {
+  @include font-size(14);
+  @media screen and (max-width: 767px) {
   }
 }
 
