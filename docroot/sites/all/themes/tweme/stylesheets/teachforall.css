@@ -108,7 +108,7 @@ div.messages { margin: 20px 0; }
 /**
 * #Objects
 **/
-.slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; }
+.slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; letter-spacing: 1px; line-height: 14px; margin-bottom: 5px; text-transform: uppercase; }
 
 /**/
 /**
@@ -264,7 +264,7 @@ img { max-width: 100%; }
 
 .no__image img { width: 100%; }
 
-.no__info-block { color: #cf4753; margin-bottom: 30px; }
+.no__info-block { color: #cf4753; margin-bottom: 20px; }
 .no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
 .no__info-block a { font-size: 18px; font-size: 1.05882rem; font-weight: bold; }
 
