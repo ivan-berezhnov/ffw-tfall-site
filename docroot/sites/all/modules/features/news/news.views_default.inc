@@ -218,7 +218,6 @@ function news_views_default_views() {
   /* Display: News Flexslider */
   $handler = $view->new_display('block', 'News Flexslider', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'news-flexslider';
   $handler->display->display_options['display_description'] = 'Appears at the top of the news landing page.';
@@ -250,8 +249,10 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '55';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Category */
   $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
   $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
@@ -272,16 +273,26 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '200',
+    'trim_length' => '170',
   );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['alter']['text'] = '[view_node] <span class="orange2">>></span>';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'GO TO STORY';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
+  $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_1']['label'] = '';
+  $handler->display->display_options['fields']['view_node_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_1']['text'] = 'GO TO STORY';
   $handler->display->display_options['block_description'] = 'Flexslider News Block';
   $export['news'] = $view;
 

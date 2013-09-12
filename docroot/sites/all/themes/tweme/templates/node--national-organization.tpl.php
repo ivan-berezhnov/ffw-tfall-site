@@ -1,9 +1,6 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="page-title">
-      <h2 class="title"><?php print $title; ?></h2>
-    </div>
     <div class="row-fluid">
       <div class="span3">
 
