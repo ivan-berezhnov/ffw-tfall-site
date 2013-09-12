@@ -93,12 +93,9 @@
         </div>
 
 				<div class="row-fluid no__spotlights">
-
-					<div class="span12">
-						<?php print render($content['field_spotlights']); ?>
-					</div>
-
+				  <?php print render($content['field_spotlights']); ?>
 				</div>
+
       </div>
       <div class="span3">
 

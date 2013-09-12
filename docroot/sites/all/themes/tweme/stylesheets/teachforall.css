@@ -56,8 +56,8 @@ you can use the generic selector below, but it's slower:
 h1, .h1 { color: #4d4d4d; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 48px; margin-bottom: 5px; font-size: 42px; font-size: 2.47059rem; }
 @media screen and (max-width: 767px) { h1, .h1 { font-size: 25px; font-size: 1.47059rem; line-height: 29px; } }
 
-h2, .node .content .no__spotlights, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 29px; }
-@media screen and (max-width: 767px) { h2, .node .content .no__spotlights, .h2 { font-size: 18px; font-size: 1.05882rem; line-height: 22px; } }
+h2, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 29px; }
+@media screen and (max-width: 767px) { h2, .h2 { font-size: 18px; font-size: 1.05882rem; line-height: 22px; } }
 
 h3, .h3 { font-family: "Fedra Serif", serif; font-weight: normal; line-height: 22px; margin: 0 0 5px 0; font-size: 18px; font-size: 1.05882rem; }
 @media screen and (max-width: 767px) { h3, .h3 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; } }
@@ -69,7 +69,7 @@ h4, .h4 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; }
 a { color: #cf4753; }
 a:hover { color: #cf4753; text-decoration: none; }
 
-body { color: #91998c; font-size: 17px; font-size: 1rem; font-family: "News Gothic", sans-serif; }
+body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px; font-family: "News Gothic", sans-serif; }
 
 .small-body { font-size: 16px; font-size: 0.94118rem; }
 
@@ -101,9 +101,9 @@ div.messages { margin: 20px 0; }
 
 #main { padding: 20px 0; }
 
-.page-title { text-align: center; }
+.page-title { margin-bottom: 40px; text-align: center; }
 
-@media screen and (max-width: 767px) { h2, .node .content .no__spotlights, .h2 { font-size: 20px; font-size: 1.17647rem; } }
+@media screen and (max-width: 767px) { h2, .h2 { font-size: 20px; font-size: 1.17647rem; } }
 /**/
 /**
 * #Objects
@@ -169,7 +169,7 @@ div.messages { margin: 20px 0; }
 .uber-nav a:hover { color: #cf4753; }
 .uber-nav ul { margin-left: 0; }
 .uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -1px; top: 14px; position: absolute; width: 100px; z-index: 9999; text-align: left; }
-.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; margin: 0 3px; padding: 0; text-transform: none; }
+.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; line-height: 16px; margin: 0 3px; padding: 0; text-transform: none; }
 .uber-nav .menu .menu a:hover { background-color: transparent; color: #cf4753; }
 .uber-nav .menu .menu a.active { background-color: transparent; }
 .uber-nav .menu .menu li { display: block; padding-top: 0; }
@@ -190,7 +190,7 @@ div.messages { margin: 20px 0; }
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
-#feeds h2, #feeds .node .content .no__spotlights, .node .content #feeds .no__spotlights { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
+#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
 
 /**
 * #Footer
@@ -259,7 +259,8 @@ img { max-width: 100%; }
 /**
 * #National Organizations
 **/
-.no__ceo a { display: block; }
+.no__ceo h2, .no__ceo .node { margin-bottom: 0; }
+.no__ceo h2 a, .no__ceo .node a { font-size: 18px; font-size: 1.05882rem; font-family: "News Gothic", sans-serif; }
 
 .no__image img { width: 100%; }
 
@@ -274,7 +275,7 @@ img { max-width: 100%; }
 .no__stat:last-child { margin-bottom: 0; }
 
 .node .content .no__spotlights { line-height: 1em; text-transform: none; }
-.node .content .no__spotlights img { height: auto; width: 100%; }
+.node .content .no__spotlights img { height: auto; margin-bottom: 10px; width: 100%; }
 
 /**/
 /**

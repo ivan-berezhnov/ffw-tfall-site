@@ -15,7 +15,10 @@
 				</div>
 
 				<div class="news__date">
-					<?php print format_date($node->published_at, 'short'); ?> | <span class="news__category"><?php print render($content['field_category']); ?></span>
+					<div class="news__author-date">By <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?></div>
+					<?php if (isset($content['field_category'])): ?>
+						 | <span class="news__category"><?php print render($content['field_category']); ?></span>
+					<?php endif; ?>
 				</div>
 
 				<div class="news__image">
@@ -26,7 +29,7 @@
 
 				<div class="news__content">
 					<?php if (isset($content['body'])): ?>
-						<div><?php print render($content['body']); ?></div>
+						<?php print render($content['body']); ?>
 					<?php endif; ?>
 				</div>
 

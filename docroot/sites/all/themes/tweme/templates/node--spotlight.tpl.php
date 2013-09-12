@@ -1,2 +1,2 @@
-<h2 class="title"><?php print $title; ?></h2>
+<h1><?php print $title; ?></h1>
 <?php print render($content); ?>

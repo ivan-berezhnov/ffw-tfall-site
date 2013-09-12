@@ -170,8 +170,9 @@ a {
 }
 
 body {
-  color: $grey1;
-  @include font-size(17);
+  color: $grey2;
+  @include font-size(16);
+  line-height: 20px;
   font-family: "News Gothic", sans-serif;
 }
 
@@ -266,6 +267,7 @@ div.messages {
 }
 
 .page-title {
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -530,6 +532,7 @@ div.messages {
         font-weight: normal;
         @include font-size(14);
         display: block;
+        line-height: 16px;
         margin: 0 3px;
         padding: 0;
         text-transform: none;
@@ -822,8 +825,13 @@ img {max-width: 100%;}
 **/
 
 .no__ceo {
-  a {
-    display: block;
+  h2,
+  .node {
+    margin-bottom: 0;
+    a {
+      @include font-size(18);
+      font-family: "News Gothic", sans-serif;
+    }
   }
 }
 
@@ -867,11 +875,11 @@ img {max-width: 100%;}
 .node {
   .content {
     .no__spotlights {
-      @extend h2;
       line-height: 1em;
       text-transform: none;
       img {
         height: auto;
+        margin-bottom: 10px;
         width: 100%;
       }
     }
