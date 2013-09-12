@@ -47,17 +47,16 @@
   	  </div>
 
   	  <div class="span3">
-  	  	<?php print render($page['sidebar_second']) ?>
   	  	<div class="twitter__sidebar">#Todo: Twitter</div>
   	  	<div class="facebook__sidebar hidden-tablet">
   	  		<?php if (module_exists('widget_facebook')): ?>
-						<?php print render(widget_facebook_embed_homepage()); ?>
-					<?php endif; ?>
+            <?php $widget_facebook = widget_facebook_embed_homepage();
+              print render($widget_facebook);
+            ?>
+          <?php endif; ?>
   	  	</div>
   	  </div>
   	</div>
-
-
 
   </div>
 </div>

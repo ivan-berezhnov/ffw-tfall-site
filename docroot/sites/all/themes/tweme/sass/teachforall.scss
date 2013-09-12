@@ -23,7 +23,10 @@
     ### NODES ###
     #National Organizations
     #Spotlight
-    #News
+    #News - Node
+
+    ### LANDING PAGES ###
+    #News - Landing
 **/
 
 /**
@@ -195,8 +198,13 @@ body {
 }
 
 .full-list {
-  background-color: $grey1;
-  color: $white;
+  a {
+    color: $white;
+    &:hover {
+      color: $orange2;
+    }
+  }
+  background-color: $grey2;
   font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
@@ -995,6 +1003,78 @@ img {max-width: 100%;}
 
 .news__content {
   margin-bottom: 10px;
+}
+
+/**/
+
+/* ### LANDING PAGES ### */
+
+/**
+* #News - Landing
+**/
+
+.news-flexslider {
+  margin-bottom: 30px;
+  .flex-control-paging {
+    li {
+      a {
+        background-color: $grey1;
+        border-radius: 0;
+        &.flex-active {
+          background-color: $orange1;
+        }
+      }
+    }
+  }
+  .flex-control-nav {
+    bottom: 15px;
+    right: 10px;
+    width: auto;
+  }
+  .flexslider {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+.news__flexslider__wrapper {
+  position: relative;
+}
+
+.news__flexslider__info {
+  background-color: $black;
+  opacity: .8;
+  padding: 15px 40px 15px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  h2 {
+    a {
+      color: $white;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+.news__preview {
+  color: $grey1;
+}
+
+.news__link {
+  margin-top: 5px;
+  a {
+    color: $white;
+    text-transform: uppercase;
+    @include font-size(14);
+    &:hover {
+      color: $red;
+    }
+  }
 }
 
 /**/

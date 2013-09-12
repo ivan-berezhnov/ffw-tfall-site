@@ -3,7 +3,8 @@
 **/
 /** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee
  ### VIEWS ### # News Listing
- ### NODES ### #National Organizations #Spotlight #News
+ ### NODES ### #National Organizations #Spotlight #News - Node
+ ### LANDING PAGES ### #News - Landing
 **/
 /**
 *   #Imports
@@ -80,7 +81,9 @@ body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px
 **/
 .site-slogan { text-align: center; }
 
-.full-list { background-color: #91998c; color: white; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
+.full-list { background-color: #4d4d4d; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
+.full-list a { color: white; }
+.full-list a:hover { color: #ffb151; }
 
 .search-form .input-append .btn { border: 1px solid #ccc; }
 
@@ -313,5 +316,28 @@ img { max-width: 100%; }
 .news__image img { width: 100%; }
 
 .news__content { margin-bottom: 10px; }
+
+/**/
+/* ### LANDING PAGES ### */
+/**
+* #News - Landing
+**/
+.news-flexslider { margin-bottom: 30px; }
+.news-flexslider .flex-control-paging li a { background-color: #91998c; border-radius: 0; }
+.news-flexslider .flex-control-paging li a.flex-active { background-color: #e69740; }
+.news-flexslider .flex-control-nav { bottom: 15px; right: 10px; width: auto; }
+.news-flexslider .flexslider { background: transparent; border: none; border-radius: 0; box-shadow: none; margin: 0; }
+
+.news__flexslider__wrapper { position: relative; }
+
+.news__flexslider__info { background-color: black; opacity: .8; padding: 15px 40px 15px 20px; position: absolute; bottom: 0; left: 0; }
+.news__flexslider__info h2 a { color: white; }
+.news__flexslider__info h2 a:hover { color: #cf4753; }
+
+.news__preview { color: #91998c; }
+
+.news__link { margin-top: 5px; }
+.news__link a { color: white; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
+.news__link a:hover { color: #cf4753; }
 
 /**/
