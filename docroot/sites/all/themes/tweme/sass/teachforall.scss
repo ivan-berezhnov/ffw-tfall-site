@@ -859,7 +859,8 @@ img {max-width: 100%;}
 **/
 
 .view-news {
-  .views-row-odd {
+  .views-row-odd,
+  .views-row-even {
     border-bottom: 1px dashed $beige;
     margin-bottom: 20px;
     padding-bottom: 20px;

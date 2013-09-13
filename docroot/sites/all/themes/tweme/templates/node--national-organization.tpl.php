@@ -109,11 +109,17 @@
   </div>
 </div>
 
-<!-- world map -->
 <div id="worldmap" class="container-wrapper">
-  <?php if (module_exists('widget_map')): ?>
-    <?php $widget_map = widget_map_embed();
-      print render($widget_map);
-    ?>
-  <?php endif; ?>
+  <div class="container">
+    <!-- world map -->
+    <div class="row-fluid">
+      <div class="span12">
+        <?php if (module_exists('widget_map')): ?>
+          <?php $widget_map = widget_map_embed();
+            print render($widget_map);
+          ?>
+        <?php endif; ?>
+      </div>
+    </div>
+  </div>
 </div>

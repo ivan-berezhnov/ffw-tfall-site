@@ -80,7 +80,7 @@ function news_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/news/latest"><div class="full-list">More Recent News <span class="orange2">>></span></div></a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/news/latest"><div class="full-list">More News <span class="orange2">>></span></div></a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Author */

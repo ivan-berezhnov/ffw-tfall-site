@@ -268,7 +268,7 @@ img { max-width: 100%; }
 /**
 * #News Listing
 **/
-.view-news .views-row-odd { border-bottom: 1px dashed #dfd9c9; margin-bottom: 20px; padding-bottom: 20px; }
+.view-news .views-row-odd, .view-news .views-row-even { border-bottom: 1px dashed #dfd9c9; margin-bottom: 20px; padding-bottom: 20px; }
 .view-news .views-row-last { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 @media screen and (max-width: 767px) { .view-news .span3 { float: left; margin-right: 2%; width: 30%; } }
 @media screen and (max-width: 767px) { .view-news .span9 { float: left; width: 68%; } }
