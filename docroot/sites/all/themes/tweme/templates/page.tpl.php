@@ -90,15 +90,25 @@
 <footer id="footer" class="container-wrapper">
   <div class="container">
     <div class="row-fluid">
-      <div class="span9 footer-menu footer-links">
+      <div class="span4 footer-menu footer-links">
         <?php print render($page['footer']) ?>
       </div>
+      <div class="span2">
+        <?php print render($page['uber_bottom']) ?>
+      </div>
+      <div class="span3">
+        <div class="donate pull-left">
+          <a href="#"><?php print t('DONATE'); ?></a>
+        </div>
+        <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-twitter"></a>
+        <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
+        <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
+        <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
+      </div>
       <div class="span3 footer-links widget_supporters">
-				<?php if (module_exists('widget_supporter')): ?>
-          <?php
-          $widget_supporter = widget_supporter_embed();
-          print render($widget_supporter); ?>
-				<?php endif; ?>
+        <?php if (module_exists('widget_supporter')): ?>
+          <?php print render(widget_supporter_embed()); ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>

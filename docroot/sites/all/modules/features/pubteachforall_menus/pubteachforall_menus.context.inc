@@ -26,17 +26,17 @@ function pubteachforall_menus_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'menu-menu-uber-nav' => array(
+          'module' => 'menu',
+          'delta' => 'menu-uber-nav',
+          'region' => 'uber_bottom',
+          'weight' => '-10',
+        ),
         'menu-menu-primary-navigation' => array(
           'module' => 'menu',
           'delta' => 'menu-primary-navigation',
           'region' => 'footer',
           'weight' => '-10',
-        ),
-        'menu-menu-uber-nav' => array(
-          'module' => 'menu',
-          'delta' => 'menu-uber-nav',
-          'region' => 'footer',
-          'weight' => '-9',
         ),
       ),
     ),

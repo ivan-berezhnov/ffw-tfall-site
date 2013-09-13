@@ -35,6 +35,8 @@ regions[sidebar_first] = Sidebar first
 regions[sidebar_first_affix] = Sidebar first affixed
 regions[sidebar_second] = Sidebar second
 regions[sidebar_second_affix] = Sidebar second affixed
+regions[primary_bottom] = Footer - Primary Nav
+regions[uber_bottom] = Footer - Uber Nav
 regions[footer] = Footer
 
 ; Information added by drupal.org packaging script on 2013-06-29

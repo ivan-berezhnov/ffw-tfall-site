@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee #MapBox
  ### VIEWS ### # News Listing
  ### NODES ### #National Organizations #Spotlight #News - Node
  ### LANDING PAGES ### #News - Landing
@@ -79,7 +79,7 @@ body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px
 /**
 * #Global Elements
 **/
-.site-slogan { color: #91998c; text-align: center; font-size: 32px; font-size: 1.88235rem; }
+.site-slogan { color: #91998c; line-height: 30px; text-align: center; font-size: 32px; font-size: 1.88235rem; }
 
 .full-list { background-color: #4d4d4d; color: white; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
 .full-list a { color: white; }
@@ -117,6 +117,9 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 /**
 * #Objects
 **/
+.rounded-button { position: absolute; bottom: 40px; left: 0; letter-spacing: 3px; text-align: center; width: 100%; z-index: 9998; }
+.rounded-button span { background-color: #91998c; color: white; padding: 8px 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
+
 .slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; font-weight: bold; letter-spacing: 1px; line-height: 14px; margin-bottom: 5px; text-transform: uppercase; }
 
 /**/
@@ -189,13 +192,6 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 @media screen and (min-width: 1200px) { .navbar .region-main-navigation ul { width: 78.7%; } }
 /**/
 /**
-* #worldmap
-**/
-#worldmap { background-color: #80b4e4; padding: 0px; }
-
-#map { background-color: #80b4e4; width: 100%; height: 580px; }
-
-/**
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
@@ -204,18 +200,20 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 /**
 * #Footer
 **/
-#footer { background-color: #4d4d4d; border: none; padding: 40px 0; }
-#footer .block-block { font-size: 12px; font-size: 0.70588rem; width: 30%; }
+#footer { background-color: #4d4d4d; border: none; padding: 30px 0; }
+#footer ul { margin: 0; }
 
 .footer-links a { margin-left: 0; }
 
 .footer-menu .menu .menu .last { margin-bottom: 10px; }
-.footer-menu .menu .menu a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
-.footer-menu .menu .menu a:hover { color: #cf4753; }
 .footer-menu ul { margin: 0; }
-.footer-menu ul li { list-style-type: none; list-style-image: none; margin: 0; }
-.footer-menu .content > ul > li { float: left; padding: 0; width: 33%; }
-.footer-menu .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+.footer-menu .content > ul > li { float: left; padding: 0; width: 39%; }
+
+#footer .content > ul > li { list-style-type: none; list-style-image: none; margin: 0; }
+#footer .content > ul > li > ul li { list-style-type: none; list-style-image: none; margin: 0; }
+#footer .content > ul > li > ul li a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
+#footer .content > ul > li > ul li a:hover { color: #cf4753; }
+#footer .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
 
 /**/
 /**
@@ -264,6 +262,27 @@ img { max-width: 100%; }
   .marquee__info-wrapper { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; bottom: 0; left: 0; padding: 10px; position: static; width: 100%; }
   .marquee__preview { display: none; } }
 /**/
+/**
+* #MapBox
+**/
+#worldmap { background-color: #80b4e4; box-sizing: border-box; -moz-box-sizing: border-box; padding: 0px; position: relative; }
+
+.worldmap__title { letter-spacing: 2px; position: absolute; top: 30px; left: 0; text-align: center; width: 100%; z-index: 9998; }
+
+#map { background-color: #80b4e4; width: 100%; height: 580px; }
+
+.leaflet-bar { border: none; border-radius: 0; }
+.leaflet-bar a { background-color: #4d4d4d; border: none; color: white; padding: 0 0 2px 1px; }
+.leaflet-bar a:first-child { border-radius: 0; margin-bottom: 2px; }
+.leaflet-bar a:last-child { border-radius: 0; }
+.leaflet-bar a:hover { background-color: #4d4d4d; border: none; color: #e69740; }
+
+.leaflet-popup-pane { z-index: 9999; }
+.leaflet-popup-pane a { color: #91998c; }
+.leaflet-popup-pane a:hover { color: #e69740; }
+
+/**
+
 /* ### VIEWS ### */
 /**
 * #News Listing
@@ -291,6 +310,7 @@ img { max-width: 100%; }
 .no__image img { width: 100%; }
 
 .no__info-block { color: #cf4753; margin-bottom: 20px; }
+.no__info-block img { width: 100%; }
 .no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
 .no__info-block a { font-size: 18px; font-size: 1.05882rem; font-weight: bold; }
 
@@ -307,8 +327,9 @@ img { max-width: 100%; }
 /**
 * #Spotlight
 **/
+.node-type-spotlight .page-title { display: none; }
 .node-type-spotlight .title { color: #e69740; }
-.node-type-spotlight .content img { background-color: #dfd9c9; float: right; margin: 0 0 10px 5px; padding: 10px; width: 35%; }
+.node-type-spotlight .content img { float: right; margin: 0 0 10px 5px; width: 35%; }
 @media screen and (max-width: 500px) { .node-type-spotlight .content img { float: none; margin: 0 auto; margin-bottom: 20px; padding: 2%; width: 96%; } }
 
 /**/
