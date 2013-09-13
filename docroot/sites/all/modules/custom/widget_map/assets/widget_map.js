@@ -4,11 +4,40 @@
 
 
 			var map = L.mapbox.map('map', 'andrew-ho-tfall.pubteach4allmap', {
-			}).setView([30, 40], 2);
+				center: [30, 25],
+				zoom: 2,
+				minZoom: 2,
+				maxZoom: 6
+			});
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
 
+			$.ajax({
+				url: '/widget_map_listofall.json',
+				success: function parseJson(data) {
+					map.markerLayer.setGeoJSON(data);
+				}
+			});
+
+
+			map.markerLayer.on('layeradd', function(e) {
+				var marker = e.layer,feature = marker.feature;
+
+				marker.setIcon(L.icon(feature.properties.icon));
+
+				var popupContent =
+								'<a class="popup" href="' + feature.properties.url + '">' +
+								'<h2>' + feature.properties.title + '</h2>' +
+								'<img src="' + feature.properties.logo + '">' +
+								'<img src="' + feature.properties.image + '">' +
+								'</a>';
+
+				marker.bindPopup(popupContent, {
+					closeButton: false,
+					minWidth: 320
+				});
+			});
 
 		}
 	};
