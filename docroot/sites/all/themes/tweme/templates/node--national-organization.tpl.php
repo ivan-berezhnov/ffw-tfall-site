@@ -74,7 +74,7 @@
 
           <div class="no__stat">
   					<?php if (isset($content['field_avg_total_years_of_edu'])): ?>
-  						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avr. total years of education<br />
+  						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avg. total years of education<br />
   					<?php endif; ?>
           </div>
 

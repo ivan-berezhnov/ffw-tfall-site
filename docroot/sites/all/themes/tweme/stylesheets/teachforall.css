@@ -79,7 +79,7 @@ body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px
 /**
 * #Global Elements
 **/
-.site-slogan { text-align: center; }
+.site-slogan { color: #91998c; text-align: center; font-size: 32px; font-size: 1.88235rem; }
 
 .full-list { background-color: #4d4d4d; color: white; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
 .full-list a { color: white; }

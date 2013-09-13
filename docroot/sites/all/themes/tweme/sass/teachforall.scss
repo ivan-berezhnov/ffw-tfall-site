@@ -194,7 +194,9 @@ body {
 **/
 
 .site-slogan {
+  color: $grey1;
   text-align: center;
+  @include font-size(32);
 }
 
 .full-list {
