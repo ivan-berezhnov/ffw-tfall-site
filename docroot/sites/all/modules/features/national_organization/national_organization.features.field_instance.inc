@@ -263,7 +263,7 @@ function national_organization_field_default_field_instances() {
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'to see "facebook box" on NO page please provide account name only.   http://facebook.com/<b>account_name</b>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -281,7 +281,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_key_facebook',
-    'label' => 'Facebook API key',
+    'label' => 'Facebook account key',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -838,7 +838,7 @@ function national_organization_field_default_field_instances() {
   t('Blurb');
   t('CEO Profile');
   t('Cohorts Placed');
-  t('Facebook API key');
+  t('Facebook account key');
   t('Links');
   t('Living below Poverty Line');
   t('Location');
@@ -854,6 +854,7 @@ function national_organization_field_default_field_instances() {
   t('Twitter API key');
   t('blurb/compelling statistic text');
   t('link(s) to organization\'s website');
+  t('to see "facebook box" on NO page please provide account name only.   http://facebook.com/<b>account_name</b>');
 
   return $field_instances;
 }

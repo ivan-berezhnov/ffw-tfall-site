@@ -3,17 +3,31 @@
 /*
  * implements hook_theme
  */
-function widget_facebook_theme($existing, $type, $theme, $path) {
-  return array(
-    'widget_facebook_box' => array(
-      'template' => 'templates/widget-facebook-box',
-    ),
-  );
 
-  return array();
+function widget_facebook_theme($existing, $type, $theme, $path) {
+	return array(
+		'widget_facebook_box' => array(
+			'template' => 'templates/widget-facebook-box',
+		),
+		'widget_facebook_box_customkey' => array(
+			'template' => 'templates/widget-facebook-box-customkey',
+			'arguments' => array('code' => NULL),
+		),
+	);
+
+	return array();
 }
 
 function widget_facebook_embed_homepage() {
-	drupal_add_js(drupal_get_path('module','widget_facebook').'/assets/widget_facebook.js');
-	return theme('widget_facebook_box');	
+	drupal_add_js(drupal_get_path('module', 'widget_facebook') . '/assets/widget_facebook.js');
+	return theme('widget_facebook_box');
+}
+
+/**
+ * Embed widget for specific NO page.
+ * @param string $code  - facebook key
+ */
+function widget_facebook_embed($code) {
+	drupal_add_js(drupal_get_path('module', 'widget_facebook') . '/assets/widget_facebook.js');
+	return theme('widget_facebook_box_customkey', array('code' => $code));
 }

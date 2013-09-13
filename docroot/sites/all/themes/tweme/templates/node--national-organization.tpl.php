@@ -96,11 +96,8 @@
       </div>
       <div class="span3">
 
-				<?php //temporary! generic facebook like-box... awaiting response TFAPW-56 ?>
-				<?php if (module_exists('widget_facebook')): ?>
-					<?php $widget_facebook = widget_facebook_embed_homepage();
-            print render($widget_facebook);
-          ?>
+				<?php if (module_exists('widget_facebook') && isset($content['field_key_facebook'])): ?>
+          <?php print render(widget_facebook_embed(render($content['field_key_facebook']))); ?>
 				<?php endif; ?>
 
       </div>
