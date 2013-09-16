@@ -7,7 +7,7 @@
 				center: [30, 25],
 				zoom: 2,
 				minZoom: 2,
-				maxZoom: 6
+				maxZoom: 5
 			});
 
 			map.doubleClickZoom.disable();
@@ -30,8 +30,8 @@
 								'<a class="popup" href="' + feature.properties.url + '">' +
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<img src="' + feature.properties.logo + '">' +
-								'<img src="' + feature.properties.image + '">' +
-								'</a>';
+								'</a>' +
+								'<a class="btn btn-primary" href="' + feature.properties.url + '">Learn more</a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,

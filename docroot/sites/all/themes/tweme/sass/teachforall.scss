@@ -797,6 +797,39 @@ img {max-width: 100%;}
 * #Marquee
 **/
 
+.region-marquee {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  .views-row,
+  .views-field-title {
+    position: absolute;
+  }
+  img {
+    width: 100%;
+  }
+  .views-row-1 {
+    top: 0;
+    left: 0;
+    width: 50%;
+  }
+  .views-row-2 {
+    left: 50%;
+    top: 0;
+    width: 25%;
+  }
+  .views-row-3 {
+    left: 50%;
+    top: 50%;
+    width: 25%;
+  }
+  .views-row-4 {
+    top: 0;
+    left: 75%;
+    width: 100%;
+  }
+}
+
 .marquee {
   background-color: $grey1;
   img {
@@ -948,6 +981,18 @@ img {max-width: 100%;}
     color: $grey1;
     &:hover {
       color: $orange1;
+    }
+  }
+}
+
+.leaflet-popup-content {
+  .btn {
+    color: $white;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    &:hover {
+      color: $white;
     }
   }
 }

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * list of all NO markers 
+ * list of all NO markers
  */
 function _widget_map_listofall() {
 
@@ -24,8 +24,7 @@ function _widget_map_listofall() {
 		$marker->properties = array(
 			'title' => $item->title,
 			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
-			'logo' => image_style_url('thumbnail',$item->field_no_logo[LANGUAGE_NONE][0][uri]),
-			'image' => image_style_url('thumbnail',$item->field_no_image[LANGUAGE_NONE][0][uri]),
+			'logo' => image_style_url('map_thumbnail',$item->field_no_logo[LANGUAGE_NONE][0][uri]),
 			'icon' => array(
 				'iconUrl' => '/' . drupal_get_path('module', 'widget_map') . '/assets/map_marker.png',
 				'iconSize' => array(21, 21),

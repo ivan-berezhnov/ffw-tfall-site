@@ -59,6 +59,7 @@ features[field_instance][] = node-national_organization-field_program_launched
 features[field_instance][] = node-national_organization-field_schools
 features[field_instance][] = node-national_organization-field_spotlights
 features[field_instance][] = node-national_organization-field_teachers_active
+features[image][] = map_thumbnail
 features[node][] = national_organization
 features[variable][] = field_bundle_settings_node__national_organization
 features[variable][] = menu_options_national_organization
