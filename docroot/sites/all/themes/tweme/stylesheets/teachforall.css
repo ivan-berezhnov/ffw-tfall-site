@@ -208,12 +208,15 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 .footer__contact { color: #999999; width: 80%; }
 
 .footer-links a { margin-left: 0; }
+.footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) { display: none; }
+
+.footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) { display: none; }
 
 .footer-menu .menu .menu .last { margin-bottom: 10px; }
 .footer-menu ul { margin: 0; }
-.footer-menu .content > ul > li { float: left; padding: 0; width: 39%; }
+.footer-menu .content > ul > li { padding: 0; }
 
-#footer .content > ul > li { list-style-type: none; list-style-image: none; margin: 0; }
+#footer .content > ul > li { list-style-type: none; list-style-image: none; margin: 0; padding: 0; }
 #footer .content > ul > li > ul li { list-style-type: none; list-style-image: none; margin: 0; }
 #footer .content > ul > li > ul li a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
 #footer .content > ul > li > ul li a:hover { color: #cf4753; }

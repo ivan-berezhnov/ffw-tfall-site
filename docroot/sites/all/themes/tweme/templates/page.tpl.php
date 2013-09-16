@@ -90,7 +90,10 @@
 <footer id="footer" class="container-wrapper">
   <div class="container">
     <div class="row-fluid">
-      <div class="span4 footer-menu footer-links">
+      <div class="span2 footer-menu footer-links">
+        <?php print render($page['footer']) ?>
+      </div>
+      <div class="span2 footer-menu footer-links-2">
         <?php print render($page['footer']) ?>
       </div>
       <div class="span2">
