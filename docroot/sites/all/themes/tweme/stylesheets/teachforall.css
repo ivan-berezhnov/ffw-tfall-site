@@ -203,6 +203,10 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 #footer { background-color: #4d4d4d; border: none; padding: 30px 0; }
 #footer ul { margin: 0; }
 
+.footer__copyright { color: #999999; margin-top: 20px; width: 80%; }
+
+.footer__contact { color: #999999; width: 80%; }
+
 .footer-links a { margin-left: 0; }
 
 .footer-menu .menu .menu .last { margin-bottom: 10px; }

@@ -104,6 +104,12 @@
         <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
+        <div class="footer__copyright">
+          <p><?php print t('Copyright &#169; 2013 TeachForAll, Inc. All rights reserved.'); ?></p>
+        </div>
+        <div class="footer__contact">
+          <p>Teach For All<br /> 315 W.36th St.<br /> New York, NY<br /> 10018</p>
+        </div>
       </div>
       <div class="span3 footer-links widget_supporters">
         <?php if (module_exists('widget_supporter')): ?>
