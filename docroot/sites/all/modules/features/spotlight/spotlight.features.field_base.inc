@@ -88,7 +88,7 @@ function spotlight_field_default_field_bases() {
       'allowed_values' => array(
         'Teacher Spotlight' => 'Teacher Spotlight',
         'Alumni Spotlight' => 'Alumni Spotlight',
-        'Featured Stories' => 'Featured Stories',
+        'Featured Story' => 'Featured Story',
       ),
       'allowed_values_function' => '',
     ),
