@@ -263,7 +263,7 @@ function national_organization_field_default_field_instances() {
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'to see "facebook box" on NO page please provide account name only.   http://facebook.com/<b>account_name</b>',
+    'description' => 'To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -281,7 +281,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_key_facebook',
-    'label' => 'Facebook account key',
+    'label' => 'Facebook Account Name',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -838,7 +838,7 @@ function national_organization_field_default_field_instances() {
   t('Blurb');
   t('CEO Profile');
   t('Cohorts Placed');
-  t('Facebook account key');
+  t('Facebook Account Name');
   t('Links');
   t('Living below Poverty Line');
   t('Location');
@@ -851,10 +851,10 @@ function national_organization_field_default_field_instances() {
   t('Schools');
   t('Spotlights');
   t('Teachers Active');
+  t('To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>');
   t('Twitter API key');
   t('blurb/compelling statistic text');
   t('link(s) to organization\'s website');
-  t('to see "facebook box" on NO page please provide account name only.   http://facebook.com/<b>account_name</b>');
 
   return $field_instances;
 }
