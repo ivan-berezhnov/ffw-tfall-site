@@ -332,8 +332,9 @@ img { max-width: 100%; }
 * #Spotlight
 **/
 .node-type-spotlight .page-title { display: none; }
+.node-type-spotlight .page-title.spotlight-type { display: block; }
 .node-type-spotlight .title { color: #e69740; }
-.node-type-spotlight .content img { float: right; margin: 0 0 10px 5px; width: 35%; }
+.node-type-spotlight .content img { height: auto; margin: 0 0 10px 5px; width: 100%; }
 @media screen and (max-width: 500px) { .node-type-spotlight .content img { float: none; margin: 0 auto; margin-bottom: 20px; padding: 2%; width: 96%; } }
 
 /**/

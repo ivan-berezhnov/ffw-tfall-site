@@ -1092,15 +1092,18 @@ img {max-width: 100%;}
 .node-type-spotlight {
   .page-title {
     display: none;
+    &.spotlight-type {
+      display: block;
+    }
   }
   .title {
     color: $orange1;
   }
   .content {
     img {
-      float: right;
+      height: auto;
       margin: 0 0 10px 5px;
-      width: 35%;
+      width: 100%;
       @media screen and (max-width: 500px) {
         float: none;
         margin: 0 auto;

@@ -142,8 +142,9 @@
       </div>
 			<div class="span3">
 				<?php if (module_exists('widget_facebook')): ?>
-          <?php print render(widget_facebook_embed_homepage()); ?>
-				<?php endif; ?>
+          <?php $widget_facebook = widget_facebook_embed_homepage() ;?>
+          <?php print render($widget_facebook); ?>
+        <?php endif; ?>
 			</div>
 		</div>
 	</div>

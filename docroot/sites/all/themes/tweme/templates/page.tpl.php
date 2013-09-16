@@ -113,7 +113,8 @@
       </div>
       <div class="span3 footer-links widget_supporters">
         <?php if (module_exists('widget_supporter')): ?>
-          <?php print render(widget_supporter_embed()); ?>
+          <?php $widget_supporter = widget_supporter_embed(); ?>
+          <?php print render($widget_supporter); ?>
         <?php endif; ?>
       </div>
     </div>
