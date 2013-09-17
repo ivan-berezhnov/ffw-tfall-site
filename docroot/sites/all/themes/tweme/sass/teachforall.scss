@@ -690,6 +690,7 @@ h2 {
   .content {
     > ul {
       > li {
+        margin-bottom: 20px;
         &:nth-of-type(1),
         &:nth-of-type(2),
         &:nth-of-type(3) {
@@ -727,7 +728,8 @@ h2 {
   > li {
     list-style-type: none;
     list-style-image: none;
-    margin: 0;
+    margin: 0 0 15px 0;
+    line-height: 1em;
     padding: 0;
     > ul {
         li {
