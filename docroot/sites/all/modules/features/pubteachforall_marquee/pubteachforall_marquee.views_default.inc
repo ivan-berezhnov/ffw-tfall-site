@@ -57,6 +57,15 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'marquee';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
@@ -77,15 +86,19 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
   $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
   $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'marquee_full_width',
     'image_link' => 'content',
   );
   /* Field: Content: Image */
@@ -94,11 +107,52 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
   $handler->display->display_options['fields']['field_news_image']['label'] = '';
   $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'marquee_full_width',
     'image_link' => 'content',
   );
+  /* Field: Content: Vertical Image For Front Page Marquee */
+  $handler->display->display_options['fields']['field_vertical_image']['id'] = 'field_vertical_image';
+  $handler->display->display_options['fields']['field_vertical_image']['table'] = 'field_data_field_vertical_image';
+  $handler->display->display_options['fields']['field_vertical_image']['field'] = 'field_vertical_image';
+  $handler->display->display_options['fields']['field_vertical_image']['label'] = '';
+  $handler->display->display_options['fields']['field_vertical_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_vertical_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_vertical_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_vertical_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_vertical_image']['settings'] = array(
+    'image_style' => 'marquee_vertical_image',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Category */
+  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
+  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
+  $handler->display->display_options['fields']['field_category']['label'] = '';
+  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'LEARN MORE';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
+  $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_1']['label'] = '';
+  $handler->display->display_options['fields']['view_node_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node_1']['alter']['text'] = '<div class="marquee__link">[view_node] <span class="orange1">>></span></div>';
+  $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';

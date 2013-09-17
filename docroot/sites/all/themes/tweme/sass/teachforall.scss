@@ -810,46 +810,8 @@ img {max-width: 100%;}
 * #Marquee
 **/
 
-.region-marquee {
-  position: relative;
-  height: 280px;
-  overflow: hidden;
-  .views-row,
-  .views-field-title {
-    position: absolute;
-  }
-  img {
-    width: 100%;
-  }
-  .views-row-1 {
-    top: 0;
-    left: 0;
-    width: 50%;
-  }
-  .views-row-2 {
-    left: 50%;
-    top: 0;
-    width: 25%;
-  }
-  .views-row-3 {
-    left: 50%;
-    top: 50%;
-    width: 25%;
-  }
-  .views-row-4 {
-    top: 0;
-    left: 75%;
-    width: 100%;
-  }
-}
-
 .marquee {
   background-color: $grey1;
-  img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
 }
 
 .marquee__info-wrapper {
@@ -860,7 +822,9 @@ img {max-width: 100%;}
 }
 
 .marquee__title {
-  color: $white;
+  a {
+    color: $white;
+  }
   font-weight: normal;
 }
 
@@ -873,13 +837,19 @@ img {max-width: 100%;}
 
 .marquee__medium {
   background-color: $red;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   float: right;
+  position: relative;
   width: 25%;
 }
 
 .marquee__small {
   background-color: $orange1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   float: left;
+  position: relative;
   width: 25%;
 }
 
@@ -911,7 +881,7 @@ img {max-width: 100%;}
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 979px) {
   .marquee__large {
     width: 100%;
   }
@@ -1160,7 +1130,7 @@ img {max-width: 100%;}
   .content {
     img {
       height: auto;
-      margin: 0 0 10px 5px;
+      margin: 10px 0;
       width: 100%;
       @media screen and (max-width: 500px) {
         float: none;
@@ -1182,6 +1152,9 @@ img {max-width: 100%;}
 .node-type-news {
   .page-title {
     display: none;
+    &.date {
+      display: block;
+    }
   }
 }
 

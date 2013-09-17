@@ -23,19 +23,32 @@
  *
  * @ingroup views_templates
  */
-//dsm($fields);
 ?>
-<div class="row-fluid">
-  <div class="span3">
-    <?php print $fields['field_news_image']->content; ?>
-  </div>
-  <div class="span9">
-    <div class="slug"><?php print $fields['field_category']->content; ?></div>
-    <h3><?php print $fields['title']->content; ?></h3>
-    <div class="small-body hidden-phone"><?php print $fields['body']->content; ?></div>
-    <div class="news__author-info">
-      by <?php print $fields['name']->content; ?> | <?php print $fields['created']->content; ?>
-    </div>
-  </div>
+<?php
+  $newsImage = $fields['field_news_image']->content;
+  $spotlightImage = $fields['field_spotlight_image']->content;
+  $verticalImage = $fields['field_vertical_image']->content;
+?>
+<?php
+  if(isset($verticalImage)) {
+    print $verticalImage;
+  } elseif (isset($newsImage)) {
+    print $newsImage;
+  } elseif (isset($spotlightImage)) {
+    print $spotlightImage;
+}
 
+
+
+
+
+?>
+<div class="marquee__hover">
+  <div class="marquee__info-wrapper">
+    <div class="marquee__category slug"><?php print $fields['field_category']->content; ?></div>
+    <h2 class="marquee__title"><?php print $fields['title']->content; ?></h2>
+    <div class="marquee__preview">The students of Nirali Vasisht (Teach For India)
+      talk about their vision and the skills they learn in the classroom.</div>
+    <div class="marquee__link">Watch Video >></div>
+  </div>
 </div>

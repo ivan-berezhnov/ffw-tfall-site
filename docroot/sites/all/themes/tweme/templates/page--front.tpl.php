@@ -45,8 +45,8 @@
   <div class="container">
     <div class="row-fluid">
       <div class="span12">
-        <?php //print render($page['marquee']) ?>
-
+        <?php print render($page['marquee']) ?>
+        <!--
         <div class="marquee__large">
           <div class="marquee__1" data-effeckt-type="cover-fade">
             <img src="/sites/all/themes/tweme/images/marquee_large.jpg" />
@@ -73,7 +73,7 @@
           <div class="marquee__4">
             <img src="/sites/all/themes/tweme/images/marquee-vertical1.jpg" />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

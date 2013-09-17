@@ -3,6 +3,8 @@
 
   <div class="content"<?php print $content_attributes; ?>>
 
+    <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
+
   	<div class="row-fluid">
   	  <div class="span9">
 
@@ -15,7 +17,7 @@
 				</div>
 
 				<div class="news__date">
-					<div class="news__author-date">By <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?>
+					<div class="news__author-date">by <?php print $name; ?>
             <?php if (isset($content['field_category'])): ?>
              | <span class="news__category"><?php print render($content['field_category']); ?></span>
             <?php endif; ?>
