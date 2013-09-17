@@ -402,108 +402,134 @@ h2 {
 * #Primary Navigation
 **/
 
-.navbar-medium {
-  .region-main-navigation {
-    li {
-      a {
-        color: $beige;
-        padding: 16px 43px 13px 43px;
-        @media screen and (max-width: 1199px) {
-          padding: 16px 20px 13px 20px;
-        }
-        &:hover {
-          background-color: $orange1;
-          color: $white;
-        }
-      }
-    }
-  }
+.navbar {
+  font-weight: bold;
+
   .navbar-inner {
     background-color: $grey3;
     background-image: none;
     border: none;
     padding: 0;
     text-align: center;
+
     ul {
       margin: 0;
     }
+
     .container {
       min-height: 40px;
-    }
-  }
-}
 
-.navbar {
-  font-weight: bold;
-  .region-main-navigation {
-    font-family: "Fedra Serif";
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    @include font-size(12);
-    ul {
-      margin: 0 auto 12px;
-    }
-    .content {
-      > .menu {
-        > li {
-          border-right: 1px solid $orange1;
-          height: 12px;
-          line-height: 1.2em;
-          margin: 3px 0 0 -1px;
-          &:hover {
-            background-color: $grey3;
-            border-color: $grey3;
-          }
-          &.last {
-            border: none;
-          }
-        }
-        .menu {
-          display: none;
-          background-color: $grey2;
-          left: 0;
-          margin: 12px 0 0 -1px;
-          padding: 0;
-          position: absolute;
-          text-transform: none;
-          width: 100%;
-          z-index: 9999;
-          li {
-            border-bottom: 1px solid $border_color1;
-            font-family: "News Gothic", sans-serif;
-            font-weight: normal;
-            letter-spacing: 0;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            &.last {
-              border: none;
-              margin-bottom: 0;
+      .region-main-navigation {
+        font-family: "Fedra Serif";
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        @include font-size(12);
+
+        .content {
+          // Primary & secondary menu styles
+          ul {
+            margin: 0 auto 12px;
+
+            li {
+              a {
+                color: $beige;
+                padding: 16px 43px 13px 43px;
+                @media screen and (max-width: 1199px) {
+                  padding: 16px 20px 13px 20px;
+                }
+                &:hover {
+                  background-color: $orange1;
+                  color: $white;
+                }
+              }
             }
           }
-          a {
-            display: block;
-            margin: 0;
-            padding: 8px 8px 5px 43px;
-            @include font-size(16);
+
+          > .menu {
+            > li {
+              border-right: 1px solid $orange1;
+              height: 12px;
+              line-height: 1.2em;
+              margin: 3px 0 0 -1px;
+              &:hover {
+                background-color: $grey3;
+                border-color: $grey3;
+              }
+
+              &.first {
+                margin: 3px 0 0 0;
+                > a {
+                  padding: 16px 44px 13px 43px;
+                  @media screen and (max-width: 1199px) {
+                    padding: 16px 21px 13px 20px;
+                  }
+                }
+              }
+
+              &.last {
+                border: none;
+
+                > a {
+                  padding: 16px 44px 13px 44px;
+                  @media screen and (max-width: 1199px) {
+                    padding: 16px 21px 13px 21px;
+                  }
+                }
+              }
+            }
+            // Secondary menu styles
+            .menu {
+              display: none;
+              background-color: $grey2;
+              left: 0;
+              margin: 12px 0 0 0;
+              padding: 0;
+              position: absolute;
+              text-transform: none;
+              width: 100%;
+              z-index: 9999;
+              li {
+                border-bottom: 1px solid $border_color1;
+                font-family: "News Gothic", sans-serif;
+                font-weight: normal;
+                letter-spacing: 0;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                &.last {
+                  border: none;
+                  margin-bottom: 0;
+                }
+
+                a {
+                  @include font-size(16);
+                  display: block;
+                  margin: 0;
+                  padding: 8px 43px 5px 43px;
+                  @media screen and (max-width: 1199px) {
+                    padding: 8px 20px 5px 20px;
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
-    li {
-      float: left;
-      list-style-type: none;
-      list-style-image: none;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      &:hover {
-        border-color: $grey3;
-      }
-      &.expanded:hover {
-        .menu {
-          display: block;
+        li {
+          float: left;
+          list-style-type: none;
+          list-style-image: none;
+          margin: 0;
+          padding: 0;
+          position: relative;
+          &:hover {
+            border-color: $grey3;
+          }
+          &.expanded:hover {
+            .menu {
+              display: block;
+            }
+          }
         }
       }
     }
