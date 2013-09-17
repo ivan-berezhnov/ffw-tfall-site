@@ -36,12 +36,7 @@
     print $newsImage;
   } elseif (isset($spotlightImage)) {
     print $spotlightImage;
-}
-
-
-
-
-
+  }
 ?>
 <div class="marquee__hover">
   <div class="marquee__info-wrapper">
