@@ -407,8 +407,10 @@ h2 {
     li {
       a {
         color: $beige;
-        padding: 16px 25px 13px 25px;
-        margin-left: -1px;
+        padding: 16px 43px 13px 43px;
+        @media screen and (max-width: 1199px) {
+          padding: 16px 20px 13px 20px;
+        }
         &:hover {
           background-color: $orange1;
           color: $white;
@@ -448,8 +450,9 @@ h2 {
           border-right: 1px solid $orange1;
           height: 12px;
           line-height: 1.2em;
-          margin: 3px 0 0 0;
+          margin: 3px 0 0 -1px;
           &:hover {
+            background-color: $grey3;
             border-color: $grey3;
           }
           &.last {
@@ -482,7 +485,7 @@ h2 {
           a {
             display: block;
             margin: 0;
-            padding: 8px 8px 5px 25px;
+            padding: 8px 8px 5px 43px;
             @include font-size(16);
           }
         }
@@ -622,11 +625,6 @@ h2 {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .navbar .region-main-navigation ul {
-    width: 78.7%;
-  }
-}
 
 /**/
 
