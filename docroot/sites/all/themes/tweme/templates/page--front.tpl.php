@@ -41,39 +41,12 @@
 	</div>
 <?php endif ?>
 
+<!-- front page marquee block -->
 <div class="container-wrapper marquee">
   <div class="container">
     <div class="row-fluid">
       <div class="span12">
         <?php print render($page['marquee']) ?>
-        <!--
-        <div class="marquee__large">
-          <div class="marquee__1" data-effeckt-type="cover-fade">
-            <img src="/sites/all/themes/tweme/images/marquee_large.jpg" />
-            <div class="marquee__hover">
-              <div class="marquee__info-wrapper">
-                <div class="marquee__category slug">Supporter Spotlight</div>
-                <h2 class="marquee__title">Student Voice: Learning to be a Super Hero</h2>
-                <div class="marquee__preview">The students of Nirali Vasisht (Teach For India)
-                  talk about their vision and the skills they learn in the classroom.</div>
-                <div class="marquee__link">Watch Video >></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="marquee__small hidden-phone">
-          <div class="marquee__2">
-            <img src="/sites/all/themes/tweme/images/marquee-small1.jpg" />
-          </div>
-          <div class="marquee__3">
-            <img src="/sites/all/themes/tweme/images/marquee-small2.jpg" />
-          </div>
-        </div>
-        <div class="marquee__medium hidden-phone">
-          <div class="marquee__4">
-            <img src="/sites/all/themes/tweme/images/marquee-vertical1.jpg" />
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -127,7 +100,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-        <h2><?php print t('Insights'); ?></h2>
+        <h2><?php print t('Network Learning'); ?></h2>
 				coming soon
       </div>
 		</div>

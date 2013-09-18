@@ -61,8 +61,8 @@ h1, .h1 { color: #4d4d4d; font-family: "Fedra Serif", serif; font-weight: normal
 h2, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 29px; }
 @media screen and (max-width: 767px) { h2, .h2 { font-size: 18px; font-size: 1.05882rem; line-height: 22px; } }
 
-h3, .h3 { font-family: "Fedra Serif", serif; font-weight: normal; line-height: 22px; margin: 0 0 5px 0; font-size: 18px; font-size: 1.05882rem; }
-@media screen and (max-width: 767px) { h3, .h3 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; } }
+h3, .h3, .marquee__2 .marquee__title, .marquee__3 .marquee__title, .marquee__4 .marquee__title { font-family: "Fedra Serif", serif; font-weight: normal; line-height: 22px; margin: 0 0 5px 0; font-size: 18px; font-size: 1.05882rem; }
+@media screen and (max-width: 767px) { h3, .h3, .marquee__2 .marquee__title, .marquee__3 .marquee__title, .marquee__4 .marquee__title { line-height: 20px; font-size: 16px; font-size: 0.94118rem; } }
 
 h4, .h4 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; }
 
@@ -255,14 +255,20 @@ img { max-width: 100%; }
 .marquee { background-color: #91998c; }
 
 .marquee__2, .marquee__3, .marquee__4 { position: relative; }
+.marquee__2 .marquee__info-wrapper, .marquee__3 .marquee__info-wrapper, .marquee__4 .marquee__info-wrapper { bottom: 20px; left: 20px; right: 20px; width: 90%; }
 .marquee__2 .marquee__preview, .marquee__3 .marquee__preview, .marquee__4 .marquee__preview { display: none; }
 
 .marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }
 
 .marquee__title { font-weight: normal; }
 .marquee__title a { color: white; }
+.marquee__title a:hover { color: #cf4753; }
 
-.marquee__preview { font-size: 17px; font-size: 1rem; }
+.marquee__preview { color: #999999; font-family: "Fedra Serif", serif; margin-bottom: 10px; font-size: 17px; font-size: 1rem; }
+
+.marquee__link { font-weight: bold; line-height: 1em; font-size: 11px; font-size: 0.64706rem; }
+.marquee__link a { color: white; }
+.marquee__link a:hover { color: #ffb151; }
 
 .marquee__large { background-color: black; float: left; position: relative; width: 50%; }
 
