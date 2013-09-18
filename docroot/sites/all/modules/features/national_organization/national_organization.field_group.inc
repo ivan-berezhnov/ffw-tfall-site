@@ -57,6 +57,7 @@ function national_organization_field_group_info() {
       2 => 'field_program_launched',
       3 => 'field_schools',
       4 => 'field_teachers_active',
+      5 => 'field_city_1',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
