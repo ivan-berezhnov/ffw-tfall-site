@@ -1,10 +1,32 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee #MapBox
- ### VIEWS ### # News Listing
- ### NODES ### #National Organizations #Spotlight #News - Node
- ### LANDING PAGES ### #News - Landing
+/**
+    #Imports
+    #Font-Face
+    #Styleguide - Typography
+    #Global Elements
+    #Objects
+    #Header
+    #Primary Navigation
+    #Uber Navigation
+    #Feeds
+    #Footer
+    #Images
+    #Supporters Widget
+    #Marquee
+    #MapBox
+
+    ### VIEWS ###
+    # News Listing
+
+    ### NODES ###
+    #National Organizations
+    #Spotlight
+    #News - Node
+
+    ### LANDING PAGES ###
+    #News - Landing
 **/
 /**
 *   #Imports
@@ -18,22 +40,53 @@
 /**
 * #Classes
 **/
-.orange2 { color: #ffb151; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/_variables\.scss}line{font-family:\0000329}}
+.orange2 {
+  color: #ffb151;
+}
 
 /**
 * #Font-Face
 **/
-@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Book.otf"); font-style: normal; font-weight: normal; }
+@font-face {
+  font-family: "Fedra Serif";
+  src: url("../fonts/FSerStdA-Book.otf");
+  font-style: normal;
+  font-weight: normal;
+}
 
-@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Bold.otf"); font-style: normal; font-weight: bold; }
+@font-face {
+  font-family: "Fedra Serif";
+  src: url("../fonts/FSerStdA-Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
 
-@font-face { font-family: "News Gothic"; src: url("../fonts/NewsGothic-Medium.otf"); font-style: normal; font-weight: normal; }
+@font-face {
+  font-family: "News Gothic";
+  src: url("../fonts/NewsGothic-Medium.otf");
+  font-style: normal;
+  font-weight: normal;
+}
 
-@font-face { font-family: "News Gothic"; src: url("../fonts/NewsGothic-DemiBold.otf"); font-style: normal; font-weight: bold; }
+@font-face {
+  font-family: "News Gothic";
+  src: url("../fonts/NewsGothic-DemiBold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
 
-@font-face { font-family: 'icomoon'; src: url("fonts/icomoon.eot"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot");
+}
 
-@font-face { font-family: 'icomoon'; src: url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAgAAAsAAAAACtQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAABNYAAAYHF2m0JkZGVE0AAAXgAAAAGgAAABxmM8XCR0RFRgAABfwAAAAdAAAAIAAzAARPUy8yAAAGHAAAAEsAAABgL9zcQGNtYXAAAAZoAAAAPQAAAVLgFfLNaGVhZAAABqgAAAAuAAAANv3Jl01oaGVhAAAG2AAAAB4AAAAkBBD/5GhtdHgAAAb4AAAAEgAAABIEGQCAbWF4cAAABwwAAAAGAAAABgAGUABuYW1lAAAHFAAAAN0AAAGGT9Lz8HBvc3QAAAf0AAAADAAAACAAAwAAeJw9VG1QlFUYfd5ld3lZ10WRNdQFZFwYFSE+FAyV/CTzaxidESPDBh1USBHDJEnSnCHhbfpcmWLSjBDNGscxdcywGEcZREVy/CAyEyUZQVaDsm1gPJ2r5p/nnrnvved5nnPP82piNoumafrq5flr8vPXimYSTVJ9I02+CD9fiNmw+xl2c5hNhi0KgmE8BXb/8jyfx1docUlloEtkkEv2DHaJ7rIgSPwVhy6BMlRCxS3RkrBh7eq0uLg4LrOeLvGPl4THS+KTAv6vQ0R7V9uulWnlmiFWRWgSu1Ro3/l5LXMchq/Q3O/xefwd0MLvLc1zgiVU/+OBzOpeSOz/GiQg0wVZ8lwlcHDvAYObEeWQcWOKLJBn/CogWkUaxL7IB4kwh4TxU+g6np/yF/D96iIr8E1yE3C3uAa4NL4WOGaNCifJ8N3AOat7LgCfxwD21uecNYw+j4WVzGquNhvMlOE8CVnZ74VMnz4fMlDbDkmbEUR0tpT3/qgCSheOgwy6HQnUru8hemkJ8OPXyRDbv61A685DEMfM6+RyzG1gHDHfAXHnj4CEtlkhyde+JfK2EHXWATfqOyHxy4OB01tnA9faGtniyoOQ97KSINd6E9hinQC3Vj0Asm4F6YTqdNblk8CrkTeBjaWdwAXvp+S6VEx0+45C7PqSOwQSvSccuD+skjR+V4HuhtchkWrvzBqWdW7IUeDPw7Wqn30KvUXUMRa4TEFxPSHWMHSHzwOtpLHEye9dJqDz3i7AGx9Fsi0srKuohR/iqqhvIsn6SoqU0llERenUuG99LOOGuGqgIqMZWHY/Akg908fNUweCGRsaHkAGr8gEft62g8o00Q968gVqbb1DtDSPaMtpok27KWZ8so0xZq6JdTbWQUb1JkJc485Tlov6EWZuWQj8MiEVErZsM9Dz5TnImONtEGvuFOBhfSSRhyohw0Z06jeSBXiKVXzhPm314kQmah4JMeXkUMoevkNADfX8tfFtyNjCFB5MaFeXpCBXxXXVDKYPFeIlx5hkOiuCLzgoYS1bT8thZxMHM1thinq35mxI0JU0Cld4AjIyqpMU7oL9jEOmToVYYhfz+4CZzGlja4HbaPTEJlqqbj3dPT9nL3AllnsZ886TfFcS+5mwFeJ/MJsZgmJYuTmTXPqkGsYUVdWzeiGDGqgUUzM3w5LSnhgSvanHmHY0TdW146ROz3UvgJiP0PxDN90kyQm6OHjeHE5ZQD+bGh0HdBRR23vqEbtyU+mD9OwSiPN5WsZU1s/TqW+whz1VqkcOjZ65W6fDtvbEQPuoq5TuwdKxTN5Ka9w1ZvBmDh13Y1qZoaulnKyTu8n6GaepPZJj1n7mOElDPMCdv6lO+PAv6GF7k9r7hFXamHxE0nY6uXLGVTzM7fDSONnvLOAQa5O7PwZ2bj5k8H+xc+M8Huk44KTXRruHqTPvq0E/2nDYot59KGuVrziOAYG/s5PPc+mLTaGU1Z3JTqL28TFjLhI1TnmUj9XKqCpq65hN7drDJwFXo02sIv3lmkf5IT+kV/tDXlnMh76QzavReZyan8bXhgGNrTQxbkxyA20fXOcrDKhXfXspwcOBF9W4FKzi38w5FdhfcFeVry3gsN8qXqHQYo5k73ieanlziRrLYMNp2G3/AS3+EUAAAHicY2BgYGQAgpOd+YYg+lyotgeMBgA7fQUgAAB4nGNgZGBg4ANiCQYQYGJgBEJWIGYB8xgABIEAOAAAAHicY2BmYmCcwMDKwMHow5jGwMDgDqW/MkgytDAwMDGwMjPAgQCCyRCQ5prC4PCA4QMD44P/Dxj0GB8wKDQwMDDCFSgAISMAEEIMHwB4nGNgYGBmgGAZBkYGEPAB8hjBfBYGAyDNAYRMIIkHzB8Y/v8HsxggLAUmAUaoLjBgZGNA5o5IAADMzQixAAAAeJxjYGRgYADiSRoX8+P5bb4ycDMxgMC5UG0PBP3/ARMD4wMgl4MBLA0AEZsJoQAAeJxjYGRgYHzw/wGDHhMDA8M/BiAJFEEBzABt5wP2AAACAAAAAAAAAAIAAIAAAAAAABkAAAAAUAAABgAAeJx1jjFqAzEQRd/aa4fgEFKFlII0aXaRNpV9gD1ACvfGiGXBtkC2wSdJlSOkzDFygBwhx8j3epoUFgx6+vNnvoA73ik4n4IbHoxH4hfjMc+cjEvpn8YTZnwbT6X/ylmUt1Luh6kzj8RPxmNavHEp/cN4wiNfxlPpP/SsSWxViR3067RNSfBGpOPIhhVZz9gdNytBO/gOw53liDgaaqU5Fqr/+y5aULdirmpEgVetSbtDm3IXXVN7t3CWKwq+mleNDzJd+9tSqZm9+peMMOSzjHnfa0eo/dXZPwGWOdUAAAB4nGNgZsALAAB9AAQ=) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'icomoon';
+  src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Use the following CSS code if you want to have a class per icon */
 /*
@@ -41,261 +94,1136 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"] {
 */
-.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\0000393}}
+.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
 
-.ico-facebook:before { content: "\e000"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003103}}
+.ico-facebook:before {
+  content: "\e000";
+}
 
-.ico-vimeo:before { content: "\e001"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003106}}
+.ico-vimeo:before {
+  content: "\e001";
+}
 
-.ico-twitter:before { content: "\e002"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003109}}
+.ico-twitter:before {
+  content: "\e002";
+}
 
-.ico-linkedin:before { content: "\e003"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003112}}
+.ico-linkedin:before {
+  content: "\e003";
+}
 
 /**/
 /**
 * #Styleguide - Typography
 **/
-h1, .h1 { color: #4d4d4d; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 48px; margin-bottom: 5px; font-size: 42px; font-size: 2.47059rem; }
-@media screen and (max-width: 767px) { h1, .h1 { font-size: 25px; font-size: 1.47059rem; line-height: 29px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003122}}
+h1, .h1 {
+  color: #4d4d4d;
+  font-family: "Fedra Serif", serif;
+  font-weight: normal;
+  line-height: 48px;
+  margin-bottom: 5px;
+  font-size: 42px;
+  font-size: 2.47059rem;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003122}}
+  h1, .h1 {
+    font-size: 25px;
+    font-size: 1.47059rem;
+    line-height: 29px;
+  }
+}
 
-h2, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 29px; }
-@media screen and (max-width: 767px) { h2, .h2 { font-size: 18px; font-size: 1.05882rem; line-height: 22px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003135}}
+h2, .h2 {
+  font-size: 25px;
+  font-size: 1.47059rem;
+  font-family: "Fedra Serif", serif;
+  font-weight: normal;
+  line-height: 29px;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003135}}
+  h2, .h2 {
+    font-size: 18px;
+    font-size: 1.05882rem;
+    line-height: 22px;
+  }
+}
 
-h3, .h3 { font-family: "Fedra Serif", serif; font-weight: normal; line-height: 22px; margin: 0 0 5px 0; font-size: 18px; font-size: 1.05882rem; }
-@media screen and (max-width: 767px) { h3, .h3 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003146}}
+h3, .h3 {
+  font-family: "Fedra Serif", serif;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-size: 1.05882rem;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003146}}
+  h3, .h3 {
+    line-height: 20px;
+    font-size: 16px;
+    font-size: 0.94118rem;
+  }
+}
 
-h4, .h4 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003158}}
+h4, .h4 {
+  line-height: 20px;
+  font-size: 16px;
+  font-size: 0.94118rem;
+}
 
-.blurb, .no__blurb { font-weight: bold; font-size: 36px; font-size: 2.11765rem; line-height: 38px; color: #91998c; margin: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003163}}
+.blurb, .no__blurb {
+  font-weight: bold;
+  font-size: 36px;
+  font-size: 2.11765rem;
+  line-height: 38px;
+  color: #91998c;
+  margin: 20px 0;
+}
 
-a { color: #cf4753; }
-a:hover { color: #cf4753; text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003171}}
+a {
+  color: #cf4753;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003173}}
+a:hover {
+  color: #cf4753;
+  text-decoration: none;
+}
 
-body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px; font-family: "News Gothic", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003179}}
+body {
+  color: #4d4d4d;
+  font-size: 16px;
+  font-size: 0.94118rem;
+  line-height: 20px;
+  font-family: "News Gothic", sans-serif;
+}
 
-.small-body { font-size: 16px; font-size: 0.94118rem; color: #4d4d4d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003186}}
+.small-body {
+  font-size: 16px;
+  font-size: 0.94118rem;
+  color: #4d4d4d;
+}
 
 /**/
 /**
 * #Global Elements
 **/
-.site-slogan { color: #91998c; line-height: 30px; text-align: center; font-size: 32px; font-size: 1.88235rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003197}}
+.site-slogan {
+  color: #91998c;
+  line-height: 30px;
+  text-align: center;
+  font-size: 32px;
+  font-size: 1.88235rem;
+}
 
-.full-list { background-color: #4d4d4d; color: white; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
-.full-list a { color: white; }
-.full-list a:hover { color: #ffb151; }
-.full-list:hover { color: #ffb151; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003204}}
+.full-list {
+  background-color: #4d4d4d;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 6px 12px 5px 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003205}}
+.full-list a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003207}}
+.full-list a:hover {
+  color: #ffb151;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003219}}
+.full-list:hover {
+  color: #ffb151;
+}
 
-.search-form .input-append .btn { border: 1px solid #ccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003226}}
+.search-form .input-append .btn {
+  border: 1px solid #ccc;
+}
 
-.content p:last-child { margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003233}}
+.content p:last-child {
+  margin-bottom: 0;
+}
 
-label, input, button, select, textarea { font-size: 17px; font-size: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003238}}
+label, input, button, select, textarea {
+  font-size: 17px;
+  font-size: 1rem;
+}
 
-html.js input.form-autocomplete { background-position: 100% 9px; }
-html.js input.throbbing { background-position: 100% -12px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003245}}
+html.js input.form-autocomplete {
+  background-position: 100% 9px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003248}}
+html.js input.throbbing {
+  background-position: 100% -12px;
+}
 
-.btn { background-color: #dfd9c9; background-image: none; border-radius: 0; border: none; box-shadow: none; font-family: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003255}}
+.btn {
+  background-color: #dfd9c9;
+  background-image: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+}
 
-.btn-primary { background-color: #e69740; }
-.btn-primary:hover { background-color: #cf4753; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003264}}
+.btn-primary {
+  background-color: #e69740;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003266}}
+.btn-primary:hover {
+  background-color: #cf4753;
+}
 
-.nav-tabs { padding-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003271}}
+.nav-tabs {
+  padding-top: 20px;
+}
 
-div.messages { margin: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003275}}
+div.messages {
+  margin: 20px 0;
+}
 
-.page-node .content .title { color: #e69740; font-weight: normal; letter-spacing: 5px; line-height: 30px; padding-top: 0; text-transform: uppercase; font-size: 26px; font-size: 1.52941rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003279}}
+.page-node .content .title {
+  color: #e69740;
+  font-weight: normal;
+  letter-spacing: 5px;
+  line-height: 30px;
+  padding-top: 0;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-size: 1.52941rem;
+}
 
-#main { padding: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003289}}
+#main {
+  padding: 20px 0;
+}
 
-.page-title { margin-bottom: 30px; text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003293}}
+.page-title {
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-top: 0; text-transform: uppercase; font-size: 26px; font-size: 1.52941rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003299}}
+h2.page-title {
+  color: #e69740;
+  letter-spacing: 4px;
+  line-height: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-size: 1.52941rem;
+}
 
-@media screen and (max-width: 767px) { h2, .h2 { font-size: 20px; font-size: 1.17647rem; } }
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003310}}
+  h2, .h2 {
+    font-size: 20px;
+    font-size: 1.17647rem;
+  }
+}
 /**/
 /**
 * #Objects
 **/
-.rounded-button { position: absolute; bottom: 40px; left: 0; letter-spacing: 3px; text-align: center; width: 100%; z-index: 9998; }
-.rounded-button span { background-color: #91998c; color: white; padding: 8px 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003321}}
+.rounded-button {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  letter-spacing: 3px;
+  text-align: center;
+  width: 100%;
+  z-index: 9998;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003329}}
+.rounded-button span {
+  background-color: #91998c;
+  color: white;
+  padding: 8px 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
 
-.slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; font-weight: bold; letter-spacing: 1px; line-height: 14px; margin-bottom: 5px; text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003337}}
+.slug {
+  font-size: 11px;
+  font-size: 0.64706rem;
+  color: #e69740;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
 
 /**/
 /**
 * #Header
 **/
-.header { margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003353}}
+.header {
+  margin-top: 10px;
+}
 
-.site-name { text-align: center; }
-.site-name img { margin: 20px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003357}}
+.site-name {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003359}}
+.site-name img {
+  margin: 20px 0;
+}
 
-.donate { background-color: #e69740; font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; margin-right: 4px; padding: 0 5px; font-size: 11px; font-size: 0.64706rem; }
-.donate a { color: white; }
-.donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003364}}
+.donate {
+  background-color: #e69740;
+  font-family: "Fedra Serif";
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-right: 4px;
+  padding: 0 5px;
+  font-size: 11px;
+  font-size: 0.64706rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003372}}
+.donate a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003375}}
+.donate:hover {
+  background-color: #cf4753;
+  color: white;
+  cursor: pointer;
+}
 
-.social-media { background-color: #91998c; color: white; line-height: 1.3em; padding: 2px 3px; font-size: 17px; font-size: 1rem; }
-.social-media:hover { background-color: #cf4753; color: white; cursor: pointer; text-decoration: none; }
-.social-media[class*=" icon-"] { vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003382}}
+.social-media {
+  background-color: #91998c;
+  color: white;
+  line-height: 1.3em;
+  padding: 2px 3px;
+  font-size: 17px;
+  font-size: 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003388}}
+.social-media:hover {
+  background-color: #cf4753;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003394}}
+.social-media[class*=" icon-"] {
+  vertical-align: middle;
+}
 
 /**/
 /**
 * #Primary Navigation
 **/
-.navbar { font-weight: bold; }
-.navbar .navbar-inner { background-color: #3c3835; background-image: none; border: none; padding: 0; text-align: center; }
-.navbar .navbar-inner ul { margin: 0; }
-.navbar .navbar-inner .container { min-height: 40px; }
-.navbar .navbar-inner .container .region-main-navigation { font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
-.navbar .navbar-inner .container .region-main-navigation .content ul { margin: 0 auto 12px; }
-.navbar .navbar-inner .container .region-main-navigation .content ul li a { color: #dfd9c9; padding: 16px 43px 13px 43px; }
-@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content ul li a { padding: 16px 20px 13px 20px; } }
-.navbar .navbar-inner .container .region-main-navigation .content ul li a:hover { background-color: #e69740; color: white; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li { border-right: 1px solid #e69740; height: 12px; line-height: 1.2em; margin: 3px 0 0 -1px; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover { background-color: #3c3835; border-color: #3c3835; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first { margin: 3px 0 0 0; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a { padding: 16px 44px 13px 43px; }
-@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a { padding: 16px 21px 13px 20px; } }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last { border: none; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a { padding: 16px 44px 13px 44px; }
-@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a { padding: 16px 21px 13px 21px; } }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu { display: none; background-color: #4d4d4d; left: 0; margin: 12px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li { border-bottom: 1px solid #92998d; font-family: "News Gothic", sans-serif; font-weight: normal; letter-spacing: 0; margin: 0; padding: 0; width: 100%; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li.last { border: none; margin-bottom: 0; }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a { font-size: 16px; font-size: 0.94118rem; display: block; margin: 0; padding: 8px 43px 5px 43px; }
-@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a { padding: 8px 20px 5px 20px; } }
-.navbar .navbar-inner .container .region-main-navigation li { float: left; list-style-type: none; list-style-image: none; margin: 0; padding: 0; position: relative; }
-.navbar .navbar-inner .container .region-main-navigation li:hover { border-color: #3c3835; }
-.navbar .navbar-inner .container .region-main-navigation li.expanded:hover .menu { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003405}}
+.navbar {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003408}}
+.navbar .navbar-inner {
+  background-color: #3c3835;
+  background-image: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003415}}
+.navbar .navbar-inner ul {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003419}}
+.navbar .navbar-inner .container {
+  min-height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003422}}
+.navbar .navbar-inner .container .region-main-navigation {
+  font-family: "Fedra Serif";
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.70588rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003431}}
+.navbar .navbar-inner .container .region-main-navigation .content ul {
+  margin: 0 auto 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003435}}
+.navbar .navbar-inner .container .region-main-navigation .content ul li a {
+  color: #dfd9c9;
+  padding: 16px 43px 13px 43px;
+}
+@media screen and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003435}}
+  .navbar .navbar-inner .container .region-main-navigation .content ul li a {
+    padding: 16px 20px 13px 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003441}}
+.navbar .navbar-inner .container .region-main-navigation .content ul li a:hover {
+  background-color: #e69740;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003450}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li {
+  border-right: 1px solid #e69740;
+  height: 12px;
+  line-height: 1.2em;
+  margin: 3px 0 0 -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003455}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover {
+  background-color: #3c3835;
+  border-color: #3c3835;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003460}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first {
+  margin: 3px 0 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003462}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a {
+  padding: 16px 44px 13px 43px;
+}
+@media screen and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003462}}
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a {
+    padding: 16px 21px 13px 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003470}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003473}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a {
+  padding: 16px 44px 13px 44px;
+}
+@media screen and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003473}}
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a {
+    padding: 16px 21px 13px 21px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003482}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu {
+  display: none;
+  background-color: #4d4d4d;
+  left: 0;
+  margin: 12px 0 0 0;
+  padding: 0;
+  position: absolute;
+  text-transform: none;
+  width: 100%;
+  z-index: 9999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003492}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li {
+  border-bottom: 1px solid #92998d;
+  font-family: "News Gothic", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003500}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li.last {
+  border: none;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003505}}
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a {
+  font-size: 16px;
+  font-size: 0.94118rem;
+  display: block;
+  margin: 0;
+  padding: 8px 43px 5px 43px;
+}
+@media screen and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003505}}
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a {
+    padding: 8px 20px 5px 20px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003518}}
+.navbar .navbar-inner .container .region-main-navigation li {
+  float: left;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003525}}
+.navbar .navbar-inner .container .region-main-navigation li:hover {
+  border-color: #3c3835;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003529}}
+.navbar .navbar-inner .container .region-main-navigation li.expanded:hover .menu {
+  display: block;
+}
 
 /**/
 /**
 * #Uber Navigation
 **/
-.uber-nav { font-weight: bold; margin-top: -5px; }
-.uber-nav .content > .menu { position: relative; }
-.uber-nav .content > .menu > li { border-right: 1px solid #e69740; float: left; height: 8px; line-height: .4em; margin: 0; padding: 0; position: relative; }
-.uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active { border-color: white; }
-.uber-nav .content > .menu > li:last-child { border-right: none; }
-.uber-nav .content > .menu > li > a { letter-spacing: 2px; margin-left: -1px; padding-left: 12px; }
-.uber-nav .content > .menu > li > a:hover { background-color: #e69740; color: white; }
-.uber-nav .content > .menu > li > a.active { color: #cf4753; }
-.uber-nav .content > .menu > li > a.active:hover { color: white; }
-.uber-nav .content > .menu li:hover .menu { display: block; }
-.uber-nav a { color: #92998d; padding: 5px 10px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
-.uber-nav a:hover { color: #cf4753; }
-.uber-nav ul { margin-left: 0; }
-.uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -1px; top: 14px; position: absolute; width: 100px; z-index: 9999; text-align: left; }
-.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; line-height: 16px; margin: 0 3px; padding: 0; text-transform: none; }
-.uber-nav .menu .menu a:hover { background-color: transparent; color: #cf4753; }
-.uber-nav .menu .menu a.active { background-color: transparent; }
-.uber-nav .menu .menu li { display: block; padding-top: 0; }
-.uber-nav .menu .menu li:first-child { margin-top: 2px; }
-.uber-nav ul li { list-style-type: none; list-style-image: none; }
-.uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003545}}
+.uber-nav {
+  font-weight: bold;
+  margin-top: -5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003549}}
+.uber-nav .content > .menu {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003551}}
+.uber-nav .content > .menu > li {
+  border-right: 1px solid #e69740;
+  float: left;
+  height: 8px;
+  line-height: .4em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003560}}
+.uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active {
+  border-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003563}}
+.uber-nav .content > .menu > li:last-child {
+  border-right: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003566}}
+.uber-nav .content > .menu > li > a {
+  letter-spacing: 2px;
+  margin-left: -1px;
+  padding-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003570}}
+.uber-nav .content > .menu > li > a:hover {
+  background-color: #e69740;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003574}}
+.uber-nav .content > .menu > li > a.active {
+  color: #cf4753;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003576}}
+.uber-nav .content > .menu > li > a.active:hover {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003583}}
+.uber-nav .content > .menu li:hover .menu {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003589}}
+.uber-nav a {
+  color: #92998d;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.64706rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003594}}
+.uber-nav a:hover {
+  color: #cf4753;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003598}}
+.uber-nav ul {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003602}}
+.uber-nav .menu .menu {
+  display: none;
+  background-color: white;
+  border: 1px solid #e69740;
+  left: -1px;
+  top: 14px;
+  position: absolute;
+  width: 100px;
+  z-index: 9999;
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003612}}
+.uber-nav .menu .menu a {
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 0.82353rem;
+  display: block;
+  line-height: 16px;
+  margin: 0 3px;
+  padding: 0;
+  text-transform: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003621}}
+.uber-nav .menu .menu a:hover {
+  background-color: transparent;
+  color: #cf4753;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003625}}
+.uber-nav .menu .menu a.active {
+  background-color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003629}}
+.uber-nav .menu .menu li {
+  display: block;
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003632}}
+.uber-nav .menu .menu li:first-child {
+  margin-top: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003642}}
+.uber-nav ul li {
+  list-style-type: none;
+  list-style-image: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003646}}
+.uber-nav ul li.expanded, .uber-nav ul li.leaf {
+  list-style-type: none;
+  list-style-image: none;
+}
 
 /**/
 /**
 * #Feeds
 **/
-#feeds { background-color: #e69740; padding: 40px 0; }
-#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003661}}
+#feeds {
+  background-color: #e69740;
+  padding: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003664}}
+#feeds h2 {
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /**
 * #Footer
 **/
-#footer { background-color: #4d4d4d; border: none; padding: 30px 0; }
-#footer ul { margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003677}}
+#footer {
+  background-color: #4d4d4d;
+  border: none;
+  padding: 30px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003681}}
+#footer ul {
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003677}}
+  #footer {
+    padding-bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003690}}
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
+    font-size: 15px;
+    font-size: 0.88235rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003696}}
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
+    font-size: 17px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003703}}
+  #footer .row-fluid [class*="span2"].footer-links {
+    width: 42%;
+    float: left;
+    margin-right: 6%;
+    margin-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003709}}
+  #footer .row-fluid [class*="span2"].footer-links .block-block {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003714}}
+  #footer .row-fluid [class*="span2"].footer-links-2 {
+    width: 42%;
+    float: left;
+    margin-right: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003719}}
+  #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003724}}
+  #footer .row-fluid [class*="span2"]:first-child + div + div {
+    clear: left;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003733}}
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li {
+    width: 42%;
+    float: left;
+    margin-right: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003738}}
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.first {
+    width: 42%;
+    float: left;
+    margin-right: 6%;
+    margin-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003745}}
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.last {
+    width: auto;
+    clear: both;
+    margin-left: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003756}}
+  #footer .row-fluid .span2 + .span3 {
+    clear: both;
+    box-sizing: border-box;
+    padding: 0 5% 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003761}}
+  #footer .row-fluid .span2 + .span3 .donate {
+    font-size: 14px;
+    font-size: 0.82353rem;
+    padding: 2px 10px 0;
+    margin-right: 9px;
+    line-height: 32px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003768}}
+  #footer .row-fluid .span2 + .span3 .social-media {
+    display: inline-block;
+    padding: 7px 8px;
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003780}}
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
+    font-size: 14px;
+    font-size: 0.82353rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003786}}
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
+    font-size: 16px;
+    font-size: 0.94118rem;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003794}}
+  #footer .row-fluid [class*="span2"].footer-links .block-block, #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003802}}
+  #footer .row-fluid .span2 + .span3 .donate {
+    font-size: 14px;
+    font-size: 0.82353rem;
+    padding: 2px 10px 0;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    line-height: 32px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003810}}
+  #footer .row-fluid .span2 + .span3 .social-media {
+    display: inline-block;
+    padding: 7px 8px;
+    margin-right: 5px;
+  }
+}
 
-.footer__copyright { color: #999999; margin-top: 20px; width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003820}}
+.footer__copyright {
+  color: #999999;
+  margin-top: 20px;
+  width: 80%;
+}
 
-.footer__contact { color: #999999; width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003826}}
+.footer__contact {
+  color: #999999;
+  width: 80%;
+}
 
-.footer-links a { margin-left: 0; }
-.footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003832}}
+.footer-links a {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003839}}
+.footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) {
+  display: none;
+}
 
-.footer-links-2 .content > ul > li { margin-bottom: 20px; }
-.footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003850}}
+.footer-links-2 .content > ul > li {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003854}}
+.footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) {
+  display: none;
+}
 
-.footer-menu .menu .menu .last { margin-bottom: 10px; }
-.footer-menu ul { margin: 0; }
-.footer-menu .content > ul > li { padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003865}}
+.footer-menu .menu .menu .last {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003870}}
+.footer-menu ul {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003878}}
+.footer-menu .content > ul > li {
+  padding: 0;
+}
 
-#footer .content > ul > li { list-style-type: none; list-style-image: none; margin: 0 0 15px 0; line-height: 1em; padding: 0; }
-#footer .content > ul > li > ul li { list-style-type: none; list-style-image: none; margin: 0; }
-#footer .content > ul > li > ul li a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
-#footer .content > ul > li > ul li a:hover { color: #cf4753; }
-#footer .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003886}}
+#footer .content > ul > li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0 0 15px 0;
+  line-height: 1em;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003893}}
+#footer .content > ul > li > ul li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003897}}
+#footer .content > ul > li > ul li a {
+  color: #999999;
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003900}}
+#footer .content > ul > li > ul li a:hover {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003906}}
+#footer .content > ul > li > a {
+  color: #dfd9c9;
+  font-family: "Fedra", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.64706rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003913}}
+#footer .content > ul > li > a:hover {
+  color: white;
+}
 
 /**/
 /**
 * #Images
 **/
-img { max-width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003926}}
+img {
+  max-width: 100%;
+}
 
 /**/
 /**
 * #Supporters Widget
 **/
-.flexslider_supporter a { margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003935}}
+.flexslider_supporter a {
+  margin: 0;
+}
 
-.widget_supporters { background-color: white; padding: 20px; text-align: center; }
-.widget_supporters .title { color: #ffb151; font-family: "Fedra", serif; letter-spacing: 4px; display: block; margin-bottom: 10px; }
-.widget_supporters ul { padding: 0px; margin: 0px; }
-.widget_supporters ul li a { margin: 0px; }
-.widget_supporters p { color: #999999; font-size: 16px; font-size: 0.94118rem; line-height: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003940}}
+.widget_supporters {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003944}}
+.widget_supporters .title {
+  color: #ffb151;
+  font-family: "Fedra", serif;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003951}}
+.widget_supporters ul {
+  padding: 0px;
+  margin: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003954}}
+.widget_supporters ul li a {
+  margin: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003958}}
+.widget_supporters p {
+  color: #999999;
+  font-size: 16px;
+  font-size: 0.94118rem;
+  line-height: 1.5em;
+}
 
-.fb-like-box { background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003965}}
+.fb-like-box {
+  background-color: white;
+}
 
 /**/
 /**
 * #Marquee
 **/
-.marquee { background-color: #91998c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003975}}
+.marquee {
+  background-color: #91998c;
+}
 
-.marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003979}}
+.marquee__info-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 70%;
+}
 
-.marquee__title { font-weight: normal; }
-.marquee__title a { color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003986}}
+.marquee__title {
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003987}}
+.marquee__title a {
+  color: white;
+}
 
-.marquee__large { background-color: black; float: left; position: relative; width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\00003993}}
+.marquee__large {
+  background-color: black;
+  float: left;
+  position: relative;
+  width: 50%;
+}
 
-.marquee__medium { background-color: #cf4753; box-sizing: border-box; -moz-box-sizing: border-box; float: right; position: relative; width: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031000}}
+.marquee__medium {
+  background-color: #cf4753;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: right;
+  position: relative;
+  width: 25%;
+}
 
-.marquee__small { background-color: #e69740; box-sizing: border-box; -moz-box-sizing: border-box; float: left; position: relative; width: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031009}}
+.marquee__small {
+  background-color: #e69740;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  float: left;
+  position: relative;
+  width: 25%;
+}
 
-.marquee__hover { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; opacity: 0; height: 100%; position: absolute; top: 0; left: 0; width: 100%; -webkit-transition: 500ms; -o-transition: 500ms; transition: 500ms; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031018}}
+.marquee__hover {
+  background-color: #3c3835;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
 
-.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover { opacity: .8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031034}}
+.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover,
+.marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover {
+  opacity: .8;
+}
 
-@media screen and (max-width: 979px) and (min-width: 768px) { .marquee__info-wrapper { bottom: 20px; left: 20px; width: 80%; } }
-@media screen and (max-width: 979px) { .marquee__large { width: 100%; }
-  .marquee__hover { background-color: transparent; opacity: 1; position: static; }
-  .marquee__info-wrapper { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; bottom: 0; left: 0; padding: 10px; position: static; width: 100%; }
-  .marquee__preview { display: none; } }
+@media screen and (max-width: 979px) and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031039}}
+  .marquee__info-wrapper {
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031047}}
+  .marquee__large {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031050}}
+  .marquee__hover {
+    background-color: transparent;
+    opacity: 1;
+    position: static;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031055}}
+  .marquee__info-wrapper {
+    background-color: #3c3835;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: static;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031065}}
+  .marquee__preview {
+    display: none;
+  }
+}
 /**/
 /**
 * #MapBox
 **/
-#worldmap { background-color: #80b4e4; box-sizing: border-box; -moz-box-sizing: border-box; padding: 0px; position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031076}}
+#worldmap {
+  background-color: #80b4e4;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px;
+  position: relative;
+}
 
-.worldmap__title { letter-spacing: 2px; position: absolute; top: 30px; left: 0; text-align: center; width: 100%; z-index: 9998; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031084}}
+.worldmap__title {
+  letter-spacing: 2px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 9998;
+}
 
-#map { background-color: #80b4e4; width: 100%; height: 580px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031094}}
+#map {
+  background-color: #80b4e4;
+  width: 100%;
+  height: 580px;
+}
 
-.leaflet-bar { border: none; border-radius: 0; }
-.leaflet-bar a { background-color: #4d4d4d; border: none; color: white; padding: 0 0 2px 1px; }
-.leaflet-bar a:first-child { border-radius: 0; margin-bottom: 2px; }
-.leaflet-bar a:last-child { border-radius: 0; }
-.leaflet-bar a:hover { background-color: #4d4d4d; border: none; color: #e69740; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031100}}
+.leaflet-bar {
+  border: none;
+  border-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031103}}
+.leaflet-bar a {
+  background-color: #4d4d4d;
+  border: none;
+  color: white;
+  padding: 0 0 2px 1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031108}}
+.leaflet-bar a:first-child {
+  border-radius: 0;
+  margin-bottom: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031112}}
+.leaflet-bar a:last-child {
+  border-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031115}}
+.leaflet-bar a:hover {
+  background-color: #4d4d4d;
+  border: none;
+  color: #e69740;
+}
 
-.leaflet-popup-pane { z-index: 9999; }
-.leaflet-popup-pane a { color: #91998c; }
-.leaflet-popup-pane a:hover { color: #e69740; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031123}}
+.leaflet-popup-pane {
+  z-index: 9999;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031125}}
+.leaflet-popup-pane a {
+  color: #91998c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031127}}
+.leaflet-popup-pane a:hover {
+  color: #e69740;
+}
 
-.leaflet-popup-content .btn { color: white; position: absolute; bottom: 30px; right: 10px; }
-.leaflet-popup-content .btn:hover { color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031134}}
+.leaflet-popup-content .btn {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031139}}
+.leaflet-popup-content .btn:hover {
+  color: white;
+}
 
 /**
 
@@ -303,86 +1231,284 @@ img { max-width: 100%; }
 /**
 * #News Listing
 **/
-.view-news .views-row-odd, .view-news .views-row-even { border-bottom: 1px dashed #dfd9c9; margin-bottom: 20px; padding-bottom: 20px; }
-.view-news .views-row-last { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-@media screen and (max-width: 767px) { .view-news .span3 { float: left; margin-right: 2%; width: 30%; } }
-@media screen and (max-width: 767px) { .view-news .span9 { float: left; width: 68%; } }
-.view-news img { width: 100%; }
-@media screen and (max-width: 767px) { .view-news img { margin-bottom: 5px; } }
-.view-news h3 a { color: #4d4d4d; }
-.view-news h3 a:hover { color: #cf4753; }
-.view-news .small-body { margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031155}}
+.view-news .views-row-odd,
+.view-news .views-row-even {
+  border-bottom: 1px dashed #dfd9c9;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031160}}
+.view-news .views-row-last {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031165}}
+  .view-news .span3 {
+    float: left;
+    margin-right: 2%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031172}}
+  .view-news .span9 {
+    float: left;
+    width: 68%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031178}}
+.view-news img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031178}}
+  .view-news img {
+    margin-bottom: 5px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031185}}
+.view-news h3 a {
+  color: #4d4d4d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031187}}
+.view-news h3 a:hover {
+  color: #cf4753;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031192}}
+.view-news .small-body {
+  margin-bottom: 5px;
+}
 
-.news__author-info { font-size: 14px; font-size: 0.82353rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031197}}
+.news__author-info {
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
 
 /**/
 /* ### NODES ### */
 /**
 * #National Organizations
 **/
-.no__ceo h2, .no__ceo .node { margin-bottom: 0; }
-.no__ceo h2 a, .no__ceo .node a { font-size: 18px; font-size: 1.05882rem; font-family: "News Gothic", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031213}}
+.no__ceo h2,
+.no__ceo .node {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031215}}
+.no__ceo h2 a,
+.no__ceo .node a {
+  font-size: 18px;
+  font-size: 1.05882rem;
+  font-family: "News Gothic", sans-serif;
+}
 
-.no__image img { width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031223}}
+.no__image img {
+  width: 100%;
+}
 
-.no__info-block { color: #cf4753; margin-bottom: 20px; }
-.no__info-block img { width: 100%; }
-.no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
-.no__info-block a { font-size: 18px; font-size: 1.05882rem; font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031232}}
+.no__info-block {
+  color: #cf4753;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031235}}
+.no__info-block img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031238}}
+.no__info-block .field-item {
+  font-size: 18px;
+  font-size: 1.05882rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031241}}
+.no__info-block a {
+  font-size: 18px;
+  font-size: 1.05882rem;
+  font-weight: bold;
+}
 
-.no__stats { color: #91998c; font-size: 18px; font-size: 1.05882rem; }
-.no__stats strong { color: black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031247}}
+.no__stats {
+  color: #91998c;
+  font-size: 18px;
+  font-size: 1.05882rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031250}}
+.no__stats strong {
+  color: black;
+}
 
-.no__stat { margin-bottom: 10px; }
-.no__stat:last-child { margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031255}}
+.no__stat {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031257}}
+.no__stat:last-child {
+  margin-bottom: 0;
+}
 
-.node .content .no__spotlights { line-height: 1em; text-transform: none; }
-.node .content .no__spotlights img { height: auto; margin-bottom: 10px; width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031264}}
+.node .content .no__spotlights {
+  line-height: 1em;
+  text-transform: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031267}}
+.node .content .no__spotlights img {
+  height: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
 
 /**/
 /**
 * #Spotlight
 **/
-.node-type-spotlight .page-title { display: none; }
-.node-type-spotlight .page-title.spotlight-type { display: block; }
-.node-type-spotlight .title { color: #e69740; }
-.node-type-spotlight .content img { height: auto; margin: 10px 0; width: 100%; }
-@media screen and (max-width: 500px) { .node-type-spotlight .content img { float: none; margin: 0 auto; margin-bottom: 20px; padding: 2%; width: 96%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031283}}
+.node-type-spotlight .page-title {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031285}}
+.node-type-spotlight .page-title.spotlight-type {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031289}}
+.node-type-spotlight .title {
+  color: #e69740;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031293}}
+.node-type-spotlight .content img {
+  height: auto;
+  margin: 10px 0;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031293}}
+  .node-type-spotlight .content img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 2%;
+    width: 96%;
+  }
+}
 
 /**/
 /**
 * #News - Node
 **/
-.node-type-news .page-title { display: none; }
-.node-type-news .page-title.date { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031315}}
+.node-type-news .page-title {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031317}}
+.node-type-news .page-title.date {
+  display: block;
+}
 
-.news__image { margin: 20px 0; }
-.news__image img { width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031323}}
+.news__image {
+  margin: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031325}}
+.news__image img {
+  width: 100%;
+}
 
-.news__content { margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031330}}
+.news__content {
+  margin-bottom: 10px;
+}
 
 /**/
 /* ### LANDING PAGES ### */
 /**
 * #News - Landing
 **/
-.news-flexslider { margin-bottom: 30px; }
-.news-flexslider h2 { margin-bottom: 5px; }
-.news-flexslider .flex-control-paging li a { background-color: #91998c; border-radius: 0; }
-.news-flexslider .flex-control-paging li a.flex-active { background-color: #e69740; }
-.news-flexslider .flex-control-nav { bottom: 12px; right: 10px; width: auto; }
-.news-flexslider .flexslider { background: transparent; border: none; border-radius: 0; box-shadow: none; margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031342}}
+.news-flexslider {
+  margin-bottom: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031344}}
+.news-flexslider h2 {
+  margin-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031349}}
+.news-flexslider .flex-control-paging li a {
+  background-color: #91998c;
+  border-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031352}}
+.news-flexslider .flex-control-paging li a.flex-active {
+  background-color: #e69740;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031358}}
+.news-flexslider .flex-control-nav {
+  bottom: 12px;
+  right: 10px;
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031363}}
+.news-flexslider .flexslider {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
 
-.news__flexslider__wrapper { position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031372}}
+.news__flexslider__wrapper {
+  position: relative;
+}
 
-.news__flexslider__info { background-color: black; box-sizing: border-box; -moz-box-sizing: border-box; opacity: .8; padding: 15px 40px 15px 20px; position: absolute; bottom: 0; left: 0; width: 100%; }
-.news__flexslider__info h2 a { color: white; }
-.news__flexslider__info h2 a:hover { color: #cf4753; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031376}}
+.news__flexslider__info {
+  background-color: black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: .8;
+  padding: 15px 40px 15px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031387}}
+.news__flexslider__info h2 a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031389}}
+.news__flexslider__info h2 a:hover {
+  color: #cf4753;
+}
 
-.news__preview { color: #91998c; font-family: "Fedra Serif", serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031396}}
+.news__preview {
+  color: #91998c;
+  font-family: "Fedra Serif", serif;
+}
 
-.news__link { margin-top: 5px; }
-.news__link a { color: white; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
-.news__link a:hover { color: #cf4753; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031401}}
+.news__link {
+  margin-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031403}}
+.news__link a {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.70588rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/pubteach4all\/docroot\/sites\/all\/themes\/tweme\/sass\/teachforall\.scss}line{font-family:\000031409}}
+.news__link a:hover {
+  color: #cf4753;
+}
 
 /**/
