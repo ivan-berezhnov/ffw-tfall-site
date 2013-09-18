@@ -681,6 +681,140 @@ h2 {
   ul {
     margin: 0;
   }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+
+    .row-fluid [class*="span2"] {
+      .content > ul.menu > li {
+        > a {
+          @include font-size(15);
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+
+        ul li a {
+          @include font-size(17);
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+      }
+
+      &.footer-links {
+        width: 42%;
+        float: left;
+        margin-right: 6%;
+        margin-left: 5%;
+
+        .block-block {
+          display: none;
+        }
+      }
+
+      &.footer-links-2 {
+        width: 42%;
+        float: left;
+        margin-right: 5%;
+
+        .block-block {
+          display: none;
+        }
+      }
+
+      &:first-child + div + div {
+        clear: left;
+        border-top: 1px dotted grey;
+        border-bottom: 1px dotted grey;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+
+        .content > ul.menu {
+          > li {
+            width: 42%;
+            float: left;
+            margin-right: 5%;
+
+            &.first {
+              width: 42%;
+              float: left;
+              margin-right: 6%;
+              margin-left: 5%;
+            }
+
+            &.last {
+              width: auto;
+              clear: both;
+              margin-left: 5%;
+            }
+          }
+        }
+      }
+    }
+
+    .row-fluid {
+      .span2 + .span3 {
+        clear: both;
+        box-sizing: border-box;
+        padding: 0 5% 20px;
+
+        .donate {
+          @include font-size(14);
+          padding: 2px 10px 0;
+          margin-right: 9px;
+          line-height: 32px;
+        }
+
+        .social-media {
+          display: inline-block;
+          padding: 7px 8px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .row-fluid [class*="span2"] {
+      .content > ul.menu > li {
+        > a {
+          @include font-size(14);
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+
+        ul li a {
+          @include font-size(16);
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+      }
+
+      &.footer-links, &.footer-links-2 {
+        .block-block {
+          display: none;
+        }
+      }
+    }
+
+    .row-fluid {
+      .span2 + .span3 {
+        .donate {
+          @include font-size(14);
+          padding: 2px 10px 0;
+          margin-right: 60px;
+          margin-bottom: 10px;
+          line-height: 32px;
+        }
+
+        .social-media {
+          display: inline-block;
+          padding: 7px 8px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }
 
 .footer__copyright {
@@ -764,7 +898,7 @@ h2 {
             color: $grey4;
             @include font-size(14);
             &:hover {
-              color: $red;
+              color: $white;
             }
           }
         }
@@ -776,9 +910,11 @@ h2 {
       letter-spacing: 1px;
       text-transform: uppercase;
       @include font-size(11);
+      &:hover {
+        color: $white;
+      }
     }
   }
-
 }
 
 /**/
