@@ -279,6 +279,15 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '170',
   );
+  /* Field: Content: Byline */
+  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';

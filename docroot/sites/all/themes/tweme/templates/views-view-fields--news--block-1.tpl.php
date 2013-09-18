@@ -29,7 +29,7 @@
   <div class="news__flexslider__info">
     <?php print $fields['field_category']->content; ?>
     <h2><?php print $fields['title']->content; ?></h2>
-    <div class="news__preview visible-desktop"><?php print $fields['body']->content; ?></div>
+    <div class="news__preview visible-desktop"><?php print $fields['field_news_byline']->content; ?></div>
     <div class="news__link hidden-phone">
       <?php print $fields['view_node']->content; ?>
     </div>
