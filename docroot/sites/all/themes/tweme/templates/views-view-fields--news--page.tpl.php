@@ -30,11 +30,11 @@
     <?php print $fields['field_news_image']->content; ?>
   </div>
   <div class="span9">
-    <div class="slug"><?php print $fields['field_category']->content; ?></div>
+    <div class="slug"><?php print $fields['created']->content; ?></div>
     <h3><?php print $fields['title']->content; ?></h3>
     <div class="small-body hidden-phone"><?php print $fields['body']->content; ?></div>
     <div class="news__author-info">
-      by <?php print $fields['name']->content; ?> | <?php print $fields['created']->content; ?>
+      by <?php print $fields['name']->content; ?> | <?php print $fields['field_category']->content; ?>
     </div>
   </div>
 
