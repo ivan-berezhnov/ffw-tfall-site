@@ -254,20 +254,25 @@ img { max-width: 100%; }
 **/
 .marquee { background-color: #91998c; }
 
+.marquee__2, .marquee__3, .marquee__4 { position: relative; }
+.marquee__2 .marquee__preview, .marquee__3 .marquee__preview, .marquee__4 .marquee__preview { display: none; }
+
 .marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }
 
 .marquee__title { font-weight: normal; }
 .marquee__title a { color: white; }
 
+.marquee__preview { font-size: 17px; font-size: 1rem; }
+
 .marquee__large { background-color: black; float: left; position: relative; width: 50%; }
 
-.marquee__medium { background-color: #cf4753; box-sizing: border-box; -moz-box-sizing: border-box; float: right; position: relative; width: 25%; }
+.marquee__medium { background-color: #cf4753; float: right; position: relative; width: 25%; }
 
-.marquee__small { background-color: #e69740; box-sizing: border-box; -moz-box-sizing: border-box; float: left; position: relative; width: 25%; }
+.marquee__small { background-color: #e69740; float: left; position: relative; width: 25%; }
 
 .marquee__hover { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; opacity: 0; height: 100%; position: absolute; top: 0; left: 0; width: 100%; -webkit-transition: 500ms; -o-transition: 500ms; transition: 500ms; }
 
-.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover { opacity: .8; }
+.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover, .marquee__2[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__2[data-effeckt-type="cover-fade"]:active .marquee__hover, .marquee__3[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__3[data-effeckt-type="cover-fade"]:active .marquee__hover, .marquee__4[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__4[data-effeckt-type="cover-fade"]:active .marquee__hover { opacity: .8; }
 
 @media screen and (max-width: 979px) and (min-width: 768px) { .marquee__info-wrapper { bottom: 20px; left: 20px; width: 80%; } }
 @media screen and (max-width: 979px) { .marquee__large { width: 100%; }
