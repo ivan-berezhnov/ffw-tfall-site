@@ -32,5 +32,25 @@ function pubteachforall_marquee_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-nodequeue_marquee-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'nodequeue_marquee-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'tweme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'tweme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }

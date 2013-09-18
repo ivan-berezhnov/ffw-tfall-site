@@ -976,6 +976,15 @@ img {max-width: 100%;}
   background-color: $grey1;
 }
 
+.marquee__2,
+.marquee__3,
+.marquee__4 {
+  position: relative;
+  .marquee__preview {
+    display: none;
+  }
+}
+
 .marquee__info-wrapper {
   position: absolute;
   bottom: 30px;
@@ -990,6 +999,10 @@ img {max-width: 100%;}
   font-weight: normal;
 }
 
+.marquee__preview {
+  @include font-size(17);
+}
+
 .marquee__large {
   background-color: $black;
   float: left;
@@ -999,8 +1012,6 @@ img {max-width: 100%;}
 
 .marquee__medium {
   background-color: $red;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   float: right;
   position: relative;
   width: 25%;
@@ -1008,8 +1019,6 @@ img {max-width: 100%;}
 
 .marquee__small {
   background-color: $orange1;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   float: left;
   position: relative;
   width: 25%;
@@ -1024,15 +1033,18 @@ img {max-width: 100%;}
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
 }
 
-.marquee__1[data-effeckt-type="cover-fade"]:hover .marquee__hover,
-.marquee__1[data-effeckt-type="cover-fade"]:active .marquee__hover {
-  opacity: .8;
+.marquee__pane[data-effeckt-type="cover-fade"] {
+  &:hover .marquee__hover,
+  &:active .marquee__active {
+    opacity: .8;
+  }
 }
 
 @media screen and (max-width: 979px) and (min-width: 768px) {

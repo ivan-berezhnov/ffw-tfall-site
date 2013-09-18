@@ -24,6 +24,7 @@
  * @ingroup views_templates
  */
 ?>
+<!-- if there is a vertical image, use it, otherwise use main image -->
 <?php
   $newsImage = $fields['field_news_image']->content;
   $spotlightImage = $fields['field_spotlight_image']->content;
@@ -36,19 +37,33 @@
     print $newsImage;
   } elseif (isset($spotlightImage)) {
     print $spotlightImage;
-}
-
-
-
-
-
+  }
 ?>
 <div class="marquee__hover">
   <div class="marquee__info-wrapper">
-    <div class="marquee__category slug"><?php print $fields['field_category']->content; ?></div>
+
+    <!-- either category or type -->
+    <div class="marquee__category slug">
+      <?php if(isset($fields['field_category']->content)): ?>
+        <?php print $fields['field_category']->content; ?>
+      <?php else: ?>
+        <?php print $fields['field_spotlight_type']->content; ?>
+      <?php endif; ?>
+    </div>
+
+    <!-- node title -->
     <h2 class="marquee__title"><?php print $fields['title']->content; ?></h2>
-    <div class="marquee__preview">The students of Nirali Vasisht (Teach For India)
-      talk about their vision and the skills they learn in the classroom.</div>
-    <div class="marquee__link">Watch Video >></div>
+
+    <!-- either blurb or body preview -->
+    <div class="marquee__preview">
+      <?php if (isset($fields['field_news_byline']->content)): ?>
+        <?php print $fields['field_news_byline']->content; ?>
+      <?php else: ?>
+        <?php print $fields['body']->content; ?>
+      <?php endif; ?>
+    </div>
+
+    <!-- either go to story or watch video -->
+    <div class="marquee__link"><?php print $fields['view_node_1']->content; ?></div>
   </div>
 </div>
