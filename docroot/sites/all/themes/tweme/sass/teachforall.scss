@@ -1366,6 +1366,13 @@ img {max-width: 100%;}
   }
 }
 
+.news__image-caption {
+  color: $black;
+  margin-top: 3px;
+  font-style: italic;
+  @include font-size(14);
+}
+
 .news__content {
   margin-bottom: 10px;
 }

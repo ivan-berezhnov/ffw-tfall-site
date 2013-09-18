@@ -390,6 +390,8 @@ img { max-width: 100%; }
 .news__image { margin: 20px 0; }
 .news__image img { width: 100%; }
 
+.news__image-caption { color: black; margin-top: 3px; font-style: italic; font-size: 14px; font-size: 0.82353rem; }
+
 .news__content { margin-bottom: 10px; }
 
 /**/

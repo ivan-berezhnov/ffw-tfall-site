@@ -27,6 +27,9 @@
 				<div class="news__image">
 					<?php if (isset($content['field_news_image'])): ?>
 						<?php print render($content['field_news_image']); ?>
+            <div class="news__image-caption">
+              <?php print render($content['field_news_image']['#items'][0]['title']); ?>
+            </div>
 					<?php endif; ?>
 				</div>
 
