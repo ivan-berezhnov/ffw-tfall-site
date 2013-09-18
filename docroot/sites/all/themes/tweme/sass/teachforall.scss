@@ -417,7 +417,7 @@ h2 {
     }
 
     .container {
-      min-height: 40px;
+      height: 40px;
 
       .region-main-navigation {
         font-family: "Fedra Serif";
@@ -426,108 +426,129 @@ h2 {
         text-transform: uppercase;
         @include font-size(12);
 
-        .content {
-          // Primary & secondary menu styles
-          ul {
-            margin: 0 auto 12px;
+        li {
+          position: relative;
+          float: left;
+          display: block;
+          list-style-image: none;
+          list-style-type: none;
+          line-height: 40px;
+          margin: 0;
+          padding: 0;
 
-            li {
-              a {
-                color: $beige;
-                padding: 16px 43px 13px 43px;
-                @media screen and (max-width: 1199px) {
-                  padding: 16px 20px 13px 20px;
-                }
-                &:hover {
-                  background-color: $orange1;
-                  color: $white;
-                }
-              }
-            }
+          &:hover {
+            background-color: $orange1;
           }
 
-          > .menu {
-            > li {
-              border-right: 1px solid $orange1;
-              height: 12px;
-              line-height: 1.2em;
-              margin: 3px 0 0 -1px;
-              &:hover {
-                background-color: $grey3;
-                border-color: $grey3;
-              }
+          a {
+            display: block;
+            color: $beige;
 
-              &.first {
-                margin: 3px 0 0 0;
-                > a {
-                  padding: 16px 44px 13px 43px;
-                  @media screen and (max-width: 1199px) {
-                    padding: 16px 21px 13px 20px;
-                  }
-                }
-              }
-
-              &.last {
-                border: none;
-
-                > a {
-                  padding: 16px 44px 13px 44px;
-                  @media screen and (max-width: 1199px) {
-                    padding: 16px 21px 13px 21px;
-                  }
-                }
-              }
-            }
-            // Secondary menu styles
-            .menu {
-              display: none;
-              background-color: $grey2;
-              left: 0;
-              margin: 12px 0 0 0;
-              padding: 0;
-              position: absolute;
-              text-transform: none;
-              width: 100%;
-              z-index: 9999;
-              li {
-                border-bottom: 1px solid $border_color1;
-                font-family: "News Gothic", sans-serif;
-                font-weight: normal;
-                letter-spacing: 0;
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                &.last {
-                  border: none;
-                  margin-bottom: 0;
-                }
-
-                a {
-                  @include font-size(16);
-                  display: block;
-                  margin: 0;
-                  padding: 8px 43px 5px 43px;
-                  @media screen and (max-width: 1199px) {
-                    padding: 8px 20px 5px 20px;
-                  }
-                }
-              }
+            &:hover {
+              color: $white;
             }
           }
         }
-        li {
-          float: left;
-          list-style-type: none;
-          list-style-image: none;
-          margin: 0;
-          padding: 0;
-          position: relative;
-          &:hover {
-            border-color: $grey3;
-          }
-          &.expanded:hover {
+
+        .content {
+          // Main menu styles
+          > .menu {
+            height: 40px;
+
+            // A Global Problem
+            > li:first-child {
+              width: 192px;
+
+              // Our Answer
+              & + li { width: 142px; }
+
+              // Our Network and Impact
+              & + li + li { width: 255px; }
+
+              // Get Involved
+              & + li + li + li { width: 151px; }
+
+              // Network Learning
+              & + li + li + li + li { width: 200px; }
+            }
+
+            @media screen and (min-width: 1200px) {
+              // A Global Problem
+              > li:first-child {
+                width: 238px;
+
+                // Our Answer
+                & + li { width: 188px; }
+
+                // Our Network and Impact
+                & + li + li { width: 301px; }
+
+                // Get Involved
+                & + li + li + li { width: 197px; }
+
+                // Network Learning
+                & + li + li + li + li { width: 246px; }
+              }
+            }
+
+            > li {
+              text-align: center;
+
+              > a {
+                background: url(../images/nav-border.png) left center no-repeat;
+              }
+
+              &:first-child {
+                > a {
+                  background: none;
+                }
+              }
+
+              &:hover {
+                & > a {
+                  color: $white;
+                }
+
+                & + li > a {
+                  background: none;
+                }
+
+                .menu {
+                  display: block;
+                  background-color: $grey2;
+                  position: absolute;
+                  width: 100%;
+                  left: 0;
+                  z-index: 999;
+                  text-transform: none;
+
+                  li {
+                    line-height: 20px;
+                    border-top: 1px solid $border_color1;
+                    font-family: "News Gothic", sans-serif;
+                    font-weight: normal;
+                    letter-spacing: 0;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+
+                    a {
+                      @include font-size(16);
+                      box-sizing: border-box;
+                      padding: 5px 20px;
+
+                      @media screen and (min-width: 1200px) {
+                        padding: 5px 42px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            // Secondary menu styles
             .menu {
-              display: block;
+              display: none;
             }
           }
         }
@@ -932,6 +953,11 @@ img {max-width: 100%;}
 **/
 
 .flexslider_supporter {
+  * {
+    // Prevent flickering of rendered fonts in webkit browsers
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
   a {
     margin: 0;
   }
