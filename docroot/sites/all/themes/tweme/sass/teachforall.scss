@@ -1006,6 +1006,15 @@ img {max-width: 100%;}
 .marquee__3,
 .marquee__4 {
   position: relative;
+  .marquee__info-wrapper {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    width: 90%;
+  }
+  .marquee__title {
+    @extend .h3;
+  }
   .marquee__preview {
     display: none;
   }
@@ -1021,12 +1030,30 @@ img {max-width: 100%;}
 .marquee__title {
   a {
     color: $white;
+    &:hover {
+      color: $red;
+    }
   }
   font-weight: normal;
 }
 
 .marquee__preview {
+  color: $grey4;
+  font-family: "Fedra Serif", serif;
+  margin-bottom: 10px;
   @include font-size(17);
+}
+
+.marquee__link {
+  font-weight: bold;
+  line-height: 1em;
+  @include font-size(11);
+  a {
+    color: $white;
+    &:hover {
+      color: $orange2;
+    }
+  }
 }
 
 .marquee__large {
@@ -1363,6 +1390,13 @@ img {max-width: 100%;}
   img {
     width: 100%;
   }
+}
+
+.news__image-caption {
+  color: $black;
+  margin-top: 3px;
+  font-style: italic;
+  @include font-size(14);
 }
 
 .news__content {

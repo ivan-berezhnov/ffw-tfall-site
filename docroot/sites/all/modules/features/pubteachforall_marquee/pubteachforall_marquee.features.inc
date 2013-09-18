@@ -21,6 +21,39 @@ function pubteachforall_marquee_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function pubteachforall_marquee_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: marquee
+  $nodequeues['marquee'] = array(
+    'name' => 'marquee',
+    'title' => 'Marquee',
+    'subqueue_title' => '',
+    'size' => 4,
+    'link' => '',
+    'link_remove' => '',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 0,
+    'reference' => 0,
+    'reverse' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'news',
+      1 => 'spotlight',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function pubteachforall_marquee_image_default_styles() {

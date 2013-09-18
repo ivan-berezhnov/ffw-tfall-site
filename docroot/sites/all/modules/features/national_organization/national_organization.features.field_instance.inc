@@ -217,6 +217,46 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_city_1'
+  $field_instances['node-national_organization-field_city_1'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the first city where the schools are located here. For example: <strong>Lohore and Karachi</strong>',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_city_1',
+    'label' => 'Cities',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_cohorts_placed'
   $field_instances['node-national_organization-field_cohorts_placed'] = array(
     'bundle' => 'national_organization',
@@ -837,7 +877,9 @@ function national_organization_field_default_field_instances() {
   t('Avg. Total Years of Education');
   t('Blurb');
   t('CEO Profile');
+  t('Cities');
   t('Cohorts Placed');
+  t('Enter the first city where the schools are located here. For example: <strong>Lohore and Karachi</strong>');
   t('Facebook Account Name');
   t('Links');
   t('Living below Poverty Line');

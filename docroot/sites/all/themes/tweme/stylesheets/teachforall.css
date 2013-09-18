@@ -1,32 +1,10 @@
 /**
 *   #Table of Contents
 **/
-/**
-    #Imports
-    #Font-Face
-    #Styleguide - Typography
-    #Global Elements
-    #Objects
-    #Header
-    #Primary Navigation
-    #Uber Navigation
-    #Feeds
-    #Footer
-    #Images
-    #Supporters Widget
-    #Marquee
-    #MapBox
-
-    ### VIEWS ###
-    # News Listing
-
-    ### NODES ###
-    #National Organizations
-    #Spotlight
-    #News - Node
-
-    ### LANDING PAGES ###
-    #News - Landing
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee #MapBox
+ ### VIEWS ### # News Listing
+ ### NODES ### #National Organizations #Spotlight #News - Node
+ ### LANDING PAGES ### #News - Landing
 **/
 /**
 *   #Imports
@@ -40,53 +18,22 @@
 /**
 * #Classes
 **/
-/* line 29, ../sass/_variables.scss */
-.orange2 {
-  color: #ffb151;
-}
+.orange2 { color: #ffb151; }
 
 /**
 * #Font-Face
 **/
-@font-face {
-  font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Book.otf");
-  font-style: normal;
-  font-weight: normal;
-}
+@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Book.otf"); font-style: normal; font-weight: normal; }
 
-@font-face {
-  font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
+@font-face { font-family: "Fedra Serif"; src: url("../fonts/FSerStdA-Bold.otf"); font-style: normal; font-weight: bold; }
 
-@font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-Medium.otf");
-  font-style: normal;
-  font-weight: normal;
-}
+@font-face { font-family: "News Gothic"; src: url("../fonts/NewsGothic-Medium.otf"); font-style: normal; font-weight: normal; }
 
-@font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-DemiBold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
+@font-face { font-family: "News Gothic"; src: url("../fonts/NewsGothic-DemiBold.otf"); font-style: normal; font-weight: bold; }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot");
-}
+@font-face { font-family: 'icomoon'; src: url("fonts/icomoon.eot"); }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face { font-family: 'icomoon'; src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype"); font-weight: normal; font-style: normal; }
 
 /* Use the following CSS code if you want to have a class per icon */
 /*
@@ -94,1151 +41,292 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"] {
 */
-/* line 93, ../sass/teachforall.scss */
-.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
+.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
 
-/* line 103, ../sass/teachforall.scss */
-.ico-facebook:before {
-  content: "\e000";
-}
+.ico-facebook:before { content: "\e000"; }
 
-/* line 106, ../sass/teachforall.scss */
-.ico-vimeo:before {
-  content: "\e001";
-}
+.ico-vimeo:before { content: "\e001"; }
 
-/* line 109, ../sass/teachforall.scss */
-.ico-twitter:before {
-  content: "\e002";
-}
+.ico-twitter:before { content: "\e002"; }
 
-/* line 112, ../sass/teachforall.scss */
-.ico-linkedin:before {
-  content: "\e003";
-}
+.ico-linkedin:before { content: "\e003"; }
 
 /**/
 /**
 * #Styleguide - Typography
 **/
-/* line 122, ../sass/teachforall.scss */
-h1, .h1 {
-  color: #4d4d4d;
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 48px;
-  margin-bottom: 5px;
-  font-size: 42px;
-  font-size: 2.47059rem;
-}
-@media screen and (max-width: 767px) {
-  /* line 122, ../sass/teachforall.scss */
-  h1, .h1 {
-    font-size: 25px;
-    font-size: 1.47059rem;
-    line-height: 29px;
-  }
-}
+h1, .h1 { color: #4d4d4d; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 48px; margin-bottom: 5px; font-size: 42px; font-size: 2.47059rem; }
+@media screen and (max-width: 767px) { h1, .h1 { font-size: 25px; font-size: 1.47059rem; line-height: 29px; } }
 
-/* line 135, ../sass/teachforall.scss */
-h2, .h2 {
-  font-size: 25px;
-  font-size: 1.47059rem;
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 29px;
-}
-@media screen and (max-width: 767px) {
-  /* line 135, ../sass/teachforall.scss */
-  h2, .h2 {
-    font-size: 18px;
-    font-size: 1.05882rem;
-    line-height: 22px;
-  }
-}
+h2, .h2 { font-size: 25px; font-size: 1.47059rem; font-family: "Fedra Serif", serif; font-weight: normal; line-height: 29px; }
+@media screen and (max-width: 767px) { h2, .h2 { font-size: 18px; font-size: 1.05882rem; line-height: 22px; } }
 
-/* line 146, ../sass/teachforall.scss */
-h3, .h3 {
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 22px;
-  margin: 0 0 5px 0;
-  font-size: 18px;
-  font-size: 1.05882rem;
-}
-@media screen and (max-width: 767px) {
-  /* line 146, ../sass/teachforall.scss */
-  h3, .h3 {
-    line-height: 20px;
-    font-size: 16px;
-    font-size: 0.94118rem;
-  }
-}
+h3, .h3, .marquee__2 .marquee__title, .marquee__3 .marquee__title, .marquee__4 .marquee__title { font-family: "Fedra Serif", serif; font-weight: normal; line-height: 22px; margin: 0 0 5px 0; font-size: 18px; font-size: 1.05882rem; }
+@media screen and (max-width: 767px) { h3, .h3, .marquee__2 .marquee__title, .marquee__3 .marquee__title, .marquee__4 .marquee__title { line-height: 20px; font-size: 16px; font-size: 0.94118rem; } }
 
-/* line 158, ../sass/teachforall.scss */
-h4, .h4 {
-  line-height: 20px;
-  font-size: 16px;
-  font-size: 0.94118rem;
-}
+h4, .h4 { line-height: 20px; font-size: 16px; font-size: 0.94118rem; }
 
-/* line 163, ../sass/teachforall.scss */
-.blurb, .no__blurb {
-  font-weight: bold;
-  font-size: 36px;
-  font-size: 2.11765rem;
-  line-height: 38px;
-  color: #91998c;
-  margin: 20px 0;
-}
+.blurb, .no__blurb { font-weight: bold; font-size: 36px; font-size: 2.11765rem; line-height: 38px; color: #91998c; margin: 20px 0; }
 
-/* line 171, ../sass/teachforall.scss */
-a {
-  color: #cf4753;
-}
-/* line 173, ../sass/teachforall.scss */
-a:hover {
-  color: #cf4753;
-  text-decoration: none;
-}
+a { color: #cf4753; }
+a:hover { color: #cf4753; text-decoration: none; }
 
-/* line 179, ../sass/teachforall.scss */
-body {
-  color: #4d4d4d;
-  font-size: 16px;
-  font-size: 0.94118rem;
-  line-height: 20px;
-  font-family: "News Gothic", sans-serif;
-}
+body { color: #4d4d4d; font-size: 16px; font-size: 0.94118rem; line-height: 20px; font-family: "News Gothic", sans-serif; }
 
-/* line 186, ../sass/teachforall.scss */
-.small-body {
-  font-size: 16px;
-  font-size: 0.94118rem;
-  color: #4d4d4d;
-}
+.small-body { font-size: 16px; font-size: 0.94118rem; color: #4d4d4d; }
 
 /**/
 /**
 * #Global Elements
 **/
-/* line 197, ../sass/teachforall.scss */
-.site-slogan {
-  color: #91998c;
-  line-height: 30px;
-  text-align: center;
-  font-size: 32px;
-  font-size: 1.88235rem;
-}
+.site-slogan { color: #91998c; line-height: 30px; text-align: center; font-size: 32px; font-size: 1.88235rem; }
 
-/* line 204, ../sass/teachforall.scss */
-.full-list {
-  background-color: #4d4d4d;
-  color: white;
-  font-weight: bold;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding: 6px 12px 5px 12px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-size: 0.82353rem;
-}
-/* line 205, ../sass/teachforall.scss */
-.full-list a {
-  color: white;
-}
-/* line 207, ../sass/teachforall.scss */
-.full-list a:hover {
-  color: #ffb151;
-}
-/* line 219, ../sass/teachforall.scss */
-.full-list:hover {
-  color: #ffb151;
-}
+.full-list { background-color: #4d4d4d; color: white; font-weight: bold; display: inline-block; letter-spacing: 1px; padding: 6px 12px 5px 12px; text-transform: uppercase; font-size: 14px; font-size: 0.82353rem; }
+.full-list a { color: white; }
+.full-list a:hover { color: #ffb151; }
+.full-list:hover { color: #ffb151; }
 
-/* line 226, ../sass/teachforall.scss */
-.search-form .input-append .btn {
-  border: 1px solid #ccc;
-}
+.search-form .input-append .btn { border: 1px solid #ccc; }
 
-/* line 233, ../sass/teachforall.scss */
-.content p:last-child {
-  margin-bottom: 0;
-}
+.content p:last-child { margin-bottom: 0; }
 
-/* line 238, ../sass/teachforall.scss */
-label, input, button, select, textarea {
-  font-size: 17px;
-  font-size: 1rem;
-}
+label, input, button, select, textarea { font-size: 17px; font-size: 1rem; }
 
-/* line 245, ../sass/teachforall.scss */
-html.js input.form-autocomplete {
-  background-position: 100% 9px;
-}
-/* line 248, ../sass/teachforall.scss */
-html.js input.throbbing {
-  background-position: 100% -12px;
-}
+html.js input.form-autocomplete { background-position: 100% 9px; }
+html.js input.throbbing { background-position: 100% -12px; }
 
-/* line 255, ../sass/teachforall.scss */
-.btn {
-  background-color: #dfd9c9;
-  background-image: none;
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
-  font-family: inherit;
-}
+.btn { background-color: #dfd9c9; background-image: none; border-radius: 0; border: none; box-shadow: none; font-family: inherit; }
 
-/* line 264, ../sass/teachforall.scss */
-.btn-primary {
-  background-color: #e69740;
-}
-/* line 266, ../sass/teachforall.scss */
-.btn-primary:hover {
-  background-color: #cf4753;
-}
+.btn-primary { background-color: #e69740; }
+.btn-primary:hover { background-color: #cf4753; }
 
-/* line 271, ../sass/teachforall.scss */
-.nav-tabs {
-  padding-top: 20px;
-}
+.nav-tabs { padding-top: 20px; }
 
-/* line 275, ../sass/teachforall.scss */
-div.messages {
-  margin: 20px 0;
-}
+div.messages { margin: 20px 0; }
 
-/* line 279, ../sass/teachforall.scss */
-.page-node .content .title {
-  color: #e69740;
-  font-weight: normal;
-  letter-spacing: 5px;
-  line-height: 30px;
-  padding-top: 0;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-size: 1.52941rem;
-}
+.page-node .content .title { color: #e69740; font-weight: normal; letter-spacing: 5px; line-height: 30px; padding-top: 0; text-transform: uppercase; font-size: 26px; font-size: 1.52941rem; }
 
-/* line 289, ../sass/teachforall.scss */
-#main {
-  padding: 20px 0;
-}
+#main { padding: 20px 0; }
 
-/* line 293, ../sass/teachforall.scss */
-.page-title {
-  margin-bottom: 30px;
-  text-align: center;
-}
+.page-title { margin-bottom: 30px; text-align: center; }
 
-/* line 299, ../sass/teachforall.scss */
-h2.page-title {
-  color: #e69740;
-  letter-spacing: 4px;
-  line-height: 30px;
-  margin-top: 0;
-  text-transform: uppercase;
-  font-size: 26px;
-  font-size: 1.52941rem;
-}
+h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-top: 0; text-transform: uppercase; font-size: 26px; font-size: 1.52941rem; }
 
-@media screen and (max-width: 767px) {
-  /* line 310, ../sass/teachforall.scss */
-  h2, .h2 {
-    font-size: 20px;
-    font-size: 1.17647rem;
-  }
-}
+@media screen and (max-width: 767px) { h2, .h2 { font-size: 20px; font-size: 1.17647rem; } }
 /**/
 /**
 * #Objects
 **/
-/* line 321, ../sass/teachforall.scss */
-.rounded-button {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  letter-spacing: 3px;
-  text-align: center;
-  width: 100%;
-  z-index: 9998;
-}
-/* line 329, ../sass/teachforall.scss */
-.rounded-button span {
-  background-color: #91998c;
-  color: white;
-  padding: 8px 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-}
+.rounded-button { position: absolute; bottom: 40px; left: 0; letter-spacing: 3px; text-align: center; width: 100%; z-index: 9998; }
+.rounded-button span { background-color: #91998c; color: white; padding: 8px 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; }
 
-/* line 337, ../sass/teachforall.scss */
-.slug {
-  font-size: 11px;
-  font-size: 0.64706rem;
-  color: #e69740;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 14px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
+.slug { font-size: 11px; font-size: 0.64706rem; color: #e69740; font-weight: bold; letter-spacing: 1px; line-height: 14px; margin-bottom: 5px; text-transform: uppercase; }
 
 /**/
 /**
 * #Header
 **/
-/* line 353, ../sass/teachforall.scss */
-.header {
-  margin-top: 10px;
-}
+.header { margin-top: 10px; }
 
-/* line 357, ../sass/teachforall.scss */
-.site-name {
-  text-align: center;
-}
-/* line 359, ../sass/teachforall.scss */
-.site-name img {
-  margin: 20px 0;
-}
+.site-name { text-align: center; }
+.site-name img { margin: 20px 0; }
 
-/* line 364, ../sass/teachforall.scss */
-.donate {
-  background-color: #e69740;
-  font-family: "Fedra Serif";
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-right: 4px;
-  padding: 0 5px;
-  font-size: 11px;
-  font-size: 0.64706rem;
-}
-/* line 372, ../sass/teachforall.scss */
-.donate a {
-  color: white;
-}
-/* line 375, ../sass/teachforall.scss */
-.donate:hover {
-  background-color: #cf4753;
-  color: white;
-  cursor: pointer;
-}
+.donate { background-color: #e69740; font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; margin-right: 4px; padding: 0 5px; font-size: 11px; font-size: 0.64706rem; }
+.donate a { color: white; }
+.donate:hover { background-color: #cf4753; color: white; cursor: pointer; }
 
-/* line 382, ../sass/teachforall.scss */
-.social-media {
-  background-color: #91998c;
-  color: white;
-  line-height: 1.3em;
-  padding: 2px 3px;
-  font-size: 17px;
-  font-size: 1rem;
-}
-/* line 388, ../sass/teachforall.scss */
-.social-media:hover {
-  background-color: #cf4753;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-/* line 394, ../sass/teachforall.scss */
-.social-media[class*=" icon-"] {
-  vertical-align: middle;
-}
+.social-media { background-color: #91998c; color: white; line-height: 1.3em; padding: 2px 3px; font-size: 17px; font-size: 1rem; }
+.social-media:hover { background-color: #cf4753; color: white; cursor: pointer; text-decoration: none; }
+.social-media[class*=" icon-"] { vertical-align: middle; }
 
 /**/
 /**
 * #Primary Navigation
 **/
-/* line 405, ../sass/teachforall.scss */
-.navbar {
-  font-weight: bold;
-}
-/* line 408, ../sass/teachforall.scss */
-.navbar .navbar-inner {
-  background-color: #3c3835;
-  background-image: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-}
-/* line 415, ../sass/teachforall.scss */
-.navbar .navbar-inner ul {
-  margin: 0;
-}
-/* line 419, ../sass/teachforall.scss */
-.navbar .navbar-inner .container {
-  min-height: 40px;
-}
-/* line 422, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation {
-  font-family: "Fedra Serif";
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.70588rem;
-}
-/* line 431, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content ul {
-  margin: 0 auto 12px;
-}
-/* line 435, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content ul li a {
-  color: #dfd9c9;
-  padding: 16px 43px 13px 43px;
-}
-@media screen and (max-width: 1199px) {
-  /* line 435, ../sass/teachforall.scss */
-  .navbar .navbar-inner .container .region-main-navigation .content ul li a {
-    padding: 16px 20px 13px 20px;
-  }
-}
-/* line 441, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content ul li a:hover {
-  background-color: #e69740;
-  color: white;
-}
-/* line 450, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li {
-  border-right: 1px solid #e69740;
-  height: 12px;
-  line-height: 1.2em;
-  margin: 3px 0 0 -1px;
-}
-/* line 455, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover {
-  background-color: #3c3835;
-  border-color: #3c3835;
-}
-/* line 460, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first {
-  margin: 3px 0 0 0;
-}
-/* line 462, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a {
-  padding: 16px 44px 13px 43px;
-}
-@media screen and (max-width: 1199px) {
-  /* line 462, ../sass/teachforall.scss */
-  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a {
-    padding: 16px 21px 13px 20px;
-  }
-}
-/* line 470, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last {
-  border: none;
-}
-/* line 473, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a {
-  padding: 16px 44px 13px 44px;
-}
-@media screen and (max-width: 1199px) {
-  /* line 473, ../sass/teachforall.scss */
-  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a {
-    padding: 16px 21px 13px 21px;
-  }
-}
-/* line 482, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu {
-  display: none;
-  background-color: #4d4d4d;
-  left: 0;
-  margin: 12px 0 0 0;
-  padding: 0;
-  position: absolute;
-  text-transform: none;
-  width: 100%;
-  z-index: 9999;
-}
-/* line 492, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li {
-  border-bottom: 1px solid #92998d;
-  font-family: "News Gothic", sans-serif;
-  font-weight: normal;
-  letter-spacing: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-/* line 500, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li.last {
-  border: none;
-  margin-bottom: 0;
-}
-/* line 505, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a {
-  font-size: 16px;
-  font-size: 0.94118rem;
-  display: block;
-  margin: 0;
-  padding: 8px 43px 5px 43px;
-}
-@media screen and (max-width: 1199px) {
-  /* line 505, ../sass/teachforall.scss */
-  .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a {
-    padding: 8px 20px 5px 20px;
-  }
-}
-/* line 518, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation li {
-  float: left;
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 525, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation li:hover {
-  border-color: #3c3835;
-}
-/* line 529, ../sass/teachforall.scss */
-.navbar .navbar-inner .container .region-main-navigation li.expanded:hover .menu {
-  display: block;
-}
+.navbar { font-weight: bold; }
+.navbar .navbar-inner { background-color: #3c3835; background-image: none; border: none; padding: 0; text-align: center; }
+.navbar .navbar-inner ul { margin: 0; }
+.navbar .navbar-inner .container { min-height: 40px; }
+.navbar .navbar-inner .container .region-main-navigation { font-family: "Fedra Serif"; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
+.navbar .navbar-inner .container .region-main-navigation .content ul { margin: 0 auto 12px; }
+.navbar .navbar-inner .container .region-main-navigation .content ul li a { color: #dfd9c9; padding: 16px 43px 13px 43px; }
+@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content ul li a { padding: 16px 20px 13px 20px; } }
+.navbar .navbar-inner .container .region-main-navigation .content ul li a:hover { background-color: #e69740; color: white; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li { border-right: 1px solid #e69740; height: 12px; line-height: 1.2em; margin: 3px 0 0 -1px; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover { background-color: #3c3835; border-color: #3c3835; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first { margin: 3px 0 0 0; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a { padding: 16px 44px 13px 43px; }
+@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.first > a { padding: 16px 21px 13px 20px; } }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last { border: none; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a { padding: 16px 44px 13px 44px; }
+@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu > li.last > a { padding: 16px 21px 13px 21px; } }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu { display: none; background-color: #4d4d4d; left: 0; margin: 12px 0 0 0; padding: 0; position: absolute; text-transform: none; width: 100%; z-index: 9999; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li { border-bottom: 1px solid #92998d; font-family: "News Gothic", sans-serif; font-weight: normal; letter-spacing: 0; margin: 0; padding: 0; width: 100%; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li.last { border: none; margin-bottom: 0; }
+.navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a { font-size: 16px; font-size: 0.94118rem; display: block; margin: 0; padding: 8px 43px 5px 43px; }
+@media screen and (max-width: 1199px) { .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu li a { padding: 8px 20px 5px 20px; } }
+.navbar .navbar-inner .container .region-main-navigation li { float: left; list-style-type: none; list-style-image: none; margin: 0; padding: 0; position: relative; }
+.navbar .navbar-inner .container .region-main-navigation li:hover { border-color: #3c3835; }
+.navbar .navbar-inner .container .region-main-navigation li.expanded:hover .menu { display: block; }
 
 /**/
 /**
 * #Uber Navigation
 **/
-/* line 545, ../sass/teachforall.scss */
-.uber-nav {
-  font-weight: bold;
-  margin-top: -5px;
-}
-/* line 549, ../sass/teachforall.scss */
-.uber-nav .content > .menu {
-  position: relative;
-}
-/* line 551, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li {
-  border-right: 1px solid #e69740;
-  float: left;
-  height: 8px;
-  line-height: .4em;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-/* line 560, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active {
-  border-color: white;
-}
-/* line 563, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li:last-child {
-  border-right: none;
-}
-/* line 566, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li > a {
-  letter-spacing: 2px;
-  margin-left: -1px;
-  padding-left: 12px;
-}
-/* line 570, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li > a:hover {
-  background-color: #e69740;
-  color: white;
-}
-/* line 574, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li > a.active {
-  color: #cf4753;
-}
-/* line 576, ../sass/teachforall.scss */
-.uber-nav .content > .menu > li > a.active:hover {
-  color: white;
-}
-/* line 583, ../sass/teachforall.scss */
-.uber-nav .content > .menu li:hover .menu {
-  display: block;
-}
-/* line 589, ../sass/teachforall.scss */
-.uber-nav a {
-  color: #92998d;
-  padding: 5px 10px;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-size: 0.64706rem;
-}
-/* line 594, ../sass/teachforall.scss */
-.uber-nav a:hover {
-  color: #cf4753;
-}
-/* line 598, ../sass/teachforall.scss */
-.uber-nav ul {
-  margin-left: 0;
-}
-/* line 602, ../sass/teachforall.scss */
-.uber-nav .menu .menu {
-  display: none;
-  background-color: white;
-  border: 1px solid #e69740;
-  left: -1px;
-  top: 14px;
-  position: absolute;
-  width: 100px;
-  z-index: 9999;
-  text-align: left;
-}
-/* line 612, ../sass/teachforall.scss */
-.uber-nav .menu .menu a {
-  border: none;
-  font-weight: normal;
-  font-size: 14px;
-  font-size: 0.82353rem;
-  display: block;
-  line-height: 16px;
-  margin: 0 3px;
-  padding: 0;
-  text-transform: none;
-}
-/* line 621, ../sass/teachforall.scss */
-.uber-nav .menu .menu a:hover {
-  background-color: transparent;
-  color: #cf4753;
-}
-/* line 625, ../sass/teachforall.scss */
-.uber-nav .menu .menu a.active {
-  background-color: transparent;
-}
-/* line 629, ../sass/teachforall.scss */
-.uber-nav .menu .menu li {
-  display: block;
-  padding-top: 0;
-}
-/* line 632, ../sass/teachforall.scss */
-.uber-nav .menu .menu li:first-child {
-  margin-top: 2px;
-}
-/* line 642, ../sass/teachforall.scss */
-.uber-nav ul li {
-  list-style-type: none;
-  list-style-image: none;
-}
-/* line 646, ../sass/teachforall.scss */
-.uber-nav ul li.expanded, .uber-nav ul li.leaf {
-  list-style-type: none;
-  list-style-image: none;
-}
+.uber-nav { font-weight: bold; margin-top: -5px; }
+.uber-nav .content > .menu { position: relative; }
+.uber-nav .content > .menu > li { border-right: 1px solid #e69740; float: left; height: 8px; line-height: .4em; margin: 0; padding: 0; position: relative; }
+.uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active { border-color: white; }
+.uber-nav .content > .menu > li:last-child { border-right: none; }
+.uber-nav .content > .menu > li > a { letter-spacing: 2px; margin-left: -1px; padding-left: 12px; }
+.uber-nav .content > .menu > li > a:hover { background-color: #e69740; color: white; }
+.uber-nav .content > .menu > li > a.active { color: #cf4753; }
+.uber-nav .content > .menu > li > a.active:hover { color: white; }
+.uber-nav .content > .menu li:hover .menu { display: block; }
+.uber-nav a { color: #92998d; padding: 5px 10px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+.uber-nav a:hover { color: #cf4753; }
+.uber-nav ul { margin-left: 0; }
+.uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -1px; top: 14px; position: absolute; width: 100px; z-index: 9999; text-align: left; }
+.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; line-height: 16px; margin: 0 3px; padding: 0; text-transform: none; }
+.uber-nav .menu .menu a:hover { background-color: transparent; color: #cf4753; }
+.uber-nav .menu .menu a.active { background-color: transparent; }
+.uber-nav .menu .menu li { display: block; padding-top: 0; }
+.uber-nav .menu .menu li:first-child { margin-top: 2px; }
+.uber-nav ul li { list-style-type: none; list-style-image: none; }
+.uber-nav ul li.expanded, .uber-nav ul li.leaf { list-style-type: none; list-style-image: none; }
 
 /**/
 /**
 * #Feeds
 **/
-/* line 661, ../sass/teachforall.scss */
-#feeds {
-  background-color: #e69740;
-  padding: 40px 0;
-}
-/* line 664, ../sass/teachforall.scss */
-#feeds h2 {
-  color: white;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
+#feeds { background-color: #e69740; padding: 40px 0; }
+#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
 
 /**
 * #Footer
 **/
-/* line 677, ../sass/teachforall.scss */
-#footer {
-  background-color: #4d4d4d;
-  border: none;
-  padding: 30px 0;
-}
-/* line 681, ../sass/teachforall.scss */
-#footer ul {
-  margin: 0;
-}
-@media screen and (max-width: 767px) {
-  /* line 677, ../sass/teachforall.scss */
-  #footer {
-    padding-bottom: 0;
-  }
-  /* line 690, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
-    font-size: 15px;
-    font-size: 0.88235rem;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  /* line 696, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
-    font-size: 17px;
-    font-size: 1rem;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  /* line 703, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"].footer-links {
-    width: 42%;
-    float: left;
-    margin-right: 6%;
-    margin-left: 5%;
-  }
-  /* line 709, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"].footer-links .block-block {
-    display: none;
-  }
-  /* line 714, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"].footer-links-2 {
-    width: 42%;
-    float: left;
-    margin-right: 5%;
-  }
-  /* line 719, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
-    display: none;
-  }
-  /* line 724, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"]:first-child + div + div {
-    clear: left;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-  /* line 733, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li {
-    width: 42%;
-    float: left;
-    margin-right: 5%;
-  }
-  /* line 738, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.first {
-    width: 42%;
-    float: left;
-    margin-right: 6%;
-    margin-left: 5%;
-  }
-  /* line 745, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.last {
-    width: auto;
-    clear: both;
-    margin-left: 5%;
-  }
-  /* line 756, ../sass/teachforall.scss */
-  #footer .row-fluid .span2 + .span3 {
-    clear: both;
-    box-sizing: border-box;
-    padding: 0 5% 20px;
-  }
-  /* line 761, ../sass/teachforall.scss */
-  #footer .row-fluid .span2 + .span3 .donate {
-    font-size: 14px;
-    font-size: 0.82353rem;
-    padding: 2px 10px 0;
-    margin-right: 9px;
-    line-height: 32px;
-  }
-  /* line 768, ../sass/teachforall.scss */
-  #footer .row-fluid .span2 + .span3 .social-media {
-    display: inline-block;
-    padding: 7px 8px;
-    margin-right: 5px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 780, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
-    font-size: 14px;
-    font-size: 0.82353rem;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  /* line 786, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
-    font-size: 16px;
-    font-size: 0.94118rem;
-    display: inline-block;
-    margin-bottom: 5px;
-  }
-  /* line 794, ../sass/teachforall.scss */
-  #footer .row-fluid [class*="span2"].footer-links .block-block, #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
-    display: none;
-  }
-  /* line 802, ../sass/teachforall.scss */
-  #footer .row-fluid .span2 + .span3 .donate {
-    font-size: 14px;
-    font-size: 0.82353rem;
-    padding: 2px 10px 0;
-    margin-right: 60px;
-    margin-bottom: 10px;
-    line-height: 32px;
-  }
-  /* line 810, ../sass/teachforall.scss */
-  #footer .row-fluid .span2 + .span3 .social-media {
-    display: inline-block;
-    padding: 7px 8px;
-    margin-right: 5px;
-  }
-}
+#footer { background-color: #4d4d4d; border: none; padding: 30px 0; }
+#footer ul { margin: 0; }
+@media screen and (max-width: 767px) { #footer { padding-bottom: 0; }
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li > a { font-size: 15px; font-size: 0.88235rem; display: inline-block; margin-bottom: 5px; }
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a { font-size: 17px; font-size: 1rem; display: inline-block; margin-bottom: 5px; }
+  #footer .row-fluid [class*="span2"].footer-links { width: 42%; float: left; margin-right: 6%; margin-left: 5%; }
+  #footer .row-fluid [class*="span2"].footer-links .block-block { display: none; }
+  #footer .row-fluid [class*="span2"].footer-links-2 { width: 42%; float: left; margin-right: 5%; }
+  #footer .row-fluid [class*="span2"].footer-links-2 .block-block { display: none; }
+  #footer .row-fluid [class*="span2"]:first-child + div + div { clear: left; border-top: 1px dotted grey; border-bottom: 1px dotted grey; padding-top: 20px; margin-bottom: 20px; display: inline-block; }
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li { width: 42%; float: left; margin-right: 5%; }
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.first { width: 42%; float: left; margin-right: 6%; margin-left: 5%; }
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li.last { width: auto; clear: both; margin-left: 5%; }
+  #footer .row-fluid .span2 + .span3 { clear: both; box-sizing: border-box; padding: 0 5% 20px; }
+  #footer .row-fluid .span2 + .span3 .donate { font-size: 14px; font-size: 0.82353rem; padding: 2px 10px 0; margin-right: 9px; line-height: 32px; }
+  #footer .row-fluid .span2 + .span3 .social-media { display: inline-block; padding: 7px 8px; margin-right: 5px; } }
+@media screen and (min-width: 768px) and (max-width: 979px) { #footer .row-fluid [class*="span2"] .content > ul.menu > li > a { font-size: 14px; font-size: 0.82353rem; display: inline-block; margin-bottom: 5px; }
+  #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a { font-size: 16px; font-size: 0.94118rem; display: inline-block; margin-bottom: 5px; }
+  #footer .row-fluid [class*="span2"].footer-links .block-block, #footer .row-fluid [class*="span2"].footer-links-2 .block-block { display: none; }
+  #footer .row-fluid .span2 + .span3 .donate { font-size: 14px; font-size: 0.82353rem; padding: 2px 10px 0; margin-right: 60px; margin-bottom: 10px; line-height: 32px; }
+  #footer .row-fluid .span2 + .span3 .social-media { display: inline-block; padding: 7px 8px; margin-right: 5px; } }
 
-/* line 820, ../sass/teachforall.scss */
-.footer__copyright {
-  color: #999999;
-  margin-top: 20px;
-  width: 80%;
-}
+.footer__copyright { color: #999999; margin-top: 20px; width: 80%; }
 
-/* line 826, ../sass/teachforall.scss */
-.footer__contact {
-  color: #999999;
-  width: 80%;
-}
+.footer__contact { color: #999999; width: 80%; }
 
-/* line 832, ../sass/teachforall.scss */
-.footer-links a {
-  margin-left: 0;
-}
-/* line 839, ../sass/teachforall.scss */
-.footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) {
-  display: none;
-}
+.footer-links a { margin-left: 0; }
+.footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) { display: none; }
 
-/* line 850, ../sass/teachforall.scss */
-.footer-links-2 .content > ul > li {
-  margin-bottom: 20px;
-}
-/* line 854, ../sass/teachforall.scss */
-.footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) {
-  display: none;
-}
+.footer-links-2 .content > ul > li { margin-bottom: 20px; }
+.footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) { display: none; }
 
-/* line 865, ../sass/teachforall.scss */
-.footer-menu .menu .menu .last {
-  margin-bottom: 10px;
-}
-/* line 870, ../sass/teachforall.scss */
-.footer-menu ul {
-  margin: 0;
-}
-/* line 878, ../sass/teachforall.scss */
-.footer-menu .content > ul > li {
-  padding: 0;
-}
+.footer-menu .menu .menu .last { margin-bottom: 10px; }
+.footer-menu ul { margin: 0; }
+.footer-menu .content > ul > li { padding: 0; }
 
-/* line 886, ../sass/teachforall.scss */
-#footer .content > ul > li {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0 0 15px 0;
-  line-height: 1em;
-  padding: 0;
-}
-/* line 893, ../sass/teachforall.scss */
-#footer .content > ul > li > ul li {
-  list-style-type: none;
-  list-style-image: none;
-  margin: 0;
-}
-/* line 897, ../sass/teachforall.scss */
-#footer .content > ul > li > ul li a {
-  color: #999999;
-  font-size: 14px;
-  font-size: 0.82353rem;
-}
-/* line 900, ../sass/teachforall.scss */
-#footer .content > ul > li > ul li a:hover {
-  color: white;
-}
-/* line 906, ../sass/teachforall.scss */
-#footer .content > ul > li > a {
-  color: #dfd9c9;
-  font-family: "Fedra", serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-size: 0.64706rem;
-}
-/* line 913, ../sass/teachforall.scss */
-#footer .content > ul > li > a:hover {
-  color: white;
-}
+#footer .content > ul > li { list-style-type: none; list-style-image: none; margin: 0 0 15px 0; line-height: 1em; padding: 0; }
+#footer .content > ul > li > ul li { list-style-type: none; list-style-image: none; margin: 0; }
+#footer .content > ul > li > ul li a { color: #999999; font-size: 14px; font-size: 0.82353rem; }
+#footer .content > ul > li > ul li a:hover { color: white; }
+#footer .content > ul > li > a { color: #dfd9c9; font-family: "Fedra", serif; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 11px; font-size: 0.64706rem; }
+#footer .content > ul > li > a:hover { color: white; }
 
 /**/
 /**
 * #Images
 **/
-/* line 926, ../sass/teachforall.scss */
-img {
-  max-width: 100%;
-}
+img { max-width: 100%; }
 
 /**/
 /**
 * #Supporters Widget
 **/
-/* line 935, ../sass/teachforall.scss */
-.flexslider_supporter a {
-  margin: 0;
-}
+.flexslider_supporter a { margin: 0; }
 
-/* line 940, ../sass/teachforall.scss */
-.widget_supporters {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-}
-/* line 944, ../sass/teachforall.scss */
-.widget_supporters .title {
-  color: #ffb151;
-  font-family: "Fedra", serif;
-  letter-spacing: 4px;
-  display: block;
-  margin-bottom: 10px;
-}
-/* line 951, ../sass/teachforall.scss */
-.widget_supporters ul {
-  padding: 0px;
-  margin: 0px;
-}
-/* line 954, ../sass/teachforall.scss */
-.widget_supporters ul li a {
-  margin: 0px;
-}
-/* line 958, ../sass/teachforall.scss */
-.widget_supporters p {
-  color: #999999;
-  font-size: 16px;
-  font-size: 0.94118rem;
-  line-height: 1.5em;
-}
+.widget_supporters { background-color: white; padding: 20px; text-align: center; }
+.widget_supporters .title { color: #ffb151; font-family: "Fedra", serif; letter-spacing: 4px; display: block; margin-bottom: 10px; }
+.widget_supporters ul { padding: 0px; margin: 0px; }
+.widget_supporters ul li a { margin: 0px; }
+.widget_supporters p { color: #999999; font-size: 16px; font-size: 0.94118rem; line-height: 1.5em; }
 
-/* line 965, ../sass/teachforall.scss */
-.fb-like-box {
-  background-color: white;
-}
+.fb-like-box { background-color: white; }
 
 /**/
 /**
 * #Marquee
 **/
-/* line 975, ../sass/teachforall.scss */
-.marquee {
-  background-color: #91998c;
-}
+.marquee { background-color: #91998c; }
 
-/* line 981, ../sass/teachforall.scss */
-.marquee__2,
-.marquee__3,
-.marquee__4 {
-  position: relative;
-}
-/* line 983, ../sass/teachforall.scss */
-.marquee__2 .marquee__preview,
-.marquee__3 .marquee__preview,
-.marquee__4 .marquee__preview {
-  display: none;
-}
+.marquee__2, .marquee__3, .marquee__4 { position: relative; }
+.marquee__2 .marquee__info-wrapper, .marquee__3 .marquee__info-wrapper, .marquee__4 .marquee__info-wrapper { bottom: 20px; left: 20px; right: 20px; width: 90%; }
+.marquee__2 .marquee__preview, .marquee__3 .marquee__preview, .marquee__4 .marquee__preview { display: none; }
 
-/* line 988, ../sass/teachforall.scss */
-.marquee__info-wrapper {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 70%;
-}
+.marquee__info-wrapper { position: absolute; bottom: 30px; left: 30px; width: 70%; }
 
-/* line 995, ../sass/teachforall.scss */
-.marquee__title {
-  font-weight: normal;
-}
-/* line 996, ../sass/teachforall.scss */
-.marquee__title a {
-  color: white;
-}
+.marquee__title { font-weight: normal; }
+.marquee__title a { color: white; }
+.marquee__title a:hover { color: #cf4753; }
 
-/* line 1002, ../sass/teachforall.scss */
-.marquee__preview {
-  font-size: 17px;
-  font-size: 1rem;
-}
+.marquee__preview { color: #999999; font-family: "Fedra Serif", serif; margin-bottom: 10px; font-size: 17px; font-size: 1rem; }
 
-/* line 1006, ../sass/teachforall.scss */
-.marquee__large {
-  background-color: black;
-  float: left;
-  position: relative;
-  width: 50%;
-}
+.marquee__link { font-weight: bold; line-height: 1em; font-size: 11px; font-size: 0.64706rem; }
+.marquee__link a { color: white; }
+.marquee__link a:hover { color: #ffb151; }
 
-/* line 1013, ../sass/teachforall.scss */
-.marquee__medium {
-  background-color: #cf4753;
-  float: right;
-  position: relative;
-  width: 25%;
-}
+.marquee__large { background-color: black; float: left; position: relative; width: 50%; }
 
-/* line 1020, ../sass/teachforall.scss */
-.marquee__small {
-  background-color: #e69740;
-  float: left;
-  position: relative;
-  width: 25%;
-}
+.marquee__medium { background-color: #cf4753; float: right; position: relative; width: 25%; }
 
-/* line 1027, ../sass/teachforall.scss */
-.marquee__hover {
-  background-color: #3c3835;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  opacity: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-}
+.marquee__small { background-color: #e69740; float: left; position: relative; width: 25%; }
 
-/* line 1045, ../sass/teachforall.scss */
-.marquee__pane[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__pane[data-effeckt-type="cover-fade"]:active .marquee__active {
-  opacity: .8;
-}
+.marquee__hover { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; opacity: 0; height: 100%; position: absolute; top: 0; left: 0; right: 0; width: 100%; -webkit-transition: 500ms; -o-transition: 500ms; transition: 500ms; }
 
-@media screen and (max-width: 979px) and (min-width: 768px) {
-  /* line 1051, ../sass/teachforall.scss */
-  .marquee__info-wrapper {
-    bottom: 20px;
-    left: 20px;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 979px) {
-  /* line 1059, ../sass/teachforall.scss */
-  .marquee__large {
-    width: 100%;
-  }
+.marquee__pane[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__pane[data-effeckt-type="cover-fade"]:active .marquee__active { opacity: .8; }
 
-  /* line 1062, ../sass/teachforall.scss */
-  .marquee__hover {
-    background-color: transparent;
-    opacity: 1;
-    position: static;
-  }
-
-  /* line 1067, ../sass/teachforall.scss */
-  .marquee__info-wrapper {
-    background-color: #3c3835;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    position: static;
-    width: 100%;
-  }
-
-  /* line 1077, ../sass/teachforall.scss */
-  .marquee__preview {
-    display: none;
-  }
-}
+@media screen and (max-width: 979px) and (min-width: 768px) { .marquee__info-wrapper { bottom: 20px; left: 20px; width: 80%; } }
+@media screen and (max-width: 979px) { .marquee__large { width: 100%; }
+  .marquee__hover { background-color: transparent; opacity: 1; position: static; }
+  .marquee__info-wrapper { background-color: #3c3835; box-sizing: border-box; -moz-box-sizing: border-box; bottom: 0; left: 0; padding: 10px; position: static; width: 100%; }
+  .marquee__preview { display: none; } }
 /**/
 /**
 * #MapBox
 **/
-/* line 1088, ../sass/teachforall.scss */
-#worldmap {
-  background-color: #80b4e4;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px;
-  position: relative;
-}
+#worldmap { background-color: #80b4e4; box-sizing: border-box; -moz-box-sizing: border-box; padding: 0px; position: relative; }
 
-/* line 1096, ../sass/teachforall.scss */
-.worldmap__title {
-  letter-spacing: 2px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 9998;
-}
+.worldmap__title { letter-spacing: 2px; position: absolute; top: 30px; left: 0; text-align: center; width: 100%; z-index: 9998; }
 
-/* line 1106, ../sass/teachforall.scss */
-#map {
-  background-color: #80b4e4;
-  width: 100%;
-  height: 580px;
-}
+#map { background-color: #80b4e4; width: 100%; height: 580px; }
 
-/* line 1112, ../sass/teachforall.scss */
-.leaflet-bar {
-  border: none;
-  border-radius: 0;
-}
-/* line 1115, ../sass/teachforall.scss */
-.leaflet-bar a {
-  background-color: #4d4d4d;
-  border: none;
-  color: white;
-  padding: 0 0 2px 1px;
-}
-/* line 1120, ../sass/teachforall.scss */
-.leaflet-bar a:first-child {
-  border-radius: 0;
-  margin-bottom: 2px;
-}
-/* line 1124, ../sass/teachforall.scss */
-.leaflet-bar a:last-child {
-  border-radius: 0;
-}
-/* line 1127, ../sass/teachforall.scss */
-.leaflet-bar a:hover {
-  background-color: #4d4d4d;
-  border: none;
-  color: #e69740;
-}
+.leaflet-bar { border: none; border-radius: 0; }
+.leaflet-bar a { background-color: #4d4d4d; border: none; color: white; padding: 0 0 2px 1px; }
+.leaflet-bar a:first-child { border-radius: 0; margin-bottom: 2px; }
+.leaflet-bar a:last-child { border-radius: 0; }
+.leaflet-bar a:hover { background-color: #4d4d4d; border: none; color: #e69740; }
 
-/* line 1135, ../sass/teachforall.scss */
-.leaflet-popup-pane {
-  z-index: 9999;
-}
-/* line 1137, ../sass/teachforall.scss */
-.leaflet-popup-pane a {
-  color: #91998c;
-}
-/* line 1139, ../sass/teachforall.scss */
-.leaflet-popup-pane a:hover {
-  color: #e69740;
-}
+.leaflet-popup-pane { z-index: 9999; }
+.leaflet-popup-pane a { color: #91998c; }
+.leaflet-popup-pane a:hover { color: #e69740; }
 
-/* line 1146, ../sass/teachforall.scss */
-.leaflet-popup-content .btn {
-  color: white;
-  position: absolute;
-  bottom: 30px;
-  right: 10px;
-}
-/* line 1151, ../sass/teachforall.scss */
-.leaflet-popup-content .btn:hover {
-  color: white;
-}
+.leaflet-popup-content .btn { color: white; position: absolute; bottom: 30px; right: 10px; }
+.leaflet-popup-content .btn:hover { color: white; }
 
 /**
 
@@ -1246,284 +334,88 @@ img {
 /**
 * #News Listing
 **/
-/* line 1167, ../sass/teachforall.scss */
-.view-news .views-row-odd,
-.view-news .views-row-even {
-  border-bottom: 1px dashed #dfd9c9;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-/* line 1172, ../sass/teachforall.scss */
-.view-news .views-row-last {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-@media screen and (max-width: 767px) {
-  /* line 1177, ../sass/teachforall.scss */
-  .view-news .span3 {
-    float: left;
-    margin-right: 2%;
-    width: 30%;
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 1184, ../sass/teachforall.scss */
-  .view-news .span9 {
-    float: left;
-    width: 68%;
-  }
-}
-/* line 1190, ../sass/teachforall.scss */
-.view-news img {
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  /* line 1190, ../sass/teachforall.scss */
-  .view-news img {
-    margin-bottom: 5px;
-  }
-}
-/* line 1197, ../sass/teachforall.scss */
-.view-news h3 a {
-  color: #4d4d4d;
-}
-/* line 1199, ../sass/teachforall.scss */
-.view-news h3 a:hover {
-  color: #cf4753;
-}
-/* line 1204, ../sass/teachforall.scss */
-.view-news .small-body {
-  margin-bottom: 5px;
-}
+.view-news .views-row-odd, .view-news .views-row-even { border-bottom: 1px dashed #dfd9c9; margin-bottom: 20px; padding-bottom: 20px; }
+.view-news .views-row-last { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+@media screen and (max-width: 767px) { .view-news .span3 { float: left; margin-right: 2%; width: 30%; } }
+@media screen and (max-width: 767px) { .view-news .span9 { float: left; width: 68%; } }
+.view-news img { width: 100%; }
+@media screen and (max-width: 767px) { .view-news img { margin-bottom: 5px; } }
+.view-news h3 a { color: #4d4d4d; }
+.view-news h3 a:hover { color: #cf4753; }
+.view-news .small-body { margin-bottom: 5px; }
 
-/* line 1209, ../sass/teachforall.scss */
-.news__author-info {
-  font-size: 14px;
-  font-size: 0.82353rem;
-}
+.news__author-info { font-size: 14px; font-size: 0.82353rem; }
 
 /**/
 /* ### NODES ### */
 /**
 * #National Organizations
 **/
-/* line 1225, ../sass/teachforall.scss */
-.no__ceo h2,
-.no__ceo .node {
-  margin-bottom: 0;
-}
-/* line 1227, ../sass/teachforall.scss */
-.no__ceo h2 a,
-.no__ceo .node a {
-  font-size: 18px;
-  font-size: 1.05882rem;
-  font-family: "News Gothic", sans-serif;
-}
+.no__ceo h2, .no__ceo .node { margin-bottom: 0; }
+.no__ceo h2 a, .no__ceo .node a { font-size: 18px; font-size: 1.05882rem; font-family: "News Gothic", sans-serif; }
 
-/* line 1235, ../sass/teachforall.scss */
-.no__image img {
-  width: 100%;
-}
+.no__image img { width: 100%; }
 
-/* line 1244, ../sass/teachforall.scss */
-.no__info-block {
-  color: #cf4753;
-  margin-bottom: 20px;
-}
-/* line 1247, ../sass/teachforall.scss */
-.no__info-block img {
-  width: 100%;
-}
-/* line 1250, ../sass/teachforall.scss */
-.no__info-block .field-item {
-  font-size: 18px;
-  font-size: 1.05882rem;
-}
-/* line 1253, ../sass/teachforall.scss */
-.no__info-block a {
-  font-size: 18px;
-  font-size: 1.05882rem;
-  font-weight: bold;
-}
+.no__info-block { color: #cf4753; margin-bottom: 20px; }
+.no__info-block img { width: 100%; }
+.no__info-block .field-item { font-size: 18px; font-size: 1.05882rem; }
+.no__info-block a { font-size: 18px; font-size: 1.05882rem; font-weight: bold; }
 
-/* line 1259, ../sass/teachforall.scss */
-.no__stats {
-  color: #91998c;
-  font-size: 18px;
-  font-size: 1.05882rem;
-}
-/* line 1262, ../sass/teachforall.scss */
-.no__stats strong {
-  color: black;
-}
+.no__stats { color: #91998c; font-size: 18px; font-size: 1.05882rem; }
+.no__stats strong { color: black; }
 
-/* line 1267, ../sass/teachforall.scss */
-.no__stat {
-  margin-bottom: 10px;
-}
-/* line 1269, ../sass/teachforall.scss */
-.no__stat:last-child {
-  margin-bottom: 0;
-}
+.no__stat { margin-bottom: 10px; }
+.no__stat:last-child { margin-bottom: 0; }
 
-/* line 1276, ../sass/teachforall.scss */
-.node .content .no__spotlights {
-  line-height: 1em;
-  text-transform: none;
-}
-/* line 1279, ../sass/teachforall.scss */
-.node .content .no__spotlights img {
-  height: auto;
-  margin-bottom: 10px;
-  width: 100%;
-}
+.node .content .no__spotlights { line-height: 1em; text-transform: none; }
+.node .content .no__spotlights img { height: auto; margin-bottom: 10px; width: 100%; }
 
 /**/
 /**
 * #Spotlight
 **/
-/* line 1295, ../sass/teachforall.scss */
-.node-type-spotlight .page-title {
-  display: none;
-}
-/* line 1297, ../sass/teachforall.scss */
-.node-type-spotlight .page-title.spotlight-type {
-  display: block;
-}
-/* line 1301, ../sass/teachforall.scss */
-.node-type-spotlight .title {
-  color: #e69740;
-}
-/* line 1305, ../sass/teachforall.scss */
-.node-type-spotlight .content img {
-  height: auto;
-  margin: 10px 0;
-  width: 100%;
-}
-@media screen and (max-width: 500px) {
-  /* line 1305, ../sass/teachforall.scss */
-  .node-type-spotlight .content img {
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 2%;
-    width: 96%;
-  }
-}
+.node-type-spotlight .page-title { display: none; }
+.node-type-spotlight .page-title.spotlight-type { display: block; }
+.node-type-spotlight .title { color: #e69740; }
+.node-type-spotlight .content img { height: auto; margin: 10px 0; width: 100%; }
+@media screen and (max-width: 500px) { .node-type-spotlight .content img { float: none; margin: 0 auto; margin-bottom: 20px; padding: 2%; width: 96%; } }
 
 /**/
 /**
 * #News - Node
 **/
-/* line 1327, ../sass/teachforall.scss */
-.node-type-news .page-title {
-  display: none;
-}
-/* line 1329, ../sass/teachforall.scss */
-.node-type-news .page-title.date {
-  display: block;
-}
+.node-type-news .page-title { display: none; }
+.node-type-news .page-title.date { display: block; }
 
-/* line 1335, ../sass/teachforall.scss */
-.news__image {
-  margin: 20px 0;
-}
-/* line 1337, ../sass/teachforall.scss */
-.news__image img {
-  width: 100%;
-}
+.news__image { margin: 20px 0; }
+.news__image img { width: 100%; }
 
-/* line 1342, ../sass/teachforall.scss */
-.news__content {
-  margin-bottom: 10px;
-}
+.news__image-caption { color: black; margin-top: 3px; font-style: italic; font-size: 14px; font-size: 0.82353rem; }
+
+.news__content { margin-bottom: 10px; }
 
 /**/
 /* ### LANDING PAGES ### */
 /**
 * #News - Landing
 **/
-/* line 1354, ../sass/teachforall.scss */
-.news-flexslider {
-  margin-bottom: 30px;
-}
-/* line 1356, ../sass/teachforall.scss */
-.news-flexslider h2 {
-  margin-bottom: 5px;
-}
-/* line 1361, ../sass/teachforall.scss */
-.news-flexslider .flex-control-paging li a {
-  background-color: #91998c;
-  border-radius: 0;
-}
-/* line 1364, ../sass/teachforall.scss */
-.news-flexslider .flex-control-paging li a.flex-active {
-  background-color: #e69740;
-}
-/* line 1370, ../sass/teachforall.scss */
-.news-flexslider .flex-control-nav {
-  bottom: 12px;
-  right: 10px;
-  width: auto;
-}
-/* line 1375, ../sass/teachforall.scss */
-.news-flexslider .flexslider {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0;
-}
+.news-flexslider { margin-bottom: 30px; }
+.news-flexslider h2 { margin-bottom: 5px; }
+.news-flexslider .flex-control-paging li a { background-color: #91998c; border-radius: 0; }
+.news-flexslider .flex-control-paging li a.flex-active { background-color: #e69740; }
+.news-flexslider .flex-control-nav { bottom: 12px; right: 10px; width: auto; }
+.news-flexslider .flexslider { background: transparent; border: none; border-radius: 0; box-shadow: none; margin: 0; }
 
-/* line 1384, ../sass/teachforall.scss */
-.news__flexslider__wrapper {
-  position: relative;
-}
+.news__flexslider__wrapper { position: relative; }
 
-/* line 1388, ../sass/teachforall.scss */
-.news__flexslider__info {
-  background-color: black;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  opacity: .8;
-  padding: 15px 40px 15px 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-/* line 1399, ../sass/teachforall.scss */
-.news__flexslider__info h2 a {
-  color: white;
-}
-/* line 1401, ../sass/teachforall.scss */
-.news__flexslider__info h2 a:hover {
-  color: #cf4753;
-}
+.news__flexslider__info { background-color: black; box-sizing: border-box; -moz-box-sizing: border-box; opacity: .8; padding: 15px 40px 15px 20px; position: absolute; bottom: 0; left: 0; width: 100%; }
+.news__flexslider__info h2 a { color: white; }
+.news__flexslider__info h2 a:hover { color: #cf4753; }
 
-/* line 1408, ../sass/teachforall.scss */
-.news__preview {
-  color: #91998c;
-  font-family: "Fedra Serif", serif;
-}
+.news__preview { color: #91998c; font-family: "Fedra Serif", serif; }
 
-/* line 1413, ../sass/teachforall.scss */
-.news__link {
-  margin-top: 5px;
-}
-/* line 1415, ../sass/teachforall.scss */
-.news__link a {
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.70588rem;
-}
-/* line 1421, ../sass/teachforall.scss */
-.news__link a:hover {
-  color: #cf4753;
-}
+.news__link { margin-top: 5px; }
+.news__link a { color: white; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
+.news__link a:hover { color: #cf4753; }
 
 /**/

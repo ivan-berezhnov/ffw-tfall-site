@@ -135,23 +135,51 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['field_spotlight_type']['id'] = 'field_spotlight_type';
+  $handler->display->display_options['fields']['field_spotlight_type']['table'] = 'field_data_field_spotlight_type';
+  $handler->display->display_options['fields']['field_spotlight_type']['field'] = 'field_spotlight_type';
+  $handler->display->display_options['fields']['field_spotlight_type']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_type']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_type']['hide_empty'] = TRUE;
+  /* Field: Content: Byline */
+  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '175',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'LEARN MORE';
+  $handler->display->display_options['fields']['view_node']['text'] = 'GO TO STORY';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
   $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node_1']['label'] = '';
   $handler->display->display_options['fields']['view_node_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['view_node_1']['alter']['text'] = '<div class="marquee__link">[view_node] <span class="orange1">>></span></div>';
+  $handler->display->display_options['fields']['view_node_1']['alter']['text'] = '<div class="marquee__link">[view_node] <span class="orange2">>></span></div>';
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Nodequeue: Position */

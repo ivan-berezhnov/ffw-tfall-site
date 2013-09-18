@@ -13,6 +13,7 @@ dependencies[] = flexslider_views
 dependencies[] = image
 dependencies[] = options
 dependencies[] = publication_date
+dependencies[] = pubteachforall_marquee
 dependencies[] = spotlight
 dependencies[] = strongarm
 dependencies[] = taxonomy

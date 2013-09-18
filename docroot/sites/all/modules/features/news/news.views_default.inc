@@ -110,6 +110,7 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
   $handler->display->display_options['fields']['field_category']['label'] = '';
   $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -182,7 +183,9 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
   $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
   $handler->display->display_options['fields']['field_category']['label'] = '';
+  $handler->display->display_options['fields']['field_category']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -279,6 +282,15 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '170',
   );
+  /* Field: Content: Byline */
+  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
