@@ -507,6 +507,46 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_national_organization_twit'
+  $field_instances['node-national_organization-field_national_organization_twit'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please enter national organization twitter widget text to embed twitter feed',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_national_organization_twit',
+    'label' => 'National Organization Twitter Widget',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 20,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_no_image'
   $field_instances['node-national_organization-field_no_image'] = array(
     'bundle' => 'national_organization',
@@ -887,7 +927,9 @@ function national_organization_field_default_field_instances() {
   t('Logo');
   t('Main Image');
   t('Map Image');
+  t('National Organization Twitter Widget');
   t('Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there');
+  t('Please enter national organization twitter widget text to embed twitter feed');
   t('Population');
   t('Program Launched');
   t('Schools');
