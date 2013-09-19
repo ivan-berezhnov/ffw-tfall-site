@@ -39,6 +39,15 @@ function supporters_view_feature_views_default_views() {
     ),
   );
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['empty'] = TRUE;
+  $handler->display->display_options['footer']['area']['content'] = '<form method="link" action="/">
+<input type = "submit" value="GET INVOLVED">
+</form>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -46,6 +55,8 @@ function supporters_view_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Type */
   $handler->display->display_options['fields']['field_supporter_type']['id'] = 'field_supporter_type';
   $handler->display->display_options['fields']['field_supporter_type']['table'] = 'field_data_field_supporter_type';
@@ -53,15 +64,14 @@ function supporters_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_supporter_type']['label'] = '';
   $handler->display->display_options['fields']['field_supporter_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_supporter_type']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Sort criterion: Content: Type (field_supporter_type) */
   $handler->display->display_options['sorts']['field_supporter_type_value']['id'] = 'field_supporter_type_value';
   $handler->display->display_options['sorts']['field_supporter_type_value']['table'] = 'field_data_field_supporter_type';
   $handler->display->display_options['sorts']['field_supporter_type_value']['field'] = 'field_supporter_type_value';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
