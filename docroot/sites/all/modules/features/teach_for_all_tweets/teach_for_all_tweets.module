@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Teach for all tweets feature.
+ */
+
+include_once 'teach_for_all_tweets.features.inc';
