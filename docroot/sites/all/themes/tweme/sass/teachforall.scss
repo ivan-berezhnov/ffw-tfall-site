@@ -1422,12 +1422,6 @@ img {max-width: 100%;}
       }
 
       .person-title {
-        color: $nearblack;
-        @include font-size(18);
-        font-weight: bold;
-      }
-
-      .person-type {
         color: $grey1;
         @include font-size(18);
         font-weight: bold;
