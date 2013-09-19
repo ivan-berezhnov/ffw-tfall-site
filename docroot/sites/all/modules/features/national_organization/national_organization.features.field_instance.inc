@@ -222,7 +222,7 @@ function national_organization_field_default_field_instances() {
     'bundle' => 'national_organization',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the first city where the schools are located here. For example: <strong>Lohore and Karachi</strong>',
+    'description' => 'Enter cities with schools text here. This text will appear after "xx schools in " i.e. 19 schools in <strong>Lohore and Karachi</strong>.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -240,7 +240,7 @@ function national_organization_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_city_1',
-    'label' => 'Cities',
+    'label' => 'Cities With Schools',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -877,9 +877,9 @@ function national_organization_field_default_field_instances() {
   t('Avg. Total Years of Education');
   t('Blurb');
   t('CEO Profile');
-  t('Cities');
+  t('Cities With Schools');
   t('Cohorts Placed');
-  t('Enter the first city where the schools are located here. For example: <strong>Lohore and Karachi</strong>');
+  t('Enter cities with schools text here. This text will appear after "xx schools in " i.e. 19 schools in <strong>Lohore and Karachi</strong>.');
   t('Facebook Account Name');
   t('Links');
   t('Living below Poverty Line');

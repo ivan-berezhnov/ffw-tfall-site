@@ -95,13 +95,13 @@
   </div>
 </div>
 
-<!-- insights -->
-<div id="insights" class="container-wrapper">
+<!-- network learning -->
+<div class="container-wrapper network-learning">
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
         <h2><?php print t('Network Learning'); ?></h2>
-				coming soon
+				#TODO
       </div>
 		</div>
 	</div>

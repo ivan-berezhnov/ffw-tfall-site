@@ -17,6 +17,7 @@
     #Supporters Widget
     #Marquee
     #MapBox
+    #Network Learning
 
     ### VIEWS ###
     # News Listing
@@ -1208,7 +1209,18 @@ img {max-width: 100%;}
   }
 }
 
+/**/
+
 /**
+* #Nework Learning
+**/
+
+.network-learning {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/**/
 
 /* ### VIEWS ### */
 
@@ -1219,9 +1231,8 @@ img {max-width: 100%;}
 .view-news {
   .views-row-odd,
   .views-row-even {
-    border-bottom: 1px dashed $beige;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
   .views-row-last {
     border-bottom: none;
@@ -1467,6 +1478,12 @@ img {max-width: 100%;}
   margin-bottom: 10px;
 }
 
+.news__byline {
+  h3 {
+    color: $grey4;
+  }
+}
+
 /**/
 
 /* ### LANDING PAGES ### */
@@ -1546,6 +1563,11 @@ img {max-width: 100%;}
       color: $red;
     }
   }
+}
+
+.news__landing-byline {
+  color: $grey4;
+  @include font-size(16);
 }
 
 /**/

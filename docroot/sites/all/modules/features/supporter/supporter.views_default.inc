@@ -54,7 +54,7 @@ function supporter_views_default_views() {
   $handler->display->display_options['fields']['field_supporter_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_supporter_logo']['settings'] = array(
     'image_style' => 'supporter_logo',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
