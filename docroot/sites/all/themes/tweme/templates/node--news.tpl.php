@@ -6,7 +6,7 @@
     <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
 
   	<div class="row-fluid">
-  	  <div class="span9">
+  	  <div class="span12">
 
 		    <h1 class="news__title"><?php print $title; ?></h1>
 
@@ -41,25 +41,12 @@
 
 				<div class="row-fluid">
 				  <div class="span12">
-				  	#Todo: Share on FB<br />
-				  	#Todo: Share on TW<br />
 				  	<a href="/news/latest">
 							<div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
 						</a>
 				  </div>
 				</div>
 
-  	  </div>
-
-  	  <div class="span3">
-  	  	<div class="twitter__sidebar">#Todo: Twitter</div>
-  	  	<div class="facebook__sidebar hidden-tablet">
-  	  		<?php if (module_exists('widget_facebook')): ?>
-            <?php $widget_facebook = widget_facebook_embed_homepage();
-              print render($widget_facebook);
-            ?>
-          <?php endif; ?>
-  	  	</div>
   	  </div>
   	</div>
 

@@ -1,7 +1,7 @@
 /**
 *   #Table of Contents
 **/
-/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee #MapBox #Network Learning
+/** #Imports #Font-Face #Styleguide - Typography #Global Elements #Objects #Header #Primary Navigation #Uber Navigation #Feeds #Footer #Images #Supporters Widget #Marquee #MapBox #Network Learning #Twitter
  ### VIEWS ### # News Listing
  ### NODES ### #National Organizations #Spotlight #Person #News - Node
  ### LANDING PAGES ### #News - Landing
@@ -205,7 +205,9 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 * #Feeds
 **/
 #feeds { background-color: #e69740; padding: 40px 0; }
-#feeds h2 { color: white; font-weight: normal; letter-spacing: 2px; text-align: center; text-transform: uppercase; }
+@media screen and (max-width: 767px) { #feeds { padding: 20px 0; } }
+#feeds h3 { color: white; font-weight: normal; letter-spacing: 3px; margin-top: 0; text-align: center; text-transform: uppercase; }
+@media screen and (max-width: 450px) { #feeds .facebook { clear: both; } }
 
 /**
 * #Footer
@@ -336,9 +338,36 @@ img { max-width: 100%; }
 
 /**/
 /**
-* #Nework Learning
+* #Network Learning
 **/
 .network-learning { margin-bottom: 10px; text-align: center; }
+
+/**/
+/**
+* #Twitter
+**/
+.region-twitter-front { margin-top: 10px; }
+@media screen and (max-width: 767px) { .region-twitter-front { padding: 0 20px; } }
+.region-twitter-front .block-views { float: left; width: 31%; }
+@media screen and (max-width: 979px) { .region-twitter-front .block-views { width: 48%; } }
+@media screen and (max-width: 450px) { .region-twitter-front .block-views { width: 100%; } }
+
+#block-views-tweets-block-2 { margin: 0 1%; }
+@media screen and (max-width: 979px) and (min-width: 768px) { #block-views-tweets-block-2 { margin: 0 0 0 2%; } }
+@media screen and (max-width: 450px) { #block-views-tweets-block-2 { display: none; } }
+
+@media screen and (max-width: 979px) { #block-views-tweets-block-3 { display: none; } }
+
+#block-views-tweets-block { background-color: #e69740; margin-bottom: 20px; padding: 20px; }
+#block-views-tweets-block h2 { color: white; letter-spacing: 4px; text-align: center; text-transform: uppercase; font-size: 18px; font-size: 1.05882rem; }
+
+.tweets { margin-bottom: 20px; }
+
+.tweets__info { color: black; font-weight: bold; text-transform: uppercase; font-size: 12px; font-size: 0.70588rem; }
+.tweets__info a { color: black; }
+
+.tweets__text { font-size: 17px; font-size: 1rem; color: white; }
+.tweets__text a { color: white; }
 
 /**/
 /* ### VIEWS ### */

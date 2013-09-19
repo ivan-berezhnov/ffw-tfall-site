@@ -113,9 +113,10 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span9">
-        <h2><?php print t('Twitter'); ?></h2>
+        <h3>TWITTER</h3>
+        <?php print render($page['twitter_front']); ?>
       </div>
-			<div class="span3">
+			<div class="span3 facebook">
 				<?php if (module_exists('widget_facebook')): ?>
           <?php $widget_facebook = widget_facebook_embed_homepage() ;?>
           <?php print render($widget_facebook); ?>
