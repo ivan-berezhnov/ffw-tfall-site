@@ -415,6 +415,8 @@ img { max-width: 100%; }
 
 .news__content { margin-bottom: 10px; }
 
+.news__byline h3 { color: #999999; }
+
 /**/
 /* ### LANDING PAGES ### */
 /**
