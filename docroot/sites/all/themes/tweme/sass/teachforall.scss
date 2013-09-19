@@ -24,6 +24,7 @@
     ### NODES ###
     #National Organizations
     #Spotlight
+    #Person
     #News - Node
 
     ### LANDING PAGES ###
@@ -1365,6 +1366,69 @@ img {max-width: 100%;}
         margin-bottom: 20px;
         padding: 2%;
         width: 96%;
+      }
+    }
+  }
+}
+
+/**/
+
+/**
+* #Person
+**/
+
+.node-type-person {
+  .content {
+    @include clearfix();
+    margin-bottom: 10px;
+
+    .person-image {
+      display: block;
+      float: left;
+      width: 30%;
+
+      @media screen and (max-width: 440px) {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px 20px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .person-copy {
+      display: block;
+      float: left;
+      width: 70%;
+      box-sizing: border-box;
+      padding-left: 20px;
+
+      @media screen and (max-width: 440px) {
+        float: none;
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      .person-title {
+        color: $nearblack;
+        @include font-size(18);
+        font-weight: bold;
+      }
+
+      .person-type {
+        color: $grey1;
+        @include font-size(18);
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .person-bio {
+        color: $grey2;
+        @include font-size(16);
       }
     }
   }

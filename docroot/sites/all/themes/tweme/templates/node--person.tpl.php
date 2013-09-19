@@ -1,4 +1,6 @@
-<?php print $title; ?>
-<?php print render($content['field_person_type']); ?>
-<?php print render($content['field_person_image']); ?> <!-- not sure what final resolution we want.. i need that to create image style -->
-<?php print render($content['field_person_bio']); ?>
+<div class="person-image"><?php print render($content['field_person_image']); ?></div>
+
+<div class="person-copy">
+   <div class="person-type"><?php print render($content['field_person_type']); ?></div>
+   <div class="person-bio"><?php print render($content['field_person_bio']); ?></div>
+</div>
