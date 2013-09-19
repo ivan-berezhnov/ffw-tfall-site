@@ -34,7 +34,7 @@ function person_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_job_title',
     'label' => 'Job Title',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
