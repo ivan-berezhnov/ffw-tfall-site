@@ -192,16 +192,14 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '200',
-  );
+  /* Field: Content: Byline */
+  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
   /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
