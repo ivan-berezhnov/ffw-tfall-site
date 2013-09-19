@@ -11,11 +11,11 @@ function teach_for_all_tweets_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'teach_for_all_tweets';
+  $view->name = 'tfall_tweets';
   $view->description = 'Displays Twitter.com status messages for users who have associated Twitter accounts.';
   $view->tag = '';
   $view->base_table = 'twitter';
-  $view->human_name = 'Teach for all Tweets';
+  $view->human_name = 'TFALL Tweets';
   $view->core = 0;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -241,14 +241,20 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['arguments']['screen_name']['limit'] = '0';
   $handler->display->display_options['path'] = 'tweets-raw';
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: TeachForAll Twitter Block - Sidebar */
+  $handler = $view->new_display('block', 'TeachForAll Twitter Block - Sidebar', 'block');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Twitter';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'teachforall-twitter-block';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '9';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['grouping'] = '';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -259,6 +265,26 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Twitter: Login name */
+  $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['table'] = 'twitter_account';
+  $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['label'] = '';
+  $handler->display->display_options['fields']['screen_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['text'] = '@TeachForAll, ';
+  $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/TeachForAll';
+  $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
+  /* Field: Twitter: Created time */
+  $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
+  $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['label'] = '';
+  $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
   /* Field: Twitter: Message text */
   $handler->display->display_options['fields']['text']['id'] = 'text';
   $handler->display->display_options['fields']['text']['table'] = 'twitter';
@@ -269,14 +295,8 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['text']['link_usernames'] = 1;
   $handler->display->display_options['fields']['text']['link_hashtags'] = 1;
   $handler->display->display_options['fields']['text']['link_attributes'] = 1;
-  /* Field: Twitter: Created time */
-  $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
-  $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
-  $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
-  $handler->display->display_options['fields']['created_time']['label'] = '';
-  $handler->display->display_options['fields']['created_time']['date_format'] = 'time ago';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['block_description'] = 'Tweets';
+  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block - Sidebar';
 
   /* Display: Tweets */
   $handler = $view->new_display('page', 'Tweets', 'page_2');
@@ -323,7 +343,176 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['arguments']['screen_name']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['screen_name']['limit'] = '0';
   $handler->display->display_options['path'] = 'tweets';
-  $export['teach_for_all_tweets'] = $view;
+
+  /* Display: TeachForAll Twitter Block - Front 1 */
+  $handler = $view->new_display('block', 'TeachForAll Twitter Block - Front 1', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'teachforall-twitter-block';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'text' => 'text',
+    'created_time' => 'created_time',
+  );
+  $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Twitter: Login name */
+  $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['table'] = 'twitter_account';
+  $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['label'] = '';
+  $handler->display->display_options['fields']['screen_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['text'] = '@TeachForAll, ';
+  $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/TeachForAll';
+  $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['screen_name']['element_default_classes'] = FALSE;
+  /* Field: Twitter: Created time */
+  $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
+  $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['label'] = '';
+  $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  /* Field: Twitter: Message text */
+  $handler->display->display_options['fields']['text']['id'] = 'text';
+  $handler->display->display_options['fields']['text']['table'] = 'twitter';
+  $handler->display->display_options['fields']['text']['field'] = 'text';
+  $handler->display->display_options['fields']['text']['label'] = '';
+  $handler->display->display_options['fields']['text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['text']['link_urls'] = 1;
+  $handler->display->display_options['fields']['text']['link_usernames'] = 1;
+  $handler->display->display_options['fields']['text']['link_hashtags'] = 1;
+  $handler->display->display_options['fields']['text']['link_attributes'] = 1;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block - 1';
+
+  /* Display: TeachForAll Twitter Block - Front 1 */
+  $handler = $view->new_display('block', 'TeachForAll Twitter Block - Front 1', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'teachforall-twitter-block';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '3';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'text' => 'text',
+    'created_time' => 'created_time',
+  );
+  $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Twitter: Login name */
+  $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['table'] = 'twitter_account';
+  $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['label'] = '';
+  $handler->display->display_options['fields']['screen_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['text'] = '@TeachForAll, ';
+  $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/TeachForAll';
+  $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
+  /* Field: Twitter: Created time */
+  $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
+  $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['label'] = '';
+  $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  /* Field: Twitter: Message text */
+  $handler->display->display_options['fields']['text']['id'] = 'text';
+  $handler->display->display_options['fields']['text']['table'] = 'twitter';
+  $handler->display->display_options['fields']['text']['field'] = 'text';
+  $handler->display->display_options['fields']['text']['label'] = '';
+  $handler->display->display_options['fields']['text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['text']['link_urls'] = 1;
+  $handler->display->display_options['fields']['text']['link_usernames'] = 1;
+  $handler->display->display_options['fields']['text']['link_hashtags'] = 1;
+  $handler->display->display_options['fields']['text']['link_attributes'] = 1;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block - 2';
+
+  /* Display: TeachForAll Twitter Block - Front 1 */
+  $handler = $view->new_display('block', 'TeachForAll Twitter Block - Front 1', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'teachforall-twitter-block';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '6';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'text' => 'text',
+    'created_time' => 'created_time',
+  );
+  $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Twitter: Login name */
+  $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['table'] = 'twitter_account';
+  $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['label'] = '';
+  $handler->display->display_options['fields']['screen_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['text'] = '@TeachForAll, ';
+  $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/TeachForAll';
+  $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
+  /* Field: Twitter: Created time */
+  $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
+  $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
+  $handler->display->display_options['fields']['created_time']['label'] = '';
+  $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  /* Field: Twitter: Message text */
+  $handler->display->display_options['fields']['text']['id'] = 'text';
+  $handler->display->display_options['fields']['text']['table'] = 'twitter';
+  $handler->display->display_options['fields']['text']['field'] = 'text';
+  $handler->display->display_options['fields']['text']['label'] = '';
+  $handler->display->display_options['fields']['text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['text']['link_urls'] = 1;
+  $handler->display->display_options['fields']['text']['link_usernames'] = 1;
+  $handler->display->display_options['fields']['text']['link_hashtags'] = 1;
+  $handler->display->display_options['fields']['text']['link_attributes'] = 1;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block - 3';
+  $export['tfall_tweets'] = $view;
 
   return $export;
 }

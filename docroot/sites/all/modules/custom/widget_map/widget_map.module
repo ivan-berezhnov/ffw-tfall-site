@@ -9,7 +9,7 @@ function widget_map_menu() {
 		'file' => 'includes/widget_map_json.inc',
     'access callback' => TRUE,
   );
-  return $items;	
+  return $items;
 }
 
 /*
@@ -30,5 +30,36 @@ function widget_map_embed() {
 	drupal_add_js(drupal_get_path('module','widget_map').'/assets/mapbox.js');
 	drupal_add_css(drupal_get_path('module','widget_map').'/assets/mapbox.css');
 
-	return theme('widget_map');	
+	return theme('widget_map');
+}
+
+/**
+ * Implements hook_block_info().
+ * @author AlexB
+ */
+function widget_map_block_info() {
+  $blocks = array();
+
+  $blocks['no_map_block'] = array(
+    'info' => t('National Organization Map Block'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ * @author AlexB
+ */
+function widget_map_block_view($delta = '') {
+  $widget_map = widget_map_embed();
+  $block = array();
+  switch ($delta) {
+    case 'no_map_block':
+      $block['subject'] = '';
+      $block['content'] = $widget_map;
+      break;
+  }
+
+  return $block;
 }
