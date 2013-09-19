@@ -536,7 +536,7 @@ h2 {
 
                     a {
                       @include font-size(16);
-                      box-sizing: border-box;
+                      @include box-sizing(border-box);
                       padding: 5px 20px;
 
                       @media screen and (min-width: 1200px) {
@@ -777,8 +777,8 @@ h2 {
 
     .row-fluid {
       .span2 + .span3 {
+        @include box-sizing(border-box);
         clear: both;
-        box-sizing: border-box;
         padding: 0 5% 20px;
 
         .donate {
@@ -1080,9 +1080,8 @@ img {max-width: 100%;}
 }
 
 .marquee__hover {
+  @include box-sizing(border-box);
   background-color: $grey3;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   opacity: 0;
   height: 100%;
   position: absolute;
@@ -1120,9 +1119,8 @@ img {max-width: 100%;}
     position: static;
   }
   .marquee__info-wrapper {
+    @include box-sizing(border-box);
     background-color: $grey3;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     bottom: 0;
     left: 0;
     padding: 10px;
@@ -1141,9 +1139,8 @@ img {max-width: 100%;}
 **/
 
 #worldmap {
+  @include box-sizing(border-box);
   background-color: $blue1;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   padding:0px;
   position: relative;
 }
@@ -1399,9 +1396,9 @@ img {max-width: 100%;}
       width: 30%;
 
       @media screen and (max-width: 440px) {
+        @include box-sizing(border-box);
         float: none;
         width: 100%;
-        box-sizing: border-box;
         padding: 0 20px 20px;
       }
 
@@ -1412,10 +1409,10 @@ img {max-width: 100%;}
     }
 
     .person-copy {
+      @include box-sizing(border-box);
       display: block;
       float: left;
       width: 70%;
-      box-sizing: border-box;
       padding-left: 20px;
 
       @media screen and (max-width: 440px) {
@@ -1527,9 +1524,8 @@ img {max-width: 100%;}
 }
 
 .news__flexslider__info {
+  @include box-sizing(border-box);
   background-color: $black;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   opacity: .8;
   padding: 15px 40px 15px 20px;
   position: absolute;
