@@ -32,10 +32,10 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-teach_for_all_tweets-block'] = array(
+  $export['views-tfall_tweets-block_1'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'teach_for_all_tweets-block',
+    'delta' => 'tfall_tweets-block_1',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -52,10 +52,10 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-tweets-block'] = array(
+  $export['views-tfall_tweets-block_2'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'tweets-block',
+    'delta' => 'tfall_tweets-block_2',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -72,50 +72,10 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['views-tweets-block_1'] = array(
+  $export['views-tfall_tweets-block_3'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'tweets-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'tweme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'tweme',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-tweets-block_2'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'tweets-block_2',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'tweme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'tweme',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-tweets-block_3'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'tweets-block_3',
+    'delta' => 'tfall_tweets-block_3',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',

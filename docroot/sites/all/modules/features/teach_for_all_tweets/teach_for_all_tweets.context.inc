@@ -74,21 +74,21 @@ function teach_for_all_tweets_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-tweets-block_1' => array(
+        'views-tfall_tweets-block_1' => array(
           'module' => 'views',
-          'delta' => 'tweets-block_1',
+          'delta' => 'tfall_tweets-block_1',
           'region' => 'twitter_front',
           'weight' => '-10',
         ),
-        'views-tweets-block_2' => array(
+        'views-tfall_tweets-block_2' => array(
           'module' => 'views',
-          'delta' => 'tweets-block_2',
+          'delta' => 'tfall_tweets-block_2',
           'region' => 'twitter_front',
           'weight' => '-9',
         ),
-        'views-tweets-block_3' => array(
+        'views-tfall_tweets-block_3' => array(
           'module' => 'views',
-          'delta' => 'tweets-block_3',
+          'delta' => 'tfall_tweets-block_3',
           'region' => 'twitter_front',
           'weight' => '-8',
         ),

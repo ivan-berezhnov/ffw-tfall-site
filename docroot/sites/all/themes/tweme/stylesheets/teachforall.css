@@ -352,14 +352,14 @@ img { max-width: 100%; }
 @media screen and (max-width: 979px) { .region-twitter-front .block-views { width: 48%; } }
 @media screen and (max-width: 450px) { .region-twitter-front .block-views { width: 100%; } }
 
-#block-views-tweets-block-2 { margin: 0 1%; }
-@media screen and (max-width: 979px) and (min-width: 768px) { #block-views-tweets-block-2 { margin: 0 0 0 2%; } }
-@media screen and (max-width: 450px) { #block-views-tweets-block-2 { display: none; } }
+#block-views-tfall-tweets-block-2 { margin: 0 1%; }
+@media screen and (max-width: 979px) and (min-width: 768px) { #block-views-tfall-tweets-block-2 { margin: 0 0 0 2%; } }
+@media screen and (max-width: 450px) { #block-views-tfall-tweets-block-2 { display: none; } }
 
-@media screen and (max-width: 979px) { #block-views-tweets-block-3 { display: none; } }
+@media screen and (max-width: 979px) { #block-views-tfall-tweets-block-3 { display: none; } }
 
-#block-views-tweets-block { background-color: #e69740; margin-bottom: 20px; padding: 20px; }
-#block-views-tweets-block h2 { color: white; letter-spacing: 4px; text-align: center; text-transform: uppercase; font-size: 18px; font-size: 1.05882rem; }
+#block-views-tfall-tweets-block { background-color: #e69740; margin-bottom: 20px; padding: 20px; }
+#block-views-tfall-tweets-block h2 { color: white; letter-spacing: 4px; text-align: center; text-transform: uppercase; font-size: 18px; font-size: 1.05882rem; }
 
 .tweets { margin-bottom: 20px; }
 
