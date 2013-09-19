@@ -34,9 +34,11 @@
       <?php print $fields['created']->content; ?>
     </div>
     <h3><?php print $fields['title']->content; ?></h3>
-    <h3 class="news__landing-byline hidden-phone">
-      <?php print $fields['field_news_byline']->content; ?>
-    </h3>
+    <?php if(isset($fields['field_news_byline']->content)): ?>
+      <h3 class="news__landing-byline hidden-phone">
+        <?php print $fields['field_news_byline']->content; ?>
+      </h3>
+    <?php endif; ?>
     <div class="news__author-info">
       by <?php print $fields['name']->content; ?> | <?php print $fields['field_category']->content; ?>
     </div>
