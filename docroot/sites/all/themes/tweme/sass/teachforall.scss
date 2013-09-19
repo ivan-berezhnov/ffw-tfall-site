@@ -1012,6 +1012,10 @@ img {max-width: 100%;}
 
 .marquee {
   background-color: $grey1;
+
+  * {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }
 
 .marquee__2,
