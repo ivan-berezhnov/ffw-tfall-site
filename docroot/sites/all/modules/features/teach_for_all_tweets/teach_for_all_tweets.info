@@ -14,6 +14,7 @@ features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[fe_block_settings][] = views-b4dd23f99d93113b3bb0ec36d8537941
+features[fe_block_settings][] = views-tfall_tweets-block
 features[fe_block_settings][] = views-tfall_tweets-block_1
 features[fe_block_settings][] = views-tfall_tweets-block_2
 features[fe_block_settings][] = views-tfall_tweets-block_3

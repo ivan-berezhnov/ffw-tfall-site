@@ -241,8 +241,8 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['arguments']['screen_name']['limit'] = '0';
   $handler->display->display_options['path'] = 'tweets-raw';
 
-  /* Display: TeachForAll Twitter Block */
-  $handler = $view->new_display('block', 'TeachForAll Twitter Block', 'block');
+  /* Display: TeachForAll Twitter Block - Sidebar */
+  $handler = $view->new_display('block', 'TeachForAll Twitter Block - Sidebar', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Twitter';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -296,7 +296,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['text']['link_hashtags'] = 1;
   $handler->display->display_options['fields']['text']['link_attributes'] = 1;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block';
+  $handler->display->display_options['block_description'] = 'TeachForAll Twitter Block - Sidebar';
 
   /* Display: Tweets */
   $handler = $view->new_display('page', 'Tweets', 'page_2');

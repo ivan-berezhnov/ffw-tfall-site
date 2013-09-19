@@ -36,9 +36,9 @@ function teach_for_all_tweets_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-tweets-block' => array(
+        'views-tfall_tweets-block' => array(
           'module' => 'views',
-          'delta' => 'tweets-block',
+          'delta' => 'tfall_tweets-block',
           'region' => 'sidebar_second',
           'weight' => '-10',
         ),
