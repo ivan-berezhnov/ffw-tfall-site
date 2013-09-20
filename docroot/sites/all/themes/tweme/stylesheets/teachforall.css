@@ -281,6 +281,7 @@ img { max-width: 100%; }
 * #Marquee
 **/
 .marquee { background-color: #91998c; }
+.marquee img { width: 100%; }
 .marquee * { -webkit-transform: translate3d(0, 0, 0); }
 
 .marquee__2, .marquee__3, .marquee__4 { position: relative; }
