@@ -40,7 +40,10 @@
       </h3>
     <?php endif; ?>
     <div class="news__author-info">
-      by <?php print $fields['name']->content; ?> | <?php print $fields['field_category']->content; ?>
+      by <?php print $fields['name']->content; ?>
+      <?php if (isset($fields['field_category']->content)): ?>
+        | <?php print $fields['field_category']->content; ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>
