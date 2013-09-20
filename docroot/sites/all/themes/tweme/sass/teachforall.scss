@@ -424,7 +424,7 @@ h2 {
       height: 40px;
       width: 100%;
 
-      @media screen and (min-width: 768px) and (max-width: 979px) {
+      @media screen and (min-width: 769px) and (max-width: 979px) {
         width: 724px;
       }
 
@@ -443,7 +443,7 @@ h2 {
         text-transform: uppercase;
         @include font-size(12);
 
-        @media screen and (min-width: 768px) and (max-width: 979px) {
+        @media screen and (min-width: 769px) and (max-width: 979px) {
           @include font-size(11);
           letter-spacing: 1px;
         }
@@ -477,7 +477,7 @@ h2 {
           > .menu {
             height: 40px;
 
-            @media screen and (min-width: 768px) and (max-width: 979px) {
+            @media screen and (min-width: 769px) and (max-width: 979px) {
               // A Global Problem
               > li:first-child {
                 width: 146px;
