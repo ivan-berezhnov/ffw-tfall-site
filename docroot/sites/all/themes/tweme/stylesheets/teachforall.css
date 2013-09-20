@@ -192,7 +192,7 @@ h2.page-title { color: #e69740; letter-spacing: 4px; line-height: 30px; margin-t
 .uber-nav a:hover { color: #cf4753; }
 .uber-nav ul { margin-left: 0; }
 .uber-nav .menu .menu { display: none; background-color: white; border: 1px solid #e69740; left: -1px; top: 14px; position: absolute; width: 100px; z-index: 9999; text-align: left; }
-.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; line-height: 16px; margin: 0 3px; padding: 0; text-transform: none; }
+.uber-nav .menu .menu a { border: none; font-weight: normal; font-size: 14px; font-size: 0.82353rem; display: block; line-height: 12px; margin: 7px 3px; padding: 0; text-transform: none; }
 .uber-nav .menu .menu a:hover { background-color: transparent; color: #cf4753; }
 .uber-nav .menu .menu a.active { background-color: transparent; }
 .uber-nav .menu .menu li { display: block; padding-top: 0; }
@@ -281,6 +281,7 @@ img { max-width: 100%; }
 * #Marquee
 **/
 .marquee { background-color: #91998c; }
+.marquee * { -webkit-transform: translate3d(0, 0, 0); }
 
 .marquee__2, .marquee__3, .marquee__4 { position: relative; }
 .marquee__2 .marquee__info-wrapper, .marquee__3 .marquee__info-wrapper, .marquee__4 .marquee__info-wrapper { bottom: 20px; left: 20px; right: 20px; width: 90%; }
