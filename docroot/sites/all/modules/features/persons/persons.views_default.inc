@@ -33,6 +33,13 @@ function persons_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_person_image']['id'] = 'field_person_image';
   $handler->display->display_options['fields']['field_person_image']['table'] = 'field_data_field_person_image';
@@ -41,7 +48,7 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_person_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_person_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_person_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'person_thumbnail__315x315_',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
@@ -65,6 +72,7 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_person_bio']['alter']['max_length'] = '250';
   $handler->display->display_options['fields']['field_person_bio']['alter']['more_link'] = TRUE;
   $handler->display->display_options['fields']['field_person_bio']['alter']['more_link_text'] = 'READ MORE';
+  $handler->display->display_options['fields']['field_person_bio']['alter']['more_link_path'] = 'node/[nid]';
   $handler->display->display_options['fields']['field_person_bio']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_person_bio']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_person_bio']['settings'] = array(

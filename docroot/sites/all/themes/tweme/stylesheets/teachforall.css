@@ -20,7 +20,8 @@
     #Twitter
 
     ### VIEWS ###
-    # News Listing
+    #News Listing
+    #Persons
 
     ### NODES ###
     #National Organizations
@@ -1280,6 +1281,136 @@ img {
 }
 
 /**/
+/**
+* #Persons
+**/
+.view-persons {
+  margin-bottom: 10px;
+}
+.view-persons:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.view-persons .views-row-odd {
+  margin-right: 1%;
+  clear: left;
+}
+.view-persons .views-row-even {
+  margin-left: 1%;
+}
+.view-persons .views-row-odd,
+.view-persons .views-row-even {
+  float: left;
+  display: block;
+  width: 49%;
+  margin-top: 30px;
+}
+.view-persons .views-row-odd:first-child,
+.view-persons .views-row-even:first-child {
+  margin-top: 0;
+}
+.view-persons .views-row-odd:first-child + .views-row,
+.view-persons .views-row-even:first-child + .views-row {
+  margin-top: 0;
+}
+@media screen and (max-width: 680px) {
+  .view-persons .views-row-odd,
+  .view-persons .views-row-even {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 30px;
+  }
+  .view-persons .views-row-odd:after,
+  .view-persons .views-row-even:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.view-persons .views-row-odd .person-image,
+.view-persons .views-row-even .person-image {
+  display: block;
+  float: left;
+  width: 30%;
+}
+@media screen and (max-width: 370px) {
+  .view-persons .views-row-odd .person-image,
+  .view-persons .views-row-even .person-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    padding: 0 0 20px;
+  }
+}
+.view-persons .views-row-odd .person-image img,
+.view-persons .views-row-even .person-image img {
+  width: 100%;
+  height: auto;
+}
+.view-persons .views-row-odd .person-copy,
+.view-persons .views-row-even .person-copy {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 70%;
+  padding-left: 15px;
+}
+@media screen and (max-width: 370px) {
+  .view-persons .views-row-odd .person-copy,
+  .view-persons .views-row-even .person-copy {
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+}
+.view-persons .views-row-odd .person-copy .person-title,
+.view-persons .views-row-even .person-copy .person-title {
+  float: left;
+}
+.view-persons .views-row-odd .person-copy .person-title a,
+.view-persons .views-row-even .person-copy .person-title a {
+  color: #030303;
+  font-size: 18px;
+  font-size: 1.05882rem;
+  font-weight: bold;
+}
+.view-persons .views-row-odd .person-copy .person-job-title,
+.view-persons .views-row-even .person-copy .person-job-title {
+  float: left;
+  clear: left;
+  color: #91998c;
+  font-size: 18px;
+  font-size: 1.05882rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.view-persons .views-row-odd .person-copy .person-bio,
+.view-persons .views-row-even .person-copy .person-bio {
+  float: left;
+  clear: left;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-size: 0.94118rem;
+}
+.view-persons .views-row-odd .person-copy .person-bio .views-more-link,
+.view-persons .views-row-even .person-copy .person-bio .views-more-link {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-size: 0.70588rem;
+}
+
+/**/
 /* ### NODES ### */
 /**
 * #National Organizations
@@ -1391,14 +1522,14 @@ img {
   float: left;
   width: 30%;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 370px) {
   .node-type-person .content .person-image {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: none;
     width: 100%;
-    padding: 0 20px 20px;
+    padding: 0 0 20px;
   }
 }
 .node-type-person .content .person-image img {
@@ -1414,11 +1545,11 @@ img {
   width: 70%;
   padding-left: 20px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 370px) {
   .node-type-person .content .person-copy {
     float: none;
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 .node-type-person .content .person-copy .person-title {
