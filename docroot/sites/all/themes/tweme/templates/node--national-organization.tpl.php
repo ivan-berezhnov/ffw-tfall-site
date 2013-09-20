@@ -107,6 +107,10 @@
           <?php print render(widget_facebook_embed(render($content['field_key_facebook']))); ?>
 				<?php endif; ?>
 
+        <div class="no__twitter">
+          <?php print render($content['field_national_organization_twit']); ?>
+        </div>
+
       </div>
     </div>
 
