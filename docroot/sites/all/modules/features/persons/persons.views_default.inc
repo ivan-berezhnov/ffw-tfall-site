@@ -51,12 +51,12 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Type */
-  $handler->display->display_options['fields']['field_person_type']['id'] = 'field_person_type';
-  $handler->display->display_options['fields']['field_person_type']['table'] = 'field_data_field_person_type';
-  $handler->display->display_options['fields']['field_person_type']['field'] = 'field_person_type';
-  $handler->display->display_options['fields']['field_person_type']['label'] = '';
-  $handler->display->display_options['fields']['field_person_type']['element_label_colon'] = FALSE;
+  /* Field: Content: Job Title */
+  $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['table'] = 'field_data_field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title']['label'] = '';
+  $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
   /* Field: Content: BIO */
   $handler->display->display_options['fields']['field_person_bio']['id'] = 'field_person_bio';
   $handler->display->display_options['fields']['field_person_bio']['table'] = 'field_data_field_person_bio';
