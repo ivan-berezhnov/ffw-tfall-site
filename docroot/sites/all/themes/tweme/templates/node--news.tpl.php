@@ -39,7 +39,7 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="row-fluid">
+				<div class="row-fluid news__node-links">
 				  <div class="span12">
 				  	<a href="/news/latest">
 							<div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
