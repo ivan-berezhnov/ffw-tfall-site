@@ -1515,6 +1515,10 @@ img {
   margin-bottom: 0;
 }
 
+.no__twitter {
+  margin-top: 20px;
+}
+
 .node .content .no__spotlights {
   line-height: 1em;
   text-transform: none;

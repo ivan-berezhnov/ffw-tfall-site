@@ -85,6 +85,20 @@
 	</div>
 </div>
 
+<!--
+<?php //if (render($page['no_map'])): ?>
+  <div id="worldmap" class="container-wrapper">
+    <div class="container">
+      <!-- world map
+      <div class="row-fluid">
+        <div class="span12">
+          <?php //print render($page['no_map']); ?>
+        </div>
+      </div>
+    </div>
+  </div> -->
+<?php //endif; ?>
+
 <!-- Footer -->
 <footer id="footer" class="container-wrapper">
   <div class="container">
