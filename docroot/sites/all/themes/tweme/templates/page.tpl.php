@@ -32,8 +32,7 @@
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
 		<div class="container">
-      <?php print $navbar_toggler ?>
-			<nav class="nav-collapse collapse" role="navigation">
+			<nav role="navigation">
         <?php print render($page['main_navigation']) ?>
       </nav>
 		</div>
