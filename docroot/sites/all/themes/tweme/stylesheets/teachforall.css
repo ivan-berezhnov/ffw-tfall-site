@@ -434,9 +434,40 @@ h2.page-title {
 .navbar .navbar-inner ul {
   margin: 0;
 }
+.navbar .navbar-inner .sidr-toggle {
+  display: inline-block;
+  float: left;
+  margin-left: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .navbar .navbar-inner .sidr-toggle {
+    display: none;
+  }
+}
+.navbar .navbar-inner .sidr-toggle .btn-navbar {
+  float: left;
+  padding: 8px;
+  margin: 0 5px 0 0;
+}
+.navbar .navbar-inner .sidr-toggle .btn-text {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  color: #eeeeee;
+  font-size: 12px;
+  font-size: 0.70588rem;
+}
 .navbar .navbar-inner .container {
+  display: none;
   height: 40px;
   width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .navbar .navbar-inner .container {
+    display: block;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 979px) {
   .navbar .navbar-inner .container {

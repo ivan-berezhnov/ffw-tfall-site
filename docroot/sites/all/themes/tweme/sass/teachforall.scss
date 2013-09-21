@@ -420,9 +420,40 @@ h2 {
       margin: 0;
     }
 
+    .sidr-toggle {
+      display: inline-block;
+      float: left;
+      margin-left: 14px;
+      padding: 5px;
+      cursor: pointer;
+
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+
+      .btn-navbar {
+        float: left;
+        padding: 8px;
+        margin: 0 5px 0 0;
+      }
+
+      .btn-text {
+        display: inline-block;
+        float: left;
+        margin-top: 5px;
+        color: $nearwhite;
+        @include font-size(12);
+      }
+    }
+
     .container {
+      display: none;
       height: 40px;
       width: 100%;
+
+      @media screen and (min-width: 769px) {
+        display: block;
+      }
 
       @media screen and (min-width: 769px) and (max-width: 979px) {
         width: 724px;

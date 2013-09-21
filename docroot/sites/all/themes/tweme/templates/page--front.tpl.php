@@ -23,6 +23,11 @@
 <!-- Navbar -->
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
+    <div class="sidr-toggle">
+      <?php print $navbar_toggler ?>
+      <span class="btn-text">Menu</span>
+    </div>
+
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
@@ -81,6 +86,9 @@
     <div class="row-fluid">
       <div class="span12">
         <h3 class="worldmap__title">NATIONAL ORGANIZATIONS</h3>
+        <div class="rounded-button">
+          <span>SELECT A LOCATION</span>
+        </div>
         <?php if (module_exists('widget_map')): ?>
           <?php $widget_map = widget_map_embed();
             print render($widget_map);

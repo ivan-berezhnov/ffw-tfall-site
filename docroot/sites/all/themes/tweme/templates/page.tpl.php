@@ -31,6 +31,11 @@
 <!-- Navbar -->
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
+    <div class="sidr-toggle">
+      <?php print $navbar_toggler ?>
+      <span class="btn-text">Menu</span>
+    </div>
+
 		<div class="container">
 			<nav role="navigation">
         <?php print render($page['main_navigation']) ?>
