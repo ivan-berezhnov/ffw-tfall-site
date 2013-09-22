@@ -72,6 +72,7 @@ function permissions_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

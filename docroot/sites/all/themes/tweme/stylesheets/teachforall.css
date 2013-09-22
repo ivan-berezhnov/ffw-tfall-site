@@ -434,8 +434,55 @@ h2.page-title {
 .navbar .navbar-inner ul {
   margin: 0;
 }
+.navbar .navbar-inner .sidr-toggle {
+  display: inline-block;
+  float: left;
+  margin-left: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .navbar .navbar-inner .sidr-toggle {
+    display: none;
+  }
+}
+.navbar .navbar-inner .sidr-toggle .btn-navbar {
+  float: left;
+  padding: 8px;
+  margin: 0 5px 0 0;
+}
+.navbar .navbar-inner .sidr-toggle .btn-text {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  color: #eeeeee;
+  font-size: 12px;
+  font-size: 0.70588rem;
+}
 .navbar .navbar-inner .container {
+  display: none;
   height: 40px;
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .navbar .navbar-inner .container {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 979px) {
+  .navbar .navbar-inner .container {
+    width: 724px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .navbar .navbar-inner .container {
+    width: 940px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar .navbar-inner .container {
+    width: 1170px;
+  }
 }
 .navbar .navbar-inner .container .region-main-navigation {
   font-family: "Fedra Serif";
@@ -444,6 +491,13 @@ h2.page-title {
   text-transform: uppercase;
   font-size: 12px;
   font-size: 0.70588rem;
+}
+@media screen and (min-width: 769px) and (max-width: 979px) {
+  .navbar .navbar-inner .container .region-main-navigation {
+    font-size: 11px;
+    font-size: 0.64706rem;
+    letter-spacing: 1px;
+  }
 }
 .navbar .navbar-inner .container .region-main-navigation li {
   position: relative;
@@ -468,20 +522,39 @@ h2.page-title {
 .navbar .navbar-inner .container .region-main-navigation .content > .menu {
   height: 40px;
 }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
-  width: 192px;
+@media screen and (min-width: 769px) and (max-width: 979px) {
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
+    width: 146px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
+    width: 107px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
+    width: 201px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
+    width: 114px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
+    width: 156px;
+  }
 }
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
-  width: 142px;
-}
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
-  width: 255px;
-}
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
-  width: 151px;
-}
-.navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
-  width: 200px;
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
+    width: 192px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
+    width: 142px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
+    width: 255px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
+    width: 151px;
+  }
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
@@ -541,6 +614,16 @@ h2.page-title {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
+    padding: 5px 12px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
+    padding: 5px 20px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {

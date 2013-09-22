@@ -12,14 +12,19 @@ settings[max_width_940] = 1
 settings[affixed_sidebars] = 1
 
 stylesheets[all][] = assets/css/bootstrap-extra.css
+stylesheets[all][] = assets/css/jquery.sidr.dark.css
 stylesheets[all][] = assets/css/drupal.css
 stylesheets[all][] = stylesheets/teachforall.css
 
 scripts[] = assets/js/drupal.js
 
 ;probably shared!
+scripts[] = assets/js/modernizr.min.js
 scripts[] = ../../libraries/flexslider/jquery.flexslider-min.js
-;scripts[] = js/teachforall.js
+scripts[] = assets/js/harvey.min.js
+scripts[] = assets/js/jquery.touchwipe.min.js
+scripts[] = assets/js/jquery.sidr.min.js
+scripts[] = js/teachforall.js
 
 regions[header] = Header
 regions[main_navigation] = Main Navigation
