@@ -348,6 +348,20 @@ h2 {
   text-transform: uppercase;
 }
 
+.slug-medium {
+  color: $orange1;
+  font-family: "Fedra Serif";
+  letter-spacing: 4px;
+  @include font-size(16);
+}
+
+.slug-large {
+  color: $orange1;
+  font-family: "Fedra Serif";
+  letter-spacing: 4px;
+  @include font-size(24);
+}
+
 /**/
 
 /**
