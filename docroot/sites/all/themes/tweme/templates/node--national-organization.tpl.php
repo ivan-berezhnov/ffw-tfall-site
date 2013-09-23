@@ -122,7 +122,6 @@
     <!-- world map -->
     <div class="row-fluid">
       <div class="span12">
-        <h3 class="worldmap__title">NATIONAL ORGANIZATIONS</h3>
         <div class="rounded-button">
           <span>SELECT A LOCATION</span>
         </div>

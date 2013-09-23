@@ -1170,14 +1170,22 @@ img {
   padding: 0px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  #worldmap {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .worldmap__title {
+  box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
   top: 30px;
   left: 0;
   text-align: center;
   width: 100%;
+  padding: 0 45px;
   z-index: 99;
 }
 
