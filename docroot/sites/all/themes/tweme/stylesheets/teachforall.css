@@ -441,7 +441,7 @@ h2.page-title {
   padding: 5px;
   cursor: pointer;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .navbar .navbar-inner .sidr-toggle {
     display: none;
   }
@@ -464,12 +464,12 @@ h2.page-title {
   height: 40px;
   width: 100%;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .navbar .navbar-inner .container {
     display: block;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 979px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container {
     width: 724px;
   }
@@ -492,7 +492,7 @@ h2.page-title {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-@media screen and (min-width: 769px) and (max-width: 979px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation {
     font-size: 11px;
     font-size: 0.64706rem;
@@ -522,7 +522,7 @@ h2.page-title {
 .navbar .navbar-inner .container .region-main-navigation .content > .menu {
   height: 40px;
 }
-@media screen and (min-width: 769px) and (max-width: 979px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
     width: 146px;
   }
@@ -747,6 +747,18 @@ h2.page-title {
 @media screen and (max-width: 767px) {
   #feeds {
     padding: 20px 0;
+  }
+  #feeds .row-fluid .span3.facebook {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  #feeds .row-fluid .span9 {
+    width: 65.74585635359117%;
+  }
+  #feeds .row-fluid .span3.facebook {
+    width: 31.491712707182323%;
+    text-align: right;
   }
 }
 #feeds h3 {
@@ -1112,7 +1124,7 @@ img {
   opacity: .8;
 }
 
-@media screen and (max-width: 979px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .marquee__info-wrapper {
     bottom: 20px;
     left: 20px;
@@ -1158,14 +1170,22 @@ img {
   padding: 0px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  #worldmap {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .worldmap__title {
+  box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
   top: 30px;
   left: 0;
   text-align: center;
   width: 100%;
+  padding: 0 45px;
   z-index: 99;
 }
 

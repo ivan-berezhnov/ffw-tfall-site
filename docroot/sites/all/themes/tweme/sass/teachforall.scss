@@ -427,7 +427,7 @@ h2 {
       padding: 5px;
       cursor: pointer;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 768px) {
         display: none;
       }
 
@@ -451,11 +451,11 @@ h2 {
       height: 40px;
       width: 100%;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 768px) {
         display: block;
       }
 
-      @media screen and (min-width: 769px) and (max-width: 979px) {
+      @media screen and (min-width: 768px) and (max-width: 979px) {
         width: 724px;
       }
 
@@ -474,7 +474,7 @@ h2 {
         text-transform: uppercase;
         @include font-size(12);
 
-        @media screen and (min-width: 769px) and (max-width: 979px) {
+        @media screen and (min-width: 768px) and (max-width: 979px) {
           @include font-size(11);
           letter-spacing: 1px;
         }
@@ -508,7 +508,7 @@ h2 {
           > .menu {
             height: 40px;
 
-            @media screen and (min-width: 769px) and (max-width: 979px) {
+            @media screen and (min-width: 768px) and (max-width: 979px) {
               // A Global Problem
               > li:first-child {
                 width: 146px;
@@ -763,9 +763,28 @@ h2 {
 #feeds {
 	background-color: $orange1;
   padding: 40px 0;
+
   @media screen and (max-width: 767px) {
     padding: 20px 0;
+
+    .row-fluid .span3.facebook {
+      text-align: center;
+    }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .row-fluid {
+      .span9 {
+        width: 65.74585635359117%;
+      }
+
+      .span3.facebook {
+        width: 31.491712707182323%;
+        text-align: right;
+      }
+    }
+  }
+
   h3 {
     color: $white;
     font-weight: normal;
@@ -1195,7 +1214,7 @@ img {max-width: 100%;}
   }
 }
 
-@media screen and (max-width: 979px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .marquee__info-wrapper {
     bottom: 20px;
     left: 20px;
@@ -1235,17 +1254,24 @@ img {max-width: 100%;}
 #worldmap {
   @include box-sizing(border-box);
   background-color: $blue1;
-  padding:0px;
+  padding: 0px;
   position: relative;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .worldmap__title {
+  box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
   top: 30px;
   left: 0;
   text-align: center;
   width: 100%;
+  padding: 0 45px;
   z-index: 99;
 }
 
