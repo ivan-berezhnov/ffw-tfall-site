@@ -377,6 +377,7 @@ h2.page-title {
   color: #e69740;
   font-family: "Fedra Serif";
   letter-spacing: 4px;
+  line-height: 1.2em;
   font-size: 24px;
   font-size: 1.41176rem;
 }

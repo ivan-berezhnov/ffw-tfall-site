@@ -49,10 +49,12 @@ function news_wysiwyg_default_profiles() {
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
       'css_setting' => 'theme',
       'css_path' => '',
-      'css_classes' => 'H1=h1.h1
-H2=h2.h2
-H3=h3.h3
-Slug=slug.slug',
+      'css_classes' => 'H1=h1
+H2=h2
+H3=h3
+Slug=div.slug
+SlugMedium=div.slug-medium
+SlugLarge=div.slug-large',
     ),
     'rdf_mapping' => array(),
   );
