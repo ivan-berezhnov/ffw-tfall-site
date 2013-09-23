@@ -127,6 +127,7 @@ function permissions_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -235,6 +236,7 @@ function permissions_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'menu',
@@ -262,6 +264,7 @@ function permissions_user_default_permissions() {
   $permissions['administer nodequeue'] = array(
     'name' => 'administer nodequeue',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -334,6 +337,7 @@ function permissions_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -411,15 +415,6 @@ function permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'create ceo content'.
-  $permissions['create ceo content'] = array(
-    'name' => 'create ceo content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create national_organization content'.
   $permissions['create national_organization content'] = array(
     'name' => 'create national_organization content',
@@ -492,15 +487,6 @@ function permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
-  // Exported permission: 'delete any ceo content'.
-  $permissions['delete any ceo content'] = array(
-    'name' => 'delete any ceo content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any national_organization content'.
   $permissions['delete any national_organization content'] = array(
     'name' => 'delete any national_organization content',
@@ -562,15 +548,6 @@ function permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'backup_migrate',
-  );
-
-  // Exported permission: 'delete own ceo content'.
-  $permissions['delete own ceo content'] = array(
-    'name' => 'delete own ceo content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own national_organization content'.
@@ -639,7 +616,9 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete terms in news'.
   $permissions['delete terms in news'] = array(
     'name' => 'delete terms in news',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -647,6 +626,7 @@ function permissions_user_default_permissions() {
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -659,15 +639,6 @@ function permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
-  );
-
-  // Exported permission: 'edit any ceo content'.
-  $permissions['edit any ceo content'] = array(
-    'name' => 'edit any ceo content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit any national_organization content'.
@@ -718,15 +689,6 @@ function permissions_user_default_permissions() {
   // Exported permission: 'edit any supporter content'.
   $permissions['edit any supporter content'] = array(
     'name' => 'edit any supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own ceo content'.
-  $permissions['edit own ceo content'] = array(
-    'name' => 'edit own ceo content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
@@ -790,7 +752,9 @@ function permissions_user_default_permissions() {
   // Exported permission: 'edit terms in news'.
   $permissions['edit terms in news'] = array(
     'name' => 'edit terms in news',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -798,6 +762,7 @@ function permissions_user_default_permissions() {
   $permissions['edit terms in tags'] = array(
     'name' => 'edit terms in tags',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
@@ -843,6 +808,7 @@ function permissions_user_default_permissions() {
   $permissions['manipulate all queues'] = array(
     'name' => 'manipulate all queues',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -852,6 +818,7 @@ function permissions_user_default_permissions() {
   $permissions['manipulate queues'] = array(
     'name' => 'manipulate queues',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -898,6 +865,7 @@ function permissions_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'search',
