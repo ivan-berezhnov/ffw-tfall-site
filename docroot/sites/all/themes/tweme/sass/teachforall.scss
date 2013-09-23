@@ -764,8 +764,13 @@ h2 {
 #feeds {
 	background-color: $orange1;
   padding: 40px 0;
+
   @media screen and (max-width: 767px) {
     padding: 20px 0;
+
+    .row-fluid .span3.facebook {
+      text-align: center;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 979px) {

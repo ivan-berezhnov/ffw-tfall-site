@@ -748,6 +748,9 @@ h2.page-title {
   #feeds {
     padding: 20px 0;
   }
+  #feeds .row-fluid .span3.facebook {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   #feeds .row-fluid .span9 {
