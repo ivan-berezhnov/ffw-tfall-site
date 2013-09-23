@@ -427,7 +427,7 @@ h2 {
       padding: 5px;
       cursor: pointer;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 768px) {
         display: none;
       }
 
@@ -451,11 +451,11 @@ h2 {
       height: 40px;
       width: 100%;
 
-      @media screen and (min-width: 769px) {
+      @media screen and (min-width: 768px) {
         display: block;
       }
 
-      @media screen and (min-width: 769px) and (max-width: 979px) {
+      @media screen and (min-width: 768px) and (max-width: 979px) {
         width: 724px;
       }
 
@@ -474,7 +474,7 @@ h2 {
         text-transform: uppercase;
         @include font-size(12);
 
-        @media screen and (min-width: 769px) and (max-width: 979px) {
+        @media screen and (min-width: 768px) and (max-width: 979px) {
           @include font-size(11);
           letter-spacing: 1px;
         }
@@ -508,7 +508,7 @@ h2 {
           > .menu {
             height: 40px;
 
-            @media screen and (min-width: 769px) and (max-width: 979px) {
+            @media screen and (min-width: 768px) and (max-width: 979px) {
               // A Global Problem
               > li:first-child {
                 width: 146px;
@@ -767,6 +767,20 @@ h2 {
   @media screen and (max-width: 767px) {
     padding: 20px 0;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .row-fluid {
+      .span9 {
+        width: 65.74585635359117%;
+      }
+
+      .span3.facebook {
+        width: 31.491712707182323%;
+        text-align: right;
+      }
+    }
+  }
+
   h3 {
     color: $white;
     font-weight: normal;
@@ -1196,7 +1210,7 @@ img {max-width: 100%;}
   }
 }
 
-@media screen and (max-width: 979px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 979px) {
   .marquee__info-wrapper {
     bottom: 20px;
     left: 20px;

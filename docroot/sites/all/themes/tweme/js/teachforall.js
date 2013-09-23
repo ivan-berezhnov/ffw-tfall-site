@@ -1,6 +1,6 @@
 (function ($) {
   var sideMenuEnabled = false,
-    hasTouch, mediaQuery768;
+    hasTouch, mediaQueryMobile;
 
   initSideMenu = function() {
     $('.sidr-toggle').sidr({
@@ -11,10 +11,10 @@
     // Enable swipe for touch-friendly devices
     if (hasTouch) {
       $(window).touchwipe({
-        wipeLeft: function() {
+        wipeLeft: function(e) {
           $.sidr('close', 'sidr-main'); // Close
         },
-        wipeRight: function() {
+        wipeRight: function(e) {
           $.sidr('open', 'sidr-main'); // Open
         },
         preventDefaultEvents: false
@@ -25,7 +25,7 @@
   $(document).ready(function() {
     hasTouch = $('html').hasClass('touch');
 
-    mediaQuery768 = Harvey.attach('screen and (max-width:768px)', {
+    mediaQueryMobile = Harvey.attach('screen and (max-width:767px)', {
       on: function() {
         if (!sideMenuEnabled) {
           sideMenuEnabled = true;
