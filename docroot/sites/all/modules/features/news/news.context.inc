@@ -32,12 +32,6 @@ function news_context_default_contexts() {
           'region' => 'content',
           'weight' => '-10',
         ),
-        'widget_facebook-tfall_facebook_block' => array(
-          'module' => 'widget_facebook',
-          'delta' => 'tfall_facebook_block',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
       ),
     ),
   );

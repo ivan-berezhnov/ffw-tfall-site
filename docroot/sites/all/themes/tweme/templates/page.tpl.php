@@ -64,45 +64,29 @@
 
 <!-- Main -->
 <div id="main">
-  <div class="container">
-    <?php print $messages ?>
-    <h2 class="page-title"><?php print $title; ?></h2>
-    <div class="row row-toggle">
-      <?php if ($has_sidebar_first): ?>
-      <!-- Sidebar first -->
-      <aside id="sidebar-first" class="sidebar span3 hidden-phone">
-        <?php print render($page['sidebar_first']) ?>
-        <?php print render($page['sidebar_first_affix']) ?>
-      </aside>
-      <?php endif ?>
-      <!-- Content -->
-      <section id="content" class="span<?php print $content_cols ?>">
-        <?php print render($page['content']) ?>
-      </section>
-      <?php if ($has_sidebar_second): ?>
-      <!-- Sidebar second -->
-      <aside id="sidebar-second" class="sidebar span3 hidden-phone">
-        <?php print render($page['sidebar_second']) ?>
-        <?php print render($page['sidebar_second_affix']) ?>
-      </aside>
-      <?php endif ?>
-    </div>
-	</div>
+  <?php print $messages ?>
+  <h2 class="page-title"><?php print $title; ?></h2>
+  <div class="row row-toggle">
+    <?php if ($has_sidebar_first): ?>
+    <!-- Sidebar first -->
+    <aside id="sidebar-first" class="sidebar span3 hidden-phone">
+      <?php print render($page['sidebar_first']) ?>
+      <?php print render($page['sidebar_first_affix']) ?>
+    </aside>
+    <?php endif ?>
+    <!-- Content -->
+    <section id="content" class="span<?php print $content_cols ?>">
+      <?php print render($page['content']) ?>
+    </section>
+    <?php if ($has_sidebar_second): ?>
+    <!-- Sidebar second -->
+    <aside id="sidebar-second" class="sidebar span3 hidden-phone">
+      <?php print render($page['sidebar_second']) ?>
+      <?php print render($page['sidebar_second_affix']) ?>
+    </aside>
+    <?php endif ?>
+  </div>
 </div>
-
-<!--
-<?php //if (render($page['no_map'])): ?>
-  <div id="worldmap" class="container-wrapper">
-    <div class="container">
-      <!-- world map
-      <div class="row-fluid">
-        <div class="span12">
-          <?php //print render($page['no_map']); ?>
-        </div>
-      </div>
-    </div>
-  </div> -->
-<?php //endif; ?>
 
 <!-- Footer -->
 <footer id="footer" class="container-wrapper">
