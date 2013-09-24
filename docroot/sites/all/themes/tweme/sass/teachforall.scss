@@ -273,6 +273,19 @@ html {
   }
 }
 
+.btn-red {
+  @include border-radius(16px);
+  @include single-text-shadow(none);
+  background: $red;
+  color: $white;
+  line-height: 26px;
+  padding: 4px 26px;
+
+  &:hover {
+    background: $red2;
+  }
+}
+
 .nav-tabs {
   padding-top: 20px;
 }
@@ -1638,16 +1651,7 @@ img {max-width: 100%;}
     margin-top: 45px;
 
     a.btn {
-      @include border-radius(16px);
-      @include single-text-shadow(none);
-      background: $red;
-      color: $white;
-      line-height: 26px;
-      padding: 4px 26px;
-
-      &:hover {
-        background: $red2;
-      }
+      @extend .btn-red;
     }
   }
 }

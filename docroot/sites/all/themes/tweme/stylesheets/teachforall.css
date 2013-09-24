@@ -252,7 +252,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 .content p:last-child {
@@ -285,6 +285,22 @@ html.js input.throbbing {
 }
 .btn-primary:hover {
   background-color: #cf4753;
+}
+
+.btn-red, .view-persons .view-footer a.btn {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+  text-shadow: none;
+  background: #cf4753;
+  color: white;
+  line-height: 26px;
+  padding: 4px 26px;
+}
+.btn-red:hover, .view-persons .view-footer a.btn:hover {
+  background: #db4b57;
 }
 
 .nav-tabs {
@@ -1548,21 +1564,6 @@ img {
   clear: both;
   text-align: center;
   margin-top: 45px;
-}
-.view-persons .view-footer a.btn {
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  border-radius: 16px;
-  text-shadow: none;
-  background: #cf4753;
-  color: white;
-  line-height: 26px;
-  padding: 4px 26px;
-}
-.view-persons .view-footer a.btn:hover {
-  background: #db4b57;
 }
 
 /**/
