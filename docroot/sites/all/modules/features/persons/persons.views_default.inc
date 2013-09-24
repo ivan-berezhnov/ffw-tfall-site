@@ -23,7 +23,7 @@ function persons_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Persons';
-  $handler->display->display_options['css_class'] = 'view-persons';
+  $handler->display->display_options['css_class'] = 'view-persons container';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -94,15 +94,6 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
-  );
-  /* Filter criterion: Content: Type (field_person_type) */
-  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
-  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
-  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
-  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
-    'CEO' => 'CEO',
-    'Board member' => 'Board member',
-    'Leader' => 'Leader',
   );
 
   /* Display: Board Page */
