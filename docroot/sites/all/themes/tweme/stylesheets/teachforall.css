@@ -842,16 +842,10 @@ h2.page-title {
     margin-right: 6%;
     margin-left: 5%;
   }
-  #footer .row-fluid [class*="span2"].footer-links .block-block {
-    display: none;
-  }
   #footer .row-fluid [class*="span2"].footer-links-2 {
     width: 42%;
     float: left;
     margin-right: 5%;
-  }
-  #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
-    display: none;
   }
   #footer .row-fluid [class*="span2"]:first-child + div + div {
     clear: left;
@@ -910,9 +904,6 @@ h2.page-title {
     display: inline-block;
     margin-bottom: 5px;
   }
-  #footer .row-fluid [class*="span2"].footer-links .block-block, #footer .row-fluid [class*="span2"].footer-links-2 .block-block {
-    display: none;
-  }
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
     font-size: 0.82353rem;
@@ -926,6 +917,9 @@ h2.page-title {
     padding: 7px 8px;
     margin-right: 5px;
   }
+}
+#footer .footer-links .block-block, #footer .footer-links-2 .block-block {
+  display: none;
 }
 
 .footer__copyright {

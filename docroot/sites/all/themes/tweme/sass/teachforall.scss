@@ -837,6 +837,7 @@ h2 {
   background-color: $grey2;
   border: none;
   padding: 30px 0;
+
   ul {
     margin: 0;
   }
@@ -864,20 +865,12 @@ h2 {
         float: left;
         margin-right: 6%;
         margin-left: 5%;
-
-        .block-block {
-          display: none;
-        }
       }
 
       &.footer-links-2 {
         width: 42%;
         float: left;
         margin-right: 5%;
-
-        .block-block {
-          display: none;
-        }
       }
 
       &:first-child + div + div {
@@ -948,12 +941,6 @@ h2 {
           margin-bottom: 5px;
         }
       }
-
-      &.footer-links, &.footer-links-2 {
-        .block-block {
-          display: none;
-        }
-      }
     }
 
     .row-fluid {
@@ -972,6 +959,12 @@ h2 {
           margin-right: 5px;
         }
       }
+    }
+  }
+
+  .footer-links, .footer-links-2 {
+    .block-block {
+      display: none;
     }
   }
 }
