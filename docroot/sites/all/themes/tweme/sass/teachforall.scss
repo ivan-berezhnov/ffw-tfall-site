@@ -289,6 +289,19 @@ html {
   }
 }
 
+.btn-red {
+  @include border-radius(16px);
+  @include single-text-shadow(none);
+  background: $red;
+  color: $white;
+  line-height: 26px;
+  padding: 4px 26px;
+
+  &:hover {
+    background: $red2;
+  }
+}
+
 .nav-tabs {
   padding-top: 20px;
 }
@@ -846,6 +859,7 @@ h2 {
   background-color: $grey2;
   border: none;
   padding: 30px 0;
+
   ul {
     margin: 0;
   }
@@ -873,20 +887,12 @@ h2 {
         float: left;
         margin-right: 6%;
         margin-left: 5%;
-
-        .block-block {
-          display: none;
-        }
       }
 
       &.footer-links-2 {
         width: 42%;
         float: left;
         margin-right: 5%;
-
-        .block-block {
-          display: none;
-        }
       }
 
       &:first-child + div + div {
@@ -957,12 +963,6 @@ h2 {
           margin-bottom: 5px;
         }
       }
-
-      &.footer-links, &.footer-links-2 {
-        .block-block {
-          display: none;
-        }
-      }
     }
 
     .row-fluid {
@@ -981,6 +981,12 @@ h2 {
           margin-right: 5px;
         }
       }
+    }
+  }
+
+  .footer-links, .footer-links-2 {
+    .block-block {
+      display: none;
     }
   }
 }
@@ -1513,143 +1519,154 @@ img {max-width: 100%;}
 **/
 
 .view-persons {
-  @include clearfix();
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 
-  @media screen and (max-width: 680px) {
-    .view-persons-one-col {
-      display: block;
-    }
-
-    .view-persons-two-col {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 681px) {
-    .view-persons-one-col {
-      display: none;
-    }
-
-    .view-persons-two-col {
-      display: block;
-
-      .left-col, .right-col {
-        float: left;
-        width: 49%;
-      }
-
-      .left-col {
-        margin-right: 1%;
-        clear: left;
-      }
-
-      .right-col {
-        margin-left: 1%;
-      }
-    }
-  }
-
-  .views-row {
-    display: inline-block;
-    width: 100%;
-    margin-top: 30px;
-
-    &:first-child {
-      margin-top: 0;
-    }
+  .view-content {
+    @include clearfix();
 
     @media screen and (max-width: 680px) {
-      @include clearfix();
-      @include box-sizing(border-box);
-      margin: 0;
-      padding: 0 0 30px;
+      .view-persons-one-col {
+        display: block;
+      }
+
+      .view-persons-two-col {
+        display: none;
+      }
     }
 
-    .person-image {
-      display: block;
-      float: left;
-      width: 30%;
+    @media screen and (min-width: 681px) {
+      .view-persons-one-col {
+        display: none;
+      }
 
-      @media screen and (max-width: 370px) {
+      .view-persons-two-col {
+        display: block;
+
+        .left-col, .right-col {
+          float: left;
+          width: 49%;
+        }
+
+        .left-col {
+          margin-right: 1%;
+          clear: left;
+        }
+
+        .right-col {
+          margin-left: 1%;
+        }
+      }
+    }
+
+    .views-row {
+      display: inline-block;
+      width: 100%;
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      @media screen and (max-width: 680px) {
+        @include clearfix();
         @include box-sizing(border-box);
-        float: none;
-        width: 100%;
-        padding: 0 0 20px;
       }
 
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-    .person-copy {
-      @include box-sizing(border-box);
-      display: block;
-      float: left;
-      width: 70%;
-      padding-left: 15px;
-
-      @media screen and (max-width: 370px) {
-        display: inline-block;
-        float: none;
-        width: 100%;
-        padding: 0;
-      }
-
-      .person-title {
+      .person-image {
+        display: block;
         float: left;
+        width: 30%;
 
-        a {
-          color: $nearblack;
+        @media screen and (max-width: 370px) {
+          @include box-sizing(border-box);
+          float: none;
+          width: 100%;
+          padding: 0 0 20px;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .person-copy {
+        @include box-sizing(border-box);
+        display: block;
+        float: left;
+        width: 70%;
+        padding-left: 15px;
+
+        @media screen and (max-width: 370px) {
+          display: inline-block;
+          float: none;
+          width: 100%;
+          padding: 0;
+        }
+
+        .person-title {
+          float: left;
+
+          a {
+            color: $nearblack;
+            @include font-size(18);
+            font-weight: bold;
+          }
+        }
+
+        .person-job-title {
+          float: left;
+          clear: left;
+          color: $grey1;
           @include font-size(18);
           font-weight: bold;
-        }
-      }
-
-      .person-job-title {
-        float: left;
-        clear: left;
-        color: $grey1;
-        @include font-size(18);
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .person-bio {
-        @include font-size(16);
-        overflow: hidden;
-        float: left;
-        clear: left;
-        color: $grey2;
-
-        :first-child {
-          margin: 0;
+          margin-bottom: 10px;
         }
 
-        p {
-          margin: 10px 0 0 0;
+        .person-bio {
+          @include font-size(16);
+          overflow: hidden;
+          float: left;
+          clear: left;
+          color: $grey2;
 
-          &.is-hidden {
-            display: none;
+          :first-child {
+            margin: 0;
+          }
+
+          p {
+            margin: 10px 0 0 0;
+
+            &.is-hidden {
+              display: none;
+            }
+          }
+        }
+
+        .read-more-btn, .collapse-btn {
+          @include font-size(12);
+          display: none;
+          clear: left;
+          float: left;
+          margin-top: 5px;
+          color: $red;
+          cursor: pointer;
+
+          &.is-visible {
+            display: block;
           }
         }
       }
+    }
+  }
 
-      .read-more-btn, .collapse-btn {
-        @include font-size(12);
-        display: none;
-        clear: left;
-        float: left;
-        margin-top: 5px;
-        color: $red;
-        cursor: pointer;
+  .view-footer {
+    clear: both;
+    text-align: center;
+    margin-top: 45px;
 
-        &.is-visible {
-          display: block;
-        }
-      }
+    a.btn {
+      @extend .btn-red;
     }
   }
 }
