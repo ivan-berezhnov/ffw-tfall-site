@@ -1597,11 +1597,22 @@ img {max-width: 100%;}
 
       .person-bio {
         @include font-size(16);
-        // height: 80px;
         overflow: hidden;
         float: left;
         clear: left;
         color: $grey2;
+
+        :first-child {
+          margin: 0;
+        }
+
+        p {
+          margin: 10px 0 0 0;
+
+          &.is-hidden {
+            display: none;
+          }
+        }
       }
 
       .read-more-btn, .collapse-btn {

@@ -252,7 +252,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 .content p:last-child {
@@ -1523,6 +1523,15 @@ img {
   float: left;
   clear: left;
   color: #4d4d4d;
+}
+.view-persons .views-row .person-copy .person-bio :first-child {
+  margin: 0;
+}
+.view-persons .views-row .person-copy .person-bio p {
+  margin: 10px 0 0 0;
+}
+.view-persons .views-row .person-copy .person-bio p.is-hidden {
+  display: none;
 }
 .view-persons .views-row .person-copy .read-more-btn, .view-persons .views-row .person-copy .collapse-btn {
   font-size: 12px;

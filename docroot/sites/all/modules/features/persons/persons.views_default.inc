@@ -23,7 +23,7 @@ function persons_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Persons';
-  $handler->display->display_options['css_class'] = 'view-persons';
+  $handler->display->display_options['css_class'] = 'view-persons container';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -95,15 +95,6 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  /* Filter criterion: Content: Type (field_person_type) */
-  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
-  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
-  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
-  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
-    'CEO' => 'CEO',
-    'Board member' => 'Board member',
-    'Leader' => 'Leader',
-  );
 
   /* Display: Board Page */
   $handler = $view->new_display('page', 'Board Page', 'page');
@@ -147,8 +138,8 @@ function persons_views_default_views() {
   );
   $handler->display->display_options['path'] = 'board';
 
-  /* Display: Leader Page */
-  $handler = $view->new_display('page', 'Leader Page', 'page_1');
+  /* Display: Leadership Page */
+  $handler = $view->new_display('page', 'Leadership Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Leaders';
   $handler->display->display_options['display_description'] = 'List of Leaders';
@@ -188,7 +179,7 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  $handler->display->display_options['path'] = 'leaders';
+  $handler->display->display_options['path'] = 'leadership';
   $export['persons_view'] = $view;
 
   return $export;

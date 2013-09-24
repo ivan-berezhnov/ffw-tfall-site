@@ -11,10 +11,13 @@
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
 
-<?php /* Mobile layout */ ?>
+<?php /* Mobile layout */
+   $count = 0;
+?>
+
 <div class="view-persons-one-col">
 <?php foreach ($rows as $id => $row): ?>
-   <div class="views-row">
+   <div class="views-row row-<?php print $count; $count++; ?>">
       <?php print $row; ?>
    </div>
 <?php endforeach; ?>
@@ -22,6 +25,7 @@
 
 <?php /* Tablet, Desktop layouts */
    $ndx = 0;
+   $count = 0;
    $leftCol = '';
    $rightCol = '';
 ?>
@@ -32,12 +36,14 @@ foreach ($rows as $id => $row):
    if ($ndx == 0) {
       // Add item to left column
       $ndx = 1;
-      $leftCol .= '<div class="views-row">' . $row . '</div>';
+      $leftCol .= '<div class="views-row row-' . $count . '">' . $row . '</div>';
    } else {
       // Add item to right column
       $ndx = 0;
-      $rightCol .= '<div class="views-row">' . $row . '</div>';
+      $rightCol .= '<div class="views-row row-' . $count . '">' . $row . '</div>';
    }
+
+   $count++;
 endforeach;
 ?>
    <div class="left-col">
