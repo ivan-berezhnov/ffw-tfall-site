@@ -45,7 +45,7 @@
       }
     });
 
-    if ($body.hasClass('page-leaders') || $body.hasClass('page-board')) {
+    if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $bio = $(this).children('.person-bio'),
           $bioMoreParagraphs = $bio.find(':not(:first-child)'),

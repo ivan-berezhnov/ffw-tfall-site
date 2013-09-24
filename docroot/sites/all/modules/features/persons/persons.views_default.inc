@@ -138,8 +138,8 @@ function persons_views_default_views() {
   );
   $handler->display->display_options['path'] = 'board';
 
-  /* Display: Leader Page */
-  $handler = $view->new_display('page', 'Leader Page', 'page_1');
+  /* Display: Leadership Page */
+  $handler = $view->new_display('page', 'Leadership Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Leaders';
   $handler->display->display_options['display_description'] = 'List of Leaders';
@@ -179,7 +179,7 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  $handler->display->display_options['path'] = 'leaders';
+  $handler->display->display_options['path'] = 'leadership';
   $export['persons_view'] = $view;
 
   return $export;
