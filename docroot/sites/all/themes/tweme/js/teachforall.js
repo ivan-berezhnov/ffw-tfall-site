@@ -13,16 +13,12 @@
     if (hasTouch) {
       $body.touchwipe({
         wipeLeft: function(e) {
-          e.preventDefault();
-          e.stopImmediatePropagation();
           $.sidr('close', 'sidr-main'); // Close
         },
         wipeRight: function(e) {
-          e.preventDefault();
-          e.stopImmediatePropagation();
           $.sidr('open', 'sidr-main'); // Open
         },
-        preventDefaultEvents: false
+        preventDefaultEvents: 'x-axis'
       });
     }
   }
