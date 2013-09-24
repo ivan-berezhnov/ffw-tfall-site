@@ -1,0 +1,4 @@
+name = Teach for All site utility module
+description = Custom module for Teach for all specific functionality
+package = pubteach4all
+core = 7.x
