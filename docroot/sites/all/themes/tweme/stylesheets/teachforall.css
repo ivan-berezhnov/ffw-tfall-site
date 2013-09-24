@@ -251,7 +251,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 .content p:last-child {
@@ -363,6 +363,23 @@ h2.page-title {
   line-height: 14px;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+
+.slug-medium {
+  color: #e69740;
+  font-family: "Fedra Serif";
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-size: 0.94118rem;
+}
+
+.slug-large {
+  color: #e69740;
+  font-family: "Fedra Serif";
+  letter-spacing: 4px;
+  line-height: 1.2em;
+  font-size: 24px;
+  font-size: 1.41176rem;
 }
 
 /**/
