@@ -28,24 +28,6 @@ function pubteachforall_menus_menu_default_menu_links() {
     'expanded' => 1,
     'weight' => 0,
   );
-  // Exported menu link: menu-primary-navigation:<front>
-  $menu_links['menu-primary-navigation:<front>'] = array(
-    'menu_name' => 'menu-primary-navigation',
-    'link_path' => '<front>',
-    'router_path' => '',
-    'link_title' => 'A Global Problem',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'A Global Problem',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 1,
-    'weight' => -50,
-  );
   // Exported menu link: user-menu:user
   $menu_links['user-menu:user'] = array(
     'menu_name' => 'user-menu',
@@ -78,7 +60,6 @@ function pubteachforall_menus_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('A Global Problem');
   t('Home');
   t('Log out');
   t('User account');
