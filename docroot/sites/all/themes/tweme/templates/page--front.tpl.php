@@ -85,9 +85,6 @@
     <!-- world map -->
     <div class="row-fluid">
       <div class="span12">
-        <div class="rounded-button">
-          <span>SELECT A LOCATION</span>
-        </div>
         <?php if (module_exists('widget_map')): ?>
           <?php $widget_map = widget_map_embed();
             print render($widget_map);
