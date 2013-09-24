@@ -1,3 +1,5 @@
+<div class="container">
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="content"<?php print $content_attributes; ?>>
@@ -117,14 +119,14 @@
   </div>
 </div>
 
+
+</div> <!-- container end -->
+
 <div id="worldmap" class="container-wrapper">
   <div class="container">
     <!-- world map -->
     <div class="row-fluid">
       <div class="span12">
-        <div class="rounded-button">
-          <span>SELECT A LOCATION</span>
-        </div>
         <?php if (module_exists('widget_map')): ?>
           <?php $widget_map = widget_map_embed();
             print render($widget_map);
