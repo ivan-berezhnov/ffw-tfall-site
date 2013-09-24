@@ -29,6 +29,7 @@
     #Spotlight
     #Person
     #News - Node
+    #2 Column Layout
 
     ### LANDING PAGES ###
     #News - Landing
@@ -1828,6 +1829,32 @@ img {max-width: 100%;}
     color: $grey4;
   }
 }
+
+/**/
+
+/**
+* #2 Column Layout
+**/
+
+/*.node-page-2-col-layout {
+  .field-collection-view {
+    img {
+      width: 48.717948717948715%;
+    }
+    &:nth-child(odd) {
+      img {
+        float: left;
+        margin-right: 2.564102564102564%;
+      }
+    }
+    &:nth-child(even) {
+      img {
+        float: right;
+        margin-left: 2.564102564102564%;
+      }
+    }
+  }
+}*/
 
 /**/
 

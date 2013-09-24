@@ -82,7 +82,7 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
+  <?php //print $user_picture; ?>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
@@ -107,6 +107,6 @@
 
   <?php print render($content['links']); ?>
 
-  <?php print render($content['comments']); ?>
+  <?php //print render($content['comments']); ?>
 
 </div>
