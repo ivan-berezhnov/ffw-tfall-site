@@ -49,31 +49,37 @@
       $('#main .view-persons .person-copy').each(function() {
         var $bio = $(this).children('.person-bio'),
           $bioMoreParagraphs = $bio.find(':not(:first-child)'),
-          $readMoreBtn = $bio.next(),
-          $collapseBtn = $readMoreBtn.next();
+          $readMoreButton = $bio.next(),
+          $collapseButton = $readMoreButton.next();
 
           if ($bio.find(':not(:first-child)').length > 0) {
             $bioMoreParagraphs.addClass('is-hidden');
 
-            $readMoreBtn
+            $readMoreButton
               .addClass('is-visible')
               .on('click', function() {
-                var selectedBioName = $readMoreBtn.parent().parent().attr('class').split(' ')[1],
+                // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
+                var selectedBioName = $readMoreButton.parent().parent().attr('class').split(' ')[1],
                   $bioElements = $('#main .view-persons .' + selectedBioName),
-                  $hiddenParagraphs = $bioElements.find(':not(:first-child)');
+                  $readMoreButtons = $bioElements.find('.read-more-btn'),
+                  $collapseButtons = $bioElements.find('.collapse-btn'),
+                  $hiddenParagraphs = $bioElements.find('.person-copy .person-bio :not(:first-child)');
 
-                $readMoreBtn.toggleClass('is-visible');
-                $collapseBtn.toggleClass('is-visible');
+                $readMoreButtons.toggleClass('is-visible');
+                $collapseButtons.toggleClass('is-visible');
                 $hiddenParagraphs.toggleClass('is-hidden');
               });
 
-            $collapseBtn.on('click', function() {
-              var selectedBioName = $readMoreBtn.parent().parent().attr('class').split(' ')[1],
+            $collapseButton.on('click', function() {
+              // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
+              var selectedBioName = $readMoreButton.parent().parent().attr('class').split(' ')[1],
                 $bioElements = $('#main .view-persons .' + selectedBioName),
-                $hiddenParagraphs = $bioElements.find(':not(:first-child)');
+                $readMoreButtons = $bioElements.find('.read-more-btn'),
+                  $collapseButtons = $bioElements.find('.collapse-btn'),
+                $hiddenParagraphs = $bioElements.find('.person-copy .person-bio :not(:first-child)');
 
-              $readMoreBtn.toggleClass('is-visible');
-              $collapseBtn.toggleClass('is-visible');
+              $readMoreButtons.toggleClass('is-visible');
+              $collapseButtons.toggleClass('is-visible');
               $hiddenParagraphs.toggleClass('is-hidden');
             });
           }
