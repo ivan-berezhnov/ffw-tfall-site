@@ -222,6 +222,27 @@ body {
 /**
 * #Global Elements
 **/
+.btn__red {
+  background-color: #cf4753;
+  color: white;
+  display: inline-block;
+  font-family: "Fedra Serif";
+  letter-spacing: 2px;
+  margin-top: 20px;
+  padding: 7px 40px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.64706rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+.btn__red:hover {
+  color: #e69740;
+}
+
 .site-slogan {
   color: #91998c;
   line-height: 30px;
@@ -252,7 +273,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 .content p:last-child {
@@ -326,6 +347,10 @@ div.messages {
   padding: 20px 0;
 }
 
+.node-type-national-organization #main {
+  padding: 20px 0 0 0;
+}
+
 .page-title {
   margin-bottom: 30px;
   text-align: center;
@@ -333,12 +358,12 @@ div.messages {
 
 h2.page-title {
   color: #e69740;
-  letter-spacing: 4px;
-  line-height: 30px;
+  letter-spacing: 5px;
+  line-height: 26px;
   margin-top: 0;
   text-transform: uppercase;
-  font-size: 26px;
-  font-size: 1.52941rem;
+  font-size: 30px;
+  font-size: 1.76471rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -385,7 +410,7 @@ h2.page-title {
 .slug-medium {
   color: #e69740;
   font-family: "Fedra Serif";
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-size: 16px;
   font-size: 0.94118rem;
 }
@@ -1613,10 +1638,6 @@ img {
   margin-bottom: 0;
 }
 
-.no__twitter {
-  margin-top: 20px;
-}
-
 .node .content .no__spotlights {
   line-height: 1em;
   text-transform: none;
@@ -1757,25 +1778,82 @@ img {
 /**
 * #2 Column Layout
 **/
-/*.node-page-2-col-layout {
-  .field-collection-view {
-    img {
-      width: 48.717948717948715%;
-    }
-    &:nth-child(odd) {
-      img {
-        float: left;
-        margin-right: 2.564102564102564%;
-      }
-    }
-    &:nth-child(even) {
-      img {
-        float: right;
-        margin-left: 2.564102564102564%;
-      }
-    }
+.field-collection-container {
+  border: none;
+}
+
+.field-collection-view {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.node-page-2-col-layout .field-collection-view {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .node-page-2-col-layout .field-collection-view {
+    margin-bottom: 20px;
   }
-}*/
+}
+.node-page-2-col-layout .field-collection-view:last-child {
+  margin-bottom: 0;
+}
+.node-page-2-col-layout .field-collection-view img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .node-page-2-col-layout .field-collection-view img {
+    margin-bottom: 20px;
+  }
+}
+.node-page-2-col-layout .field-collection-view:nth-child(even) .group_image_row {
+  float: right;
+}
+.node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
+  padding-right: 2.564102564102564%;
+  text-align: right;
+}
+@media screen and (max-width: 768px) {
+  .node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .group-row-wrapper .group-link-wrapper {
+    text-align: center;
+  }
+}
+.group-info-row > div {
+  margin-bottom: 10px;
+}
+.group-info-row > div:last-child {
+  margin-bottom: 0;
+}
+
+.group_row_headline {
+  text-transform: uppercase;
+}
+
+.group_row_byline {
+  color: #999999;
+  font-family: "Fedra Serif";
+  line-height: 1.4em;
+  font-size: 18px;
+  font-size: 1.05882rem;
+}
+
+.group_info_row a:after {
+  color: #e69740;
+  content: " >>";
+}
+
+.node-page-2-col-layout .content > .group_link_wrapper {
+  text-align: center;
+}
+
 /**/
 /* ### LANDING PAGES ### */
 /**

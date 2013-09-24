@@ -199,6 +199,22 @@ body {
 * #Global Elements
 **/
 
+.btn__red {
+  background-color: $red;
+  color: $white;
+  display: inline-block;
+  font-family: "Fedra Serif";
+  letter-spacing: 2px;
+  margin-top: 20px;
+  padding: 7px 40px;
+  text-transform: uppercase;
+  @include font-size(11);
+  @include border-radius(20px);
+  &:hover {
+    color: $orange1;
+  }
+}
+
 .site-slogan {
   color: $grey1;
   line-height: 30px;
@@ -308,6 +324,12 @@ div.messages {
   padding: 20px 0;
 }
 
+.node-type-national-organization {
+  #main {
+    padding: 20px 0 0 0;
+  }
+}
+
 .page-title {
   margin-bottom: 30px;
   text-align: center;
@@ -316,11 +338,11 @@ div.messages {
 h2 {
   &.page-title {
     color: $orange1;
-    letter-spacing: 4px;
-    line-height: 30px;
+    letter-spacing: 5px;
+    line-height: 26px;
     margin-top: 0;
     text-transform: uppercase;
-    @include font-size(26);
+    @include font-size(30);
   }
 }
 
@@ -365,7 +387,7 @@ h2 {
 .slug-medium {
   color: $orange1;
   font-family: "Fedra Serif";
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   @include font-size(16);
 }
 
@@ -1708,10 +1730,6 @@ img {max-width: 100%;}
   }
 }
 
-.no__twitter {
-  margin-top: 20px;
-}
-
 .node {
   .content {
     .no__spotlights {
@@ -1864,26 +1882,92 @@ img {max-width: 100%;}
 * #2 Column Layout
 **/
 
-/*.node-page-2-col-layout {
+.field-collection-container {
+  border: none;
+}
+
+.field-collection-view {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.node-page-2-col-layout {
   .field-collection-view {
-    img {
-      width: 48.717948717948715%;
+    margin-bottom: 50px;
+    @media screen and (max-width:768px) {
+      margin-bottom: 20px;
     }
-    &:nth-child(odd) {
-      img {
-        float: left;
-        margin-right: 2.564102564102564%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+      @media screen and (max-width:768px) {
+        margin-bottom: 20px;
       }
     }
     &:nth-child(even) {
-      img {
+      .group_image_row {
         float: right;
-        margin-left: 2.564102564102564%;
+      }
+      .group-info-row {
+        padding-right: 2.564102564102564%;
+        text-align: right;
+        @media screen and (max-width:768px) {
+          padding: 0;
+          text-align: left;
+        }
       }
     }
   }
-}*/
+}
 
+@media screen and (max-width:768px) {
+  .group-row-wrapper {
+    .group-link-wrapper {
+      text-align: center;
+    }
+  }
+}
+
+
+.group-info-row {
+  > div {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.group_row_headline {
+  text-transform: uppercase;
+}
+
+.group_row_byline {
+  color: $grey4;
+  font-family: "Fedra Serif";
+  line-height: 1.4em;
+  @include font-size(18);
+}
+
+.group_info_row {
+  a {
+    &:after {
+      color: $orange1;
+      content: " >>";
+    }
+  }
+}
+
+.node-page-2-col-layout {
+  .content {
+    > .group_link_wrapper {
+      text-align: center;
+    }
+  }
+}
 /**/
 
 /* ### LANDING PAGES ### */
