@@ -33,4 +33,6 @@
    <div class="person-title"><?php print $fields['title']->content; ?></div>
    <div class="person-job-title"><?php print $fields['field_job_title']->content; ?></div>
    <div class="person-bio"><?php print $fields['field_person_bio']->content; ?></div>
+   <span class="read-more-btn">READ MORE</span>
+   <span class="collapse-btn">COLLAPSE</span>
 </div>

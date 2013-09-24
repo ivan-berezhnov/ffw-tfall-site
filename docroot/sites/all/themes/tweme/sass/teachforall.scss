@@ -1493,35 +1493,52 @@ img {max-width: 100%;}
   @include clearfix();
   margin-bottom: 10px;
 
-  .views-row-odd {
-    margin-right: 1%;
-    clear: left;
+  @media screen and (max-width: 680px) {
+    .view-persons-one-col {
+      display: block;
+    }
+
+    .view-persons-two-col {
+      display: none;
+    }
   }
 
-  .views-row-even {
-    margin-left: 1%;
+  @media screen and (min-width: 681px) {
+    .view-persons-one-col {
+      display: none;
+    }
+
+    .view-persons-two-col {
+      display: block;
+
+      .left-col, .right-col {
+        float: left;
+        width: 49%;
+      }
+
+      .left-col {
+        margin-right: 1%;
+        clear: left;
+      }
+
+      .right-col {
+        margin-left: 1%;
+      }
+    }
   }
 
-  .views-row-odd,
-  .views-row-even {
-    float: left;
-    display: block;
-    width: 49%;
+  .views-row {
+    display: inline-block;
+    width: 100%;
     margin-top: 30px;
 
     &:first-child {
       margin-top: 0;
-
-      & + .views-row {
-        margin-top: 0;
-      }
     }
 
     @media screen and (max-width: 680px) {
       @include clearfix();
       @include box-sizing(border-box);
-      float: none;
-      width: 100%;
       margin: 0;
       padding: 0 0 30px;
     }
@@ -1578,15 +1595,25 @@ img {max-width: 100%;}
       }
 
       .person-bio {
+        @include font-size(16);
+        // height: 80px;
+        overflow: hidden;
         float: left;
         clear: left;
         color: $grey2;
-        @include font-size(16);
+      }
 
-        .views-more-link {
+      .read-more-btn, .collapse-btn {
+        @include font-size(12);
+        display: none;
+        clear: left;
+        float: left;
+        margin-top: 5px;
+        color: $red;
+        cursor: pointer;
+
+        &.is-visible {
           display: block;
-          margin-top: 5px;
-          @include font-size(12);
         }
       }
     }
