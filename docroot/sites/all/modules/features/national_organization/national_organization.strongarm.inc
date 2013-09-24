@@ -44,7 +44,7 @@ function national_organization_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '1',
+          'weight' => '2',
         ),
       ),
       'display' => array(),
