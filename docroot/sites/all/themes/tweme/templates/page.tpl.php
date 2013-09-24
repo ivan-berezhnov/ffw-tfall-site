@@ -66,7 +66,7 @@
 <div id="main">
   <div class="container">
     <?php print $messages ?>
-    <h2 class="page-title"><?php print $title; ?></h2>
+    
     <div class="row row-toggle">
       <?php if ($has_sidebar_first): ?>
       <!-- Sidebar first -->
