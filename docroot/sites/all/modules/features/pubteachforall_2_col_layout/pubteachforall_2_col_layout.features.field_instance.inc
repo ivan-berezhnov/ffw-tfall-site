@@ -22,7 +22,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -37,7 +37,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 120,
       ),
       'type' => 'text_textfield',
       'weight' => 3,
@@ -56,7 +56,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -89,10 +89,10 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '2_column_layout_image',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -114,7 +114,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'preview_image_style' => '2_column_layout_image',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -134,7 +134,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -143,7 +143,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'attributes' => array(
-        'class' => '',
+        'class' => 'full-list',
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'user',
@@ -178,13 +178,13 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
+          'add' => '',
+          'delete' => '',
+          'description' => 0,
+          'edit' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -221,11 +221,11 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -240,7 +240,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'attributes' => array(
-        'class' => '',
+        'class' => 'btn__red',
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'user',

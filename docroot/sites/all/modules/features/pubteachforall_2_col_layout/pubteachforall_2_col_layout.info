@@ -26,6 +26,7 @@ features[field_instance][] = field_collection_item-field_2_column_row-field_imag
 features[field_instance][] = field_collection_item-field_2_column_row-field_link
 features[field_instance][] = node-page_2_col_layout-field_2_column_row
 features[field_instance][] = node-page_2_col_layout-field_link
+features[image][] = 2_column_layout_image
 features[node][] = page_2_col_layout
 features[variable][] = field_bundle_settings_node__page_2_col_layout
 features[variable][] = menu_options_page_2_col_layout
