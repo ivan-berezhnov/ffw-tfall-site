@@ -63,6 +63,22 @@ h4, .h4 {
   font-size: 0.94118rem;
 }
 
+.beige {
+  color: #dfd9c9;
+}
+
+.orange {
+  color: #e69740;
+}
+
+.orange2 {
+  color: #ffb151;
+}
+
+.red {
+  color: #cf4753;
+}
+
 .slug {
   font-size: 11px;
   font-size: 0.64706rem;
