@@ -40,13 +40,44 @@
 *	#Table of Contents
 **/
 /**
+
+#Colours
+#WYSIWYG Classes
+
+**/
+/**
 	#Colours
 **/
 /**
-* #Classes
+* #WYSIWYG Classes
 **/
+.beige {
+  color: #dfd9c9;
+}
+
+.orange {
+  color: #e69740;
+}
+
 .orange2 {
   color: #ffb151;
+}
+
+.red {
+  color: #cf4753;
+}
+
+h1 .beige, h2 .beige, h3 .beige, h4 .beige {
+  color: #dfd9c9;
+}
+h1 .orange, h2 .orange, h3 .orange, h4 .orange {
+  color: #e69740;
+}
+h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
+  color: #ffb151;
+}
+h1 .red, h2 .red, h3 .red, h4 .red {
+  color: #cf4753;
 }
 
 /**

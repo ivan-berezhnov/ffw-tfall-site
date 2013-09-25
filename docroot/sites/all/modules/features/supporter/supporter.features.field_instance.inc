@@ -137,6 +137,43 @@ function supporter_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-supporter-field_supporter_type'
+  $field_instances['node-supporter-field_supporter_type'] = array(
+    'bundle' => 'supporter',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_supporter_type',
+    'label' => 'Type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-supporter-field_supporter_url'
   $field_instances['node-supporter-field_supporter_url'] = array(
     'bundle' => 'supporter',
@@ -182,6 +219,7 @@ function supporter_field_default_field_instances() {
   t('Description');
   t('Logo');
   t('Supporter Level Term');
+  t('Type');
   t('URL');
 
   return $field_instances;

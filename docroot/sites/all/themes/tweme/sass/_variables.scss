@@ -3,6 +3,13 @@
 **/
 
 /**
+
+#Colours
+#WYSIWYG Classes
+
+**/
+
+/**
 	#Colours
 **/
 
@@ -26,9 +33,41 @@ $border_color1: #92998d;
 $base-font-size: 17;
 
 /**
-* #Classes
+* #WYSIWYG Classes
 **/
+
+.beige {
+  color: $beige;
+}
+
+.orange {
+  color: $orange1;
+}
 
 .orange2 {
   color: $orange2;
 }
+
+.red {
+  color: $red;
+}
+
+h1, h2, h3, h4 {
+  .beige {
+    color: $beige;
+  }
+
+  .orange {
+    color: $orange1;
+  }
+
+  .orange2 {
+    color: $orange2;
+  }
+
+  .red {
+    color: $red;
+  }
+}
+
+

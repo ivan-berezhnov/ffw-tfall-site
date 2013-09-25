@@ -83,7 +83,7 @@ function supporter_image_default_styles() {
 function supporter_node_info() {
   $items = array(
     'supporter' => array(
-      'name' => t('supporter'),
+      'name' => t('Supporter'),
       'base' => 'node_content',
       'description' => t('supporter content type'),
       'has_title' => '1',
