@@ -32,6 +32,7 @@ function news_wysiwyg_default_profiles() {
           'BulletedList' => 1,
           'Link' => 1,
           'Unlink' => 1,
+          'PasteFromWord' => 1,
           'SpecialChar' => 1,
           'Styles' => 1,
           'Table' => 1,
