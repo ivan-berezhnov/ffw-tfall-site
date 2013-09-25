@@ -9,6 +9,11 @@ function widget_map_menu() {
 		'file' => 'includes/widget_map_json.inc',
     'access callback' => TRUE,
   );
+  $items['widget_map_detailedlist.json'] = array(
+    'page callback' => '_widget_map_detailedlist',
+		'file' => 'includes/widget_map_json.inc',
+    'access callback' => TRUE,
+  );
   return $items;
 }
 
@@ -16,19 +21,30 @@ function widget_map_menu() {
  * implements hook_theme
  */
 function widget_map_theme($existing, $type, $theme, $path) {
-  return array(
-    'widget_map' => array(
-      'template' => 'templates/widget-map',
-    ),
-  );
+	return array(
+		'widget_map' => array(
+			'template' => 'templates/widget-map',
+		),
+		'widget_map_detailed' => array(
+			'template' => 'templates/widget-map-detailed',
+		),
+	);
 
-  return array();
+	return array();
 }
 
 function widget_map_embed() {
-	drupal_add_js(drupal_get_path('module','widget_map').'/assets/widget_map.js');
-	drupal_add_js(drupal_get_path('module','widget_map').'/assets/mapbox.js');
-	drupal_add_css(drupal_get_path('module','widget_map').'/assets/mapbox.css');
+	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/widget_map.js');
+	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/mapbox.js');
+	drupal_add_css(drupal_get_path('module', 'widget_map') . '/assets/mapbox.css');
 
 	return theme('widget_map');
+}
+
+function widget_map_detailed_embed() {
+	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/widget_map_detailed.js');
+	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/mapbox.js');
+	drupal_add_css(drupal_get_path('module', 'widget_map') . '/assets/mapbox.css');
+
+	return theme('widget_map_detailed');
 }

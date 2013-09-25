@@ -212,6 +212,14 @@ body {
   font-family: "News Gothic", sans-serif;
 }
 
+.body {
+  color: #91998c;
+  font-size: 17px;
+  font-size: 1rem;
+  line-height: 25px;
+  font-family: "Fedra Serif";
+}
+
 .small-body {
   font-size: 16px;
   font-size: 0.94118rem;
@@ -1223,8 +1231,11 @@ img {
   padding: 0px;
   position: relative;
 }
+.touch #worldmap {
+  background-color: white;
+}
 @media screen and (max-width: 767px) {
-  #worldmap {
+  .touch #worldmap {
     width: 100%;
     margin: 0;
   }
