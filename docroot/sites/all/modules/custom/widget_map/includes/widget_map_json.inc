@@ -38,3 +38,8 @@ function _widget_map_listofall() {
 
 	drupal_json_output($output);
 }
+
+
+function _widget_map_detailedlist() {
+	_widget_map_listofall();
+}
