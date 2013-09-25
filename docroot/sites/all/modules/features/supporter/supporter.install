@@ -1,0 +1,44 @@
+<?php
+
+/**
+* Implementation of hook_install().
+*/
+function supporter_update_7001(){
+  //Supporter level taxonomy terms
+  $support_level = array(
+    'Global Champions' => array ('Our Global Champions have committed at least $1 million in funding annually to Teach For All.',
+    'Global Partners',
+    'Global Supporters',
+    'Friends of Teach For All',
+  );
+  _supporter_load_terms($support_level, 'support_level');
+  
+  $support_level_descriptions = array(
+  	'Our Global Champions have committed at least $1 million in funding annually to Teach For All.',
+  	'Our Global Partners have commited at least $500,000 in annual funding to Teach For All.',
+  	'Our Global Supporters have committed at least $250,000 in annual funding to Teach For All.',
+  	'Our Friends of Teach For All have committed at least $5,000 in funding annually or provided other critical support to Teach For All.',  	
+  );
+
+}
+
+//import terms.
+
+/**
+* Custom function to load an array of terms into a specified vocabulary.
+*/
+function _supporter_load_terms($terms, $vocab_name){
+  $vocab = taxonomy_vocabulary_machine_name_load($vocab_name);
+  if ($vocab == false) {
+    drupal_set_message('Error while attempting to install vocabulary ' . $vocab_name, 'error');
+  }
+  else {
+    foreach($terms as $weight => $term){
+      $data = new stdClass();
+      $data->name = $term;
+      $data->vid = $vocab->vid;
+      $data->weight = $weight;
+      taxonomy_term_save($data);
+    }
+  }
+}
