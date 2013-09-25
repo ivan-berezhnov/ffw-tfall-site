@@ -1320,7 +1320,7 @@ img {max-width: 100%;}
 }
 
 .worldmap__title {
-  box-sizing: border-box;
+  @include box-sizing(border-box);
   letter-spacing: 2px;
   position: absolute;
   top: 30px;
