@@ -18,6 +18,7 @@ function create_new_vocabulary($name, $description, $machine_name)
     if (($original_vocabulary) == FALSE) {
         taxonomy_vocabulary_save($vocabulary);
     } else {
+        drupal_set_message('Vocabulary already exists ' . $name, 'error');
         $vocabulary = $original_vocabulary;
     }
     return $vocabulary;
