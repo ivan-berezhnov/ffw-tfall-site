@@ -49,7 +49,7 @@ function initialize_supporter_vocabulary()
     createTerm($vocabulary, "Global Supporters", "Our Global Supporters have committed at least $250,000 in funding annually to Teach for All.");
     createTerm($vocabulary, "Friends of Teach For All", "Our Friends of Teach For All have committed at least $5,000 in funding annually or provided other critical support to Teach for All.");
 
-    $output = "initialize_supporter_vocabulary";
+    $output = "Initialized supporter vocabulary";
     return $output;
 }
 
