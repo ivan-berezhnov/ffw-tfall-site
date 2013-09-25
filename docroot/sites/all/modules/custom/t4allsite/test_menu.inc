@@ -37,21 +37,21 @@ function t4allsite_menu()
 function initialize_supporter_vocabulary()
 {
     module_load_include('inc', 't4allsite', 'test_functions');
-   // $output = "hello";
+
     $vocabulary = create_new_vocabulary(
         "Supporter Levels",
         "Taxonomy for different levels of supporters.",
         "supporter_levels"
     );
 
-    console.log($vocabulary);
-
     createTerm($vocabulary, "Global Champions", "Our Global Champions have committed at least $1million in funding annually to Teach for All.");
+    createTerm($vocabulary, "Global Partners", "Our Global Partners have committed at least $500,000 in funding annually to Teach for All.");
+    createTerm($vocabulary, "Global Supporters", "Our Global Supporters have committed at least $250,000 in funding annually to Teach for All.");
+    createTerm($vocabulary, "Friends of Teach For All", "Our Friends of Teach For All have committed at least $5,000 in funding annually or provided other critical support to Teach for All.");
 
     $output = "initialize_supporter_vocabulary";
     return $output;
 }
-
 
 function remove_supporter_vocabulary()
 {
@@ -62,64 +62,3 @@ function remove_supporter_vocabulary()
 
     return $output;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * Implements hook_menu_alter().
- */
-//function t4allsite_menu_alter(&$items) {
-//    // Generating the unapproved comment count on every page load is a bad idea.
-//    $items['admin/content/comment/approval']['title callback'] = 'forest_site_comment_count_unpublished';
-//}
-
-/**
- * Menu callback.
-// */
-//function t4allsite_comment_count_unpublished() {
-//    return t('Unapproved comments');
-//}
-
-/**
- * Implements hook_theme().
- * @author Alex
- */
-//function t4allsite_theme($existing, $type, $theme, $path) {
-//    $themes = array();
-//
-//    $themes['forest_site__pages__mtg_homepage'] = array(
-//        'template' => 'templates/mtg-homepage',
-//        'file' => 'includes/forest_site.themes.inc',
-//    );
-//
-//    $themes['forest_site__pages__dnd_homepage'] = array(
-//        'template' => 'templates/dnd-homepage',
-//    );
-//
-//    $themes['forest_site__pages__all_homepage'] = array(
-//        'template' => 'templates/all-homepage',
-//    );
-//
-//    $themes['forest_site_homepage'] = array(
-//        'template' => 'templates/forest_site_homepage',
-//        'arguments' => array('type' => array()),
-//        'file' => 'includes/forest_site.themes.inc',
-//        //'preprocess functions' => array('template_preprocess', 'forest_site_preprocess_forest_homepage'),
-//    );
-//    return $themes;
-//}
-
-
-
