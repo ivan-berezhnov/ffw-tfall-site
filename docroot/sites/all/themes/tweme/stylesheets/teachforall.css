@@ -220,6 +220,12 @@ body {
   font-family: "Fedra Serif";
 }
 
+.section {
+  font-size: 18px;
+  font-size: 1.05882rem;
+  font-weight: bold;
+}
+
 .small-body {
   font-size: 16px;
   font-size: 0.94118rem;
@@ -281,7 +287,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 .content p:last-child {
