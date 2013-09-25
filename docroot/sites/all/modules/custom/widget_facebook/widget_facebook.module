@@ -32,31 +32,3 @@ function widget_facebook_embed($code) {
 	return theme('widget_facebook_box_customkey', array('code' => $code));
 }
 
-/**
- * Implements hook_block_info().
- */
-function widget_facebook_block_info() {
-	$blocks = array();
-
-  $blocks['tfall_facebook_block'] = array(
-    'info' => t('TeachForAll Facebook Block'),
-  );
-
-  return $blocks;
-}
-
-/**
- * Implements hook_block_view().
- */
-function widget_facebook_block_view($delta = '') {
-	$widget_facebook = widget_facebook_embed_homepage();
-	$block = array();
-	switch ($delta) {
-	  case 'tfall_facebook_block':
-      $block['subject'] = '';
-      $block['content'] = $widget_facebook;
-      break;
-  }
-
-  return $block;
-}

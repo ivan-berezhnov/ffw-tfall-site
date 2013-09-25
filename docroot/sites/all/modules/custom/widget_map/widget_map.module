@@ -48,34 +48,3 @@ function widget_map_detailed_embed() {
 
 	return theme('widget_map_detailed');
 }
-
-/**
- * Implements hook_block_info().
- * @author AlexB
- */
-function widget_map_block_info() {
-  $blocks = array();
-
-  $blocks['no_map_block'] = array(
-    'info' => t('National Organization Map Block'),
-  );
-
-  return $blocks;
-}
-
-/**
- * Implements hook_block_view().
- * @author AlexB
- */
-function widget_map_block_view($delta = '') {
-  $widget_map = widget_map_embed();
-  $block = array();
-  switch ($delta) {
-    case 'no_map_block':
-      $block['subject'] = '';
-      $block['content'] = $widget_map; // this variable needs to include the NO map
-      break;
-  }
-
-  return $block;
-}
