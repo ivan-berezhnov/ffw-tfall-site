@@ -195,6 +195,11 @@ body {
   font-family: "Fedra Serif";
 }
 
+.section {
+  @include font-size(18);
+  font-weight: bold;
+}
+
 .small-body {
   @include font-size(16);
   color: $grey2;
@@ -2066,7 +2071,3 @@ img {max-width: 100%;}
 }
 
 /**/
-
-
-
-
