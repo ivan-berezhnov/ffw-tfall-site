@@ -50,8 +50,8 @@ function supporter_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-supporter-field_supporter_level'
-  $field_instances['node-supporter-field_supporter_level'] = array(
+  // Exported field_instance: 'node-supporter-field_supporter_level_term'
+  $field_instances['node-supporter-field_supporter_level_term'] = array(
     'bundle' => 'supporter',
     'default_value' => NULL,
     'deleted' => 0,
@@ -72,8 +72,8 @@ function supporter_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_supporter_level',
-    'label' => 'Supporter Level',
+    'field_name' => 'field_supporter_level_term',
+    'label' => 'Supporter Level Term',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -181,7 +181,7 @@ function supporter_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Description');
   t('Logo');
-  t('Supporter Level');
+  t('Supporter Level Term');
   t('URL');
 
   return $field_instances;

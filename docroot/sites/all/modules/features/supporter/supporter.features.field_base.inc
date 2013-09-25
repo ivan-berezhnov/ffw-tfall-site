@@ -37,13 +37,13 @@ function supporter_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_supporter_level'
-  $field_bases['field_supporter_level'] = array(
+  // Exported field_base: 'field_supporter_level_term'
+  $field_bases['field_supporter_level_term'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_supporter_level',
+    'field_name' => 'field_supporter_level_term',
     'foreign keys' => array(
       'tid' => array(
         'columns' => array(
