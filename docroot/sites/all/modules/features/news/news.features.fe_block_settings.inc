@@ -32,25 +32,5 @@ function news_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['widget_facebook-tfall_facebook_block'] = array(
-    'cache' => 1,
-    'custom' => 0,
-    'delta' => 'tfall_facebook_block',
-    'module' => 'widget_facebook',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'tweme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'tweme',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   return $export;
 }
