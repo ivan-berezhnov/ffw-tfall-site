@@ -56,7 +56,7 @@ function createTerm($vocabulary, $term_name, $term_description)
         $term = new stdClass();
         $term->name = $term_name;
         $term->description = $term_description;
-        $term->format = "plain-text";
+        $term->format = "plain_text";
         $term->vid = $vocabulary->vid;
         taxonomy_term_save($term);
     }
