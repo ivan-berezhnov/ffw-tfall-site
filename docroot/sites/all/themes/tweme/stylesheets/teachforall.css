@@ -32,6 +32,7 @@
 
     ### LANDING PAGES ###
     #News - Landing
+    #Privacy Policy
 **/
 /**
 *   #Imports
@@ -1982,6 +1983,18 @@ img {
   color: #999999;
   font-size: 16px;
   font-size: 0.94118rem;
+}
+
+/**/
+/**
+* #Privacy Policy
+**/
+.privacy-policy-contact div {
+  float: left;
+  display: block;
+}
+.privacy-policy-contact .labels {
+  margin-right: 10px;
 }
 
 /**/

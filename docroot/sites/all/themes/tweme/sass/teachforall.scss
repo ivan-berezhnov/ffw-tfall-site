@@ -33,6 +33,7 @@
 
     ### LANDING PAGES ###
     #News - Landing
+    #Privacy Policy
 **/
 
 /**
@@ -2069,5 +2070,23 @@ img {max-width: 100%;}
   color: $grey4;
   @include font-size(16);
 }
+
+/**/
+
+/**
+* #Privacy Policy
+**/
+
+.privacy-policy-contact {
+  div {
+    float: left;
+    display: block;
+  }
+
+  .labels {
+    margin-right: 10px;
+  }
+}
+
 
 /**/
