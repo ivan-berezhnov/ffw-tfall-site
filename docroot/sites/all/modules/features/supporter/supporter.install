@@ -4,41 +4,80 @@
 * Implementation of hook_install().
 */
 function supporter_update_7001(){
-  //Supporter level taxonomy terms
-  $support_level = array(
-    'Global Champions' => array ('Our Global Champions have committed at least $1 million in funding annually to Teach For All.',
-    'Global Partners',
-    'Global Supporters',
-    'Friends of Teach For All',
-  );
-  _supporter_load_terms($support_level, 'support_level');
-  
-  $support_level_descriptions = array(
-  	'Our Global Champions have committed at least $1 million in funding annually to Teach For All.',
-  	'Our Global Partners have commited at least $500,000 in annual funding to Teach For All.',
-  	'Our Global Supporters have committed at least $250,000 in annual funding to Teach For All.',
-  	'Our Friends of Teach For All have committed at least $5,000 in funding annually or provided other critical support to Teach For All.',  	
-  );
+    $vocabulary = create_new_vocabulary(
+        "Supporter Levels",
+        "Taxonomy for different levels of supporters.",
+        "supporter_levels"
+    );
 
+    createTerm($vocabulary, "Global Champions", "Our Global Champions have committed at least $1million in funding annually to Teach for All.");
+    createTerm($vocabulary, "Global Partners", "Our Global Partners have committed at least $500,000 in funding annually to Teach for All.");
+    createTerm($vocabulary, "Global Supporters", "Our Global Supporters have committed at least $250,000 in funding annually to Teach for All.");
+    createTerm($vocabulary, "Friends of Teach For All", "Our Friends of Teach For All have committed at least $5,000 in funding annually or provided other critical support to Teach for All.");
+
+    $output = "Initialized supporter vocabulary";
+    return $output;
 }
-
-//import terms.
 
 /**
-* Custom function to load an array of terms into a specified vocabulary.
-*/
-function _supporter_load_terms($terms, $vocab_name){
-  $vocab = taxonomy_vocabulary_machine_name_load($vocab_name);
-  if ($vocab == false) {
-    drupal_set_message('Error while attempting to install vocabulary ' . $vocab_name, 'error');
-  }
-  else {
-    foreach($terms as $weight => $term){
-      $data = new stdClass();
-      $data->name = $term;
-      $data->vid = $vocab->vid;
-      $data->weight = $weight;
-      taxonomy_term_save($data);
+ * Checks to see if vocabulary already exists and saves the vocabulary if it does not already exist
+ * Returns the vocabulary with machine_name specified (either new if vocabulary didn't exist already
+ * or old if vocabulary was pre-existing.
+ */
+
+function create_new_vocabulary($name, $description, $machine_name)
+{
+    $vocabulary = new stdClass();
+    $vocabulary->name = $name;
+    $vocabulary->description = $description;
+    $vocabulary->machine_name = $machine_name;
+
+    $original_vocabulary = taxonomy_vocabulary_machine_name_load($machine_name);
+
+
+    if (($original_vocabulary) == FALSE) {
+        taxonomy_vocabulary_save($vocabulary);
+    } else {
+        drupal_set_message('Vocabulary already exists :' . $name, 'error');
+        $vocabulary = $original_vocabulary;
     }
-  }
+    return $vocabulary;
 }
+
+/**
+ * Checks to see if term already exists in that vocabulary and saves the term if it doesn't already exist
+ * Returns a new term with name and description properties in vocabulary $vid.
+ */
+function createTerm($vocabulary, $term_name, $term_description)
+{
+    $original_terms = taxonomy_get_term_by_name($term_name, $vocabulary->machine_name);
+
+    if (count($original_terms) == 0) {
+        $term = new stdClass();
+        $term->name = $term_name;
+        $term->description = $term_description;
+        $term->format = "plain-text";
+        $term->vid = $vocabulary->vid;
+        taxonomy_term_save($term);
+    }
+    return $term;
+}
+
+function remove_supporter_vocabulary()
+{
+    $output = "Removed supporters vocabulary";
+
+    module_load_include('inc', 't4allsite', 'test_functions');
+    taxonomy_remove_vocabulary("supporter_levels");
+
+    return $output;
+}
+
+function taxonomy_remove_vocabulary($vocabulary_name)
+{
+    $vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
+    $vocabulary_vid = $vocabulary->vid;
+    taxonomy_vocabulary_delete($vocabulary_vid);
+}
+
+

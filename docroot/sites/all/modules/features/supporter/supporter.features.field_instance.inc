@@ -50,6 +50,43 @@ function supporter_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-supporter-field_supporter_level'
+  $field_instances['node-supporter-field_supporter_level'] = array(
+    'bundle' => 'supporter',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_supporter_level',
+    'label' => 'Supporter Level',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-supporter-field_supporter_logo'
   $field_instances['node-supporter-field_supporter_logo'] = array(
     'bundle' => 'supporter',
@@ -100,43 +137,6 @@ function supporter_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-supporter-field_supporter_type'
-  $field_instances['node-supporter-field_supporter_type'] = array(
-    'bundle' => 'supporter',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_supporter_type',
-    'label' => 'Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-supporter-field_supporter_url'
   $field_instances['node-supporter-field_supporter_url'] = array(
     'bundle' => 'supporter',
@@ -181,7 +181,7 @@ function supporter_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Description');
   t('Logo');
-  t('Type');
+  t('Supporter Level');
   t('URL');
 
   return $field_instances;
