@@ -27,17 +27,23 @@
 				marker.setIcon(L.icon(feature.properties.icon));
 
 				var popupContent =
-								'<a class="popup" href="' + feature.properties.url + '">' +
-								'<h2>' + feature.properties.title + '</h2>' +
-								'<img src="' + feature.properties.logo + '">' +
-								'</a>' +
-								'<a class="btn btn-primary" href="' + feature.properties.url + '">Learn more</a>';
+								'<div class="slug">' + feature.properties.title + '</div>' +
+								feature.properties.blurb;
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
 					minWidth: 320
 				});
 			});
+
+			map.markerLayer.on('mouseover',function(e) {			
+				e.layer.openPopup();
+			});
+
+			map.markerLayer.on('mouseout',function(e) {			
+				e.layer.closePopup();
+			});
+
 
 		}
 	};

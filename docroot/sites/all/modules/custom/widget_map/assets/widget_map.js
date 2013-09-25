@@ -21,6 +21,7 @@
 			});
 
 
+
 			map.markerLayer.on('layeradd', function(e) {
 				var marker = e.layer,feature = marker.feature;
 
