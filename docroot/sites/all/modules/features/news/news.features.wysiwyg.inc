@@ -29,11 +29,14 @@ function news_wysiwyg_default_profiles() {
           'JustifyCenter' => 1,
           'JustifyRight' => 1,
           'JustifyBlock' => 1,
+          'BulletedList' => 1,
           'Link' => 1,
           'Unlink' => 1,
+          'TextColor' => 1,
           'SpecialChar' => 1,
           'Styles' => 1,
           'Table' => 1,
+          'Iframe' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
@@ -54,7 +57,11 @@ H2=h2
 H3=h3
 Slug=div.slug
 SlugMedium=div.slug-medium
-SlugLarge=div.slug-large',
+SlugLarge=div.slug-large
+Red=span.red
+Orange=span.orange
+Orange2=span.orange2
+Beige=span.beige',
     ),
     'rdf_mapping' => array(),
   );

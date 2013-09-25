@@ -51,7 +51,7 @@ function spotlight_image_default_styles() {
 function spotlight_node_info() {
   $items = array(
     'spotlight' => array(
-      'name' => t('spotlight'),
+      'name' => t('Spotlight'),
       'base' => 'node_content',
       'description' => t('Spotlight posts'),
       'has_title' => '1',

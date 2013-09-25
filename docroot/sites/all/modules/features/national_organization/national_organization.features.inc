@@ -55,7 +55,7 @@ function national_organization_image_default_styles() {
 function national_organization_node_info() {
   $items = array(
     'national_organization' => array(
-      'name' => t('national organization'),
+      'name' => t('National Organization'),
       'base' => 'node_content',
       'description' => t('national organization content type'),
       'has_title' => '1',
