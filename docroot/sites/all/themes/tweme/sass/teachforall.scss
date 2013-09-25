@@ -188,6 +188,13 @@ body {
   font-family: "News Gothic", sans-serif;
 }
 
+.body {
+  color: $grey1;
+  @include font-size(17);
+  line-height: 25px;
+  font-family: "Fedra Serif";
+}
+
 .small-body {
   @include font-size(16);
   color: $grey2;
@@ -1301,9 +1308,14 @@ img {max-width: 100%;}
   padding: 0px;
   position: relative;
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    margin: 0;
+  // Set outer color to white, so users can differentiate between the outer (scrollable) area and the map
+  .touch & {
+    background-color: $white;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 
@@ -2054,3 +2066,7 @@ img {max-width: 100%;}
 }
 
 /**/
+
+
+
+
