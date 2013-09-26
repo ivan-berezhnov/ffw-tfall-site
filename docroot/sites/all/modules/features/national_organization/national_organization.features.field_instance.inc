@@ -375,46 +375,6 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-national_organization-field_key_twitter'
-  $field_instances['node-national_organization-field_key_twitter'] = array(
-    'bundle' => 'national_organization',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 18,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_key_twitter',
-    'label' => 'Twitter API key',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 15,
-    ),
-  );
-
   // Exported field_instance: 'node-national_organization-field_links'
   $field_instances['node-national_organization-field_links'] = array(
     'bundle' => 'national_organization',
@@ -974,7 +934,6 @@ function national_organization_field_default_field_instances() {
   t('Spotlights');
   t('Teachers Active');
   t('To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>');
-  t('Twitter API key');
   t('blurb/compelling statistic text');
   t('link(s) to organization\'s website');
 
