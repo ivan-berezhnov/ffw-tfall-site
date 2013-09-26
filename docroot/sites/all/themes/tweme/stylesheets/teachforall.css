@@ -1647,8 +1647,10 @@ img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 1200px;
   padding: 0 40px;
   text-align: center;
+  margin: 0 auto 40px;
 }
 .view-supporters .view-header h2 {
   margin-bottom: 5px;
