@@ -7,8 +7,8 @@
       <div class="donate pull-left">
         <a href="#"><?php print t('DONATE'); ?></a>
       </div>
-      <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-twitter"></a>
-      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
+      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-twitter"></a>
+      <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
       <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
       <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
     </div>
@@ -148,7 +148,7 @@
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
         <div class="footer__copyright">
-          <p><?php print t('Copyright &#169; 2013 TeachForAll, Inc. All rights reserved.'); ?></p>
+          <p><?php print t('Copyright &#169; 2013<br />  TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
       </div>
       <div class="span3 footer-links widget_supporters">
