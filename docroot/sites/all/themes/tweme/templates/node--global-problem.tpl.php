@@ -1,4 +1,3 @@
-<?php dsm($content['field_top_section']); ?>
 <div class="container">
   <h2 class="page-title"><?php print $title; ?></h2>
 
