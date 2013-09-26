@@ -81,28 +81,6 @@ h1 .red, h2 .red, h3 .red, h4 .red {
   color: #cf4753;
 }
 
-.footer-link-beige, #footer .content > ul > li > a {
-  font-size: 11px;
-  font-size: 0.64706rem;
-  color: #dfd9c9;
-  font-family: "Fedra", serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.footer-link-beige:hover, #footer .content > ul > li > a:hover {
-  color: white;
-}
-
-.footer-link-grey, .privacy-policy, #footer .content > ul > li > ul li a {
-  font-size: 17px;
-  font-size: 1rem;
-  color: #999999;
-}
-.footer-link-grey:hover, .privacy-policy:hover, #footer .content > ul > li > ul li a:hover {
-  color: white;
-}
-
 /**
 * #Font-Face
 **/
@@ -284,6 +262,28 @@ body {
   font-size: 16px;
   font-size: 0.94118rem;
   color: #4d4d4d;
+}
+
+.footer-link-beige, #footer .content > ul > li > a {
+  font-size: 11px;
+  font-size: 0.64706rem;
+  color: #dfd9c9;
+  font-family: "Fedra", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.footer-link-beige:hover, #footer .content > ul > li > a:hover {
+  color: white;
+}
+
+.footer-link-grey, .privacy-policy, #footer .content > ul > li > ul li a {
+  font-size: 17px;
+  font-size: 1rem;
+  color: #999999;
+}
+.footer-link-grey:hover, .privacy-policy:hover, #footer .content > ul > li > ul li a:hover {
+  color: white;
 }
 
 /**/
