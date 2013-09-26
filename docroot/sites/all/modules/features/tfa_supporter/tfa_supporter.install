@@ -3,7 +3,7 @@
 /**
 * Implementation of hook_install().
 */
-function supporter_update_7001(){
+function tfa_supporter_update_7001(){
     $vocabulary = create_new_vocabulary(
         "Supporter Levels",
         "Taxonomy for different levels of supporters.",
@@ -62,22 +62,3 @@ function createTerm($vocabulary, $term_name, $term_description)
     }
     return $term;
 }
-
-function remove_supporter_vocabulary()
-{
-    $output = "Removed supporters vocabulary";
-
-    module_load_include('inc', 't4allsite', 'test_functions');
-    taxonomy_remove_vocabulary("supporter_levels");
-
-    return $output;
-}
-
-function taxonomy_remove_vocabulary($vocabulary_name)
-{
-    $vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
-    $vocabulary_vid = $vocabulary->vid;
-    taxonomy_vocabulary_delete($vocabulary_vid);
-}
-
-

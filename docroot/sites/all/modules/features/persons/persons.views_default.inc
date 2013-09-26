@@ -149,6 +149,13 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
+  /* Filter criterion: Content: Type (field_person_type) */
+  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
+  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
+    'Board member' => 'Board member',
+  );
   $handler->display->display_options['path'] = 'board';
 
   /* Display: Leadership Page */
@@ -200,6 +207,13 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
+  );
+  /* Filter criterion: Content: Type (field_person_type) */
+  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
+  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
+    'Leader' => 'Leader',
   );
   $handler->display->display_options['path'] = 'leadership';
   $export['persons_view'] = $view;

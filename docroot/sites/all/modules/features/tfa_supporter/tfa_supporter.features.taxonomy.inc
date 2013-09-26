@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * supporter.features.taxonomy.inc
+ * tfa_supporter.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function supporter_taxonomy_default_vocabularies() {
+function tfa_supporter_taxonomy_default_vocabularies() {
   return array(
     'supporter_levels' => array(
       'name' => 'Supporter Levels',
