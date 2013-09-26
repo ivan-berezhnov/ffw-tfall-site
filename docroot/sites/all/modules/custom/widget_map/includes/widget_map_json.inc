@@ -10,6 +10,7 @@ function _widget_map_listofall() {
 	$result = $query->entityCondition('entity_type', 'node')
 			->entityCondition('bundle', 'national_organization')
 			->propertyCondition('status', 1)
+			->fieldCondition('field_active_flag', 'value', 1)
 			->execute();
 
 	if (isset($result['node'])) {
@@ -47,6 +48,7 @@ function _widget_map_detailedlist() {
 	$result = $query->entityCondition('entity_type', 'node')
 			->entityCondition('bundle', 'national_organization')
 			->propertyCondition('status', 1)
+			->fieldCondition('field_active_flag', 'value', 1)			
 			->execute();
 
 	if (isset($result['node'])) {
