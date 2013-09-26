@@ -66,14 +66,14 @@
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-Medium.otf');
+  src: url('../fonts/NewsGothic-Medium.ttf'), url('../fonts/NewsGothic-Medium.otf');
        font-style: normal;
        font-weight: normal;
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold.otf');
+  src: url('../fonts/NewsGothic-DemiBold.ttf'), url('../fonts/NewsGothic-DemiBold.otf');
        font-style: normal;
        font-weight: bold;
 }
