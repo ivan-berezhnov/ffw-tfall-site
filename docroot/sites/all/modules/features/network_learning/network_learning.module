@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Network Learning feature.
+ */
+
+include_once 'network_learning.features.inc';
