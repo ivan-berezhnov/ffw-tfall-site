@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the supporter feature.
- */
-
-include_once 'supporter.features.inc';
