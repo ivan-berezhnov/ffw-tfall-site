@@ -107,7 +107,8 @@
       <div class="span3">
 
 				<?php if (module_exists('widget_facebook') && isset($content['field_key_facebook'])): ?>
-          <?php print render(widget_facebook_embed(render($content['field_key_facebook']))); ?>
+          <?php $widget_facebook = render(widget_facebook_embed(render($content['field_key_facebook'])));?>
+          <?php print $widget_facebook; ?>
 				<?php endif; ?>
 
         <div class="no__twitter">
