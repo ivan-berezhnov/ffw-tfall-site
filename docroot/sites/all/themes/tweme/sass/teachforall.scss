@@ -1780,6 +1780,12 @@ img {max-width: 100%;}
   }
 }
 
+.node-type-national-organization {
+  .fb-like-box {
+    margin-bottom: 20px;
+  }
+}
+
 /**/
 
 /**
@@ -1957,6 +1963,10 @@ img {max-width: 100%;}
       }
     }
   }
+}
+
+.group-row-wrapper {
+  position: relative;
 }
 
 @media screen and (max-width:768px) {

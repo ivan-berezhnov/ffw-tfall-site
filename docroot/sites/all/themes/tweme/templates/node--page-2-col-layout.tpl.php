@@ -86,11 +86,7 @@
 
   <?php //print $user_picture; ?>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
+  <h2 class="page-title"><?php print $title; ?></h2>
 
   <?php if ($display_submitted): ?>
     <div class="submitted">

@@ -82,4 +82,14 @@
       });
     }
   });
+
+  // on 2 column layout page the information beside the image needs to be centered //
+  $(document).ready(function() {
+    var $window_width = $(window).width(); // grab window width
+    if ($window_width > 1199) {
+      var $margin = $('.group_info_row').height()/2;
+      $('.group_info_row').css({'margin-top' : $margin});
+    }
+  });
+
 })(jQuery);

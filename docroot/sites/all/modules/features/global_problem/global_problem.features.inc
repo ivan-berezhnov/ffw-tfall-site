@@ -19,7 +19,7 @@ function global_problem_ctools_plugin_api($module = NULL, $api = NULL) {
 function global_problem_node_info() {
   $items = array(
     'global_problem' => array(
-      'name' => t('global problem'),
+      'name' => t('Global Problem'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
