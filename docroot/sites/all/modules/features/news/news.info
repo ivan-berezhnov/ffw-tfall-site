@@ -27,7 +27,6 @@ features[ctools][] = flexslider:flexslider_default_preset:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[fe_block_settings][] = views-news-block_1
-features[fe_block_settings][] = widget_facebook-tfall_facebook_block
 features[features_api][] = api:2
 features[field_base][] = field_category
 features[field_base][] = field_news_byline

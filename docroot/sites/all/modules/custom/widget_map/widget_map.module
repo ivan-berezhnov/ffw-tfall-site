@@ -29,8 +29,6 @@ function widget_map_theme($existing, $type, $theme, $path) {
 			'template' => 'templates/widget-map-detailed',
 		),
 	);
-
-	return array();
 }
 
 function widget_map_embed() {
