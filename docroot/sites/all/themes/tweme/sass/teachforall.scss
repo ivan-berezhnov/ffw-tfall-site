@@ -23,6 +23,7 @@
     ### VIEWS ###
     #News Listing
     #Persons
+    #Supporters
 
     ### NODES ###
     #National Organizations
@@ -1704,6 +1705,100 @@ img {max-width: 100%;}
     a.btn {
       @extend .btn-red;
     }
+  }
+}
+
+/**/
+
+/**
+* #Supporters
+**/
+
+.view-supporters {
+  @include box-sizing(border-box);
+  padding: 0 40px;
+  text-align: center;
+
+  .view-header {
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  h3 {
+    color: $orange1;
+    text-transform: uppercase;
+  }
+
+  p {
+    @include box-sizing(border-box);
+    @extend .body;
+    padding: 0 40px;
+  }
+
+  .supporter-links {
+    max-width: 80%;
+    margin: 5px auto 32px;
+
+    > div {
+      display: inline-block;
+      color: $black;
+      @include font-size(22);
+      line-height: 22px;
+      padding: 0 12px;
+      border-right: 3px solid $border_color1;
+      margin-bottom: 8px;
+      font-weight: bold;
+
+      &.views-row-last {
+        border-right: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    & {
+      h3.global-champions + p {
+        word-spacing: -1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    & {
+      padding: 0;
+
+      p {
+        max-width: 400px;
+        margin: 0 auto 10px;
+        padding: 0;
+      }
+
+      .supporter-links {
+        max-width: none;
+
+        > div {
+          border: 0;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      p {
+        padding: 0;
+      }
+    }
+  }
+
+  .btn {
+    @extend .btn-red;
   }
 }
 

@@ -22,6 +22,7 @@
     ### VIEWS ###
     #News Listing
     #Persons
+    #Supporters
 
     ### NODES ###
     #National Organizations
@@ -244,7 +245,7 @@ body {
   font-family: "News Gothic", sans-serif;
 }
 
-.body {
+.body, .view-supporters p {
   color: #91998c;
   font-size: 17px;
   font-size: 1rem;
@@ -341,7 +342,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 
 .content p:last-child {
@@ -376,7 +377,7 @@ html.js input.throbbing {
   background-color: #cf4753;
 }
 
-.btn-red, .view-persons .view-footer a.btn {
+.btn-red, .view-persons .view-footer a.btn, .view-supporters .btn {
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -388,7 +389,7 @@ html.js input.throbbing {
   line-height: 26px;
   padding: 4px 26px;
 }
-.btn-red:hover, .view-persons .view-footer a.btn:hover {
+.btn-red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .btn:hover {
   background: #db4b57;
 }
 
@@ -1636,6 +1637,79 @@ img {
   clear: both;
   text-align: center;
   margin-top: 45px;
+}
+
+/**/
+/**
+* #Supporters
+**/
+.view-supporters {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 40px;
+  text-align: center;
+}
+.view-supporters .view-header h2 {
+  margin-bottom: 5px;
+}
+.view-supporters .view-header p {
+  margin-bottom: 30px;
+}
+.view-supporters h3 {
+  color: #e69740;
+  text-transform: uppercase;
+}
+.view-supporters p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+.view-supporters .supporter-links {
+  max-width: 80%;
+  margin: 5px auto 32px;
+}
+.view-supporters .supporter-links > div {
+  display: inline-block;
+  color: black;
+  font-size: 22px;
+  font-size: 1.29412rem;
+  line-height: 22px;
+  padding: 0 12px;
+  border-right: 3px solid #92998d;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.view-supporters .supporter-links > div.views-row-last {
+  border-right: 0;
+}
+@media screen and (max-width: 330px) {
+  .view-supporters h3.global-champions + p {
+    word-spacing: -1px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .view-supporters {
+    padding: 0;
+  }
+  .view-supporters p {
+    max-width: 400px;
+    margin: 0 auto 10px;
+    padding: 0;
+  }
+  .view-supporters .supporter-links {
+    max-width: none;
+  }
+  .view-supporters .supporter-links > div {
+    border: 0;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .view-supporters p {
+    padding: 0;
+  }
 }
 
 /**/

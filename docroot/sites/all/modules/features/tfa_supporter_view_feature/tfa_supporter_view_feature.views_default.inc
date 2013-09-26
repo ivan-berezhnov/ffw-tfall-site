@@ -22,14 +22,15 @@ function tfa_supporter_view_feature_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'TFA Supporters View';
+  $handler->display->display_options['title'] = 'Supporters';
+  $handler->display->display_options['css_class'] = 'view-supporters';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
@@ -38,14 +39,24 @@ function tfa_supporter_view_feature_views_default_views() {
       'rendered_strip' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Title and Intro Paragraph';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="page-title">Supporters</h2>
+<p>Teach For All is grateful to all of our supporters.</p>';
+  $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<form method="link" action="/">
-<input type = "submit" value="GET INVOLVED">
-</form>';
+  $handler->display->display_options['footer']['area']['label'] = 'Get Involved';
+  $handler->display->display_options['footer']['area']['empty'] = TRUE;
+  $handler->display->display_options['footer']['area']['content'] = '<a class="btn" href="get-involved">Get Involved</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -80,14 +91,15 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_tfa_supporter_level']['label'] = '';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['text'] = '[field_tfa_supporter_level] [description]';
+  $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['text'] = '<h3>[field_tfa_supporter_level]</h3>[description]';
+  $handler->display->display_options['fields']['field_tfa_supporter_level']['element_type'] = '0';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tfa_supporter_level']['type'] = 'taxonomy_term_reference_plain';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Taxonomy term: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['relationship'] = 'term_node_tid';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -105,7 +117,7 @@ function tfa_supporter_view_feature_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'tfa-supporters-view';
+  $handler->display->display_options['path'] = 'supporters';
   $export['tfa_supporters_view'] = $view;
 
   return $export;
