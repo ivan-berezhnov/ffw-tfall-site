@@ -15,9 +15,5 @@
       <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <div class="row-fluid">
-    <div class="span12">
-      <a href="/news/latest"><div class="full-list">More News <span class="orange2">>></span></div></a>
-    </div>
-  </div>
+  <a href="/news/latest"><div class="full-list">More News <span class="orange2">>></span></div></a>
 </div>
