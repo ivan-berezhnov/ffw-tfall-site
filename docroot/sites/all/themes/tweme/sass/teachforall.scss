@@ -1749,6 +1749,11 @@ img {max-width: 100%;}
   h3 {
     color: $orange1;
     text-transform: uppercase;
+    letter-spacing: 2px;
+
+    + p {
+      margin-bottom: 19px;
+    }
   }
 
   p {
@@ -1764,7 +1769,7 @@ img {max-width: 100%;}
     > div {
       display: inline-block;
       color: $black;
-      @include font-size(22);
+      @include font-size(24);
       line-height: 22px;
       padding: 0 12px;
       border-right: 3px solid $border_color1;

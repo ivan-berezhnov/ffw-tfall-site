@@ -1682,6 +1682,10 @@ img {
 .view-supporters h3 {
   color: #e69740;
   text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.view-supporters h3 + p {
+  margin-bottom: 19px;
 }
 .view-supporters p {
   -webkit-box-sizing: border-box;
@@ -1696,8 +1700,8 @@ img {
 .view-supporters .supporter-links > div {
   display: inline-block;
   color: black;
-  font-size: 22px;
-  font-size: 1.29412rem;
+  font-size: 24px;
+  font-size: 1.41176rem;
   line-height: 22px;
   padding: 0 12px;
   border-right: 3px solid #92998d;
