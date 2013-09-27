@@ -1,3 +1,6 @@
+<?php print render(views_embed_view('news','block_1')); //flexslider ?>
+
+
 <div class="container">
 
   <div class="row-fluid">
@@ -15,7 +18,9 @@
       </div>
     </div>
 
-    <div class="span3">Twitter</div>
+    <div class="span3">
+			<?php print render(views_embed_view('tfall_tweets','block')); //tweeter block ?>
+		</div>
   </div>
 
 </div>
