@@ -30,7 +30,7 @@
 				var popupContent =
 								'<a class="popup" href="' + feature.properties.url + '">' +
 								'<h2>' + feature.properties.title + '</h2>' +
-								'<img src="' + feature.properties.logo + '">' +
+								'<img src="' + feature.properties.mainpic + '">' +
 								'</a>' +
 								'<a class="btn btn-primary" href="' + feature.properties.url + '">Learn more</a>';
 

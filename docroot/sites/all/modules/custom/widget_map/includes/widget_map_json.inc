@@ -25,7 +25,7 @@ function _widget_map_listofall() {
 		$marker->properties = array(
 			'title' => $item->field_country[LANGUAGE_NONE][0]['value'],
 			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
-			'logo' => image_style_url('map_thumbnail',$item->field_no_logo[LANGUAGE_NONE][0][uri]),
+			'mainpic' => image_style_url('map_thumbnail',$item->field_no_image[LANGUAGE_NONE][0][uri]),
 			'icon' => array(
 				'iconUrl' => '/' . drupal_get_path('module', 'widget_map') . '/assets/map_marker.png',
 				'iconSize' => array(21, 21),
