@@ -922,6 +922,7 @@ function permissions_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
