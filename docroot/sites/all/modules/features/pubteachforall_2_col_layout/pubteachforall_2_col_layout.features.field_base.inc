@@ -52,7 +52,7 @@ function pubteachforall_2_col_layout_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'max_length' => 255,
+      'max_length' => 400,
     ),
     'translatable' => 0,
     'type' => 'text',
