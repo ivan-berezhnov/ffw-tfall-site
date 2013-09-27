@@ -2091,6 +2091,13 @@ img {
   margin: 30px 0 10px 0;
 }
 
+.widget-map__blurb {
+  color: #999999;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 0.94118rem;
+}
+
 /**/
 /* ### LANDING PAGES ### */
 /**

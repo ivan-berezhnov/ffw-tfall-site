@@ -28,7 +28,7 @@
 
 				var popupContent =
 								'<div class="slug">' + feature.properties.title + '</div>' +
-								feature.properties.blurb;
+								'<div class="widget-map__blurb">' + feature.properties.blurb + '</div>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
@@ -36,11 +36,11 @@
 				});
 			});
 
-			map.markerLayer.on('mouseover',function(e) {			
+			map.markerLayer.on('mouseover',function(e) {
 				e.layer.openPopup();
 			});
 
-			map.markerLayer.on('mouseout',function(e) {			
+			map.markerLayer.on('mouseout',function(e) {
 				e.layer.closePopup();
 			});
 
