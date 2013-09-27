@@ -26,11 +26,6 @@ function teach_for_all_tweets_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
-    'path' => array(
-      'values' => array(
-        'news/latest' => 'news/latest',
-      ),
-    ),
   );
   $context->reactions = array(
     'block' => array(

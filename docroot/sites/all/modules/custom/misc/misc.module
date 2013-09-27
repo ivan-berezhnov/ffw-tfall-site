@@ -6,7 +6,7 @@
 function misc_menu() {
 	module_load_include('inc', 'pathauto');
 
-	$customnodes = array('news');
+	$customnodes = array('news','news/latest');
 
 	foreach ($customnodes as $key)
 		$items[$key] = array(

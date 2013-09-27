@@ -214,7 +214,7 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  $handler->display->display_options['path'] = 'news/latest';
+  $handler->display->display_options['path'] = 'news-latest-view';
 
   /* Display: News Flexslider */
   $handler = $view->new_display('block', 'News Flexslider', 'block_1');
