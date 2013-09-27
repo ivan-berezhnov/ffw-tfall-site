@@ -87,14 +87,14 @@ h1 .red, h2 .red, h3 .red, h4 .red {
 **/
 @font-face {
   font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Book.otf");
+  src: url("../fonts/FSerStdA-Book.ttf"), url("../fonts/FSerStdA-Book.otf");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Bold.otf");
+  src: url("../fonts/FSerStdA-Bold.ttf"), url("../fonts/FSerStdA-Bold.otf");
   font-style: normal;
   font-weight: bold;
 }
@@ -291,27 +291,6 @@ body {
 /**
 * #Global Elements
 **/
-.btn__red {
-  background-color: #cf4753;
-  color: white;
-  display: inline-block;
-  font-family: "Fedra Serif";
-  letter-spacing: 2px;
-  margin-top: 20px;
-  padding: 7px 40px;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-size: 0.64706rem;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-}
-.btn__red:hover {
-  color: #e69740;
-}
-
 .site-slogan {
   color: #91998c;
   line-height: 30px;
@@ -384,10 +363,20 @@ html.js input.throbbing {
   -o-border-radius: 16px;
   border-radius: 16px;
   text-shadow: none;
+  font-size: 11px;
+  font-size: 0.64706rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
   background: #cf4753;
   color: white;
   line-height: 26px;
   padding: 4px 26px;
+  font-family: "Fedra Serif";
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .btn-red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .btn:hover {
   background: #db4b57;

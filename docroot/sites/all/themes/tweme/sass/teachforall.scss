@@ -53,14 +53,14 @@
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Book.otf');
+  src: url('../fonts/FSerStdA-Book.ttf'), url('../fonts/FSerStdA-Book.otf');
        font-style: normal;
        font-weight: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Bold.otf');
+  src: url('../fonts/FSerStdA-Bold.ttf'), url('../fonts/FSerStdA-Bold.otf');
        font-style: normal;
        font-weight: bold;
 }
@@ -237,22 +237,6 @@ body {
 * #Global Elements
 **/
 
-.btn__red {
-  background-color: $red;
-  color: $white;
-  display: inline-block;
-  font-family: "Fedra Serif";
-  letter-spacing: 2px;
-  margin-top: 20px;
-  padding: 7px 40px;
-  text-transform: uppercase;
-  @include font-size(11);
-  @include border-radius(20px);
-  &:hover {
-    color: $orange1;
-  }
-}
-
 .site-slogan {
   color: $grey1;
   line-height: 30px;
@@ -330,10 +314,15 @@ html {
 .btn-red {
   @include border-radius(16px);
   @include single-text-shadow(none);
+  @include font-size(11);
+  @include border-radius(20px);
   background: $red;
   color: $white;
   line-height: 26px;
   padding: 4px 26px;
+  font-family: "Fedra Serif";
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
   &:hover {
     background: $red2;
