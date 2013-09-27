@@ -220,7 +220,7 @@ function news_views_default_views() {
   $handler = $view->new_display('block', 'News Flexslider', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'news-flexslider container';
+  $handler->display->display_options['css_class'] = 'news-flexslider';
   $handler->display->display_options['display_description'] = 'Appears at the top of the news landing page.';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';

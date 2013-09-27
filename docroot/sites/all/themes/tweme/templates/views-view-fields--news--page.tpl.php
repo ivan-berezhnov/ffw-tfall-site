@@ -29,7 +29,7 @@
   <div class="span3">
     <?php print $fields['field_news_image']->content; ?>
   </div>
-  <div class="span9">
+  <div class="span6">
     <div class="slug">
       <?php print $fields['created']->content; ?>
     </div>
