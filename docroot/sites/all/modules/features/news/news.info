@@ -4,7 +4,6 @@ core = 7.x
 package = pubteach4all
 version = 7.x-1.0
 project = news
-dependencies[] = context
 dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = features
