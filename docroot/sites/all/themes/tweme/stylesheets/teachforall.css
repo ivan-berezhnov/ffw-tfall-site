@@ -30,6 +30,7 @@
     #Person
     #News - Node
     #2 Column Layout
+    #Global Problem
 
     ### LANDING PAGES ###
     #News - Landing
@@ -220,7 +221,7 @@ h4, .h4 {
   font-size: 0.94118rem;
 }
 
-.blurb, .no__blurb {
+.blurb, .no__blurb, .top-section__blurb {
   font-weight: bold;
   font-size: 36px;
   font-size: 2.11765rem;
@@ -291,6 +292,31 @@ body {
 /**
 * #Global Elements
 **/
+.jump-link {
+  text-align: center;
+}
+
+.btn__red {
+  background-color: #cf4753;
+  color: white;
+  display: inline-block;
+  font-family: "Fedra Serif";
+  letter-spacing: 2px;
+  margin-top: 20px;
+  padding: 7px 40px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.64706rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+.btn__red:hover {
+  color: #e69740;
+}
+
 .site-slogan {
   color: #91998c;
   line-height: 30px;
@@ -321,7 +347,7 @@ body {
 }
 
 .search-form .input-append .btn {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 .content p:last-child {
@@ -1350,6 +1376,10 @@ img {
 .region-twitter-front {
   margin-top: 10px;
 }
+.region-twitter-front .teachforall-twitter-block {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 @media screen and (max-width: 767px) {
   .region-twitter-front {
     padding: 0 20px;
@@ -1390,12 +1420,14 @@ img {
   }
 }
 
-#block-views-tfall-tweets-block {
+#block-views-tfall-tweets-block,
+.teachforall-twitter-block {
   background-color: #e69740;
   margin-bottom: 20px;
   padding: 20px;
 }
-#block-views-tfall-tweets-block h2 {
+#block-views-tfall-tweets-block h2,
+.teachforall-twitter-block h2 {
   color: white;
   letter-spacing: 4px;
   text-align: center;
@@ -1978,6 +2010,85 @@ img {
 
 .node-page-2-col-layout .content > .group_link_wrapper {
   text-align: center;
+}
+
+/**/
+/**
+* #Global Problem
+**/
+.top-section {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .top-section {
+    margin-bottom: 20px;
+  }
+}
+.top-section img {
+  width: 100%;
+}
+
+.top-section__title {
+  line-height: 1em;
+  font-size: 34px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 980px) {
+  .top-section__title {
+    font-size: 24px;
+    font-size: 1.41176rem;
+  }
+}
+
+.top-section__subheader {
+  margin-bottom: 30px;
+}
+
+.top-section__subheader,
+.top-section__description {
+  font-size: 18px;
+  font-size: 1.05882rem;
+}
+@media screen and (max-width: 980px) {
+  .top-section__subheader,
+  .top-section__description {
+    line-height: 1.2em;
+    font-size: 14px;
+    font-size: 0.82353rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-section__subheader,
+  .top-section__description {
+    font-size: 18px;
+    font-size: 1.05882rem;
+  }
+}
+
+.top-section__info-wrapper {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: auto;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+}
+@media screen and (max-width: 980px) {
+  .top-section__info-wrapper {
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+.top-section__blurb {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.global-problem__body {
+  margin: 30px 0 10px 0;
 }
 
 /**/

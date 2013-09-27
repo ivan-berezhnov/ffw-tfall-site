@@ -55,7 +55,7 @@ function global_problem_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'global_problem_top_section_image',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -80,7 +80,7 @@ function global_problem_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'preview_image_style' => 'global_problem_top_section_image',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -241,6 +241,60 @@ function global_problem_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-global_problem-field_link'
+  $field_instances['node-global_problem-field_link'] = array(
+    'bundle' => 'global_problem',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_link',
+    'label' => 'Jump Link',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => 'btn__red',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'user',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-global_problem-field_top_section'
   $field_instances['node-global_problem-field_top_section'] = array(
     'bundle' => 'global_problem',
@@ -285,6 +339,7 @@ function global_problem_field_default_field_instances() {
   t('Body');
   t('Description');
   t('Image');
+  t('Jump Link');
   t('Subheader');
   t('Title');
   t('top section');

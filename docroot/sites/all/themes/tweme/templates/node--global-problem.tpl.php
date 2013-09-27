@@ -1,19 +1,17 @@
 <div class="container">
   <h2 class="page-title"><?php print $title; ?></h2>
 
-      <div class="row-fluid">
-        <div class="row-fluid">
-          <div class="span12">
-            <?php print render($content['field_top_section'][0]); ?>
-            <?php print render($content['field_top_section'][1]); ?>
-            <?php print render($content['field_top_section'][2]); ?>
-          </div>
-        </div>
-      </div>
+  <div class="row-fluid">
+    <div class="span12">
+      <?php print render($content['field_top_section']); ?>
+    </div>
+  </div>
 
   <div class="row-fluid">
     <div class="span12">
-      <h2><?php print render($content['field_globalproblem_subheader']); ?></h2>
+      <div class="top-section__blurb">
+        <?php print render($content['field_globalproblem_subheader']); ?>
+      </div>
     </div>
   </div>
 </div>
@@ -34,5 +32,10 @@
 </div>
 
 <div class="container">
-  <?php print render($content['body']); ?>
+  <div class="global-problem__body">
+    <?php print render($content['body']); ?>
+  </div>
+  <div class="jump-link">
+    <?php print render($content['field_link']); ?>
+  </div>
 </div>

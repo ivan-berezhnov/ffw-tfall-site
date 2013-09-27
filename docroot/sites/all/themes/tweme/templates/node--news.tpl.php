@@ -6,7 +6,7 @@
       <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
 
     	<div class="row-fluid">
-    	  <div class="span12">
+    	  <div class="span9">
 
   		    <h1 class="news__title"><?php print $title; ?></h1>
 
@@ -48,6 +48,13 @@
   				</div>
 
     	  </div>
+        <div class="span3">
+          <?php print render(views_embed_view('tfall_tweets','block')); ?>
+          <?php if (module_exists('widget_facebook')): ?>
+            <?php $widget_facebook = widget_facebook_embed_homepage() ;?>
+            <?php print render($widget_facebook); ?>
+          <?php endif; ?>
+        </div>
     	</div>
 
     </div>
