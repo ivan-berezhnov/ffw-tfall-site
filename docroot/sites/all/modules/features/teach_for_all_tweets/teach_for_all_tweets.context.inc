@@ -28,7 +28,6 @@ function teach_for_all_tweets_context_default_contexts() {
     ),
     'path' => array(
       'values' => array(
-        'news' => 'news',
         'news/latest' => 'news/latest',
       ),
     ),
@@ -41,12 +40,6 @@ function teach_for_all_tweets_context_default_contexts() {
           'delta' => 'tfall_tweets-block',
           'region' => 'sidebar_second',
           'weight' => '-10',
-        ),
-        'widget_facebook-tfall_facebook_block' => array(
-          'module' => 'widget_facebook',
-          'delta' => 'tfall_facebook_block',
-          'region' => 'sidebar_second',
-          'weight' => '-9',
         ),
       ),
     ),
