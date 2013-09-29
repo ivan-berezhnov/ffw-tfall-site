@@ -21,14 +21,22 @@
             </div>
           </div>
 
-          <div class="news__image">
-            <?php if (isset($content['field_network_learning_image'])): ?>
-              <?php print render($content['field_network_learning_image']); ?>
-              <div class="news__image-caption">
-                <?php print render($content['field_network_learning_image']['#items'][0]['title']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
+          <?php if (isset($content['field_network_learning_video_lin'])): ?>
+            <div class="news__image news__video">
+              <?php print render($content['field_network_learning_video_lin']); ?>
+            </div>
+          <?php else: ?>
+            <div class="news__image">
+              <?php if (isset($content['field_network_learning_image'])): ?>
+                <?php print render($content['field_network_learning_image']); ?>
+                <div class="news__image-caption">
+                  <?php print render($content['field_network_learning_image']['#items'][0]['title']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+
+
 
           <div class="news__content">
             <?php if (isset($content['body'])): ?>
