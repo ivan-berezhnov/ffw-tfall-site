@@ -56,9 +56,7 @@ function network_learning_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_network_learning';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_network_learning'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -74,7 +72,6 @@ function network_learning_strongarm() {
   $strongarm->name = 'node_options_network_learning';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_network_learning'] = $strongarm;
 
@@ -89,7 +86,7 @@ function network_learning_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_network_learning';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_network_learning'] = $strongarm;
 
   return $export;

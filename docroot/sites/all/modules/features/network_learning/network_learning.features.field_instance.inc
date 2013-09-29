@@ -62,7 +62,7 @@ function network_learning_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -101,7 +101,7 @@ function network_learning_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -122,21 +122,21 @@ function network_learning_field_default_field_instances() {
     'label' => 'Network Learning image',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
-      'title_field' => 0,
+      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'preview_image_style' => 'thumbnail',
+        'preview_image_style' => 'news_thumbnail',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
@@ -152,10 +152,10 @@ function network_learning_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -174,12 +174,12 @@ function network_learning_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'taxonomy',
+      'module' => 'options',
       'settings' => array(
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'options_select',
       'weight' => 8,
     ),
   );
@@ -192,7 +192,7 @@ function network_learning_field_default_field_instances() {
     'description' => 'Widget text for network learning video thumbnail embed code.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -232,7 +232,7 @@ function network_learning_field_default_field_instances() {
     'description' => 'caption for embedded video.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -272,7 +272,7 @@ function network_learning_field_default_field_instances() {
     'description' => 'Widget text for Network Learning video widget embed code.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
