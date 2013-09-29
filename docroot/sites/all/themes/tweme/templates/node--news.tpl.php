@@ -24,14 +24,18 @@
             </div>
   				</div>
 
-  				<div class="news__image">
-  					<?php if (isset($content['field_news_image'])): ?>
-  						<?php print render($content['field_news_image']); ?>
-              <div class="news__image-caption">
-                <?php print render($content['field_news_image']['#items'][0]['title']); ?>
-              </div>
-  					<?php endif; ?>
-  				</div>
+          <?php if (isset($content['field_embedded_video'])): ?>
+            <div class="news__image news__video">
+              <?php print render($content['field_embedded_video']); ?>
+            </div>
+          <?php else: ?>
+          <div class="news__image">
+            <?php print render($content['field_news_image']); ?>
+            <div class="news__image-caption">
+              <?php print render($content['field_news_image']['#items'][0]['title']); ?>
+            </div>
+          </div>
+          <?php endif; ?>
 
   				<div class="news__content">
   					<?php if (isset($content['body'])): ?>
