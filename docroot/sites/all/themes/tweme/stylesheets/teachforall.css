@@ -383,7 +383,7 @@ html.js input.throbbing {
   background-color: #cf4753;
 }
 
-.btn-red, .view-persons .view-footer a.btn, .view-supporters .btn {
+.btn-red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -405,7 +405,7 @@ html.js input.throbbing {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.btn-red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .btn:hover {
+.btn-red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
 }
 
@@ -1675,6 +1675,7 @@ img {
   color: #e69740;
   text-transform: uppercase;
   letter-spacing: 2px;
+  word-spacing: 2px;
 }
 .view-supporters h3 + p {
   margin-bottom: 19px;
@@ -1729,6 +1730,9 @@ img {
   .view-supporters p {
     padding: 0;
   }
+}
+.view-supporters .view-footer {
+  padding-top: 15px;
 }
 
 /**/

@@ -1740,6 +1740,7 @@ img {max-width: 100%;}
     color: $orange1;
     text-transform: uppercase;
     letter-spacing: 2px;
+    word-spacing: 2px;
 
     + p {
       margin-bottom: 19px;
@@ -1809,8 +1810,12 @@ img {max-width: 100%;}
     }
   }
 
-  .btn {
-    @extend .btn-red;
+  .view-footer {
+    padding-top: 15px;
+
+    .btn {
+      @extend .btn-red;
+    }
   }
 }
 
