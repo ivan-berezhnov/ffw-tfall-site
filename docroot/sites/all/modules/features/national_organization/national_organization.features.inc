@@ -17,6 +17,13 @@ function national_organization_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function national_organization_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_image_default_styles().
  */
 function national_organization_image_default_styles() {
@@ -60,6 +67,14 @@ function national_organization_node_info() {
       'description' => t('national organization content type'),
       'has_title' => '1',
       'title_label' => t('Name'),
+      'help' => '',
+    ),
+    'national_organizations' => array(
+      'name' => t('National Organizations'),
+      'base' => 'node_content',
+      'description' => t('"National organization v2 page" - one page with custom fields and views.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
       'help' => '',
     ),
   );

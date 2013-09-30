@@ -375,6 +375,46 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organization-field_key_twitter'
+  $field_instances['node-national_organization-field_key_twitter'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_key_twitter',
+    'label' => 'Twitter API key',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 15,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_links'
   $field_instances['node-national_organization-field_links'] = array(
     'bundle' => 'national_organization',
@@ -907,6 +947,180 @@ function national_organization_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-national_organizations-field_nov2_intro'
+  $field_instances['node-national_organizations-field_nov2_intro'] = array(
+    'bundle' => 'national_organizations',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nov2_intro',
+    'label' => 'Introduction',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organizations-field_nov2_links'
+  $field_instances['node-national_organizations-field_nov2_links'] = array(
+    'bundle' => 'national_organizations',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nov2_links',
+    'label' => 'Links',
+    'required' => 0,
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'required',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organizations-field_nov2_principles_left'
+  $field_instances['node-national_organizations-field_nov2_principles_left'] = array(
+    'bundle' => 'national_organizations',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nov2_principles_left',
+    'label' => 'Principles #1',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organizations-field_nov2_principles_right'
+  $field_instances['node-national_organizations-field_nov2_principles_right'] = array(
+    'bundle' => 'national_organizations',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nov2_principles_right',
+    'label' => 'Principles #2',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Active Flag');
@@ -919,6 +1133,7 @@ function national_organization_field_default_field_instances() {
   t('Country');
   t('Enter cities with schools text here. This text will appear after "xx schools in " i.e. 19 schools in <strong>Lohore and Karachi</strong>.');
   t('Facebook Account Name');
+  t('Introduction');
   t('Links');
   t('Living below Poverty Line');
   t('Location');
@@ -929,11 +1144,14 @@ function national_organization_field_default_field_instances() {
   t('Only showing those NOs that are deemed \'active\' on the map. This should allow TFA to create new NOs without them showing up until they feel all the needed information is there');
   t('Please enter national organization twitter widget text to embed twitter feed');
   t('Population');
+  t('Principles #1');
+  t('Principles #2');
   t('Program Launched');
   t('Schools');
   t('Spotlights');
   t('Teachers Active');
   t('To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>');
+  t('Twitter API key');
   t('blurb/compelling statistic text');
   t('link(s) to organization\'s website');
 

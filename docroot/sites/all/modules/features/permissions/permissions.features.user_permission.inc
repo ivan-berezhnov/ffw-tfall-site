@@ -415,12 +415,26 @@ function permissions_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'create global_problem content'.
+  $permissions['create global_problem content'] = array(
+    'name' => 'create global_problem content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create national_organization content'.
   $permissions['create national_organization content'] = array(
     'name' => 'create national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create national_organizations content'.
+  $permissions['create national_organizations content'] = array(
+    'name' => 'create national_organizations content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -487,12 +501,26 @@ function permissions_user_default_permissions() {
     'module' => 'shortcut',
   );
 
+  // Exported permission: 'delete any global_problem content'.
+  $permissions['delete any global_problem content'] = array(
+    'name' => 'delete any global_problem content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any national_organization content'.
   $permissions['delete any national_organization content'] = array(
     'name' => 'delete any national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any national_organizations content'.
+  $permissions['delete any national_organizations content'] = array(
+    'name' => 'delete any national_organizations content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -550,12 +578,26 @@ function permissions_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
+  // Exported permission: 'delete own global_problem content'.
+  $permissions['delete own global_problem content'] = array(
+    'name' => 'delete own global_problem content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own national_organization content'.
   $permissions['delete own national_organization content'] = array(
     'name' => 'delete own national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own national_organizations content'.
+  $permissions['delete own national_organizations content'] = array(
+    'name' => 'delete own national_organizations content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -641,9 +683,27 @@ function permissions_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: 'edit any global_problem content'.
+  $permissions['edit any global_problem content'] = array(
+    'name' => 'edit any global_problem content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any national_organization content'.
   $permissions['edit any national_organization content'] = array(
     'name' => 'edit any national_organization content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any national_organizations content'.
+  $permissions['edit any national_organizations content'] = array(
+    'name' => 'edit any national_organizations content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
@@ -695,9 +755,27 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own global_problem content'.
+  $permissions['edit own global_problem content'] = array(
+    'name' => 'edit own global_problem content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own national_organization content'.
   $permissions['edit own national_organization content'] = array(
     'name' => 'edit own national_organization content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own national_organizations content'.
+  $permissions['edit own national_organizations content'] = array(
+    'name' => 'edit own national_organizations content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),

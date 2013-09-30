@@ -110,3 +110,49 @@ function tweme_preprocess_node(&$vars) {
 		$function_name($vars);
 	}
 }
+
+function tweme_preprocess_views_view_unformatted(&$vars) {
+	$function_name = __FUNCTION__ . '__' . $vars['view']->name;
+	if (function_exists($function_name)) {
+		$function_name($vars);
+	}
+}
+
+function tweme_preprocess_views_view(&$vars) {
+	$function_name = __FUNCTION__ . '__' . $vars['view']->name;
+	if (function_exists($function_name)) {
+		$function_name($vars);
+	}
+}
+
+function tweme_preprocess_views_view_unformatted__nos_az(&$vars) {
+
+	$results = $vars['view']->result;
+	$rows = $vars['rows'];
+
+	$groups = array();
+
+	$n = 0;
+	foreach ($results as $result) {
+		$groups[$result->field_data_field_country_field_country_value][] = $rows[$n];
+		$n++;
+	}
+
+	$count = sizeof($groups);
+
+	$cols = array();
+	$spread = array(ceil($count / 3), ceil(($count - ceil($count / 3)) / 2), $count - ceil($count / 3) - ceil(($count - ceil($count / 3)) / 2));
+
+	$c = $n = 0;
+	foreach ($groups as $gk => $gv) {
+		if ($n < $spread[$c]) {
+			$cols[$c][$gk] = $gv;
+			$n++;
+		} else {
+			$n = 0;
+			$c++;
+		}
+	}
+
+	$vars['cols'] = $cols;
+}
