@@ -1863,7 +1863,7 @@ img {max-width: 100%;}
 
 .network-learning-front-block {
   margin-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 30px;
 
   a.network-learning-main {
     @include font-size(16);
@@ -1885,9 +1885,17 @@ img {max-width: 100%;}
     margin-bottom: 15px;
     display: inline-block;
 
-    .views-row {
+    .span4 {
       .nl-front-image {
         margin-bottom: 20px;
+
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
       }
 
       .nl-front-tag {
@@ -1908,6 +1916,23 @@ img {max-width: 100%;}
 
           &:hover {
             color: $red
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+        text-align: center;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .nl-front-image {
+          margin-bottom: 10px;
+
+          a img {
+            max-width: 370px;
           }
         }
       }

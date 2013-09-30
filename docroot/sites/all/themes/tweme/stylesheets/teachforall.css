@@ -1784,7 +1784,7 @@ img {
 **/
 .network-learning-front-block {
   margin-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .network-learning-front-block a.network-learning-main {
   font-size: 16px;
@@ -1805,10 +1805,16 @@ img {
   margin-bottom: 15px;
   display: inline-block;
 }
-.network-learning-front-block .view-network-learning .views-row .nl-front-image {
+.network-learning-front-block .view-network-learning .span4 .nl-front-image {
   margin-bottom: 20px;
 }
-.network-learning-front-block .view-network-learning .views-row .nl-front-tag {
+.network-learning-front-block .view-network-learning .span4 .nl-front-image a {
+  display: block;
+}
+.network-learning-front-block .view-network-learning .span4 .nl-front-image a img {
+  width: 100%;
+}
+.network-learning-front-block .view-network-learning .span4 .nl-front-tag {
   font-size: 12px;
   font-size: 0.70588rem;
   color: #e69740;
@@ -1817,15 +1823,30 @@ img {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-.network-learning-front-block .view-network-learning .views-row .nl-front-title a {
+.network-learning-front-block .view-network-learning .span4 .nl-front-title a {
   font-size: 22px;
   font-size: 1.29412rem;
   font-family: "Fedra Serif";
   color: #4d4d4d;
   line-height: 24px;
 }
-.network-learning-front-block .view-network-learning .views-row .nl-front-title a:hover {
+.network-learning-front-block .view-network-learning .span4 .nl-front-title a:hover {
   color: #cf4753;
+}
+@media screen and (max-width: 767px) {
+  .network-learning-front-block .view-network-learning .span4 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .network-learning-front-block .view-network-learning .span4:first-child {
+    margin-top: 0;
+  }
+  .network-learning-front-block .view-network-learning .span4 .nl-front-image {
+    margin-bottom: 10px;
+  }
+  .network-learning-front-block .view-network-learning .span4 .nl-front-image a img {
+    max-width: 370px;
+  }
 }
 
 /**/
