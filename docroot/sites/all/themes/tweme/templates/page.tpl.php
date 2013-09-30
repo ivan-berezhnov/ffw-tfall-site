@@ -110,6 +110,10 @@
         <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
+        <div class="footer__search">
+          <p>Search the Site</p>
+          <?php print $navbar_search ?>
+        </div>
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2013<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>

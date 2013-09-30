@@ -36,6 +36,7 @@
     #News - Landing
     #Privacy Policy
     #A Global Problem
+    #Search
 **/
 /**
 *   #Imports
@@ -1078,6 +1079,30 @@ h2.page-title {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
+}
+
+.footer__search {
+  margin: 10px 0;
+}
+.footer__search p {
+  color: #dfd9c9;
+  font-family: "Fedra", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-size: 0.76471rem;
+}
+.footer__search .navbar-search {
+  float: none;
+}
+.footer__search .navbar-search .search-query {
+  background-color: #dfd9c9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
 }
 
 /**/
@@ -2269,6 +2294,22 @@ img {
 **/
 #worldmap.worldmap__details {
   background-color: #92b4a6;
+}
+
+/**/
+/**
+* #Search
+**/
+.search-form .container-inline {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.search-result {
+  margin-bottom: 30px;
+}
+.search-result:last-child {
+  margin-bottom: 0;
 }
 
 /**/
