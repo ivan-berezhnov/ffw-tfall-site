@@ -883,6 +883,8 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );
@@ -917,9 +919,7 @@ function permissions_user_default_permissions() {
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
+    'roles' => array(),
     'module' => 'search',
   );
 
