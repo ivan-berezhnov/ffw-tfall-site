@@ -26,33 +26,53 @@
         <?php endif; ?>
 
         <div class="no__info-block no__stats">
-          <div class="slug"><?php print t('Program Snapshot'); ?></div>
+            <?php
+            ?>
+          <div class="slug">
+              <?php
+              //set boolean values for each of the "Program Snapshot" fields to see if they are set.
+                $is_field_program_launched_content_set = isset($content['field_program_launched']);
+                $is_field_cohorts_placed_content_set = isset($content['field_cohorts_placed']);
+                $is_field_teachers_active_content_set = isset($content['field_teachers_active']);
+                $is_field_field_alumni_set = isset($content['field_alumni']);
+                $is_field_field_schools_set = isset($content['field_schools']);
+              //Check to see if any of the Program Snapshot fields are populated then print the title if they are
+              if(
+                    $is_field_program_launched_content_set ||
+                    $is_field_cohorts_placed_content_set ||
+                    $is_field_teachers_active_content_set ||
+                    $is_field_field_alumni_set ||
+                    $is_field_field_schools_set){
+                    print t('Program Snapshot');
+                }
+              ?>
+          </div>
 
-          <?php if (isset($content['field_program_launched'])): ?>
+          <?php if ($is_field_program_launched_content_set): ?>
             <div class="no__stat">
   						<strong><?php print render($content['field_program_launched']); ?></strong> program launched<br />
   					</div>
           <?php endif; ?>
 
-          <?php if (isset($content['field_cohorts_placed'])): ?>
+          <?php if ($is_field_cohorts_placed_content_set): ?>
             <div class="no__stat">
     					<strong><?php print render($content['field_cohorts_placed']); ?></strong> cohorts placed<br />
     				</div>
           <?php endif; ?>
 
-          <?php if (isset($content['field_teachers_active'])): ?>
+          <?php if ($is_field_teachers_active_content_set): ?>
             <div class="no__stat">
     					<strong><?php print render($content['field_teachers_active']); ?></strong> teachers active<br />
             </div>
           <?php endif; ?>
 
-          <?php if (isset($content['field_alumni'])): ?>
+          <?php if ($is_field_field_alumni_set): ?>
             <div class="no__stat">
     					<strong><?php print render($content['field_alumni']); ?></strong> alumni<br />
             </div>
           <?php endif; ?>
 
-          <?php if (isset($content['field_schools'])): ?>
+          <?php if ($is_field_field_schools_set): ?>
             <div class="no__stat">
   						<strong><?php print render($content['field_schools']); ?></strong> schools
               <?php if (isset($content['field_city_1'])): ?>
@@ -68,22 +88,37 @@
         </div>
 
         <div class="no__info-block no__stats">
-          <div class="slug"><?php print t('Local Context'); ?></div>
+            <div class="slug">
+                <?php
+                //set boolean values for each of the "Program Snapshot" fields to see if they are set.
+                $is_field_population_content_set = isset($content['field_population']);
+                $is_field_living_below_poverty_line_content_set = isset($content['field_living_below_poverty_line']);
+                $is_field_avg_total_years_of_edu_content_set = isset($content['field_avg_total_years_of_edu']);
+                //Check to see if any of the Program Snapshot fields are populated then print the title if they are
+                //Check to see if any of the Program Snapshot fields are populated then print the title if they are
+                if(
+                  $is_field_population_content_set ||
+                  $is_field_living_below_poverty_line_content_set ||
+                  $is_field_avg_total_years_of_edu_content_set){
+                  print t('Local Context');
+              }
+              ?>
+          </div>
 
           <div class="no__stat">
-  					<?php if (isset($content['field_population'])): ?>
+  					<?php if ($is_field_population_content_set): ?>
   						<strong><?php print render($content['field_population']); ?></strong> population<br />
   					<?php endif; ?>
           </div>
 
           <div class="no__stat">
-  					<?php if (isset($content['field_living_below_poverty_line'])): ?>
+  					<?php if ($is_field_living_below_poverty_line_content_set): ?>
   						<strong><?php print render($content['field_living_below_poverty_line']); ?>%</strong> living below poverty line<br />
   					<?php endif; ?>
           </div>
 
           <div class="no__stat">
-  					<?php if (isset($content['field_avg_total_years_of_edu'])): ?>
+  					<?php if ($is_field_avg_total_years_of_edu_content_set): ?>
   						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avg. total years of education<br />
   					<?php endif; ?>
           </div>
