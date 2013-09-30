@@ -36,6 +36,7 @@
     ### LANDING PAGES ###
     #News - Landing
     #Privacy Policy
+    #A Global Problem
 **/
 
 /**
@@ -2328,5 +2329,16 @@ img {max-width: 100%;}
   }
 }
 
+/**/
+
+/**
+* #A Global Problem
+**/
+
+#worldmap {
+  &.worldmap__details {
+    background-color: $map_color2;
+  }
+}
 
 /**/

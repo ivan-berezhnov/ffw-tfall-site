@@ -290,7 +290,7 @@ function network_learning_field_default_field_instances() {
     'label' => 'Network Learning video widget embed code',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(

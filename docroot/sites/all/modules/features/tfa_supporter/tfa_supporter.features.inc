@@ -14,6 +14,38 @@ function tfa_supporter_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function tfa_supporter_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: supporter_list
+  $nodequeues['supporter_list'] = array(
+    'name' => 'supporter_list',
+    'title' => 'supporter list',
+    'subqueue_title' => '',
+    'size' => 5,
+    'link' => '',
+    'link_remove' => '',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 0,
+    'reference' => 0,
+    'reverse' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'tfa_supporter',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
  * Implements hook_node_info().
  */
 function tfa_supporter_node_info() {
