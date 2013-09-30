@@ -107,6 +107,18 @@ h4, .h4 {
   font-size: 1.41176rem;
 }
 
+.large-body {
+  color: #91998c;
+  font-family: "Fedra Serif";
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-size: 1rem;
+}
+.large-body:last-child {
+  margin-bottom: 0;
+}
+
 /**
  * Generic elements.
  */
