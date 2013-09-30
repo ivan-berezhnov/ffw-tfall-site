@@ -48,7 +48,7 @@ function news_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -86,47 +86,6 @@ function news_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-news-field_embedded_video'
-  $field_instances['node-news-field_embedded_video'] = array(
-    'bundle' => 'news',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'video_embed_field',
-        'settings' => array(
-          'description' => 1,
-          'video_style' => 'normal',
-        ),
-        'type' => 'video_embed_field',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_embedded_video',
-    'label' => 'Embedded Video',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'video_embed_field',
-      'settings' => array(),
-      'type' => 'video_embed_field_video',
-      'weight' => 5,
     ),
   );
 
@@ -230,7 +189,6 @@ function news_field_default_field_instances() {
   t('Body');
   t('Byline');
   t('Category');
-  t('Embedded Video');
   t('Image');
 
   return $field_instances;
