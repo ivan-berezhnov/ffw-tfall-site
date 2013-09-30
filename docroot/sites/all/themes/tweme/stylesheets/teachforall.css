@@ -16,13 +16,13 @@
     #Supporters Widget
     #Marquee
     #MapBox
-    #Network Learning
     #Twitter
 
     ### VIEWS ###
     #News Listing
     #Persons
     #Supporters
+    #Network Learning
 
     ### NODES ###
     #National Organizations
@@ -1363,15 +1363,6 @@ img {
 
 /**/
 /**
-* #Network Learning
-**/
-.network-learning {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/**/
-/**
 * #Twitter
 **/
 .region-twitter-front {
@@ -1738,6 +1729,56 @@ img {
   .view-supporters p {
     padding: 0;
   }
+}
+
+/**/
+/**
+* #Network Learning
+**/
+.network-learning-front-block {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.network-learning-front-block a.network-learning-main {
+  font-size: 16px;
+  font-size: 0.94118rem;
+  font-family: "Fedra Serif";
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.network-learning-front-block a.network-learning-main:hover {
+  color: #cf4753;
+}
+.network-learning-front-block .view-network-learning {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.network-learning-front-block .view-network-learning .views-row .nl-front-image {
+  margin-bottom: 20px;
+}
+.network-learning-front-block .view-network-learning .views-row .nl-front-tag {
+  font-size: 12px;
+  font-size: 0.70588rem;
+  color: #e69740;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.network-learning-front-block .view-network-learning .views-row .nl-front-title a {
+  font-size: 22px;
+  font-size: 1.29412rem;
+  font-family: "Fedra Serif";
+  color: #4d4d4d;
+  line-height: 24px;
+}
+.network-learning-front-block .view-network-learning .views-row .nl-front-title a:hover {
+  color: #cf4753;
 }
 
 /**/

@@ -17,13 +17,13 @@
     #Supporters Widget
     #Marquee
     #MapBox
-    #Network Learning
     #Twitter
 
     ### VIEWS ###
     #News Listing
     #Persons
     #Supporters
+    #Network Learning
 
     ### NODES ###
     #National Organizations
@@ -1421,17 +1421,6 @@ img {max-width: 100%;}
 /**/
 
 /**
-* #Network Learning
-**/
-
-.network-learning {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/**/
-
-/**
 * #Twitter
 **/
 
@@ -1822,6 +1811,66 @@ img {max-width: 100%;}
 
   .btn {
     @extend .btn-red;
+  }
+}
+
+/**/
+
+/**
+* #Network Learning
+**/
+
+.network-learning-front-block {
+  margin-bottom: 10px;
+  padding-top: 20px;
+
+  a.network-learning-main {
+    @include font-size(16);
+    font-family: "Fedra Serif";
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: $orange1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &:hover {
+      color: $red
+    }
+  }
+
+  .view-network-learning {
+    margin-bottom: 15px;
+    display: inline-block;
+
+    .views-row {
+      .nl-front-image {
+        margin-bottom: 20px;
+      }
+
+      .nl-front-tag {
+        @include font-size(12);
+        color: $orange1;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+      }
+
+      .nl-front-title {
+        a {
+          @include font-size(22);
+          font-family: "Fedra Serif";
+          color: $grey2;
+          line-height: 24px;
+
+          &:hover {
+            color: $red
+          }
+        }
+      }
+    }
   }
 }
 

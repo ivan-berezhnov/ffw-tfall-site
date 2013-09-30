@@ -96,12 +96,12 @@
 </div>
 
 <!-- network learning -->
-<div class="container-wrapper network-learning">
+<div class="container-wrapper network-learning-front-block">
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-        <h2><?php print t('Network Learning'); ?></h2>
-				#TODO
+        <a href="network-learning" class="network-learning-main"><?php print t('Network Learning'); ?></a>
+        <?php print render(views_embed_view('network_learning','network_learning_front_block')); //front block ?>
       </div>
 		</div>
 	</div>

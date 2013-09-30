@@ -14,6 +14,77 @@ function network_learning_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function network_learning_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function network_learning_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: network_learning_front_list
+  $nodequeues['network_learning_front_list'] = array(
+    'name' => 'network_learning_front_list',
+    'title' => 'network learning front list',
+    'subqueue_title' => '',
+    'size' => 3,
+    'link' => '',
+    'link_remove' => '',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 0,
+    'reference' => 0,
+    'reverse' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'network_learning',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function network_learning_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: network_learning_front_thumbnail.
+  $styles['network_learning_front_thumbnail'] = array(
+    'name' => 'network_learning_front_thumbnail',
+    'label' => 'Network Learning Front Thumbnail (320 x 180)',
+    'effects' => array(
+      2 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 320,
+          'height' => 180,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function network_learning_node_info() {
