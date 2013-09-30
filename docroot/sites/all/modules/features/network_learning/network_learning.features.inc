@@ -61,9 +61,9 @@ function network_learning_image_default_styles() {
   // Exported image style: network_learning_front_thumbnail.
   $styles['network_learning_front_thumbnail'] = array(
     'name' => 'network_learning_front_thumbnail',
-    'label' => 'Network Learning Front Thumbnail (320 x 180)',
+    'label' => 'Network Learning Front Thumbnail (370 x 210)',
     'effects' => array(
-      2 => array(
+      1 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -73,8 +73,8 @@ function network_learning_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 320,
-          'height' => 180,
+          'width' => 370,
+          'height' => 210,
         ),
         'weight' => 1,
       ),

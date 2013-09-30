@@ -309,6 +309,8 @@ function network_learning_views_default_views() {
   /* Display: Network Learning Front */
   $handler = $view->new_display('block', 'Network Learning Front', 'network_learning_front_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'row-fluid';
   $handler->display->display_options['display_description'] = 'Content list (3 items) ';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
