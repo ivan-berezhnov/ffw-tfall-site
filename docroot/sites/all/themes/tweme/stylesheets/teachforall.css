@@ -419,7 +419,7 @@ html.js input.throbbing {
   background: #cf4753;
   color: white;
   line-height: 26px;
-  padding: 4px 26px;
+  padding: 4px 44px;
   font-family: "Fedra Serif";
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -2403,7 +2403,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";
