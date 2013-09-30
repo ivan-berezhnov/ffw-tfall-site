@@ -70,7 +70,7 @@ function national_organization_node_info() {
       'help' => '',
     ),
     'national_organizations' => array(
-      'name' => t('National Organizations'),
+      'name' => t('Page - National Organizations'),
       'base' => 'node_content',
       'description' => t('"National organization v2 page" - one page with custom fields and views.'),
       'has_title' => '1',

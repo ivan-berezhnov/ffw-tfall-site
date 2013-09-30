@@ -51,7 +51,7 @@ function global_problem_image_default_styles() {
 function global_problem_node_info() {
   $items = array(
     'global_problem' => array(
-      'name' => t('Global Problem'),
+      'name' => t('Page - A Global Problem'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

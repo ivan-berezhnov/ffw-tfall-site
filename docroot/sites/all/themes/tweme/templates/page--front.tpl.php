@@ -101,7 +101,7 @@
 		<div class="row-fluid">
 			<div class="span12">
         <a href="network-learning" class="network-learning-main"><?php print t('Network Learning'); ?></a>
-        <?php print render(views_embed_view('network_learning','network_learning_front_block')); //front block ?>
+        <?php print $network_learning_block; //front block ?>
       </div>
 		</div>
 	</div>

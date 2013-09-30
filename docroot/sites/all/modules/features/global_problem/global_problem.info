@@ -1,4 +1,4 @@
-name = global problem
+name = pubteachforall_global_problem
 description = global problem content type
 core = 7.x
 package = pubteach4all
