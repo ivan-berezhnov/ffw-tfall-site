@@ -54,6 +54,47 @@ function network_learning_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-network_learning-field_embedded_video'
+  $field_instances['node-network_learning-field_embedded_video'] = array(
+    'bundle' => 'network_learning',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'video_embed_field',
+        'settings' => array(
+          'description' => 1,
+          'video_style' => 'normal',
+        ),
+        'type' => 'video_embed_field',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_embedded_video',
+    'label' => 'Embedded Video',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'video_embed_field',
+      'settings' => array(),
+      'type' => 'video_embed_field_video',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-network_learning-field_network_learning_byline'
   $field_instances['node-network_learning-field_network_learning_byline'] = array(
     'bundle' => 'network_learning',
@@ -184,138 +225,13 @@ function network_learning_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-network_learning-field_network_learning_vid_thumb'
-  $field_instances['node-network_learning-field_network_learning_vid_thumb'] = array(
-    'bundle' => 'network_learning',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Widget text for network learning video thumbnail embed code.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_network_learning_vid_thumb',
-    'label' => 'Network Learning vid thumbnail embed code',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance: 'node-network_learning-field_network_learning_video_cap'
-  $field_instances['node-network_learning-field_network_learning_video_cap'] = array(
-    'bundle' => 'network_learning',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'caption for embedded video.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_network_learning_video_cap',
-    'label' => 'Network Learning video caption',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance: 'node-network_learning-field_network_learning_video_lin'
-  $field_instances['node-network_learning-field_network_learning_video_lin'] = array(
-    'bundle' => 'network_learning',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Widget text for Network Learning video widget embed code.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_network_learning_video_lin',
-    'label' => 'Network Learning video widget embed code',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 10,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Embedded Video');
   t('Network Learning byline');
   t('Network Learning image');
   t('Network Learning tags');
-  t('Network Learning vid thumbnail embed code');
-  t('Network Learning video caption');
-  t('Network Learning video widget embed code');
-  t('Widget text for Network Learning video widget embed code.');
-  t('Widget text for network learning video thumbnail embed code.');
-  t('caption for embedded video.');
 
   return $field_instances;
 }
