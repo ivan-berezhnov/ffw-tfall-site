@@ -274,6 +274,7 @@ function permissions_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -427,6 +428,7 @@ function permissions_user_default_permissions() {
     'name' => 'create national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -443,6 +445,7 @@ function permissions_user_default_permissions() {
     'name' => 'create news content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -461,6 +464,7 @@ function permissions_user_default_permissions() {
     'name' => 'create person content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -470,15 +474,7 @@ function permissions_user_default_permissions() {
     'name' => 'create spotlight content',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create supporter content'.
-  $permissions['create supporter content'] = array(
-    'name' => 'create supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -513,6 +509,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -529,6 +526,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any news content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -547,6 +545,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any person content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -556,15 +555,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any spotlight content',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any supporter content'.
-  $permissions['delete any supporter content'] = array(
-    'name' => 'delete any supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -590,6 +581,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -606,6 +598,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own news content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -624,6 +617,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own person content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -633,15 +627,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own spotlight content',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own supporter content'.
-  $permissions['delete own supporter content'] = array(
-    'name' => 'delete own supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -650,6 +636,7 @@ function permissions_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -697,6 +684,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -715,6 +703,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any news content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -733,6 +722,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any person content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -742,15 +732,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any spotlight content',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any supporter content'.
-  $permissions['edit any supporter content'] = array(
-    'name' => 'edit any supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -769,6 +751,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own national_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -787,6 +770,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own news content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -805,6 +789,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own person content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -814,15 +799,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own spotlight content',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own supporter content'.
-  $permissions['edit own supporter content'] = array(
-    'name' => 'edit own supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -1030,6 +1007,7 @@ function permissions_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
