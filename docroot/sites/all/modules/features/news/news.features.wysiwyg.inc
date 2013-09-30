@@ -55,6 +55,7 @@ function news_wysiwyg_default_profiles() {
       'css_classes' => 'H1=h1
 H2=h2
 H3=h3
+BodyLarge=div.large-body
 Slug=div.slug
 SlugMedium=div.slug-medium
 SlugLarge=div.slug-large

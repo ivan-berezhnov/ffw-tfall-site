@@ -38,6 +38,7 @@
     #Privacy Policy
     #A Global Problem
     #Search
+    #National Organizations - Landing
 **/
 
 /**
@@ -208,6 +209,23 @@ body {
 .small-body {
   @include font-size(16);
   color: $grey2;
+}
+
+.large-body {
+  color: $grey1;
+  font-family: "Fedra Serif";
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  @include font-size(17);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.title-small {
+  @extend .h3;
+  letter-spacing: 3px;
+  text-align: center;
 }
 
 .footer-link-beige {
@@ -2430,6 +2448,69 @@ img {max-width: 100%;}
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+/**/
+
+/**
+* #National Organizations - Landing
+**/
+
+.node-type-national-organizations {
+  .jump-link {
+    margin-bottom: 20px;
+  }
+}
+
+.nov2__intro {
+  margin-bottom: 30px;
+}
+
+.view-nos-az {
+  margin: 30px 0 0 0;
+  h2 {
+    margin-top: 0;
+    a {
+      color: $grey3;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  .item {
+    margin-bottom: 20px;
+    text-align: center;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.unifying-principles {
+  background-color: $background_color1;
+  margin: 30px 0 20px 0;
+  padding: 30px 0;
+  @media screen and (max-width:767px) {
+    padding: 20px 10px;
+  }
+  .title-small {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+
+  li {
+      padding-left: 1em;
+      text-indent: -.7em;
+  }
+
+  li:before {
+      content: "• ";
+      color: $orange1;
   }
 }
 
