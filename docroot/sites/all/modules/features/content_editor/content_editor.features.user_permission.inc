@@ -40,15 +40,6 @@ function content_editor_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create supporter content'.
-  $permissions['create supporter content'] = array(
-    'name' => 'create supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create tfa_supporter content'.
   $permissions['create tfa_supporter content'] = array(
     'name' => 'create tfa_supporter content',
@@ -98,15 +89,6 @@ function content_editor_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any supporter content'.
-  $permissions['delete any supporter content'] = array(
-    'name' => 'delete any supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any tfa_supporter content'.
   $permissions['delete any tfa_supporter content'] = array(
     'name' => 'delete any tfa_supporter content',
@@ -150,15 +132,6 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'delete own page_donate content'.
   $permissions['delete own page_donate content'] = array(
     'name' => 'delete own page_donate content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own supporter content'.
-  $permissions['delete own supporter content'] = array(
-    'name' => 'delete own supporter content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
@@ -232,15 +205,6 @@ function content_editor_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any supporter content'.
-  $permissions['edit any supporter content'] = array(
-    'name' => 'edit any supporter content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any tfa_supporter content'.
   $permissions['edit any tfa_supporter content'] = array(
     'name' => 'edit any tfa_supporter content',
@@ -284,15 +248,6 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'edit own page_donate content'.
   $permissions['edit own page_donate content'] = array(
     'name' => 'edit own page_donate content',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own supporter content'.
-  $permissions['edit own supporter content'] = array(
-    'name' => 'edit own supporter content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
