@@ -41,8 +41,7 @@
     <?php endif; ?>
     <div class="network-learning__author-info">
       by <?php print $fields['name']->content; ?>
-      <?php if (isset($fields['field_category']->content)): ?>
-        | <?php print $fields['field_category']->content; ?>
+      <?php if (isset($fields['field_network_learning_tags']->content)): ?>| <?php print $fields['field_network_learning_tags']->content; ?>
       <?php endif; ?>
     </div>
   </div>

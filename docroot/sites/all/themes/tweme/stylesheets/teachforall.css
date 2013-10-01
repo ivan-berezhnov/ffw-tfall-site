@@ -1571,6 +1571,9 @@ img {
   font-size: 14px;
   font-size: 0.82353rem;
 }
+.news__author-info div, .network-learning__author-info div {
+  display: inline;
+}
 
 /**/
 /**
@@ -2439,7 +2442,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";

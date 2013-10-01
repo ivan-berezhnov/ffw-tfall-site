@@ -101,14 +101,6 @@ function network_learning_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
-  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['label'] = '';
-  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -139,6 +131,16 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  /* Field: Content: Network Learning tags */
+  $handler->display->display_options['fields']['field_network_learning_tags']['id'] = 'field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['table'] = 'field_data_field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['field'] = 'field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_tags']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_network_learning_tags']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'network-learning-view';
 
   /* Display: Latest Network Learning */
@@ -173,15 +175,6 @@ function network_learning_views_default_views() {
     'image_style' => 'news_thumbnail',
     'image_link' => 'content',
   );
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
-  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['label'] = '';
-  $handler->display->display_options['fields']['field_category']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -212,6 +205,17 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  /* Field: Content: Network Learning tags */
+  $handler->display->display_options['fields']['field_network_learning_tags']['id'] = 'field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['table'] = 'field_data_field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['field'] = 'field_network_learning_tags';
+  $handler->display->display_options['fields']['field_network_learning_tags']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_tags']['alter']['text'] = '<span>[field_network_learning_tags]</span>';
+  $handler->display->display_options['fields']['field_network_learning_tags']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_tags']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_network_learning_tags']['delta_offset'] = '0';
   $handler->display->display_options['path'] = 'network-learning-latest-view';
 
   /* Display: Network Learning Flexslider */

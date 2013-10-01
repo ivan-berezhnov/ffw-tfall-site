@@ -1602,7 +1602,9 @@ img {max-width: 100%;}
 
 .news__author-info, .network-learning__author-info {
   @include font-size(14);
-  @media screen and (max-width: 767px) {
+
+  div {
+    display: inline;
   }
 }
 
