@@ -2090,6 +2090,14 @@ img {
   font-size: 0.82353rem;
 }
 
+.news__video-caption {
+  color: black;
+  font-style: italic;
+  margin: -10px 0 20px 0;
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
+
 .news__content {
   margin-bottom: 10px;
 }

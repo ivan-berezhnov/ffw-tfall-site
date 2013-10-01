@@ -2232,6 +2232,13 @@ img {max-width: 100%;}
   @include font-size(14);
 }
 
+.news__video-caption {
+  color: $black;
+  font-style: italic;
+  margin: -10px 0 20px 0;
+  @include font-size(14);
+}
+
 .news__content {
   margin-bottom: 10px;
 }

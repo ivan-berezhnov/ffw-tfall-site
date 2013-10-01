@@ -38,6 +38,11 @@
           <?php endif; ?>
 
   				<div class="news__content">
+            <?php if (isset($content['field_embedded_video'])): ?>
+              <div class="news__video-caption">
+                <?php print render($content['field_embedded_video']['#items'][0]['description']); ?>
+              </div>
+            <?php endif; ?>
   					<?php if (isset($content['body'])): ?>
   						<?php print render($content['body']); ?>
   					<?php endif; ?>
