@@ -264,6 +264,7 @@ function teach_for_all_tweets_views_default_views() {
   );
   $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Twitter: Login name */
   $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';

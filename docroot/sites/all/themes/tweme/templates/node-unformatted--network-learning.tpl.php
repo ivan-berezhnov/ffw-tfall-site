@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title">NETWORK LEARNING</h2>
+  <h2 class="page-title"><?php print t('NETWORK LEARNING'); ?></h2>
   <div class="row-fluid">
     <div class="span9">
       <?php print render(views_embed_view('network_learning','block_1')); //flexslider ?>

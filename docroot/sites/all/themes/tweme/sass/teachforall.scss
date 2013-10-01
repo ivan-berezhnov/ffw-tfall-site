@@ -43,6 +43,9 @@
     #A Global Problem
     #Search
     #National Organizations - Landing
+
+    #News - Latest
+    #Network Learning - Latest
 **/
 
 /**
@@ -889,7 +892,7 @@ h2 {
 
 #feeds {
 	background-color: $orange1;
-  padding: 40px 0;
+  padding: 28px 0 40px;
 
   @media screen and (max-width: 767px) {
     padding: 20px 0;
@@ -1174,6 +1177,14 @@ h2 {
     .search-query {
       background-color: $beige;
       @include border-radius(10px);
+
+      @media screen and (min-width: 768px) and (max-width: 979px) {
+        max-width: 125px;
+      }
+
+      @media screen and (min-width: 980px) and (max-width: 1199px) {
+        max-width: 141px;
+      }
     }
   }
 }
@@ -1468,27 +1479,6 @@ img {max-width: 100%;}
 * #Twitter
 **/
 
-.region-twitter-front {
-  margin-top: 10px;
-  .teachforall-twitter-block {
-    margin-bottom: 0;
-    padding: 20px 20px 0 0;
-  }
-  @media screen and (max-width: 767px) {
-    padding: 0 20px;
-  }
-  .block-views {
-    float: left;
-    width: 31%;
-    @media screen and (max-width:979px) {
-      width: 48%;
-    }
-    @media screen and (max-width: 450px) {
-      width: 100%;
-    }
-  }
-}
-
 #block-views-tfall-tweets-block-2 {
   margin: 0 1%;
   @media screen and (max-width:979px) and (min-width: 768px) {
@@ -1510,35 +1500,77 @@ img {max-width: 100%;}
   background-color: $orange1;
   margin-bottom: 20px;
   padding: 20px;
+
   h2 {
     color: $white;
     letter-spacing: 4px;
     text-align: center;
     text-transform: uppercase;
     @include font-size(18);
+    margin-top: 0;
+    line-height: 18px;
   }
 }
 
 .tweets {
   margin-bottom: 20px;
-}
 
-.tweets__info {
-  color: $black;
-  font-weight: bold;
-  text-transform: uppercase;
-  @include font-size(12);
-  a {
+  .views-row-last & {
+    margin-bottom: 4px;
+  }
+
+  .tweets__info {
     color: $black;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include font-size(12);
+    a {
+      color: $black;
+    }
+  }
+
+  .tweets__text {
+    @include font-size(17);
+    color: $white;
+    a {
+      color: $white;
+      word-wrap: break-word;
+    }
   }
 }
 
-.tweets__text {
-  @include font-size(17);
-  color: $white;
-  a {
-    color: $white;
-    word-wrap: break-word;
+.region-twitter-front {
+  padding-top: 5px;
+
+  .teachforall-twitter-block {
+    margin-bottom: 0;
+    padding: 0 20px 0 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+
+  .block-views {
+    float: left;
+    width: 31%;
+
+    @media screen and (max-width:979px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+
+    // Hide the header for the front twitter blocks
+    h2 {
+      display: none;
+    }
+
+    .views-row-last .tweets {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -1568,8 +1600,7 @@ img {max-width: 100%;}
 .network-learning-page, .network-learning-latest {
   .views-row-odd,
   .views-row-even {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
   }
   .views-row-last {
     border-bottom: none;
@@ -1577,14 +1608,25 @@ img {max-width: 100%;}
     padding-bottom: 0;
   }
   .span3 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 370px) {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 371px) and (max-width: 767px) {
       float: left;
       margin-right: 2%;
       width: 30%;
     }
   }
   .span9 {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 370px) {
+      float: none;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 371px) and (max-width: 767px) {
       float: left;
       width: 68%;
     }
@@ -1595,6 +1637,7 @@ img {max-width: 100%;}
       margin-bottom: 5px;
     }
   }
+
   h3 {
     a {
       color: $grey2;
@@ -2404,8 +2447,26 @@ img {max-width: 100%;}
 }
 
 .page-news, .page-network-learning {
+  #main {
+    padding-bottom: 60px;
+
+    .page-title {
+      margin-bottom: 35px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .fb-like-box {
+      display: none;
+    }
+  }
+
   .full-list {
-    margin-top: 20px;
+    margin-top: 30px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -2594,3 +2655,18 @@ img {max-width: 100%;}
 }
 
 /**/
+
+/**
+* #News - Latest, #Network Learning - Latest
+**/
+
+.page-news-latest,
+.page-network-learning-latest {
+  #main {
+    @media screen and (max-width: 767px) {
+      .teachforall-twitter-block {
+        margin-top: 30px;
+      }
+    }
+  }
+}

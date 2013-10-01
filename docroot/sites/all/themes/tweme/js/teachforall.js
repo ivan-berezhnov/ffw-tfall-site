@@ -80,6 +80,12 @@
             });
           }
       });
+    } else if ($body.hasClass('page-news') || $body.hasClass('page-network-learning')) {
+      var $moreContentBtn = $('#main .full-list');
+
+      if ($moreContentBtn.length > 0) {
+        $('#main .page-title').next().children().first().append($moreContentBtn);
+      }
     }
   });
 
