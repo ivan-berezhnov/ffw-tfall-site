@@ -31,6 +31,7 @@
     #News - Node
     #2 Column Layout
     #Global Problem
+    #Donate
 
     ### LANDING PAGES ###
     #News - Landing
@@ -480,6 +481,10 @@ h2.page-title {
 /**
 * #Objects
 **/
+.field__text-area {
+  margin-bottom: 20px;
+}
+
 .rounded-button {
   position: absolute;
   bottom: 40px;
@@ -2232,6 +2237,14 @@ img {
 }
 
 /**/
+/**
+* #Donate
+**/
+.slug-large.donate-title {
+  text-align: center;
+}
+
+/**/
 /* ### LANDING PAGES ### */
 /**
 * #News - Landing
@@ -2403,7 +2416,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";

@@ -32,6 +32,7 @@
     #News - Node
     #2 Column Layout
     #Global Problem
+    #Donate
 
     ### LANDING PAGES ###
     #News - Landing
@@ -425,6 +426,10 @@ h2 {
 /**
 * #Objects
 **/
+
+.field__text-area {
+  margin-bottom: 20px;
+}
 
 .rounded-button {
   position: absolute;
@@ -2334,6 +2339,18 @@ img {max-width: 100%;}
   color: $grey4;
   font-weight: bold;
   @include font-size(16);
+}
+
+/**/
+
+/**
+* #Donate
+**/
+
+.slug-large {
+  &.donate-title {
+    text-align: center;
+  }
 }
 
 /**/

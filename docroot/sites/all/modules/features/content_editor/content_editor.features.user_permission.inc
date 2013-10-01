@@ -89,6 +89,15 @@ function content_editor_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any page_donate content'.
+  $permissions['delete any page_donate content'] = array(
+    'name' => 'delete any page_donate content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any supporter content'.
   $permissions['delete any supporter content'] = array(
     'name' => 'delete any supporter content',
@@ -134,6 +143,15 @@ function content_editor_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own page_donate content'.
+  $permissions['delete own page_donate content'] = array(
+    'name' => 'delete own page_donate content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
     ),
     'module' => 'node',
   );
@@ -205,6 +223,15 @@ function content_editor_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any page_donate content'.
+  $permissions['edit any page_donate content'] = array(
+    'name' => 'edit any page_donate content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any supporter content'.
   $permissions['edit any supporter content'] = array(
     'name' => 'edit any supporter content',
@@ -250,6 +277,15 @@ function content_editor_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own page_donate content'.
+  $permissions['edit own page_donate content'] = array(
+    'name' => 'edit own page_donate content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
     ),
     'module' => 'node',
   );
