@@ -4,17 +4,28 @@
  * implements hook_menu
  */
 function widget_map_menu() {
-  $items['widget_map_listofall.json'] = array(
-    'page callback' => '_widget_map_listofall',
+	$items['widget_map_listofall.json'] = array(
+		'page callback' => '_widget_map_listofall',
 		'file' => 'includes/widget_map_json.inc',
-    'access callback' => TRUE,
-  );
-  $items['widget_map_detailedlist.json'] = array(
-    'page callback' => '_widget_map_detailedlist',
+		'access callback' => TRUE,
+	);
+
+	$items['widget_map_detailedlist.json'] = array(
+		'page callback' => '_widget_map_detailedlist',
 		'file' => 'includes/widget_map_json.inc',
-    'access callback' => TRUE,
-  );
-  return $items;
+		'access callback' => TRUE,
+	);
+
+	$items['admin/config/widget-map-configuration'] = array(
+		'title' => 'Widget Map',
+		'description' => 'Set MapBox ids',
+		'page callback' => 'drupal_get_form',
+		'page arguments' => array('widget_map_settings_form'),
+		'file' => 'includes/widget_map.admin.inc',
+		'access arguments' => array('access administration pages'),
+	);
+
+	return $items;
 }
 
 /*
@@ -32,6 +43,7 @@ function widget_map_theme($existing, $type, $theme, $path) {
 }
 
 function widget_map_embed() {
+	drupal_add_js(array('widget_map' => array('key' => variable_get('widget_map_mapboxid_generic', ''))), 'setting');
 	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/widget_map.js');
 	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/mapbox.js');
 	drupal_add_css(drupal_get_path('module', 'widget_map') . '/assets/mapbox.css');
@@ -40,6 +52,7 @@ function widget_map_embed() {
 }
 
 function widget_map_detailed_embed() {
+	drupal_add_js(array('widget_map' => array('key' => variable_get('widget_map_mapboxid_statistics', ''))), 'setting');
 	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/widget_map_detailed.js');
 	drupal_add_js(drupal_get_path('module', 'widget_map') . '/assets/mapbox.js');
 	drupal_add_css(drupal_get_path('module', 'widget_map') . '/assets/mapbox.css');

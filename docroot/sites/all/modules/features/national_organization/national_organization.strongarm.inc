@@ -146,5 +146,19 @@ function national_organization_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_national_organizations'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'widget_map_mapboxid_generic';
+  $strongarm->value = 'andrew-ho-tfall.pubteach4allmap';
+  $export['widget_map_mapboxid_generic'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'widget_map_mapboxid_statistics';
+  $strongarm->value = 'andrew-ho-tfall.pubteach4all_statistics';
+  $export['widget_map_mapboxid_statistics'] = $strongarm;
+
   return $export;
 }

@@ -91,4 +91,6 @@ features[variable][] = node_preview_national_organization
 features[variable][] = node_preview_national_organizations
 features[variable][] = node_submitted_national_organization
 features[variable][] = node_submitted_national_organizations
+features[variable][] = widget_map_mapboxid_generic
+features[variable][] = widget_map_mapboxid_statistics
 features[views_view][] = nos_az
