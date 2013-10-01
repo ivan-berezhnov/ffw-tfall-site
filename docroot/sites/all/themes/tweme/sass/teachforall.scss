@@ -18,6 +18,7 @@
     #Marquee
     #MapBox
     #Twitter
+    #ShareThis
 
     ### VIEWS ###
     #News Listing
@@ -1543,6 +1544,18 @@ img {max-width: 100%;}
 
 /**/
 
+/**
+* #ShareThis
+**/
+
+.block-sharethis {
+  .stButton {
+    margin: 0;
+  }
+}
+
+/**/
+
 /* ### VIEWS ### */
 
 /**
@@ -2137,6 +2150,9 @@ img {max-width: 100%;}
 **/
 
 .node-type-news {
+  .node {
+    margin-bottom: 10px;
+  }
   .page-title {
     display: none;
     &.date {
@@ -2379,6 +2395,13 @@ img {max-width: 100%;}
 /**
 * #News - Landing, #Network Learning - Landing
 **/
+
+.node-type-network-learning,
+.node-type-news {
+  .node {
+    margin-bottom: 10px;
+  }
+}
 
 .page-news, .page-network-learning {
   .full-list {

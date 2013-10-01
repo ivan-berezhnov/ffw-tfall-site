@@ -25,10 +25,10 @@ function network_learning_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'tweme',
-        'weight' => -17,
+        'weight' => -16,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 
