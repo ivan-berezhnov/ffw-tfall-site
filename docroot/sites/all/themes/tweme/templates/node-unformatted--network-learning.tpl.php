@@ -1,11 +1,11 @@
 <div class="container">
-  <h2 class="page-title">NEWS</h2>
+  <h2 class="page-title">NETWORK LEARNING</h2>
   <div class="row-fluid">
     <div class="span9">
-      <?php print render(views_embed_view('news','block_1')); //flexslider ?>
+      <?php print render(views_embed_view('network_learning','block_1')); //flexslider ?>
       <div class="row-fluid">
         <div class="span12">
-          <?php print render(views_embed_view('news','page')); ?>
+          <?php print render(views_embed_view('network_learning','page')); ?>
         </div>
       </div>
     </div>
@@ -15,5 +15,5 @@
       <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="/news/latest" class="full-list">More News <span class="orange2">>></span></a>
+  <a href="/network-learning/latest" class="full-list">More Network Learning Content <span class="orange2">>></span></a>
 </div>

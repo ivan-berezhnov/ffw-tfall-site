@@ -21,6 +21,7 @@
 
     ### VIEWS ###
     #News Listing
+    #Network Learning Listing
     #Persons
     #Supporters
     #Network Learning
@@ -36,6 +37,7 @@
 
     ### LANDING PAGES ###
     #News - Landing
+    #Network Learning - Landing
     #Privacy Policy
     #A Global Problem
     #Search
@@ -1535,6 +1537,7 @@ img {max-width: 100%;}
   color: $white;
   a {
     color: $white;
+    word-wrap: break-word;
   }
 }
 
@@ -1543,10 +1546,13 @@ img {max-width: 100%;}
 /* ### VIEWS ### */
 
 /**
-* #News Listing
+* #News Listing, #Network Learning Listing
 **/
 
-.view-news {
+// Note: .view-network-learning appears on the front page, so to avoid
+//       style clashes I added custom classes to the view content
+.news-page, .news-latest,
+.network-learning-page, .network-learning-latest {
   .views-row-odd,
   .views-row-even {
     margin-bottom: 10px;
@@ -1589,7 +1595,12 @@ img {max-width: 100%;}
   }
 }
 
-.news__author-info {
+.news__landing-byline, .network-learning__landing-byline {
+  color: $grey4;
+  @include font-size(16);
+}
+
+.news__author-info, .network-learning__author-info {
   @include font-size(14);
   @media screen and (max-width: 767px) {
   }
@@ -1886,7 +1897,7 @@ img {max-width: 100%;}
     }
   }
 
-  .view-network-learning {
+  .view-display-id-network_learning_front_block {
     margin-bottom: 15px;
     display: inline-block;
 
@@ -2358,16 +2369,16 @@ img {max-width: 100%;}
 /* ### LANDING PAGES ### */
 
 /**
-* #News - Landing
+* #News - Landing, #Network Learning - Landing
 **/
 
-.page-news {
+.page-news, .page-network-learning {
   .full-list {
     margin-top: 20px;
   }
 }
 
-.news-flexslider {
+.news-flexslider, .network-learning-flexslider {
   margin-bottom: 30px;
   h2 {
     margin-bottom: 5px;
@@ -2397,11 +2408,11 @@ img {max-width: 100%;}
   }
 }
 
-.news__flexslider__wrapper {
+.flexslider-wrapper {
   position: relative;
 }
 
-.news__flexslider__info {
+.flexslider-info {
   @include box-sizing(border-box);
   background-color: $black;
   opacity: .8;
@@ -2420,12 +2431,12 @@ img {max-width: 100%;}
   }
 }
 
-.news__preview {
+.flexslider-preview {
   color: $grey1;
   font-family: "Fedra Serif", serif;
 }
 
-.news__link {
+.flexslider-link {
   margin-top: 5px;
   a {
     color: $white;
@@ -2437,11 +2448,6 @@ img {max-width: 100%;}
       color: $red;
     }
   }
-}
-
-.news__landing-byline {
-  color: $grey4;
-  @include font-size(16);
 }
 
 /**/

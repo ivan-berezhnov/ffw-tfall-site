@@ -6,7 +6,7 @@
 function misc_menu() {
 	module_load_include('inc', 'pathauto');
 
-	$customnodes = array('news','news/latest');
+	$customnodes = array('news','news/latest','network-learning','network-learning/latest');
 
 	foreach ($customnodes as $key)
 		$items[$key] = array(
@@ -15,5 +15,5 @@ function misc_menu() {
 			'access callback' => TRUE,
 		);
 
-	return $items;	
+	return $items;
 }

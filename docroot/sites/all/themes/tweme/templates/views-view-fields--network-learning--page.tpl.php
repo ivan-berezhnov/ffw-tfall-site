@@ -23,17 +23,27 @@
  *
  * @ingroup views_templates
  */
+//dsm($fields);
 ?>
-<div class="news__flexslider__wrapper flexslider-wrapper">
-  <?php print $fields['field_news_image']->content; ?>
-  <div class="news__flexslider__info flexslider-info">
-    <?php print $fields['field_category']->content; ?>
-    <h2><?php print $fields['title']->content; ?></h2>
-    <?php if(isset($fields['field_news_byline']->content)): ?>
-      <div class="news__preview flexslider-preview visible-desktop"><?php print $fields['field_news_byline']->content; ?></div>
+<div class="row-fluid">
+  <div class="span3">
+    <?php print $fields['field_network_learning_image']->content; ?>
+  </div>
+  <div class="span6">
+    <div class="slug">
+      <?php print $fields['created']->content; ?>
+    </div>
+    <h3><?php print $fields['title']->content; ?></h3>
+    <?php if(isset($fields['field_network_learning_byline']->content)): ?>
+      <h3 class="network-learning__landing-byline hidden-phone">
+        <?php print $fields['field_network_learning_byline']->content; ?>
+      </h3>
     <?php endif; ?>
-    <div class="news__link flexslider-link hidden-phone">
-      <?php print $fields['view_node']->content; ?>
+    <div class="network-learning__author-info">
+      by <?php print $fields['name']->content; ?>
+      <?php if (isset($fields['field_category']->content)): ?>
+        | <?php print $fields['field_category']->content; ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>

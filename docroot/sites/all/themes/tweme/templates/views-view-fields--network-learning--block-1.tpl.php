@@ -24,15 +24,14 @@
  * @ingroup views_templates
  */
 ?>
-<div class="news__flexslider__wrapper flexslider-wrapper">
-  <?php print $fields['field_news_image']->content; ?>
-  <div class="news__flexslider__info flexslider-info">
-    <?php print $fields['field_category']->content; ?>
+<div class="network_learning__flexslider__wrapper flexslider-wrapper">
+  <?php print $fields['field_network_learning_image']->content; ?>
+  <div class="network_learning__flexslider__info flexslider-info">
     <h2><?php print $fields['title']->content; ?></h2>
-    <?php if(isset($fields['field_news_byline']->content)): ?>
-      <div class="news__preview flexslider-preview visible-desktop"><?php print $fields['field_news_byline']->content; ?></div>
+    <?php if(isset($fields['field_network_learning_byline']->content)): ?>
+      <div class="network_learning__preview flexslider-preview visible-desktop"><?php print $fields['field_network_learning_byline']->content; ?></div>
     <?php endif; ?>
-    <div class="news__link flexslider-link hidden-phone">
+    <div class="network_learning__link flexslider-link hidden-phone">
       <?php print $fields['view_node']->content; ?>
     </div>
   </div>
