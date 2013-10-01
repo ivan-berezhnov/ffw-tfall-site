@@ -2228,16 +2228,24 @@ img {
   color: white;
   font-weight: bold;
   position: absolute;
-  top: auto;
+  top: 55%;
   right: 30px;
-  bottom: 30px;
+  bottom: auto;
   left: 30px;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1199px) {
   .top-section__info-wrapper {
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
+    top: 47%;
+    right: 20px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top-section__info-wrapper {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
   }
 }
 

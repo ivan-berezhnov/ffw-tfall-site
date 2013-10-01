@@ -15,7 +15,7 @@ function global_problem_field_default_field_instances() {
     'bundle' => 'field_top_section',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Text area should be no more than 100 characters otherwise the layout will break.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -341,6 +341,7 @@ function global_problem_field_default_field_instances() {
   t('Image');
   t('Jump Link');
   t('Subheader');
+  t('Text area should be no more than 100 characters otherwise the layout will break.');
   t('Title');
   t('top section');
 

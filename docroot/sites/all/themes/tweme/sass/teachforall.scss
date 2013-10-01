@@ -2325,14 +2325,20 @@ img {max-width: 100%;}
   color: $white;
   font-weight: bold;
   position: absolute;
-  top: auto;
+  top: 55%;
   right: 30px;
-  bottom: 30px;
+  bottom: auto;
   left: 30px;
-  @media screen and (max-width:980px) {
-    right: 10px;
-    bottom: 10px;
-    left: 10px;
+  @media screen and (max-width:1199px) {
+    top: 47%;
+    right: 20px;
+    left: 20px;
+  }
+  @media screen and (max-width:767px) {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
   }
 }
 
