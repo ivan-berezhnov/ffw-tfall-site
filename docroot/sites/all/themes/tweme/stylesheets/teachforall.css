@@ -42,6 +42,9 @@
     #A Global Problem
     #Search
     #National Organizations - Landing
+
+    #News - Latest
+    #Network Learning - Latest
 **/
 /**
 *   #Imports
@@ -913,7 +916,7 @@ h2.page-title {
 **/
 #feeds {
   background-color: #e69740;
-  padding: 40px 0;
+  padding: 28px 0 40px;
 }
 @media screen and (max-width: 767px) {
   #feeds {
@@ -1129,6 +1132,16 @@ h2.page-title {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .footer__search .navbar-search .search-query {
+    max-width: 125px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .footer__search .navbar-search .search-query {
+    max-width: 141px;
+  }
 }
 
 /**/
@@ -1416,33 +1429,6 @@ img {
 /**
 * #Twitter
 **/
-.region-twitter-front {
-  margin-top: 10px;
-}
-.region-twitter-front .teachforall-twitter-block {
-  margin-bottom: 0;
-  padding: 20px 20px 0 0;
-}
-@media screen and (max-width: 767px) {
-  .region-twitter-front {
-    padding: 0 20px;
-  }
-}
-.region-twitter-front .block-views {
-  float: left;
-  width: 31%;
-}
-@media screen and (max-width: 979px) {
-  .region-twitter-front .block-views {
-    width: 48%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .region-twitter-front .block-views {
-    width: 100%;
-  }
-}
-
 #block-views-tfall-tweets-block-2 {
   margin: 0 1%;
 }
@@ -1477,31 +1463,67 @@ img {
   text-transform: uppercase;
   font-size: 18px;
   font-size: 1.05882rem;
+  margin-top: 0;
+  line-height: 18px;
 }
 
 .tweets {
   margin-bottom: 20px;
 }
-
-.tweets__info {
+.views-row-last .tweets {
+  margin-bottom: 4px;
+}
+.tweets .tweets__info {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
   font-size: 0.70588rem;
 }
-.tweets__info a {
+.tweets .tweets__info a {
   color: black;
 }
-
-.tweets__text {
+.tweets .tweets__text {
   font-size: 17px;
   font-size: 1rem;
   color: white;
 }
-.tweets__text a {
+.tweets .tweets__text a {
   color: white;
   word-wrap: break-word;
+}
+
+.region-twitter-front {
+  padding-top: 5px;
+}
+.region-twitter-front .teachforall-twitter-block {
+  margin-bottom: 0;
+  padding: 0 20px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .region-twitter-front {
+    padding: 0 20px;
+  }
+}
+.region-twitter-front .block-views {
+  float: left;
+  width: 31%;
+}
+@media screen and (max-width: 979px) {
+  .region-twitter-front .block-views {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .region-twitter-front .block-views {
+    width: 100%;
+  }
+}
+.region-twitter-front .block-views h2 {
+  display: none;
+}
+.region-twitter-front .block-views .views-row-last .tweets {
+  margin-bottom: 0;
 }
 
 /**/
@@ -1523,8 +1545,7 @@ img {
 .network-learning-page .views-row-odd,
 .network-learning-page .views-row-even, .network-learning-latest .views-row-odd,
 .network-learning-latest .views-row-even {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 .news-page .views-row-last, .news-latest .views-row-last,
 .network-learning-page .views-row-last, .network-learning-latest .views-row-last {
@@ -1532,7 +1553,15 @@ img {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 370px) {
+  .news-page .span3, .news-latest .span3,
+  .network-learning-page .span3, .network-learning-latest .span3 {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 371px) and (max-width: 767px) {
   .news-page .span3, .news-latest .span3,
   .network-learning-page .span3, .network-learning-latest .span3 {
     float: left;
@@ -1540,7 +1569,14 @@ img {
     width: 30%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 370px) {
+  .news-page .span9, .news-latest .span9,
+  .network-learning-page .span9, .network-learning-latest .span9 {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 371px) and (max-width: 767px) {
   .news-page .span9, .news-latest .span9,
   .network-learning-page .span9, .network-learning-latest .span9 {
     float: left;
@@ -2306,8 +2342,24 @@ img {
   margin-bottom: 10px;
 }
 
+.page-news #main, .page-network-learning #main {
+  padding-bottom: 60px;
+}
+.page-news #main .page-title, .page-network-learning #main .page-title {
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .page-news .fb-like-box, .page-network-learning .fb-like-box {
+    display: none;
+  }
+}
 .page-news .full-list, .page-network-learning .full-list {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .page-news .full-list, .page-network-learning .full-list {
+    margin-bottom: 30px;
+  }
 }
 
 .news-flexslider, .network-learning-flexslider {
@@ -2467,7 +2519,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";
@@ -2475,3 +2527,12 @@ img {
 }
 
 /**/
+/**
+* #News - Latest, #Network Learning - Latest
+**/
+@media screen and (max-width: 767px) {
+  .page-news-latest #main .teachforall-twitter-block,
+  .page-network-learning-latest #main .teachforall-twitter-block {
+    margin-top: 30px;
+  }
+}
