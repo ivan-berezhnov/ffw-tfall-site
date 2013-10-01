@@ -2442,7 +2442,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";
