@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pubteachforall_join_our_staff feature.
+ */
+
+include_once 'pubteachforall_join_our_staff.features.inc';
