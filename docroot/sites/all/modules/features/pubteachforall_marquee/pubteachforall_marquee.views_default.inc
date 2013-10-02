@@ -165,22 +165,34 @@ function pubteachforall_marquee_views_default_views() {
     'trim_length' => '175',
   );
   /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['text'] = 'GO TO STORY';
-  /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node_1']['id'] = 'view_node_1';
   $handler->display->display_options['fields']['view_node_1']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node_1']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node_1']['label'] = '';
   $handler->display->display_options['fields']['view_node_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['view_node_1']['alter']['text'] = '<div class="marquee__link">[view_node] <span class="orange2">>></span></div>';
+  $handler->display->display_options['fields']['view_node_1']['alter']['text'] = 'GO TO STORY <span class="orange2">>></span>';
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_2']['id'] = 'view_node_2';
+  $handler->display->display_options['fields']['view_node_2']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_2']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_2']['label'] = '';
+  $handler->display->display_options['fields']['view_node_2']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node_2']['alter']['text'] = 'WATCH NOW <span class="orange2">>></span>';
+  $handler->display->display_options['fields']['view_node_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_2']['element_default_classes'] = FALSE;
+  /* Field: Field: Embedded Video */
+  $handler->display->display_options['fields']['field_embedded_video']['id'] = 'field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['table'] = 'field_data_field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['field'] = 'field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['label'] = '';
+  $handler->display->display_options['fields']['field_embedded_video']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_embedded_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_embedded_video']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_embedded_video']['click_sort_column'] = 'video_url';
+  $handler->display->display_options['fields']['field_embedded_video']['settings'] = array(
+    'video_style' => 'normal',
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
