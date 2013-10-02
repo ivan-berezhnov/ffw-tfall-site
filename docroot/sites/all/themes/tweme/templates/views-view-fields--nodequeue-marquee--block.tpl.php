@@ -71,12 +71,18 @@ if ($is_vertical_image_node_number) {
     </div>
 
     <div class="marquee__link">
-      <?php
-      if(isset($fields['field_embedded_video']->content)):
-        print $fields['view_node_2']->content;
-      else:
-        print $fields['view_node_1']->content;
-      endif; ?>
+        <?php
+
+        $embedded_field = $row->_field_data['nid']['entity']->field_embedded_video;
+        $embedded_field_video_size= sizeof($embedded_field);
+        $is_embedded_video_field = ($embedded_field_video_size > 0);
+        print_r($is_embedded_video_field);;
+        if ($is_embedded_video_field) {
+            print $fields['view_node_2']->content;
+        } else {
+            print $fields['view_node_1']->content;
+        }
+        ?>
     </div>
   </div>
 </div>
