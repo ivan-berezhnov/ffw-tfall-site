@@ -452,6 +452,13 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create page_1_col_layout content'.
+  $permissions['create page_1_col_layout content'] = array(
+    'name' => 'create page_1_col_layout content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create page_our_model content'.
   $permissions['create page_our_model content'] = array(
     'name' => 'create page_our_model content',
@@ -533,10 +540,21 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any page_1_col_layout content'.
+  $permissions['delete any page_1_col_layout content'] = array(
+    'name' => 'delete any page_1_col_layout content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any page_our_model content'.
   $permissions['delete any page_our_model content'] = array(
     'name' => 'delete any page_our_model content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -605,10 +623,21 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own page_1_col_layout content'.
+  $permissions['delete own page_1_col_layout content'] = array(
+    'name' => 'delete own page_1_col_layout content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own page_our_model content'.
   $permissions['delete own page_our_model content'] = array(
     'name' => 'delete own page_our_model content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -708,6 +737,15 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any page_1_col_layout content'.
+  $permissions['edit any page_1_col_layout content'] = array(
+    'name' => 'edit any page_1_col_layout content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any page_our_model content'.
   $permissions['edit any page_our_model content'] = array(
     'name' => 'edit any page_our_model content',
@@ -771,6 +809,15 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own page_1_col_layout content'.
+  $permissions['edit own page_1_col_layout content'] = array(
+    'name' => 'edit own page_1_col_layout content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
     ),
     'module' => 'node',
   );
