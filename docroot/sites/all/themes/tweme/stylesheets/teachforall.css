@@ -2358,6 +2358,8 @@ img {
 }
 @media screen and (max-width: 767px) {
   .page-news .full-list, .page-network-learning .full-list {
+    font-size: 12px;
+    font-size: 0.70588rem;
     margin-bottom: 30px;
   }
 }
@@ -2367,6 +2369,14 @@ img {
 }
 .news-flexslider h2, .network-learning-flexslider h2 {
   margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .news-flexslider h2, .network-learning-flexslider h2 {
+    margin-top: 0;
+    padding-bottom: 18px;
+    font-size: 14px;
+    font-size: 0.82353rem;
+  }
 }
 .news-flexslider .flex-control-paging li a, .network-learning-flexslider .flex-control-paging li a {
   background-color: #91998c;
@@ -2379,6 +2389,12 @@ img {
   bottom: 12px;
   right: 10px;
   width: auto;
+}
+@media screen and (max-width: 767px) {
+  .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
+    left: 14px;
+    text-align: left;
+  }
 }
 .news-flexslider .flexslider, .network-learning-flexslider .flexslider {
   background: transparent;
@@ -2403,6 +2419,11 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .flexslider-info {
+    padding-right: 20px;
+  }
 }
 .flexslider-info h2 a {
   color: white;

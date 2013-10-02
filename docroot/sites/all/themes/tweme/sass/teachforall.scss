@@ -2472,6 +2472,7 @@ img {max-width: 100%;}
     margin-top: 30px;
 
     @media screen and (max-width: 767px) {
+      @include font-size(12);
       margin-bottom: 30px;
     }
   }
@@ -2479,9 +2480,17 @@ img {max-width: 100%;}
 
 .news-flexslider, .network-learning-flexslider {
   margin-bottom: 30px;
+
   h2 {
     margin-bottom: 5px;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+      padding-bottom: 18px;
+      @include font-size(14);
+    }
   }
+
   .flex-control-paging {
     li {
       a {
@@ -2497,6 +2506,11 @@ img {max-width: 100%;}
     bottom: 12px;
     right: 10px;
     width: auto;
+
+    @media screen and (max-width: 767px) {
+      left: 14px;
+      text-align: left;
+    }
   }
   .flexslider {
     background: transparent;
@@ -2520,9 +2534,15 @@ img {max-width: 100%;}
   bottom: 0;
   left: 0;
   width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding-right: 20px;
+  }
+
   h2 {
     a {
       color: $white;
+
       &:hover {
         color: $red;
       }
