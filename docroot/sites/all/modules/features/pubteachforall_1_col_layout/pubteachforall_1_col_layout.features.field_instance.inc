@@ -10,51 +10,116 @@
 function pubteachforall_1_col_layout_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page_1_col_layout-body'
-  $field_instances['node-page_1_col_layout-body'] = array(
-    'bundle' => 'page_1_col_layout',
+  // Exported field_instance: 'field_collection_item-field_1_column_row-field_embedded_video'
+  $field_instances['field_collection_item-field_1_column_row-field_embedded_video'] = array(
+    'bundle' => 'field_1_column_row',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Put whatever you want in this field and use the \'Styles\' tab in the WYSIWYG editor to apply any type styles you may need.',
+    'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'label' => 'hidden',
+        'module' => 'video_embed_field',
+        'settings' => array(
+          'description' => 0,
+          'video_style' => 'normal',
+        ),
+        'type' => 'video_embed_field',
         'weight' => 2,
       ),
-      'our_model' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_embedded_video',
+    'label' => 'Embedded Video',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'video_embed_field',
+      'settings' => array(),
+      'type' => 'video_embed_field_video',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_1_column_row-field_image'
+  $field_instances['field_collection_item-field_1_column_row-field_image'] = array(
+    'bundle' => 'field_1_column_row',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
     ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_image',
+    'label' => 'Image',
     'required' => 0,
     'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
+      'alt_field' => 1,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_1_column_row-field_text_area'
+  $field_instances['field_collection_item-field_1_column_row-field_text_area'] = array(
+    'bundle' => 'field_1_column_row',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_text_area',
+    'label' => 'Text Area',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
+        'rows' => 5,
       ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'type' => 'text_textarea',
+      'weight' => 0,
     ),
   );
 
@@ -170,9 +235,10 @@ function pubteachforall_1_col_layout_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('1 column row');
-  t('Body');
+  t('Embedded Video');
+  t('Image');
   t('Jump Link');
-  t('Put whatever you want in this field and use the \'Styles\' tab in the WYSIWYG editor to apply any type styles you may need.');
+  t('Text Area');
 
   return $field_instances;
 }
