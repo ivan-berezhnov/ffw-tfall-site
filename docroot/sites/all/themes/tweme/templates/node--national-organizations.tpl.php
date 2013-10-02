@@ -61,9 +61,9 @@
 
           </div>
           <div class="span6">
-
-            <?php print render($content['field_nov2_principles_right']); ?>
-
+            <div class="unifying-principles__right-col">
+              <?php print render($content['field_nov2_principles_right']); ?>
+            </div>
           </div>
         </div>
 

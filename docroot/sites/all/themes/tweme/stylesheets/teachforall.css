@@ -2497,6 +2497,12 @@ img {
 /**
 * #National Organizations - Landing
 **/
+@media screen and (max-width: 767px) {
+  .unifying-principles__right-col {
+    padding-top: 30px;
+  }
+}
+
 .node-type-national-organizations .jump-link {
   margin-bottom: 20px;
 }
