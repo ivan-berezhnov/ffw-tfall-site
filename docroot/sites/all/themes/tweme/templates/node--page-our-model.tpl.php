@@ -1,6 +1,6 @@
 <div class="container">
-	
-	
+
+
   <h2 class="page-title"><?php print $title; ?></h2>
   <div class="row-fluid">
     <div class="span8 offset2">
@@ -17,7 +17,7 @@
 			<?php print render($content['field_teachers_spotlights']); ?>
     </div>
   </div>
-	
+
 	<div class="row-fluid">
     <div class="span12">
       <div class="slug">TEACHERS</div>
@@ -25,7 +25,7 @@
 			<?php print render($content['field_teachers_spotlights']); ?>
     </div>
   </div>
-	
+
 	<div class="row-fluid">
     <div class="span12">
       <div class="slug">TEACHERS</div>
@@ -33,7 +33,7 @@
 			<?php print render($content['field_teachers_spotlights']); ?>
     </div>
   </div>
-  
+
   <div class="row-fluid">
     <div class="span12">
       <div class="jump-link">
@@ -41,5 +41,5 @@
       </div>
     </div>
   </div>
-	
+
 </div>

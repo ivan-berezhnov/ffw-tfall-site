@@ -7,16 +7,27 @@
 
       <div class="news__author-date">by <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?>
 
-          <div class="news__image">
-            <?php if (isset($content['field_spotlight_image'])): ?>
-              <?php print render($content['field_spotlight_image']); ?>
-              <div class="news__image-caption">
-                <?php print render($content['field_spotlight_image']['#items'][0]['title']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
+          <?php if (isset($content['field_embedded_video'])): ?>
+            <div class="news__image news__video">
+              <?php print render($content['field_embedded_video']); ?>
+            </div>
+          <?php else: ?>
+            <div class="news__image">
+              <?php if (isset($content['field_spotlight_image'])): ?>
+                <?php print render($content['field_spotlight_image']); ?>
+                <div class="news__image-caption">
+                  <?php print render($content['field_spotlight_image']['#items'][0]['title']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
 
           <div class="news__content">
+            <?php if (isset($content['field_embedded_video'])): ?>
+              <div class="news__video-caption">
+                <?php print render($content['field_embedded_video']['#items'][0]['description']); ?>
+              </div>
+            <?php endif; ?>
             <?php if (isset($content['body'])): ?>
               <?php print render($content['body']); ?>
             <?php endif; ?>

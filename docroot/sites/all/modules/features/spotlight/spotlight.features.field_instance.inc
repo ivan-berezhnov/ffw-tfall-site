@@ -54,6 +54,53 @@ function spotlight_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-spotlight-field_embedded_video'
+  $field_instances['node-spotlight-field_embedded_video'] = array(
+    'bundle' => 'spotlight',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'video_embed_field',
+        'settings' => array(
+          'description' => 1,
+          'video_style' => 'normal',
+        ),
+        'type' => 'video_embed_field',
+        'weight' => 4,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_embedded_video',
+    'label' => 'Embedded Video',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'video_embed_field',
+      'settings' => array(),
+      'type' => 'video_embed_field_video',
       'weight' => 5,
     ),
   );
@@ -225,6 +272,7 @@ function spotlight_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Embedded Video');
   t('Image');
   t('This image field should be populated only if this node is being shown in the 4th position of the front page marquee.');
   t('Type');
