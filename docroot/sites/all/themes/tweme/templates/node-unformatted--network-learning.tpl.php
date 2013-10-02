@@ -15,5 +15,5 @@
       <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="/network-learning/latest" class="full-list">More Network Learning Content <span class="orange2">>></span></a>
+  <a href="/network-learning/latest" class="full-list">More Network Learnings <span class="orange2">>></span></a>
 </div>

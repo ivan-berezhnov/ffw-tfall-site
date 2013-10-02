@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title">Latest Network Learning</h2>
+  <h2 class="page-title">Latest Network Learnings</h2>
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
