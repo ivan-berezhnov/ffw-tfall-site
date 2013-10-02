@@ -70,11 +70,13 @@ if ($is_vertical_image_node_number) {
       <?php endif; ?>
     </div>
 
-    <?php if($fields['field_embedded_video']->content): ?>
-      <!-- either go to story or watch video -->
-      <div class="marquee__link"><?php print $fields['view_node_2']->content; ?></div>
-    <?php else: ?>
-      <div class="marquee__link"><?php print $fields['view_node_1']->content; ?></div>
-    <?php endif; ?>
+    <div class="marquee__link">
+      <?php
+      if(isset($fields['field_embedded_video']->content)):
+        print $fields['view_node_2']->content;
+      else:
+        print $fields['view_node_1']->content;
+      endif; ?>
+    </div>
   </div>
 </div>
