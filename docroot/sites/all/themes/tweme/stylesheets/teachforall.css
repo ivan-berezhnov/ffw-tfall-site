@@ -34,6 +34,7 @@
     #2 Column Layout
     #Global Problem
     #Donate
+    #Our Model
 
     ### LANDING PAGES ###
     #News - Landing
@@ -270,13 +271,13 @@ body {
   font-weight: bold;
 }
 
-.small-body {
+.small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
   font-size: 16px;
   font-size: 0.94118rem;
   color: #4d4d4d;
 }
 
-.large-body {
+.large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
   font-family: "Fedra Serif";
   line-height: 1.7em;
@@ -284,7 +285,7 @@ body {
   font-size: 17px;
   font-size: 1rem;
 }
-.large-body:last-child {
+.large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
 }
 
@@ -455,7 +456,7 @@ div.messages {
 }
 
 #main {
-  padding: 20px 0;
+  padding: 20px 0 60px;
 }
 
 .node-type-national-organization #main {
@@ -1601,8 +1602,10 @@ img {
 .network-learning-page h3 a:hover, .network-learning-latest h3 a:hover {
   color: #cf4753;
 }
-.news-page .small-body, .news-latest .small-body,
-.network-learning-page .small-body, .network-learning-latest .small-body {
+.news-page .small-body, .news-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-page a, .news-latest .small-body, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-latest a,
+.network-learning-page .small-body,
+.network-learning-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a,
+.node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-page a, .network-learning-latest .small-body, .network-learning-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-latest a {
   margin-bottom: 5px;
 }
 
@@ -2338,6 +2341,75 @@ img {
 }
 
 /**/
+/**
+* #Our Model
+**/
+.node-type-page-our-model #main .page-title {
+  margin-bottom: 33px;
+}
+.node-type-page-our-model #main .our-model-section {
+  margin-top: 30px;
+}
+.node-type-page-our-model #main .our-model-section h3 {
+  color: #e69740;
+  font-size: 17px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: center;
+}
+.node-type-page-our-model #main .our-model-section .intro {
+  margin-bottom: 7px;
+  text-align: center;
+}
+.node-type-page-our-model #main .our-model-section .spotlights .span4 a {
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
+.node-type-page-our-model #main .our-model-section .spotlights .span4 a:hover {
+  color: #cf4753;
+}
+.node-type-page-our-model #main .our-model-section .spotlights .span4 a img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .node-type-page-our-model #main .our-model-section .spotlights .span4 a img {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 5px;
+  }
+  .node-type-page-our-model #main .our-model-section .spotlights .span4:first-child a {
+    margin-top: 0;
+  }
+}
+.node-type-page-our-model #main .our-model-banner {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .node-type-page-our-model #main .our-model-banner img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.node-type-page-our-model #main .our-model-banner + .our-model-section {
+  margin-top: 0;
+}
+.node-type-page-our-model #main .btn-red, .node-type-page-our-model #main .view-persons .view-footer a.btn, .view-persons .view-footer .node-type-page-our-model #main a.btn, .node-type-page-our-model #main .view-supporters .view-footer .btn, .view-supporters .view-footer .node-type-page-our-model #main .btn {
+  display: inline-block;
+  margin-top: 54px;
+}
+.node-type-page-our-model #main .btn-red:hover, .node-type-page-our-model #main .view-persons .view-footer a.btn:hover, .view-persons .view-footer .node-type-page-our-model #main a.btn:hover, .node-type-page-our-model #main .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .node-type-page-our-model #main .btn:hover {
+  color: white;
+}
+
+/**/
 /* ### LANDING PAGES ### */
 /**
 * #News - Landing, #Network Learning - Landing
@@ -2347,9 +2419,6 @@ img {
   margin-bottom: 10px;
 }
 
-.page-news #main, .page-network-learning #main {
-  padding-bottom: 60px;
-}
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
 }
@@ -2551,7 +2620,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";

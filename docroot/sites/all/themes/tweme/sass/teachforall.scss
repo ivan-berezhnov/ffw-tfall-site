@@ -35,6 +35,7 @@
     #2 Column Layout
     #Global Problem
     #Donate
+    #Our Model
 
     ### LANDING PAGES ###
     #News - Landing
@@ -396,7 +397,7 @@ div.messages {
 }
 
 #main {
-  padding: 20px 0;
+  padding: 20px 0 60px;
 }
 
 .node-type-national-organization {
@@ -2445,6 +2446,102 @@ img {max-width: 100%;}
 
 /**/
 
+/**
+* #Our Model
+**/
+
+.node-type-page-our-model {
+  #main {
+    .page-title {
+      margin-bottom: 33px;
+    }
+
+    .our-model-section {
+      margin-top: 30px;
+
+      h3 {
+        color: $orange1;
+        @include font-size(17);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        text-align: center;
+      }
+
+      .intro {
+        margin-bottom: 7px;
+        text-align: center;
+
+        p {
+          @extend .large-body;
+        }
+      }
+
+      .spotlights {
+        .span4 {
+          a {
+            @extend .small-body;
+            @include font-size(14);
+
+            &:hover {
+              color: $red;
+            }
+
+            img {
+              width: 100%;
+              margin-bottom: 5px;
+            }
+          }
+
+          @media screen and (max-width: 767px) {
+            a {
+              display: block;
+              text-align: center;
+              margin-top: 15px;
+
+              img {
+                max-width: 500px;
+                display: block;
+                margin: 0 auto 5px;
+              }
+            }
+
+            &:first-child a {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .our-model-banner {
+      text-align: center;
+
+      @media screen and (max-width: 767px) {
+        img {
+          width: 100%;
+          max-width: 500px;
+        }
+      }
+
+      + .our-model-section {
+        margin-top: 0;
+      }
+    }
+
+    .btn-red {
+      display: inline-block;
+      margin-top: 54px;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+/**/
+
 /* ### LANDING PAGES ### */
 
 /**
@@ -2460,8 +2557,6 @@ img {max-width: 100%;}
 
 .page-news, .page-network-learning {
   #main {
-    padding-bottom: 60px;
-
     .page-title {
       margin-bottom: 35px;
     }
