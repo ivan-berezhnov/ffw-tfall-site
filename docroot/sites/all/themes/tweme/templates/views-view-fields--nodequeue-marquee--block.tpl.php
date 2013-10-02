@@ -26,18 +26,25 @@
 ?>
 <!-- if there is a vertical image, use it, otherwise use main image -->
 <?php
-  $newsImage = $fields['field_news_image']->content;
-  $spotlightImage = $fields['field_spotlight_image']->content;
-  $verticalImage = $fields['field_vertical_image']->content;
-?>
-<?php
-  if(isset($verticalImage)) {
-    print $verticalImage;
-  } elseif (isset($newsImage)) {
-    print $newsImage;
-  } elseif (isset($spotlightImage)) {
-    print $spotlightImage;
-  }
+
+$vertical_image_node_number = 4;
+$is_vertical_image_node_number = $vertical_image_node_number == $row->nodequeue_nodes_node_position;
+$newsImage = $fields['field_news_image']->content;
+$spotlightImage = $fields['field_spotlight_image']->content;
+$verticalImage = $fields['field_vertical_image']->content;
+
+if ($is_vertical_image_node_number) {
+    if (isset($verticalImage)) {
+        print $verticalImage;
+    }
+} else {
+    if (isset($newsImage)) {
+        print $newsImage;
+    } elseif (isset($spotlightImage)) {
+        print $spotlightImage;
+    }
+}
+
 ?>
 <div class="marquee__hover">
   <div class="marquee__info-wrapper">
