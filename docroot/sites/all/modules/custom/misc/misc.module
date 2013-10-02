@@ -17,3 +17,13 @@ function misc_menu() {
 
 	return $items;
 }
+
+function misc_nodequeue_save_subqueue_order_alter($sqid, $nodes) {
+    $node4_nid = $nodes['4']['nid'];
+    $new_node_4 = node_load($node4_nid);
+    $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
+
+    if(!$does_node_4_have_vertical_image){
+        form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Must add vertical image to node in position 4');
+    }
+}
