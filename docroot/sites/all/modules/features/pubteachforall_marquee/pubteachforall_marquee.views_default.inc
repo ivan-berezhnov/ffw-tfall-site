@@ -172,6 +172,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['view_node_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['view_node_1']['alter']['text'] = 'GO TO STORY <span class="orange2">>></span>';
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_1']['element_default_classes'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node_2']['id'] = 'view_node_2';
   $handler->display->display_options['fields']['view_node_2']['table'] = 'views_entity_node';
