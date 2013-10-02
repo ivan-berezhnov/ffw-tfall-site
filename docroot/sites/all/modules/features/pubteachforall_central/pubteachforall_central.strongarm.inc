@@ -199,6 +199,56 @@ function pubteachforall_central_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'theme_seven_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 0,
+    'logo_path' => 'profiles/acquia/AcquiaDrupalLogo.png',
+    'logo_upload' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://favicon_0.png',
+    'favicon_mimetype' => 'image/png',
+  );
+  $export['theme_seven_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_tweme_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 0,
+    'logo_path' => 'profiles/acquia/AcquiaDrupalLogo.png',
+    'logo_upload' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://favicon.png',
+    'jquery_source' => 'googlecdn',
+    'jquery_version' => '1.8.3',
+    'bootstrap_source' => 'bootstrapcdn',
+    'bootstrap_version' => '2.3.2',
+    'favicon_mimetype' => 'image/png',
+  );
+  $export['theme_tweme_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'twitter_host';
   $strongarm->value = 'http://twitter.com';
   $export['twitter_host'] = $strongarm;

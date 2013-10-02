@@ -34,4 +34,6 @@ features[variable][] = pathauto_user_pattern
 features[variable][] = site_name
 features[variable][] = site_slogan
 features[variable][] = theme_default
+features[variable][] = theme_seven_settings
+features[variable][] = theme_tweme_settings
 features[variable][] = twitter_host

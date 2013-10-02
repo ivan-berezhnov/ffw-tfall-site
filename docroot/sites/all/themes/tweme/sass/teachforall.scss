@@ -2245,6 +2245,11 @@ img {max-width: 100%;}
 
 .news__node-links {
   margin-top: 30px;
+  .full-list {
+    @media screen and (max-width:767px) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .news__byline {

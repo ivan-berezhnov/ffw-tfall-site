@@ -2141,6 +2141,11 @@ img {
 .news__node-links {
   margin-top: 30px;
 }
+@media screen and (max-width: 767px) {
+  .news__node-links .full-list {
+    margin-bottom: 20px;
+  }
+}
 
 .news__byline h3 {
   color: #999999;
@@ -2540,7 +2545,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";
