@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Our Model feature.
+ */
+
+include_once 'our_model.features.inc';

@@ -6,6 +6,7 @@ project = pubteachforall_1_col_layout
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = filter
+dependencies[] = link
 dependencies[] = node
 dependencies[] = pubteachforall_2_col_layout
 dependencies[] = spotlight

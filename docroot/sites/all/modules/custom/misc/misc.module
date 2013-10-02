@@ -3,15 +3,16 @@
 /*
  * implements hook_menu
  */
+
 function misc_menu() {
 	module_load_include('inc', 'pathauto');
 
-	$customnodes = array('news','news/latest','network-learning','network-learning/latest');
+	$customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest');
 
 	foreach ($customnodes as $key)
 		$items[$key] = array(
 			'page callback' => 'theme_render_template',
-			'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php',array()),
+			'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
 			'access callback' => TRUE,
 		);
 
@@ -19,11 +20,22 @@ function misc_menu() {
 }
 
 function misc_nodequeue_save_subqueue_order_alter($sqid, $nodes) {
-    $node4_nid = $nodes['4']['nid'];
-    $new_node_4 = node_load($node4_nid);
-    $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
+	$node4_nid = $nodes['4']['nid'];
+	$new_node_4 = node_load($node4_nid);
+	$does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
 
-    if(!$does_node_4_have_vertical_image){
-        form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Must add vertical image to node in position 4');
-    }
+	if (!$does_node_4_have_vertical_image) {
+		form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Must add vertical image to node in position 4');
+	}
+}
+
+/*
+ * implements hook_entity_info_alter
+ */
+
+function misc_entity_info_alter(&$entity_info) {
+	$entity_info['node']['view modes']['our_model'] = array(
+		'label' => 'Our Model',
+		'custom settings' => TRUE,
+	);
 }
