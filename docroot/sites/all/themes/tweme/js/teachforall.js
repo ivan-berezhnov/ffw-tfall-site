@@ -41,7 +41,10 @@
       }
     });
 
-    if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
+    if ($body.hasClass('front')) {
+      // Move the map header element so it doesn't appear over the popup
+      $('#map .leaflet-tile-pane').after($('.worldmap__title'));
+    } else if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $bio = $(this).children('.person-bio'),
           $bioMoreParagraphs = $bio.find(':not(:first-child)'),

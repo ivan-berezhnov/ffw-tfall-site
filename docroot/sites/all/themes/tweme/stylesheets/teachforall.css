@@ -1382,6 +1382,9 @@ img {
   width: 100%;
   height: 580px;
 }
+#map .leaflet-map-pane {
+  width: 100%;
+}
 
 .leaflet-bar {
   border: none;
