@@ -92,7 +92,9 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'delete any page_join_our_staff content'.
   $permissions['delete any page_join_our_staff content'] = array(
     'name' => 'delete any page_join_our_staff content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -148,7 +150,9 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'delete own page_join_our_staff content'.
   $permissions['delete own page_join_our_staff content'] = array(
     'name' => 'delete own page_join_our_staff content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -222,7 +226,9 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'edit any page_join_our_staff content'.
   $permissions['edit any page_join_our_staff content'] = array(
     'name' => 'edit any page_join_our_staff content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -278,7 +284,9 @@ function content_editor_user_default_permissions() {
   // Exported permission: 'edit own page_join_our_staff content'.
   $permissions['edit own page_join_our_staff content'] = array(
     'name' => 'edit own page_join_our_staff content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
