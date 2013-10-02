@@ -37,6 +37,9 @@ function national_organization_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'our_model' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
