@@ -29,6 +29,7 @@ features[field_instance][] = node-page_our_model-field_ourmodelintro_systemchang
 features[field_instance][] = node-page_our_model-field_ourmodelintro_teachers
 features[field_instance][] = node-page_our_model-field_systemchange_spotlights
 features[field_instance][] = node-page_our_model-field_teachers_spotlights
+features[image][] = spotlight_ourmodel
 features[node][] = page_our_model
 features[variable][] = field_bundle_settings_node__page_our_model
 features[variable][] = menu_options_page_our_model
