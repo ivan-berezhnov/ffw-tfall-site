@@ -51,9 +51,20 @@
 
           <div class="row-fluid news__node-links">
             <div class="span12">
+              <?php
+                if (isset($content['sharethis'])) {
+                  print render($content['sharethis']);
+                }
+              ?>
               <a href="/network-learning/latest">
                 <div class="full-list"><?php print t('Network Learning Archive'); ?> <span class="orange2">>></span></div>
               </a>
+            </div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span12">
+              <?php print $block_facebook_comments_box; ?>
             </div>
           </div>
 
@@ -69,4 +80,4 @@
     </div>
   </div>
 </div>
-<?php print $block_facebook_comments_box; ?>
+

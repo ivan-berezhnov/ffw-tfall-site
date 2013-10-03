@@ -19,6 +19,7 @@
     #MapBox
     #Twitter
     #ShareThis
+    #Facebook Comments
 
     ### VIEWS ###
     #News Listing
@@ -1656,12 +1657,48 @@ img {max-width: 100%;}
 .st_twitter_large,
 .st_facebook_large {
   .stLarge {
-    background-image: none !important;
     background-color: $grey2;
+    background-repeat: no-repeat;
+    background-position: 9999px 9999px;
+    color: $white;
+    display: inline !important; // needed to override the shareThis imported style
+    padding: 6px;
+    top: 6px;
+    @include font-size(20);
+    &:hover {
+      color: $orange2;
+    }
   }
 }
 
 .st_facebook_large {
+  .stLarge {
+    @extend .ico-facebook;
+  }
+}
+
+.st_twitter_large {
+  .stLarge {
+    @extend .ico-twitter;
+  }
+}
+
+/**/
+
+/**
+* #Facebook Comments
+**/
+
+.facebook-comments-box {
+  padding: 30px 0 0 0;
+  position: relative;
+  @media screen and (max-width:767px) {
+    padding-top: 10px;
+  }
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe[style] {
+  width: 100% !important;
 }
 
 /**/
@@ -2313,7 +2350,7 @@ img {max-width: 100%;}
 .news__video-caption {
   color: $black;
   font-style: italic;
-  margin: -10px 0 20px 0;
+  margin: -10px 0 10px 0;
   @include font-size(14);
 }
 

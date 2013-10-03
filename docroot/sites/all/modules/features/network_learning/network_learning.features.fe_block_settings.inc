@@ -22,8 +22,8 @@ function network_learning_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'tweme' => array(
-        'region' => 'content',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'tweme',
         'weight' => -16,
       ),

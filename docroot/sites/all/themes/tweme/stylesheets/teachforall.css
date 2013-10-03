@@ -18,6 +18,7 @@
     #MapBox
     #Twitter
     #ShareThis
+    #Facebook Comments
 
     ### VIEWS ###
     #News Listing
@@ -146,7 +147,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"] {
 */
-.ico-facebook, .ico-vimeo, .ico-twitter, .ico-linkedin {
+.ico-facebook, .st_facebook_large .stLarge, .ico-vimeo, .ico-twitter, .st_twitter_large .stLarge, .ico-linkedin {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -157,7 +158,7 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-.ico-facebook:before {
+.ico-facebook:before, .st_facebook_large .stLarge:before {
   content: "\e000";
 }
 
@@ -165,7 +166,7 @@ you can use the generic selector below, but it's slower:
   content: "\e001";
 }
 
-.ico-twitter:before {
+.ico-twitter:before, .st_twitter_large .stLarge:before {
   content: "\e002";
 }
 
@@ -1594,8 +1595,37 @@ img {
 
 .st_twitter_large .stLarge,
 .st_facebook_large .stLarge {
-  background-image: none !important;
   background-color: #4d4d4d;
+  background-repeat: no-repeat;
+  background-position: 9999px 9999px;
+  color: white;
+  display: inline !important;
+  padding: 6px;
+  top: 6px;
+  font-size: 20px;
+  font-size: 1.17647rem;
+}
+.st_twitter_large .stLarge:hover,
+.st_facebook_large .stLarge:hover {
+  color: #ffb151;
+}
+
+/**/
+/**
+* #Facebook Comments
+**/
+.facebook-comments-box {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .facebook-comments-box {
+    padding-top: 10px;
+  }
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe[style] {
+  width: 100% !important;
 }
 
 /**/
@@ -2197,7 +2227,7 @@ img {
 .news__video-caption {
   color: black;
   font-style: italic;
-  margin: -10px 0 20px 0;
+  margin: -10px 0 10px 0;
   font-size: 14px;
   font-size: 0.82353rem;
 }
@@ -2767,7 +2797,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";
