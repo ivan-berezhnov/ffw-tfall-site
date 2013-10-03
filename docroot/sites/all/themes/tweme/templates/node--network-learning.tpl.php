@@ -69,3 +69,4 @@
     </div>
   </div>
 </div>
+<?php print $block_facebook_comments_box; ?>
