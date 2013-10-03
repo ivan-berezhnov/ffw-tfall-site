@@ -1361,7 +1361,7 @@ img {max-width: 100%;}
 .marquee__hover {
   @include box-sizing(border-box);
   background-color: $grey3;
-  opacity: 0;
+  @include opacity(0);
   height: 100%;
   position: absolute;
   top: 0;
