@@ -40,6 +40,11 @@
 				});
 			});
 
+			map.markerLayer.on('mouseover',function(e) {
+				e.layer.openPopup();
+			});
+
+
 		}
 	};
 }(jQuery));
