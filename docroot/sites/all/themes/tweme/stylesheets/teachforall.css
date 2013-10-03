@@ -480,6 +480,12 @@ h2.page-title {
   font-size: 30px;
   font-size: 1.76471rem;
 }
+@media screen and (max-width: 350px) {
+  h2.page-title {
+    font-size: 24px;
+    font-size: 1.41176rem;
+  }
+}
 
 @media screen and (max-width: 767px) {
   h2, .h2 {

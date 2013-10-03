@@ -426,6 +426,10 @@ h2 {
     margin-top: 0;
     text-transform: uppercase;
     @include font-size(30);
+
+    @media screen and (max-width: 350px) {
+      @include font-size(24);
+    }
   }
 }
 
