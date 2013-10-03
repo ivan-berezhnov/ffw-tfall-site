@@ -32,6 +32,15 @@
               <?php print render($content['body']); ?>
             <?php endif; ?>
           </div>
+          <div class="row-fluid">
+            <div class="span12">
+              <?php
+                if (isset($content['sharethis'])) {
+                  print render($content['sharethis']);
+                }
+              ?>
+            </div>
+          </div>
       </div>
     </div>
     <div class="span3">
