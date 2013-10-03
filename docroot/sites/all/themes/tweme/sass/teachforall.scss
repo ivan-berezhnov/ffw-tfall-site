@@ -1436,7 +1436,6 @@ img {max-width: 100%;}
 
 #worldmap {
   @include box-sizing(border-box);
-  background-color: $blue1;
   padding: 0px;
   position: relative;
 
@@ -1449,6 +1448,10 @@ img {max-width: 100%;}
       margin: 0;
     }
   }
+}
+
+.worldmap__national-orgs {
+  background-color: $blue1;
 }
 
 .worldmap__title {

@@ -17,7 +17,7 @@
 
 
 <!-- world map -->
-<div id="worldmap" class="container-wrapper">
+<div id="worldmap" class="container-wrapper worldmap__national-orgs">
   <div class="container">
     <div class="row-fluid">
       <div class="span12">

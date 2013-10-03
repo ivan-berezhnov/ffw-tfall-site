@@ -1371,7 +1371,6 @@ img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #80b4e4;
   padding: 0px;
   position: relative;
 }
@@ -1383,6 +1382,10 @@ img {
     width: 100%;
     margin: 0;
   }
+}
+
+.worldmap__national-orgs {
+  background-color: #80b4e4;
 }
 
 .worldmap__title {

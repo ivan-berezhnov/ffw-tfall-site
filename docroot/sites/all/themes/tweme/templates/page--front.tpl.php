@@ -80,7 +80,7 @@
 	</div>
 </div>
 
-<div id="worldmap" class="container-wrapper">
+<div id="worldmap" class="container-wrapper worldmap__national-orgs">
   <div class="container">
     <!-- world map -->
     <div class="row-fluid">
