@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Page - Results feature.
+ */
+
+include_once 'results.features.inc';
