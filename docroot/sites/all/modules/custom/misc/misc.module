@@ -49,11 +49,14 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
 function validate_marquee_node_4_contains_vertical_image($form, &$form_state) {
 
     $node4_nid = (array_keys($form_state['input']['nodes']));
-    $new_node_4 = node_load($node4_nid[3]);
-    $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
+    if(sizeof($node4_nid) > 3)
+    {
+        $new_node_4 = node_load($node4_nid[3]);
+        $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
 
-    if (!$does_node_4_have_vertical_image) {
-        form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Content in position 4 must have a vertical image!');
+        if (!$does_node_4_have_vertical_image) {
+            form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Content in position 4 must have a vertical image!');
+        }
     }
 }
 
