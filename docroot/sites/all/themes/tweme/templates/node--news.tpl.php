@@ -50,15 +50,14 @@
 
   				<div class="row-fluid news__node-links">
   				  <div class="span12">
-                      <?php
-                      if (isset($content['sharethis'])) {
-                        print render($content['sharethis']);
-                      }
-                      ?>
-                      <a href="/news/latest">
-  				        <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
-                      </a>
-                    </a>
+              <?php
+                if (isset($content['sharethis'])) {
+                  print render($content['sharethis']);
+                }
+              ?>
+            <a class="archive-link" href="/news/latest">
+	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
+            </a>
   				  </div>
   				</div>
 

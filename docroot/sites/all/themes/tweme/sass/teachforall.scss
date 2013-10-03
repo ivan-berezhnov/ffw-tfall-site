@@ -1638,10 +1638,30 @@ img {max-width: 100%;}
 * #ShareThis
 **/
 
-.block-sharethis {
+.sharethis-buttons {
+  float: left;
+  width: 88px;
   .stButton {
-    margin: 0;
+    line-height: 7px;
+    margin: 0 8px 0 0;
   }
+}
+
+.archive-link {
+  display: block;
+  float: left;
+  width: 175px;
+}
+
+.st_twitter_large,
+.st_facebook_large {
+  .stLarge {
+    background-image: none !important;
+    background-color: $grey2;
+  }
+}
+
+.st_facebook_large {
 }
 
 /**/
