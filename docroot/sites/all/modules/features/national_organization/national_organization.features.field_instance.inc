@@ -577,7 +577,7 @@ function national_organization_field_default_field_instances() {
         'class' => '',
         'configurable_title' => 0,
         'rel' => '',
-        'target' => '_blank',
+        'target' => 'user',
         'title' => '',
       ),
       'display' => array(
@@ -661,8 +661,8 @@ function national_organization_field_default_field_instances() {
       0 => array(
         'fname' => 'field-location',
         'name' => '',
-        'lat' => 35.3078060393,
-        'lon' => -9.70311641693,
+        'lat' => 35.307806039289,
+        'lon' => -9.7031164169312,
         'zoom' => 2,
         'center_on' => '',
         'do_center' => 'center',
