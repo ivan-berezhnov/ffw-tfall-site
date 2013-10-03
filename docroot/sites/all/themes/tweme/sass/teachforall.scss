@@ -905,9 +905,20 @@ h2 {
   @media screen and (max-width: 767px) {
     padding: 20px 0 0;
 
-    .row-fluid .span3.facebook {
-      .fb-like-box {
-        margin-top: 30px;
+    background: $white;
+
+    .row-fluid {
+      .span9 {
+        @include clearfix();
+        background: $orange1;
+        padding: 30px 0;
+      }
+
+      .span3.facebook {
+        .fb-like-box {
+          max-height: 209px;
+          overflow: hidden;
+        }
       }
     }
   }

@@ -925,9 +925,20 @@ h2.page-title {
 @media screen and (max-width: 767px) {
   #feeds {
     padding: 20px 0 0;
+    background: white;
+  }
+  #feeds .row-fluid .span9 {
+    background: #e69740;
+    padding: 30px 0;
+  }
+  #feeds .row-fluid .span9:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   #feeds .row-fluid .span3.facebook .fb-like-box {
-    margin-top: 30px;
+    max-height: 209px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -2808,7 +2819,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";
