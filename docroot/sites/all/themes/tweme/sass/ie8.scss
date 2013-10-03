@@ -1,5 +1,5 @@
 /**
-*   #Table of Contents
+* #Table of Contents
 **/
 
 /**
@@ -7,12 +7,17 @@
     #Uber Navigation
     #Header
     #Primary Navigation
+    #Main Content
     #Footer
     #Marquee
+
+    ### VIEWS ###
+    #Persons
+    #Supporters
 **/
 
 /**
-*   #Imports
+* #Imports
 **/
 
 @import "compass/css3";
@@ -24,7 +29,7 @@
 
 html.lte-ie8 {
    /**
-   *   #Uber Navigation
+   * #Uber Navigation
    **/
 
    .uber-nav {
@@ -40,7 +45,7 @@ html.lte-ie8 {
    /**/
 
    /**
-   *   #Header
+   * #Header
    **/
 
    .donate {
@@ -74,7 +79,7 @@ html.lte-ie8 {
    /**/
 
    /**
-   *   #Primary Navigation
+   * #Primary Navigation
    **/
 
    .navbar {
@@ -116,7 +121,24 @@ html.lte-ie8 {
    /**/
 
    /**
-   *   #Footer
+   * #Main Content
+   **/
+
+   #main {
+      .page-title, h3 {
+         font-weight: bold;
+      }
+
+      #content.span12 {
+         width: 100%;
+         margin: 0;
+      }
+   }
+
+   /**/
+
+   /**
+   * #Footer
    **/
 
    #footer {
@@ -152,7 +174,7 @@ html.lte-ie8 {
    /**/
 
    /**
-   *   #Marquee
+   * #Marquee
    **/
 
    .marquee {
@@ -175,4 +197,35 @@ html.lte-ie8 {
    }
 
    /**/
-}
+
+
+   /**
+   * #Persons
+   **/
+
+   .view-persons {
+      .view-content {
+         .view-persons-one-col {
+           display: none;
+         }
+
+         .view-persons-two-col {
+           display: block;
+
+           .left-col, .right-col {
+             float: left;
+             width: 49%;
+           }
+
+           .left-col {
+             margin-right: 1%;
+             clear: left;
+           }
+
+           .right-col {
+             margin-left: 1%;
+           }
+         }
+      }
+   }
+} // html.lte-ie8

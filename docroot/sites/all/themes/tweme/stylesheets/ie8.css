@@ -1,16 +1,21 @@
 /**
-*   #Table of Contents
+* #Table of Contents
 **/
 /**
     #Imports
     #Uber Navigation
     #Header
     #Primary Navigation
+    #Main Content
     #Footer
     #Marquee
+
+    ### VIEWS ###
+    #Persons
+    #Supporters
 **/
 /**
-*   #Imports
+* #Imports
 **/
 /**
 *	#Table of Contents
@@ -59,25 +64,32 @@ h1 .red, h2 .red, h3 .red, h4 .red {
 /**/
 html.lte-ie8 {
   /**
-  *   #Uber Navigation
+  * #Uber Navigation
   **/
   /**/
   /**
-  *   #Header
+  * #Header
   **/
   /**/
   /**
-  *   #Primary Navigation
+  * #Primary Navigation
   **/
   /**/
   /**
-  *   #Footer
+  * #Main Content
   **/
   /**/
   /**
-  *   #Marquee
+  * #Footer
   **/
   /**/
+  /**
+  * #Marquee
+  **/
+  /**/
+  /**
+  * #Persons
+  **/
 }
 html.lte-ie8 .uber-nav .content > .menu > li.last {
   border: 0;
@@ -128,6 +140,13 @@ html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content >
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
   width: 200px;
 }
+html.lte-ie8 #main .page-title, html.lte-ie8 #main h3 {
+  font-weight: bold;
+}
+html.lte-ie8 #main #content.span12 {
+  width: 100%;
+  margin: 0;
+}
 html.lte-ie8 #footer .footer-links .content > ul > li + li + li + li {
   display: none;
 }
@@ -151,4 +170,21 @@ html.lte-ie8 .marquee__hover {
 html.lte-ie8 .marquee__info-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-one-col {
+  display: none;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col {
+  display: block;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col, html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
+  float: left;
+  width: 49%;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col {
+  margin-right: 1%;
+  clear: left;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
+  margin-left: 1%;
 }

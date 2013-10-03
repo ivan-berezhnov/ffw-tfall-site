@@ -269,6 +269,10 @@ body {
 * #Global Elements
 **/
 
+textarea:focus, input:focus{
+  outline: 0 !important;
+}
+
 .jump-link {
   text-align: center;
 }

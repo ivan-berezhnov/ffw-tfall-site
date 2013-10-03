@@ -19,7 +19,7 @@
     <title><?php print $head_title ?></title>
     <?php print $styles ?>
     <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="sites/all/themes/tweme/stylesheets/ie8.css">
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/tweme/stylesheets/ie8.css">
     <![endif]-->
     <?php print $scripts ?>
     <?php print $head_bottom ?>
