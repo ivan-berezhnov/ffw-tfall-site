@@ -589,8 +589,8 @@ function national_organization_field_default_field_instances() {
       0 => array(
         'fname' => 'field-location',
         'name' => '',
-        'lat' => 35.307806039289,
-        'lon' => -9.7031164169312,
+        'lat' => 35.3078060393,
+        'lon' => -9.70311641693,
         'zoom' => 2,
         'center_on' => '',
         'do_center' => 'center',
@@ -1323,6 +1323,7 @@ function national_organization_field_default_field_instances() {
   t('To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>');
   t('Twitter API key');
   t('blurb/compelling statistic text');
+  t('link(s) to organization\'s website');
 
   return $field_instances;
 }

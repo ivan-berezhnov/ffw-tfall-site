@@ -411,11 +411,6 @@ html.js input.throbbing {
 }
 
 .btn-red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  border-radius: 16px;
   text-shadow: none;
   font-size: 11px;
   font-size: 0.64706rem;
@@ -1419,14 +1414,46 @@ img {
   color: #e69740;
 }
 
-.leaflet-popup-content .btn {
-  color: white;
-  position: absolute;
-  bottom: 30px;
-  right: 10px;
+.leaflet-popup-content-wrapper {
+  -webkit-box-shadow: 3px 3px 14px #888888;
+  -moz-box-shadow: 3px 3px 14px #888888;
+  box-shadow: 3px 3px 14px #888888;
 }
-.leaflet-popup-content .btn:hover {
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  margin: 9px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content h2 {
+  text-align: right;
+  font-size: 11px;
+  font-size: 0.64706rem;
+  color: #e69740;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 3px;
+  margin-bottom: -19px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .btn {
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  text-shadow: none;
+  font-size: 16px;
+  font-size: 0.94118rem;
+  position: absolute;
+  bottom: 32px;
+  right: 10px;
+  background: #3c3835 url(../images/grey-more-btn-bg.png) left top repeat-x;
   color: white;
+  line-height: 26px;
+  padding: 0px 17px;
+  font-family: "News Gothic", sans-serif;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .btn:hover {
+  color: white;
+  background: #4d4d4d;
 }
 
 /**/
@@ -2623,7 +2650,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";

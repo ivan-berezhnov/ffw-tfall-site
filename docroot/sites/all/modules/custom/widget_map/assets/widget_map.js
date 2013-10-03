@@ -32,11 +32,11 @@
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<img src="' + feature.properties.logo + '">' +
 								'</a>' +
-								'<a class="btn btn-primary" href="' + feature.properties.url + '">Learn more</a>';
+								'<a class="btn btn-primary" href="' + feature.properties.url + '">more</a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
-					minWidth: 320
+					minWidth: 291
 				});
 			});
 
