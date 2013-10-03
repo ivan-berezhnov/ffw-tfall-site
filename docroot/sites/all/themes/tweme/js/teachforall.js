@@ -41,9 +41,18 @@
       }
     });
 
-    if ($body.hasClass('front')) {
-      // Move the map header element so it doesn't appear over the popup
-      $('#map .leaflet-tile-pane').after($('.worldmap__title'));
+    if ($body.hasClass('front') || $body.hasClass('node-type-national-organizations') || $body.hasClass('node-type-national-organization')) {
+      $('#map').on('click', function() {
+        var $mapPopup = $('.leaflet-popup-pane'),
+          $mapTitle = $('.worldmap__title'),
+          fadeAnimateTime = 200;
+
+        if ($mapPopup.children().length) {
+          $mapTitle.fadeOut(fadeAnimateTime);
+        } else {
+          $mapTitle.fadeIn(fadeAnimateTime);
+        }
+      });
     } else if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $bio = $(this).children('.person-bio'),

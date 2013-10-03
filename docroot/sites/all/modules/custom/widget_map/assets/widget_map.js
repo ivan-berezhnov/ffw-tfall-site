@@ -3,11 +3,13 @@
 		attach: function(context, settings) {
 
 			var map = L.mapbox.map('map', Drupal.settings.widget_map.key, {
-				center: [30, 25],
-				zoom: 2,
-				minZoom: 2,
-				maxZoom: 5
-			});
+					center: [30, 25],
+					zoom: 2,
+					minZoom: 2,
+					maxZoom: 5
+				}),
+				$mapTitle = $('.worldmap__title'),
+				fadeAnimateTime = 200;
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
@@ -18,8 +20,6 @@
 					map.markerLayer.setGeoJSON(data);
 				}
 			});
-
-
 
 			map.markerLayer.on('layeradd', function(e) {
 				var marker = e.layer,feature = marker.feature;
@@ -41,10 +41,19 @@
 			});
 
 			map.markerLayer.on('mouseover',function(e) {
+				$mapTitle.fadeOut(fadeAnimateTime);
 				e.layer.openPopup();
 			});
 
+			map.markerLayer.on('click',function(e) {
+				var $mapPopup = $('.leaflet-popup-pane');
 
+				if ($mapPopup.children().length) {
+					$mapTitle.fadeIn(fadeAnimateTime);
+				} else {
+					$mapTitle.fadeOut(fadeAnimateTime);
+				}
+			});
 		}
 	};
 }(jQuery));
