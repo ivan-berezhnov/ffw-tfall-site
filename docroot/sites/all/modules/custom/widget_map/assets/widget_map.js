@@ -21,6 +21,29 @@
 				}
 			});
 
+			toggleMapTitle = function(element) {
+				var $mapPopup = $('.leaflet-popup-pane');
+
+				switch(element) {
+					case 'marker':
+						if ($mapPopup.children().length) {
+							$mapTitle.fadeIn(fadeAnimateTime);
+						} else {
+							$mapTitle.fadeOut(fadeAnimateTime);
+						}
+
+						break;
+					case 'map':
+						if ($mapPopup.children().length) {
+						  $mapTitle.fadeOut(fadeAnimateTime);
+						} else {
+						  $mapTitle.fadeIn(fadeAnimateTime);
+						}
+
+						break;
+				}
+			}
+
 			map.markerLayer.on('layeradd', function(e) {
 				var marker = e.layer,feature = marker.feature;
 
@@ -46,13 +69,11 @@
 			});
 
 			map.markerLayer.on('click',function(e) {
-				var $mapPopup = $('.leaflet-popup-pane');
+				toggleMapTitle('marker');
+			});
 
-				if ($mapPopup.children().length) {
-					$mapTitle.fadeIn(fadeAnimateTime);
-				} else {
-					$mapTitle.fadeOut(fadeAnimateTime);
-				}
+			map.on('click', function() {
+				toggleMapTitle('map');
 			});
 		}
 	};

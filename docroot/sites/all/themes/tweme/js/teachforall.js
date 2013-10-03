@@ -41,19 +41,7 @@
       }
     });
 
-    if ($body.hasClass('front') || $body.hasClass('node-type-national-organizations') || $body.hasClass('node-type-national-organization')) {
-      $('#map').on('click', function() {
-        var $mapPopup = $('.leaflet-popup-pane'),
-          $mapTitle = $('.worldmap__title'),
-          fadeAnimateTime = 200;
-
-        if ($mapPopup.children().length) {
-          $mapTitle.fadeOut(fadeAnimateTime);
-        } else {
-          $mapTitle.fadeIn(fadeAnimateTime);
-        }
-      });
-    } else if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
+    if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $bio = $(this).children('.person-bio'),
           $bioMoreParagraphs = $bio.find(':not(:first-child)'),
