@@ -36,6 +36,7 @@
     #Global Problem
     #Donate
     #Our Model
+    #Global Organization
 
     ### LANDING PAGES ###
     #News - Landing
@@ -209,7 +210,7 @@ h2, .h2 {
 
 h3, .h3, .title-small, .marquee__2 .marquee__title,
 .marquee__3 .marquee__title,
-.marquee__4 .marquee__title {
+.marquee__4 .marquee__title, .our-model-section .spotlights a {
   font-family: "Fedra Serif", serif;
   font-weight: normal;
   line-height: 22px;
@@ -220,7 +221,7 @@ h3, .h3, .title-small, .marquee__2 .marquee__title,
 @media screen and (max-width: 767px) {
   h3, .h3, .title-small, .marquee__2 .marquee__title,
   .marquee__3 .marquee__title,
-  .marquee__4 .marquee__title {
+  .marquee__4 .marquee__title, .our-model-section .spotlights a {
     line-height: 20px;
     font-size: 16px;
     font-size: 0.94118rem;
@@ -272,7 +273,7 @@ body {
   font-weight: bold;
 }
 
-.small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
+.small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .our-model-section .spotlights p {
   font-size: 16px;
   font-size: 0.94118rem;
   color: #4d4d4d;
@@ -467,7 +468,7 @@ div.messages {
 h2.page-title {
   color: #e69740;
   letter-spacing: 5px;
-  line-height: 26px;
+  line-height: 30px;
   margin-top: 0;
   text-transform: uppercase;
   font-size: 30px;
@@ -1641,10 +1642,12 @@ img {
 .network-learning-page h3 a:hover, .network-learning-latest h3 a:hover {
   color: #cf4753;
 }
-.news-page .small-body, .news-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-page a, .news-latest .small-body, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-latest a,
+.news-page .small-body, .news-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-page a, .news-page .our-model-section .spotlights p, .our-model-section .spotlights .news-page p, .news-latest .small-body, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-latest a, .news-latest .our-model-section .spotlights p, .our-model-section .spotlights .news-latest p,
 .network-learning-page .small-body,
 .network-learning-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a,
-.node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-page a, .network-learning-latest .small-body, .network-learning-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-latest a {
+.node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-page a,
+.network-learning-page .our-model-section .spotlights p,
+.our-model-section .spotlights .network-learning-page p, .network-learning-latest .small-body, .network-learning-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .network-learning-latest a, .network-learning-latest .our-model-section .spotlights p, .our-model-section .spotlights .network-learning-latest p {
   margin-bottom: 5px;
 }
 
@@ -2473,6 +2476,52 @@ img {
 }
 .node-type-page-our-model #main .btn-red:hover, .node-type-page-our-model #main .view-persons .view-footer a.btn:hover, .view-persons .view-footer .node-type-page-our-model #main a.btn:hover, .node-type-page-our-model #main .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .node-type-page-our-model #main .btn:hover {
   color: white;
+}
+
+/**/
+/**
+* #Global Organization
+**/
+.our-model-section .slug-large {
+  padding: 20px 0 30px 0;
+  text-align: center;
+}
+.our-model-section .spotlights {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .our-model-section .spotlights {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+.our-model-section .spotlights a {
+  color: #4d4d4d;
+}
+.our-model-section .spotlights a:hover {
+  color: #cf4753;
+}
+.our-model-section .spotlights p {
+  color: #91998c;
+  margin-top: 5px;
+}
+.our-model-section .spotlights p:hover {
+  color: #cf4753;
+}
+@media screen and (max-width: 767px) {
+  .our-model-section .spotlights p {
+    margin-bottom: 20px;
+  }
+}
+.our-model-section .spotlights img {
+  height: auto;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .our-model-section .spotlights img {
+    margin-bottom: 10px;
+  }
 }
 
 /**/

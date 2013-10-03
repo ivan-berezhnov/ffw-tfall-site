@@ -37,6 +37,7 @@
     #Global Problem
     #Donate
     #Our Model
+    #Global Organization
 
     ### LANDING PAGES ###
     #News - Landing
@@ -415,7 +416,7 @@ h2 {
   &.page-title {
     color: $orange1;
     letter-spacing: 5px;
-    line-height: 26px;
+    line-height: 30px;
     margin-top: 0;
     text-transform: uppercase;
     @include font-size(30);
@@ -2614,6 +2615,52 @@ img {max-width: 100%;}
 
       &:hover {
         color: $white;
+      }
+    }
+  }
+}
+
+/**/
+
+/**
+* #Global Organization
+**/
+
+.our-model-section {
+  .slug-large {
+    padding: 20px 0 30px 0;
+    text-align: center;
+  }
+  .spotlights {
+    margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+      margin-bottom: 0;
+      text-align: center;
+    }
+    a {
+      color: $grey2;
+      @extend .h3;
+      &:hover {
+        color: $red;
+      }
+    }
+    p {
+      color: $grey1;
+      margin-top: 5px;
+      @extend .small-body;
+      &:hover {
+        color: $red;
+      }
+      @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+      }
+    }
+    img {
+      height: auto;
+      margin-bottom: 20px;
+      width: 100%;
+      @media screen and (max-width:767px) {
+        margin-bottom: 10px;
       }
     }
   }
