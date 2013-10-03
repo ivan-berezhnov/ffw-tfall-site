@@ -14,6 +14,13 @@ function tfa_supporter_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function tfa_supporter_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_fe_nodequeue_export_fields().
  */
 function tfa_supporter_fe_nodequeue_export_fields() {
