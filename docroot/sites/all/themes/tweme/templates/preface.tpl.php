@@ -5,7 +5,7 @@
  * Default theme implementation to display a preface for the current page.
  */
 
-//print $breadcrumb;
+print $breadcrumb;
 print render($help);
 print render($tabs);
 if ($actions) {
