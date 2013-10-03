@@ -37,6 +37,7 @@
     #Donate
     #Our Model
     #Global Organization
+    #Results
 
     ### LANDING PAGES ###
     #News - Landing
@@ -2522,6 +2523,15 @@ img {
   .our-model-section .spotlights img {
     margin-bottom: 10px;
   }
+}
+
+/**/
+/**
+* #Results
+**/
+.our-model-banner .infographic img {
+  height: auto;
+  width: 100%;
 }
 
 /**/
