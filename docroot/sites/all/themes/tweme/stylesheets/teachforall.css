@@ -924,10 +924,10 @@ h2.page-title {
 }
 @media screen and (max-width: 767px) {
   #feeds {
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
-  #feeds .row-fluid .span3.facebook {
-    text-align: center;
+  #feeds .row-fluid .span3.facebook .fb-like-box {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -1203,6 +1203,16 @@ img {
 
 .fb-like-box {
   background-color: white;
+}
+
+/* responsive fb like box */
+#fb-root {
+  display: none;
+}
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
 }
 
 /**/
@@ -1539,6 +1549,9 @@ img {
 .tweets .tweets__text a {
   color: white;
   word-wrap: break-word;
+}
+.tweets .tweets__text a:hover {
+  color: #cf4753;
 }
 
 .region-twitter-front {
@@ -2598,11 +2611,6 @@ img {
 
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
-}
-@media screen and (min-width: 768px) and (max-width: 979px) {
-  .page-news .fb-like-box, .page-network-learning .fb-like-box {
-    display: none;
-  }
 }
 .page-news .full-list, .page-network-learning .full-list {
   margin-top: 30px;

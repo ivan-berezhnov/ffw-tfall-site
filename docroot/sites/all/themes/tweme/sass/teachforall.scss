@@ -903,10 +903,12 @@ h2 {
   padding: 28px 0 40px;
 
   @media screen and (max-width: 767px) {
-    padding: 20px 0;
+    padding: 20px 0 0;
 
     .row-fluid .span3.facebook {
-      text-align: center;
+      .fb-like-box {
+        margin-top: 30px;
+      }
     }
   }
 
@@ -1272,6 +1274,16 @@ img {max-width: 100%;}
 	background-color: $white;
 }
 
+/* responsive fb like box */
+#fb-root {
+  display: none;
+}
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
 /**/
 
 /**
@@ -1594,6 +1606,10 @@ img {max-width: 100%;}
     a {
       color: $white;
       word-wrap: break-word;
+
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
@@ -2762,12 +2778,6 @@ img {max-width: 100%;}
   #main {
     .page-title {
       margin-bottom: 35px;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 979px) {
-    .fb-like-box {
-      display: none;
     }
   }
 
