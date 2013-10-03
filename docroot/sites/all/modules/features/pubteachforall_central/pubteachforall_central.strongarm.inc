@@ -178,6 +178,13 @@ function pubteachforall_central_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'sharethis_publisherID';
+  $strongarm->value = 'dr-164cc683-5f33-a0a5-c0d2-370b42e84789';
+  $export['sharethis_publisherID'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
   $strongarm->value = 'pubteach4alldev.prod.acquia-sites.com';
   $export['site_name'] = $strongarm;

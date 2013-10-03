@@ -31,6 +31,7 @@ features[variable][] = pathauto_taxonomy_term_pattern
 features[variable][] = pathauto_taxonomy_term_supporter_levels_pattern
 features[variable][] = pathauto_taxonomy_term_tags_pattern
 features[variable][] = pathauto_user_pattern
+features[variable][] = sharethis_publisherID
 features[variable][] = site_name
 features[variable][] = site_slogan
 features[variable][] = theme_default
