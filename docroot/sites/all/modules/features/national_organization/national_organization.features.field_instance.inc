@@ -28,6 +28,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 19,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -70,6 +76,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'number_unformatted',
         'weight' => 10,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -118,6 +130,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'number_unformatted',
         'weight' => 14,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -164,6 +182,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -214,6 +238,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 4,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -261,6 +291,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 20,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -306,6 +342,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'number_unformatted',
         'weight' => 8,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -354,6 +396,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 1,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -396,6 +444,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 16,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -443,6 +497,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 18,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -488,6 +548,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 22,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -549,6 +615,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'number_unformatted',
         'weight' => 13,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -606,6 +678,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'google_map_field_formatter_wkt',
         'weight' => 17,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -649,6 +727,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 21,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -697,6 +781,12 @@ function national_organization_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 2,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -754,6 +844,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'image',
         'weight' => 6,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -808,6 +904,12 @@ function national_organization_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'our_model' => array(
@@ -869,6 +971,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'number_integer',
         'weight' => 12,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -916,6 +1024,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'number_unformatted',
         'weight' => 7,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -962,6 +1076,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'number_unformatted',
         'weight' => 11,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -1013,6 +1133,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 15,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1059,6 +1185,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'number_unformatted',
         'weight' => 9,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -1107,6 +1239,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1152,6 +1290,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 3,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -1213,6 +1357,12 @@ function national_organization_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1258,6 +1408,12 @@ function national_organization_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',

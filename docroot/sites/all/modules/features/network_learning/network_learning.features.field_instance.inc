@@ -24,6 +24,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -78,6 +84,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'video_embed_field',
         'weight' => 6,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -120,6 +132,12 @@ function network_learning_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'our_model' => array(
@@ -169,6 +187,12 @@ function network_learning_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 1,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -223,6 +247,12 @@ function network_learning_field_default_field_instances() {
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',

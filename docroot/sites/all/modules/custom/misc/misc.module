@@ -66,4 +66,8 @@ function misc_entity_info_alter(&$entity_info) {
 		'label' => 'Our Model',
 		'custom settings' => TRUE,
 	);
+	$entity_info['node']['view modes']['global_organization'] = array(
+		'label' => 'Global organization',
+		'custom settings' => TRUE,
+	);
 }

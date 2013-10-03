@@ -24,6 +24,12 @@ function person_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -69,6 +75,12 @@ function person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',
@@ -116,6 +128,12 @@ function person_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'our_model' => array(
@@ -171,6 +189,12 @@ function person_field_default_field_instances() {
         'settings' => array(),
         'type' => 'list_default',
         'weight' => 1,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'our_model' => array(
         'label' => 'above',

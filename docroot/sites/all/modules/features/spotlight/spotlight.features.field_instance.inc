@@ -24,6 +24,15 @@ function spotlight_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'global_organization' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 200,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 1,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -75,6 +84,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'video_embed_field',
         'weight' => 4,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -112,6 +127,16 @@ function spotlight_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
         'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
@@ -183,6 +208,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 2,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -227,6 +258,12 @@ function spotlight_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 3,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'our_model' => array(

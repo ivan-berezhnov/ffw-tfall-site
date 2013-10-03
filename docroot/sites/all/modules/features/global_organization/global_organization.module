@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Global Organization feature.
+ */
+
+include_once 'global_organization.features.inc';

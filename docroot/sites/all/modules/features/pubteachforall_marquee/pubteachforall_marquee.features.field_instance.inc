@@ -26,6 +26,12 @@ function pubteachforall_marquee_field_default_field_instances() {
         'type' => 'image',
         'weight' => 5,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'our_model' => array(
         'label' => 'above',
         'settings' => array(),
@@ -81,6 +87,12 @@ function pubteachforall_marquee_field_default_field_instances() {
         'weight' => 0,
       ),
       'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
