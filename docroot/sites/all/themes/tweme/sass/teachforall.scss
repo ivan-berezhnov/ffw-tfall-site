@@ -1019,10 +1019,28 @@ h2 {
           line-height: 32px;
         }
 
+        .footer__search {
+          display: none;
+        }
+
         .social-media {
           display: inline-block;
           padding: 7px 8px;
           margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .row-fluid [class*="span2"] {
+      &:first-child + div + div {
+        .content > ul.menu {
+          > li {
+            a[title=Search] {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -1165,6 +1183,8 @@ h2 {
 
 .footer__search {
   margin: 10px 0;
+
+
   p {
     color: $beige;
     font-family: "Fedra", serif;
@@ -1173,6 +1193,7 @@ h2 {
     letter-spacing: 2px;
     @include font-size(13);
   }
+
   .navbar-search {
     float: none;
     .search-query {

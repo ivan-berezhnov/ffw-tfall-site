@@ -1022,10 +1022,18 @@ h2.page-title {
     margin-right: 9px;
     line-height: 32px;
   }
+  #footer .row-fluid .span2 + .span3 .footer__search {
+    display: none;
+  }
   #footer .row-fluid .span2 + .span3 .social-media {
     display: inline-block;
     padding: 7px 8px;
     margin-right: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li a[title=Search] {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
