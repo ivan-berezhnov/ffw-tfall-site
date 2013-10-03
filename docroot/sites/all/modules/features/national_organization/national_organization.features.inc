@@ -34,7 +34,7 @@ function national_organization_image_default_styles() {
     'name' => 'map_logo',
     'label' => 'map logo',
     'effects' => array(
-      4 => array(
+      5 => array(
         'label' => 'Scale',
         'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
         'effect callback' => 'image_scale_effect',
@@ -58,7 +58,7 @@ function national_organization_image_default_styles() {
     'name' => 'map_thumbnail',
     'label' => 'map thumbnail',
     'effects' => array(
-      3 => array(
+      6 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -71,7 +71,7 @@ function national_organization_image_default_styles() {
           'width' => 292,
           'height' => 156,
         ),
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
   );
