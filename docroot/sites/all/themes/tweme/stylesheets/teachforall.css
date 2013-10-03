@@ -31,6 +31,7 @@
     #Spotlight
     #Person
     #News - Node
+    #1 Column Layout
     #2 Column Layout
     #Global Problem
     #Donate
@@ -2182,6 +2183,33 @@ img {
 
 .news__byline h3 {
   color: #999999;
+}
+
+/**/
+/**
+* #1 Column Layout
+**/
+.one-col-layout__image {
+  margin-bottom: 20px;
+}
+.one-col-layout__image img {
+  width: 100%;
+}
+
+.one-col-layout__video {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.one-col-layout__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /**/

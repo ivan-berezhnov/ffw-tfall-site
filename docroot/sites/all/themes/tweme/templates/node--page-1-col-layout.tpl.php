@@ -88,7 +88,7 @@
 
     <div class="row-fluid">
       <div class="span12">
-        <?php print render($content['body']); ?>
+        <?php print render($content); ?>
       </div>
     </div>
 
