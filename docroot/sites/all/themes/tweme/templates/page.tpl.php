@@ -79,8 +79,8 @@
         <?php
         $current_path = request_path();
         $path_snippets = explode('/', $current_path);
-        $path_base = $path_snippets[0];
-        $does_path_begin_with_user = $path_base == 'user' || $path_base == 'users';
+        $path_portion_to_check = $path_snippets[0];
+        $does_path_begin_with_user = $path_portion_to_check == 'user' || $path_portion_to_check == 'users';
 
         if($does_path_begin_with_user){
             print('<div class="container">');
