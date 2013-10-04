@@ -376,9 +376,10 @@ function pubteachforall_central_strongarm() {
     'logo_upload' => '',
     'default_favicon' => 0,
     'favicon_path' => 'public://favicon.png',
-    'jquery_source' => 'googlecdn',
+    'favicon_upload' => '',
+    'jquery_source' => 'libraries',
     'jquery_version' => '1.8.3',
-    'bootstrap_source' => 'bootstrapcdn',
+    'bootstrap_source' => 'libraries',
     'bootstrap_version' => '2.3.2',
     'favicon_mimetype' => 'image/png',
   );
