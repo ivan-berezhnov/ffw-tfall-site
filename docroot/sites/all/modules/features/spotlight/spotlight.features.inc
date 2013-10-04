@@ -19,6 +19,29 @@ function spotlight_ctools_plugin_api($module = NULL, $api = NULL) {
 function spotlight_image_default_styles() {
   $styles = array();
 
+  // Exported image style: spotlight_thumb_570x321.
+  $styles['spotlight_thumb_570x321'] = array(
+    'name' => 'spotlight_thumb_570x321',
+    'label' => 'spotlight thumb_(570x321)',
+    'effects' => array(
+      1 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 570,
+          'height' => 321,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: spotlight_thumbnail.
   $styles['spotlight_thumbnail'] = array(
     'name' => 'spotlight_thumbnail',

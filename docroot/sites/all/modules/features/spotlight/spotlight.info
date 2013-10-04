@@ -23,6 +23,7 @@ features[field_instance][] = node-spotlight-field_embedded_video
 features[field_instance][] = node-spotlight-field_spotlight_image
 features[field_instance][] = node-spotlight-field_spotlight_type
 features[field_instance][] = node-spotlight-field_vertical_image
+features[image][] = spotlight_thumb_570x321
 features[image][] = spotlight_thumbnail
 features[node][] = spotlight
 features[variable][] = comment_anonymous_spotlight
