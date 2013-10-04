@@ -1468,6 +1468,9 @@ img {max-width: 100%;}
 
 .worldmap__national-orgs {
   background-color: $blue1;
+  .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+    height: 295px; // height is set so that it moves properly when selected
+  }
 }
 
 .worldmap__title {

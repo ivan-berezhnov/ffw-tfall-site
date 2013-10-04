@@ -1405,6 +1405,9 @@ img {
 .worldmap__national-orgs {
   background-color: #80b4e4;
 }
+.worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+  height: 295px;
+}
 
 .worldmap__title {
   -webkit-box-sizing: border-box;
