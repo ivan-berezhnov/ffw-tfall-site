@@ -79,6 +79,10 @@ function path_breadcrumbs_load_variant($path) {
   // Select all variants matching current path.
   $variants = path_breadcrumbs_load_by_path($path);
 
+  // Also select the variants matching the alias.
+  $alias = preg_replace('#^' . base_path() . '#', '', url($path)); // Strip the base_path from the current alias
+  $variants = array_merge($variants, path_breadcrumbs_load_by_path($alias));
+
   // Check if current path maches variant.
   // When first variant is found - return it.
   foreach ($variants as $breadcrumb) {
@@ -90,7 +94,8 @@ function path_breadcrumbs_load_variant($path) {
         [^\/]+  # all symbols except for the slash
         /x", '/*', $breadcrumb->path);
 
-    if (drupal_match_path($path, $matched_path)) {
+    // Match against the current path and alias
+    if (drupal_match_path($path, $matched_path) || drupal_match_path($alias, $matched_path)) {
 
       // Load breadcrumbs' contexts from current path.
       $contexts = path_breadcrumbs_get_contexts_from_arguments($breadcrumb->arguments);
