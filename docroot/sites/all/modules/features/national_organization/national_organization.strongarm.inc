@@ -40,6 +40,9 @@ function national_organization_strongarm() {
       'our_model' => array(
         'custom_settings' => TRUE,
       ),
+      'global_organization' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

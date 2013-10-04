@@ -1,9 +1,14 @@
 <?php
 
 /**
- * update notes
+ * Painless field type change for NO (number to float)
  */
-
-//function misc_update_7000() {
-//}
-
+function misc_update_7000() {
+	db_query('ALTER TABLE `field_data_field_avg_total_years_of_edu` MODIFY `field_avg_total_years_of_edu_value` FLOAT');
+	db_update('field_config')
+			->fields(array(
+				'type' => 'number_float'
+			))
+			->condition('field_name', 'field_avg_total_years_of_edu')
+			->execute();
+}
