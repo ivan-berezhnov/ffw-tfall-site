@@ -183,7 +183,7 @@ function network_learning_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'news_network_learning_node_image',
         ),
         'type' => 'image',
         'weight' => 1,

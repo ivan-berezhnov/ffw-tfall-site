@@ -41,6 +41,7 @@ features[field_instance][] = node-news-field_news_byline
 features[field_instance][] = node-news-field_news_image
 features[filter][] = wysiwyg
 features[flexslider_optionset][] = news_flexslider
+features[image][] = news_network_learning_node_image
 features[image][] = news_thumbnail
 features[node][] = news
 features[taxonomy][] = news
