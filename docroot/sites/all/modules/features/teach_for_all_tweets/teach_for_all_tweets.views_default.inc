@@ -272,10 +272,10 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
   $handler->display->display_options['fields']['screen_name']['label'] = '';
   $handler->display->display_options['fields']['screen_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['screen_name']['alter']['text'] = '@TeachForAll, ';
   $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/TeachForAll';
+  $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/[screen_name]';
   $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['prefix'] = '@';
   $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
   /* Field: Twitter: Created time */
   $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
@@ -285,7 +285,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 'd F';
   /* Field: Twitter: Message text */
   $handler->display->display_options['fields']['text']['id'] = 'text';
   $handler->display->display_options['fields']['text']['table'] = 'twitter';
@@ -388,7 +388,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 'd F';
   /* Field: Twitter: Message text */
   $handler->display->display_options['fields']['text']['id'] = 'text';
   $handler->display->display_options['fields']['text']['table'] = 'twitter';
@@ -444,7 +444,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 'd F';
   /* Field: Twitter: Message text */
   $handler->display->display_options['fields']['text']['id'] = 'text';
   $handler->display->display_options['fields']['text']['table'] = 'twitter';
@@ -500,7 +500,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['created_time']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created_time']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created_time']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 't F';
+  $handler->display->display_options['fields']['created_time']['custom_date_format'] = 'd F';
   /* Field: Twitter: Message text */
   $handler->display->display_options['fields']['text']['id'] = 'text';
   $handler->display->display_options['fields']['text']['table'] = 'twitter';
