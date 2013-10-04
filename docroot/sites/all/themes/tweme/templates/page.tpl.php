@@ -76,7 +76,22 @@
     <?php endif ?>
     <!-- Content -->
     <section id="content" class="span<?php print $content_cols ?>">
-      <?php print render($page['content']) ?>
+        <?php
+        $current_path = request_path();
+        $path_snippets = explode('/', $current_path);
+        $path_base = $path_snippets[0];
+        $does_path_begin_with_user = $path_base == 'user';
+
+        if($does_path_begin_with_user){
+            print('<div class="container">');
+            print render($page['content']);
+            print('</div>');
+        }else{
+            print render($page['content']);
+        }
+
+        ?>
+
     </section>
     <?php if ($has_sidebar_second): ?>
     <!-- Sidebar second -->
