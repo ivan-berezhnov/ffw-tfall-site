@@ -1,5 +1,5 @@
 <?php
-
+dsm($row);
 /**
  * @file
  * Default simple view template to all the fields as a row.
@@ -23,11 +23,20 @@
  *
  * @ingroup views_templates
  */
-//dsm($fields);
 ?>
 <div class="row-fluid">
   <div class="span3">
+    <div class="news__image-video-wrapper">
     <?php print $fields['field_news_image']->content; ?>
+    <?php
+      $embedded_field = $row->_field_data['nid']['entity']->field_embedded_video;
+      $embedded_field_video_size= sizeof($embedded_field);
+      $is_embedded_video_field = ($embedded_field_video_size > 0);
+      if ($is_embedded_video_field) {
+          print t('<div class="ico-play"></div>');
+      }
+    ?>
+    </div>
   </div>
   <div class="span6">
     <div class="slug">

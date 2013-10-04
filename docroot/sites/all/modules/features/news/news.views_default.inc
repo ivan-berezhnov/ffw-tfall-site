@@ -140,6 +140,24 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  /* Field: Field: Embedded Video */
+  $handler->display->display_options['fields']['field_embedded_video']['id'] = 'field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['table'] = 'field_data_field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['field'] = 'field_embedded_video';
+  $handler->display->display_options['fields']['field_embedded_video']['label'] = '';
+  $handler->display->display_options['fields']['field_embedded_video']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_embedded_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_embedded_video']['click_sort_column'] = 'video_url';
+  $handler->display->display_options['fields']['field_embedded_video']['settings'] = array(
+    'video_style' => 'normal',
+  );
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'news-view';
 
   /* Display: Latest News */
