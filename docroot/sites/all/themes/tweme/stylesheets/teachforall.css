@@ -41,6 +41,7 @@
     #Results
 
     ### LANDING PAGES ###
+    #Front
     #News - Landing
     #Network Learning - Landing
     #Privacy Policy
@@ -2621,6 +2622,14 @@ img {
 
 /**/
 /* ### LANDING PAGES ### */
+/**
+* #Front
+**/
+.front #main {
+  padding-bottom: 13px;
+}
+
+/**/
 /**
 * #News - Landing, #Network Learning - Landing
 **/
