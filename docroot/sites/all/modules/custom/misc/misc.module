@@ -7,7 +7,7 @@
 function misc_menu() {
 	module_load_include('inc', 'pathauto');
 
-	$customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest');
+	$customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'contact-thank-you');
 
 	foreach ($customnodes as $key)
 		$items[$key] = array(
@@ -17,6 +17,18 @@ function misc_menu() {
 		);
 
 	return $items;
+}
+
+/*
+ * implements hook_theme()
+ */
+function misc_theme() {
+	return array(
+		'misc_contact_form_email' => array(
+			'template' => 'templates/contact_form_email',
+			'arguments' => array('content' => null),
+		),
+	);
 }
 
 /**
@@ -73,4 +85,26 @@ function misc_entity_info_alter(&$entity_info) {
 		'label' => 'Global organization',
 		'custom settings' => TRUE,
 	);
+}
+
+/*
+ * contact us form
+ */
+function misc_widget_contact_from() {
+	module_load_include('inc', 'misc', 'includes/misc_contact.form');
+	return render(drupal_get_form('misc_contact_form'));
+}
+
+/*
+ * implements hook_mail()
+ */
+function misc_mail($key, &$message, $params) {
+
+	switch ($key) {
+		case 'contact_form':
+			$message['subject'] = t('Contact email from website');
+			$langcode = $message['language']->language;
+			$message['body'][] = theme('misc_contact_form_email', array('content' => $params));
+			break;
+	}
 }
