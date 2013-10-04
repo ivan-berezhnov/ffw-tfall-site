@@ -338,6 +338,17 @@ body {
   color: white;
 }
 
+.node {
+  margin-bottom: 0;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+.pagination > .item-list > ul {
+  margin-bottom: 0;
+}
+
 /**/
 /**
 * #Global Elements
@@ -1757,9 +1768,6 @@ img {
 /**
 * #Persons
 **/
-.view-persons {
-  margin-bottom: 40px;
-}
 .view-persons .view-content:after {
   content: "";
   display: table;
@@ -1913,7 +1921,7 @@ img {
   max-width: 1200px;
   padding: 0 40px;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 .view-supporters .view-header h2 {
   margin-bottom: 5px;
@@ -2065,10 +2073,6 @@ img {
   width: 100%;
 }
 
-.no__ceo h2,
-.no__ceo .node {
-  margin-bottom: 0;
-}
 .no__ceo h2 a,
 .no__ceo .node a {
   font-size: 18px;
@@ -2219,9 +2223,6 @@ img {
 /**
 * #News - Node
 **/
-.node-type-news .node {
-  margin-bottom: 10px;
-}
 .node-type-news .page-title {
   display: none;
 }
@@ -2315,11 +2316,11 @@ img {
 /**
 * #2 Column Layout
 **/
-.field-collection-container {
+.node-type-page-2-col-layout .field-collection-container {
   border: none;
+  margin-bottom: 60px;
 }
-
-.field-collection-view {
+.node-type-page-2-col-layout .field-collection-view {
   border: none;
   margin: 0;
   padding: 0;
@@ -2479,7 +2480,7 @@ img {
 }
 
 .global-problem__body {
-  margin: 30px 0 10px 0;
+  margin: 30px 0 0 0;
 }
 
 .widget-map__blurb {
@@ -2653,11 +2654,6 @@ img {
   font-size: 1.17647rem;
 }
 
-.node-type-network-learning .node,
-.node-type-news .node {
-  margin-bottom: 10px;
-}
-
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
 }
@@ -2784,6 +2780,10 @@ img {
 /**
 * #Search
 **/
+.page-search #main {
+  min-height: 390px;
+}
+
 .search-form .container-inline {
   margin: 0 auto;
   width: 260px;
@@ -2817,10 +2817,6 @@ img {
   }
 }
 
-.node-type-national-organizations .jump-link {
-  margin-bottom: 20px;
-}
-
 .nov2__intro {
   margin-bottom: 30px;
 }
@@ -2847,7 +2843,7 @@ img {
 
 .unifying-principles {
   background-color: #dfd9c9;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 60px 0;
   padding: 30px 0;
 }
 @media screen and (max-width: 767px) {

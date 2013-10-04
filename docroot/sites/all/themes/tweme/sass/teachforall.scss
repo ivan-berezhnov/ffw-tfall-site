@@ -281,6 +281,18 @@ body {
    }
 }
 
+.node {
+  margin-bottom: 0;
+}
+
+.pagination {
+  margin-bottom: 0;
+
+  > .item-list > ul {
+    margin-bottom: 0;
+  }
+}
+
 /**/
 
 /**
@@ -1827,8 +1839,6 @@ img {max-width: 100%;}
 **/
 
 .view-persons {
-  margin-bottom: 40px;
-
   .view-content {
     @include clearfix();
 
@@ -1990,7 +2000,7 @@ img {max-width: 100%;}
   max-width: 1200px;
   padding: 0 40px;
   text-align: center;
-  margin: 0 auto 40px;
+  margin: 0 auto;
 
   .view-header {
     h2 {
@@ -2184,8 +2194,8 @@ img {max-width: 100%;}
 
 .no__ceo {
   h2,
+
   .node {
-    margin-bottom: 0;
     a {
       @include font-size(18);
       font-family: "News Gothic", sans-serif;
@@ -2349,9 +2359,6 @@ img {max-width: 100%;}
 **/
 
 .node-type-news {
-  .node {
-    margin-bottom: 10px;
-  }
   .page-title {
     display: none;
     &.date {
@@ -2448,31 +2455,38 @@ img {max-width: 100%;}
 * #2 Column Layout
 **/
 
-.field-collection-container {
-  border: none;
-}
+.node-type-page-2-col-layout {
+  .field-collection-container {
+    border: none;
+    margin-bottom: 60px;
+  }
 
-.field-collection-view {
-  border: none;
-  margin: 0;
-  padding: 0;
+  .field-collection-view {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .node-page-2-col-layout {
   .field-collection-view {
     margin-bottom: 50px;
+
     @media screen and (max-width:768px) {
       margin-bottom: 20px;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
+
     img {
       width: 100%;
       @media screen and (max-width:768px) {
         margin-bottom: 20px;
       }
     }
+
     &:nth-child(even) {
       .group_image_row {
         float: right;
@@ -2606,7 +2620,7 @@ img {max-width: 100%;}
 }
 
 .global-problem__body {
-  margin: 30px 0 10px 0;
+  margin: 30px 0 0 0;
 }
 
 .widget-map__blurb {
@@ -2829,13 +2843,6 @@ img {max-width: 100%;}
   }
 }
 
-.node-type-network-learning,
-.node-type-news {
-  .node {
-    margin-bottom: 10px;
-  }
-}
-
 .page-news, .page-network-learning {
   #main {
     .page-title {
@@ -2979,6 +2986,12 @@ img {max-width: 100%;}
 * #Search
 **/
 
+.page-search {
+  #main {
+    min-height: 390px;
+  }
+}
+
 .search-form {
   .container-inline {
     margin: 0 auto;
@@ -3014,12 +3027,6 @@ img {max-width: 100%;}
   }
 }
 
-.node-type-national-organizations {
-  .jump-link {
-    margin-bottom: 20px;
-  }
-}
-
 .nov2__intro {
   margin-bottom: 30px;
 }
@@ -3046,7 +3053,7 @@ img {max-width: 100%;}
 
 .unifying-principles {
   background-color: $background_color1;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 60px 0;
   padding: 30px 0;
   @media screen and (max-width:767px) {
     padding: 20px 10px;
