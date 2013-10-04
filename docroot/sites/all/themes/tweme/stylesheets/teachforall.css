@@ -1892,14 +1892,15 @@ img {
   display: none;
 }
 .view-persons .view-content .views-row .person-copy .read-more-btn, .view-persons .view-content .views-row .person-copy .collapse-btn {
-  font-size: 12px;
-  font-size: 0.70588rem;
+  font-size: 13px;
+  font-size: 0.76471rem;
   display: none;
   clear: left;
   float: left;
   margin-top: 5px;
   color: #cf4753;
   cursor: pointer;
+  font-weight: bold;
 }
 .view-persons .view-content .views-row .person-copy .read-more-btn.is-visible, .view-persons .view-content .views-row .person-copy .collapse-btn.is-visible {
   display: block;

@@ -1962,13 +1962,14 @@ img {max-width: 100%;}
         }
 
         .read-more-btn, .collapse-btn {
-          @include font-size(12);
+          @include font-size(13);
           display: none;
           clear: left;
           float: left;
           margin-top: 5px;
           color: $red;
           cursor: pointer;
+          font-weight: bold;
 
           &.is-visible {
             display: block;
