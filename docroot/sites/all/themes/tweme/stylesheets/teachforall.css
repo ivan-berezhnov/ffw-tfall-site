@@ -2803,6 +2803,17 @@ img {
   margin: 0 auto;
   width: 260px;
 }
+@media screen and (max-width: 767px) {
+  .search-form .container-inline {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .search-form .container-inline input {
+    width: 200px;
+  }
+}
 
 .search-result {
   margin-bottom: 30px;

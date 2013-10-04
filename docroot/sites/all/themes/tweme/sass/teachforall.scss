@@ -2987,6 +2987,15 @@ img {max-width: 100%;}
   .container-inline {
     margin: 0 auto;
     width: 260px;
+    @media screen and (max-width:767px) {
+      margin: 0;
+      width: 100%;
+    }
+    input {
+      @media screen and (max-width:370px) {
+        width: 200px;
+      }
+    }
   }
 }
 
