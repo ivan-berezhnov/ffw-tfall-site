@@ -195,7 +195,7 @@ function results_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => '1_column_layout_image',
         ),
         'type' => 'image',
         'weight' => 4,
