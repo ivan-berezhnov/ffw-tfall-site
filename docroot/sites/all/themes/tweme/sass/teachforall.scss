@@ -2473,6 +2473,13 @@ img {max-width: 100%;}
   .field-collection-view {
     margin-bottom: 50px;
 
+    // Used for centring content if needed
+    // .row-fluid .span6 {
+    //   display: inline-block !important;
+    //   vertical-align: middle !important;
+    //   float: none !important;
+    // }
+
     @media screen and (max-width:768px) {
       margin-bottom: 20px;
     }
