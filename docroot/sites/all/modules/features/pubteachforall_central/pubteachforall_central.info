@@ -56,3 +56,7 @@ features[variable][] = theme_default
 features[variable][] = theme_seven_settings
 features[variable][] = theme_tweme_settings
 features[variable][] = twitter_host
+features[variable][] = user_admin_role
+features[variable][] = user_email_verification
+features[variable][] = user_picture_default
+features[variable][] = user_register
