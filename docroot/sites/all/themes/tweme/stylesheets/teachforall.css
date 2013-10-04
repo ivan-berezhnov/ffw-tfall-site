@@ -1423,7 +1423,7 @@ img {
   background-color: #80b4e4;
 }
 .worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  height: 295px;
+  height: 267px;
 }
 
 .worldmap__title {
@@ -2308,7 +2308,7 @@ img {
 * #1 Column Layout
 **/
 .one-col-layout__image {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .one-col-layout__image img {
   width: 100%;

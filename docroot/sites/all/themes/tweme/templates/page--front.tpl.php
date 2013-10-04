@@ -5,7 +5,7 @@
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="#"><?php print t('DONATE'); ?></a>
+        <a href="/donate"><?php print t('DONATE'); ?></a>
       </div>
       <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-twitter"></a>
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
@@ -141,7 +141,7 @@
       </div>
       <div class="span3">
         <div class="donate pull-left">
-          <a href="#"><?php print t('DONATE'); ?></a>
+          <a href="/donate"><?php print t('DONATE'); ?></a>
         </div>
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-twitter"></a>
         <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-facebook"></a>
