@@ -1627,9 +1627,10 @@ img {max-width: 100%;}
   .tweets__text {
     @include font-size(17);
     color: $white;
+    word-wrap: break-word;
+
     a {
       color: $white;
-      word-wrap: break-word;
 
       &:hover {
         color: $red;

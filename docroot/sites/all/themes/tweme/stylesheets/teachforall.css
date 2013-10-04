@@ -1567,10 +1567,10 @@ img {
   font-size: 17px;
   font-size: 1rem;
   color: white;
+  word-wrap: break-word;
 }
 .tweets .tweets__text a {
   color: white;
-  word-wrap: break-word;
 }
 .tweets .tweets__text a:hover {
   color: #cf4753;
