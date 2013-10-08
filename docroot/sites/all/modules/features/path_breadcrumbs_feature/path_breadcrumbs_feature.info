@@ -1,0 +1,11 @@
+name = Path Breadcrumbs Feature
+description = Path breadcrumbs feature
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = path_breadcrumbs_feature
+dependencies[] = ctools
+dependencies[] = path_breadcrumbs
+features[ctools][] = path_breadcrumbs:path_breadcrumbs:1
+features[features_api][] = api:2
+features[path_breadcrumbs][] = news_breadcrumb
