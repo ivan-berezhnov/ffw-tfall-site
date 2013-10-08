@@ -35,6 +35,7 @@ function news_wysiwyg_default_profiles() {
           'Unlink' => 1,
           'Image' => 1,
           'PasteFromWord' => 1,
+          'RemoveFormat' => 1,
           'SpecialChar' => 1,
           'Styles' => 1,
           'Table' => 1,

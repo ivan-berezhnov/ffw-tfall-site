@@ -299,6 +299,8 @@ body {
 * #Global Elements
 **/
 
+tbody {border: none;}
+
 textarea:focus, input:focus{
   outline: 0 !important;
 }
