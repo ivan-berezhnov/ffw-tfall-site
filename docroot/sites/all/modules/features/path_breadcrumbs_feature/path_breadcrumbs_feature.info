@@ -1,8 +1,8 @@
 name = Path Breadcrumbs Feature
 description = Path breadcrumbs feature
 core = 7.x
-package = Features
-version = 7.x-1.0
+package = pubteach4all
+version = 7.x-1.1
 project = path_breadcrumbs_feature
 dependencies[] = ctools
 dependencies[] = path_breadcrumbs
