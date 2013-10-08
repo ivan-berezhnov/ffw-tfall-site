@@ -170,7 +170,7 @@ function persons_views_default_views() {
   /* Display: Leadership Page */
   $handler = $view->new_display('page', 'Leadership Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Leadership';
+  $handler->display->display_options['title'] = 'Leadership Team';
   $handler->display->display_options['display_description'] = 'List of Leaders';
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
