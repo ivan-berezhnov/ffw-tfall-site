@@ -1,4 +1,11 @@
 (function ($) {
+
+  // brought in from assets/js/drupal.js
+  $(document).ready(function() {
+    $('.field-type-text-long table').addClass('table table-bordered');
+    $('.field-type-text-with-summary table').addClass('table table-bordered');
+  });
+
   var $body,
     sideMenuEnabled = false,
     hasTouch, mediaQueryMobile;
