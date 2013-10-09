@@ -70,42 +70,46 @@
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Book.eot') format('embedded-opentype'),
-       url('../fonts/FSerStdA-Book.ttf') format('truetype'),
-       url('../fonts/FSerStdA-Book.otf'),
-       url('../fonts/FSerStdA-Book.woff') format('woff');
-       font-style: normal;
-       font-weight: normal;
+  src: url('../fonts/FSerStdA-Book.eot'),
+  url('../fonts/FSerStdA-Book.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+  url('../fonts/FSerStdA-Book.otf'),
+  url('../fonts/FSerStdA-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif";
-       url('../fonts/FSerStdA-Bold.eot') format('embedded-opentype'),
-       url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
-       url('../fonts/FSerStdA-Bold.otf'),
-       url('../fonts/FSerStdA-Bold.woff') format('woff');
-       font-style: normal;
-       font-weight: bold;
+  src: url('../fonts/FSerStdA-Bold.eot'),
+  url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+  url('../fonts/FSerStdA-Bold.otf'),
+  url('../fonts/FSerStdA-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "News Gothic";
-       url('../fonts/NewsGothic-Medium.eot') format('embedded-opentype'),
-       url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
-       url('../fonts/NewsGothic-Medium.otf'),
-       url('../fonts/NewsGothic-Medium.woff') format('woff');
-       font-style: normal;
-       font-weight: normal;
+  src: url('../fonts/NewsGothic-Medium.eot'),
+  url('../fonts/NewsGothic-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+  url('../fonts/NewsGothic-Medium.otf'),
+  url('../fonts/NewsGothic-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "News Gothic";
-       url('../fonts/NewsGothic-DemiBold.eot') format('embedded-opentype'),
-       url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
-       url('../fonts/NewsGothic-DemiBold.otf'),
-       url('../fonts/NewsGothic-DemiBold.woff') format('woff');
-       font-style: normal;
-       font-weight: bold;
+  src: url('../fonts/NewsGothic-DemiBold.eot'),
+  url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+  url('../fonts/NewsGothic-DemiBold.otf'),
+  url('../fonts/NewsGothic-DemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
 }
 
 @font-face {
@@ -326,6 +330,8 @@ body {
 /**
 * #Global Elements
 **/
+
+
 
 .breadcrumb {
   background: none;
@@ -2501,17 +2507,15 @@ img {max-width: 100%;}
 * #2 Column Layout
 **/
 
-.node-type-page-2-col-layout {
-  .field-collection-container {
-    border: none;
-    margin-bottom: 60px;
-  }
+.field-collection-container {
+  border: none;
+  margin-bottom: 60px;
+}
 
-  .field-collection-view {
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
+.field-collection-view {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .node-page-2-col-layout {
