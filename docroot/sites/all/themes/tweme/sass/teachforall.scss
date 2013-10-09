@@ -237,6 +237,7 @@ body {
 
 .small-body {
   @include font-size(16);
+  line-height: 20px;
   color: $grey2;
 }
 
@@ -249,6 +250,21 @@ body {
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.block-quote {
+  color: $grey1;
+  font-weight: bold;
+  @include font-size(36);
+  line-height: 38px;
+}
+
+.page-section {
+  color: $grey2;
+  @include font-size(16);
+  letter-spacing: 3px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .title-small {
@@ -302,6 +318,7 @@ body {
 .breadcrumb {
   background: none;
   margin: 10px 0;
+  padding: 0;
 }
 
 tbody {border: none;}
