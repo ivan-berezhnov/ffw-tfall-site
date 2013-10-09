@@ -446,14 +446,18 @@ function permissions_user_default_permissions() {
   // Exported permission: 'create page_1_col_layout content'.
   $permissions['create page_1_col_layout content'] = array(
     'name' => 'create page_1_col_layout content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'create page_global_organization content'.
   $permissions['create page_global_organization content'] = array(
     'name' => 'create page_global_organization content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -557,7 +561,9 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete any page_global_organization content'.
   $permissions['delete any page_global_organization content'] = array(
     'name' => 'delete any page_global_organization content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -654,7 +660,9 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete own page_global_organization content'.
   $permissions['delete own page_global_organization content'] = array(
     'name' => 'delete own page_global_organization content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
