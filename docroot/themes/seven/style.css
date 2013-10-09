@@ -98,6 +98,13 @@ h4, .h4 {
   font-size: 0.94118rem;
 }
 
+.small-body {
+  font-size:16px;
+  font-size:0.94118rem;
+  line-height: 20px;
+  color:#4c4c4c
+}
+
 .slug-large {
   color: #e69740;
   font-family: "Fedra Serif";
@@ -119,6 +126,23 @@ h4, .h4 {
   margin-bottom: 0;
 }
 
+..block-quote{
+  color:#91998c;
+  font-weight:bold;
+  font-size:36px;
+  font-size:2.11765rem;
+  line-height:38px;
+}
+
+.page-section {
+  color:#4d4d4d;
+  font-size:16px;
+  font-size:0.94118rem;
+  letter-spacing:3px;
+  line-height:20px;
+  text-transform:uppercase;
+}
+
 /**
  * Generic elements.
  */
@@ -128,7 +152,7 @@ body {
   font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 a {
-  color: #0074BD;
+  color: #cf4753;
   text-decoration: none;
 }
 a:hover {
