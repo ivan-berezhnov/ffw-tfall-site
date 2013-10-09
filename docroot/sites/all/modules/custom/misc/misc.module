@@ -39,6 +39,10 @@ function misc_theme() {
  */
 function misc_form_alter(&$form, &$form_state, $form_id) {
 
+    if($form_id == 'national_organization_node_form'){
+        $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
+    }
+
     if($form_id == 'nodequeue_arrange_subqueue_form_3') {
         $form['add']['#prefix'] = '<b>Please ensure that content in the 4th position has a vertical image.</b>';
         $form['#validate'][] = 'validate_marquee_node_4_contains_vertical_image';
