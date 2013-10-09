@@ -826,12 +826,16 @@ h2 {
 * #Uber Navigation
 **/
 
+
 .uber-nav {
   font-weight: bold;
   margin-top: -5px;
   .content {
     > .menu {
       position: relative;
+      li:nth-child(2) {
+        display: none; // hide the 'donate' menu tree in the uber nav
+      }
       > li {
         border-right: 1px solid $orange1;
         float: left;

@@ -5,7 +5,7 @@
     <div class="span9">
       <h1><?php print $title; ?></h1>
 
-      <div class="news__author-date">by <?php print $name; ?> | <?php print format_date($node->published_at, 'short'); ?>
+      <div class="news__author-date">by <?php print $name; ?>
 
           <?php if (isset($content['field_embedded_video'])): ?>
             <div class="news__image news__video">
