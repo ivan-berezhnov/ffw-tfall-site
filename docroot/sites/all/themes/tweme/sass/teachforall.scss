@@ -73,20 +73,23 @@
   font-family: "Fedra Serif";
   src: url('../fonts/FSerStdA-Book.eot'),
   url('../fonts/FSerStdA-Book.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+  url(‘../fonts/FSerStdA-Book.svg’) format(‘svg’),
   url('../fonts/FSerStdA-Book.otf'),
-  url('../fonts/FSerStdA-Book.woff') format('woff');
+  url('../fonts/FSerStdA-Book.woff') format('woff'),
+  url('../fonts/FSerStdA-Book.ttf') format('truetype');
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
 }
 
 @font-face {
   font-family: "Fedra Serif";
   src: url('../fonts/FSerStdA-Bold.eot'),
+  src: url('../fonts/FSerStdA-Bold.eot'),
   url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+  url(‘../fonts/FSerStdA-Bold.svg’) format(‘svg’),
   url('../fonts/FSerStdA-Bold.otf'),
-  url('../fonts/FSerStdA-Bold.woff') format('woff');
+  url('../fonts/FSerStdA-Bold.woff') format('woff'),
+  url('../fonts/FSerStdA-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
@@ -94,21 +97,25 @@
 @font-face {
   font-family: "News Gothic";
   src: url('../fonts/NewsGothic-Medium.eot'),
+  src: url('../fonts/NewsGothic-Medium.eot'),
   url('../fonts/NewsGothic-Medium.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+  url(‘../fonts/NewsGothic-Medium.svg’) format(‘svg’),
   url('../fonts/NewsGothic-Medium.otf'),
-  url('../fonts/NewsGothic-Medium.woff') format('woff');
+  url('../fonts/NewsGothic-Medium.woff') format('woff'),
+  url('../fonts/NewsGothic-Medium.ttf') format('truetype');
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
 }
 
 @font-face {
   font-family: "News Gothic";
   src: url('../fonts/NewsGothic-DemiBold.eot'),
+  src: url('../fonts/NewsGothic-DemiBold.eot'),
   url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+  url(‘../fonts/NewsGothic-DemiBold.svg’) format(‘svg’),
   url('../fonts/NewsGothic-DemiBold.otf'),
-  url('../fonts/NewsGothic-DemiBold.woff') format('woff');
+  url('../fonts/NewsGothic-DemiBold.woff') format('woff'),
+  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
 }
