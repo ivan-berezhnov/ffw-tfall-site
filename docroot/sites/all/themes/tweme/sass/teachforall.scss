@@ -70,28 +70,40 @@
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Book.ttf'), url('../fonts/FSerStdA-Book.otf');
+  src: url('../fonts/FSerStdA-Book.eot') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Book.otf'),
+       url('../fonts/FSerStdA-Book.woff') format('woff');
        font-style: normal;
        font-weight: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Bold.ttf'), url('../fonts/FSerStdA-Bold.otf');
+       url('../fonts/FSerStdA-Bold.eot') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Bold.otf'),
+       url('../fonts/FSerStdA-Bold.woff') format('woff');
        font-style: normal;
        font-weight: bold;
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-Medium.ttf'), url('../fonts/NewsGothic-Medium.otf');
+       url('../fonts/NewsGothic-Medium.eot') format('embedded-opentype'),
+       url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+       url('../fonts/NewsGothic-Medium.otf'),
+       url('../fonts/NewsGothic-Medium.woff') format('woff');
        font-style: normal;
        font-weight: normal;
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold.ttf'), url('../fonts/NewsGothic-DemiBold.otf');
+       url('../fonts/NewsGothic-DemiBold.eot') format('embedded-opentype'),
+       url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+       url('../fonts/NewsGothic-DemiBold.otf'),
+       url('../fonts/NewsGothic-DemiBold.woff') format('woff');
        font-style: normal;
        font-weight: bold;
 }
@@ -1491,6 +1503,11 @@ img {max-width: 100%;}
 /**
 * #MapBox
 **/
+
+.no__logo {
+  width: 150px;
+  height: 84px;
+}
 
 #worldmap {
   @include box-sizing(border-box);

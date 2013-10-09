@@ -53,7 +53,7 @@
 								'<a class="popup" href="' + feature.properties.url + '">' +
 								'<img class="no__main-img" src="' + feature.properties.mainpic + '">' +
 								'<h2>' + feature.properties.title + '</h2>' +
-								'<img src="' + feature.properties.logo + '">' +
+								'<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
 								'</a>' +
 								'<a class="btn btn-primary" href="' + feature.properties.url + '">more</a>';
 
