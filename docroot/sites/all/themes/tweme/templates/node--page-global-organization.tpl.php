@@ -11,7 +11,6 @@
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
-      <h3 class="slug-large">TEACH FOR ALL ACCELERATES IMPACT THROUGH:</h3>
 			<div class="spotlights row-fluid">
         <div class="span6">
           <?php print render($content['field_impact_through'][0]); ?>
