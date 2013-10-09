@@ -475,6 +475,15 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create page_story_grid content'.
+  $permissions['create page_story_grid content'] = array(
+    'name' => 'create page_story_grid content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create person content'.
   $permissions['create person content'] = array(
     'name' => 'create person content',
@@ -583,6 +592,15 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any page_story_grid content'.
+  $permissions['delete any page_story_grid content'] = array(
+    'name' => 'delete any page_story_grid content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any person content'.
   $permissions['delete any person content'] = array(
     'name' => 'delete any person content',
@@ -679,6 +697,15 @@ function permissions_user_default_permissions() {
   $permissions['delete own page_results content'] = array(
     'name' => 'delete own page_results content',
     'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own page_story_grid content'.
+  $permissions['delete own page_story_grid content'] = array(
+    'name' => 'delete own page_story_grid content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -814,6 +841,15 @@ function permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any page_story_grid content'.
+  $permissions['edit any page_story_grid content'] = array(
+    'name' => 'edit any page_story_grid content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any person content'.
   $permissions['edit any person content'] = array(
     'name' => 'edit any person content',
@@ -902,6 +938,15 @@ function permissions_user_default_permissions() {
   // Exported permission: 'edit own page_results content'.
   $permissions['edit own page_results content'] = array(
     'name' => 'edit own page_results content',
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own page_story_grid content'.
+  $permissions['edit own page_story_grid content'] = array(
+    'name' => 'edit own page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
     ),
