@@ -69,10 +69,12 @@ BlockQuote=div.block-quote
 Slug=div.slug
 SlugMedium=div.slug-medium
 SlugLarge=div.slug-large
+Stats=div.stats
 Red=span.red
 Orange=span.orange
 Orange2=span.orange2
-Beige=span.beige',
+Beige=span.beige
+Black=span.black',
     ),
     'rdf_mapping' => array(),
   );
