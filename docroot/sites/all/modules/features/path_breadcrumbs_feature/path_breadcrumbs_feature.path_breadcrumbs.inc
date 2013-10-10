@@ -12,6 +12,30 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'default';
+  $path_breadcrumb->name = 'Default';
+  $path_breadcrumb->path = 'node/%node';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => '!page_title',
+    ),
+    'paths' => array(
+      0 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+      ),
+    ),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = 0;
+  $export['default'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'national_organizations_breadcrumbs';
   $path_breadcrumb->name = 'National Organizations breadcrumbs';
   $path_breadcrumb->path = 'national-organization/*';
