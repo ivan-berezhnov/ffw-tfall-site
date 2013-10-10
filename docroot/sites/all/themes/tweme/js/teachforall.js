@@ -4,6 +4,10 @@
   $(document).ready(function() {
     $('.field-type-text-long table').addClass('table table-bordered');
     $('.field-type-text-with-summary table').addClass('table table-bordered');
+
+    $("a[title^='About']").click(function(e) {
+        e.preventDefault();// suppress the 'About' link in the Uber Nav
+    });
   });
 
   var $body,
