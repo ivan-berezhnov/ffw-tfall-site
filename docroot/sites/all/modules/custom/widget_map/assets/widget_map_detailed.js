@@ -17,10 +17,9 @@
 				url: '/widget_map_detailedlist.json',
 				success: function parseJson(data) {
 					map.markerLayer.setGeoJSON(data);
-				}
+				}								
 			});
-
-
+	
 			map.markerLayer.on('layeradd', function(e) {
 				var marker = e.layer,feature = marker.feature;
 
