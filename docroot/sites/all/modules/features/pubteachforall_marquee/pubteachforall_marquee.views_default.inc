@@ -143,7 +143,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['hide_empty'] = TRUE;
-  /* Field: Content: Byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
