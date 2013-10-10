@@ -5,8 +5,6 @@
     <div class="span9">
       <h1><?php print $title; ?></h1>
 
-      <div class="news__author-date">by <?php print $name; ?>
-
           <?php if (isset($content['field_embedded_video'])): ?>
             <div class="news__image news__video">
               <?php print render($content['field_embedded_video']); ?>
@@ -41,7 +39,6 @@
               ?>
             </div>
           </div>
-      </div>
     </div>
     <div class="span3">
       <?php print render(views_embed_view('tfall_tweets','block')); ?>
