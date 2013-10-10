@@ -84,7 +84,6 @@
 @font-face {
   font-family: "Fedra Serif";
   src: url('../fonts/FSerStdA-Bold.eot'),
-  src: url('../fonts/FSerStdA-Bold.eot'),
   url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
   url(‘../fonts/FSerStdA-Bold.svg’) format(‘svg’),
   url('../fonts/FSerStdA-Bold.otf'),
@@ -97,7 +96,6 @@
 @font-face {
   font-family: "News Gothic";
   src: url('../fonts/NewsGothic-Medium.eot'),
-  src: url('../fonts/NewsGothic-Medium.eot'),
   url('../fonts/NewsGothic-Medium.eot?#iefix') format('embedded-opentype'),
   url(‘../fonts/NewsGothic-Medium.svg’) format(‘svg’),
   url('../fonts/NewsGothic-Medium.otf'),
@@ -109,7 +107,6 @@
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold.eot'),
   src: url('../fonts/NewsGothic-DemiBold.eot'),
   url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('embedded-opentype'),
   url(‘../fonts/NewsGothic-DemiBold.svg’) format(‘svg’),
@@ -544,6 +541,8 @@ h2 {
   color: $orange1;
   font-family: "Fedra Serif";
   letter-spacing: 3px;
+  line-height: 1.5em;
+  text-transform: uppercase;
   @include font-size(16);
 }
 
@@ -552,7 +551,15 @@ h2 {
   font-family: "Fedra Serif";
   letter-spacing: 4px;
   line-height: 1.2em;
+  text-transform: uppercase;
   @include font-size(24);
+}
+
+.stats {
+  color: $grey1;
+  font-weight: bold;
+  line-height: 22px;
+  @include font-size(18);
 }
 
 /**/

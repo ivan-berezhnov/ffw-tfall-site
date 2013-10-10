@@ -79,6 +79,10 @@ h4, .h4 {
   color: #cf4753;
 }
 
+.black {
+  color: #000;
+}
+
 .slug {
   font-size: 11px;
   font-size: 0.64706rem;
@@ -94,15 +98,10 @@ h4, .h4 {
   color: #e69740;
   font-family: "Fedra Serif";
   letter-spacing: 4px;
+  line-height: 1.5em;
   font-size: 16px;
   font-size: 0.94118rem;
-}
-
-.small-body {
-  font-size:16px;
-  font-size:0.94118rem;
-  line-height: 20px;
-  color:#4c4c4c
+  text-transform: uppercase;
 }
 
 .slug-large {
@@ -112,6 +111,14 @@ h4, .h4 {
   line-height: 1.2em;
   font-size: 24px;
   font-size: 1.41176rem;
+  text-transform: uppercase;
+}
+
+.small-body {
+  font-size:16px;
+  font-size:0.94118rem;
+  line-height: 20px;
+  color:#4c4c4c
 }
 
 .large-body {
@@ -141,6 +148,14 @@ h4, .h4 {
   letter-spacing:3px;
   line-height:20px;
   text-transform:uppercase;
+}
+
+.stats {
+  color:#91998c;
+  font-weight:bold;
+  line-height:22px;
+  font-size:18px;
+  font-size:1.05882rem;
 }
 
 /**
