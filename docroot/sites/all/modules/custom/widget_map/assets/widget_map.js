@@ -9,7 +9,8 @@
 					maxZoom: 5
 				}),
 				$mapTitle = $('.worldmap__title'),
-				fadeAnimateTime = 200;
+				fadeAnimateTime = 200,
+				noTouch = $('html').hasClass('no-touch');
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
@@ -26,10 +27,19 @@
 
 				switch(element) {
 					case 'marker':
-						if ($mapPopup.children().length) {
-							$mapTitle.fadeIn(fadeAnimateTime);
+						if (noTouch) {
+							if ($mapPopup.children().length) {
+								$mapTitle.fadeIn(fadeAnimateTime);
+							} else {
+								$mapTitle.fadeOut(fadeAnimateTime);
+							}
 						} else {
-							$mapTitle.fadeOut(fadeAnimateTime);
+							// Touch-enabled devices
+							if ($mapPopup.children().length) {
+								$mapTitle.fadeOut(fadeAnimateTime);
+							} else {
+								$mapTitle.fadeIn(fadeAnimateTime);
+							}
 						}
 
 						break;
@@ -63,12 +73,14 @@
 				});
 			});
 
-			map.markerLayer.on('mouseover',function(e) {
-				$mapTitle.fadeOut(fadeAnimateTime);
-				e.layer.openPopup();
-			});
+			if (noTouch) {
+				map.markerLayer.on('mouseover',function(e) {
+					$mapTitle.fadeOut(fadeAnimateTime);
+					e.layer.openPopup();
+				});
+			}
 
-			map.markerLayer.on('click',function(e) {
+			map.markerLayer.on('click', function(e) {
 				toggleMapTitle('marker');
 			});
 
