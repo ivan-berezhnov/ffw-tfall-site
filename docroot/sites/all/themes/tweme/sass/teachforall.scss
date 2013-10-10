@@ -342,6 +342,13 @@ body {
   background: none;
   margin: 10px 0;
   padding: 0;
+  @include font-size(14);
+  a {
+    color: $grey1;
+    &:hover {
+      color: $red;
+    }
+  }
 }
 
 tbody {border: none;}
