@@ -295,10 +295,10 @@ body {
 }
 
 .footer-link-beige {
-   @include font-size(13);
+   @include font-size(12);
    color: $beige;
    font: {
-      family: "Fedra", serif;
+      family: "Fedra Serif", serif;
       weight: bold;
    }
    letter-spacing: 2px;
@@ -1294,11 +1294,11 @@ h2 {
 
   p {
     color: $beige;
-    font-family: "Fedra", serif;
+    font-family: "Fedra Serif", serif;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-    @include font-size(13);
+    @include font-size(12);
   }
 
   .navbar-search {
@@ -1349,10 +1349,10 @@ img {max-width: 100%;}
   text-align: center;
   .title {
     color: $orange2;
-    font-family: "Fedra", serif;
+    font-family: "Fedra Serif", serif;
     letter-spacing: 4px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   ul {
     padding: 0px;
@@ -1363,8 +1363,8 @@ img {max-width: 100%;}
   }
   p {
     color: $grey4;
-    @include font-size(16);
-    line-height: 1.5em;
+    @include font-size(17);
+    line-height: 21px;
   }
 }
 
