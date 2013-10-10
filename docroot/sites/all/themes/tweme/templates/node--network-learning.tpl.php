@@ -8,15 +8,15 @@
           <h1 class="news__title"><?php print $title; ?></h1>
 
           <div class="news__byline">
-            <?php if (isset($content['field_network_learning_byline'])): ?>
-              <h3><?php print render($content['field_network_learning_byline']); ?></h3>
+            <?php if (isset($content['field_author'])): ?>
+              <h3><?php print render($content['field_author']); ?></h3>
             <?php endif; ?>
           </div>
 
           <div class="news__date">
-            <div class="news__author-date">by <?php print $name; ?>
+            <div class="news__author-date">
               <?php if (isset($content['field_network_learning_tags'])): ?>
-               | <span class="news__category"><?php print render($content['field_network_learning_tags']); ?></span>
+                <span class="news__category"><?php print render($content['field_network_learning_tags']); ?></span>
               <?php endif; ?>
             </div>
           </div>

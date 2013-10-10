@@ -49,10 +49,10 @@
         <?php print $fields['field_network_learning_byline']->content; ?>
       </h3>
     <?php endif; ?>
-    <div class="network-learning__author-info">
-      by <?php print $fields['name']->content; ?>
-      <?php if (isset($fields['field_network_learning_tags']->content)): ?>| <?php print $fields['field_network_learning_tags']->content; ?>
-      <?php endif; ?>
-    </div>
+    <?php if (isset($fields['field_author']->content)): ?>
+      <div class="network-learning__author-info">
+        <?php print $fields['field_author']->content; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>

@@ -47,10 +47,10 @@
         <?php print $fields['field_news_byline']->content; ?>
       </h3>
     <?php endif; ?>
-    <div class="news__author-info">
-      by <?php print $fields['name']->content; ?>
-      <?php if (isset($fields['field_category']->content)): ?>| <?php print $fields['field_category']->content; ?>
-      <?php endif; ?>
-    </div>
+    <?php if (isset($fields['field_author']->content)): ?>
+      <div class="news__author-info">
+        <?php print $fields['field_author']->content; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>
