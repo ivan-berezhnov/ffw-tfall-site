@@ -293,6 +293,15 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['view_node_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'GO TO STORY';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_2']['id'] = 'view_node_2';
+  $handler->display->display_options['fields']['view_node_2']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_2']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_2']['label'] = '';
+  $handler->display->display_options['fields']['view_node_2']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node_2']['alter']['text'] = 'WATCH NOW <span class="orange2">>></span>';
+  $handler->display->display_options['fields']['view_node_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_2']['element_default_classes'] = FALSE;
   $handler->display->display_options['block_description'] = 'Flexslider Network Learning Block';
 
   /* Display: Network Learning Front */

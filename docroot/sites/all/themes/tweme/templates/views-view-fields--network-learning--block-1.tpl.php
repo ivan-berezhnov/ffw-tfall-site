@@ -32,7 +32,16 @@
       <div class="network_learning__preview flexslider-preview visible-desktop"><?php print $fields['field_network_learning_byline']->content; ?></div>
     <?php endif; ?>
     <div class="network_learning__link flexslider-link hidden-phone">
-      <?php print $fields['view_node']->content; ?>
+      <?php
+        $embedded_field = $row->_field_data['nid']['entity']->field_embedded_video;
+        $embedded_field_video_size= sizeof($embedded_field);
+        $is_embedded_video_field = ($embedded_field_video_size > 0);
+        if ($is_embedded_video_field) {
+            print $fields['view_node_2']->content;
+        } else {
+          print $fields['view_node']->content;
+        }
+      ?>
     </div>
   </div>
 </div>

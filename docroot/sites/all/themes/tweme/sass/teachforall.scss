@@ -340,6 +340,7 @@ body {
 
 .breadcrumb {
   background: none;
+  color: $grey1;
   margin: 10px 0;
   padding: 0;
   @include font-size(14);
@@ -2944,11 +2945,24 @@ img {max-width: 100%;}
 * #News - Landing, #Network Learning - Landing
 **/
 
+.flexslider {
+  .slides {
+    > li {
+      position: relative;
+    }
+  }
+}
+
 .news__image-video-wrapper {
   position: relative;
 }
 
-.view-news {
+.ico-play {
+
+}
+
+.view-news,
+.view-network-learning {
   .ico-play {
     background-color: $grey2;
     color: $orange2;
@@ -2957,6 +2971,11 @@ img {max-width: 100%;}
     top: 10px;
     left: 10px;
     @include font-size(20);
+    @media screen and (max-width:979px) {
+      top: 5px;
+      left: 5px;
+      @include font-size(16);
+    }
   }
 }
 

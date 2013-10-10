@@ -3,7 +3,6 @@
  * @file
  * Custom theme implementation to display a single Drupal page.
  */
-
 ?>
 <div class="container header">
   <div class="row-fluid">
