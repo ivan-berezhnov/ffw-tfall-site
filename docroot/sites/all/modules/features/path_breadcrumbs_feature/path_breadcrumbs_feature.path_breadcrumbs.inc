@@ -27,11 +27,31 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(
       'node' => array(
         'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
       ),
     ),
-    'access' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'national_organization' => 'national_organization',
+              'network_learning' => 'network_learning',
+              'news' => 'news',
+            ),
+          ),
+          'context' => 'node',
+          'not' => TRUE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -97;
   $export['default'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -53,7 +73,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -100;
   $export['national_organizations_breadcrumbs'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -75,7 +95,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -99;
   $export['network_learning_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -97,7 +117,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -98;
   $export['news_breadcrumb'] = $path_breadcrumb;
 
   return $export;
