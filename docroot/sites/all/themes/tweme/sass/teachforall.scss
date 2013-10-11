@@ -2076,6 +2076,18 @@ img {max-width: 100%;}
         }
       }
     }
+
+    @media screen and (min-width: 681px) {
+      .view-persons-two-col {
+        .views-row {
+          .person-copy {
+            .person-job-title {
+              min-height: 40px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .view-footer {
