@@ -133,51 +133,51 @@ html.lte-ie8 {
       width: 100%;
       margin: 0;
     }
+  }
 
-    // Social Icons and More Button
-    .full-list {
-      width: 190px;
+  // Social Icons and More Button
+  .full-list {
+    width: 190px;
+  }
+
+  .st_twitter_large {
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 7px;
+
+    .stButton {
+      background: url(../images/icon-twitter-lg.png) 0 0 no-repeat !important;
     }
 
-    .st_twitter_large {
-      line-height: 32px;
-      width: 32px;
-      height: 32px;
-      display: inline-block;
-      margin-right: 7px;
+    .stLarge {
+      display: none !important;
+    }
+  }
 
-      .stButton {
-        background: url(../images/icon-twitter-lg.png) 0 0 no-repeat !important;
-      }
+  .st_facebook_large {
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
 
-      .stLarge {
-        display: none !important;
-      }
+    .stButton {
+      background: url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important;
     }
 
-    .st_facebook_large {
-      line-height: 32px;
-      width: 32px;
-      height: 32px;
-      display: inline-block;
-
-      .stButton {
-        background: url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important;
-      }
-
-      .stLarge {
-        display: none !important;
-      }
+    .stLarge {
+      display: none !important;
     }
+  }
 
-    // A Global Problem - info boxes
-    .top-section__subheader {
-      margin-bottom: 10px;
-    }
+  // A Global Problem - info boxes
+  .top-section__subheader {
+    margin-bottom: 10px;
+  }
 
-    .top-section__description {
-      font-size: 15px;
-    }
+  .top-section__description {
+    font-size: 15px;
   }
 
   /**/
