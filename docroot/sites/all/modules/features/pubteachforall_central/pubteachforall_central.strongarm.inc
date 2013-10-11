@@ -366,7 +366,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'pubteach4alldev.prod.acquia-sites.com';
+  $strongarm->value = 'Teach For All';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
