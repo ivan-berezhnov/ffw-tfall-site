@@ -381,7 +381,7 @@ textarea:focus, input:focus{
   font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
-  padding: 6px 12px 5px 12px;
+  padding: 6px 12px 6px 12px;
   text-transform: uppercase;
   @include font-size(14);
   &:hover {
@@ -1774,9 +1774,19 @@ img {max-width: 100%;}
 .sharethis-buttons {
   float: left;
   width: 88px;
+
   .stButton {
-    line-height: 7px;
     margin: 0 8px 0 0;
+    background-color: $grey2;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    overflow: hidden;
+
+    .stLarge:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -2488,9 +2498,17 @@ img {max-width: 100%;}
 
 .news__node-links {
   margin-top: 30px;
+
   .full-list {
+    // For IE9 width bug
+    min-width: 179px;
+
     @media screen and (max-width:767px) {
       margin-bottom: 20px;
+    }
+
+    @media screen and (max-width:372px) {
+      margin-top: 20px;
     }
   }
 }
