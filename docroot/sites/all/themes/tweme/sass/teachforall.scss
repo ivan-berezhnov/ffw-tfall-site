@@ -336,8 +336,6 @@ body {
 * #Global Elements
 **/
 
-
-
 .breadcrumb {
   background: none;
   color: $grey1;
@@ -2040,12 +2038,17 @@ img {max-width: 100%;}
           margin-bottom: 10px;
         }
 
-        .person-bio {
+        .person-bio, .person-bio-truncated {
           @include font-size(16);
+          display: none;
           overflow: hidden;
           float: left;
           clear: left;
           color: $grey2;
+
+          &.is-visible {
+            display: block;
+          }
 
           :first-child {
             margin: 0;
@@ -2053,10 +2056,6 @@ img {max-width: 100%;}
 
           p {
             margin: 10px 0 0 0;
-
-            &.is-hidden {
-              display: none;
-            }
           }
         }
 

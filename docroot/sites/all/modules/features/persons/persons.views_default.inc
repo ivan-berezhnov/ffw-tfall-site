@@ -69,6 +69,14 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['label'] = '';
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
   /* Field: Content: BIO */
+  $handler->display->display_options['fields']['field_person_bio_1']['id'] = 'field_person_bio_1';
+  $handler->display->display_options['fields']['field_person_bio_1']['table'] = 'field_data_field_person_bio';
+  $handler->display->display_options['fields']['field_person_bio_1']['field'] = 'field_person_bio';
+  $handler->display->display_options['fields']['field_person_bio_1']['label'] = '';
+  $handler->display->display_options['fields']['field_person_bio_1']['alter']['max_length'] = '210';
+  $handler->display->display_options['fields']['field_person_bio_1']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_person_bio_1']['element_label_colon'] = FALSE;
+  /* Field: Content: BIO */
   $handler->display->display_options['fields']['field_person_bio']['id'] = 'field_person_bio';
   $handler->display->display_options['fields']['field_person_bio']['table'] = 'field_data_field_person_bio';
   $handler->display->display_options['fields']['field_person_bio']['field'] = 'field_person_bio';
