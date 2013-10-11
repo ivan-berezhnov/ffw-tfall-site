@@ -359,6 +359,7 @@ textarea:focus, input:focus{
 }
 
 .jump-link {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -874,7 +875,7 @@ h2 {
   .content {
     > .menu {
       position: relative;
-      li:nth-child(2) {
+      > li:nth-child(2) {
         display: none; // hide the 'donate' menu tree in the uber nav
       }
       > li {
@@ -1798,7 +1799,7 @@ img {max-width: 100%;}
     top: 6px;
     @include font-size(20);
     &:hover {
-      color: $orange2;
+      background-color: $red;
     }
   }
 }
@@ -2537,6 +2538,7 @@ img {max-width: 100%;}
 
 .field-collection-container {
   border: none;
+  margin-bottom: 0;
 }
 
 .field-collection-view {
@@ -2820,8 +2822,6 @@ img {max-width: 100%;}
 
     .btn__red {
       display: inline-block;
-      margin-top: 54px;
-
       &:hover {
         color: $white;
       }

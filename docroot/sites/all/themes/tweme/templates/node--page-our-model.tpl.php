@@ -1,13 +1,15 @@
 <div class="container">
   <h2 class="page-title"><?php print $title; ?></h2>
 
-  <div class="row-fluid our-model-banner">
-    <div class="span8 offset2">
-      <div class="field__text-area">
-        <?php print render($content['field_ourmodel_infographic']); ?>
+  <?php if(isset($content['field_ourmodel_infographic'])): ?>
+    <div class="row-fluid our-model-banner">
+      <div class="span8 offset2">
+        <div class="field__text-area">
+          <?php print render($content['field_ourmodel_infographic']); ?>
+        </div>
       </div>
     </div>
-  </div>
+  <?php endif; ?>
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
