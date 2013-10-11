@@ -336,8 +336,6 @@ body {
 * #Global Elements
 **/
 
-
-
 .breadcrumb {
   background: none;
   color: $grey1;
@@ -382,7 +380,7 @@ textarea:focus, input:focus{
   font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
-  padding: 6px 12px 5px 12px;
+  padding: 6px 12px 6px 12px;
   text-transform: uppercase;
   @include font-size(14);
   &:hover {
@@ -990,6 +988,16 @@ h2 {
 #feeds {
 	background-color: $orange1;
   padding: 28px 0 40px;
+
+  .row-fluid {
+    .span3.facebook {
+      .fb-like-box {
+        iframe {
+          background: $white;
+        }
+      }
+    }
+  }
 
   @media screen and (max-width: 767px) {
     padding: 20px 0 0;
@@ -1775,9 +1783,19 @@ img {max-width: 100%;}
 .sharethis-buttons {
   float: left;
   width: 88px;
+
   .stButton {
-    line-height: 7px;
     margin: 0 8px 0 0;
+    background-color: $grey2;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    overflow: hidden;
+
+    .stLarge:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -2021,12 +2039,17 @@ img {max-width: 100%;}
           margin-bottom: 10px;
         }
 
-        .person-bio {
+        .person-bio, .person-bio-truncated {
           @include font-size(16);
+          display: none;
           overflow: hidden;
           float: left;
           clear: left;
           color: $grey2;
+
+          &.is-visible {
+            display: block;
+          }
 
           :first-child {
             margin: 0;
@@ -2034,10 +2057,6 @@ img {max-width: 100%;}
 
           p {
             margin: 10px 0 0 0;
-
-            &.is-hidden {
-              display: none;
-            }
           }
         }
 
@@ -2489,9 +2508,17 @@ img {max-width: 100%;}
 
 .news__node-links {
   margin-top: 30px;
+
   .full-list {
+    // For IE9 width bug
+    min-width: 179px;
+
     @media screen and (max-width:767px) {
       margin-bottom: 20px;
+    }
+
+    @media screen and (max-width:372px) {
+      margin-top: 20px;
     }
   }
 }
@@ -2561,8 +2588,8 @@ img {max-width: 100%;}
     //   float: none !important;
     // }
 
-    @media screen and (max-width:768px) {
-      margin-bottom: 20px;
+    @media screen and (max-width:767px) {
+      margin-bottom: 30px;
     }
 
     &:last-child {
@@ -2571,7 +2598,7 @@ img {max-width: 100%;}
 
     img {
       width: 100%;
-      @media screen and (max-width:768px) {
+      @media screen and (max-width:767px) {
         margin-bottom: 20px;
       }
     }
@@ -2583,7 +2610,7 @@ img {max-width: 100%;}
       .group-info-row {
         padding-right: 2.564102564102564%;
         text-align: right;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
           padding: 0;
           text-align: left;
         }
@@ -2596,7 +2623,7 @@ img {max-width: 100%;}
   position: relative;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .group-row-wrapper {
     .group-link-wrapper {
       text-align: center;
@@ -2649,9 +2676,11 @@ img {max-width: 100%;}
 
 .top-section {
   position: relative;
-  @media screen and (max-width:768px) {
+
+  @media screen and (max-width:767px) {
     margin-bottom: 20px;
   }
+
   img {
     width: 100%;
   }
@@ -2660,6 +2689,7 @@ img {max-width: 100%;}
 .top-section__title {
   line-height: 1em;
   @include font-size(34);
+
   @media screen and (max-width:980px) {
     @include font-size(24);
   }
@@ -2672,11 +2702,13 @@ img {max-width: 100%;}
 .top-section__subheader,
 .top-section__description {
   @include font-size(18);
+
   @media screen and (max-width:980px) {
     line-height: 1.2em;
     @include font-size(14);
   }
-  @media screen and (max-width:768px) {
+
+  @media screen and (max-width:767px) {
     @include font-size(18);
   }
 }
