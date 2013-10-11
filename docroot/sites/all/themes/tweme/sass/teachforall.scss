@@ -1538,6 +1538,11 @@ img {max-width: 100%;}
   height: 84px;
 }
 
+.no__map-main-img {
+  width: 292px;
+  height: 164px;
+}
+
 #worldmap {
   @include box-sizing(border-box);
   padding: 0px;
