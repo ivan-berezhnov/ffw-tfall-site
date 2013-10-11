@@ -990,6 +990,16 @@ h2 {
 	background-color: $orange1;
   padding: 28px 0 40px;
 
+  .row-fluid {
+    .span3.facebook {
+      .fb-like-box {
+        iframe {
+          background: $white;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 767px) {
     padding: 20px 0 0;
 
