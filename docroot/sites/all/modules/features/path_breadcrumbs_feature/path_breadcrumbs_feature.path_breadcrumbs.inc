@@ -47,6 +47,11 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
           'context' => 'node',
           'not' => TRUE,
         ),
+        1 => array(
+          'name' => 'front',
+          'settings' => NULL,
+          'not' => TRUE,
+        ),
       ),
       'logic' => 'and',
     ),
