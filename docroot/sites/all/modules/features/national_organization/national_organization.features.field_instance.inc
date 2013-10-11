@@ -787,7 +787,7 @@ function national_organization_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'national_organization_logo',
         ),
         'type' => 'image',
         'weight' => 6,

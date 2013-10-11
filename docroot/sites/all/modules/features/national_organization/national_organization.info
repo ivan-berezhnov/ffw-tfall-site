@@ -76,6 +76,7 @@ features[field_instance][] = node-national_organizations-field_nov2_principles_l
 features[field_instance][] = node-national_organizations-field_nov2_principles_right
 features[image][] = map_logo
 features[image][] = map_thumbnail
+features[image][] = national_organization_logo
 features[node][] = national_organization
 features[node][] = national_organizations
 features[variable][] = field_bundle_settings_node__national_organization
