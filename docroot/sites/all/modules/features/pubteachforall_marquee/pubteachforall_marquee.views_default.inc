@@ -114,6 +114,19 @@ function pubteachforall_marquee_views_default_views() {
     'image_style' => 'marquee_full_width',
     'image_link' => 'content',
   );
+  /* Field: Content: Network Learning image */
+  $handler->display->display_options['fields']['field_network_learning_image']['id'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['table'] = 'field_data_field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['field'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_network_learning_image']['settings'] = array(
+    'image_style' => 'marquee_full_width',
+    'image_link' => 'content',
+  );
   /* Field: Content: Vertical Image For Front Page Marquee */
   $handler->display->display_options['fields']['field_vertical_image']['id'] = 'field_vertical_image';
   $handler->display->display_options['fields']['field_vertical_image']['table'] = 'field_data_field_vertical_image';
