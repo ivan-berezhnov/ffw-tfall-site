@@ -158,8 +158,6 @@
           <li><a class="privacy-policy" href="/privacy-policy">Privacy Policy</a></li>
           <li><a class="privacy-policy" href="/contact-us">Contact Us</a></li>
         </ul>
-
-
       </div>
       <div class="span3 footer-links widget_supporters">
 				<?php if (module_exists('widget_supporter')): ?>
