@@ -130,7 +130,7 @@
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2013<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
-        <a class="privacy-policy" href="privacy-policy">Privacy Policy</a>
+        <a class="privacy-policy" href="/privacy-policy">Privacy Policy</a>
         <a class="privacy-policy" href="/contact-us">Contact Us</a>
       </div>
       <div class="span3 footer-links widget_supporters">

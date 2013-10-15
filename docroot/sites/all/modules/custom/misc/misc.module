@@ -94,7 +94,7 @@ function misc_entity_info_alter(&$entity_info) {
 /*
  * contact us form
  */
-function misc_widget_contact_from() {
+function misc_widget_contact_form() {
 	module_load_include('inc', 'misc', 'includes/misc_contact.form');
 	return render(drupal_get_form('misc_contact_form'));
 }
@@ -111,4 +111,37 @@ function misc_mail($key, &$message, $params) {
 			$message['body'][] = theme('misc_contact_form_email', array('content' => $params));
 			break;
 	}
+}
+
+/**
+ * Implements hook_block_info().
+ * @author AlexB
+ */
+function misc_block_info() {
+  $blocks = array();
+
+  $blocks['misc_contact_block'] = array(
+    'info' => t('TFALL - Contact Form'),
+    );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ * @author AlexB
+ */
+function misc_block_view($delta = '') {
+  $block = array();
+
+  $contact_form = misc_widget_contact_form();
+
+  switch ($delta) {
+    case 'misc_contact_block':
+      $block['title']   = '';
+      $block['content'] = $contact_form;
+    break;
+  }
+
+  return $block;
 }
