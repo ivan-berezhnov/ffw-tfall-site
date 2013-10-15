@@ -5,30 +5,30 @@
  */
 
 function misc_menu() {
-	module_load_include('inc', 'pathauto');
+    module_load_include('inc', 'pathauto');
 
-	$customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'contact-thank-you');
+    $customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'contact-thank-you');
 
-	foreach ($customnodes as $key)
-		$items[$key] = array(
-			'page callback' => 'theme_render_template',
-			'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
-			'access callback' => TRUE,
-		);
+    foreach ($customnodes as $key)
+        $items[$key] = array(
+            'page callback' => 'theme_render_template',
+            'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
+            'access callback' => TRUE,
+        );
 
-	return $items;
+    return $items;
 }
 
 /*
  * implements hook_theme()
  */
 function misc_theme() {
-	return array(
-		'misc_contact_form_email' => array(
-			'template' => 'templates/contact_form_email',
-			'arguments' => array('content' => null),
-		),
-	);
+    return array(
+        'misc_contact_form_email' => array(
+            'template' => 'templates/contact_form_email',
+            'arguments' => array('content' => null),
+        ),
+    );
 }
 
 /**
@@ -81,22 +81,22 @@ function validate_marquee_node_4_contains_vertical_image($form, &$form_state) {
  */
 
 function misc_entity_info_alter(&$entity_info) {
-	$entity_info['node']['view modes']['our_model'] = array(
-		'label' => 'Our Model',
-		'custom settings' => TRUE,
-	);
-	$entity_info['node']['view modes']['global_organization'] = array(
-		'label' => 'Global organization',
-		'custom settings' => TRUE,
-	);
+    $entity_info['node']['view modes']['our_model'] = array(
+        'label' => 'Our Model',
+        'custom settings' => TRUE,
+    );
+    $entity_info['node']['view modes']['global_organization'] = array(
+        'label' => 'Global organization',
+        'custom settings' => TRUE,
+    );
 }
 
 /*
  * contact us form
  */
 function misc_widget_contact_form() {
-	module_load_include('inc', 'misc', 'includes/misc_contact.form');
-	return render(drupal_get_form('misc_contact_form'));
+    module_load_include('inc', 'misc', 'includes/misc_contact.form');
+    return render(drupal_get_form('misc_contact_form'));
 }
 
 /*
@@ -104,44 +104,59 @@ function misc_widget_contact_form() {
  */
 function misc_mail($key, &$message, $params) {
 
-	switch ($key) {
-		case 'contact_form':
-			$message['subject'] = t('Contact email from website');
-			$langcode = $message['language']->language;
-			$message['body'][] = theme('misc_contact_form_email', array('content' => $params));
-			break;
-	}
+    switch ($key) {
+        case 'contact_form':
+            $message['subject'] = t('Contact email from website');
+            $langcode = $message['language']->language;
+            $message['body'][] = theme('misc_contact_form_email', array('content' => $params));
+            break;
+    }
 }
 
+
 /**
- * Implements hook_block_info().
+ * Implements hook_block_info()
  * @author AlexB
  */
-function misc_block_info() {
-  $blocks = array();
-
-  $blocks['misc_contact_block'] = array(
-    'info' => t('TFALL - Contact Form'),
+function misc_block_info()
+{
+    $blocks['contact_form'] = array(
+        'info' => t('Contact form'),
+        'status' => TRUE,
+        'region' => 'content',
+        'weight' => 0,
+        'visibility' => 1,
     );
 
-  return $blocks;
+    return $blocks;
 }
 
 /**
- * Implements hook_block_view().
+ * Implements hook_block_view
  * @author AlexB
  */
-function misc_block_view($delta = '') {
-  $block = array();
+function misc_block_view($delta = '')
+{
+    switch($delta){
+        case 'contact_form':
+            $block['title'] = '';
+            $block['content'] = contact_block_contents($delta);
+            return $block;
+            break;
+    }
+}
 
-  $contact_form = misc_widget_contact_form();
+/**
+ * A module defined block content function.
+ * @author AlexB
+ */
+function contact_block_contents($delta)
+{
+    switch($delta){
+        case 'contact_form':
+            $contact_form = misc_widget_contact_form();
+            return $contact_form;
+            break;
+    }
 
-  switch ($delta) {
-    case 'misc_contact_block':
-      $block['title']   = '';
-      $block['content'] = $contact_form;
-    break;
-  }
-
-  return $block;
 }
