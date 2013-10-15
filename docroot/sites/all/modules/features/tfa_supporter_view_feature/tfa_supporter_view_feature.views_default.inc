@@ -67,11 +67,23 @@ function tfa_supporter_view_feature_views_default_views() {
     'news' => 0,
     'tags' => 0,
   );
+  /* Field: Content: TFA Supporter Link */
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['id'] = 'field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['table'] = 'field_data_field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['field'] = 'field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['label'] = '';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['click_sort_column'] = 'url';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_tfa_supporter_link]';
+  $handler->display->display_options['fields']['title']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
