@@ -112,10 +112,10 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['relationship'] = 'term_node_tid';
-  /* Sort criterion: Content: Title */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Sort criterion: Node: Title - Natural */
+  $handler->display->display_options['sorts']['content']['id'] = 'content';
+  $handler->display->display_options['sorts']['content']['table'] = 'views_natural_sort';
+  $handler->display->display_options['sorts']['content']['field'] = 'content';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
