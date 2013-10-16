@@ -50,6 +50,6 @@ function misc_contact_form_validate($form, &$form_state) {
 
 function misc_contact_form_submit($form, &$form_state) {
 
-	drupal_mail('misc', 'contact_form', 'darren@appnovation.com', language_default(), $form_state['values'], $form_state['values']['email'], TRUE);
+	drupal_mail('misc', 'contact_form', 'info@teachforall.org', language_default(), $form_state['values'], $form_state['values']['email'], TRUE);
 	$form_state['redirect'] = 'contact-thank-you';
 }
