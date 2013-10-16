@@ -2173,7 +2173,12 @@ img {max-width: 100%;}
   .supporter-links {
     max-width: 80%;
     margin: 5px auto 32px;
-
+    a {
+      color: $black;
+      &:hover {
+        color: $red;
+      }
+    }
     > div {
       display: inline-block;
       color: $black;
