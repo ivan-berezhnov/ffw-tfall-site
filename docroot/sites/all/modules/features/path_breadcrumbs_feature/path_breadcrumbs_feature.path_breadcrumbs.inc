@@ -29,7 +29,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -95;
+  $path_breadcrumb->weight = -93;
   $export['about_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -93,7 +93,7 @@ get-involved/*',
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -96;
+  $path_breadcrumb->weight = -100;
   $export['default'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -115,7 +115,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -94;
+  $path_breadcrumb->weight = -92;
   $export['get_involved_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -135,7 +135,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -98;
+  $path_breadcrumb->weight = -95;
   $export['main_news_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -157,7 +157,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -100;
+  $path_breadcrumb->weight = -96;
   $export['national_organizations_breadcrumbs'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -182,7 +182,7 @@ get-involved/*',
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -99;
+  $path_breadcrumb->weight = -97;
   $export['network_learning_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -202,7 +202,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -93;
+  $path_breadcrumb->weight = -94;
   $export['network_learning_main'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -224,8 +224,30 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -97;
+  $path_breadcrumb->weight = -98;
   $export['news_breadcrumb'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'news_latest';
+  $path_breadcrumb->name = 'News Latest';
+  $path_breadcrumb->path = 'news/latest';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'News',
+      1 => 'Latest',
+    ),
+    'paths' => array(
+      0 => 'news',
+      1 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -99;
+  $export['news_latest'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
@@ -246,7 +268,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -92;
+  $path_breadcrumb->weight = -91;
   $export['our_answer_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -268,7 +290,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -91;
+  $path_breadcrumb->weight = -90;
   $export['our_network_and_impact_breadcrumb'] = $path_breadcrumb;
 
   return $export;
