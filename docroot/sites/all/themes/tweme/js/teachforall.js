@@ -38,7 +38,7 @@
     // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
     var $this = $(this),
       selectedBioName = $this.parent().parent().attr('class').split(' ')[1],
-      $bioItems = $('#main .view-persons .' + selectedBioName),
+      $bioItems = $('#main .view-persons-view .' + selectedBioName),
       $bioTextElements = $bioItems.find('.person-bio, .person-bio-truncated'),
       $readMoreButtons = $bioItems.find('.read-more-btn'),
       $collapseButtons = $bioItems.find('.collapse-btn');
@@ -67,7 +67,7 @@
     });
 
 
-    if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
+    if ($body.hasClass('page-about-leadership') || $body.hasClass('page-about-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $this = $(this),
           $bioTextTruncated = $this.children('.person-bio-truncated'),
