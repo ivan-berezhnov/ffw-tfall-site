@@ -56,7 +56,7 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['label'] = 'Get Involved';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '<a class="btn" href="get-involved">Get Involved</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="btn" href="/get-involved">Get Involved</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
