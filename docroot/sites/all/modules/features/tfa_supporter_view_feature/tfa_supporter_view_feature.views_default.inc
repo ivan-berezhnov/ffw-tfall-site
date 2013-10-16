@@ -133,7 +133,7 @@ function tfa_supporter_view_feature_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'supporters';
+  $handler->display->display_options['path'] = 'about/supporters';
   $export['tfa_supporters_view'] = $view;
 
   return $export;

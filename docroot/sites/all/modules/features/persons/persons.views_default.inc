@@ -176,7 +176,7 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
     'Board member' => 'Board member',
   );
-  $handler->display->display_options['path'] = 'board';
+  $handler->display->display_options['path'] = 'about/board';
 
   /* Display: Leadership Page */
   $handler = $view->new_display('page', 'Leadership Page', 'page_1');
@@ -247,7 +247,7 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
     'Leader' => 'Leader',
   );
-  $handler->display->display_options['path'] = 'leadership';
+  $handler->display->display_options['path'] = 'about/leadership';
   $export['persons_view'] = $view;
 
   return $export;
