@@ -29,7 +29,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -89;
+  $path_breadcrumb->weight = -88;
   $export['about_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -93,7 +93,7 @@ get-involved/*',
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -90;
+  $path_breadcrumb->weight = -89;
   $export['default'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -113,7 +113,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -85;
   $export['get_involved'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -135,7 +135,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -93;
+  $path_breadcrumb->weight = -92;
   $export['get_involved_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -155,7 +155,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -83;
   $export['global_problem'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -175,7 +175,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -95;
+  $path_breadcrumb->weight = -94;
   $export['main_news_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -266,7 +266,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -94;
+  $path_breadcrumb->weight = -93;
   $export['network_learning_main'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -330,7 +330,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -84;
   $export['our_answer'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -352,7 +352,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -92;
+  $path_breadcrumb->weight = -91;
   $export['our_answer_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -372,7 +372,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -88;
+  $path_breadcrumb->weight = -87;
   $export['our_network_and_impact'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -394,7 +394,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -91;
+  $path_breadcrumb->weight = -90;
   $export['our_network_and_impact_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -414,8 +414,50 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = 0;
+  $path_breadcrumb->weight = -86;
   $export['privacy_policy'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'search';
+  $path_breadcrumb->name = 'Search';
+  $path_breadcrumb->path = 'search/*';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'Search',
+    ),
+    'paths' => array(
+      0 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -88;
+  $export['search'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'spotlight';
+  $path_breadcrumb->name = 'Spotlight';
+  $path_breadcrumb->path = 'spotlight/*';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'Spotlight',
+      1 => '!page_title',
+    ),
+    'paths' => array(
+      0 => '<none>',
+      1 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -95;
+  $export['spotlight'] = $path_breadcrumb;
 
   return $export;
 }
