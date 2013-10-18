@@ -26,7 +26,6 @@ scripts[] = assets/js/jquery.touchwipe.min.js
 scripts[] = assets/js/jquery.sidr.min.js
 ;scripts[] = js/teachforall.js
 scripts[] = js/teachforall.min.js
-scripts[] = ../../libraries/flexslider/jquery.flexslider.js
 
 regions[header] = Header
 regions[main_navigation] = Main Navigation
