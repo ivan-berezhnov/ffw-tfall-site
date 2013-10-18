@@ -3139,6 +3139,16 @@ img {max-width: 100%;}
   }
 }
 
+.view-nodequeue-supporter-list {
+  .flexslider {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
 .flexslider-wrapper {
   position: relative;
 }
