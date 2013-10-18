@@ -339,10 +339,16 @@ body {
 * #Global Elements
 **/
 
+table {
+  td {
+    vertical-align: top;
+  }
+}
+
 .breadcrumb {
   background: none;
   color: $grey1;
-  margin: 15px 0 20px 0;
+  margin: 20px 0;
   padding: 0;
   @include font-size(14);
   a {
