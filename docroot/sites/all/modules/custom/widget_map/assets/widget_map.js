@@ -35,11 +35,14 @@
 							}
 						} else {
 							// Touch-enabled devices
-							if ($mapPopup.children().length) {
-								$mapTitle.fadeOut(fadeAnimateTime);
-							} else {
-								$mapTitle.fadeIn(fadeAnimateTime);
-							}
+							// Note: added 200ms delay for iOS7, as it was reaching the conditional before the the popup rendered
+							setTimeout(function() {
+								if ($mapPopup.children().length) {
+									$mapTitle.fadeOut(fadeAnimateTime);
+								} else {
+									$mapTitle.fadeIn(fadeAnimateTime);
+								}
+							}, 200);
 						}
 
 						break;

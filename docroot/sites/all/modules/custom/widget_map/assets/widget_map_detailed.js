@@ -27,13 +27,16 @@
 
 				switch(element) {
 					case 'marker':
-						if ($mapPopup.children().length) {
-							$mapTitle.hide();
-							$zoomControls.hide();
-						} else {
-							$mapTitle.show();
-							$zoomControls.show();
-						}
+						// Note: added 200ms delay for iOS7, as it was reaching the conditional before the the popup rendered
+						setTimeout(function() {
+							if ($mapPopup.children().length) {
+								$mapTitle.hide();
+								$zoomControls.hide();
+							} else {
+								$mapTitle.show();
+								$zoomControls.show();
+							}
+						}, (hasTouch ? 200 : 0) );
 
 						break;
 					case 'map':
