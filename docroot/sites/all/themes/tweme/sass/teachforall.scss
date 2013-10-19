@@ -1377,14 +1377,12 @@ img {max-width: 100%;}
 * #Supporters Widget
 **/
 
-.flexslider_supporter {
-  * {
-    // Prevent flickering of rendered fonts in webkit browsers
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-
-  a {
-    margin: 0;
+.view-nodequeue-supporter-list {
+  .flexslider {
+    * {
+      // Prevent flickering of rendered fonts in webkit browsers
+      -webkit-transform: translate3d(0, 0, 0);
+    }
   }
 }
 
