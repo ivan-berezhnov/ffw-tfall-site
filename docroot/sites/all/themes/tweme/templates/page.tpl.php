@@ -65,7 +65,7 @@
   <div class="container">
     <?php print $messages ?>
   </div>
-  <div class="row row-toggle">
+  <div class="row-fluid row-toggle">
     <?php if ($has_sidebar_first): ?>
     <!-- Sidebar first -->
     <aside id="sidebar-first" class="sidebar span3 hidden-phone">
