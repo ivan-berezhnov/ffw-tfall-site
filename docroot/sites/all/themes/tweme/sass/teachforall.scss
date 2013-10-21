@@ -1111,23 +1111,17 @@ h2 {
         display: inline-block;
 
         .content > ul.menu {
-          > li {
+          > li:nth-child(odd) {
+            width: 42%;
+            float: left;
+            margin-right: 6%;
+            margin-left: 5%;
+          }
+
+          > li:nth-child(even) {
             width: 42%;
             float: left;
             margin-right: 5%;
-
-            &.first {
-              width: 42%;
-              float: left;
-              margin-right: 6%;
-              margin-left: 5%;
-            }
-
-            &.last {
-              width: auto;
-              clear: both;
-              margin-left: 5%;
-            }
           }
         }
       }
