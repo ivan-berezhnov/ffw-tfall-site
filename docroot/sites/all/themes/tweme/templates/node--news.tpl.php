@@ -3,7 +3,7 @@
 
     <div class="content"<?php print $content_attributes; ?>>
 
-      <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
+      <h2 class="page-title date"><?php print format_date($node->created, 'short'); ?></h2>
 
     	<div class="row-fluid">
     	  <div class="span9">
