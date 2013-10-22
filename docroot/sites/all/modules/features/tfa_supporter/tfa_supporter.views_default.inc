@@ -55,7 +55,7 @@ function tfa_supporter_views_default_views() {
   $handler->display->display_options['fields']['field_tfa_supporter_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_tfa_supporter_logo']['settings'] = array(
     'image_style' => '',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
