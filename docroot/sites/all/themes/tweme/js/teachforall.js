@@ -8,6 +8,26 @@
     $("a[title^='About']").click(function(e) {
         e.preventDefault();// suppress the 'About' link in the Uber Nav
     });
+
+    // Check to see which operating system we're using.
+    if (navigator.appVersion.indexOf("Mac")!=-1) {
+      $('html').addClass('mac');
+    } else {
+      $('html').addClass('pc');
+    }
+
+    // Check to see if the browser is Safari and doublecheck that it is not Chrome.
+    if (navigator.userAgent.indexOf('Chrome') > -1) {
+      $('html').addClass('chrome');
+    } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+      $('html').addClass('safari');
+    } else if (navigator.userAgent.indexOf('Firefox') > -1) {
+      $('html').addClass('firefox');
+    } else if (navigator.userAgent.indexOf('MSIE') > -1) {
+      $('html').addClass('ie');
+    } else {
+      $('html').addClass('other-browser');
+    }
   });
 
   var $body,

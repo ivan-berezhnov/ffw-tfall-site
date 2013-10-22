@@ -72,55 +72,81 @@
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Book.eot'),
-  url('../fonts/FSerStdA-Book.eot?#iefix') format('embedded-opentype'),
-  url(‘../fonts/FSerStdA-Book.svg’) format(‘svg’),
-  url('../fonts/FSerStdA-Book.otf'),
+  src: url('../fonts/FSerStdA-Book.eot');
+  src: url('../fonts/FSerStdA-Book.eot?#iefix') format('eot'),
   url('../fonts/FSerStdA-Book.woff') format('woff'),
-  url('../fonts/FSerStdA-Book.ttf') format('truetype');
-  font-style: normal;
+  url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+  url('../fonts/FSerStdA-Book.svg') format('svg');
   font-weight: 200;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Fedra Serif";
+    src: url('../fonts/FSerStdA-Book.svg') format('svg');
+  }
 }
 
 @font-face {
   font-family: "Fedra Serif";
-  src: url('../fonts/FSerStdA-Bold.eot'),
-  url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
-  url(‘../fonts/FSerStdA-Bold.svg’) format(‘svg’),
-  url('../fonts/FSerStdA-Bold.otf'),
+  src: url('../fonts/FSerStdA-Bold.eot');
+  src: url('../fonts/FSerStdA-Bold.eot?#iefix') format('eot'),
   url('../fonts/FSerStdA-Bold.woff') format('woff'),
-  url('../fonts/FSerStdA-Bold.ttf') format('truetype');
-  font-style: normal;
+  url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+  url('../fonts/FSerStdA-Bold.svg') format('svg');
   font-weight: bold;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Fedra Serif";
+    src: url('../fonts/FSerStdA-Bold.svg') format('svg');
+  }
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-Medium.eot'),
-  url('../fonts/NewsGothic-Medium.eot?#iefix') format('embedded-opentype'),
-  url(‘../fonts/NewsGothic-Medium.svg’) format(‘svg’),
-  url('../fonts/NewsGothic-Medium.otf'),
+  src: url('../fonts/NewsGothic-Medium.eot');
+  src: url('../fonts/NewsGothic-Medium.eot?#iefix') format('eot'),
   url('../fonts/NewsGothic-Medium.woff') format('woff'),
-  url('../fonts/NewsGothic-Medium.ttf') format('truetype');
-  font-style: normal;
+  url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+  url('../fonts/NewsGothic-Medium.svg') format('svg');
   font-weight: 200;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "News Gothic";
+    src: url('../fonts/NewsGothic-Medium.svg') format('svg');
+  }
 }
 
 @font-face {
   font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold.eot'),
-  url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('embedded-opentype'),
-  url(‘../fonts/NewsGothic-DemiBold.svg’) format(‘svg’),
-  url('../fonts/NewsGothic-DemiBold.otf'),
+  src: url('../fonts/NewsGothic-DemiBold.eot');
+  src: url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('eot'),
   url('../fonts/NewsGothic-DemiBold.woff') format('woff'),
-  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype');
-  font-style: normal;
+  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+  url('../fonts/NewsGothic-DemiBold.svg') format('svg');
   font-weight: bold;
+  font-style: normal;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "News Gothic";
+    src: url('../fonts/NewsGothic-DemiBold.svg') format('svg');
+  }
+}
+
 @font-face {
   font-family: 'icomoon';
   src:url('fonts/icomoon.eot');
 }
+
 @font-face {
   font-family: 'icomoon';
   src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff'),
@@ -219,6 +245,12 @@ h3, .h3 {
   }
 }
 
+html.pc.chrome {
+  h1, .h1, h2, .h2, h3, .h3 {
+    font-family: serif;
+  }
+}
+
 h4, .h4 {
   line-height: 20px;
   @include font-size(16);
@@ -244,7 +276,13 @@ body {
   color: $grey2;
   @include font-size(16);
   line-height: 20px;
-  font-family: "News Gothic", sans-serif;
+  font-family: "News Gothic";
+}
+
+html.pc.chrome {
+  body {
+    font-family: sans-serif;
+  }
 }
 
 .body {
@@ -252,6 +290,12 @@ body {
   @include font-size(17);
   line-height: 25px;
   font-family: "Fedra Serif";
+}
+
+html.pc.chrome {
+  .body {
+    font-family: serif;
+  }
 }
 
 .section {
@@ -273,6 +317,12 @@ body {
   @include font-size(17);
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+html.pc.chrome {
+  .large-body {
+    font-family: serif;
   }
 }
 
@@ -310,6 +360,12 @@ body {
    &:hover {
      color: $white;
    }
+}
+
+html.pc.chrome {
+  .footer-link-beige {
+    font-family: serif;
+  }
 }
 
 .footer-link-grey {
@@ -464,6 +520,12 @@ html {
   }
 }
 
+html.pc.chrome {
+  .btn__red {
+    font-family: serif;
+  }
+}
+
 .nav-tabs {
   padding-top: 20px;
 }
@@ -572,6 +634,12 @@ h2 {
   @include font-size(24);
 }
 
+html.pc.chrome {
+  .slug-medium, .slug-large {
+    font-family: serif;
+  }
+}
+
 .stats {
   color: $grey1;
   font-weight: bold;
@@ -611,6 +679,12 @@ h2 {
     background-color: $red;
     color: $white;
     cursor: pointer;
+  }
+}
+
+html.pc.chrome {
+  .donate {
+    font-family: serif;
   }
 }
 
@@ -830,7 +904,7 @@ h2 {
                   li {
                     line-height: 20px;
                     border-top: 1px solid $border_color1;
-                    font-family: "News Gothic", sans-serif;
+                    font-family: "News Gothic";
                     font-weight: normal;
                     letter-spacing: 0;
                     margin: 0;
@@ -867,6 +941,12 @@ h2 {
         }
       }
     }
+  }
+}
+
+html.pc.chrome {
+  .navbar .navbar-inner .container .region-main-navigation {
+    font-family: serif;
   }
 }
 
@@ -1226,6 +1306,12 @@ h2 {
   }
 }
 
+html.pc.chrome {
+  .footer__contact-us {
+    font-family: serif;
+  }
+}
+
 .footer__copyright {
   color: $grey4;
   margin-top: 20px;
@@ -1357,6 +1443,14 @@ h2 {
   }
 }
 
+html.pc.chrome {
+  .footer__search {
+    p, a {
+      font-family: serif;
+    }
+  }
+}
+
 /**/
 
 /**
@@ -1402,6 +1496,12 @@ img {max-width: 100%;}
     color: $grey4;
     @include font-size(17);
     line-height: 21px;
+  }
+}
+
+html.pc.chrome {
+  .widget_supporters .title {
+    font-family: serif;
   }
 }
 
@@ -1475,6 +1575,12 @@ img {max-width: 100%;}
   font-family: "Fedra Serif", serif;
   margin-bottom: 10px;
   @include font-size(17);
+}
+
+html.pc.chrome {
+  .marquee__preview {
+    font-family: serif;
+  }
 }
 
 .marquee__link {
@@ -1685,13 +1791,19 @@ img {max-width: 100%;}
       color: $white;
       line-height: 26px;
       padding: 0px 17px;
-      font-family: "News Gothic", sans-serif;
+      font-family: "News Gothic";
 
       &:hover {
         color: $white;
         background: $grey2;
       }
     }
+  }
+}
+
+html.pc.chrome {
+  .leaflet-popup-content-wrapper .btn {
+    font-family: sans-serif;
   }
 }
 
@@ -2324,6 +2436,18 @@ img {max-width: 100%;}
   }
 }
 
+html.pc.chrome {
+  .network-learning-front-block {
+    a.network-learning-main {
+      font-family: serif;
+    }
+
+    .view-display-id-network_learning_front_block .span4 .nl-front-title {
+      font-family: serif;
+    }
+  }
+}
+
 /**/
 
 /* ### NODES ### */
@@ -2342,8 +2466,14 @@ img {max-width: 100%;}
   .node {
     a {
       @include font-size(18);
-      font-family: "News Gothic", sans-serif;
+      font-family: "News Gothic";
     }
+  }
+}
+
+html.pc.chrome {
+  .no__ceo .node {
+    font-family: sans-serif;
   }
 }
 
@@ -2694,6 +2824,12 @@ img {max-width: 100%;}
   font-family: "Fedra Serif";
   line-height: 1.4em;
   @include font-size(18);
+}
+
+html.pc.chrome {
+  .group_row_byline {
+    font-family: serif;
+  }
 }
 
 .group_info_row {
@@ -3173,6 +3309,12 @@ img {max-width: 100%;}
 .flexslider-preview {
   color: $grey1;
   font-family: "Fedra Serif", serif;
+}
+
+html.pc.chrome {
+  .flexslider-preview {
+    font-family: serif;
+  }
 }
 
 .flexslider-link {
