@@ -48,7 +48,7 @@ function our_model_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_leaders_spotlights',
-    'label' => 'Alumni spotlights',
+    'label' => 'Alumni Spotlights',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
