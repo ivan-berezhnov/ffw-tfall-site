@@ -48,7 +48,7 @@ function our_model_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_leaders_spotlights',
-    'label' => 'Leaders spotlights',
+    'label' => 'Alumni spotlights',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -229,7 +229,7 @@ function our_model_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ourmodelintro_leaders',
-    'label' => 'Leaders',
+    'label' => 'Alumni',
     'required' => 0,
     'settings' => array(
       'text_processing' => 1,
@@ -464,9 +464,9 @@ function our_model_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Alumni');
+  t('Alumni spotlights');
   t('Infographic');
-  t('Leaders');
-  t('Leaders spotlights');
   t('Links');
   t('System change');
   t('System change spotlights');
