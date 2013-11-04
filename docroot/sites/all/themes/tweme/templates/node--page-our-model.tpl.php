@@ -27,7 +27,7 @@
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
-      <h3>LEADERS</h3>
+      <h3>ALUMNI</h3>
 			<div class="intro">
         <?php print render($content['field_ourmodelintro_leaders']); ?>
       </div>
