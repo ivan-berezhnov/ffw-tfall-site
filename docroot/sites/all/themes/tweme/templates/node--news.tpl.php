@@ -2,7 +2,6 @@
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <div class="content"<?php print $content_attributes; ?>>
-
       <h2 class="page-title date"><?php print format_date($node->created, 'short'); ?></h2>
 
     	<div class="row-fluid">
@@ -73,5 +72,5 @@
 
     </div>
   </div>
-
+<?php print $feed_icons ?>
 </div> <!-- container end -->

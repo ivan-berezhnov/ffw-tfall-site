@@ -4,7 +4,7 @@
  * @file
  * Provides preprocess logic and other functionality for theming.
  */
-
+ 
 // Ensure that __DIR__ constant is defined:
 if (!defined('__DIR__')) {
   define('__DIR__', dirname(__FILE__));

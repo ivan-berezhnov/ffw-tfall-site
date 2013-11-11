@@ -123,7 +123,7 @@
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
-        <div class="footer__search">
+		<div class="footer__search">
           <p>Search the Site</p>
           <?php print $navbar_search ?>
         </div>
