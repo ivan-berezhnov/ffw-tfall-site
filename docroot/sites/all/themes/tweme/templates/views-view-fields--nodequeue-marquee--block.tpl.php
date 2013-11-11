@@ -40,6 +40,8 @@
     <div class="marquee__preview">
       <?php if (isset($fields['field_news_byline']->content)): ?>
         <?php print $fields['field_news_byline']->content; ?>
+		<?php elseif (isset($fields['field_network_learning_byline']->content)): ?>
+        <?php print $fields['field_network_learning_byline']->content; ?>
       <?php else: ?>
         <?php print $fields['body']->content; ?>
       <?php endif; ?>
