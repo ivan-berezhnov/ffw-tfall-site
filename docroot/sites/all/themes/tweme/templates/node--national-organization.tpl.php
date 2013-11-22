@@ -123,8 +123,23 @@
   					<?php endif; ?>
           </div>
 
-        </div>
-
+	            <div class="slug">
+                <?php
+                //set boolean values for the "About" fields to see if they are set.
+                $is_field_about_set = isset($content['field_about']);
+                //Check to see if the About field are populated then print the title if they are
+                if(
+                  $is_field_about_set){
+                  print t('About');
+              }
+              ?>
+          </div>
+		            <div class="no__stat">
+  					<?php if ($is_field_about_set): ?>
+  						<?php print render($content['field_about']); ?><br />
+  					<?php endif; ?>
+          </div>
+		</div>  
       </div>
       <div class="span6">
         <div class="no__image">
@@ -137,8 +152,8 @@
 				<div class="row-fluid no__spotlights">
 				  <?php print render($content['field_spotlights']); ?>
 				</div>
+        </div>
 
-      </div>
       <div class="span3">
 
 				<?php if (module_exists('widget_facebook') && isset($content['field_key_facebook'])): ?>
