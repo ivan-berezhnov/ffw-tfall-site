@@ -104,7 +104,6 @@
               }
               ?>
           </div>
-
           <div class="no__stat">
   					<?php if ($is_field_population_content_set): ?>
   						<strong><?php print render($content['field_population']); ?></strong> population<br />
@@ -122,12 +121,11 @@
   						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avg. total years of education<br />
   					<?php endif; ?>
           </div>
-
 	            <div class="slug">
                 <?php
                 //set boolean values for the "About" fields to see if they are set.
                 $is_field_about_set = isset($content['field_about']);
-                //Check to see if the About field are populated then print the title if they are
+                //Check to see if the About field is populated then print the title if it is
                 if(
                   $is_field_about_set){
                   print t('About');
