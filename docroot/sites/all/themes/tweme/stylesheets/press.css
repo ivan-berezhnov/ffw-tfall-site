@@ -1,0 +1,10 @@
+.node-page-1-col-layout .h2 {
+          font-family: "Fedra Serif";
+          color: $grey2;
+          line-height: 24px;
+}
+
+.node-page-1-col-layout .h2:hover {
+            color: $red;
+          }
+
