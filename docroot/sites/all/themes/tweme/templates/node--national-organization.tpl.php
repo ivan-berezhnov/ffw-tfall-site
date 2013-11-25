@@ -25,8 +25,6 @@
           </div>
         <?php endif; ?>
         <div class="no__info-block no__stats">
-            <?php
-            ?>
 				            <div class="slug">
                 <?php
                 //set boolean values for the "About" fields to see if they are set.
@@ -43,6 +41,8 @@
   						<?php print render($content['field_about']); ?><br />
   					<?php endif; ?>
           </div>
+		  </div>
+		  <div class="no__info-block no__stats">
           <div class="slug">
               <?php
               //set boolean values for each of the "Program Snapshot" fields to see if they are set.
