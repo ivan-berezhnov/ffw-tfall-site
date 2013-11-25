@@ -16,6 +16,7 @@ stylesheets[all][] = assets/css/bootstrap-extra.css
 stylesheets[all][] = assets/css/jquery.sidr.dark.css
 stylesheets[all][] = assets/css/drupal.css
 stylesheets[all][] = stylesheets/teachforall.css
+stylesheets[all][] = stylesheets/press.css
 
 ;scripts[] = assets/js/drupal.js
 
