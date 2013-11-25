@@ -24,10 +24,25 @@
             <?php print render($content['field_ceo_profile']); ?>
           </div>
         <?php endif; ?>
-
         <div class="no__info-block no__stats">
             <?php
             ?>
+				            <div class="slug">
+                <?php
+                //set boolean values for the "About" fields to see if they are set.
+                $is_field_about_set = isset($content['field_about']);
+                //Check to see if the About field is populated then print the title if it is
+                if(
+                  $is_field_about_set){
+                  print t('About');
+              }
+              ?>
+          </div>
+		            <div class="no__stat">
+  					<?php if ($is_field_about_set): ?>
+  						<?php print render($content['field_about']); ?><br />
+  					<?php endif; ?>
+          </div>
           <div class="slug">
               <?php
               //set boolean values for each of the "Program Snapshot" fields to see if they are set.
@@ -119,22 +134,6 @@
           <div class="no__stat">
   					<?php if ($is_field_avg_total_years_of_edu_content_set): ?>
   						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avg. total years of education<br />
-  					<?php endif; ?>
-          </div>
-	            <div class="slug">
-                <?php
-                //set boolean values for the "About" fields to see if they are set.
-                $is_field_about_set = isset($content['field_about']);
-                //Check to see if the About field is populated then print the title if it is
-                if(
-                  $is_field_about_set){
-                  print t('About');
-              }
-              ?>
-          </div>
-		            <div class="no__stat">
-  					<?php if ($is_field_about_set): ?>
-  						<?php print render($content['field_about']); ?><br />
   					<?php endif; ?>
           </div>
 		</div>  
