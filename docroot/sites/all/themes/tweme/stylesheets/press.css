@@ -1,7 +1,6 @@
 .node-page-1-col-layout .h2 {
           color: $grey2;
 }
-
 .node-page-1-col-layout .h2:hover {
             color: $red;
           }
