@@ -42,7 +42,6 @@
   					<?php endif; ?>
           </div>
 		  </div>
-		  
 		  <div class="no__info-block no__stats">
           <div class="slug">
               <?php
