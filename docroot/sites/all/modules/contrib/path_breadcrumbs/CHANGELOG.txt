@@ -1,5 +1,15 @@
-
 Path Breadcrumbs 7.x-3.x, xxxx-xx-xx
+------------------------------
+
+
+Path Breadcrumbs 7.x-3.0-beta6, 2013-10-25
+------------------------------
+#2067579 by adamzimmermann, kalabro: Fixed External URLs don't work when using Path Breadcrumbs render function.
+#1975160 by kalabro: Added Breadcrumbs internal rendering settings per theme.
+#2118329 by kalabro, klim_: Added query symbols support (?&=).
+
+
+Path Breadcrumbs 7.x-3.0-beta5, 2013-09-29
 ------------------------------
 #1976008 by klonos, Spleshka, kalabro: Renamed "Path breadcrumbs" to "Path Breadcrumbs".
 by kalabro: Converted ":parent:" token from list to single item in UI autocomplete.
