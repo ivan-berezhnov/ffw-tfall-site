@@ -74,6 +74,10 @@
 					minWidth: 291
 				});
 
+				marker.on('click', function(e){
+					window.location = $(marker._popup._content).attr('href');
+				})
+					
 			});
 
 			if (noTouch) {
