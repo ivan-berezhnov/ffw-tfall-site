@@ -97,8 +97,10 @@
 					popup.on('mouseleave', function(e){
 						map.closePopup();
 					});
-				})
-			}
+				});
+				map.on('popupclose', function(e){
+					$mapTitle.fadeIn(fadeAnimateTime);
+				});			}
 
 			map.markerLayer.on('click', function(e) {
 				toggleMapTitle('marker');
