@@ -34,9 +34,11 @@ function news_wysiwyg_default_profiles() {
           'Link' => 1,
           'Unlink' => 1,
           'Image' => 1,
+          'Source' => 1,
           'PasteFromWord' => 1,
           'RemoveFormat' => 1,
           'SpecialChar' => 1,
+          'FontSize' => 1,
           'Styles' => 1,
           'Table' => 1,
           'Iframe' => 1,
@@ -67,10 +69,12 @@ BlockQuote=div.block-quote
 Slug=div.slug
 SlugMedium=div.slug-medium
 SlugLarge=div.slug-large
+Stats=div.stats
 Red=span.red
 Orange=span.orange
 Orange2=span.orange2
-Beige=span.beige',
+Beige=span.beige
+Black=span.black',
     ),
     'rdf_mapping' => array(),
   );

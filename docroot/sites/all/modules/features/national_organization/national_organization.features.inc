@@ -35,19 +35,20 @@ function national_organization_image_default_styles() {
     'label' => 'map logo',
     'effects' => array(
       5 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
+        'label' => 'Scale',
+        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
+        'effect callback' => 'image_scale_effect',
+        'dimensions callback' => 'image_scale_dimensions',
+        'form callback' => 'image_scale_form',
+        'summary theme' => 'image_scale_summary',
         'module' => 'image',
-        'name' => 'image_scale_and_crop',
+        'name' => 'image_scale',
         'data' => array(
           'width' => 150,
           'height' => 84,
+          'upscale' => 1,
         ),
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -69,6 +70,29 @@ function national_organization_image_default_styles() {
         'data' => array(
           'width' => 292,
           'height' => 164,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: national_organization_logo.
+  $styles['national_organization_logo'] = array(
+    'name' => 'national_organization_logo',
+    'label' => 'National Organization Logo',
+    'effects' => array(
+      3 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 270,
+          'height' => 152,
         ),
         'weight' => 1,
       ),

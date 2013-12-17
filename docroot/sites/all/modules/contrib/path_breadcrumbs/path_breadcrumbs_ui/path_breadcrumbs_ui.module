@@ -405,7 +405,7 @@ function _path_breadcrumbs_ui_form_step_basic_settings(&$form, &$form_state) {
   $form['path'] = array(
     '#type' => 'textfield',
     '#title' => t('Path'),
-    '#description' => t('The URL non-aliased path where breadcrumb will be shown. You may create named placeholders for variable parts of the path by using %name for required elements. For example: "node/%node/foo" or "forum/%forum". These named placeholders can be turned into contexts on the arguments form.'),
+    '#description' => t('The URL non-aliased path where breadcrumb will be shown. You may create named placeholders for variable parts of the path by using %name for required elements. For example: "node/%node/foo" or "taxonomy/term/%term". These named placeholders can be turned into contexts on the arguments form.'),
     '#required' => TRUE,
     '#maxlength' => 256,
     '#field_prefix' => url(NULL, array('absolute' => TRUE)) . (variable_get('clean_url', 0) ? '' : '?q='),

@@ -63,7 +63,59 @@ function network_learning_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-network_learning-field_author'
+  $field_instances['node-network_learning-field_author'] = array(
+    'bundle' => 'network_learning',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_author',
+    'label' => 'Author',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -116,7 +168,7 @@ function network_learning_field_default_field_instances() {
       'module' => 'video_embed_field',
       'settings' => array(),
       'type' => 'video_embed_field_video',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -155,7 +207,7 @@ function network_learning_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_network_learning_byline',
-    'label' => 'Network Learning byline',
+    'label' => 'Blurb',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -230,7 +282,7 @@ function network_learning_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -279,17 +331,82 @@ function network_learning_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 8,
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-network_learning-field_vertical_image'
+  $field_instances['node-network_learning-field_vertical_image'] = array(
+    'bundle' => 'network_learning',
+    'deleted' => 0,
+    'description' => 'This image field should be populated only if this node is being shown in the 4th position of the front page marquee.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_vertical_image',
+    'label' => 'Vertical Image For Front Page Marquee',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Author');
+  t('Blurb');
   t('Body');
   t('Embedded Video');
-  t('Network Learning byline');
   t('Network Learning image');
   t('Network Learning tags');
+  t('This image field should be populated only if this node is being shown in the 4th position of the front page marquee.');
+  t('Vertical Image For Front Page Marquee');
 
   return $field_instances;
 }

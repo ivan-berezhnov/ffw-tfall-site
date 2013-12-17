@@ -84,8 +84,9 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '70';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Image */
@@ -111,6 +112,19 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_news_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_image']['settings'] = array(
+    'image_style' => 'marquee_full_width',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Network Learning image */
+  $handler->display->display_options['fields']['field_network_learning_image']['id'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['table'] = 'field_data_field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['field'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_network_learning_image']['settings'] = array(
     'image_style' => 'marquee_full_width',
     'image_link' => 'content',
   );
@@ -143,7 +157,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['hide_empty'] = TRUE;
-  /* Field: Content: Byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -214,6 +228,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
+    'network_learning' => 'network_learning',
     'news' => 'news',
     'spotlight' => 'spotlight',
   );

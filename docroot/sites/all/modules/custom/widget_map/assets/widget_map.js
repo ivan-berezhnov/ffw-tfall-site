@@ -9,7 +9,8 @@
 					maxZoom: 5
 				}),
 				$mapTitle = $('.worldmap__title'),
-				fadeAnimateTime = 200;
+				fadeAnimateTime = 200,
+				noTouch = $('html').hasClass('no-touch');
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
@@ -26,10 +27,22 @@
 
 				switch(element) {
 					case 'marker':
-						if ($mapPopup.children().length) {
-							$mapTitle.fadeIn(fadeAnimateTime);
+						if (noTouch) {
+							if ($mapPopup.children().length) {
+								$mapTitle.fadeIn(fadeAnimateTime);
+							} else {
+								$mapTitle.fadeOut(fadeAnimateTime);
+							}
 						} else {
-							$mapTitle.fadeOut(fadeAnimateTime);
+							// Touch-enabled devices
+							// Note: added 200ms delay for iOS7, as it was reaching the conditional before the the popup rendered
+							setTimeout(function() {
+								if ($mapPopup.children().length) {
+									$mapTitle.fadeOut(fadeAnimateTime);
+								} else {
+									$mapTitle.fadeIn(fadeAnimateTime);
+								}
+							}, 200);
 						}
 
 						break;
@@ -51,9 +64,9 @@
 
 				var popupContent =
 								'<a class="popup" href="' + feature.properties.url + '">' +
-								'<img class="no__main-img" src="' + feature.properties.mainpic + '">' +
+								'<div class="no__map-main-img"><img class="no__main-img" src="' + feature.properties.mainpic + '"></div>' +
 								'<h2>' + feature.properties.title + '</h2>' +
-								'<img src="' + feature.properties.logo + '">' +
+								'<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
 								'</a>' +
 								'<a class="btn btn-primary" href="' + feature.properties.url + '">more</a>';
 
@@ -63,12 +76,14 @@
 				});
 			});
 
-			map.markerLayer.on('mouseover',function(e) {
-				$mapTitle.fadeOut(fadeAnimateTime);
-				e.layer.openPopup();
-			});
+			if (noTouch) {
+				map.markerLayer.on('mouseover',function(e) {
+					$mapTitle.fadeOut(fadeAnimateTime);
+					e.layer.openPopup();
+				});
+			}
 
-			map.markerLayer.on('click',function(e) {
+			map.markerLayer.on('click', function(e) {
 				toggleMapTitle('marker');
 			});
 

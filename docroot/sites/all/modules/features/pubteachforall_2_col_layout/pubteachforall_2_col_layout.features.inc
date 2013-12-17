@@ -27,7 +27,7 @@ function pubteachforall_2_col_layout_image_default_styles() {
     'name' => '2_column_layout_image',
     'label' => '2 Column Layout Image',
     'effects' => array(
-      7 => array(
+      2 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -37,8 +37,8 @@ function pubteachforall_2_col_layout_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 490,
-          'height' => 276,
+          'width' => 570,
+          'height' => 321,
         ),
         'weight' => 1,
       ),

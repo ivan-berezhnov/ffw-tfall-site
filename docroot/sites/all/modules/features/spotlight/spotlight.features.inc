@@ -57,8 +57,8 @@ function spotlight_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 237,
-          'height' => 134,
+          'width' => 570,
+          'height' => 321,
         ),
         'weight' => 1,
       ),

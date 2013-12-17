@@ -43,8 +43,9 @@ function pubteachforall_marquee_fe_nodequeue_export_fields() {
     'i18n' => 0,
     'subqueues' => 1,
     'types' => array(
-      0 => 'news',
-      1 => 'spotlight',
+      0 => 'network_learning',
+      1 => 'news',
+      2 => 'spotlight',
     ),
     'roles' => array(),
     'count' => 0,

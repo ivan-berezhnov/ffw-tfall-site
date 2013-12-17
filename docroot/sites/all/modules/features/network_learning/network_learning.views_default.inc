@@ -72,7 +72,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['pager']['options']['offset'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -108,7 +108,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Network Learning byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
@@ -141,6 +141,13 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['field_network_learning_tags']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_network_learning_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_network_learning_tags']['delta_offset'] = '0';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = '';
+  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
   $handler->display->display_options['path'] = 'network-learning-view';
 
   /* Display: Latest Network Learning */
@@ -182,7 +189,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Network Learning byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
@@ -216,6 +223,13 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['field_network_learning_tags']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_network_learning_tags']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_network_learning_tags']['delta_offset'] = '0';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = '';
+  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
   $handler->display->display_options['path'] = 'network-learning-latest-view';
 
   /* Display: Network Learning Flexslider */
@@ -268,7 +282,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '170',
   );
-  /* Field: Content: Network Learning byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
@@ -293,6 +307,15 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['view_node_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'GO TO STORY';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_2']['id'] = 'view_node_2';
+  $handler->display->display_options['fields']['view_node_2']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_2']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_2']['label'] = '';
+  $handler->display->display_options['fields']['view_node_2']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node_2']['alter']['text'] = 'WATCH NOW <span class="orange2">>></span>';
+  $handler->display->display_options['fields']['view_node_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_2']['element_default_classes'] = FALSE;
   $handler->display->display_options['block_description'] = 'Flexslider Network Learning Block';
 
   /* Display: Network Learning Front */

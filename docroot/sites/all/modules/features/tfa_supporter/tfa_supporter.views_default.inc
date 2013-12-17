@@ -28,11 +28,8 @@ function tfa_supporter_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['style_options']['class'] = 'item-list';
-  $handler->display->display_options['style_options']['wrapper_class'] = 'flexslider_supporter';
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['optionset'] = 'pubteachforall_supporter_flexslider';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   /* Relationship: Nodequeue: Queue */
@@ -58,13 +55,8 @@ function tfa_supporter_views_default_views() {
   $handler->display->display_options['fields']['field_tfa_supporter_logo']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_tfa_supporter_logo']['settings'] = array(
     'image_style' => '',
-    'image_link' => 'content',
+    'image_link' => '',
   );
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

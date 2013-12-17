@@ -56,7 +56,7 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['label'] = 'Get Involved';
   $handler->display->display_options['footer']['area']['empty'] = TRUE;
-  $handler->display->display_options['footer']['area']['content'] = '<a class="btn" href="get-involved">Get Involved</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="btn" href="/get-involved">Get Involved</a>';
   $handler->display->display_options['footer']['area']['format'] = 'full_html';
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -67,11 +67,23 @@ function tfa_supporter_view_feature_views_default_views() {
     'news' => 0,
     'tags' => 0,
   );
+  /* Field: Content: TFA Supporter Link */
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['id'] = 'field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['table'] = 'field_data_field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['field'] = 'field_tfa_supporter_link';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['label'] = '';
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_tfa_supporter_link']['click_sort_column'] = 'url';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_tfa_supporter_link]';
+  $handler->display->display_options['fields']['title']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -100,6 +112,10 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['sorts']['weight']['relationship'] = 'term_node_tid';
+  /* Sort criterion: Node: Title - Natural */
+  $handler->display->display_options['sorts']['content']['id'] = 'content';
+  $handler->display->display_options['sorts']['content']['table'] = 'views_natural_sort';
+  $handler->display->display_options['sorts']['content']['field'] = 'content';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -117,7 +133,7 @@ function tfa_supporter_view_feature_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'supporters';
+  $handler->display->display_options['path'] = 'about/supporters';
   $export['tfa_supporters_view'] = $view;
 
   return $export;

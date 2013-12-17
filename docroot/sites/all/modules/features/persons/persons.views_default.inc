@@ -69,6 +69,14 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['label'] = '';
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
   /* Field: Content: BIO */
+  $handler->display->display_options['fields']['field_person_bio_1']['id'] = 'field_person_bio_1';
+  $handler->display->display_options['fields']['field_person_bio_1']['table'] = 'field_data_field_person_bio';
+  $handler->display->display_options['fields']['field_person_bio_1']['field'] = 'field_person_bio';
+  $handler->display->display_options['fields']['field_person_bio_1']['label'] = '';
+  $handler->display->display_options['fields']['field_person_bio_1']['alter']['max_length'] = '210';
+  $handler->display->display_options['fields']['field_person_bio_1']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_person_bio_1']['element_label_colon'] = FALSE;
+  /* Field: Content: BIO */
   $handler->display->display_options['fields']['field_person_bio']['id'] = 'field_person_bio';
   $handler->display->display_options['fields']['field_person_bio']['table'] = 'field_data_field_person_bio';
   $handler->display->display_options['fields']['field_person_bio']['field'] = 'field_person_bio';
@@ -105,6 +113,9 @@ function persons_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Board';
   $handler->display->display_options['display_description'] = 'List of Board Members';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -165,13 +176,16 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
     'Board member' => 'Board member',
   );
-  $handler->display->display_options['path'] = 'board';
+  $handler->display->display_options['path'] = 'about/board';
 
   /* Display: Leadership Page */
   $handler = $view->new_display('page', 'Leadership Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Leadership Team';
   $handler->display->display_options['display_description'] = 'List of Leaders';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -233,7 +247,7 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
     'Leader' => 'Leader',
   );
-  $handler->display->display_options['path'] = 'leadership';
+  $handler->display->display_options['path'] = 'about/leadership';
   $export['persons_view'] = $view;
 
   return $export;

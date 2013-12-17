@@ -72,7 +72,7 @@ function news_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['pager']['options']['offset'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -116,7 +116,7 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -158,6 +158,13 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = '';
+  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
   $handler->display->display_options['path'] = 'news-view';
 
   /* Display: Latest News */
@@ -210,7 +217,7 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -234,6 +241,13 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['created']['label'] = '';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  /* Field: Content: Author */
+  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
+  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
+  $handler->display->display_options['fields']['field_author']['label'] = '';
+  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
   $handler->display->display_options['path'] = 'news-latest-view';
 
   /* Display: News Flexslider */
@@ -296,7 +310,7 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '170',
   );
-  /* Field: Content: Byline */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -323,6 +337,15 @@ function news_views_default_views() {
   $handler->display->display_options['fields']['view_node_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'GO TO STORY';
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node_2']['id'] = 'view_node_2';
+  $handler->display->display_options['fields']['view_node_2']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node_2']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node_2']['label'] = '';
+  $handler->display->display_options['fields']['view_node_2']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_node_2']['alter']['text'] = 'WATCH NOW <span class="orange2">>></span>';
+  $handler->display->display_options['fields']['view_node_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node_2']['element_default_classes'] = FALSE;
   $handler->display->display_options['block_description'] = 'Flexslider News Block';
   $export['news'] = $view;
 
