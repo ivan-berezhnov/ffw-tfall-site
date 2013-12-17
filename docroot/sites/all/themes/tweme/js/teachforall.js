@@ -4,6 +4,30 @@
   $(document).ready(function() {
     $('.field-type-text-long table').addClass('table table-bordered');
     $('.field-type-text-with-summary table').addClass('table table-bordered');
+
+    $("a[title^='About']").click(function(e) {
+        e.preventDefault();// suppress the 'About' link in the Uber Nav
+    });
+
+    // Check to see which operating system we're using.
+    if (navigator.appVersion.indexOf("Mac")!=-1) {
+      $('html').addClass('mac');
+    } else {
+      $('html').addClass('pc');
+    }
+
+    // Check to see if the browser is Safari and doublecheck that it is not Chrome.
+    if (navigator.userAgent.indexOf('Chrome') > -1) {
+      $('html').addClass('chrome');
+    } else if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+      $('html').addClass('safari');
+    } else if (navigator.userAgent.indexOf('Firefox') > -1) {
+      $('html').addClass('firefox');
+    } else if (navigator.userAgent.indexOf('MSIE') > -1) {
+      $('html').addClass('ie');
+    } else {
+      $('html').addClass('other-browser');
+    }
   });
 
   var $body,
@@ -30,6 +54,20 @@
     }
   }
 
+  togglePersonFullBio = function() {
+    // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
+    var $this = $(this),
+      selectedBioName = $this.parent().parent().attr('class').split(' ')[1],
+      $bioItems = $('#main .view-persons-view .' + selectedBioName),
+      $bioTextElements = $bioItems.find('.person-bio, .person-bio-truncated'),
+      $readMoreButtons = $bioItems.find('.read-more-btn'),
+      $collapseButtons = $bioItems.find('.collapse-btn');
+
+    $bioTextElements.toggleClass('is-visible');
+    $readMoreButtons.toggleClass('is-visible');
+    $collapseButtons.toggleClass('is-visible');
+  }
+
   $(document).ready(function() {
     $body = $('body');
 
@@ -48,44 +86,17 @@
       }
     });
 
-    if ($body.hasClass('page-leadership') || $body.hasClass('page-board')) {
+
+    if ($body.hasClass('page-about-leadership') || $body.hasClass('page-about-board')) {
       $('#main .view-persons .person-copy').each(function() {
-        var $bio = $(this).children('.person-bio'),
-          $bioMoreParagraphs = $bio.find(':not(:first-child)'),
-          $readMoreButton = $bio.next(),
-          $collapseButton = $readMoreButton.next();
+        var $this = $(this),
+          $bioTextTruncated = $this.children('.person-bio-truncated'),
+          $readMoreButton = $this.children('.read-more-btn'),
+          $collapseButton = $this.children('.collapse-btn');
 
-          if ($bio.find(':not(:first-child)').length > 0) {
-            $bioMoreParagraphs.addClass('is-hidden');
-
-            $readMoreButton
-              .addClass('is-visible')
-              .on('click', function() {
-                // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
-                var selectedBioName = $readMoreButton.parent().parent().attr('class').split(' ')[1],
-                  $bioElements = $('#main .view-persons .' + selectedBioName),
-                  $readMoreButtons = $bioElements.find('.read-more-btn'),
-                  $collapseButtons = $bioElements.find('.collapse-btn'),
-                  $hiddenParagraphs = $bioElements.find('.person-copy .person-bio :not(:first-child)');
-
-                $readMoreButtons.toggleClass('is-visible');
-                $collapseButtons.toggleClass('is-visible');
-                $hiddenParagraphs.toggleClass('is-hidden');
-              });
-
-            $collapseButton.on('click', function() {
-              // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
-              var selectedBioName = $readMoreButton.parent().parent().attr('class').split(' ')[1],
-                $bioElements = $('#main .view-persons .' + selectedBioName),
-                $readMoreButtons = $bioElements.find('.read-more-btn'),
-                  $collapseButtons = $bioElements.find('.collapse-btn'),
-                $hiddenParagraphs = $bioElements.find('.person-copy .person-bio :not(:first-child)');
-
-              $readMoreButtons.toggleClass('is-visible');
-              $collapseButtons.toggleClass('is-visible');
-              $hiddenParagraphs.toggleClass('is-hidden');
-            });
-          }
+          $bioTextTruncated.addClass('is-visible');
+          $readMoreButton.addClass('is-visible').on('click', togglePersonFullBio);
+          $collapseButton.on('click', togglePersonFullBio);
       });
     } else if ($body.hasClass('page-news') || $body.hasClass('page-network-learning')) {
       var $moreContentBtn = $('#main .full-list');

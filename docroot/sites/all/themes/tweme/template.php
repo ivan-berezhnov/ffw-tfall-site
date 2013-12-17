@@ -4,7 +4,7 @@
  * @file
  * Provides preprocess logic and other functionality for theming.
  */
-
+ 
 // Ensure that __DIR__ constant is defined:
 if (!defined('__DIR__')) {
   define('__DIR__', dirname(__FILE__));
@@ -147,11 +147,12 @@ function tweme_preprocess_views_view_unformatted__nos_az(&$vars) {
 	foreach ($groups as $gk => $gv) {
 		if ($n < $spread[$c]) {
 			$cols[$c][$gk] = $gv;
-			$n++;
 		} else {
 			$n = 0;
 			$c++;
+			$cols[$c][$gk] = $gv;
 		}
+		$n++;
 	}
 
 	$vars['cols'] = $cols;

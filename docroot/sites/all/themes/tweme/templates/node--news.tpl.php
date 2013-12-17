@@ -2,8 +2,7 @@
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <div class="content"<?php print $content_attributes; ?>>
-
-      <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
+      <h2 class="page-title date"><?php print format_date($node->created, 'short'); ?></h2>
 
     	<div class="row-fluid">
     	  <div class="span9">
@@ -11,15 +10,15 @@
   		    <h1 class="news__title"><?php print $title; ?></h1>
 
   		    <div class="news__byline">
-  					<?php if (isset($content['field_news_byline'])): ?>
-  						<h3><?php print render($content['field_news_byline']); ?></h3>
+  					<?php if (isset($content['field_author'])): ?>
+  						<h3><?php print render($content['field_author']); ?></h3>
   					<?php endif; ?>
   				</div>
 
   				<div class="news__date">
-  					<div class="news__author-date">by <?php print $name; ?>
+  					<div class="news__author-date">
               <?php if (isset($content['field_category'])): ?>
-               | <span class="news__category"><?php print render($content['field_category']); ?></span>
+                <span class="news__category"><?php print render($content['field_category']); ?></span>
               <?php endif; ?>
             </div>
   				</div>
@@ -73,5 +72,5 @@
 
     </div>
   </div>
-
+<?php print $feed_icons ?>
 </div> <!-- container end -->

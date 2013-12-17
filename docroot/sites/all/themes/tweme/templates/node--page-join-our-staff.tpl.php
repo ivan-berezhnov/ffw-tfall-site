@@ -9,7 +9,7 @@
   </div>
 
   <div class="row-fluid">
-    <div class="span10 offset1">
+    <div class="join-our-staff__iframe">
       <?php print render($content['field_iframe']); ?>
     </div>
   </div>

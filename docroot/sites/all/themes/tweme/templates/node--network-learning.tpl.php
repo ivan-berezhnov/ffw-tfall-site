@@ -1,24 +1,20 @@
 <div class="container">
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <div class="content"<?php print $content_attributes; ?>>
-      <h2 class="page-title date"><?php print format_date($node->published_at, 'short'); ?></h2>
+      <h2 class="page-title date"><?php print render($content['field_network_learning_tags']); ?></h2>
       <div class="row-fluid">
         <div class="span9">
+		
+		          <div class="slug">
+                <span class="news__category"><?php print format_date($node->created, 'short'); ?></span>
+          </div>
 
           <h1 class="news__title"><?php print $title; ?></h1>
 
-          <div class="news__byline">
-            <?php if (isset($content['field_network_learning_byline'])): ?>
-              <h3><?php print render($content['field_network_learning_byline']); ?></h3>
+		  <div class="news__byline">
+            <?php if (isset($content['field_author'])): ?>
+              <h3><?php print render($content['field_author']); ?></h3>
             <?php endif; ?>
-          </div>
-
-          <div class="news__date">
-            <div class="news__author-date">by <?php print $name; ?>
-              <?php if (isset($content['field_network_learning_tags'])): ?>
-               | <span class="news__category"><?php print render($content['field_network_learning_tags']); ?></span>
-              <?php endif; ?>
-            </div>
           </div>
 
           <?php if (isset($content['field_embedded_video'])): ?>

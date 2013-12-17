@@ -88,14 +88,19 @@
 
     <div class="row-fluid">
       <div class="span12">
-        <?php print render($content); ?>
+        <?php
+        $jump_link = $content['field_link'];
+        unset($content['field_link']);
+
+        print render($content);
+        ?>
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span12">
         <div class="jump-link">
-          <?php print render($content['field_link']); ?>
+          <?php print render($jump_link); ?>
         </div>
       </div>
     </div>

@@ -27,11 +27,21 @@
 ?>
 <div class="row-fluid">
   <div class="span3">
-    <?php print $fields['field_network_learning_image']->content; ?>
+    <div class="news__image-video-wrapper">
+      <?php print $fields['field_network_learning_image']->content; ?>
+      <?php
+        $embedded_field = $row->_field_data['nid']['entity']->field_embedded_video;
+        $embedded_field_video_size= sizeof($embedded_field);
+        $is_embedded_video_field = ($embedded_field_video_size > 0);
+        if ($is_embedded_video_field) {
+            print t('<div class="ico-play"></div>');
+        }
+      ?>
+    </div>
   </div>
   <div class="span6">
     <div class="slug">
-      <?php print $fields['created']->content; ?>
+      <?php print $fields['field_network_learning_tags']->content; ?>
     </div>
     <h3><?php print $fields['title']->content; ?></h3>
     <?php if(isset($fields['field_network_learning_byline']->content)): ?>
@@ -39,10 +49,10 @@
         <?php print $fields['field_network_learning_byline']->content; ?>
       </h3>
     <?php endif; ?>
-    <div class="network-learning__author-info">
-      by <?php print $fields['name']->content; ?>
-      <?php if (isset($fields['field_network_learning_tags']->content)): ?>| <?php print $fields['field_network_learning_tags']->content; ?>
-      <?php endif; ?>
-    </div>
+    <?php if (isset($fields['field_author']->content)): ?>
+      <div class="network-learning__author-info">
+        <?php print $fields['field_author']->content; ?>
+      </div>
+    <?php endif; ?>
   </div>
 </div>

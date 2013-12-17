@@ -16,6 +16,7 @@ stylesheets[all][] = assets/css/bootstrap-extra.css
 stylesheets[all][] = assets/css/jquery.sidr.dark.css
 stylesheets[all][] = assets/css/drupal.css
 stylesheets[all][] = stylesheets/teachforall.css
+stylesheets[all][] = stylesheets/press.css
 
 ;scripts[] = assets/js/drupal.js
 
@@ -24,9 +25,8 @@ scripts[] = assets/js/modernizr.min.js
 scripts[] = assets/js/harvey.min.js
 scripts[] = assets/js/jquery.touchwipe.min.js
 scripts[] = assets/js/jquery.sidr.min.js
-; scripts[] = js/teachforall.js
+;scripts[] = js/teachforall.js
 scripts[] = js/teachforall.min.js
-scripts[] = ../../libraries/flexslider/jquery.flexslider.js
 
 regions[header] = Header
 regions[main_navigation] = Main Navigation
@@ -54,4 +54,5 @@ version = "7.x-1.2-alpha1"
 core = "7.x"
 project = "tweme"
 datestamp = "1372529459"
+
 

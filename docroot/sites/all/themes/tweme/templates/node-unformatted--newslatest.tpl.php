@@ -10,6 +10,7 @@
             </div>
           </div>
         </div>
+		<?php print $feed_icons ?>
         <div class="span3">
           <?php print render(views_embed_view('tfall_tweets','block')); //tweeter block ?>
           <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>

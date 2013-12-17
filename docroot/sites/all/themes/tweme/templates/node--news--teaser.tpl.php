@@ -10,8 +10,8 @@
 
 		<a href="<?php print drupal_get_path_alias('node/' . $node->nid); ?>">read more...</a> <!-- link to news --> 
 		<div>
-			<?php print format_date($node->published_at, 'short'); ?> <!-- publish date --> 
+			<?php print format_date($node->created, 'short'); ?> <!-- publish date -->
 		</div>
-
+<?php print $feed_icons ?>
   </div>
 </div>

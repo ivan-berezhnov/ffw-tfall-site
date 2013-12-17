@@ -3,7 +3,6 @@
  * @file
  * Custom theme implementation to display a single Drupal page.
  */
-
 ?>
 <div class="container header">
   <div class="row-fluid">
@@ -12,7 +11,7 @@
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="/donate"><?php print t('DONATE'); ?></a>
+        <a href="/get-involved/donate"><?php print t('DONATE'); ?></a>
       </div>
       <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-twitter"></a>
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
@@ -118,20 +117,23 @@
       </div>
       <div class="span3">
         <div class="donate pull-left">
-          <a href="/donate"><?php print t('DONATE'); ?></a>
+          <a href="/get-involved/donate"><?php print t('DONATE'); ?></a>
         </div>
         <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media ico-twitter"></a>
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
-        <div class="footer__search">
+		<div class="footer__search">
           <p>Search the Site</p>
           <?php print $navbar_search ?>
         </div>
+        <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2013<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
-        <a class="privacy-policy" href="privacy-policy">Privacy Policy</a>
+        <ul>
+          <li><a class="privacy-policy" href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
       </div>
       <div class="span3 footer-links widget_supporters">
         <?php if (module_exists('widget_supporter')): ?>
