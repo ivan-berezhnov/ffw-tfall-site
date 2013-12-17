@@ -55,6 +55,18 @@ $base-font-size: 17;
   color: $red;
 }
 
+.black {
+  color: $black;
+}
+
+.dovegrey {
+  color: $grey1;
+}
+
+.almostblack {
+  color: $grey2;
+}
+
 h1, h2, h3, h4 {
   .beige {
     color: $beige;
@@ -70,5 +82,8 @@ h1, h2, h3, h4 {
 
   .red {
     color: $red;
+  }
+  .black {
+    color: $black;
   }
 }
