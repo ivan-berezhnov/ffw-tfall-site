@@ -72,58 +72,46 @@
 /**
 * #WYSIWYG Classes
 **/
-/* line 42, ../sass/_variables.scss */
 .beige {
   color: #dfd9c9;
 }
 
-/* line 46, ../sass/_variables.scss */
 .orange {
   color: #e69740;
 }
 
-/* line 50, ../sass/_variables.scss */
 .orange2 {
   color: #ffb151;
 }
 
-/* line 54, ../sass/_variables.scss */
 .red {
   color: #cf4753;
 }
 
-/* line 58, ../sass/_variables.scss */
 .black {
   color: black;
 }
 
-/* line 62, ../sass/_variables.scss */
 .dovegrey {
   color: #91998c;
 }
 
-/* line 66, ../sass/_variables.scss */
 .almostblack {
   color: #4d4d4d;
 }
 
-/* line 71, ../sass/_variables.scss */
 h1 .beige, h2 .beige, h3 .beige, h4 .beige {
   color: #dfd9c9;
 }
-/* line 75, ../sass/_variables.scss */
 h1 .orange, h2 .orange, h3 .orange, h4 .orange {
   color: #e69740;
 }
-/* line 79, ../sass/_variables.scss */
 h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
   color: #ffb151;
 }
-/* line 83, ../sass/_variables.scss */
 h1 .red, h2 .red, h3 .red, h4 .red {
   color: #cf4753;
 }
-/* line 86, ../sass/_variables.scss */
 h1 .black, h2 .black, h3 .black, h4 .black {
   color: black;
 }
@@ -200,7 +188,6 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 159, ../sass/teachforall.scss */
 [data-icon]:before {
   font-family: 'icomoon';
   content: attr(data-icon);
@@ -219,7 +206,6 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="ico-"] {
 */
-/* line 177, ../sass/teachforall.scss */
 .ico-facebook, .st_facebook_large .stLarge, .ico-vimeo, .ico-twitter, .st_twitter_large .stLarge, .ico-linkedin, .ico-play, .ico-search {
   font-family: 'icomoon';
   speak: none;
@@ -231,32 +217,26 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 187, ../sass/teachforall.scss */
 .ico-facebook:before, .st_facebook_large .stLarge:before {
   content: "\e000";
 }
 
-/* line 190, ../sass/teachforall.scss */
 .ico-vimeo:before {
   content: "\e001";
 }
 
-/* line 193, ../sass/teachforall.scss */
 .ico-twitter:before, .st_twitter_large .stLarge:before {
   content: "\e002";
 }
 
-/* line 196, ../sass/teachforall.scss */
 .ico-linkedin:before {
   content: "\e003";
 }
 
-/* line 199, ../sass/teachforall.scss */
 .ico-play:before {
   content: "\e004";
 }
 
-/* line 202, ../sass/teachforall.scss */
 .ico-search:before {
   content: "\f002";
 }
@@ -265,7 +245,6 @@ you can use the generic selector below, but it's slower:
 /**
 * #Styleguide - Typography
 **/
-/* line 212, ../sass/teachforall.scss */
 h1, .h1 {
   color: #4d4d4d;
   font-family: "Fedra Serif", serif;
@@ -276,7 +255,6 @@ h1, .h1 {
   font-size: 2.47059rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 212, ../sass/teachforall.scss */
   h1, .h1 {
     font-size: 25px;
     font-size: 1.47059rem;
@@ -284,7 +262,6 @@ h1, .h1 {
   }
 }
 
-/* line 225, ../sass/teachforall.scss */
 h2, .h2 {
   font-size: 25px;
   font-size: 1.47059rem;
@@ -293,7 +270,6 @@ h2, .h2 {
   line-height: 29px;
 }
 @media screen and (max-width: 767px) {
-  /* line 225, ../sass/teachforall.scss */
   h2, .h2 {
     font-size: 18px;
     font-size: 1.05882rem;
@@ -301,7 +277,6 @@ h2, .h2 {
   }
 }
 
-/* line 236, ../sass/teachforall.scss */
 h3, .h3, .title-small, .marquee__2 .marquee__title,
 .marquee__3 .marquee__title,
 .marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
@@ -313,7 +288,6 @@ h3, .h3, .title-small, .marquee__2 .marquee__title,
   font-size: 1.05882rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 236, ../sass/teachforall.scss */
   h3, .h3, .title-small, .marquee__2 .marquee__title,
   .marquee__3 .marquee__title,
   .marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
@@ -323,7 +297,6 @@ h3, .h3, .title-small, .marquee__2 .marquee__title,
   }
 }
 
-/* line 249, ../sass/teachforall.scss */
 html.pc.chrome h1, html.pc.chrome .h1, html.pc.chrome h2, html.pc.chrome .h2, html.pc.chrome h3, html.pc.chrome .h3, html.pc.chrome .title-small, html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
 html.pc.chrome .marquee__3 .marquee__title,
 .marquee__3 html.pc.chrome .marquee__title,
@@ -332,14 +305,12 @@ html.pc.chrome .marquee__4 .marquee__title,
   font-family: serif;
 }
 
-/* line 254, ../sass/teachforall.scss */
 h4, .h4 {
   line-height: 20px;
   font-size: 16px;
   font-size: 0.94118rem;
 }
 
-/* line 259, ../sass/teachforall.scss */
 .blurb, .no__blurb, .top-section__blurb {
   font-weight: bold;
   font-size: 36px;
@@ -349,17 +320,14 @@ h4, .h4 {
   margin: 20px 0;
 }
 
-/* line 267, ../sass/teachforall.scss */
 a {
   color: #cf4753;
 }
-/* line 269, ../sass/teachforall.scss */
 a:hover {
   color: #cf4753;
   text-decoration: none;
 }
 
-/* line 275, ../sass/teachforall.scss */
 body {
   color: #4d4d4d;
   font-size: 16px;
@@ -368,12 +336,10 @@ body {
   font-family: "News Gothic";
 }
 
-/* line 283, ../sass/teachforall.scss */
 html.pc.chrome body {
   font-family: sans-serif;
 }
 
-/* line 288, ../sass/teachforall.scss */
 .body, .view-supporters p {
   color: #91998c;
   font-size: 17px;
@@ -382,19 +348,16 @@ html.pc.chrome body {
   font-family: "Fedra Serif";
 }
 
-/* line 296, ../sass/teachforall.scss */
 html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.pc.chrome p {
   font-family: serif;
 }
 
-/* line 301, ../sass/teachforall.scss */
 .section {
   font-size: 18px;
   font-size: 1.05882rem;
   font-weight: bold;
 }
 
-/* line 306, ../sass/teachforall.scss */
 .small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-global-organization .our-model-section .spotlights p {
   font-size: 20px;
   font-size: 1.17647rem;
@@ -402,7 +365,6 @@ html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.p
   color: #4d4d4d;
 }
 
-/* line 312, ../sass/teachforall.scss */
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
   font-family: "Fedra Serif";
@@ -411,17 +373,14 @@ html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.p
   font-size: 17px;
   font-size: 1rem;
 }
-/* line 318, ../sass/teachforall.scss */
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
 }
 
-/* line 324, ../sass/teachforall.scss */
 html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-model-section .intro p, .node-type-page-our-model #main .our-model-section .intro html.pc.chrome p {
   font-family: serif;
 }
 
-/* line 329, ../sass/teachforall.scss */
 .block-quote {
   color: #91998c;
   font-weight: bold;
@@ -430,7 +389,6 @@ html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-
   line-height: 38px;
 }
 
-/* line 336, ../sass/teachforall.scss */
 .page-section {
   color: #4d4d4d;
   font-size: 16px;
@@ -440,13 +398,11 @@ html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-
   text-transform: uppercase;
 }
 
-/* line 344, ../sass/teachforall.scss */
 .title-small {
   letter-spacing: 3px;
   text-align: center;
 }
 
-/* line 350, ../sass/teachforall.scss */
 .footer-link-beige, #footer .content > ul > li > a {
   font-size: 12px;
   font-size: 0.70588rem;
@@ -456,37 +412,30 @@ html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 360, ../sass/teachforall.scss */
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
   color: white;
 }
 
-/* line 366, ../sass/teachforall.scss */
 html.pc.chrome .footer-link-beige, html.pc.chrome #footer .content > ul > li > a, #footer html.pc.chrome .content > ul > li > a {
   font-family: serif;
 }
 
-/* line 371, ../sass/teachforall.scss */
 .footer-link-grey, .privacy-policy, #footer .content > ul > li > ul li a {
   font-size: 17px;
   font-size: 1rem;
   color: #999999;
 }
-/* line 375, ../sass/teachforall.scss */
 .footer-link-grey:hover, .privacy-policy:hover, #footer .content > ul > li > ul li a:hover {
   color: white;
 }
 
-/* line 380, ../sass/teachforall.scss */
 .node {
   margin-bottom: 0;
 }
 
-/* line 384, ../sass/teachforall.scss */
 .pagination {
   margin-bottom: 0;
 }
-/* line 387, ../sass/teachforall.scss */
 .pagination > .item-list > ul {
   margin-bottom: 0;
 }
@@ -495,12 +444,10 @@ html.pc.chrome .footer-link-beige, html.pc.chrome #footer .content > ul > li > a
 /**
 * #Global Elements
 **/
-/* line 399, ../sass/teachforall.scss */
 table td {
   vertical-align: top;
 }
 
-/* line 404, ../sass/teachforall.scss */
 .breadcrumb {
   background: none;
   color: #91998c;
@@ -509,32 +456,26 @@ table td {
   font-size: 14px;
   font-size: 0.82353rem;
 }
-/* line 410, ../sass/teachforall.scss */
 .breadcrumb a {
   color: #91998c;
 }
-/* line 412, ../sass/teachforall.scss */
 .breadcrumb a:hover {
   color: #cf4753;
 }
 
-/* line 418, ../sass/teachforall.scss */
 tbody {
   border: none;
 }
 
-/* line 420, ../sass/teachforall.scss */
 textarea:focus, input:focus {
   outline: 0 !important;
 }
 
-/* line 424, ../sass/teachforall.scss */
 .jump-link {
   margin: 50px 0 30px 0;
   text-align: center;
 }
 
-/* line 429, ../sass/teachforall.scss */
 .site-slogan {
   margin-top: 25px;
   color: #91998c;
@@ -544,7 +485,6 @@ textarea:focus, input:focus {
   font-size: 1.88235rem;
 }
 
-/* line 437, ../sass/teachforall.scss */
 .full-list {
   background-color: #4d4d4d;
   color: white;
@@ -556,45 +496,36 @@ textarea:focus, input:focus {
   font-size: 14px;
   font-size: 0.82353rem;
 }
-/* line 438, ../sass/teachforall.scss */
 .full-list a {
   color: white;
 }
-/* line 440, ../sass/teachforall.scss */
 .full-list a:hover {
   color: #ffb151;
 }
-/* line 452, ../sass/teachforall.scss */
 .full-list:hover {
   color: #ffb151;
 }
 
-/* line 459, ../sass/teachforall.scss */
 .search-form .input-append .btn {
   border: 1px solid #cccccc;
 }
 
-/* line 466, ../sass/teachforall.scss */
 .content p:last-child {
   margin-bottom: 0;
 }
 
-/* line 471, ../sass/teachforall.scss */
 label, input, button, select, textarea {
   font-size: 17px;
   font-size: 1rem;
 }
 
-/* line 478, ../sass/teachforall.scss */
 html.js input.form-autocomplete {
   background-position: 100% 9px;
 }
-/* line 481, ../sass/teachforall.scss */
 html.js input.throbbing {
   background-position: 100% -12px;
 }
 
-/* line 488, ../sass/teachforall.scss */
 .btn {
   background-color: #dfd9c9;
   background-image: none;
@@ -604,16 +535,13 @@ html.js input.throbbing {
   font-family: inherit;
 }
 
-/* line 497, ../sass/teachforall.scss */
 .btn-primary {
   background-color: #e69740;
 }
-/* line 499, ../sass/teachforall.scss */
 .btn-primary:hover {
   background-color: #cf4753;
 }
 
-/* line 504, ../sass/teachforall.scss */
 .btn__red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
   text-shadow: none;
   font-size: 11px;
@@ -632,28 +560,23 @@ html.js input.throbbing {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-/* line 517, ../sass/teachforall.scss */
 .btn__red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
   color: white;
 }
 
-/* line 524, ../sass/teachforall.scss */
 html.pc.chrome .btn__red, html.pc.chrome .view-persons .view-footer a.btn, .view-persons .view-footer html.pc.chrome a.btn, html.pc.chrome .view-supporters .view-footer .btn, .view-supporters .view-footer html.pc.chrome .btn {
   font-family: serif;
 }
 
-/* line 529, ../sass/teachforall.scss */
 .nav-tabs {
   padding-top: 20px;
 }
 
-/* line 533, ../sass/teachforall.scss */
 div.messages {
   margin: 20px 0;
 }
 
-/* line 537, ../sass/teachforall.scss */
 .page-node .content .title {
   color: #e69740;
   font-weight: normal;
@@ -665,23 +588,19 @@ div.messages {
   font-size: 1.52941rem;
 }
 
-/* line 547, ../sass/teachforall.scss */
 #main {
   padding: 0 0 20px 0;
 }
 
-/* line 552, ../sass/teachforall.scss */
 .node-type-national-organization #main {
   padding: 20px 0 0 0;
 }
 
-/* line 557, ../sass/teachforall.scss */
 .page-title {
   margin-bottom: 30px;
   text-align: center;
 }
 
-/* line 563, ../sass/teachforall.scss */
 h2.page-title {
   color: #e69740;
   letter-spacing: 5px;
@@ -692,7 +611,6 @@ h2.page-title {
   font-size: 1.76471rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 563, ../sass/teachforall.scss */
   h2.page-title {
     font-size: 24px;
     font-size: 1.41176rem;
@@ -700,7 +618,6 @@ h2.page-title {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 578, ../sass/teachforall.scss */
   h2, .h2 {
     font-size: 20px;
     font-size: 1.17647rem;
@@ -710,12 +627,10 @@ h2.page-title {
 /**
 * #Objects
 **/
-/* line 589, ../sass/teachforall.scss */
 .field__text-area {
   margin-bottom: 20px;
 }
 
-/* line 593, ../sass/teachforall.scss */
 .rounded-button {
   position: absolute;
   bottom: 40px;
@@ -725,7 +640,6 @@ h2.page-title {
   width: 100%;
   z-index: 9998;
 }
-/* line 601, ../sass/teachforall.scss */
 .rounded-button span {
   background-color: #91998c;
   color: white;
@@ -737,7 +651,6 @@ h2.page-title {
   border-radius: 20px;
 }
 
-/* line 609, ../sass/teachforall.scss */
 .slug {
   font-size: 11px;
   font-size: 0.64706rem;
@@ -749,7 +662,6 @@ h2.page-title {
   text-transform: uppercase;
 }
 
-/* line 619, ../sass/teachforall.scss */
 .slug-medium {
   color: #e69740;
   font-family: "Fedra Serif";
@@ -760,7 +672,6 @@ h2.page-title {
   font-size: 0.94118rem;
 }
 
-/* line 628, ../sass/teachforall.scss */
 .slug-large {
   color: #e69740;
   font-family: "Fedra Serif";
@@ -771,12 +682,10 @@ h2.page-title {
   font-size: 1.41176rem;
 }
 
-/* line 638, ../sass/teachforall.scss */
 html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
   font-family: serif;
 }
 
-/* line 643, ../sass/teachforall.scss */
 .stats {
   color: #91998c;
   font-weight: bold;
@@ -789,21 +698,17 @@ html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
 /**
 * #Header
 **/
-/* line 656, ../sass/teachforall.scss */
 .header {
   margin-top: 10px;
 }
 
-/* line 660, ../sass/teachforall.scss */
 .site-name {
   text-align: center;
 }
-/* line 662, ../sass/teachforall.scss */
 .site-name img {
   margin: 20px 0;
 }
 
-/* line 667, ../sass/teachforall.scss */
 .donate {
   background-color: #e69740;
   font-family: "Fedra Serif";
@@ -814,23 +719,19 @@ html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
   font-size: 11px;
   font-size: 0.64706rem;
 }
-/* line 675, ../sass/teachforall.scss */
 .donate a {
   color: white;
 }
-/* line 678, ../sass/teachforall.scss */
 .donate:hover {
   background-color: #cf4753;
   color: white;
   cursor: pointer;
 }
 
-/* line 686, ../sass/teachforall.scss */
 html.pc.chrome .donate {
   font-family: serif;
 }
 
-/* line 691, ../sass/teachforall.scss */
 .social-media {
   background-color: #91998c;
   color: white;
@@ -839,14 +740,12 @@ html.pc.chrome .donate {
   font-size: 17px;
   font-size: 1rem;
 }
-/* line 697, ../sass/teachforall.scss */
 .social-media:hover {
   background-color: #cf4753;
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 703, ../sass/teachforall.scss */
 .social-media[class*=" icon-"] {
   vertical-align: middle;
 }
@@ -855,11 +754,9 @@ html.pc.chrome .donate {
 /**
 * #Primary Navigation
 **/
-/* line 714, ../sass/teachforall.scss */
 .navbar {
   font-weight: bold;
 }
-/* line 717, ../sass/teachforall.scss */
 .navbar .navbar-inner {
   background-color: #3c3835;
   background-image: none;
@@ -867,11 +764,9 @@ html.pc.chrome .donate {
   padding: 0;
   text-align: center;
 }
-/* line 724, ../sass/teachforall.scss */
 .navbar .navbar-inner ul {
   margin: 0;
 }
-/* line 728, ../sass/teachforall.scss */
 .navbar .navbar-inner .sidr-toggle {
   display: inline-block;
   float: left;
@@ -880,18 +775,15 @@ html.pc.chrome .donate {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  /* line 728, ../sass/teachforall.scss */
   .navbar .navbar-inner .sidr-toggle {
     display: none;
   }
 }
-/* line 739, ../sass/teachforall.scss */
 .navbar .navbar-inner .sidr-toggle .btn-navbar {
   float: left;
   padding: 8px;
   margin: 0 5px 0 0;
 }
-/* line 745, ../sass/teachforall.scss */
 .navbar .navbar-inner .sidr-toggle .btn-text {
   display: inline-block;
   float: left;
@@ -900,37 +792,31 @@ html.pc.chrome .donate {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-/* line 754, ../sass/teachforall.scss */
 .navbar .navbar-inner .container {
   display: none;
   height: 40px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 754, ../sass/teachforall.scss */
   .navbar .navbar-inner .container {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 754, ../sass/teachforall.scss */
   .navbar .navbar-inner .container {
     width: 724px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 754, ../sass/teachforall.scss */
   .navbar .navbar-inner .container {
     width: 940px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 754, ../sass/teachforall.scss */
   .navbar .navbar-inner .container {
     width: 1170px;
   }
 }
-/* line 775, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation {
   font-family: "Fedra Serif";
   font-weight: bold;
@@ -940,14 +826,12 @@ html.pc.chrome .donate {
   font-size: 0.70588rem;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 775, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation {
     font-size: 11px;
     font-size: 0.64706rem;
     letter-spacing: 1px;
   }
 }
-/* line 787, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li {
   position: relative;
   float: left;
@@ -958,110 +842,85 @@ html.pc.chrome .donate {
   margin: 0;
   padding: 0;
 }
-/* line 797, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li:hover {
   background-color: #e69740;
 }
-/* line 801, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li a {
   display: block;
   color: #dfd9c9;
 }
-/* line 805, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li a:hover {
   color: white;
 }
-/* line 813, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu {
   height: 40px;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 818, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
     width: 146px;
   }
-  /* line 822, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
     width: 107px;
   }
-  /* line 825, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
     width: 201px;
   }
-  /* line 828, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
     width: 114px;
   }
-  /* line 831, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
     width: 156px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 837, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
     width: 192px;
   }
-  /* line 841, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
     width: 142px;
   }
-  /* line 844, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
     width: 255px;
   }
-  /* line 847, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
     width: 151px;
   }
-  /* line 850, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
     width: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 856, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
     width: 238px;
   }
-  /* line 860, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
     width: 188px;
   }
-  /* line 863, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
     width: 301px;
   }
-  /* line 866, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
     width: 197px;
   }
-  /* line 869, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
     width: 246px;
   }
 }
-/* line 873, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li {
   text-align: center;
 }
-/* line 876, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li > a {
   background: url(../images/nav-border.png) left center no-repeat;
 }
-/* line 881, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child > a {
   background: none;
 }
-/* line 887, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover > a {
   color: white;
 }
-/* line 891, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover + li > a {
   background: none;
 }
-/* line 895, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu {
   display: block;
   background-color: #4d4d4d;
@@ -1071,7 +930,6 @@ html.pc.chrome .donate {
   z-index: 999;
   text-transform: none;
 }
-/* line 904, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li {
   line-height: 20px;
   border-top: 1px solid #92998d;
@@ -1082,7 +940,6 @@ html.pc.chrome .donate {
   padding: 0;
   width: 100%;
 }
-/* line 914, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
   font-size: 16px;
   font-size: 0.94118rem;
@@ -1092,29 +949,24 @@ html.pc.chrome .donate {
   padding: 5px 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 914, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 12px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 914, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 914, ../sass/teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 42px;
   }
 }
-/* line 937, ../sass/teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu {
   display: none;
 }
 
-/* line 948, ../sass/teachforall.scss */
 html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   font-family: serif;
 }
@@ -1123,20 +975,16 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
 /**
 * #Uber Navigation
 **/
-/* line 960, ../sass/teachforall.scss */
 .uber-nav {
   font-weight: bold;
   margin-top: -5px;
 }
-/* line 964, ../sass/teachforall.scss */
 .uber-nav .content > .menu {
   position: relative;
 }
-/* line 966, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li:nth-child(2) {
   display: none;
 }
-/* line 969, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li {
   border-right: 1px solid #e69740;
   float: left;
@@ -1146,38 +994,30 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   padding: 0;
   position: relative;
 }
-/* line 978, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active {
   border-color: white;
 }
-/* line 981, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li:last-child {
   border-right: none;
 }
-/* line 984, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li > a {
   letter-spacing: 2px;
   margin-left: -1px;
   padding-left: 12px;
 }
-/* line 988, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li > a:hover {
   background-color: #e69740;
   color: white;
 }
-/* line 992, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li > a.active {
   color: #cf4753;
 }
-/* line 994, ../sass/teachforall.scss */
 .uber-nav .content > .menu > li > a.active:hover {
   color: white;
 }
-/* line 1001, ../sass/teachforall.scss */
 .uber-nav .content > .menu li:hover .menu {
   display: block;
 }
-/* line 1007, ../sass/teachforall.scss */
 .uber-nav a {
   color: #92998d;
   padding: 5px 10px;
@@ -1185,15 +1025,12 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   font-size: 11px;
   font-size: 0.64706rem;
 }
-/* line 1012, ../sass/teachforall.scss */
 .uber-nav a:hover {
   color: #cf4753;
 }
-/* line 1016, ../sass/teachforall.scss */
 .uber-nav ul {
   margin-left: 0;
 }
-/* line 1020, ../sass/teachforall.scss */
 .uber-nav .menu .menu {
   display: none;
   background-color: white;
@@ -1205,7 +1042,6 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   z-index: 9999;
   text-align: left;
 }
-/* line 1030, ../sass/teachforall.scss */
 .uber-nav .menu .menu a {
   border: none;
   font-weight: normal;
@@ -1217,30 +1053,24 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   padding: 0;
   text-transform: none;
 }
-/* line 1039, ../sass/teachforall.scss */
 .uber-nav .menu .menu a:hover {
   background-color: transparent;
   color: #cf4753;
 }
-/* line 1043, ../sass/teachforall.scss */
 .uber-nav .menu .menu a.active {
   background-color: transparent;
 }
-/* line 1047, ../sass/teachforall.scss */
 .uber-nav .menu .menu li {
   display: block;
   padding-top: 0;
 }
-/* line 1050, ../sass/teachforall.scss */
 .uber-nav .menu .menu li:first-child {
   margin-top: 2px;
 }
-/* line 1060, ../sass/teachforall.scss */
 .uber-nav ul li {
   list-style-type: none;
   list-style-image: none;
 }
-/* line 1064, ../sass/teachforall.scss */
 .uber-nav ul li.expanded, .uber-nav ul li.leaf {
   list-style-type: none;
   list-style-image: none;
@@ -1250,50 +1080,41 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
 /**
 * #Feeds
 **/
-/* line 1078, ../sass/teachforall.scss */
 #feeds {
   background-color: #e69740;
   padding: 28px 0 40px;
 }
-/* line 1085, ../sass/teachforall.scss */
 #feeds .row-fluid .span3.facebook .fb-like-box iframe {
   background: white;
 }
 @media screen and (max-width: 767px) {
-  /* line 1078, ../sass/teachforall.scss */
   #feeds {
     padding: 20px 0 0;
     background: white;
   }
-  /* line 1098, ../sass/teachforall.scss */
   #feeds .row-fluid .span9 {
     background: #e69740;
     padding: 30px 0;
   }
-  /* line 7, ../sass/_mixins.scss */
   #feeds .row-fluid .span9:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 1105, ../sass/teachforall.scss */
   #feeds .row-fluid .span3.facebook .fb-like-box {
     max-height: 209px;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1115, ../sass/teachforall.scss */
   #feeds .row-fluid .span9 {
     width: 65.74585635359117%;
   }
-  /* line 1119, ../sass/teachforall.scss */
   #feeds .row-fluid .span3.facebook {
     width: 31.491712707182323%;
     text-align: right;
   }
 }
-/* line 1126, ../sass/teachforall.scss */
 #feeds h3 {
   color: white;
   font-weight: normal;
@@ -1303,7 +1124,6 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   text-transform: uppercase;
 }
 @media screen and (max-width: 450px) {
-  /* line 1134, ../sass/teachforall.scss */
   #feeds .facebook {
     clear: both;
   }
@@ -1312,49 +1132,41 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
 /**
 * #Footer
 **/
-/* line 1145, ../sass/teachforall.scss */
 #footer {
   background-color: #4d4d4d;
   border: none;
   padding: 30px 0;
 }
-/* line 1150, ../sass/teachforall.scss */
 #footer ul {
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 1145, ../sass/teachforall.scss */
   #footer {
     padding-bottom: 0;
   }
-  /* line 1159, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 15px;
     font-size: 0.88235rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1165, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 17px;
     font-size: 1rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1172, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"].footer-links {
     width: 42%;
     float: left;
     margin-right: 6%;
     margin-left: 5%;
   }
-  /* line 1179, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"].footer-links-2 {
     width: 42%;
     float: left;
     margin-right: 5%;
   }
-  /* line 1185, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div {
     clear: left;
     border-top: 1px dotted grey;
@@ -1363,20 +1175,17 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
     margin-bottom: 20px;
     display: inline-block;
   }
-  /* line 1194, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li:nth-child(odd) {
     width: 42%;
     float: left;
     margin-right: 6%;
     margin-left: 5%;
   }
-  /* line 1201, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li:nth-child(even) {
     width: 42%;
     float: left;
     margin-right: 5%;
   }
-  /* line 1211, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1384,7 +1193,6 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
     clear: both;
     padding: 0 5% 20px;
   }
-  /* line 1216, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
     font-size: 0.82353rem;
@@ -1392,11 +1200,9 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
     margin-right: 9px;
     line-height: 32px;
   }
-  /* line 1223, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 .footer__search {
     display: none;
   }
-  /* line 1227, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 .social-media {
     display: inline-block;
     padding: 7px 8px;
@@ -1404,27 +1210,23 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1241, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li a[title=Search] {
     display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1253, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 14px;
     font-size: 0.82353rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1259, ../sass/teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 16px;
     font-size: 0.94118rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1269, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
     font-size: 0.82353rem;
@@ -1433,19 +1235,16 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
     margin-bottom: 10px;
     line-height: 32px;
   }
-  /* line 1277, ../sass/teachforall.scss */
   #footer .row-fluid .span2 + .span3 .social-media {
     display: inline-block;
     padding: 7px 8px;
     margin-right: 5px;
   }
 }
-/* line 1287, ../sass/teachforall.scss */
 #footer .footer-links .block-block, #footer .footer-links-2 .block-block {
   display: none;
 }
 
-/* line 1293, ../sass/teachforall.scss */
 .footer__contact-us {
   color: #DFD9C9;
   font-family: "Fedra Serif",serif;
@@ -1456,65 +1255,52 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-/* line 1301, ../sass/teachforall.scss */
 .footer__contact-us a {
   color: #dfd9c9;
 }
-/* line 1303, ../sass/teachforall.scss */
 .footer__contact-us a:hover {
   color: white;
 }
 
-/* line 1310, ../sass/teachforall.scss */
 html.pc.chrome .footer__contact-us {
   font-family: serif;
 }
 
-/* line 1315, ../sass/teachforall.scss */
 .footer__copyright {
   color: #999999;
   margin-top: 20px;
   width: 80%;
 }
 
-/* line 1325, ../sass/teachforall.scss */
 .footer__contact {
   color: #999999;
   width: 80%;
 }
 
-/* line 1331, ../sass/teachforall.scss */
 .footer-links a {
   margin-left: 0;
 }
-/* line 1338, ../sass/teachforall.scss */
 .footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) {
   display: none;
 }
 
-/* line 1349, ../sass/teachforall.scss */
 .footer-links-2 .content > ul > li {
   margin-bottom: 20px;
 }
-/* line 1353, ../sass/teachforall.scss */
 .footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) {
   display: none;
 }
 
-/* line 1364, ../sass/teachforall.scss */
 .footer-menu .menu .menu .last {
   margin-bottom: 10px;
 }
-/* line 1369, ../sass/teachforall.scss */
 .footer-menu ul {
   margin: 0;
 }
-/* line 1377, ../sass/teachforall.scss */
 .footer-menu .content > ul > li {
   padding: 0;
 }
 
-/* line 1385, ../sass/teachforall.scss */
 #footer .content > ul > li {
   list-style-type: none;
   list-style-image: none;
@@ -1522,22 +1308,18 @@ html.pc.chrome .footer__contact-us {
   line-height: 1em;
   padding: 0;
 }
-/* line 1392, ../sass/teachforall.scss */
 #footer .content > ul > li > ul li {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
 }
 
-/* line 1407, ../sass/teachforall.scss */
 .footer__search {
   margin: 10px 0;
 }
-/* line 1410, ../sass/teachforall.scss */
 .footer__search form {
   margin-bottom: 20px;
 }
-/* line 1414, ../sass/teachforall.scss */
 .footer__search p, .footer__search a {
   color: #dfd9c9;
   font-family: "Fedra Serif", serif;
@@ -1547,15 +1329,12 @@ html.pc.chrome .footer__contact-us {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-/* line 1424, ../sass/teachforall.scss */
 .footer__search a:hover {
   color: white;
 }
-/* line 1429, ../sass/teachforall.scss */
 .footer__search .navbar-search {
   float: none;
 }
-/* line 1431, ../sass/teachforall.scss */
 .footer__search .navbar-search .search-query {
   background-color: #dfd9c9;
   -webkit-border-radius: 10px;
@@ -1565,19 +1344,16 @@ html.pc.chrome .footer__contact-us {
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1431, ../sass/teachforall.scss */
   .footer__search .navbar-search .search-query {
     max-width: 125px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 1431, ../sass/teachforall.scss */
   .footer__search .navbar-search .search-query {
     max-width: 141px;
   }
 }
 
-/* line 1448, ../sass/teachforall.scss */
 html.pc.chrome .footer__search p, html.pc.chrome .footer__search a {
   font-family: serif;
 }
@@ -1586,7 +1362,6 @@ html.pc.chrome .footer__search p, html.pc.chrome .footer__search a {
 /**
 * #Images
 **/
-/* line 1460, ../sass/teachforall.scss */
 img {
   max-width: 100%;
 }
@@ -1595,18 +1370,15 @@ img {
 /**
 * #Supporters Widget
 **/
-/* line 1470, ../sass/teachforall.scss */
 .view-nodequeue-supporter-list .flexslider * {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 1477, ../sass/teachforall.scss */
 .widget_supporters {
   background-color: white;
   padding: 20px;
   text-align: center;
 }
-/* line 1481, ../sass/teachforall.scss */
 .widget_supporters .title {
   color: #ffb151;
   font-family: "Fedra Serif", serif;
@@ -1614,16 +1386,13 @@ img {
   display: block;
   margin-bottom: 6px;
 }
-/* line 1488, ../sass/teachforall.scss */
 .widget_supporters ul {
   padding: 0px;
   margin: 0px;
 }
-/* line 1491, ../sass/teachforall.scss */
 .widget_supporters ul li a {
   margin: 0px;
 }
-/* line 1495, ../sass/teachforall.scss */
 .widget_supporters p {
   color: #999999;
   font-size: 17px;
@@ -1631,24 +1400,20 @@ img {
   line-height: 21px;
 }
 
-/* line 1503, ../sass/teachforall.scss */
 html.pc.chrome .widget_supporters .title {
   font-family: serif;
 }
 
-/* line 1508, ../sass/teachforall.scss */
 .fb-like-box {
   background-color: white;
 }
 
 /* responsive fb like box */
-/* line 1513, ../sass/teachforall.scss */
 #fb-root {
   display: none;
 }
 
 /* To fill the container and nothing else */
-/* line 1518, ../sass/teachforall.scss */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;
 }
@@ -1657,26 +1422,21 @@ html.pc.chrome .widget_supporters .title {
 /**
 * #Marquee
 **/
-/* line 1528, ../sass/teachforall.scss */
 .marquee {
   background-color: #91998c;
 }
-/* line 1530, ../sass/teachforall.scss */
 .marquee img {
   width: 100%;
 }
-/* line 1533, ../sass/teachforall.scss */
 .marquee * {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 1540, ../sass/teachforall.scss */
 .marquee__2,
 .marquee__3,
 .marquee__4 {
   position: relative;
 }
-/* line 1542, ../sass/teachforall.scss */
 .marquee__2 .marquee__info-wrapper,
 .marquee__3 .marquee__info-wrapper,
 .marquee__4 .marquee__info-wrapper {
@@ -1685,14 +1445,12 @@ html.pc.chrome .widget_supporters .title {
   right: 20px;
   width: 90%;
 }
-/* line 1551, ../sass/teachforall.scss */
 .marquee__2 .marquee__preview,
 .marquee__3 .marquee__preview,
 .marquee__4 .marquee__preview {
   display: none;
 }
 
-/* line 1556, ../sass/teachforall.scss */
 .marquee__info-wrapper {
   position: absolute;
   bottom: 30px;
@@ -1700,20 +1458,16 @@ html.pc.chrome .widget_supporters .title {
   width: 70%;
 }
 
-/* line 1563, ../sass/teachforall.scss */
 .marquee__title {
   font-weight: normal;
 }
-/* line 1564, ../sass/teachforall.scss */
 .marquee__title a {
   color: white;
 }
-/* line 1566, ../sass/teachforall.scss */
 .marquee__title a:hover {
   color: #cf4753;
 }
 
-/* line 1573, ../sass/teachforall.scss */
 .marquee__preview {
   color: #999999;
   font-family: "Fedra Serif", serif;
@@ -1722,28 +1476,23 @@ html.pc.chrome .widget_supporters .title {
   font-size: 1rem;
 }
 
-/* line 1581, ../sass/teachforall.scss */
 html.pc.chrome .marquee__preview {
   font-family: serif;
 }
 
-/* line 1586, ../sass/teachforall.scss */
 .marquee__link {
   font-weight: bold;
   line-height: 1em;
   font-size: 11px;
   font-size: 0.64706rem;
 }
-/* line 1590, ../sass/teachforall.scss */
 .marquee__link a {
   color: white;
 }
-/* line 1592, ../sass/teachforall.scss */
 .marquee__link a:hover {
   color: #ffb151;
 }
 
-/* line 1598, ../sass/teachforall.scss */
 .marquee__large {
   background-color: black;
   float: left;
@@ -1751,7 +1500,6 @@ html.pc.chrome .marquee__preview {
   width: 50%;
 }
 
-/* line 1605, ../sass/teachforall.scss */
 .marquee__medium {
   background-color: #cf4753;
   float: left;
@@ -1759,7 +1507,6 @@ html.pc.chrome .marquee__preview {
   width: 25%;
 }
 
-/* line 1612, ../sass/teachforall.scss */
 .marquee__small {
   background-color: #e69740;
   float: left;
@@ -1767,7 +1514,6 @@ html.pc.chrome .marquee__preview {
   width: 25%;
 }
 
-/* line 1619, ../sass/teachforall.scss */
 .marquee__hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1786,13 +1532,11 @@ html.pc.chrome .marquee__preview {
   transition: 500ms;
 }
 
-/* line 1636, ../sass/teachforall.scss */
 .marquee__pane[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__pane[data-effeckt-type="cover-fade"]:active .marquee__active {
   opacity: .8;
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1642, ../sass/teachforall.scss */
   .marquee__info-wrapper {
     bottom: 20px;
     left: 20px;
@@ -1800,19 +1544,16 @@ html.pc.chrome .marquee__preview {
   }
 }
 @media screen and (max-width: 979px) {
-  /* line 1650, ../sass/teachforall.scss */
   .marquee__large {
     width: 100%;
   }
 
-  /* line 1653, ../sass/teachforall.scss */
   .marquee__hover {
     background-color: transparent;
     opacity: 1;
     position: static;
   }
 
-  /* line 1658, ../sass/teachforall.scss */
   .marquee__info-wrapper {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1825,7 +1566,6 @@ html.pc.chrome .marquee__preview {
     width: 100%;
   }
 
-  /* line 1667, ../sass/teachforall.scss */
   .marquee__preview {
     display: none;
   }
@@ -1834,19 +1574,16 @@ html.pc.chrome .marquee__preview {
 /**
 * #MapBox
 **/
-/* line 1678, ../sass/teachforall.scss */
 .no__logo {
   width: 150px;
   height: 84px;
 }
 
-/* line 1683, ../sass/teachforall.scss */
 .no__map-main-img {
   width: 292px;
   height: 164px;
 }
 
-/* line 1688, ../sass/teachforall.scss */
 #worldmap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1854,28 +1591,23 @@ html.pc.chrome .marquee__preview {
   padding: 0px;
   position: relative;
 }
-/* line 1694, ../sass/teachforall.scss */
 .touch #worldmap {
   background-color: white;
 }
 @media screen and (max-width: 767px) {
-  /* line 1694, ../sass/teachforall.scss */
   .touch #worldmap {
     width: 100%;
     margin: 0;
   }
 }
 
-/* line 1704, ../sass/teachforall.scss */
 .worldmap__national-orgs {
   background-color: #80b4e4;
 }
-/* line 1706, ../sass/teachforall.scss */
 .worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
   height: 300px;
 }
 
-/* line 1711, ../sass/teachforall.scss */
 .worldmap__title {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1890,69 +1622,56 @@ html.pc.chrome .marquee__preview {
   z-index: 99;
 }
 
-/* line 1723, ../sass/teachforall.scss */
 #map {
   background-color: #80b4e4;
   width: 100%;
   height: 580px;
 }
-/* line 1728, ../sass/teachforall.scss */
 #map .leaflet-map-pane {
   width: 100%;
 }
 
-/* line 1733, ../sass/teachforall.scss */
 .leaflet-bar {
   border: none;
   border-radius: 0;
 }
-/* line 1736, ../sass/teachforall.scss */
 .leaflet-bar a {
   background-color: #4d4d4d;
   border: none;
   color: white;
   padding: 0 0 2px 1px;
 }
-/* line 1741, ../sass/teachforall.scss */
 .leaflet-bar a:first-child {
   border-radius: 0;
   margin-bottom: 2px;
 }
-/* line 1745, ../sass/teachforall.scss */
 .leaflet-bar a:last-child {
   border-radius: 0;
 }
-/* line 1748, ../sass/teachforall.scss */
 .leaflet-bar a:hover {
   background-color: #4d4d4d;
   border: none;
   color: #e69740;
 }
 
-/* line 1756, ../sass/teachforall.scss */
 .leaflet-popup-pane {
   z-index: 9999;
 }
-/* line 1758, ../sass/teachforall.scss */
 .leaflet-popup-pane a {
   color: #91998c;
 }
-/* line 1760, ../sass/teachforall.scss */
 .leaflet-popup-pane a:hover {
   color: #e69740;
 }
 
-/* line 1766, ../sass/teachforall.scss */
 .leaflet-popup-content-wrapper {
   -webkit-box-shadow: 3px 3px 14px #888888;
   -moz-box-shadow: 3px 3px 14px #888888;
   box-shadow: 3px 3px 14px #888888;
 }
-/* line 1769, ../sass/teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content {
   margin: 9px;
 }
-/* line 1772, ../sass/teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
   text-align: right;
   font-size: 11px;
@@ -1964,7 +1683,6 @@ html.pc.chrome .marquee__preview {
   margin-top: 3px;
   margin-bottom: -19px;
 }
-/* line 1783, ../sass/teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content .btn {
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -1983,13 +1701,11 @@ html.pc.chrome .marquee__preview {
   padding: 0px 17px;
   font-family: "News Gothic";
 }
-/* line 1796, ../sass/teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content .btn:hover {
   color: white;
   background: #4d4d4d;
 }
 
-/* line 1805, ../sass/teachforall.scss */
 html.pc.chrome .leaflet-popup-content-wrapper .btn {
   font-family: sans-serif;
 }
@@ -1998,38 +1714,32 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #Twitter
 **/
-/* line 1816, ../sass/teachforall.scss */
 #block-views-tfall-tweets-block-2 {
   margin: 0 1%;
 }
 @media screen and (max-width: 979px) and (min-width: 768px) {
-  /* line 1816, ../sass/teachforall.scss */
   #block-views-tfall-tweets-block-2 {
     margin: 0 0 0 2%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 1816, ../sass/teachforall.scss */
   #block-views-tfall-tweets-block-2 {
     display: none;
   }
 }
 
 @media screen and (max-width: 979px) {
-  /* line 1826, ../sass/teachforall.scss */
   #block-views-tfall-tweets-block-3 {
     display: none;
   }
 }
 
-/* line 1833, ../sass/teachforall.scss */
 #block-views-tfall-tweets-block,
 .teachforall-twitter-block {
   background-color: #e69740;
   margin-bottom: 20px;
   padding: 20px;
 }
-/* line 1838, ../sass/teachforall.scss */
 #block-views-tfall-tweets-block h2,
 .teachforall-twitter-block h2 {
   color: white;
@@ -2042,15 +1752,12 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   line-height: 18px;
 }
 
-/* line 1849, ../sass/teachforall.scss */
 .tweets {
   margin-bottom: 20px;
 }
-/* line 1852, ../sass/teachforall.scss */
 .views-row-last .tweets {
   margin-bottom: 4px;
 }
-/* line 1856, ../sass/teachforall.scss */
 .tweets .tweets__info {
   color: black;
   font-weight: bold;
@@ -2058,63 +1765,51 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-/* line 1861, ../sass/teachforall.scss */
 .tweets .tweets__info a {
   color: black;
 }
-/* line 1866, ../sass/teachforall.scss */
 .tweets .tweets__text {
   font-size: 17px;
   font-size: 1rem;
   color: white;
   word-wrap: break-word;
 }
-/* line 1871, ../sass/teachforall.scss */
 .tweets .tweets__text a {
   color: white;
 }
-/* line 1874, ../sass/teachforall.scss */
 .tweets .tweets__text a:hover {
   color: #cf4753;
 }
 
-/* line 1881, ../sass/teachforall.scss */
 .region-twitter-front {
   padding-top: 5px;
 }
-/* line 1884, ../sass/teachforall.scss */
 .region-twitter-front .teachforall-twitter-block {
   margin-bottom: 0;
   padding: 0 20px 0 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 1881, ../sass/teachforall.scss */
   .region-twitter-front {
     padding: 0 20px;
   }
 }
-/* line 1893, ../sass/teachforall.scss */
 .region-twitter-front .block-views {
   float: left;
   width: 31%;
 }
 @media screen and (max-width: 979px) {
-  /* line 1893, ../sass/teachforall.scss */
   .region-twitter-front .block-views {
     width: 48%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 1893, ../sass/teachforall.scss */
   .region-twitter-front .block-views {
     width: 100%;
   }
 }
-/* line 1906, ../sass/teachforall.scss */
 .region-twitter-front .block-views h2 {
   display: none;
 }
-/* line 1910, ../sass/teachforall.scss */
 .region-twitter-front .block-views .views-row-last .tweets {
   margin-bottom: 0;
 }
@@ -2123,12 +1818,10 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #ShareThis
 **/
-/* line 1922, ../sass/teachforall.scss */
 .sharethis-buttons {
   float: left;
   width: 88px;
 }
-/* line 1926, ../sass/teachforall.scss */
 .sharethis-buttons .stButton {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
@@ -2138,19 +1831,16 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   line-height: 32px;
   overflow: hidden;
 }
-/* line 1935, ../sass/teachforall.scss */
 .sharethis-buttons .stButton .stLarge:hover {
   opacity: 1;
 }
 
-/* line 1941, ../sass/teachforall.scss */
 .archive-link {
   display: block;
   float: left;
   width: 175px;
 }
 
-/* line 1949, ../sass/teachforall.scss */
 .st_twitter_large .stLarge,
 .st_facebook_large .stLarge {
   background-color: #4d4d4d;
@@ -2163,7 +1853,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   font-size: 20px;
   font-size: 1.17647rem;
 }
-/* line 1958, ../sass/teachforall.scss */
 .st_twitter_large .stLarge:hover,
 .st_facebook_large .stLarge:hover {
   background-color: #cf4753;
@@ -2173,19 +1862,16 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #Facebook Comments
 **/
-/* line 1982, ../sass/teachforall.scss */
 .facebook-comments-box {
   padding: 30px 0 0 0;
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  /* line 1982, ../sass/teachforall.scss */
   .facebook-comments-box {
     padding-top: 10px;
   }
 }
 
-/* line 1990, ../sass/teachforall.scss */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe[style] {
   width: 100% !important;
 }
@@ -2195,7 +1881,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #News Listing, #Network Learning Listing
 **/
-/* line 2007, ../sass/teachforall.scss */
 .news-page .views-row-odd,
 .news-page .views-row-even, .news-latest .views-row-odd,
 .news-latest .views-row-even,
@@ -2204,7 +1889,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 .network-learning-latest .views-row-even {
   margin-bottom: 30px;
 }
-/* line 2010, ../sass/teachforall.scss */
 .news-page .views-row-last, .news-latest .views-row-last,
 .network-learning-page .views-row-last, .network-learning-latest .views-row-last {
   border-bottom: none;
@@ -2212,7 +1896,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   padding-bottom: 0;
 }
 @media screen and (max-width: 370px) {
-  /* line 2015, ../sass/teachforall.scss */
   .news-page .span3, .news-latest .span3,
   .network-learning-page .span3, .network-learning-latest .span3 {
     float: none;
@@ -2221,7 +1904,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   }
 }
 @media screen and (min-width: 371px) and (max-width: 767px) {
-  /* line 2015, ../sass/teachforall.scss */
   .news-page .span3, .news-latest .span3,
   .network-learning-page .span3, .network-learning-latest .span3 {
     float: left;
@@ -2230,7 +1912,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 2028, ../sass/teachforall.scss */
   .news-page .span9, .news-latest .span9,
   .network-learning-page .span9, .network-learning-latest .span9 {
     float: none;
@@ -2238,36 +1919,30 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   }
 }
 @media screen and (min-width: 371px) and (max-width: 767px) {
-  /* line 2028, ../sass/teachforall.scss */
   .news-page .span9, .news-latest .span9,
   .network-learning-page .span9, .network-learning-latest .span9 {
     float: left;
     width: 68%;
   }
 }
-/* line 2039, ../sass/teachforall.scss */
 .news-page img, .news-latest img,
 .network-learning-page img, .network-learning-latest img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 2039, ../sass/teachforall.scss */
   .news-page img, .news-latest img,
   .network-learning-page img, .network-learning-latest img {
     margin-bottom: 5px;
   }
 }
-/* line 2047, ../sass/teachforall.scss */
 .news-page h3 a, .news-latest h3 a,
 .network-learning-page h3 a, .network-learning-latest h3 a {
   color: #4d4d4d;
 }
-/* line 2049, ../sass/teachforall.scss */
 .news-page h3 a:hover, .news-latest h3 a:hover,
 .network-learning-page h3 a:hover, .network-learning-latest h3 a:hover {
   color: #cf4753;
 }
-/* line 2054, ../sass/teachforall.scss */
 .news-page .small-body, .news-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-page a, .news-page .node-type-page-global-organization .our-model-section .spotlights p, .node-type-page-global-organization .our-model-section .spotlights .news-page p, .news-latest .small-body, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-latest a, .news-latest .node-type-page-global-organization .our-model-section .spotlights p, .node-type-page-global-organization .our-model-section .spotlights .news-latest p,
 .network-learning-page .small-body,
 .network-learning-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a,
@@ -2277,19 +1952,16 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   margin-bottom: 5px;
 }
 
-/* line 2059, ../sass/teachforall.scss */
 .news__landing-byline, .network-learning__landing-byline {
   color: #999999;
   font-size: 16px;
   font-size: 0.94118rem;
 }
 
-/* line 2064, ../sass/teachforall.scss */
 .news__author-info, .network-learning__author-info {
   font-size: 14px;
   font-size: 0.82353rem;
 }
-/* line 2067, ../sass/teachforall.scss */
 .news__author-info div, .network-learning__author-info div {
   display: inline;
 }
@@ -2298,78 +1970,64 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #Persons
 **/
-/* line 7, ../sass/_mixins.scss */
 .view-persons .view-content:after {
   content: "";
   display: table;
   clear: both;
 }
 @media screen and (max-width: 680px) {
-  /* line 2083, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-one-col {
     display: block;
   }
-  /* line 2087, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col {
     display: none;
   }
 }
 @media screen and (min-width: 681px) {
-  /* line 2093, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-one-col {
     display: none;
   }
-  /* line 2097, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col {
     display: block;
   }
-  /* line 2100, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col .left-col, .view-persons .view-content .view-persons-two-col .right-col {
     float: left;
     width: 49%;
   }
-  /* line 2105, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col .left-col {
     margin-right: 1%;
     clear: left;
   }
-  /* line 2110, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col .right-col {
     margin-left: 1%;
   }
 }
-/* line 2116, ../sass/teachforall.scss */
 .view-persons .view-content .views-row {
   display: inline-block;
   width: 100%;
   margin-top: 30px;
 }
-/* line 2121, ../sass/teachforall.scss */
 .view-persons .view-content .views-row:first-child {
   margin-top: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 2116, ../sass/teachforall.scss */
   .view-persons .view-content .views-row {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 7, ../sass/_mixins.scss */
   .view-persons .view-content .views-row:after {
     content: "";
     display: table;
     clear: both;
   }
 }
-/* line 2130, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-image {
   display: block;
   float: left;
   width: 30%;
 }
 @media screen and (max-width: 370px) {
-  /* line 2130, ../sass/teachforall.scss */
   .view-persons .view-content .views-row .person-image {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2379,12 +2037,10 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
     padding: 0 0 20px;
   }
 }
-/* line 2142, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-image img {
   width: 100%;
   height: auto;
 }
-/* line 2148, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2395,7 +2051,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   padding-left: 15px;
 }
 @media screen and (max-width: 370px) {
-  /* line 2148, ../sass/teachforall.scss */
   .view-persons .view-content .views-row .person-copy {
     display: inline-block;
     float: none;
@@ -2403,18 +2058,15 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
     padding: 0;
   }
 }
-/* line 2162, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-title {
   float: left;
 }
-/* line 2165, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-title a {
   color: #030303;
   font-size: 18px;
   font-size: 1.05882rem;
   font-weight: bold;
 }
-/* line 2172, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-job-title {
   float: left;
   clear: left;
@@ -2424,7 +2076,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 2181, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio, .view-persons .view-content .views-row .person-copy .person-bio-truncated {
   font-size: 16px;
   font-size: 0.94118rem;
@@ -2434,19 +2085,15 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   clear: left;
   color: #4d4d4d;
 }
-/* line 2189, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio.is-visible, .view-persons .view-content .views-row .person-copy .person-bio-truncated.is-visible {
   display: block;
 }
-/* line 2193, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio :first-child, .view-persons .view-content .views-row .person-copy .person-bio-truncated :first-child {
   margin: 0;
 }
-/* line 2197, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio p, .view-persons .view-content .views-row .person-copy .person-bio-truncated p {
   margin: 10px 0 0 0;
 }
-/* line 2202, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .read-more-btn, .view-persons .view-content .views-row .person-copy .collapse-btn {
   font-size: 13px;
   font-size: 0.76471rem;
@@ -2458,17 +2105,14 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   cursor: pointer;
   font-weight: bold;
 }
-/* line 2212, ../sass/teachforall.scss */
 .view-persons .view-content .views-row .person-copy .read-more-btn.is-visible, .view-persons .view-content .views-row .person-copy .collapse-btn.is-visible {
   display: block;
 }
 @media screen and (min-width: 681px) {
-  /* line 2223, ../sass/teachforall.scss */
   .view-persons .view-content .view-persons-two-col .views-row .person-copy .person-job-title {
     min-height: 40px;
   }
 }
-/* line 2232, ../sass/teachforall.scss */
 .view-persons .view-footer {
   clear: both;
   text-align: center;
@@ -2479,7 +2123,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #Supporters
 **/
-/* line 2249, ../sass/teachforall.scss */
 .view-supporters {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2489,46 +2132,37 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   text-align: center;
   margin: 0 auto;
 }
-/* line 2257, ../sass/teachforall.scss */
 .view-supporters .view-header h2 {
   margin-bottom: 5px;
 }
-/* line 2261, ../sass/teachforall.scss */
 .view-supporters .view-header p {
   margin-bottom: 30px;
 }
-/* line 2266, ../sass/teachforall.scss */
 .view-supporters h3 {
   color: #e69740;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
 }
-/* line 2272, ../sass/teachforall.scss */
 .view-supporters h3 + p {
   margin-bottom: 19px;
 }
-/* line 2277, ../sass/teachforall.scss */
 .view-supporters p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 40px;
 }
-/* line 2283, ../sass/teachforall.scss */
 .view-supporters .supporter-links {
   max-width: 80%;
   margin: 5px auto 32px;
 }
-/* line 2286, ../sass/teachforall.scss */
 .view-supporters .supporter-links a {
   color: black;
 }
-/* line 2288, ../sass/teachforall.scss */
 .view-supporters .supporter-links a:hover {
   color: #cf4753;
 }
-/* line 2292, ../sass/teachforall.scss */
 .view-supporters .supporter-links > div {
   display: inline-block;
   color: black;
@@ -2540,44 +2174,36 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   margin-bottom: 8px;
   font-weight: bold;
 }
-/* line 2302, ../sass/teachforall.scss */
 .view-supporters .supporter-links > div.views-row-last {
   border-right: 0;
 }
 @media screen and (max-width: 330px) {
-  /* line 2310, ../sass/teachforall.scss */
   .view-supporters h3.global-champions + p {
     word-spacing: -1px;
   }
 }
 @media screen and (max-width: 690px) {
-  /* line 2317, ../sass/teachforall.scss */
   .view-supporters {
     padding: 0;
   }
-  /* line 2320, ../sass/teachforall.scss */
   .view-supporters p {
     max-width: 400px;
     margin: 0 auto 10px;
     padding: 0;
   }
-  /* line 2326, ../sass/teachforall.scss */
   .view-supporters .supporter-links {
     max-width: none;
   }
-  /* line 2329, ../sass/teachforall.scss */
   .view-supporters .supporter-links > div {
     border: 0;
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 2339, ../sass/teachforall.scss */
   .view-supporters p {
     padding: 0;
   }
 }
-/* line 2345, ../sass/teachforall.scss */
 .view-supporters .view-footer {
   padding-top: 15px;
 }
@@ -2586,12 +2212,10 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 /**
 * #Network Learning
 **/
-/* line 2360, ../sass/teachforall.scss */
 .network-learning-front-block {
   margin-bottom: 10px;
   padding-top: 30px;
 }
-/* line 2364, ../sass/teachforall.scss */
 .network-learning-front-block a.network-learning-main {
   font-size: 16px;
   font-size: 0.94118rem;
@@ -2604,29 +2228,23 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 2375, ../sass/teachforall.scss */
 .network-learning-front-block a.network-learning-main:hover {
   color: #cf4753;
 }
-/* line 2380, ../sass/teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block {
   margin-bottom: 15px;
   display: inline-block;
 }
-/* line 2385, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-image {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
   margin-bottom: 20px;
 }
-/* line 2388, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-image a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a {
   display: block;
 }
-/* line 2391, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-image a img {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
   width: 100%;
 }
-/* line 2397, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-tag {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag {
   font-size: 12px;
   font-size: 0.70588rem;
   color: #e69740;
@@ -2635,43 +2253,35 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-/* line 2407, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-title a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a {
   font-size: 22px;
   font-size: 1.29412rem;
   font-family: "Fedra Serif";
   color: #4d4d4d;
   line-height: 24px;
 }
-/* line 2413, ../sass/teachforall.scss */
-.network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-title a:hover {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 1170px) {
-  /* line 2384, ../sass/teachforall.scss */
-  .network-learning-front-block .view-display-id-network_learning_front_block .span4 {
+  .network-learning-front-block .view-display-id-network_learning_front_block {
     margin-top: 30px;
     text-align: center;
   }
-  /* line 2423, ../sass/teachforall.scss */
-  .network-learning-front-block .view-display-id-network_learning_front_block .span4:first-child {
+  .network-learning-front-block .view-display-id-network_learning_front_block:first-child {
     margin-top: 0;
   }
-  /* line 2427, ../sass/teachforall.scss */
-  .network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-image {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
     margin-bottom: 10px;
   }
-  /* line 2430, ../sass/teachforall.scss */
-  .network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-image a img {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
     max-width: 570px;
   }
 }
 
-/* line 2441, ../sass/teachforall.scss */
 html.pc.chrome .network-learning-front-block a.network-learning-main {
   font-family: serif;
 }
-/* line 2445, ../sass/teachforall.scss */
 html.pc.chrome .network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-title {
   font-family: serif;
 }
@@ -2681,12 +2291,10 @@ html.pc.chrome .network-learning-front-block .view-display-id-network_learning_f
 /**
 * #National Organizations
 **/
-/* line 2459, ../sass/teachforall.scss */
 .no__main-img {
   width: 100%;
 }
 
-/* line 2467, ../sass/teachforall.scss */
 .no__ceo h2 a,
 .no__ceo .node a {
   font-size: 18px;
@@ -2694,70 +2302,57 @@ html.pc.chrome .network-learning-front-block .view-display-id-network_learning_f
   font-family: "News Gothic";
 }
 
-/* line 2475, ../sass/teachforall.scss */
 html.pc.chrome .no__ceo .node {
   font-family: sans-serif;
 }
 
-/* line 2481, ../sass/teachforall.scss */
 .no__image img {
   width: 100%;
 }
 
-/* line 2490, ../sass/teachforall.scss */
 .no__info-block {
   color: #cf4753;
   margin-bottom: 20px;
 }
-/* line 2493, ../sass/teachforall.scss */
 .no__info-block img {
   width: 100%;
 }
-/* line 2496, ../sass/teachforall.scss */
 .no__info-block .field-item {
   font-size: 18px;
   font-size: 1.05882rem;
 }
-/* line 2499, ../sass/teachforall.scss */
 .no__info-block a {
   font-size: 18px;
   font-size: 1.05882rem;
   font-weight: bold;
 }
 
-/* line 2505, ../sass/teachforall.scss */
 .no__stats {
   color: #91998c;
   font-size: 18px;
   font-size: 1.05882rem;
 }
-/* line 2508, ../sass/teachforall.scss */
 .no__stats strong {
   color: black;
 }
 
-/* line 2513, ../sass/teachforall.scss */
 .no__stat {
   margin-bottom: 10px;
 }
-/* line 2515, ../sass/teachforall.scss */
 .no__stat:last-child {
   margin-bottom: 0;
 }
 
-/* line 2522, ../sass/teachforall.scss */
 .node .content .no__spotlights {
   line-height: 1em;
   text-transform: none;
 }
-/* line 2525, ../sass/teachforall.scss */
 .node .content .no__spotlights img {
   height: auto;
   margin-bottom: 10px;
   width: 100%;
 }
 
-/* line 2535, ../sass/teachforall.scss */
 .node-type-national-organization .fb-like-box {
   margin-bottom: 20px;
 }
@@ -2766,26 +2361,21 @@ html.pc.chrome .no__ceo .node {
 /**
 * #Spotlight
 **/
-/* line 2547, ../sass/teachforall.scss */
 .node-type-spotlight .page-title {
   display: none;
 }
-/* line 2549, ../sass/teachforall.scss */
 .node-type-spotlight .page-title.spotlight-type {
   display: block;
 }
-/* line 2553, ../sass/teachforall.scss */
 .node-type-spotlight .title {
   color: #e69740;
 }
-/* line 2557, ../sass/teachforall.scss */
 .node-type-spotlight .content img {
   height: auto;
   margin: 10px 0;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
-  /* line 2557, ../sass/teachforall.scss */
   .node-type-spotlight .content img {
     float: none;
     margin: 0 auto;
@@ -2799,24 +2389,20 @@ html.pc.chrome .no__ceo .node {
 /**
 * #Person
 **/
-/* line 2579, ../sass/teachforall.scss */
 .node-type-person .content {
   margin-bottom: 10px;
 }
-/* line 7, ../sass/_mixins.scss */
 .node-type-person .content:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 2583, ../sass/teachforall.scss */
 .node-type-person .content .person-image {
   display: block;
   float: left;
   width: 30%;
 }
 @media screen and (max-width: 370px) {
-  /* line 2583, ../sass/teachforall.scss */
   .node-type-person .content .person-image {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2826,12 +2412,10 @@ html.pc.chrome .no__ceo .node {
     padding: 0 0 20px;
   }
 }
-/* line 2595, ../sass/teachforall.scss */
 .node-type-person .content .person-image img {
   width: 100%;
   height: auto;
 }
-/* line 2601, ../sass/teachforall.scss */
 .node-type-person .content .person-copy {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2842,14 +2426,12 @@ html.pc.chrome .no__ceo .node {
   padding-left: 20px;
 }
 @media screen and (max-width: 370px) {
-  /* line 2601, ../sass/teachforall.scss */
   .node-type-person .content .person-copy {
     float: none;
     width: 100%;
     padding: 0;
   }
 }
-/* line 2614, ../sass/teachforall.scss */
 .node-type-person .content .person-copy .person-title {
   color: #91998c;
   font-size: 18px;
@@ -2857,7 +2439,6 @@ html.pc.chrome .no__ceo .node {
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 2621, ../sass/teachforall.scss */
 .node-type-person .content .person-copy .person-bio {
   color: #4d4d4d;
   font-size: 16px;
@@ -2868,16 +2449,13 @@ html.pc.chrome .no__ceo .node {
 /**
 * #News - Node
 **/
-/* line 2636, ../sass/teachforall.scss */
 .node-type-news .page-title {
   display: none;
 }
-/* line 2638, ../sass/teachforall.scss */
 .node-type-news .page-title.date {
   display: block;
 }
 
-/* line 2644, ../sass/teachforall.scss */
 .news__video {
   position: relative;
   padding-bottom: 56.25%;
@@ -2885,7 +2463,6 @@ html.pc.chrome .no__ceo .node {
   padding-top: 25px;
   height: 0;
 }
-/* line 2649, ../sass/teachforall.scss */
 .news__video iframe {
   position: absolute;
   top: 0;
@@ -2894,16 +2471,13 @@ html.pc.chrome .no__ceo .node {
   height: 100%;
 }
 
-/* line 2658, ../sass/teachforall.scss */
 .news__image {
   margin: 20px 0;
 }
-/* line 2660, ../sass/teachforall.scss */
 .news__image img {
   width: 100%;
 }
 
-/* line 2665, ../sass/teachforall.scss */
 .news__image-caption {
   color: black;
   margin-top: 3px;
@@ -2912,7 +2486,6 @@ html.pc.chrome .no__ceo .node {
   font-size: 0.82353rem;
 }
 
-/* line 2672, ../sass/teachforall.scss */
 .news__video-caption {
   color: black;
   font-style: italic;
@@ -2921,33 +2494,27 @@ html.pc.chrome .no__ceo .node {
   font-size: 0.82353rem;
 }
 
-/* line 2679, ../sass/teachforall.scss */
 .news__content {
   margin-bottom: 10px;
 }
 
-/* line 2683, ../sass/teachforall.scss */
 .news__node-links {
   margin-top: 30px;
 }
-/* line 2686, ../sass/teachforall.scss */
 .news__node-links .full-list {
   min-width: 179px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2686, ../sass/teachforall.scss */
   .news__node-links .full-list {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 372px) {
-  /* line 2686, ../sass/teachforall.scss */
   .news__node-links .full-list {
     margin-top: 20px;
   }
 }
 
-/* line 2701, ../sass/teachforall.scss */
 .news__byline h3 {
   color: #999999;
 }
@@ -2956,16 +2523,13 @@ html.pc.chrome .no__ceo .node {
 /**
 * #1 Column Layout
 **/
-/* line 2712, ../sass/teachforall.scss */
 .one-col-layout__image {
   margin: 20px 0;
 }
-/* line 2714, ../sass/teachforall.scss */
 .one-col-layout__image img {
   width: 100%;
 }
 
-/* line 2719, ../sass/teachforall.scss */
 .one-col-layout__video {
   margin-bottom: 20px;
   position: relative;
@@ -2974,7 +2538,6 @@ html.pc.chrome .no__ceo .node {
   padding-top: 25px;
   height: 0;
 }
-/* line 2725, ../sass/teachforall.scss */
 .one-col-layout__video iframe {
   position: absolute;
   top: 0;
@@ -2983,11 +2546,9 @@ html.pc.chrome .no__ceo .node {
   height: 100%;
 }
 
-/* line 2735, ../sass/teachforall.scss */
 .span12 h2 a {
   color: #4d4d4d;
 }
-/* line 2737, ../sass/teachforall.scss */
 .span12 h2 a:hover {
   color: #cf4753;
   text-decoration: none;
@@ -2997,90 +2558,73 @@ html.pc.chrome .no__ceo .node {
 /**
 * #2 Column Layout
 **/
-/* line 2750, ../sass/teachforall.scss */
 .field-collection-container {
   border: none;
   margin-bottom: 0;
 }
 
-/* line 2755, ../sass/teachforall.scss */
 .field-collection-view {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 2762, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-container {
   margin-bottom: 50px;
 }
-/* line 2765, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-view {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2765, ../sass/teachforall.scss */
   .node-page-2-col-layout .field-collection-view {
     margin-bottom: 30px;
   }
 }
-/* line 2779, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-view:last-child {
   margin-bottom: 0;
 }
-/* line 2783, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-view img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 2783, ../sass/teachforall.scss */
   .node-page-2-col-layout .field-collection-view img {
     margin-bottom: 20px;
   }
 }
-/* line 2791, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-view:nth-child(even) .group_image_row {
   float: right;
 }
-/* line 2794, ../sass/teachforall.scss */
 .node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
   padding-right: 2.564102564102564%;
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  /* line 2794, ../sass/teachforall.scss */
   .node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
     padding: 0;
     text-align: left;
   }
 }
 
-/* line 2806, ../sass/teachforall.scss */
 .group-row-wrapper {
   position: relative;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2812, ../sass/teachforall.scss */
   .group-row-wrapper .group-link-wrapper {
     text-align: center;
   }
 }
-/* line 2820, ../sass/teachforall.scss */
 .group-info-row > div {
   margin-bottom: 10px;
 }
-/* line 2822, ../sass/teachforall.scss */
 .group-info-row > div:last-child {
   margin-bottom: 0;
 }
 
-/* line 2828, ../sass/teachforall.scss */
 .group_row_headline {
   text-transform: uppercase;
 }
 
-/* line 2832, ../sass/teachforall.scss */
 .group_row_byline {
   color: #999999;
   font-family: "Fedra Serif";
@@ -3089,18 +2633,15 @@ html.pc.chrome .no__ceo .node {
   font-size: 1.05882rem;
 }
 
-/* line 2840, ../sass/teachforall.scss */
 html.pc.chrome .group_row_byline {
   font-family: serif;
 }
 
-/* line 2847, ../sass/teachforall.scss */
 .group_info_row a:after {
   color: #e69740;
   content: " >>";
 }
 
-/* line 2856, ../sass/teachforall.scss */
 .node-page-2-col-layout .content > .group_link_wrapper {
   margin-bottom: 30px;
   text-align: center;
@@ -3110,48 +2651,40 @@ html.pc.chrome .group_row_byline {
 /**
 * #Global Problem
 **/
-/* line 2868, ../sass/teachforall.scss */
 .top-section {
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  /* line 2868, ../sass/teachforall.scss */
   .top-section {
     margin-bottom: 20px;
   }
 }
-/* line 2875, ../sass/teachforall.scss */
 .top-section img {
   width: 100%;
 }
 
-/* line 2880, ../sass/teachforall.scss */
 .top-section__title {
   line-height: 1em;
   font-size: 34px;
   font-size: 2rem;
 }
 @media screen and (max-width: 980px) {
-  /* line 2880, ../sass/teachforall.scss */
   .top-section__title {
     font-size: 24px;
     font-size: 1.41176rem;
   }
 }
 
-/* line 2889, ../sass/teachforall.scss */
 .top-section__subheader {
   margin-bottom: 30px;
 }
 
-/* line 2894, ../sass/teachforall.scss */
 .top-section__subheader,
 .top-section__description {
   font-size: 18px;
   font-size: 1.05882rem;
 }
 @media screen and (max-width: 980px) {
-  /* line 2894, ../sass/teachforall.scss */
   .top-section__subheader,
   .top-section__description {
     line-height: 1.2em;
@@ -3160,7 +2693,6 @@ html.pc.chrome .group_row_byline {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 2894, ../sass/teachforall.scss */
   .top-section__subheader,
   .top-section__description {
     font-size: 18px;
@@ -3168,7 +2700,6 @@ html.pc.chrome .group_row_byline {
   }
 }
 
-/* line 2907, ../sass/teachforall.scss */
 .top-section__info-wrapper {
   color: white;
   font-weight: bold;
@@ -3179,7 +2710,6 @@ html.pc.chrome .group_row_byline {
   left: 30px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 2907, ../sass/teachforall.scss */
   .top-section__info-wrapper {
     top: 47%;
     right: 20px;
@@ -3187,7 +2717,6 @@ html.pc.chrome .group_row_byline {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 2907, ../sass/teachforall.scss */
   .top-section__info-wrapper {
     top: auto;
     bottom: 20px;
@@ -3196,18 +2725,15 @@ html.pc.chrome .group_row_byline {
   }
 }
 
-/* line 2928, ../sass/teachforall.scss */
 .top-section__blurb {
   margin: 30px 0;
   text-align: center;
 }
 
-/* line 2934, ../sass/teachforall.scss */
 .global-problem__body {
   margin: 30px 0 0 0;
 }
 
-/* line 2938, ../sass/teachforall.scss */
 .widget-map__blurb {
   color: #999999;
   font-weight: bold;
@@ -3219,7 +2745,6 @@ html.pc.chrome .group_row_byline {
 /**
 * #Donate
 **/
-/* line 2951, ../sass/teachforall.scss */
 .slug-large.donate-title {
   text-align: center;
 }
@@ -3228,15 +2753,12 @@ html.pc.chrome .group_row_byline {
 /**
 * #Our Model
 **/
-/* line 2964, ../sass/teachforall.scss */
 .node-type-page-our-model #main .page-title {
   margin-bottom: 33px;
 }
-/* line 2968, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section {
   margin-top: 30px;
 }
-/* line 2971, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section h3 {
   color: #e69740;
   font-size: 17px;
@@ -3247,67 +2769,54 @@ html.pc.chrome .group_row_byline {
   text-align: center;
   margin-bottom: 13px;
 }
-/* line 2981, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section .intro {
   margin-bottom: 7px;
   text-align: center;
 }
-/* line 2992, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
   font-size: 14px;
   font-size: 0.82353rem;
 }
-/* line 2996, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a:hover {
   color: #cf4753;
 }
-/* line 3000, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a img {
   width: 100%;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3007, ../sass/teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
     display: block;
     text-align: center;
     margin-top: 15px;
   }
-  /* line 3012, ../sass/teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4 a img {
     max-width: 500px;
     display: block;
     margin: 0 auto 5px;
   }
-  /* line 3019, ../sass/teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4:first-child a {
     margin-top: 0;
   }
 }
-/* line 3027, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-banner {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 3031, ../sass/teachforall.scss */
   .node-type-page-our-model #main .our-model-banner img {
     width: 100%;
     max-width: 500px;
   }
 }
-/* line 3037, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-banner .field__text-area {
   margin-bottom: 0;
 }
-/* line 3041, ../sass/teachforall.scss */
 .node-type-page-our-model #main .our-model-banner + .our-model-section {
   margin-top: 39px;
 }
-/* line 3046, ../sass/teachforall.scss */
 .node-type-page-our-model #main .btn__red, .node-type-page-our-model #main .view-persons .view-footer a.btn, .view-persons .view-footer .node-type-page-our-model #main a.btn, .node-type-page-our-model #main .view-supporters .view-footer .btn, .view-supporters .view-footer .node-type-page-our-model #main .btn {
   display: inline-block;
 }
-/* line 3048, ../sass/teachforall.scss */
 .node-type-page-our-model #main .btn__red:hover, .node-type-page-our-model #main .view-persons .view-footer a.btn:hover, .view-persons .view-footer .node-type-page-our-model #main a.btn:hover, .node-type-page-our-model #main .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .node-type-page-our-model #main .btn:hover {
   color: white;
 }
@@ -3316,53 +2825,43 @@ html.pc.chrome .group_row_byline {
 /**
 * #Global Organization
 **/
-/* line 3063, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .slug-large {
   padding: 20px 0 30px 0;
   text-align: center;
 }
-/* line 3067, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3067, ../sass/teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights {
     margin-bottom: 0;
     text-align: center;
   }
 }
-/* line 3073, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights a {
   color: #4d4d4d;
 }
-/* line 3076, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights a:hover {
   color: #cf4753;
 }
-/* line 3080, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights p {
   color: #91998c;
   margin-top: 5px;
 }
-/* line 3084, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights p:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 767px) {
-  /* line 3080, ../sass/teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights p {
     margin-bottom: 20px;
   }
 }
-/* line 3091, ../sass/teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights img {
   height: auto;
   margin-bottom: 20px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 3091, ../sass/teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights img {
     margin-bottom: 10px;
   }
@@ -3372,7 +2871,6 @@ html.pc.chrome .group_row_byline {
 /**
 * #Results
 **/
-/* line 3112, ../sass/teachforall.scss */
 .node-type-page-results .our-model-banner .infographic img {
   height: auto;
   width: 100%;
@@ -3383,36 +2881,29 @@ html.pc.chrome .group_row_byline {
 * #Media Block
 **/
 @media screen and (max-width: 767px) {
-  /* line 3127, ../sass/teachforall.scss */
   .media-block img {
     width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 3126, ../sass/teachforall.scss */
   .media-block {
     margin-bottom: 20px;
   }
 }
-/* line 3135, ../sass/teachforall.scss */
 .media-block:last-child {
   margin-bottom: 0;
 }
 
-/* line 3140, ../sass/teachforall.scss */
 .collection__media-block {
   margin-top: 20px;
 }
-/* line 3142, ../sass/teachforall.scss */
 .collection__media-block .field-collection-view {
   margin-bottom: 20px;
 }
-/* line 3144, ../sass/teachforall.scss */
 .collection__media-block .field-collection-view:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 3148, ../sass/teachforall.scss */
   .collection__media-block .field-collection-container {
     margin-bottom: 20px;
   }
@@ -3422,7 +2913,6 @@ html.pc.chrome .group_row_byline {
 /**
 * #Join Our Staff
 **/
-/* line 3161, ../sass/teachforall.scss */
 .join-our-staff__iframe {
   margin: 0 auto;
   width: 750px;
@@ -3433,7 +2923,6 @@ html.pc.chrome .group_row_byline {
 /**
 * #Front
 **/
-/* line 3175, ../sass/teachforall.scss */
 .front #main {
   padding-bottom: 13px;
 }
@@ -3442,17 +2931,14 @@ html.pc.chrome .group_row_byline {
 /**
 * #News - Landing, #Network Learning - Landing
 **/
-/* line 3188, ../sass/teachforall.scss */
 .flexslider .slides > li {
   position: relative;
 }
 
-/* line 3194, ../sass/teachforall.scss */
 .news__image-video-wrapper {
   position: relative;
 }
 
-/* line 3204, ../sass/teachforall.scss */
 .view-news .ico-play,
 .view-network-learning .ico-play {
   background-color: #4d4d4d;
@@ -3465,7 +2951,6 @@ html.pc.chrome .group_row_byline {
   font-size: 1.17647rem;
 }
 @media screen and (max-width: 979px) {
-  /* line 3204, ../sass/teachforall.scss */
   .view-news .ico-play,
   .view-network-learning .ico-play {
     top: 5px;
@@ -3475,16 +2960,13 @@ html.pc.chrome .group_row_byline {
   }
 }
 
-/* line 3222, ../sass/teachforall.scss */
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
 }
-/* line 3227, ../sass/teachforall.scss */
 .page-news .full-list, .page-network-learning .full-list {
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3227, ../sass/teachforall.scss */
   .page-news .full-list, .page-network-learning .full-list {
     font-size: 12px;
     font-size: 0.70588rem;
@@ -3492,16 +2974,13 @@ html.pc.chrome .group_row_byline {
   }
 }
 
-/* line 3237, ../sass/teachforall.scss */
 .news-flexslider, .network-learning-flexslider {
   margin-bottom: 30px;
 }
-/* line 3240, ../sass/teachforall.scss */
 .news-flexslider h2, .network-learning-flexslider h2 {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3240, ../sass/teachforall.scss */
   .news-flexslider h2, .network-learning-flexslider h2 {
     margin-top: 0;
     padding-bottom: 18px;
@@ -3509,29 +2988,24 @@ html.pc.chrome .group_row_byline {
     font-size: 0.82353rem;
   }
 }
-/* line 3252, ../sass/teachforall.scss */
 .news-flexslider .flex-control-paging li a, .network-learning-flexslider .flex-control-paging li a {
   background-color: #91998c;
   border-radius: 0;
 }
-/* line 3255, ../sass/teachforall.scss */
 .news-flexslider .flex-control-paging li a.flex-active, .network-learning-flexslider .flex-control-paging li a.flex-active {
   background-color: #e69740;
 }
-/* line 3261, ../sass/teachforall.scss */
 .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
   bottom: 12px;
   right: 10px;
   width: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 3261, ../sass/teachforall.scss */
   .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
     left: 14px;
     text-align: left;
   }
 }
-/* line 3271, ../sass/teachforall.scss */
 .news-flexslider .flexslider, .network-learning-flexslider .flexslider {
   background: transparent;
   border: none;
@@ -3540,7 +3014,6 @@ html.pc.chrome .group_row_byline {
   margin: 0;
 }
 
-/* line 3281, ../sass/teachforall.scss */
 .view-nodequeue-supporter-list .flexslider {
   background: transparent;
   border: none;
@@ -3549,12 +3022,10 @@ html.pc.chrome .group_row_byline {
   margin: 0;
 }
 
-/* line 3290, ../sass/teachforall.scss */
 .flexslider-wrapper {
   position: relative;
 }
 
-/* line 3294, ../sass/teachforall.scss */
 .flexslider-info {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3568,36 +3039,29 @@ html.pc.chrome .group_row_byline {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 3294, ../sass/teachforall.scss */
   .flexslider-info {
     padding-right: 20px;
   }
 }
-/* line 3309, ../sass/teachforall.scss */
 .flexslider-info h2 a {
   color: white;
 }
-/* line 3312, ../sass/teachforall.scss */
 .flexslider-info h2 a:hover {
   color: #cf4753;
 }
 
-/* line 3319, ../sass/teachforall.scss */
 .flexslider-preview {
   color: #91998c;
   font-family: "Fedra Serif", serif;
 }
 
-/* line 3325, ../sass/teachforall.scss */
 html.pc.chrome .flexslider-preview {
   font-family: serif;
 }
 
-/* line 3330, ../sass/teachforall.scss */
 .flexslider-link {
   margin-top: 5px;
 }
-/* line 3332, ../sass/teachforall.scss */
 .flexslider-link a {
   color: white;
   font-weight: bold;
@@ -3606,7 +3070,6 @@ html.pc.chrome .flexslider-preview {
   font-size: 12px;
   font-size: 0.70588rem;
 }
-/* line 3338, ../sass/teachforall.scss */
 .flexslider-link a:hover {
   color: #cf4753;
 }
@@ -3615,12 +3078,10 @@ html.pc.chrome .flexslider-preview {
 /**
 * #Privacy Policy
 **/
-/* line 3351, ../sass/teachforall.scss */
 .privacy-policy-contact div {
   float: left;
   display: block;
 }
-/* line 3356, ../sass/teachforall.scss */
 .privacy-policy-contact .labels {
   margin-right: 10px;
 }
@@ -3629,7 +3090,6 @@ html.pc.chrome .flexslider-preview {
 /**
 * #A Global Problem
 **/
-/* line 3368, ../sass/teachforall.scss */
 #worldmap.worldmap__details {
   background-color: #92b4a6;
 }
@@ -3638,35 +3098,29 @@ html.pc.chrome .flexslider-preview {
 /**
 * #Search
 **/
-/* line 3380, ../sass/teachforall.scss */
 .page-search #main {
   min-height: 390px;
 }
 
-/* line 3386, ../sass/teachforall.scss */
 .search-form .container-inline {
   margin: 0 auto;
   width: 260px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3386, ../sass/teachforall.scss */
   .search-form .container-inline {
     margin: 0;
     width: 100%;
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 3393, ../sass/teachforall.scss */
   .search-form .container-inline input {
     width: 200px;
   }
 }
 
-/* line 3401, ../sass/teachforall.scss */
 .search-result {
   margin-bottom: 30px;
 }
-/* line 3403, ../sass/teachforall.scss */
 .search-result:last-child {
   margin-bottom: 0;
 }
@@ -3676,71 +3130,57 @@ html.pc.chrome .flexslider-preview {
 * #National Organizations - Landing
 **/
 @media screen and (max-width: 767px) {
-  /* line 3414, ../sass/teachforall.scss */
   .unifying-principles__right-col {
     padding-top: 30px;
   }
 }
 
-/* line 3420, ../sass/teachforall.scss */
 .nov2__intro {
   margin-bottom: 30px;
 }
 
-/* line 3424, ../sass/teachforall.scss */
 .view-nos-az {
   margin: 30px 0 0 0;
 }
-/* line 3426, ../sass/teachforall.scss */
 .view-nos-az h2 {
   margin-top: 0;
 }
-/* line 3428, ../sass/teachforall.scss */
 .view-nos-az h2 a {
   color: #3c3835;
 }
-/* line 3430, ../sass/teachforall.scss */
 .view-nos-az h2 a:hover {
   color: #cf4753;
 }
-/* line 3435, ../sass/teachforall.scss */
 .view-nos-az .item {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 3438, ../sass/teachforall.scss */
 .view-nos-az .item:last-child {
   margin-bottom: 0;
 }
 
-/* line 3444, ../sass/teachforall.scss */
 .unifying-principles {
   background-color: #dfd9c9;
   margin: 30px 0 0 0;
   padding: 30px 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 3444, ../sass/teachforall.scss */
   .unifying-principles {
     padding: 20px 10px;
   }
 }
-/* line 3451, ../sass/teachforall.scss */
 .unifying-principles .title-small {
   margin-bottom: 20px;
 }
-/* line 3454, ../sass/teachforall.scss */
 .unifying-principles ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 3460, ../sass/teachforall.scss */
 .unifying-principles li {
   padding-left: 1em;
   text-indent: -0.7em;
 }
-/* line 3465, ../sass/teachforall.scss */
 .unifying-principles li:before {
   content: "• ";
   color: #e69740;
@@ -3751,7 +3191,6 @@ html.pc.chrome .flexslider-preview {
 * #News - Latest, #Network Learning - Latest
 **/
 @media screen and (max-width: 767px) {
-  /* line 3481, ../sass/teachforall.scss */
   .page-news-latest #main .teachforall-twitter-block,
   .page-network-learning-latest #main .teachforall-twitter-block {
     margin-top: 30px;
