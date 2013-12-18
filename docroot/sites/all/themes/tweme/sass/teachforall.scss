@@ -304,8 +304,8 @@ html.pc.chrome {
 }
 
 .small-body {
-  @include font-size(20);
-  line-height: 24px;
+  @include font-size(16);
+  line-height: 20px;
   color: $grey2;
 }
 

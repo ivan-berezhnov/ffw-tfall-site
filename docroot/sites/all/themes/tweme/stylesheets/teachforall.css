@@ -359,9 +359,9 @@ html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.p
 }
 
 .small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-global-organization .our-model-section .spotlights p {
-  font-size: 20px;
-  font-size: 1.17647rem;
-  line-height: 24px;
+  font-size: 16px;
+  font-size: 0.94118rem;
+  line-height: 20px;
   color: #4d4d4d;
 }
 
