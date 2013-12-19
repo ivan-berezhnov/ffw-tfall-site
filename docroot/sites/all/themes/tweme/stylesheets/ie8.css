@@ -1,1 +1,239 @@
-.beige{color:#dfd9c9}.orange{color:#e69740}.orange2{color:#ffb151}.red{color:#cf4753}.black{color:#000}h1 .beige,h2 .beige,h3 .beige,h4 .beige{color:#dfd9c9}h1 .orange,h2 .orange,h3 .orange,h4 .orange{color:#e69740}h1 .orange2,h2 .orange2,h3 .orange2,h4 .orange2{color:#ffb151}h1 .red,h2 .red,h3 .red,h4 .red{color:#cf4753}h1 .black,h2 .black,h3 .black,h4 .black{color:#000}html.lte-ie8 .uber-nav .content>.menu>li.last{border:0}html.lte-ie8 .donate{margin-top:2px;margin-right:6px}html.lte-ie8 .social-media{display:inline-block;width:22px;height:20px}html.lte-ie8 .ico-facebook:before,html.lte-ie8 .ico-vimeo:before,html.lte-ie8 .ico-twitter:before,html.lte-ie8 .ico-linkedin:before{content:none}html.lte-ie8 .ico-facebook{background:url(../images/icon-facebook.png) center center no-repeat}html.lte-ie8 .ico-vimeo{background:url(../images/icon-vimeo.png) center center no-repeat}html.lte-ie8 .ico-twitter{background:url(../images/icon-twitter.png) center center no-repeat}html.lte-ie8 .ico-linkedin{background:url(../images/icon-linkedin.png) center center no-repeat}html.lte-ie8 .navbar .navbar-inner .sidr-toggle{display:none}html.lte-ie8 .navbar .navbar-inner .container{display:block;width:940px}html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content>.menu>li:first-child{width:192px}html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content>.menu>li:first-child+li{width:142px}html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content>.menu>li:first-child+li+li{width:255px}html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content>.menu>li:first-child+li+li+li{width:151px}html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content>.menu>li:first-child+li+li+li+li{width:200px}html.lte-ie8 #main .page-title,html.lte-ie8 #main h3{font-weight:bold}html.lte-ie8 #main #content.span12{width:100%;margin:0}html.lte-ie8 .full-list{width:190px}html.lte-ie8 .st_twitter_large{line-height:32px;width:32px;height:32px;display:inline-block;margin-right:7px}html.lte-ie8 .st_twitter_large .stButton{background:url(../images/icon-twitter-lg.png) 0 0 no-repeat !important}html.lte-ie8 .st_twitter_large .stLarge{display:none !important}html.lte-ie8 .st_facebook_large{line-height:32px;width:32px;height:32px;display:inline-block}html.lte-ie8 .st_facebook_large .stButton{background:url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important}html.lte-ie8 .st_facebook_large .stLarge{display:none !important}html.lte-ie8 .top-section__subheader{margin-bottom:10px}html.lte-ie8 .top-section__description{font-size:15px}html.lte-ie8 #footer .footer-links .content>ul>li+li+li+li{display:none}html.lte-ie8 #footer .footer-links-2 .content>ul>li:first-child{display:none}html.lte-ie8 #footer .footer-links-2 .content>ul>li:first-child+li,html.lte-ie8 #footer .footer-links-2 .content>ul>li:first-child+li+li{display:none}html.lte-ie8 #footer #edit-keys{width:162px}html.lte-ie8 .marquee .marquee__pane:hover .marquee__hover,html.lte-ie8 .marquee .marquee__pane:hover .marquee__info-wrapper{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}html.lte-ie8 .marquee__hover{width:100%}html.lte-ie8 .marquee__info-wrapper{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}html.lte-ie8 .view-persons .view-content .view-persons-one-col{display:none}html.lte-ie8 .view-persons .view-content .view-persons-two-col{display:block}html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col,html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col{float:left;width:49%}html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col{margin-right:1%;clear:left}html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col{margin-left:1%}
+/**
+* #Table of Contents
+**/
+/**
+    #Imports
+    #Uber Navigation
+    #Header
+    #Primary Navigation
+    #Main Content
+    #Footer
+    #Marquee
+
+    ### VIEWS ###
+    #Persons
+    #Supporters
+**/
+/**
+* #Imports
+**/
+/**
+*	#Table of Contents
+**/
+/**
+
+#Colours
+#WYSIWYG Classes
+
+**/
+/**
+	#Colours
+**/
+/**
+* #WYSIWYG Classes
+**/
+.beige {
+  color: #dfd9c9;
+}
+
+.orange {
+  color: #e69740;
+}
+
+.orange2 {
+  color: #ffb151;
+}
+
+.red {
+  color: #cf4753;
+}
+
+.black {
+  color: black;
+}
+
+.dovegrey {
+  color: #91998c;
+}
+
+.almostblack {
+  color: #4d4d4d;
+}
+
+h1 .beige, h2 .beige, h3 .beige, h4 .beige {
+  color: #dfd9c9;
+}
+h1 .orange, h2 .orange, h3 .orange, h4 .orange {
+  color: #e69740;
+}
+h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
+  color: #ffb151;
+}
+h1 .red, h2 .red, h3 .red, h4 .red {
+  color: #cf4753;
+}
+h1 .black, h2 .black, h3 .black, h4 .black {
+  color: black;
+}
+
+/**/
+html.lte-ie8 {
+  /**
+  * #Uber Navigation
+  **/
+  /**/
+  /**
+  * #Header
+  **/
+  /**/
+  /**
+  * #Primary Navigation
+  **/
+  /**/
+  /**
+  * #Main Content
+  **/
+  /**/
+  /**
+  * #Footer
+  **/
+  /**/
+  /**
+  * #Marquee
+  **/
+  /**/
+  /**
+  * #Persons
+  **/
+}
+html.lte-ie8 .uber-nav .content > .menu > li.last {
+  border: 0;
+}
+html.lte-ie8 .donate {
+  margin-top: 2px;
+  margin-right: 6px;
+}
+html.lte-ie8 .social-media {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+}
+html.lte-ie8 .ico-facebook:before, html.lte-ie8 .ico-vimeo:before, html.lte-ie8 .ico-twitter:before, html.lte-ie8 .ico-linkedin:before {
+  content: none;
+}
+html.lte-ie8 .ico-facebook {
+  background: url(../images/icon-facebook.png) center center no-repeat;
+}
+html.lte-ie8 .ico-vimeo {
+  background: url(../images/icon-vimeo.png) center center no-repeat;
+}
+html.lte-ie8 .ico-twitter {
+  background: url(../images/icon-twitter.png) center center no-repeat;
+}
+html.lte-ie8 .ico-linkedin {
+  background: url(../images/icon-linkedin.png) center center no-repeat;
+}
+html.lte-ie8 .navbar .navbar-inner .sidr-toggle {
+  display: none;
+}
+html.lte-ie8 .navbar .navbar-inner .container {
+  display: block;
+  width: 940px;
+}
+html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
+  width: 192px;
+}
+html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
+  width: 142px;
+}
+html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
+  width: 255px;
+}
+html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
+  width: 151px;
+}
+html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
+  width: 200px;
+}
+html.lte-ie8 #main .page-title, html.lte-ie8 #main h3 {
+  font-weight: bold;
+}
+html.lte-ie8 #main #content.span12 {
+  width: 100%;
+  margin: 0;
+}
+html.lte-ie8 .full-list {
+  width: 190px;
+}
+html.lte-ie8 .st_twitter_large {
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 7px;
+}
+html.lte-ie8 .st_twitter_large .stButton {
+  background: url(../images/icon-twitter-lg.png) 0 0 no-repeat !important;
+}
+html.lte-ie8 .st_twitter_large .stLarge {
+  display: none !important;
+}
+html.lte-ie8 .st_facebook_large {
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+html.lte-ie8 .st_facebook_large .stButton {
+  background: url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important;
+}
+html.lte-ie8 .st_facebook_large .stLarge {
+  display: none !important;
+}
+html.lte-ie8 .top-section__subheader {
+  margin-bottom: 10px;
+}
+html.lte-ie8 .top-section__description {
+  font-size: 15px;
+}
+html.lte-ie8 #footer .footer-links .content > ul > li + li + li + li {
+  display: none;
+}
+html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child {
+  display: none;
+}
+html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li, html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li + li {
+  display: none;
+}
+html.lte-ie8 #footer #edit-keys {
+  width: 162px;
+}
+html.lte-ie8 .marquee .marquee__pane:hover .marquee__hover,
+html.lte-ie8 .marquee .marquee__pane:hover .marquee__info-wrapper {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+html.lte-ie8 .marquee__hover {
+  width: 100%;
+}
+html.lte-ie8 .marquee__info-wrapper {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-one-col {
+  display: none;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col {
+  display: block;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col, html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
+  float: left;
+  width: 49%;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col {
+  margin-right: 1%;
+  clear: left;
+}
+html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
+  margin-left: 1%;
+}

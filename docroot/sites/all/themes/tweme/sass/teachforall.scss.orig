@@ -2381,56 +2381,77 @@ html.pc.chrome {
     margin-bottom: 15px;
     display: inline-block;
 
+    
+<<<<<<< HEAD
       .nl-front-image {
         margin-bottom: 20px;
+=======
+  .nl-front-image {
+	margin-bottom: 20px;
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
 
-        a {
-          display: block;
+	a {
+	  display: block;
 
-          img {
-            width: 100%;
-          }
-        }
-      }
+	  img {
+		width: 100%;
+	  }
+	}
+  }
 
-      .nl-front-tag {
-        @include font-size(12);
-        color: $orange1;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        letter-spacing: 1px;
-      }
+  .nl-front-tag {
+	@include font-size(12);
+	color: $orange1;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	letter-spacing: 1px;
+  }
 
-      .nl-front-title {
-        a {
-          @include font-size(22);
-          font-family: "Fedra Serif";
-          color: $grey2;
-          line-height: 24px;
+  .nl-front-title {
+	a {
+	  @include font-size(22);
+	  font-family: "Fedra Serif";
+	  color: $grey2;
+	  line-height: 24px;
 
-          &:hover {
-            color: $red
-          }
-        }
-      }
+	  &:hover {
+		color: $red
+	  }
+	}
+  }
 
-      @media screen and (max-width: 767px) {
+<<<<<<< HEAD
+      @media screen and (max-width: 1170px) {
         margin-top: 30px;
         text-align: center;
+=======
+  @media screen and (max-width: 767px) {
+	margin-top: 30px;
+	text-align: center;
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
 
-        &:first-child {
-          margin-top: 0;
-        }
+	&:first-child {
+	  margin-top: 0;
+	}
 
-        .nl-front-image {
-          margin-bottom: 10px;
+	.nl-front-image {
+	  margin-bottom: 10px;
 
+<<<<<<< HEAD
           a img {
-            max-width: 370px;
+            max-width: 570px;
           }
         }
       }
+    
+=======
+	  a img {
+		max-width: 370px;
+	  }
+	}
+  }
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
   }
 }
 
@@ -2728,18 +2749,37 @@ html.pc.chrome {
     height: 100%;
   }
 }
-
-.node-page-1-col-layout {
-	h2 {
+<<<<<<< HEAD
+.span12 {
+	h2{
 		a {
-		  color: $grey2;
-		  &:hover {
-			color: $red;
-		  }
+=======
+.span12{
+	a {
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
+	  color: $grey2;
+	  &:hover {
+		color: $red;
+		text-decoration: none;
+<<<<<<< HEAD
+			}
 		}
-  }
+	  }	
+	}
+=======
+	  }
+	}
 }
-
+.slug{
+	a {
+	  color: $red;
+	  &:hover {
+		color: $red;
+		text-decoration: none;
+	  }
+	}
+}
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
 /**/
 
 /**

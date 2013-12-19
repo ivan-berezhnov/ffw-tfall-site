@@ -2263,7 +2263,7 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover {
   color: #cf4753;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1170px) {
   .network-learning-front-block .view-display-id-network_learning_front_block {
     margin-top: 30px;
     text-align: center;
@@ -2275,7 +2275,7 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
     margin-bottom: 10px;
   }
   .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
-    max-width: 370px;
+    max-width: 570px;
   }
 }
 
@@ -2546,11 +2546,27 @@ html.pc.chrome .no__ceo .node {
   height: 100%;
 }
 
-.node-page-1-col-layout h2 a {
+<<<<<<< HEAD
+.span12 h2 a {
   color: #4d4d4d;
 }
-.node-page-1-col-layout h2 a:hover {
+.span12 h2 a:hover {
+=======
+.span12 a {
+  color: #4d4d4d;
+}
+.span12 a:hover {
   color: #cf4753;
+  text-decoration: none;
+}
+
+.slug a {
+  color: #cf4753;
+}
+.slug a:hover {
+>>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
+  color: #cf4753;
+  text-decoration: none;
 }
 
 /**/
