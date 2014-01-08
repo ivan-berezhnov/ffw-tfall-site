@@ -11,6 +11,7 @@
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
       <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
       <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
+	  <a href="/news/feed" target="_blank" class="social-media ico-feed"></a>
     </div>
   </div>
   <div class="row-fluid site-name">
@@ -147,6 +148,7 @@
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media ico-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media ico-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media ico-vimeo"></a>
+		<a href="/news/feed" target="_blank" class="social-media ico-feed"></a>
         <div class="footer__search">
           <p>Search the Site</p>
           <?php print $navbar_search ?>

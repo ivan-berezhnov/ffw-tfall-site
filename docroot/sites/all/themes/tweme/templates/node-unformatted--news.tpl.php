@@ -10,6 +10,7 @@
       </div>
     </div>
     <div class="span3">
+	  <div class="h3"><a href="/news/feed" target="_blank"> Subscribe to Teach For All news updates</a></div>
       <?php print render(views_embed_view('tfall_tweets','block')); //twitter block ?>
       <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
       <?php print render($widget_facebook); ?>
