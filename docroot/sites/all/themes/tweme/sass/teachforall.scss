@@ -1339,6 +1339,7 @@ html.pc.chrome {
     margin-left: 0;
   }
   .content {
+	width: 150px
     > ul {
       > li {
         &:nth-of-type(4),
@@ -2685,9 +2686,9 @@ html.pc.chrome {
   font-family: "Fedra Serif";
   font-weight: 200;
   font-style: normal;
-  line-height: 23px;
+  line-height: 25px;
   margin-bottom: 10px;
-  @include font-size(15);
+  @include font-size(17);
 }
 
 .news__node-links {

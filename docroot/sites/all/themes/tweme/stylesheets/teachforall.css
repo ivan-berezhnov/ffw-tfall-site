@@ -1165,7 +1165,7 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   #footer .row-fluid [class*="span2"].footer-links {
     width: 42%;
     float: left;
-    margin-right: 6%;
+    margin-right: 10%;
     margin-left: 5%;
   }
   #footer .row-fluid [class*="span2"].footer-links-2 {
@@ -2504,10 +2504,10 @@ html.pc.chrome .no__ceo .node {
   font-family: "Fedra Serif";
   font-weight: 200;
   font-style: normal;
-  line-height: 23px;
+  line-height: 25px;
   margin-bottom: 10px;
-  font-size: 15px;
-  font-size: 0.88235rem;
+  font-size: 17px;
+  font-size: 1rem;
 }
 
 .news__node-links {

@@ -130,7 +130,7 @@
           <?php print $navbar_search ?>
         </div>
         <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
-		<div class="footer__contact-us"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=vzkgftcab&p=oi&m=1102302096181&sit=hvovzjvdb&f=895e9d0b-40b4-4a78-a191-e132c5636555" target="_blank">Sign up for our Newsletter</a></div>
+		<div class="footer__contact-us"><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=vzkgftcab&p=oi&m=1102302096181&sit=hvovzjvdb&f=895e9d0b-40b4-4a78-a191-e132c5636555" target="_blank">Subscribe to our <br />newsletter</a></div>
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2013<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
