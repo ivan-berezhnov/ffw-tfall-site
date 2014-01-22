@@ -87,7 +87,7 @@
     });
 
 
-    if ($body.hasClass('page-about-leadership') || $body.hasClass('page-about-board')) {
+    if ($body.hasClass('page-about-leadership') || $body.hasClass('page-about-ceo') || $body.hasClass('page-about-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $this = $(this),
           $bioTextTruncated = $this.children('.person-bio-truncated'),
