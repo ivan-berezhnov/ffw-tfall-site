@@ -32,7 +32,7 @@
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
-        <div class="hidden-desktop">
+        <div class="visible-phone">
           <?php print render($page['header']['menu_menu-uber-nav']); ?>
         </div>
       </nav>
