@@ -1339,7 +1339,7 @@ html.pc.chrome {
     margin-left: 0;
   }
   .content {
-	width: 150px
+	width: 150px;
     > ul {
       > li {
         &:nth-of-type(4),
@@ -2719,7 +2719,7 @@ html.pc.chrome {
 /**
 * #1 Column Layout
 **/
-  
+
 .one-col-layout__image {
   margin: 20px 0;
   img {
