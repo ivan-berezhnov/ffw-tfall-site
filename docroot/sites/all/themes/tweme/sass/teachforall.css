@@ -1,0 +1,66 @@
+/*
+Syntax error: Illegal nesting: Only properties may be nested beneath properties.
+        on line 1344 of teachforall.scss
+
+1339:     margin-left: 0;
+1340:   }
+1341:   .content {
+1342: 	width: 150px
+1343:     > ul {
+1344:       > li {
+1345:         &:nth-of-type(4),
+1346:         &:nth-of-type(5) {
+1347:           display: none;
+1348:         }
+1349:       }
+
+Backtrace:
+teachforall.scss:1344
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:13:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:29:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:39:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:29:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:39:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:29:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:39:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:29:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:36:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/root_node.rb:19:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/plugin.rb:81:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/exec.rb:443:in `watch_or_update'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/exec.rb:326:in `process_result'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/exec.rb:41:in `parse'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/exec.rb:21:in `parse!'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.12/bin/scss:9:in `<top (required)>'
+C:/Ruby200-x64/bin/scss:23:in `load'
+C:/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Illegal nesting: Only properties may be nested beneath properties.\A         on line 1344 of teachforall.scss\A \A 1339:     margin-left: 0;\A 1340:   }\A 1341:   .content {\A 1342: 	width: 150px\A 1343:     > ul {\A 1344:       > li {\A 1345:         &:nth-of-type(4),\A 1346:         &:nth-of-type(5) {\A 1347:           display: none;\A 1348:         }\A 1349:       }"; }
