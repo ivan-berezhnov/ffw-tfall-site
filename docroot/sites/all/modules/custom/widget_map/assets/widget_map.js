@@ -67,7 +67,7 @@
 								'<div class="no__map-main-img"><img class="no__main-img" src="' + feature.properties.mainpic + '"></div>' +
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
-								'<a class="btn btn-primary" href="/national-organization/teach-first">more</a></a>';
+								'<a class="btn btn-primary" href="' + feature.properties.url + '">more</a></a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
