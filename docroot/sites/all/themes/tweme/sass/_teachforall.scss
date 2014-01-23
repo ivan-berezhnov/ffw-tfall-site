@@ -439,6 +439,9 @@ textarea:focus, input:focus{
   line-height: 30px;
   text-align: center;
   @include font-size(32);
+  @media screen and (max-width: 475px) {
+    @include font-size(22);
+  }
 }
 
 .full-list {
@@ -728,16 +731,23 @@ html.pc.chrome {
     padding: 0;
     text-align: center;
 
+    @media screen and (max-width: 768px) {
+        background: none;
+        box-shadow: none;
+        margin-top: -40px;
+    }
+
     ul {
       margin: 0;
     }
 
     .sidr-toggle {
-      display: inline-block;
-      float: left;
-      margin-left: 14px;
-      padding: 5px;
-      cursor: pointer;
+      position: absolute;
+      left: 10px;
+      top: 0;
+      button {
+        outline: none;
+      }
 
       @media screen and (min-width: 768px) {
         display: none;
@@ -1535,6 +1545,9 @@ html.pc.chrome {
 
 .marquee {
   background-color: $grey1;
+  @media screen and (max-width: 768px) {
+    background-color: transparent;
+  }
   img {
     width: 100%;
   }

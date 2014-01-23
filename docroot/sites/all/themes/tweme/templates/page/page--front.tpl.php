@@ -1,3 +1,4 @@
+<?php dsm($page); ?>
 <div class="container header">
   <div class="row-fluid">
     <div class="uber-nav pull-left hidden-phone">
@@ -26,12 +27,14 @@
 	<div class="navbar-inner">
     <div class="sidr-toggle">
       <?php print $navbar_toggler ?>
-      <span class="btn-text">Menu</span>
     </div>
 
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
+        <div class="hidden-desktop">
+          <?php print render($page['header']['menu_menu-uber-nav']); ?>
+        </div>
       </nav>
 		</div>
 	</div>

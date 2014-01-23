@@ -551,6 +551,12 @@ textarea:focus, input:focus {
   font-size: 32px;
   font-size: 1.88235rem;
 }
+@media screen and (max-width: 475px) {
+  .site-slogan {
+    font-size: 22px;
+    font-size: 1.29412rem;
+  }
+}
 
 .full-list {
   background-color: #4d4d4d;
@@ -831,15 +837,23 @@ html.pc.chrome .donate {
   padding: 0;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .navbar .navbar-inner {
+    background: none;
+    box-shadow: none;
+    margin-top: -40px;
+  }
+}
 .navbar .navbar-inner ul {
   margin: 0;
 }
 .navbar .navbar-inner .sidr-toggle {
-  display: inline-block;
-  float: left;
-  margin-left: 14px;
-  padding: 5px;
-  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 0;
+}
+.navbar .navbar-inner .sidr-toggle button {
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .navbar .navbar-inner .sidr-toggle {
@@ -1494,6 +1508,11 @@ html.pc.chrome .widget_supporters .title {
 **/
 .marquee {
   background-color: #91998c;
+}
+@media screen and (max-width: 768px) {
+  .marquee {
+    background-color: transparent;
+  }
 }
 .marquee img {
   width: 100%;
