@@ -72,6 +72,9 @@
 		<?php print $messages ?>
 		<div class="row row-toggle">
 			<!-- Content -->
+        <?php
+          render($page['content']);
+        ?>
 			<section id="content" class="span<?php print $content_cols ?>">
 				<div>
           <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
