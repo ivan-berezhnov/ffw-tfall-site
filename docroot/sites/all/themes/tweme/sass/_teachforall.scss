@@ -3,7 +3,6 @@
 **/
 
 /**
-    #Imports
     #Font-Face
     #Styleguide - Typography
     #Global Elements
@@ -57,16 +56,6 @@
 **/
 
 /**
-*   #Imports
-**/
-
-@import "compass/css3";
-@import "compass/utilities";
-
-@import "mixins";
-@import "variables";
-
-/**
 * #Font-Face
 **/
 
@@ -74,9 +63,9 @@
   font-family: "Fedra Serif";
   src: url('../fonts/FSerStdA-Book.eot');
   src: url('../fonts/FSerStdA-Book.eot?#iefix') format('eot'),
+  url('../fonts/FSerStdA-Book.svg') format('svg'),
   url('../fonts/FSerStdA-Book.woff') format('woff'),
-  url('../fonts/FSerStdA-Book.ttf') format('truetype'),
-  url('../fonts/FSerStdA-Book.svg') format('svg');
+  url('../fonts/FSerStdA-Book.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
@@ -92,9 +81,9 @@
   font-family: "Fedra Serif";
   src: url('../fonts/FSerStdA-Bold.eot');
   src: url('../fonts/FSerStdA-Bold.eot?#iefix') format('eot'),
+  url('../fonts/FSerStdA-Bold.svg') format('svg'),
   url('../fonts/FSerStdA-Bold.woff') format('woff'),
-  url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
-  url('../fonts/FSerStdA-Bold.svg') format('svg');
+  url('../fonts/FSerStdA-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -1546,158 +1535,9 @@ html.pc.chrome {
 
 /**/
 
-/**
-* #Marquee
-**/
 
-.marquee {
-  background-color: $grey1;
-  @media screen and (max-width: 768px) {
-    background-color: transparent;
-  }
-  img {
-    width: 100%;
-  }
-  * {
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-}
 
-.marquee__2,
-.marquee__3,
-.marquee__4 {
-  position: relative;
-  .marquee__info-wrapper {
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    width: 90%;
-  }
-  .marquee__title {
-    @extend .h3;
-  }
-  .marquee__preview {
-    display: none;
-  }
-}
 
-.marquee__info-wrapper {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 70%;
-}
-
-.marquee__title {
-  a {
-    color: $white;
-    &:hover {
-      color: $red;
-    }
-  }
-  font-weight: normal;
-}
-
-.marquee__preview {
-  color: $grey4;
-  font-family: "Fedra Serif", serif;
-  margin-bottom: 10px;
-  @include font-size(17);
-}
-
-html.pc.chrome {
-  .marquee__preview {
-    font-family: serif;
-  }
-}
-
-.marquee__link {
-  font-weight: bold;
-  line-height: 1em;
-  @include font-size(11);
-  a {
-    color: $white;
-    &:hover {
-      color: $orange2;
-    }
-  }
-}
-
-.marquee__large {
-  background-color: $black;
-  float: left;
-  position: relative;
-  width: 50%;
-}
-
-.marquee__medium {
-  background-color: $red;
-  float: left;
-  position: relative;
-  width: 25%;
-}
-
-.marquee__small {
-  background-color: $orange1;
-  float: left;
-  position: relative;
-  width: 25%;
-}
-
-.marquee__hover {
-  @include box-sizing(border-box);
-  background-color: $black;
-  @include opacity(0);
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-}
-
-.marquee__pane[data-effeckt-type="cover-fade"] {
-  &:hover .marquee__hover,
-  &:active .marquee__active {
-    opacity: .8;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 979px) {
-  .marquee__info-wrapper {
-    bottom: 20px;
-    left: 20px;
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 979px) {
-  .marquee__large {
-    width: 100%;
-  }
-  .marquee__hover {
-    background-color: transparent;
-    opacity: 1;
-    position: static;
-  }
-  .marquee__info-wrapper {
-    @include box-sizing(border-box);
-    background-color: $grey3;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    position: static;
-    width: 100%;
-  }
-  .marquee__preview {
-    display: none;
-  }
-}
-
-/**/
 
 /**
 * #MapBox

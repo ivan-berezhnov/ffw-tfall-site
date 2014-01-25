@@ -1,4 +1,3 @@
-<?php dsm($page); ?>
 <div class="container header">
   <div class="row-fluid">
     <div class="uber-nav pull-left hidden-phone">
@@ -50,15 +49,7 @@
 <?php endif ?>
 
 <!-- front page marquee block -->
-<div class="container-wrapper marquee">
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-        <?php print render($page['marquee']) ?>
-      </div>
-    </div>
-  </div>
-</div>
+<?php print render($page['marquee']) ?>
 
 <?php if ($preface): ?>
 	<!-- Header -->

@@ -63,7 +63,6 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 *   #Table of Contents
 **/
 /**
-    #Imports
     #Font-Face
     #Styleguide - Typography
     #Global Elements
@@ -116,74 +115,12 @@ h1 .black, h2 .black, h3 .black, h4 .black {
     #Network Learning - Latest
 **/
 /**
-*   #Imports
-**/
-/**
-*	#Table of Contents
-**/
-/**
-
-#Colours
-#WYSIWYG Classes
-
-**/
-/**
-	#Colours
-**/
-/**
-* #WYSIWYG Classes
-**/
-.beige {
-  color: #dfd9c9;
-}
-
-.orange {
-  color: #e69740;
-}
-
-.orange2 {
-  color: #ffb151;
-}
-
-.red {
-  color: #cf4753;
-}
-
-.black {
-  color: black;
-}
-
-.dovegrey {
-  color: #91998c;
-}
-
-.almostblack {
-  color: #4d4d4d;
-}
-
-h1 .beige, h2 .beige, h3 .beige, h4 .beige {
-  color: #dfd9c9;
-}
-h1 .orange, h2 .orange, h3 .orange, h4 .orange {
-  color: #e69740;
-}
-h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
-  color: #ffb151;
-}
-h1 .red, h2 .red, h3 .red, h4 .red {
-  color: #cf4753;
-}
-h1 .black, h2 .black, h3 .black, h4 .black {
-  color: black;
-}
-
-/**
 * #Font-Face
 **/
 @font-face {
   font-family: "Fedra Serif";
   src: url("../fonts/FSerStdA-Book.eot");
-  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg") format("svg");
+  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Book.svg") format("svg"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
@@ -197,7 +134,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 @font-face {
   font-family: "Fedra Serif";
   src: url("../fonts/FSerStdA-Bold.eot");
-  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg") format("svg");
+  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Bold.svg") format("svg"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -344,9 +281,7 @@ h2, .h2 {
   }
 }
 
-h3, .h3, .title-small, .marquee__2 .marquee__title,
-.marquee__3 .marquee__title,
-.marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
+h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
   font-family: "Fedra Serif", serif;
   font-weight: normal;
   line-height: 22px;
@@ -355,20 +290,14 @@ h3, .h3, .title-small, .marquee__2 .marquee__title,
   font-size: 1.05882rem;
 }
 @media screen and (max-width: 767px) {
-  h3, .h3, .title-small, .marquee__2 .marquee__title,
-  .marquee__3 .marquee__title,
-  .marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
+  h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
     line-height: 20px;
     font-size: 16px;
     font-size: 0.94118rem;
   }
 }
 
-html.pc.chrome h1, html.pc.chrome .h1, html.pc.chrome h2, html.pc.chrome .h2, html.pc.chrome h3, html.pc.chrome .h3, html.pc.chrome .title-small, html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__3 .marquee__title,
-.marquee__3 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__4 .marquee__title,
-.marquee__4 html.pc.chrome .marquee__title, html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a, .node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
+html.pc.chrome h1, html.pc.chrome .h1, html.pc.chrome h2, html.pc.chrome .h2, html.pc.chrome h3, html.pc.chrome .h3, html.pc.chrome .title-small, html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a, .node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
   font-family: serif;
 }
 
@@ -1510,163 +1439,6 @@ html.pc.chrome .widget_supporters .title {
   width: 100% !important;
 }
 
-/**/
-/**
-* #Marquee
-**/
-.marquee {
-  background-color: #91998c;
-}
-@media screen and (max-width: 768px) {
-  .marquee {
-    background-color: transparent;
-  }
-}
-.marquee img {
-  width: 100%;
-}
-.marquee * {
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-.marquee__2,
-.marquee__3,
-.marquee__4 {
-  position: relative;
-}
-.marquee__2 .marquee__info-wrapper,
-.marquee__3 .marquee__info-wrapper,
-.marquee__4 .marquee__info-wrapper {
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  width: 90%;
-}
-.marquee__2 .marquee__preview,
-.marquee__3 .marquee__preview,
-.marquee__4 .marquee__preview {
-  display: none;
-}
-
-.marquee__info-wrapper {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  width: 70%;
-}
-
-.marquee__title {
-  font-weight: normal;
-}
-.marquee__title a {
-  color: white;
-}
-.marquee__title a:hover {
-  color: #cf4753;
-}
-
-.marquee__preview {
-  color: #999999;
-  font-family: "Fedra Serif", serif;
-  margin-bottom: 10px;
-  font-size: 17px;
-  font-size: 1rem;
-}
-
-html.pc.chrome .marquee__preview {
-  font-family: serif;
-}
-
-.marquee__link {
-  font-weight: bold;
-  line-height: 1em;
-  font-size: 11px;
-  font-size: 0.64706rem;
-}
-.marquee__link a {
-  color: white;
-}
-.marquee__link a:hover {
-  color: #ffb151;
-}
-
-.marquee__large {
-  background-color: black;
-  float: left;
-  position: relative;
-  width: 50%;
-}
-
-.marquee__medium {
-  background-color: #cf4753;
-  float: left;
-  position: relative;
-  width: 25%;
-}
-
-.marquee__small {
-  background-color: #e69740;
-  float: left;
-  position: relative;
-  width: 25%;
-}
-
-.marquee__hover {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  -webkit-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms;
-}
-
-.marquee__pane[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__pane[data-effeckt-type="cover-fade"]:active .marquee__active {
-  opacity: .8;
-}
-
-@media screen and (min-width: 768px) and (max-width: 979px) {
-  .marquee__info-wrapper {
-    bottom: 20px;
-    left: 20px;
-    width: 80%;
-  }
-}
-@media screen and (max-width: 979px) {
-  .marquee__large {
-    width: 100%;
-  }
-
-  .marquee__hover {
-    background-color: transparent;
-    opacity: 1;
-    position: static;
-  }
-
-  .marquee__info-wrapper {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: #3c3835;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    position: static;
-    width: 100%;
-  }
-
-  .marquee__preview {
-    display: none;
-  }
-}
 /**/
 /**
 * #MapBox
@@ -3299,6 +3071,94 @@ html.pc.chrome .flexslider-preview {
   }
 }
 
+/**
+* #Marquee
+**/
+.region-marquee {
+  background-color: #91998c;
+  height: 465px;
+  overflow: hidden;
+}
+
+.marquee {
+  background-color: #91998c;
+}
+
+.view-id-tfall_marquee .flex-direction-nav a {
+  padding-top: 20px;
+  top: 40%;
+  font-size: 60px;
+}
+.view-id-tfall_marquee li {
+  border-right: 1px solid #91998c;
+}
+.view-id-tfall_marquee li:last-child {
+  border: none;
+}
+.view-id-tfall_marquee .flexslider {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  width: 1170px;
+}
+.view-id-tfall_marquee .flexslider:hover .flex-prev {
+  color: white;
+  left: 15px;
+}
+.view-id-tfall_marquee .flexslider:hover .flex-next {
+  color: white;
+  right: 15px;
+}
+.view-id-tfall_marquee .marquee-body,
+.view-id-tfall_marquee .marquee-title {
+  background-color: #4d4d4d;
+  font-family: "Fedra Serif";
+}
+.view-id-tfall_marquee .marquee-title {
+  padding: 20px 20px 0 20px;
+}
+.view-id-tfall_marquee .marquee-title a {
+  color: white;
+}
+.view-id-tfall_marquee .marquee-title a:hover {
+  color: #e69740;
+}
+.view-id-tfall_marquee .marquee-body {
+  color: #91998c;
+  padding: 0 20px 20px 20px;
+  min-height: 40px;
+}
+.view-id-tfall_marquee .flex-viewport {
+  overflow: visible !important;
+}
+
+.marquee-wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.marquee-mask-left,
+.marquee-mask-right {
+  background-color: #91998c;
+  position: absolute;
+  opacity: 0.5;
+  height: 465px;
+  width: 1170px;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.marquee-mask-left {
+  left: -1170px;
+}
+
+.marquee-mask-right {
+  right: -1170px;
+}
+
+/**/
 /**
 * #Table of Contents
 **/

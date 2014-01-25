@@ -1,0 +1,97 @@
+/**
+* #Marquee
+**/
+
+.region-marquee {
+  background-color: $grey1;
+  height: 465px;
+  overflow: hidden;
+}
+
+.marquee {
+  background-color: $grey1;
+}
+
+.view-id-tfall_marquee {
+  .flex-direction-nav {
+    a {
+      padding-top: 20px;
+      top: 40%;
+      font-size: 60px;
+    }
+  }
+  li {
+    border-right: 1px solid $grey1;
+    &:last-child {
+      border: none;
+    }
+  }
+  .flexslider {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    width: 1170px;
+    &:hover {
+      .flex-prev {
+        color: $white;
+        left: 15px;
+        //opacity: 1;
+      }
+      .flex-next {
+        color: white;
+        right: 15px;
+        //opacity: 1;
+      }
+    }
+  }
+  .marquee-body,
+  .marquee-title {
+    background-color: $grey2;
+    font-family: "Fedra Serif";
+  }
+  .marquee-title {
+    padding: 20px 20px 0 20px;
+    a {
+      color: $white;
+      &:hover {
+        color: $orange1;
+      }
+    }
+  }
+  .marquee-body {
+    color: $grey1;
+    padding: 0 20px 20px 20px;
+    min-height: 40px;
+  }
+  .flex-viewport {
+   overflow: visible !important; // inline javascript override!
+  }
+}
+
+.marquee-wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.marquee-mask-left,
+.marquee-mask-right {
+  background-color: $grey1;
+  position: absolute;
+  opacity: 0.5;
+  height: 465px;
+  width: 1170px;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.marquee-mask-left {
+  left: -1170px;
+}
+
+.marquee-mask-right {
+  right: -1170px;
+}
+
+/**/

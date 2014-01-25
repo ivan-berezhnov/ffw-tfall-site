@@ -107,4 +107,15 @@
     }
   });
 
+
+
+
+  // insert masks for the marquee slider
+  $(document).ready(function() {
+    var $marqueeNav = $('.view-tfall-marquee .flex-direction-nav');
+    $marqueeNav.after('<div class="marquee-mask-right"></div>');
+    $marqueeNav.after('<div class="marquee-mask-left"></div>');
+  });
+  // end
+
 })(jQuery);
