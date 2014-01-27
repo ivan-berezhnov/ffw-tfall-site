@@ -16,8 +16,19 @@
   .flex-direction-nav {
     a {
       padding-top: 20px;
-      top: 40%;
+      top: 35%;
       font-size: 60px;
+      height: 50px;
+      &:before {
+        font-family: 'icomoon';
+        @include font-size(120);
+      }
+      &.flex-next:before {
+        content: "\e600";
+      }
+      &.flex-prev:before {
+        content: "\e601";
+      }
     }
   }
   li {
