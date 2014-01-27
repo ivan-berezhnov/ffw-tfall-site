@@ -6,6 +6,10 @@
   background-color: $grey1;
   height: 465px;
   overflow: hidden;
+  @media screen and (max-width:585px) {
+    background-color: transparent;
+    height: auto;
+  }
 }
 
 .marquee {
@@ -22,6 +26,10 @@
       &:before {
         font-family: 'icomoon';
         @include font-size(120);
+        @media screen and (max-width:585px) {
+          top: 25%;
+          @include font-size(80);
+        }
       }
       &.flex-next:before {
         content: "\e600";
@@ -33,6 +41,9 @@
   }
   li {
     border-right: 1px solid $grey1;
+    @media screen and (max-width:585px) {
+      border: none;
+    }
     &:last-child {
       border: none;
     }
@@ -43,6 +54,13 @@
     box-shadow: none;
     margin: 0 auto;
     width: 1170px;
+    @media screen and (max-width:1200px) {
+      width: 585px;
+    }
+    @media screen and (max-width:585px) {
+      width: 90.8%;
+      overflow: hidden;
+    }
     &:hover {
       .flex-prev {
         color: $white;

@@ -1728,11 +1728,8 @@ html.pc.chrome {
     margin: 0 8px 0 0;
     background-color: $grey2;
     display: inline-block;
-    height: 32px;
-    width: 32px;
-    line-height: 32px;
+    line-height: 27px;
     overflow: hidden;
-
     .stLarge:hover {
       opacity: 1;
     }
@@ -1753,8 +1750,8 @@ html.pc.chrome {
     background-position: 9999px 9999px;
     color: $white;
     display: inline !important; // needed to override the shareThis imported style
-    padding: 6px;
-    top: 6px;
+    padding: 9px 6px 6px 7px;
+    top: 2px;
     @include font-size(20);
     &:hover {
       background-color: $red;
@@ -1763,14 +1760,16 @@ html.pc.chrome {
 }
 
 .st_facebook_large {
-  .stLarge {
-    @extend .icon-facebook;
+  .stLarge:before {
+    font-family: 'icomoon';
+    content: "\e602";
   }
 }
 
 .st_twitter_large {
-  .stLarge {
-    @extend .icon-twitter;
+  .stLarge:before {
+    font-family: 'icomoon';
+    content: "\e604";
   }
 }
 
@@ -2998,10 +2997,6 @@ html.pc.chrome {
 
 .news__image-video-wrapper {
   position: relative;
-}
-
-.icon-play {
-
 }
 
 .view-news,

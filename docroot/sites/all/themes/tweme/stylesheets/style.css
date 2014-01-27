@@ -99,7 +99,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e606";
 }
 
-.icon-facebook:before, .st_facebook_large .stLarge:before {
+.icon-facebook:before {
   content: "\e602";
 }
 
@@ -107,7 +107,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e603";
 }
 
-.icon-twitter:before, .st_twitter_large .stLarge:before {
+.icon-twitter:before {
   content: "\e604";
 }
 
@@ -1689,9 +1689,7 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
   display: inline-block;
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
+  line-height: 27px;
   overflow: hidden;
 }
 .sharethis-buttons .stButton .stLarge:hover {
@@ -1711,14 +1709,24 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   background-position: 9999px 9999px;
   color: white;
   display: inline !important;
-  padding: 6px;
-  top: 6px;
+  padding: 9px 6px 6px 7px;
+  top: 2px;
   font-size: 20px;
   font-size: 1.17647rem;
 }
 .st_twitter_large .stLarge:hover,
 .st_facebook_large .stLarge:hover {
   background-color: #cf4753;
+}
+
+.st_facebook_large .stLarge:before {
+  font-family: 'icomoon';
+  content: "\e602";
+}
+
+.st_twitter_large .stLarge:before {
+  font-family: 'icomoon';
+  content: "\e604";
 }
 
 /**/
@@ -3073,6 +3081,12 @@ html.pc.chrome .flexslider-preview {
   height: 465px;
   overflow: hidden;
 }
+@media screen and (max-width: 585px) {
+  .region-marquee {
+    background-color: transparent;
+    height: auto;
+  }
+}
 
 .marquee {
   background-color: #91998c;
@@ -3089,6 +3103,13 @@ html.pc.chrome .flexslider-preview {
   font-size: 120px;
   font-size: 7.05882rem;
 }
+@media screen and (max-width: 585px) {
+  .view-id-tfall_marquee .flex-direction-nav a:before {
+    top: 25%;
+    font-size: 80px;
+    font-size: 4.70588rem;
+  }
+}
 .view-id-tfall_marquee .flex-direction-nav a.flex-next:before {
   content: "\e600";
 }
@@ -3097,6 +3118,11 @@ html.pc.chrome .flexslider-preview {
 }
 .view-id-tfall_marquee li {
   border-right: 1px solid #91998c;
+}
+@media screen and (max-width: 585px) {
+  .view-id-tfall_marquee li {
+    border: none;
+  }
 }
 .view-id-tfall_marquee li:last-child {
   border: none;
@@ -3107,6 +3133,17 @@ html.pc.chrome .flexslider-preview {
   box-shadow: none;
   margin: 0 auto;
   width: 1170px;
+}
+@media screen and (max-width: 1200px) {
+  .view-id-tfall_marquee .flexslider {
+    width: 585px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .view-id-tfall_marquee .flexslider {
+    width: 90.8%;
+    overflow: hidden;
+  }
 }
 .view-id-tfall_marquee .flexslider:hover .flex-prev {
   color: white;
