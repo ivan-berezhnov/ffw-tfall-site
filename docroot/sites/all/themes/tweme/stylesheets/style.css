@@ -181,30 +181,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 **/
 /**
 * #Font-Face
-
-@font-face {
-  font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-Medium.eot');
-  src: url('../fonts/NewsGothic-Medium.eot?#iefix') format('eot'),
-  url('../fonts/NewsGothic-Medium.woff') format('woff'),
-  url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
-  url('../fonts/NewsGothic-Medium.svg') format('svg');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold.eot');
-  src: url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('eot'),
-  url('../fonts/NewsGothic-DemiBold.woff') format('woff'),
-  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
-  url('../fonts/NewsGothic-DemiBold.svg') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-}**/
+**/
 @font-face {
   font-family: "News Gothic";
   src: url("../fonts/NewsGothic-Book-webfont.eot");
@@ -2081,7 +2058,7 @@ img {
   font-size: 12px;
   font-size: 0.70588rem;
   color: #e69740;
-  font-weight: bold;
+  font-family: "News Gothic Bold";
   text-transform: uppercase;
   margin-bottom: 5px;
   letter-spacing: 1px;
