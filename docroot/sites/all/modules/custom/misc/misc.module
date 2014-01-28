@@ -43,37 +43,6 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
         $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
     }
 
-    if($form_id == 'nodequeue_arrange_subqueue_form_3') {
-        $form['add']['#prefix'] = '<b>Please ensure that content in the 4th position has a vertical image.</b>';
-        $form['#validate'][] = 'validate_marquee_node_4_contains_vertical_image';
-    }
-}
-
-/**
- * validation function to make sure that specified nodes in the marquee nodequeue have a vertical image to display instead
- * of a horizontal image
- *
- * Currently only checks the node in position 4
- *
- * form name may also change so watch for that
- * TODO: flag the positions that are vertical in the nodqueue form,
- * TODO: setup form name so that it can find the form if the name changes
- * name changes
- * @param $form
- * @param $form_state
- */
-function validate_marquee_node_4_contains_vertical_image($form, &$form_state) {
-
-    $node4_nid = (array_keys($form_state['input']['nodes']));
-    if(sizeof($node4_nid) > 3)
-    {
-        $new_node_4 = node_load($node4_nid[3]);
-        $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
-
-        if (!$does_node_4_have_vertical_image) {
-            form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Content in position 4 must have a vertical image!');
-        }
-    }
 }
 
 /*
