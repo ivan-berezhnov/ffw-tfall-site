@@ -181,71 +181,56 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 **/
 /**
 * #Font-Face
-**/
+
 @font-face {
-  font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Book.eot");
-  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Book.svg") format("svg"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype");
+  font-family: "News Gothic";
+  src: url('../fonts/NewsGothic-Medium.eot');
+  src: url('../fonts/NewsGothic-Medium.eot?#iefix') format('eot'),
+  url('../fonts/NewsGothic-Medium.woff') format('woff'),
+  url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+  url('../fonts/NewsGothic-Medium.svg') format('svg');
   font-weight: 200;
   font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Fedra Serif";
-    src: url("../fonts/FSerStdA-Book.svg") format("svg");
-}
-}
 @font-face {
-  font-family: "Fedra Serif";
-  src: url("../fonts/FSerStdA-Bold.eot");
-  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Bold.svg") format("svg"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype");
+  font-family: "News Gothic";
+  src: url('../fonts/NewsGothic-DemiBold.eot');
+  src: url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('eot'),
+  url('../fonts/NewsGothic-DemiBold.woff') format('woff'),
+  url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+  url('../fonts/NewsGothic-DemiBold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Fedra Serif";
-    src: url("../fonts/FSerStdA-Bold.svg") format("svg");
-}
-}
+}**/
 @font-face {
   font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-Medium.eot");
-  src: url("../fonts/NewsGothic-Medium.eot?#iefix") format("eot"), url("../fonts/NewsGothic-Medium.woff") format("woff"), url("../fonts/NewsGothic-Medium.ttf") format("truetype"), url("../fonts/NewsGothic-Medium.svg") format("svg");
-  font-weight: 200;
+  src: url("../fonts/NewsGothic-Book-webfont.eot");
+  src: url("../fonts/NewsGothic-Book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Book-webfont.svg#NewsGothicFSBookRegular") format("svg"), url("../fonts/NewsGothic-Book-webfont.woff") format("woff"), url("../fonts/NewsGothic-Book-webfont.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "News Gothic";
-    src: url("../fonts/NewsGothic-Medium.svg") format("svg");
-}
-}
 @font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-DemiBold.eot");
-  src: url("../fonts/NewsGothic-DemiBold.eot?#iefix") format("eot"), url("../fonts/NewsGothic-DemiBold.woff") format("woff"), url("../fonts/NewsGothic-DemiBold.ttf") format("truetype"), url("../fonts/NewsGothic-DemiBold.svg") format("svg");
-  font-weight: bold;
+  font-family: "News Gothic Bold";
+  src: url("../fonts/NewsGothic-Bold-webfont.eot");
+  src: url("../fonts/NewsGothic-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Bold-webfont.svg#NewsGothicFSMediumBold") format("svg"), url("../fonts/NewsGothic-Bold-webfont.woff") format("woff"), url("../fonts/NewsGothic-Bold-webfont.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "News Gothic";
-    src: url("../fonts/NewsGothic-DemiBold.svg") format("svg");
-}
-}
 /**/
 /**
 * #Styleguide - Typography
 **/
 h1, .h1 {
   color: #4d4d4d;
-  font-family: "Fedra Serif", serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
   font-weight: normal;
+  font-stretch: normal;
   line-height: 48px;
   margin-bottom: 5px;
   font-size: 42px;
@@ -262,8 +247,10 @@ h1, .h1 {
 h2, .h2 {
   font-size: 25px;
   font-size: 1.47059rem;
-  font-family: "Fedra Serif", serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
   font-weight: normal;
+  font-stretch: normal;
   line-height: 29px;
 }
 @media screen and (max-width: 767px) {
@@ -275,8 +262,10 @@ h2, .h2 {
 }
 
 h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
-  font-family: "Fedra Serif", serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
   font-weight: normal;
+  font-stretch: normal;
   line-height: 22px;
   margin: 0 0 5px 0;
   font-size: 18px;
@@ -288,10 +277,6 @@ h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .s
     font-size: 16px;
     font-size: 0.94118rem;
   }
-}
-
-html.pc.chrome h1, html.pc.chrome .h1, html.pc.chrome h2, html.pc.chrome .h2, html.pc.chrome h3, html.pc.chrome .h3, html.pc.chrome .title-small, html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a, .node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
-  font-family: serif;
 }
 
 h4, .h4 {
@@ -325,20 +310,15 @@ body {
   font-family: "News Gothic";
 }
 
-html.pc.chrome body {
-  font-family: sans-serif;
-}
-
 .body, .view-supporters p {
   color: #91998c;
   font-size: 17px;
   font-size: 1rem;
   line-height: 25px;
-  font-family: "Fedra Serif";
-}
-
-html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.pc.chrome p {
-  font-family: serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
 }
 
 .section {
@@ -356,7 +336,10 @@ html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.p
 
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   line-height: 1.7em;
   margin-bottom: 20px;
   font-size: 17px;
@@ -364,10 +347,6 @@ html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.p
 }
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
-}
-
-html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-model-section .intro p, .node-type-page-our-model #main .our-model-section .intro html.pc.chrome p {
-  font-family: serif;
 }
 
 .block-quote {
@@ -393,20 +372,15 @@ html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-
 }
 
 .footer-link-beige, #footer .content > ul > li > a {
-  font-size: 12px;
-  font-size: 0.70588rem;
+  font-size: 14px;
+  font-size: 0.82353rem;
   color: #dfd9c9;
-  font-family: "Fedra Serif", serif;
-  font-weight: bold;
+  font-family: "Fedra Serif Screen Regular 3";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
   color: white;
-}
-
-html.pc.chrome .footer-link-beige, html.pc.chrome #footer .content > ul > li > a, #footer html.pc.chrome .content > ul > li > a {
-  font-family: serif;
 }
 
 .footer-link-grey, .privacy-policy, #footer .content > ul > li > ul li a {
@@ -483,7 +457,7 @@ textarea:focus, input:focus {
 .full-list {
   background-color: #4d4d4d;
   color: white;
-  font-weight: bold;
+  font-family: "News Gothic Bold";
   display: inline-block;
   letter-spacing: 1px;
   padding: 6px 12px 6px 12px;
@@ -551,17 +525,16 @@ html.js input.throbbing {
   color: white;
   line-height: 26px;
   padding: 4px 44px;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .btn__red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
   color: white;
-}
-
-html.pc.chrome .btn__red, html.pc.chrome .view-persons .view-footer a.btn, .view-persons .view-footer html.pc.chrome a.btn, html.pc.chrome .view-supporters .view-footer .btn, .view-supporters .view-footer html.pc.chrome .btn {
-  font-family: serif;
 }
 
 .nav-tabs {
@@ -650,7 +623,7 @@ h2.page-title {
   font-size: 11px;
   font-size: 0.64706rem;
   color: #e69740;
-  font-weight: bold;
+  font-family: "News Gothic Bold";
   letter-spacing: 1px;
   line-height: 14px;
   margin-bottom: 5px;
@@ -659,7 +632,10 @@ h2.page-title {
 
 .slug-medium {
   color: #e69740;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   letter-spacing: 3px;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -669,7 +645,10 @@ h2.page-title {
 
 .slug-large {
   color: #e69740;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   letter-spacing: 4px;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -677,13 +656,9 @@ h2.page-title {
   font-size: 1.41176rem;
 }
 
-html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
-  font-family: serif;
-}
-
 .stats {
   color: #91998c;
-  font-weight: bold;
+  font-family: "News Gothic Bold";
   line-height: 22px;
   font-size: 18px;
   font-size: 1.05882rem;
@@ -706,14 +681,16 @@ html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
 
 .donate {
   background-color: #e69740;
-  font-family: "Fedra Serif";
-  font-weight: bold;
+  font-family: "Fedra Serif Screen Bold 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   min-height: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-right: 4px;
   padding: 0 5px;
-  font-size: 11px;
-  font-size: 0.64706rem;
+  font-size: 14px;
+  font-size: 0.82353rem;
 }
 .donate a {
   color: white;
@@ -722,10 +699,6 @@ html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
   background-color: #cf4753;
   color: white;
   cursor: pointer;
-}
-
-html.pc.chrome .donate {
-  font-family: serif;
 }
 
 .social-media {
@@ -822,12 +795,12 @@ html.pc.chrome .donate {
   }
 }
 .navbar .navbar-inner .container .region-main-navigation {
-  font-family: "Fedra Serif";
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-family: "Fedra Serif Screen Bold 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.70588rem;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation {
@@ -938,7 +911,6 @@ html.pc.chrome .donate {
   line-height: 20px;
   border-top: 1px solid #92998d;
   font-family: "News Gothic";
-  font-weight: normal;
   letter-spacing: 0;
   margin: 0;
   padding: 0;
@@ -971,16 +943,11 @@ html.pc.chrome .donate {
   display: none;
 }
 
-html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
-  font-family: serif;
-}
-
 /**/
 /**
 * #Uber Navigation
 **/
 .uber-nav {
-  font-weight: bold;
   margin-top: -5px;
 }
 .uber-nav .content > .menu {
@@ -1008,6 +975,7 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
   letter-spacing: 2px;
   margin-left: -1px;
   padding-left: 12px;
+  font-family: "News Gothic Bold";
 }
 .uber-nav .content > .menu > li > a:hover {
   background-color: #e69740;
@@ -1259,23 +1227,21 @@ html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
 
 .footer__contact-us {
   color: #DFD9C9;
-  font-family: "Fedra Serif",serif;
+  font-family: "Fedra Serif Screen Bold 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 12px;
-  font-size: 0.70588rem;
+  font-size: 14px;
+  font-size: 0.82353rem;
 }
 .footer__contact-us a {
   color: #dfd9c9;
 }
 .footer__contact-us a:hover {
   color: white;
-}
-
-html.pc.chrome .footer__contact-us {
-  font-family: serif;
 }
 
 .footer__copyright {
@@ -1337,12 +1303,14 @@ html.pc.chrome .footer__contact-us {
 }
 .footer__search p, .footer__search a {
   color: #dfd9c9;
-  font-family: "Fedra Serif", serif;
+  font-family: "Fedra Serif Screen Bold 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 2px;
-  font-size: 12px;
-  font-size: 0.70588rem;
+  font-size: 14px;
+  font-size: 0.82353rem;
 }
 .footer__search a:hover {
   color: white;
@@ -1369,10 +1337,6 @@ html.pc.chrome .footer__contact-us {
   }
 }
 
-html.pc.chrome .footer__search p, html.pc.chrome .footer__search a {
-  font-family: serif;
-}
-
 /**/
 /**
 * #Images
@@ -1396,7 +1360,10 @@ img {
 }
 .widget_supporters .title {
   color: #ffb151;
-  font-family: "Fedra Serif", serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   letter-spacing: 4px;
   display: block;
   margin-bottom: 6px;
@@ -1413,10 +1380,6 @@ img {
   font-size: 17px;
   font-size: 1rem;
   line-height: 21px;
-}
-
-html.pc.chrome .widget_supporters .title {
-  font-family: serif;
 }
 
 .fb-like-box {
@@ -1569,10 +1532,6 @@ html.pc.chrome .widget_supporters .title {
   background: #4d4d4d;
 }
 
-html.pc.chrome .leaflet-popup-content-wrapper .btn {
-  font-family: sans-serif;
-}
-
 /**/
 /**
 * #Twitter
@@ -1623,7 +1582,7 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 }
 .tweets .tweets__info {
   color: black;
-  font-weight: bold;
+  font-family: "News Gothic Bold";
   text-transform: uppercase;
   font-size: 12px;
   font-size: 0.70588rem;
@@ -2090,7 +2049,10 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 .network-learning-front-block a.network-learning-main {
   font-size: 16px;
   font-size: 0.94118rem;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
@@ -2127,7 +2089,10 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a {
   font-size: 22px;
   font-size: 1.29412rem;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   color: #4d4d4d;
   line-height: 24px;
 }
@@ -2150,13 +2115,6 @@ html.pc.chrome .leaflet-popup-content-wrapper .btn {
   }
 }
 
-html.pc.chrome .network-learning-front-block a.network-learning-main {
-  font-family: serif;
-}
-html.pc.chrome .network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-title {
-  font-family: serif;
-}
-
 /**/
 /* ### NODES ### */
 /**
@@ -2171,10 +2129,6 @@ html.pc.chrome .network-learning-front-block .view-display-id-network_learning_f
   font-size: 18px;
   font-size: 1.05882rem;
   font-family: "News Gothic";
-}
-
-html.pc.chrome .no__ceo .node {
-  font-family: sans-serif;
 }
 
 .no__image img {
@@ -2366,9 +2320,10 @@ html.pc.chrome .no__ceo .node {
 }
 
 .news__content {
-  font-family: "Fedra Serif";
-  font-weight: 200;
+  font-family: "Fedra Serif Screen Regular 3";
   font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   line-height: 25px;
   margin-bottom: 10px;
   font-size: 17px;
@@ -2503,14 +2458,13 @@ html.pc.chrome .no__ceo .node {
 
 .group_row_byline {
   color: #999999;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
   line-height: 1.4em;
   font-size: 18px;
   font-size: 1.05882rem;
-}
-
-html.pc.chrome .group_row_byline {
-  font-family: serif;
 }
 
 .group_info_row a:after {
@@ -2928,11 +2882,10 @@ html.pc.chrome .group_row_byline {
 
 .flexslider-preview {
   color: #91998c;
-  font-family: "Fedra Serif", serif;
-}
-
-html.pc.chrome .flexslider-preview {
-  font-family: serif;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
 }
 
 .flexslider-link {
@@ -3156,7 +3109,7 @@ html.pc.chrome .flexslider-preview {
 .view-id-tfall_marquee .marquee-body,
 .view-id-tfall_marquee .marquee-title {
   background-color: #4d4d4d;
-  font-family: "Fedra Serif";
+  font-family: "Fedra Serif Screen Regular 3";
 }
 .view-id-tfall_marquee .marquee-title {
   padding: 20px 20px 0 20px;
