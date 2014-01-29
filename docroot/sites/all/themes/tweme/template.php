@@ -38,7 +38,7 @@ function tweme_theme($existing, $type, $theme, $path) {
     ),
     'navbar_toggler' => array(),
     'preface' => array(
-      'path' => $path . '/templates',
+      'path' => $path . '/templates/system',
       'template' => 'preface',
       'variables' => array(
         'breadcrumb' => NULL,
