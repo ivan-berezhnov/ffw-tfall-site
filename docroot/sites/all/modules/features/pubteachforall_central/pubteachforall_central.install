@@ -1,9 +1,10 @@
 <?php
 
+
 /**
  * Implements hook_update_N().
  *
- * Enables modules
+ * Enables modules max_length and constant_contact
  */
 function pubteachforall_central_update_7001(&$sandbox){
   $modules = array(
