@@ -4,13 +4,14 @@
 /**
  * Implements hook_update_N().
  *
- * Enables modules max_length and constant_contact
+ * Enables modules maxlength and constant_contact
  */
-function pubteachforall_central_update_7001(&$sandbox){
+function pubteachforall_central_update_7100() {
   $modules = array(
-    'max_length',
+    'maxlength',
     'constant_contact',
   );
   module_enable($modules);
   drupal_flush_all_caches();
 }
+
