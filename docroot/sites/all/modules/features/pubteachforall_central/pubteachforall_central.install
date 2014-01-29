@@ -5,7 +5,7 @@
  *
  * Enables modules
  */
-function t4allsite_update_7000(){
+function t4allsite_update_7001(&$sandbox){
   $modules = array(
     'max_length',
     'constant_contact',
