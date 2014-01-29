@@ -3033,7 +3033,7 @@ img {
 .view-id-tfall_marquee .flex-direction-nav {
   display: block;
 }
-@media screen and (max-device-width: 980px) {
+@media only screen and (max-device-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav {
     display: block !important;
   }
@@ -3064,7 +3064,7 @@ img {
     font-size: 4.70588rem;
   }
 }
-@media screen and (max-device-width: 980px) {
+@media only screen and (max-device-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a:before {
     display: block !important;
   }
