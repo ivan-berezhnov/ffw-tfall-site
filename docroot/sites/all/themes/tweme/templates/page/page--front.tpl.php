@@ -1,6 +1,6 @@
 <div class="container header">
   <div class="row-fluid">
-    <div class="uber-nav pull-left hidden-phone">
+    <div class="uber-nav pull-left visible-desktop">
 			<?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
@@ -31,7 +31,7 @@
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
-        <div class="visible-phone">
+        <div class="hidden-desktop">
           <?php print render($page['header']['menu_menu-uber-nav']); ?>
         </div>
       </nav>

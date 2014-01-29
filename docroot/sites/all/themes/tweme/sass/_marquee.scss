@@ -6,7 +6,7 @@
   background-color: $grey1;
   height: 465px;
   overflow: hidden;
-  @media screen and (max-width:585px) {
+  @media screen and (max-width: 600px) {
     background-color: transparent;
     height: auto;
   }
@@ -26,7 +26,7 @@
       &:before {
         font-family: 'icomoon';
         @include font-size(120);
-        @media screen and (max-width:585px) {
+        @media screen and (max-width: 600px) {
           top: 25%;
           @include font-size(80);
         }
@@ -41,7 +41,7 @@
   }
   li {
     border-right: 1px solid $grey1;
-    @media screen and (max-width:585px) {
+    @media screen and (max-width: 600px) {
       border: none;
     }
     &:last-child {
@@ -57,7 +57,7 @@
     @media screen and (max-width:1200px) {
       width: 585px;
     }
-    @media screen and (max-width:585px) {
+    @media screen and (max-width: 600px) {
       width: 90.8%;
       overflow: hidden;
     }
@@ -87,11 +87,18 @@
         color: $orange1;
       }
     }
+    @media screen and (max-width:480px) {
+      min-height: 40px;
+      padding: 20px;
+    }
   }
   .marquee-body {
     color: $grey1;
     padding: 0 20px 20px 20px;
     min-height: 40px;
+    @media screen and (max-width:480px) {
+      display: none;
+    }
   }
   .flex-viewport {
    overflow: visible !important; // inline javascript override!

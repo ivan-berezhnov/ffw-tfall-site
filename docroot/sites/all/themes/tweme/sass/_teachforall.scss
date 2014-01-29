@@ -579,7 +579,7 @@ h2 {
     padding: 0;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 979px) {
         background: none;
         box-shadow: none;
         margin-top: -40px;
@@ -597,7 +597,7 @@ h2 {
         outline: none;
       }
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 980px) {
         display: none;
       }
 
@@ -621,7 +621,7 @@ h2 {
       height: 40px;
       width: 100%;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 980px) {
         display: block;
       }
 
@@ -1093,6 +1093,7 @@ h2 {
           display: inline-block;
           padding: 7px 8px;
           margin-right: 5px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -1143,6 +1144,7 @@ h2 {
           display: inline-block;
           padding: 7px 8px;
           margin-right: 5px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -1194,6 +1196,9 @@ h2 {
   }
   .content {
 	width: 150px;
+  @media screen and (max-width:979px) {
+    width: 100%;
+  }
     > ul {
       > li {
         &:nth-of-type(4),
