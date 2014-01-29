@@ -19,7 +19,7 @@
 .view-id-tfall_marquee {
   .flex-direction-nav {
     display: block;
-    @media only screen and (max-device-width: 980px) {
+    @media only screen and (max-width: 980px) {
       display: block !important; // override flexslider default because left arrow was not showing up
     }
     a {
@@ -28,7 +28,7 @@
       font-size: 60px;
       height: 50px;
       z-index: 99999;
-      @media screen and (max-device-width: 980px) {
+      @media screen and (max-width: 980px) {
         color: $white;
         display: block;
       }
@@ -40,7 +40,7 @@
           top: 25%;
           @include font-size(80);
         }
-        @media only screen and (max-device-width: 980px) {
+        @media only screen and (max-width: 980px) {
           display: block !important; // override flexslider default because left arrow was not showing up
         }
       }

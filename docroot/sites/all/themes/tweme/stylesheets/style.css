@@ -3033,7 +3033,7 @@ img {
 .view-id-tfall_marquee .flex-direction-nav {
   display: block;
 }
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav {
     display: block !important;
   }
@@ -3045,7 +3045,7 @@ img {
   height: 50px;
   z-index: 99999;
 }
-@media screen and (max-device-width: 980px) {
+@media screen and (max-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a {
     color: white;
     display: block;
@@ -3064,7 +3064,7 @@ img {
     font-size: 4.70588rem;
   }
 }
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a:before {
     display: block !important;
   }
