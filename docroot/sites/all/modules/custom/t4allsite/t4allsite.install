@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_update_N().
+ *
+ * Enables modules
+ */
+function t4allsite_update_7000(){
+  $modules = array(
+    'max_length',
+    'constant_contact',
+  );
+  module_enable($modules);
+  drupal_flush_all_caches();
+}
