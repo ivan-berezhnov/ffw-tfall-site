@@ -894,12 +894,13 @@ h2.page-title {
   width: 100%;
 }
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
-  font-size: 16px;
-  font-size: 0.94118rem;
+  font-size: 14px;
+  font-size: 0.82353rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 20px;
+  font-family: "News Gothic Bold";
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
@@ -3034,6 +3035,11 @@ img {
   top: 35%;
   font-size: 60px;
   height: 50px;
+}
+@media screen and (max-device-width: 980px) {
+  .view-id-tfall_marquee .flex-direction-nav a {
+    display: block;
+  }
 }
 .view-id-tfall_marquee .flex-direction-nav a:before {
   font-family: 'icomoon';

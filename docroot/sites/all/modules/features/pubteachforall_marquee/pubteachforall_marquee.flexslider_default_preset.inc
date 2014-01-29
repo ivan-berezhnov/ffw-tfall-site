@@ -29,7 +29,7 @@ function pubteachforall_marquee_flexslider_default_presets() {
     'animationSpeed' => '600',
     'initDelay' => '0',
     'useCSS' => 1,
-    'touch' => 1,
+    'touch' => 0,
     'video' => 0,
     'keyboard' => 1,
     'multipleKeyboard' => 0,

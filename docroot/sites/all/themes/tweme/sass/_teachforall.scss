@@ -777,9 +777,10 @@ h2 {
                     width: 100%;
 
                     a {
-                      @include font-size(16);
+                      @include font-size(14);
                       @include box-sizing(border-box);
                       padding: 5px 20px;
+                      font-family: "News Gothic Bold";
 
                       @media screen and (min-width: 768px) and (max-width: 979px) {
                         padding: 5px 12px;
