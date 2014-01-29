@@ -3055,7 +3055,7 @@ img {
 }
 @media screen and (max-device-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a:before {
-    display: block;
+    display: block !important;
   }
 }
 .view-id-tfall_marquee .flex-direction-nav a.flex-next:before {

@@ -34,7 +34,7 @@
           @include font-size(80);
         }
         @media screen and (max-device-width: 980px) {
-          display: block;
+          display: block !important; // override flexslider default because left arrow was not showing up
         }
       }
       &.flex-next:before {
