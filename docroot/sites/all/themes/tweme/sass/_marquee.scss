@@ -18,17 +18,23 @@
 
 .view-id-tfall_marquee {
   .flex-direction-nav {
+    display: block;
+    @media screen and (max-device-width: 980px) {
+      display: block !important; // override flexslider default because left arrow was not showing up
+    }
     a {
       padding-top: 20px;
       top: 35%;
       font-size: 60px;
       height: 50px;
       @media screen and (max-device-width: 980px) {
+        color: $white;
         display: block;
       }
       &:before {
         font-family: 'icomoon';
         @include font-size(120);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
         @media screen and (max-width: 600px) {
           top: 25%;
           @include font-size(80);
