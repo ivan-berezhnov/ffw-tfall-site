@@ -3043,6 +3043,7 @@ img {
   top: 35%;
   font-size: 60px;
   height: 50px;
+  z-index: 99999;
 }
 @media screen and (max-device-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a {
