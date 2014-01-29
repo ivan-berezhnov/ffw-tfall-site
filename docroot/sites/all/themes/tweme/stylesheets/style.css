@@ -3053,6 +3053,11 @@ img {
     font-size: 4.70588rem;
   }
 }
+@media screen and (max-device-width: 980px) {
+  .view-id-tfall_marquee .flex-direction-nav a:before {
+    display: block;
+  }
+}
 .view-id-tfall_marquee .flex-direction-nav a.flex-next:before {
   content: "\e600";
 }

@@ -33,6 +33,9 @@
           top: 25%;
           @include font-size(80);
         }
+        @media screen and (max-device-width: 980px) {
+          display: block;
+        }
       }
       &.flex-next:before {
         content: "\e600";
