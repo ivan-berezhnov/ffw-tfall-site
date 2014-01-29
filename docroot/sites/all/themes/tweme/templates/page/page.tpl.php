@@ -134,8 +134,10 @@
         <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
         <div class="footer__contact-us">
           <?php
-          include 't4all_constant_contact_block.inc';
+          //including the file with the constant contact submit form block.
+          include ($directory."/includes/templates/t4all_constant_contact_block.inc");
           ?>
+        </div>
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2013<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
