@@ -2,11 +2,13 @@
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <div class="content"<?php print $content_attributes; ?>>
-      <h2 class="page-title date"><?php print format_date($node->created, 'short'); ?></h2>
+      <h2 class="page-title date">NEWS</h2>
 
     	<div class="row-fluid">
     	  <div class="span9">
-
+          <div class="slug">
+          <div class="news__category"><?php print format_date($node->created, 'short'); ?></div>
+        </div>
   		    <h1 class="news__title"><?php print $title; ?></h1>
 
   		    <div class="news__byline">
