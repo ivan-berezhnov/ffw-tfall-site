@@ -12,7 +12,7 @@ function misc_menu() {
     foreach ($customnodes as $key)
         $items[$key] = array(
             'page callback' => 'theme_render_template',
-            'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
+            'page arguments' => array(path_to_theme() . '/templates/node/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
             'access callback' => TRUE,
         );
 
