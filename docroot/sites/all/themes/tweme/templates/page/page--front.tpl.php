@@ -1,4 +1,13 @@
 <div class="container header">
+
+  <div class="navbar navbar-medium navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="sidr-toggle">
+        <?php print $navbar_toggler ?>
+      </div>
+    </div>
+  </div>
+
   <div class="row-fluid">
     <div class="uber-nav pull-left visible-desktop">
 			<?php print render($page['header']) ?>
@@ -24,9 +33,6 @@
 <!-- Navbar -->
 <div id="navbar" class="navbar navbar-medium navbar-inverse navbar-static-top">
 	<div class="navbar-inner">
-    <div class="sidr-toggle">
-      <?php print $navbar_toggler ?>
-    </div>
 
 		<div class="container">
 			<nav role="navigation">

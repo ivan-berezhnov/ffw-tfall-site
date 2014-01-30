@@ -647,6 +647,7 @@ h2.page-title {
 **/
 .header {
   margin-top: 10px;
+  position: relative;
 }
 
 .site-name {
@@ -700,6 +701,25 @@ h2.page-title {
 /**
 * #Primary Navigation
 **/
+.sidr-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 980px) {
+  .sidr-toggle {
+    display: none;
+  }
+}
+.sidr-toggle button {
+  outline: none;
+}
+.sidr-toggle .btn-navbar {
+  float: left;
+  padding: 8px;
+  margin: 0 5px 0 0;
+}
+
 .navbar {
   font-weight: bold;
 }
@@ -719,32 +739,6 @@ h2.page-title {
 }
 .navbar .navbar-inner ul {
   margin: 0;
-}
-.navbar .navbar-inner .sidr-toggle {
-  position: absolute;
-  left: 10px;
-  top: 0;
-}
-.navbar .navbar-inner .sidr-toggle button {
-  outline: none;
-}
-@media screen and (min-width: 980px) {
-  .navbar .navbar-inner .sidr-toggle {
-    display: none;
-  }
-}
-.navbar .navbar-inner .sidr-toggle .btn-navbar {
-  float: left;
-  padding: 8px;
-  margin: 0 5px 0 0;
-}
-.navbar .navbar-inner .sidr-toggle .btn-text {
-  display: inline-block;
-  float: left;
-  margin-top: 5px;
-  color: #eeeeee;
-  font-size: 12px;
-  font-size: 0.70588rem;
 }
 .navbar .navbar-inner .container {
   display: none;
@@ -1216,6 +1210,15 @@ h2.page-title {
   margin-top: 20px;
   font-size: 14px;
   font-size: 0.82353rem;
+}
+.footer__contact-us form label {
+  font-size: 14px;
+  font-size: 0.82353rem;
+}
+.footer__contact-us form .form-text {
+  background-color: #dfd9c9;
+  border-radius: 10px;
+  width: 83%;
 }
 .footer__contact-us a {
   color: #dfd9c9;

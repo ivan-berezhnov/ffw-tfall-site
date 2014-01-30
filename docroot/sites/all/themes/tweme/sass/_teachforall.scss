@@ -515,6 +515,7 @@ h2 {
 
 .header {
   margin-top: 10px;
+  position: relative;
 }
 
 .site-name {
@@ -569,6 +570,23 @@ h2 {
 * #Primary Navigation
 **/
 
+.sidr-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  @media screen and (min-width: 980px) {
+    display: none;
+  }
+  button {
+    outline: none;
+  }
+  .btn-navbar {
+    float: left;
+    padding: 8px;
+    margin: 0 5px 0 0;
+  }
+}
+
 .navbar {
   font-weight: bold;
 
@@ -587,33 +605,6 @@ h2 {
 
     ul {
       margin: 0;
-    }
-
-    .sidr-toggle {
-      position: absolute;
-      left: 10px;
-      top: 0;
-      button {
-        outline: none;
-      }
-
-      @media screen and (min-width: 980px) {
-        display: none;
-      }
-
-      .btn-navbar {
-        float: left;
-        padding: 8px;
-        margin: 0 5px 0 0;
-      }
-
-      .btn-text {
-        display: inline-block;
-        float: left;
-        margin-top: 5px;
-        color: $nearwhite;
-        @include font-size(12);
-      }
     }
 
     .container {
@@ -1168,6 +1159,16 @@ h2 {
   letter-spacing: 2px;
   margin-top: 20px;
   @include font-size(14);
+  form {
+    label {
+      @include font-size(14);
+    }
+    .form-text {
+      background-color: $beige;
+      border-radius: 10px;
+      width: 83%;
+    }
+  }
   a {
     color: $beige;
     &:hover {
