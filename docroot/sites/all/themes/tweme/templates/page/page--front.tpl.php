@@ -1,6 +1,6 @@
 <div class="container header">
 
-  <div class="navbar navbar-medium navbar-inverse navbar-static-top">
+  <div class="navbar navbar-medium navbar-inverse navbar-static-top hidden-desktop">
     <div class="navbar-inner">
       <div class="sidr-toggle">
         <?php print $navbar_toggler ?>

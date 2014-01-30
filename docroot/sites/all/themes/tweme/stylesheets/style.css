@@ -666,6 +666,7 @@ h2.page-title {
   min-height: 20px;
   letter-spacing: 1px;
   margin-right: 4px;
+  margin-top: 1px;
   padding: 0 5px;
   font-size: 14px;
   font-size: 0.82353rem;
@@ -3131,8 +3132,8 @@ img {
 }
 @media screen and (max-width: 480px) {
   .view-id-tfall_marquee .marquee-title {
-    min-height: 40px;
-    padding: 20px;
+    min-height: 60px;
+    padding: 10px;
   }
 }
 .view-id-tfall_marquee .marquee-body {
@@ -3143,6 +3144,11 @@ img {
 @media screen and (max-width: 480px) {
   .view-id-tfall_marquee .marquee-body {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .view-id-tfall_marquee .marquee-body {
+    min-height: 60px;
   }
 }
 .view-id-tfall_marquee .flex-viewport {
