@@ -731,7 +731,7 @@ h2.page-title {
   padding: 0;
   text-align: center;
 }
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 767px) {
   .navbar .navbar-inner {
     background: none;
     box-shadow: none;
@@ -746,7 +746,7 @@ h2.page-title {
   height: 40px;
   width: 100%;
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 768px) {
   .navbar .navbar-inner .container {
     display: block;
   }

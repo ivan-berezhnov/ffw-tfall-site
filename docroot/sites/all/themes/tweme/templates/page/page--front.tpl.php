@@ -1,15 +1,13 @@
 <div class="container header">
 
-  <div class="navbar navbar-medium navbar-inverse navbar-static-top hidden-desktop">
-    <div class="navbar-inner">
-      <div class="sidr-toggle">
-        <?php print $navbar_toggler ?>
-      </div>
+  <div class="navbar navbar-medium navbar-inverse navbar-static-top visible-phone">
+    <div class="sidr-toggle">
+      <?php print $navbar_toggler ?>
     </div>
   </div>
 
   <div class="row-fluid">
-    <div class="uber-nav pull-left visible-desktop">
+    <div class="uber-nav pull-left hidden-phone">
 			<?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
@@ -37,7 +35,7 @@
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
-        <div class="hidden-desktop">
+        <div class="visible-phone">
           <?php print render($page['header']['menu_menu-uber-nav']); ?>
         </div>
       </nav>

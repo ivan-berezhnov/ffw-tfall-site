@@ -1,15 +1,13 @@
 <div class="container header">
 
-  <div class="navbar navbar-medium navbar-inverse navbar-static-top hidden-desktop">
-    <div class="navbar-inner">
-      <div class="sidr-toggle">
-        <?php print $navbar_toggler ?>
-      </div>
+  <div class="navbar navbar-medium navbar-inverse navbar-static-top visible-phone">
+    <div class="sidr-toggle">
+      <?php print $navbar_toggler ?>
     </div>
   </div>
 
   <div class="row-fluid">
-    <div class="uber-nav pull-left visible-desktop">
+    <div class="uber-nav pull-left hidden-phone">
       <?php print render($page['header']) ?>
     </div>
     <div class="pull-right">
@@ -46,12 +44,12 @@
 </div>
 
 <?php if ($page['featured']): ?>
-<!-- Featured -->
-<div id="featured" class="container-wrapper hidden-phone">
-  <div class="container">
-    <?php print render($page['featured']) ?>
+  <!-- Featured -->
+  <div id="featured" class="container-wrapper hidden-phone">
+    <div class="container">
+      <?php print render($page['featured']) ?>
+    </div>
   </div>
-</div>
 <?php endif ?>
 
 <?php if ($preface): ?>

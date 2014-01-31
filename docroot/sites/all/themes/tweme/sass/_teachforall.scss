@@ -598,7 +598,7 @@ h2 {
     padding: 0;
     text-align: center;
 
-    @media screen and (max-width: 979px) {
+    @media screen and (max-width: 767px) {
         background: none;
         box-shadow: none;
         margin-top: -40px;
@@ -613,7 +613,7 @@ h2 {
       height: 40px;
       width: 100%;
 
-      @media screen and (min-width: 980px) {
+      @media screen and (min-width: 768px) {
         display: block;
       }
 
