@@ -1,4 +1,8 @@
 <?php
+//including the file with the functionality to refresh the custom nodes created in the misc.module misc_menu function.
+include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
+?>
+<?php
 /**
  * @file
  * Custom theme implementation to display a single Drupal page.

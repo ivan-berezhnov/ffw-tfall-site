@@ -20,6 +20,17 @@ function misc_menu() {
 }
 
 /*
+ * Implements hook_views_invalidate_cache (runs when a change is made to views.
+ *
+ * Used to set a flag when a view is updated in order that the menu cache is rebuilt.
+ * This allows the custom pages built in misc_menu to be refreshed with the updated views.
+ * The refresh functionality is implemented in page.tpl.php
+ */
+function misc_views_invalidate_cache(){
+   variable_set('custom_node_menu_rebuilt', FALSE);
+}
+
+/*
  * implements hook_theme()
  */
 function misc_theme() {
