@@ -9,17 +9,16 @@
         </div>
       </div>
     </div>
-    <div class="span3">
-	  <div>
-      <?php
-      //including the file with the constant contact submit form block.
-      include ($GLOBALS['theme_path']."/includes/templates/t4all_constant_contact_block.inc");
-      ?>
-
-    </div>
-      <?php print render(views_embed_view('tfall_tweets','block')); //twitter block ?>
-      <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
-      <?php print render($widget_facebook); ?>
+    <div class="span3 sidebar-right">
+  	  <div class="constant-contact">
+        <?php
+        //including the file with the constant contact submit form block.
+        include ($GLOBALS['theme_path']."/includes/templates/t4all_constant_contact_block.inc");
+        ?>
+      </div>
+        <?php print render(views_embed_view('tfall_tweets','block')); //twitter block ?>
+        <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
+        <?php print render($widget_facebook); ?>
     </div>
   </div>
   <a href="news/latest" class="full-list">More News <span class="orange2">>></span></a>

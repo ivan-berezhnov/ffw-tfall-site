@@ -3182,6 +3182,25 @@ img {
 
 /**/
 /**
+* #Constant Contact
+**/
+.sidebar-right .constant-contact .form-item input {
+  width: 95%;
+}
+
+.constant-contact .form-type-textfield {
+  margin: 0;
+}
+.constant-contact .btn-primary {
+  font-family: "News Gothic Bold";
+  text-shadow: none;
+}
+.constant-contact .btn-primary:active {
+  background-color: #cf4753;
+}
+
+/**/
+/**
 * #Table of Contents
 **/
 /**
