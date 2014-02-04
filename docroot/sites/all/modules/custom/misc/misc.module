@@ -54,6 +54,21 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
         $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
     }
 
+  if($form_id == 'constant_contact_signup_form_1'){
+    unset($form['captcha']);
+    $form['submit']['#value'] = t('Subscribe to our newsletter');
+    $form['#submit'][] = 'misc_constant_contact_signup_form_submit';
+  }
+
+}
+
+/*
+ * Function to override the constant_contact_signup_form_submit in order that it doesn't go to the homepage if the
+ * block settings for the redirect url.
+ */
+function misc_constant_contact_signup_form_submit($form, &$form_state)
+{
+  unset($form_state['redirect']);
 }
 
 /*
