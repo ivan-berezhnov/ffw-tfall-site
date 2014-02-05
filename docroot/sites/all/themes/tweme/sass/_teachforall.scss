@@ -59,26 +59,41 @@
 * #Font-Face
 **/
 
+
+// News Gothic Normal
 @font-face {
-    font-family: "News Gothic";
-    src: url('../fonts/NewsGothic-Book-webfont.eot');
-    src: url('../fonts/NewsGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/NewsGothic-Book-webfont.svg#NewsGothicFSBookRegular') format('svg'),
-         url('../fonts/NewsGothic-Book-webfont.woff') format('woff'),
-         url('../fonts/NewsGothic-Book-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "News Gothic";
+  src: url('../fonts/NewsGothic-Medium-webfont.eot');
+  src: url('../fonts/NewsGothic-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NewsGothic-Medium-webfont.woff') format('woff'),
+       url('../fonts/NewsGothic-Medium-webfont.ttf') format('truetype'),
+       url('../fonts/NewsGothic-Medium-webfont.svg#NewsGothicFSMediumRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
+// News Gothic Bold
 @font-face {
-    font-family: "News Gothic Bold";
-    src: url('../fonts/NewsGothic-Bold-webfont.eot');
-    src: url('../fonts/NewsGothic-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/NewsGothic-Bold-webfont.svg#NewsGothicFSMediumBold') format('svg'),
-         url('../fonts/NewsGothic-Bold-webfont.woff') format('woff'),
-         url('../fonts/NewsGothic-Bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "News Gothic";
+  src: url('../fonts/NewsGothic-DemiBold-webfont.eot');
+  src: url('../fonts/NewsGothic-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold') format('svg'),
+       url('../fonts/NewsGothic-DemiBold-webfont.woff') format('woff'),
+       url('../fonts/NewsGothic-DemiBold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// News Gothic Italic
+@font-face {
+  font-family: "News Gothic";
+  src: url('../fonts/NewsGothic-MediumObl-webfont.eot');
+  src: url('../fonts/NewsGothic-MediumObl-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NewsGothic-MediumObl-webfont.woff') format('woff'),
+       url('../fonts/NewsGothic-MediumObl-webfont.ttf') format('truetype'),
+       url('../fonts/NewsGothic-MediumObl-webfont.svg#NewsGothicFSMediumItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
 /**/
@@ -306,7 +321,7 @@ textarea:focus, input:focus{
   }
   background-color: $grey2;
   color: $white;
-  font-family: "News Gothic Bold";
+  font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
   padding: 6px 12px 6px 12px;
@@ -469,7 +484,7 @@ h2 {
 .slug {
   @include font-size(11);
   color: $orange1;
-  font-family: "News Gothic Bold";
+  font-weight: bold;
   letter-spacing: 1px;
   line-height: 14px;
   margin-bottom: 5px;
@@ -502,7 +517,7 @@ h2 {
 
 .stats {
   color: $grey1;
-  font-family: "News Gothic Bold";
+  font-weight: bold;
   line-height: 22px;
   @include font-size(18);
 }
@@ -772,7 +787,7 @@ h2 {
                       @include font-size(14);
                       @include box-sizing(border-box);
                       padding: 5px 20px;
-                      font-family: "News Gothic Bold";
+                      font-weight: bold;
 
                       @media screen and (min-width: 768px) and (max-width: 979px) {
                         padding: 5px 12px;
@@ -836,7 +851,7 @@ h2 {
           letter-spacing: 2px;
           margin-left: -1px;
           padding-left: 12px;
-          font-family: "News Gothic Bold";
+          font-weight: bold;
           &:hover {
             background-color: $orange1;
             color: $white;
@@ -1564,9 +1579,14 @@ img {max-width: 100%;}
 
   .tweets__info {
     color: $black;
-    font-family: "News Gothic Bold";
     text-transform: uppercase;
     @include font-size(12);
+    .field-content {
+      font-weight: bold;
+    }
+    .placeholder {
+      font-style: italic;
+    }
     a {
       color: $black;
     }
@@ -2107,7 +2127,7 @@ img {max-width: 100%;}
       .nl-front-tag {
         @include font-size(12);
         color: $orange1;
-        font-family: "News Gothic Bold";
+        font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 5px;
         letter-spacing: 1px;

@@ -17,7 +17,8 @@
     margin: 0;
   }
   .btn-primary {
-    font-family: "News Gothic Bold";
+    font-family: "News Gothic";
+    font-weight: bold;
     text-shadow: none;
     &:active {
       background-color: $red;
