@@ -83,7 +83,11 @@ NGCapsBookRegular=span.NewsGothicFSCapsBookRegular
 NGBookRegular=span.NewsGothicFSBookRegular
 NGBookItalic=span.NewsGothicFSBookItalic
 NGMediumBold=span.NewsGothicFSMediumBold
-NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic',
+NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic
+FSRegular3=span.FedraSerifScreenRegular3
+FSItalic3=span.FedraSerifScreenItalic3
+FSBold3=span.FedraSerifScreenBold3
+FSBoldItalic3=span.FedraSerifScreenBoldItalic3',
     ),
     'rdf_mapping' => array(),
   );

@@ -188,6 +188,31 @@
   font-family: "NewsGothicFSMediumBoldItalic";
 }
 
+.FedraSerifScreenRegular3 {
+  font-family: "Fedra Serif Screen Regular 3", "Fedra Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+.FedraSerifScreenItalic3 {
+  font-family: "Fedra Serif Screen Italic 3", "Fedra Serif";
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+}
+.FedraSerifScreenBold3 {
+  font-family: "Fedra Serif Screen Bold 3", "Fedra Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+}
+.FedraSerifScreenBoldItalic3 {
+  font-family: "Fedra Serif Screen Bold IZl5ds", "Fedra Serif";
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+}
+
 /**/
 
 
