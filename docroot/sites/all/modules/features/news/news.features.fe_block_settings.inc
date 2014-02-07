@@ -21,9 +21,6 @@ function news_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'seven' => array(
-        'theme' => 'seven',
-      ),
       'tweme' => array(
         'region' => 'content',
         'status' => 1,
@@ -44,9 +41,6 @@ function news_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'seven' => array(
-        'theme' => 'seven',
-      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,

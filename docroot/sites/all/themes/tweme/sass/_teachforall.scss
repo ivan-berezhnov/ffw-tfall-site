@@ -3,7 +3,6 @@
 **/
 
 /**
-    #Font-Face
     #Styleguide - Typography
     #Global Elements
     #Objects
@@ -54,49 +53,6 @@
     #News - Latest
     #Network Learning - Latest
 **/
-
-/**
-* #Font-Face
-**/
-
-
-// News Gothic Normal
-@font-face {
-  font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-Medium-webfont.eot');
-  src: url('../fonts/NewsGothic-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/NewsGothic-Medium-webfont.woff') format('woff'),
-       url('../fonts/NewsGothic-Medium-webfont.ttf') format('truetype'),
-       url('../fonts/NewsGothic-Medium-webfont.svg#NewsGothicFSMediumRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-// News Gothic Bold
-@font-face {
-  font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-DemiBold-webfont.eot');
-  src: url('../fonts/NewsGothic-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold') format('svg'),
-       url('../fonts/NewsGothic-DemiBold-webfont.woff') format('woff'),
-       url('../fonts/NewsGothic-DemiBold-webfont.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-// News Gothic Italic
-@font-face {
-  font-family: "News Gothic";
-  src: url('../fonts/NewsGothic-MediumObl-webfont.eot');
-  src: url('../fonts/NewsGothic-MediumObl-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/NewsGothic-MediumObl-webfont.woff') format('woff'),
-       url('../fonts/NewsGothic-MediumObl-webfont.ttf') format('truetype'),
-       url('../fonts/NewsGothic-MediumObl-webfont.svg#NewsGothicFSMediumItalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-/**/
 
 
 
@@ -550,7 +506,7 @@ h2 {
   margin-right: 4px;
   margin-top: 1px;
   padding: 0 5px;
-  @include font-size(14);
+  @include font-size(12);
 
   a {
     color: $white;
@@ -603,7 +559,6 @@ h2 {
 }
 
 .navbar {
-  font-weight: bold;
 
   .navbar-inner {
     background-color: $grey3;
@@ -648,8 +603,9 @@ h2 {
         font-style: normal;
         font-weight: normal;
         font-stretch: normal;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-transform: uppercase;
+        @include font-size(13);
 
         @media screen and (min-width: 768px) and (max-width: 979px) {
           @include font-size(11);
@@ -850,7 +806,6 @@ h2 {
           letter-spacing: 2px;
           margin-left: -1px;
           padding-left: 12px;
-          font-weight: bold;
           &:hover {
             background-color: $orange1;
             color: $white;

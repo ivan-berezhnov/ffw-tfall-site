@@ -74,7 +74,16 @@ Red=span.red
 Orange=span.orange
 Orange2=span.orange2
 Beige=span.beige
-Black=span.black',
+Black=span.black
+NewsGothicFSLightRegular=span.NewsGothicFSLightRegular
+NewsGothicFSLightItalic=span.NewsGothicFSLightItalic
+NewsGothicFSBookBoldItalic=span.NewsGothicFSBookBoldItalic
+NewsGothicFSCapsLightRegular=span.NewsGothicFSCapsLightRegular
+NewsGothicFSCapsBookRegular=span.NewsGothicFSCapsBookRegular
+NewsGothicFSBookRegular=span.NewsGothicFSBookRegular
+NewsGothicFSBookItalic=span.NewsGothicFSBookItalic
+NewsGothicFSMediumBold=span.NewsGothicFSMediumBold
+NewsGothicFSMediumBoldItalic=span.NewsGothicFSMediumBoldItalic',
     ),
     'rdf_mapping' => array(),
   );
