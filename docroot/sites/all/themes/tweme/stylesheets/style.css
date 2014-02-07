@@ -873,6 +873,7 @@ h2.page-title {
   box-sizing: border-box;
   padding: 5px 20px;
   font-weight: bold;
+  line-height: 1em;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
@@ -3278,6 +3279,46 @@ img {
   src: url("../fonts/NewsGothic-BoldOblique-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-BoldOblique-webfont.woff") format("woff"), url("../fonts/NewsGothic-BoldOblique-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-BoldOblique-webfont.svg#NewsGothicFSMediumBoldItalic") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+/**/
+/**
+* #Font Classes
+**/
+.NewsGothicFSLightRegular {
+  font-family: "NewsGothicFSLightRegular";
+}
+
+.NewsGothicFSLightItalic {
+  font-family: "NewsGothicFSLightItalic";
+}
+
+.NewsGothicFSBookBoldItalic {
+  font-family: "NewsGothicFSBookBoldItalic";
+}
+
+.NewsGothicFSCapsLightRegular {
+  font-family: "NewsGothicFSCapsLightRegular";
+}
+
+.NewsGothicFSCapsBookRegular {
+  font-family: "NewsGothicFSCapsBookRegular";
+}
+
+.NewsGothicFSBookRegular {
+  font-family: "NewsGothicFSBookRegular";
+}
+
+.NewsGothicFSBookItalic {
+  font-family: "NewsGothicFSBookItalic";
+}
+
+.NewsGothicFSMediumBold {
+  font-family: "NewsGothicFSMediumBold";
+}
+
+.NewsGothicFSMediumBoldItalic {
+  font-family: "NewsGothicFSMediumBoldItalic";
 }
 
 /**/
