@@ -3093,13 +3093,23 @@ img {
   color: white;
   left: 15px;
 }
+@media screen and (min-width: 980px) {
+  .view-id-tfall_marquee .flexslider:hover .flex-prev {
+    left: -50px;
+  }
+}
 .view-id-tfall_marquee .flexslider:hover .flex-next {
   color: white;
   right: 15px;
 }
+@media screen and (min-width: 980px) {
+  .view-id-tfall_marquee .flexslider:hover .flex-next {
+    right: -50px;
+  }
+}
 .view-id-tfall_marquee .marquee-body,
 .view-id-tfall_marquee .marquee-title {
-  background-color: #4d4d4d;
+  background-color: #3c3835;
   font-family: "Fedra Serif Screen Regular 3";
 }
 .view-id-tfall_marquee .marquee-title {
@@ -3118,7 +3128,7 @@ img {
   }
 }
 .view-id-tfall_marquee .marquee-body {
-  color: #91998c;
+  color: #999999;
   padding: 0 20px 20px 20px;
   min-height: 40px;
 }
@@ -3319,6 +3329,34 @@ img {
 
 .NewsGothicFSMediumBoldItalic {
   font-family: "NewsGothicFSMediumBoldItalic";
+}
+
+.FedraSerifScreenRegular3 {
+  font-family: "Fedra Serif Screen Regular 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+.FedraSerifScreenItalic3 {
+  font-family: "Fedra Serif Screen Italic 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+.FedraSerifScreenBold3 {
+  font-family: "Fedra Serif Screen Bold 3";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+.FedraSerifScreenBoldItalic3 {
+  font-family: "Fedra Serif Screen Bold IZl5ds";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
 }
 
 /**/

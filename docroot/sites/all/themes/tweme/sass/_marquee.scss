@@ -78,18 +78,24 @@
       .flex-prev {
         color: $white;
         left: 15px;
+        @media screen and (min-width:980px) {
+          left: -50px;
+        }
         //opacity: 1;
       }
       .flex-next {
         color: white;
         right: 15px;
+        @media screen and (min-width:980px) {
+          right: -50px;
+        }
         //opacity: 1;
       }
     }
   }
   .marquee-body,
   .marquee-title {
-    background-color: $grey2;
+    background-color: $grey3;
     font-family: "Fedra Serif Screen Regular 3";
   }
   .marquee-title {
@@ -106,7 +112,7 @@
     }
   }
   .marquee-body {
-    color: $grey1;
+    color: $grey4;
     padding: 0 20px 20px 20px;
     min-height: 40px;
     @media screen and (max-width:480px) {
