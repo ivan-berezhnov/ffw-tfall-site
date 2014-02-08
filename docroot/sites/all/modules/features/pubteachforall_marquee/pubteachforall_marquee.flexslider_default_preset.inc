@@ -55,7 +55,7 @@ function pubteachforall_marquee_flexslider_default_presets() {
     'randomize' => 0,
     'thumbCaptions' => 0,
     'thumbCaptionsBoth' => 0,
-    'animationLoop' => 1,
+    'animationLoop' => 0,
     'pauseOnAction' => 1,
     'pauseOnHover' => 0,
     'manualControls' => '',

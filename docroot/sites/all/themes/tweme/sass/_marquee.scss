@@ -74,6 +74,9 @@
       width: 90.8%;
       overflow: hidden;
     }
+    .flex-direction-nav a.flex-disabled {
+       display:none;
+    }
     &:hover {
       .flex-prev {
         color: $white;

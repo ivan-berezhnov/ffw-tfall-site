@@ -3089,6 +3089,9 @@ img {
     overflow: hidden;
   }
 }
+.view-id-tfall_marquee .flexslider .flex-direction-nav a.flex-disabled {
+  display: none;
+}
 .view-id-tfall_marquee .flexslider:hover .flex-prev {
   color: white;
   left: 15px;
