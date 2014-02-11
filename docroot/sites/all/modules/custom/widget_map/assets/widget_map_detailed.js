@@ -6,7 +6,8 @@
 				center: [30, 25],
 				zoom: 2,
 				minZoom: 2,
-				maxZoom: 5
+				maxZoom: 5,
+				maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 210))
 			}),
 			$mapTitle = $('.worldmap__title'),
 			$zoomControls = $('.leaflet-control-zoom'),
@@ -58,26 +59,46 @@
 				marker.setIcon(L.icon(feature.properties.icon));
 
 				var popupContent =
+								'<a class="popup" href="' + feature.properties.url + '">' +
 								'<div class="slug">' + feature.properties.title + '</div>' +
-								'<div class="widget-map__blurb">' + feature.properties.blurb + '</div>';
+								'<div class="widget-map__blurb">' + feature.properties.blurb + '</div>'
+								+ '</a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
 					minWidth: 320
 				});
+
+				marker.on('click', function(e){
+					window.location = $(marker._popup._content).attr('href');
+				});
 			});
 
 			map.markerLayer.on('mouseover',function(e) {
-				$mapTitle.hide()
-				$zoomControls.hide();
+				//$mapTitle.hide()
+				//$zoomControls.hide();
 				e.layer.openPopup();
 			});
 
-			map.markerLayer.on('mouseout',function(e) {
-				$mapTitle.show();
-				$zoomControls.show();
-				e.layer.closePopup();
+			// map.markerLayer.on('mouseout',function(e) {
+			// 	$mapTitle.show();
+			// 	$zoomControls.show();
+			// 	//e.layer.closePopup();
+			// });
+
+			map.on('popupopen', function(e){
+
+				// had to go outside leaflet because they don't seem
+				// to expose any methods to handle hover events on popups
+				var popup = $('.leaflet-popup-content-wrapper');
+				
+				// using mouseleave as mouseout fires when hovering over
+				// child elements
+				popup.on('mouseleave', function(e){
+					map.closePopup();
+				});
 			});
+
 
 			if (hasTouch) {
 				map.markerLayer.on('click', function(e) {

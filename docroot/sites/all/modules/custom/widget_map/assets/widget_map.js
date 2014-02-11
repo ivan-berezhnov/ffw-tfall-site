@@ -6,7 +6,8 @@
 					center: [30, 25],
 					zoom: 2,
 					minZoom: 2,
-					maxZoom: 5
+					maxZoom: 5,
+					maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 210))
 				}),
 				$mapTitle = $('.worldmap__title'),
 				fadeAnimateTime = 200,
@@ -76,13 +77,12 @@
 
 				marker.on('click', function(e){
 					window.location = $(marker._popup._content).attr('href');
-				})
+				});
 					
 			});
 
 			if (noTouch) {
 				map.markerLayer.on('mouseover',function(e) {
-					$mapTitle.fadeOut(fadeAnimateTime);
 					e.layer.openPopup();
 				});
 
