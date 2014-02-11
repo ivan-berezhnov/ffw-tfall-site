@@ -44,7 +44,6 @@ function _widget_map_listofall() {
 
 function _widget_map_detailedlist() {
 
-	sleep(1);
 	$query = new EntityFieldQuery();
 
 	$result = $query->entityCondition('entity_type', 'node')
