@@ -34,7 +34,7 @@ function pubteachforall_marquee_fe_nodequeue_export_fields() {
     'name' => 'marquee',
     'title' => 'Marquee',
     'subqueue_title' => '',
-    'size' => 4,
+    'size' => 0,
     'link' => '',
     'link_remove' => '',
     'owner' => 'nodequeue',
