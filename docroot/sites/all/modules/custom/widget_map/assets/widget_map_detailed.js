@@ -12,15 +12,24 @@
                 fadeAnimateTime = 200,
                 noTouch = $('html').hasClass('no-touch');
 
+            var l = L.layerGroup().addTo(map)
+
+            iamready = function() {
+                $.ajax({
+                    url: '/widget_map_detailedlist.json',
+                    success: function parseJson(data) {
+
+//                        map.markerLayer.setGeoJSON(data);
+                        l.setGeoJSON(data);
+                       
+                    }
+                });
+            }
+map.
+            map.whenReady(iamready);
+
             map.doubleClickZoom.disable();
             map.scrollWheelZoom.disable();
-
-            $.ajax({
-                url: '/widget_map_detailedlist.json',
-                success: function parseJson(data) {
-                    map.markerLayer.setGeoJSON(data);
-                }
-            });
 
             toggleMapTitle = function (element) {
                 var $mapPopup = $('.leaflet-popup-pane');
