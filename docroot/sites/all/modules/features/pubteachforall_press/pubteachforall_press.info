@@ -32,4 +32,5 @@ features[variable][] = menu_parent_press
 features[variable][] = node_options_press
 features[variable][] = node_preview_press
 features[variable][] = node_submitted_press
+features[variable][] = pathauto_node_press_pattern
 features[views_view][] = press

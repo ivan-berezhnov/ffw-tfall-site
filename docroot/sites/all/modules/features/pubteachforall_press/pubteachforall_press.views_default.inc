@@ -166,7 +166,6 @@ function pubteachforall_press_views_default_views() {
     'image_link' => 'content',
   );
   $handler->display->display_options['path'] = 'press-view';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Press';
   $handler->display->display_options['menu']['description'] = 'Press';
   $handler->display->display_options['menu']['weight'] = '0';
