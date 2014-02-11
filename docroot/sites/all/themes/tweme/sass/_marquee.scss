@@ -19,15 +19,18 @@
 .view-id-tfall_marquee {
   .flex-direction-nav {
     display: block;
-    @media only screen and (max-width: 980px) {
-      display: block !important; // override flexslider default because left arrow was not showing up
-    }
     a {
+      color: $white;
+      display: block !important; // flexslider override
       padding-top: 20px;
+      opacity: 1;
       top: 35%;
       font-size: 60px;
       height: 50px;
       z-index: 99999;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
       @media screen and (max-width: 980px) {
         color: $white;
         display: block;
@@ -39,9 +42,6 @@
         @media screen and (max-width: 600px) {
           top: 25%;
           @include font-size(80);
-        }
-        @media only screen and (max-width: 980px) {
-          display: block !important; // override flexslider default because left arrow was not showing up
         }
       }
       &.flex-next:before {
@@ -79,6 +79,7 @@
       .flex-prev {
         color: $white;
         left: 15px;
+        opacity: 1;
         @media screen and (min-width:980px) {
           left: -50px;
         }
@@ -86,6 +87,7 @@
       }
       .flex-next {
         color: white;
+        opacity: 1;
         right: 15px;
         @media screen and (min-width:980px) {
           right: -50px;
