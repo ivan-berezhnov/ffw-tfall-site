@@ -14,19 +14,8 @@
 
             var l = L.layerGroup().addTo(map)
 
-            iamready = function() {
-                $.ajax({
-                    url: '/widget_map_detailedlist.json',
-                    success: function parseJson(data) {
-
-//                        map.markerLayer.setGeoJSON(data);
-                        l.setGeoJSON(data);
-                       
-                    }
-                });
-            }
-map.
-            map.whenReady(iamready);
+            var featureLayer = L.mapbox.featureLayer(null).addTo(map);
+            featureLayer.loadURL('/widget_map_detailedlist.json');
 
             map.doubleClickZoom.disable();
             map.scrollWheelZoom.disable();
@@ -66,7 +55,7 @@ map.
                 }
             }
 
-            map.markerLayer.on('layeradd', function (e) {
+            featureLayer.on('layeradd', function (e) {
                 var marker = e.layer, feature = marker.feature;
 
                 marker.setIcon(L.icon(feature.properties.icon));
@@ -74,9 +63,6 @@ map.
                 var popupContent =
                     '<div class="slug">' + feature.properties.title + '</div>' +
                         '<div class="widget-map__blurb">' + feature.properties.blurb + '</div>';
-
-
-
 
                 marker.bindPopup(popupContent, {
                     closeButton: false,
@@ -90,7 +76,7 @@ map.
             });
 
             if (noTouch) {
-                map.markerLayer.on('mouseover', function (e) {
+                featureLayer.on('mouseover', function (e) {
                     $mapTitle.fadeOut(fadeAnimateTime);
                     e.layer.openPopup();
                 });
@@ -112,7 +98,7 @@ map.
                 });
             }
 
-            map.markerLayer.on('click', function (e) {
+            featureLayer.on('click', function (e) {
                 toggleMapTitle('marker');
             });
 
