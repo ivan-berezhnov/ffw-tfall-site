@@ -330,7 +330,8 @@ html {
 
 .btn-primary {
   background-color: $orange1;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $red;
   }
 }

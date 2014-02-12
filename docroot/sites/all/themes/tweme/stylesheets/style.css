@@ -463,7 +463,7 @@ html.js input.throbbing {
 .btn-primary {
   background-color: #e69740;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
   background-color: #cf4753;
 }
 
