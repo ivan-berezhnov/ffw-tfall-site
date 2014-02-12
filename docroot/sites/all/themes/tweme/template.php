@@ -83,8 +83,8 @@ function tweme_js_alter(&$js) {
  * Implements hook_preprocess_field
  * extend support for fields
  */
-function tweme_preprocess_page(&$variables){
-  $constant_contact_block = module_invoke('constant_contact', 'block_view', '1');
+function tweme_preprocess_page(&$variables, $hook){
+  $variables['constant_contact_block'] = module_invoke('constant_contact', 'block_view', '1');
 }
 
 /*
