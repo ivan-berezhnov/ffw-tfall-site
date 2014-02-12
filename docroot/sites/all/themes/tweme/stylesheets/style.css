@@ -3173,17 +3173,65 @@ img {
 /**
 * #Constant Contact
 **/
-.sidebar-right .constant-contact .form-item input {
-  width: 95%;
+.sidebar-right .constant-contact {
+  min-height: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-right .constant-contact {
+    min-height: 80px;
+  }
+}
+.sidebar-right .constant-contact form {
+  margin: 0;
+}
+.sidebar-right .constant-contact .btn-primary {
+  background-color: #92998d;
+  font-family: "Fedra Serif Screen Regular 3";
+}
+.sidebar-right .constant-contact .btn-primary:hover {
+  background-color: #cf4753;
+}
+.sidebar-right .constant-contact .form-type-textfield input {
+  width: 88%;
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-right .constant-contact .form-type-textfield input {
+    width: 93%;
+  }
+}
+
+.footer__contact-us .constant-contact form .form-text {
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .constant-contact .form-type-textfield {
   margin: 0;
+  float: left;
+  width: 65%;
+}
+@media screen and (max-width: 1200px) {
+  .constant-contact .form-type-textfield {
+    width: 100%;
+  }
 }
 .constant-contact .btn-primary {
-  font-family: "News Gothic";
-  font-weight: bold;
+  float: left;
+  font-weight: normal;
+  letter-spacing: 2px;
   text-shadow: none;
+  height: 30px;
+  width: 35%;
+}
+@media screen and (max-width: 1200px) {
+  .constant-contact .btn-primary {
+    float: none;
+    clear: both;
+    width: auto;
+  }
 }
 .constant-contact .btn-primary:active {
   background-color: #cf4753;
