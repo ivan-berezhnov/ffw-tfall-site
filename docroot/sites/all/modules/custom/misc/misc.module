@@ -64,10 +64,13 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
 
 /*
  * Function to override the constant_contact_signup_form_submit in order that it doesn't go to the homepage if the
- * block settings for the redirect url.
+ * block settings for the redirect url aren't set. Set status msg to "Success, you are now subscribed to our newsletter"
  */
 function misc_constant_contact_signup_form_submit($form, &$form_state)
 {
+if ($_SESSION['messages']['status']['0'] === "Success, you are now subscribed to our mailing list"){
+  $_SESSION['messages']['status']['0'] = "Success, you are now subscribed to our newsletter";
+}
   unset($form_state['redirect']);
 }
 
