@@ -189,10 +189,10 @@ body {
 }
 
 .footer-link-beige {
-  @include font-size(14);
+  @include font-size(11);
   color: $beige;
-  font-family: "Fedra Serif Screen Regular 3";
-  letter-spacing: 2px;
+  font-family: "Fedra Serif Screen Bold 3";
+  letter-spacing: .2em;
   text-transform: uppercase;
   &:hover {
     color: $white;
@@ -394,11 +394,11 @@ div.messages {
 h2 {
   &.page-title {
     color: $orange1;
-    letter-spacing: 3px;
+    letter-spacing: .2em;
     line-height: 30px;
     margin-top: 0;
     text-transform: uppercase;
-    @include font-size(30);
+    @include font-size(26);
 
     @media screen and (max-width: 350px) {
       @include font-size(24);
@@ -454,6 +454,7 @@ h2 {
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  letter-spacing: .2em;
   line-height: 1.5em;
   text-transform: uppercase;
   @include font-size(16);
@@ -503,11 +504,11 @@ h2 {
   font-weight: normal;
   font-stretch: normal;
   min-height: 20px;
-  letter-spacing: 1px;
+  letter-spacing: .2em;
   margin-right: 4px;
   margin-top: 1px;
   padding: 0 5px;
-  @include font-size(12);
+  @include font-size(11);
 
   a {
     color: $white;
@@ -604,9 +605,9 @@ h2 {
         font-style: normal;
         font-weight: normal;
         font-stretch: normal;
-        letter-spacing: 2px;
+        letter-spacing: .2em;
         text-transform: uppercase;
-        @include font-size(13);
+        @include font-size(11);
 
         @media screen and (min-width: 768px) and (max-width: 979px) {
           @include font-size(11);
@@ -805,7 +806,6 @@ h2 {
           border-right: none;
         }
         > a {
-          letter-spacing: 2px;
           margin-left: -1px;
           padding-left: 12px;
           &:hover {
@@ -828,7 +828,9 @@ h2 {
     }
   }
   a {
+    font-weight: bold;
     color: $grey5;
+    letter-spacing: .1em;
     padding: 5px 10px;
     text-transform: uppercase;
     @include font-size(11);
@@ -1143,6 +1145,8 @@ h2 {
   }
   a {
     color: $beige;
+    letter-spacing: .2em;
+    @include font-size(11);
     &:hover {
       color: $white;
     }
@@ -1235,7 +1239,8 @@ h2 {
           list-style-image: none;
           margin: 0;
           a {
-            @extend .footer-link-grey;
+            @include font-size(16);
+            color: $grey4;
           }
         }
       }
@@ -1259,8 +1264,8 @@ h2 {
     font-weight: normal;
     font-stretch: normal;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    @include font-size(14);
+    letter-spacing: .2em;
+    @include font-size(11);
   }
 
   a {
@@ -2173,6 +2178,7 @@ img {max-width: 100%;}
 
 .no__stats {
   color: $grey1;
+  font-weight: bold;
   @include font-size(18);
   strong {
     color: $black;
