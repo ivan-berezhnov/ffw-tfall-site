@@ -3041,6 +3041,7 @@ img {
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
+  width: 45px;
 }
 @media screen and (max-width: 980px) {
   .view-id-tfall_marquee .flex-direction-nav a {
