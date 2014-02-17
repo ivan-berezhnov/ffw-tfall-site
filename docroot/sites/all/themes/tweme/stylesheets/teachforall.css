@@ -1591,7 +1591,6 @@ html.pc.chrome .marquee__preview {
 
 .no__map-main-img {
   width: 292px;
-  height: 164px;
 }
 
 #worldmap {
@@ -1615,7 +1614,7 @@ html.pc.chrome .marquee__preview {
   background-color: #80b4e4;
 }
 .worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  height: 300px;
+  height: 92px;
 }
 
 .worldmap__title {
@@ -1624,12 +1623,13 @@ html.pc.chrome .marquee__preview {
   box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
-  top: 30px;
+  bottom: 45px;
   left: 0;
   text-align: center;
   width: 100%;
   padding: 0 45px;
   z-index: 99;
+  font-size: .9em;
 }
 
 #map {
@@ -1640,7 +1640,14 @@ html.pc.chrome .marquee__preview {
 #map .leaflet-map-pane {
   width: 100%;
 }
-
+#map .popup img {
+  width: 130px;
+  float: left;
+  margin-right: 10px;
+}
+#map .popup h2 {
+  line-height: 1;
+}
 .leaflet-bar {
   border: none;
   border-radius: 0;
@@ -1666,14 +1673,19 @@ html.pc.chrome .marquee__preview {
 
 .leaflet-popup-pane {
   z-index: 9999;
+  top: -21px;
 }
 .leaflet-popup-pane a {
   color: #91998c;
-}
-.leaflet-popup-pane a:hover {
-  color: #e69740;
+  display: block;
+  overflow: hidden;
 }
 
+.leaflet-popup-pane a span {
+  display: block;
+  text-transform: uppercase;
+  font-size: .8em;
+}
 .leaflet-popup-content-wrapper {
   -webkit-box-shadow: 3px 3px 14px #888888;
   -moz-box-shadow: 3px 3px 14px #888888;
@@ -1683,7 +1695,6 @@ html.pc.chrome .marquee__preview {
   margin: 9px;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
-  text-align: right;
   font-size: 11px;
   font-size: 0.64706rem;
   color: #e69740;
@@ -1691,34 +1702,8 @@ html.pc.chrome .marquee__preview {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 3px;
-  margin-bottom: -19px;
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .btn {
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  border-radius: 13px;
-  text-shadow: none;
-  font-size: 16px;
-  font-size: 0.94118rem;
-  position: absolute;
-  bottom: 32px;
-  right: 10px;
-  background: #3c3835 url(../images/grey-more-btn-bg.png) left top repeat-x;
-  color: white;
-  line-height: 26px;
-  padding: 0px 17px;
-  font-family: "News Gothic";
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .btn:hover {
-  color: white;
-  background: #4d4d4d;
 }
 
-html.pc.chrome .leaflet-popup-content-wrapper .btn {
-  font-family: sans-serif;
-}
 
 /**/
 /**
