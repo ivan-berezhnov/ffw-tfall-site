@@ -64,7 +64,7 @@
 
 h1, .h1 {
   color: $grey2;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -79,7 +79,7 @@ h1, .h1 {
 
 h2, .h2 {
   @include font-size(25);
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -91,7 +91,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -129,14 +129,14 @@ body {
   color: $grey2;
   @include font-size(16);
   line-height: 20px;
-  font-family: "News Gothic";
+  font-family: $NewsGothicOLD;
 }
 
 .body {
   color: $grey1;
   @include font-size(17);
   line-height: 25px;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -155,7 +155,7 @@ body {
 
 .large-body {
   color: $grey1;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -191,7 +191,7 @@ body {
 .footer-link-beige {
   @include font-size(11);
   color: $beige;
-  font-family: "Fedra Serif Screen Bold 3";
+  font-family: $FedraSerifOLD; font-weight: bold;
   letter-spacing: .2em;
   text-transform: uppercase;
   &:hover {
@@ -345,7 +345,7 @@ html {
   color: $white;
   line-height: 26px;
   padding: 4px 44px;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -450,7 +450,7 @@ h2 {
 
 .slug-medium {
   color: $orange1;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -462,7 +462,7 @@ h2 {
 
 .slug-large {
   color: $orange1;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -499,9 +499,9 @@ h2 {
 
 .donate {
   background-color: $orange1;
-  font-family: "Fedra Serif Screen Bold 3";
+  font-family: $FedraSerifOLD; font-weight: bold;
   font-style: normal;
-  font-weight: normal;
+  //font-weight: normal;
   font-stretch: normal;
   min-height: 20px;
   letter-spacing: .2em;
@@ -601,9 +601,9 @@ h2 {
       }
 
       .region-main-navigation {
-        font-family: "Fedra Serif Screen Bold 3";
+        font-family: $FedraSerifOLD; font-weight: bold;
         font-style: normal;
-        font-weight: normal;
+        //font-weight: normal;
         font-stretch: normal;
         letter-spacing: .2em;
         text-transform: uppercase;
@@ -734,7 +734,7 @@ h2 {
                   li {
                     line-height: 20px;
                     border-top: 1px solid $border_color1;
-                    font-family: "News Gothic";
+                    font-family: $NewsGothicOLD;
                     letter-spacing: 0;
                     margin: 0;
                     padding: 0;
@@ -1125,9 +1125,10 @@ h2 {
 
 .footer__contact-us {
   color: #DFD9C9;
-  font-family: "Fedra Serif Screen Bold 3";
+  font-family: $FedraSerifOLD;
+  font-weight: bold;
   font-style: normal;
-  font-weight: normal;
+  //font-weight: normal;
   font-stretch: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1259,7 +1260,7 @@ h2 {
 
   p, a {
     color: $beige;
-    font-family: "Fedra Serif Screen Bold 3";
+    font-family: $FedraSerifOLD; font-weight: bold;
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
@@ -1320,7 +1321,7 @@ img {max-width: 100%;}
   text-align: center;
   .title {
     color: $orange2;
-    font-family: "Fedra Serif Screen Regular 3";
+    font-family: $FedraSerifOLD;
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
@@ -1481,7 +1482,7 @@ img {max-width: 100%;}
       color: $white;
       line-height: 26px;
       padding: 0px 17px;
-      font-family: "News Gothic";
+      font-family: $NewsGothicOLD;
 
       &:hover {
         color: $white;
@@ -2051,7 +2052,7 @@ img {max-width: 100%;}
 
   a.network-learning-main {
     @include font-size(16);
-    font-family: "Fedra Serif Screen Regular 3";
+    font-family: $FedraSerifOLD;
     font-style: normal;
     font-weight: normal;
     font-stretch: normal;
@@ -2096,7 +2097,7 @@ img {max-width: 100%;}
       .nl-front-title {
         a {
           @include font-size(22);
-          font-family: "Fedra Serif Screen Regular 3";
+          font-family: $FedraSerifOLD;
           font-style: normal;
           font-weight: normal;
           font-stretch: normal;
@@ -2146,7 +2147,7 @@ img {max-width: 100%;}
   .node {
     a {
       @include font-size(18);
-      font-family: "News Gothic";
+      font-family: $NewsGothicOLD;
     }
   }
 }
@@ -2352,7 +2353,7 @@ img {max-width: 100%;}
 }
 
 .news__content {
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -2513,7 +2514,7 @@ img {max-width: 100%;}
 
 .group_row_byline {
   color: $grey4;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -2993,7 +2994,7 @@ img {max-width: 100%;}
 
 .flexslider-preview {
   color: $grey1;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifOLD;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
