@@ -1,11 +1,40 @@
 /**
+* #Font Variables
+**/
+
+$NewsGothicRegular:             "News Gothic";
+$NewsGothicFSLightRegular:      "NewsGothicFSLightRegular";
+$NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
+$NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
+$NewsGothicFSCapsLightRegular:  "NewsGothicFSCapsLightRegular";
+$NewsGothicFSCapsBookRegular:   "NewsGothicFSCapsBookRegular";
+$NewsGothicFSBookRegular:       "NewsGothicFSBookRegular";
+$NewsGothicFSBookItalic:        "NewsGothicFSBookItalic";
+$NewsGothicFSMediumBold:        "NewsGothicFSMediumBold";
+$NewsGothicFSMediumBoldItalic:  "NewsGothicFSMediumBoldItalic";
+
+$FedraSerifScreenRegular3:      "Fedra Serif Screen Regular 3";
+$FedraSerifScreenItalic3:       "Fedra Serif Screen Italic 3";
+$FedraSerifScreenBold3:         "Fedra Serif Screen Bold 3";
+$FedraSerifScreenBoldItalic3:   "Fedra Serif Screen Bold IZl5ds";
+
+$NewsGothicOLD: "News Gothic Old";
+$FedraSerifOLD: "Fedra Serif Old";
+
+/**/
+
+
+
+
+
+/**
 * #Font-Face
 **/
 
 
-// News Gothic Normal
+// News Gothic
 @font-face {
-  font-family: "News Gothic";
+  font-family: $NewsGothicRegular;
   src: url('../fonts/NewsGothic-Medium-webfont.eot');
   src: url('../fonts/NewsGothic-Medium-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/NewsGothic-Medium-webfont.woff') format('woff'),
@@ -15,9 +44,8 @@
   font-style: normal;
 }
 
-// News Gothic Bold
 @font-face {
-  font-family: "News Gothic";
+  font-family: $NewsGothicRegular;
   src: url('../fonts/NewsGothic-DemiBold-webfont.eot');
   src: url('../fonts/NewsGothic-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold') format('svg'),
@@ -27,9 +55,8 @@
   font-style: normal;
 }
 
-// News Gothic Italic
 @font-face {
-  font-family: "News Gothic";
+  font-family: $NewsGothicRegular;
   src: url('../fonts/NewsGothic-MediumObl-webfont.eot');
   src: url('../fonts/NewsGothic-MediumObl-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/NewsGothic-MediumObl-webfont.woff') format('woff'),
@@ -40,7 +67,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSLightRegular";
+    font-family: $NewsGothicFSLightRegular;
     src: url('../fonts/NewsGothic-Light-webfont.eot');
     src: url('../fonts/NewsGothic-Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-Light-webfont.woff') format('woff'),
@@ -51,7 +78,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSLightItalic";
+    font-family: $NewsGothicFSLightItalic;
     src: url('../fonts/NewsGothic-LightOblique-webfont.eot');
     src: url('../fonts/NewsGothic-LightOblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-LightOblique-webfont.woff') format('woff'),
@@ -62,7 +89,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSBookBoldItalic";
+    font-family: $NewsGothicFSBookBoldItalic;
     src: url('../fonts/NewsGothic-DemiBoldObl-webfont.eot');
     src: url('../fonts/NewsGothic-DemiBoldObl-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-DemiBoldObl-webfont.woff') format('woff'),
@@ -73,7 +100,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSCapsLightRegular";
+    font-family: $NewsGothicFSCapsLightRegular;
     src: url('../fonts/NewsGothicCaps-Light-webfont.eot');
     src: url('../fonts/NewsGothicCaps-Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothicCaps-Light-webfont.woff') format('woff'),
@@ -84,7 +111,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSCapsBookRegular";
+    font-family: $NewsGothicFSCapsBookRegular;
     src: url('../fonts/NewsGothicCaps-Book-webfont.eot');
     src: url('../fonts/NewsGothicCaps-Book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothicCaps-Book-webfont.woff') format('woff'),
@@ -95,7 +122,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSBookRegular";
+    font-family: $NewsGothicFSBookRegular;
     src: url('../fonts/NewsGothic-Book-webfont.eot');
     src: url('../fonts/NewsGothic-Book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-Book-webfont.woff') format('woff'),
@@ -106,7 +133,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSBookItalic";
+    font-family: $NewsGothicFSBookItalic;
     src: url('../fonts/NewsGothic-BookOblique-webfont.eot');
     src: url('../fonts/NewsGothic-BookOblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-BookOblique-webfont.woff') format('woff'),
@@ -117,7 +144,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSMediumBold";
+    font-family: $NewsGothicFSMediumBold;
     src: url('../fonts/NewsGothic-Bold-webfont.eot');
     src: url('../fonts/NewsGothic-Bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-Bold-webfont.woff') format('woff'),
@@ -128,7 +155,7 @@
 }
 
 @font-face {
-    font-family: "NewsGothicFSMediumBoldItalic";
+    font-family: $NewsGothicFSMediumBoldItalic;
     src: url('../fonts/NewsGothic-BoldOblique-webfont.eot');
     src: url('../fonts/NewsGothic-BoldOblique-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/NewsGothic-BoldOblique-webfont.woff') format('woff'),
@@ -138,7 +165,58 @@
     font-style: normal;
 }
 
+
+
+
+
+// Old Styles
+
+@font-face {
+  font-family: $NewsGothicOLD;
+  src: url('../fonts/NewsGothic-Medium.eot');
+  src: url('../fonts/NewsGothic-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NewsGothic-Medium.woff') format('woff'),
+       url('../fonts/NewsGothic-Medium.ttf') format('truetype'),
+       url('../fonts/NewsGothic-Medium.svg#NewsGothicFSMediumRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $NewsGothicOLD;
+  src: url('../fonts/NewsGothic-DemiBold.eot');
+  src: url('../fonts/NewsGothic-DemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NewsGothic-DemiBold.woff') format('woff'),
+       url('../fonts/NewsGothic-DemiBold.ttf') format('truetype'),
+       url('../fonts/NewsGothic-DemiBold.svg#NewsGothicFSMediumRegular') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $FedraSerifOLD;
+  src: url('../fonts/FSerStdA-Book.eot');
+  src: url('../fonts/FSerStdA-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Book.woff') format('woff'),
+       url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $FedraSerifOLD;
+  src: url('../fonts/FSerStdA-Bold.eot');
+  src: url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Bold.woff') format('woff'),
+       url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /**/
+
 
 
 
@@ -148,56 +226,84 @@
 **/
 
 .NewsGothicFSLightRegular {
-  font-family: "NewsGothicFSLightRegular";
+  font-family: $NewsGothicFSLightRegular;
 }
 .NewsGothicFSLightItalic {
-  font-family: "NewsGothicFSLightItalic";
+  font-family: $NewsGothicFSLightItalic;
 }
 .NewsGothicFSBookBoldItalic {
-  font-family: "NewsGothicFSBookBoldItalic";
+  font-family: $NewsGothicFSBookBoldItalic;
 }
 .NewsGothicFSCapsLightRegular {
-  font-family: "NewsGothicFSCapsLightRegular";
+  font-family: $NewsGothicFSCapsLightRegular;
 }
 .NewsGothicFSCapsBookRegular {
-  font-family: "NewsGothicFSCapsBookRegular";
+  font-family: $NewsGothicFSCapsBookRegular;
 }
 .NewsGothicFSBookRegular {
-  font-family: "NewsGothicFSBookRegular";
+  font-family: $NewsGothicFSBookRegular;
 }
 .NewsGothicFSBookItalic {
-  font-family: "NewsGothicFSBookItalic";
+  font-family: $NewsGothicFSBookItalic;
 }
 .NewsGothicFSMediumBold {
-  font-family: "NewsGothicFSMediumBold";
+  font-family: $NewsGothicFSMediumBold;
 }
 .NewsGothicFSMediumBoldItalic {
-  font-family: "NewsGothicFSMediumBoldItalic";
+  font-family: $NewsGothicFSMediumBoldItalic;
 }
 
 .FedraSerifScreenRegular3 {
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: $FedraSerifScreenRegular3;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
 }
 .FedraSerifScreenItalic3 {
-  font-family: "Fedra Serif Screen Italic 3";
+  font-family: $FedraSerifScreenItalic3;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
 }
 .FedraSerifScreenBold3 {
-  font-family: "Fedra Serif Screen Bold 3";
+  font-family: $FedraSerifScreenBold3;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
 }
 .FedraSerifScreenBoldItalic3 {
-  font-family: "Fedra Serif Screen Bold IZl5ds";
+  font-family: $FedraSerifScreenBoldItalic3;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+}
+
+/**/
+
+
+
+
+/**
+* #PC/Chrome Overrides
+**/
+
+html.pc.chrome h1,
+html.pc.chrome .h1,
+html.pc.chrome h2,
+html.pc.chrome .h2,
+html.pc.chrome h3,
+html.pc.chrome .h3,
+html.pc.chrome .title-small,
+html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
+html.pc.chrome .marquee__3 .marquee__title, .marquee__3 html.pc.chrome .marquee__title,
+html.pc.chrome .marquee__4 .marquee__title, .marquee__4 html.pc.chrome .marquee__title,
+html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a,
+.node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
+  font-family: serif;
+}
+
+html.pc.chrome body {
+  font-family: sans-serif;
 }
 
 /**/
