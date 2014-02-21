@@ -164,7 +164,7 @@
           </div>
         </div>
         <div class="footer__copyright">
-          <p><?php print t('Copyright &#169; 2013<br />  TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
+          <p><?php print t('Copyright &#169; 2014<br />  TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
         <ul>
           <li><a class="privacy-policy" href="/privacy-policy">Privacy Policy</a></li>

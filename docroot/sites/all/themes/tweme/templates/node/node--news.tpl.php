@@ -63,6 +63,11 @@
   				</div>
 
     	  </div>
+            <div class="span3">
+      <div class="stats">
+        <?php print t('Subscribe to our Newsletter'); ?>
+      </div>
+    </div>
         <div class="span3 sidebar-right">
           <div class="constant-contact">
             <?php
