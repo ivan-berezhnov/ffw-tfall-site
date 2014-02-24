@@ -29,7 +29,8 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Title */
@@ -233,6 +234,139 @@ function pubteachforall_marquee_views_default_views() {
     'spotlight' => 'spotlight',
   );
   $export['nodequeue_marquee'] = $view;
+
+  $view = new view();
+  $view->name = 'tfall_marquee';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'tfall_marquee';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['optionset'] = 'tfall_marquee';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'marquee' => 'marquee',
+    'supporter_list' => 0,
+    'board_list' => 0,
+    'leaders_list' => 0,
+    'network_learning_front_list' => 0,
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['table'] = 'field_data_field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['field'] = 'field_spotlight_image';
+  $handler->display->display_options['fields']['field_spotlight_image']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_spotlight_image']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_spotlight_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_spotlight_image']['settings'] = array(
+    'image_style' => 'flexslider_full',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
+  $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
+  $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
+  $handler->display->display_options['fields']['field_news_image']['label'] = '';
+  $handler->display->display_options['fields']['field_news_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_news_image']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_image']['settings'] = array(
+    'image_style' => 'flexslider_full',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Network Learning image */
+  $handler->display->display_options['fields']['field_network_learning_image']['id'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['table'] = 'field_data_field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['field'] = 'field_network_learning_image';
+  $handler->display->display_options['fields']['field_network_learning_image']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_network_learning_image']['element_label_type'] = '0';
+  $handler->display->display_options['fields']['field_network_learning_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_network_learning_image']['settings'] = array(
+    'image_style' => 'flexslider_full',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '60';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'div';
+  $handler->display->display_options['fields']['title']['element_class'] = 'marquee-title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'marquee-body';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_plain';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'network_learning' => 'network_learning',
+    'news' => 'news',
+    'spotlight' => 'spotlight',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['tfall_marquee'] = $view;
 
   return $export;
 }

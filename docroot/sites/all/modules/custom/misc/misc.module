@@ -7,16 +7,27 @@
 function misc_menu() {
     module_load_include('inc', 'pathauto');
 
-    $customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'contact-thank-you');
+    $customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'press', 'press/latest', 'contact-thank-you');
 
     foreach ($customnodes as $key)
         $items[$key] = array(
             'page callback' => 'theme_render_template',
-            'page arguments' => array(path_to_theme() . '/templates/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
+            'page arguments' => array(path_to_theme() . '/templates/node/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
             'access callback' => TRUE,
         );
 
     return $items;
+}
+
+/*
+ * Implements hook_views_invalidate_cache (runs when a change is made to views.
+ *
+ * Used to set a flag when a view is updated in order that the menu cache is rebuilt.
+ * This allows the custom pages built in misc_menu to be refreshed with the updated views.
+ * The refresh functionality is implemented in page.tpl.php
+ */
+function misc_views_invalidate_cache(){
+   variable_set('custom_node_menu_rebuilt', FALSE);
 }
 
 /*
@@ -43,37 +54,24 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
         $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
     }
 
-    if($form_id == 'nodequeue_arrange_subqueue_form_3') {
-        $form['add']['#prefix'] = '<b>Please ensure that content in the 4th position has a vertical image.</b>';
-        $form['#validate'][] = 'validate_marquee_node_4_contains_vertical_image';
-    }
+  if($form_id == 'constant_contact_signup_form_1'){
+    unset($form['captcha']);
+    $form['submit']['#value'] = t('Subscribe to our newsletter');
+    $form['#submit'][] = 'misc_constant_contact_signup_form_submit';
+  }
+
 }
 
-/**
- * validation function to make sure that specified nodes in the marquee nodequeue have a vertical image to display instead
- * of a horizontal image
- *
- * Currently only checks the node in position 4
- *
- * form name may also change so watch for that
- * TODO: flag the positions that are vertical in the nodqueue form,
- * TODO: setup form name so that it can find the form if the name changes
- * name changes
- * @param $form
- * @param $form_state
+/*
+ * Function to override the constant_contact_signup_form_submit in order that it doesn't go to the homepage if the
+ * block settings for the redirect url aren't set. Set status msg to "Success, you are now subscribed to our newsletter"
  */
-function validate_marquee_node_4_contains_vertical_image($form, &$form_state) {
-
-    $node4_nid = (array_keys($form_state['input']['nodes']));
-    if(sizeof($node4_nid) > 3)
-    {
-        $new_node_4 = node_load($node4_nid[3]);
-        $does_node_4_have_vertical_image = sizeof($new_node_4->field_vertical_image) > 0;
-
-        if (!$does_node_4_have_vertical_image) {
-            form_set_error($name = nodequeue_arrange_subqueue_form_3, $message = 'Content in position 4 must have a vertical image!');
-        }
-    }
+function misc_constant_contact_signup_form_submit($form, &$form_state)
+{
+if ($_SESSION['messages']['status']['0'] === "Success, you are now subscribed to our mailing list"){
+  $_SESSION['messages']['status']['0'] = "Success! You are now subscribed to our newsletter.";
+}
+  unset($form_state['redirect']);
 }
 
 /*

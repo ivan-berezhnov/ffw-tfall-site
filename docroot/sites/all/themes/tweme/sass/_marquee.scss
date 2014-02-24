@@ -1,0 +1,159 @@
+/**
+* #Marquee
+**/
+
+.region-marquee {
+  background-color: $grey1;
+  height: 465px;
+  overflow: hidden;
+  @media screen and (max-width: 600px) {
+    background-color: transparent;
+    height: auto;
+  }
+}
+
+.marquee {
+  background-color: $grey1;
+}
+
+.view-id-tfall_marquee {
+  .flex-direction-nav {
+    display: block;
+    a {
+      color: $white;
+      display: block !important; // flexslider override
+      padding-top: 20px;
+      opacity: 1;
+      top: 35%;
+      font-size: 60px;
+      height: 62px;
+      z-index: 99999;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+      width: 45px;
+      @media screen and (max-width: 980px) {
+        color: $white;
+        display: block;
+      }
+      &:before {
+        font-family: 'icomoon';
+        @include font-size(120);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+        @media screen and (max-width: 600px) {
+          top: 25%;
+          @include font-size(80);
+        }
+      }
+      &.flex-next:before {
+        content: "\e600";
+      }
+      &.flex-prev:before {
+        content: "\e601";
+      }
+    }
+  }
+  li {
+    border-right: 1px solid $grey1;
+    @media screen and (max-width: 600px) {
+      border: none;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  .flexslider {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    width: 1170px;
+    @media screen and (max-width:1200px) {
+      width: 585px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 90.8%;
+      overflow: hidden;
+    }
+
+    &:hover {
+      .flex-prev {
+        color: $white;
+        left: 15px;
+        opacity: 1;
+        @media screen and (min-width:980px) {
+          left: -50px;
+        }
+        //opacity: 1;
+      }
+      .flex-next {
+        color: white;
+        opacity: 1;
+        right: 15px;
+        @media screen and (min-width:980px) {
+          right: -50px;
+        }
+        //opacity: 1;
+      }
+    }
+  }
+  .marquee-body,
+  .marquee-title {
+    background-color: $grey3;
+    font-family: "Fedra Serif Screen Regular 3";
+  }
+  .marquee-title {
+    padding: 20px 20px 0 20px;
+    a {
+      color: $white;
+      &:hover {
+        color: $orange1;
+      }
+    }
+    @media screen and (max-width:480px) {
+      min-height: 60px;
+      padding: 10px;
+    }
+  }
+  .marquee-body {
+    color: $grey4;
+    padding: 0 20px 20px 20px;
+    min-height: 40px;
+    @media screen and (max-width:480px) {
+      display: none;
+    }
+    @media screen and (max-width:600px) {
+      min-height: 60px;
+    }
+  }
+  .flex-viewport {
+   overflow: visible !important; // inline javascript override!
+  }
+}
+
+.marquee-wrap {
+  position: relative;
+  overflow: visible;
+}
+
+.marquee-mask-left,
+.marquee-mask-right {
+  background-color: $grey1;
+  position: absolute;
+  opacity: 0.5;
+  height: 465px;
+  width: 1170px;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+
+.marquee-mask-left {
+  left: -1170px;
+}
+
+.marquee-mask-right {
+  right: -1170px;
+}
+
+/**/
