@@ -406,6 +406,12 @@
 .leaflet-popup-content p {
 	margin: 18px 0;
 	}
+.leaflet-popup-content h3 {
+	color: #282828;
+}
+.popup {
+  width: 275px;
+}
 .leaflet-popup-tip-container {
 	margin: 0 auto;
 	width: 40px;
@@ -626,6 +632,7 @@ a.mapbox-icon-twitter {
 .leaflet-popup-content {
     line-height: 1.6em;
     margin: 12px 16px;
+    width: 275px !important;
 }
 
 .leaflet-popup-content .marker-title {
@@ -948,3 +955,4 @@ a.mapbox-icon-twitter {
 .leaflet-container.dark .leaflet-control-mapbox-geocoder input:focus {
     border-color: #ccc;
 }
+.

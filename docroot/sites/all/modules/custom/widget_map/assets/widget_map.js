@@ -67,12 +67,13 @@
 								'<a class="popup" href="' + feature.properties.url + '">' +
 								'<div class="no__map-main-img"><img class="no__main-img" src="' + feature.properties.mainpic + '"></div>' +
 								'<h2>' + feature.properties.title + '</h2>' +
+								'<h3>' + feature.properties.name + '</h3>' +
 								// '<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
 								'<span>Read More</span></a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
-					minWidth: 291
+					minWidth: 275
 				});
 
 				marker.on('click', function(e){
