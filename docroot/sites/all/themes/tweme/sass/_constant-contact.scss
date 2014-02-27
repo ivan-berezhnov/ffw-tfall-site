@@ -1,0 +1,73 @@
+/**
+* #Constant Contact
+**/
+
+.sidebar-right {
+  .constant-contact {
+    min-height: 50px;
+    @media screen and (max-width:1200px) {
+      min-height: 80px;
+    }
+    form {
+      margin: 0;
+    }
+    .btn-primary {
+      background-color: $grey5;
+      font-family: "Fedra Serif Screen Regular 3";
+      &:hover {
+        background-color: $red;
+      }
+    }
+    .form-type-textfield {
+      input {
+        width: 88%;
+        @media screen and (max-width:1200px) {
+          width: 93%;
+        }
+      }
+    }
+  }
+}
+
+.footer__contact-us {
+  .constant-contact {
+    form {
+      .form-text {
+        background-color: $white;
+        border-radius: 4px;
+        padding: 4px 10px;
+        font-size: 13px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.constant-contact {
+  .form-type-textfield {
+    margin: 0;
+    float: left;
+    width: 65%;
+    @media screen and (max-width:1200px) {
+      width: 100%;
+    }
+  }
+  .btn-primary {
+    float: left;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: none;
+    height: 30px;
+    width: 35%;
+    @media screen and (max-width:1200px) {
+      float: none;
+      clear: both;
+      width: auto;
+    }
+    &:active {
+      background-color: $red;
+    }
+  }
+}
+
+/**/

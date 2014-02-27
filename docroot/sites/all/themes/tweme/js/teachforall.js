@@ -1,5 +1,17 @@
 (function ($) {
 
+  Drupal.behaviors.suppressAbout = {
+    attach: function (context, settings) {
+
+      $(function() {
+        $("#sidr-id-block-menu-menu-uber-nav a[title='About']").click(function(e) {
+          e.preventDefault();// suppress the 'About' link in the responsive uber nav
+        });
+      });
+
+    }
+  }
+
   // brought in from assets/js/drupal.js
   $(document).ready(function() {
     $('.field-type-text-long table').addClass('table table-bordered');
@@ -106,5 +118,16 @@
       }
     }
   });
+
+
+
+
+  // insert masks for the marquee slider
+  $(document).ready(function() {
+    var $marqueeNav = $('.view-tfall-marquee .flex-direction-nav');
+    $marqueeNav.after('<div class="marquee-mask-right"></div>');
+    $marqueeNav.after('<div class="marquee-mask-left"></div>');
+  });
+  // end
 
 })(jQuery);

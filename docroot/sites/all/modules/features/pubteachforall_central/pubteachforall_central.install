@@ -1,0 +1,17 @@
+<?php
+
+
+/**
+ * Implements hook_update_N().
+ *
+ * Enables modules maxlength and constant_contact
+ */
+function pubteachforall_central_update_7100() {
+  $modules = array(
+    'maxlength',
+    'constant_contact',
+  );
+  module_enable($modules);
+  drupal_flush_all_caches();
+}
+

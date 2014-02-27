@@ -1,0 +1,27 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really hold nothing except for imports of your base, style guide, layout, and design partials.
+////////////////////////
+
+/* Imports */
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "mixins";
+@import "variables";
+
+////////////////////////
+// Import original file (should one day be refactored into partials)
+////////////////////////
+@import 'icomoon';
+@import 'styleguide/font-face';
+@import 'teachforall';
+@import 'marquee';
+@import 'constant-contact';
+@import 'page/press';
+
+////////////////////////
+// Import original file (should one day be refactored into partials)
+////////////////////////
+@import 'ie8';
