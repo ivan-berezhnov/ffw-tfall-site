@@ -1,5 +1,62 @@
-@charset "UTF-8";
-/* Imports */
+/**
+*   #Table of Contents
+**/
+/**
+    #Imports
+    #Font-Face
+    #Styleguide - Typography
+    #Global Elements
+    #Objects
+    #Header
+    #Primary Navigation
+    #Uber Navigation
+    #Feeds
+    #Footer
+    #Images
+    #Supporters Widget
+    #Marquee
+    #MapBox
+    #Twitter
+    #ShareThis
+    #Facebook Comments
+
+    ### VIEWS ###
+    #News Listing
+    #Network Learning Listing
+    #Persons
+    #Supporters
+    #Network Learning
+
+    ### NODES ###
+    #National Organizations
+    #Spotlight
+    #Person
+    #News - Node
+    #1 Column Layout
+    #2 Column Layout
+    #Global Problem
+    #Donate
+    #Our Model
+    #Global Organization
+    #Results
+    #Media Block
+    #Join Our Staff
+
+    ### LANDING PAGES ###
+    #Front
+    #News - Landing
+    #Network Learning - Landing
+    #Privacy Policy
+    #A Global Problem
+    #Search
+    #National Organizations - Landing
+
+    #News - Latest
+    #Network Learning - Latest
+**/
+/**
+*   #Imports
+**/
 /**
 *	#Table of Contents
 **/
@@ -60,17 +117,96 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 }
 
 /**
-* #Icomoon
+* #Font-Face
 **/
 @font-face {
+  font-family: "Fedra Serif";
+  src: url("../fonts/FSerStdA-Book.eot");
+  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Fedra Serif";
+    src: url("../fonts/FSerStdA-Book.svg") format("svg");
+}
+}
+@font-face {
+  font-family: "Fedra Serif";
+  src: url("../fonts/FSerStdA-Bold.eot");
+  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("eot"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Fedra Serif";
+    src: url("../fonts/FSerStdA-Bold.svg") format("svg");
+}
+}
+@font-face {
+  font-family: "News Gothic";
+  src: url("../fonts/NewsGothic-Medium.eot");
+  src: url("../fonts/NewsGothic-Medium.eot?#iefix") format("eot"), url("../fonts/NewsGothic-Medium.woff") format("woff"), url("../fonts/NewsGothic-Medium.ttf") format("truetype"), url("../fonts/NewsGothic-Medium.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "News Gothic";
+    src: url("../fonts/NewsGothic-Medium.svg") format("svg");
+}
+}
+@font-face {
+  font-family: "News Gothic";
+  src: url("../fonts/NewsGothic-DemiBold.eot");
+  src: url("../fonts/NewsGothic-DemiBold.eot?#iefix") format("eot"), url("../fonts/NewsGothic-DemiBold.woff") format("woff"), url("../fonts/NewsGothic-DemiBold.ttf") format("truetype"), url("../fonts/NewsGothic-DemiBold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "News Gothic";
+    src: url("../fonts/NewsGothic-DemiBold.svg") format("svg");
+}
+}
+@font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  src: url("fonts/icomoon.eot");
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url(data:application/font-woff;charset=utf-8;base64,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) format("woff"), url(data:application/x-font-ttf;charset=utf-8;base64,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) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="ico-"] {
+*/
+.ico-facebook, .st_facebook_large .stLarge, .ico-vimeo, .ico-twitter, .st_twitter_large .stLarge, .ico-linkedin, .ico-play, .ico-search {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -78,403 +214,107 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-right:before {
-  content: "\e600";
+.ico-facebook:before, .st_facebook_large .stLarge:before {
+  content: "\e000";
 }
 
-.icon-angle-left:before {
-  content: "\e601";
+.ico-vimeo:before {
+  content: "\e001";
 }
 
-.icon-linkedin:before {
-  content: "\e607";
+.ico-twitter:before, .st_twitter_large .stLarge:before {
+  content: "\e002";
 }
 
-.icon-feed:before {
-  content: "\e606";
+.ico-linkedin:before {
+  content: "\e003";
 }
 
-.icon-facebook:before {
-  content: "\e602";
+.ico-play:before {
+  content: "\e004";
 }
 
-.icon-vimeo:before {
-  content: "\e603";
-}
-
-.icon-twitter:before {
-  content: "\e604";
-}
-
-.icon-search:before {
-  content: "\e605";
-}
-
-.icon-play:before {
-  content: "\e608";
-}
-
-.icon-mail:before {
-  content: "\e609";
+.ico-search:before {
+  content: "\f002";
 }
 
 /**/
-/**
-* #Font Variables
-**/
-/**/
-/**
-* #Font-Face
-**/
-@font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-Medium-webfont.eot");
-  src: url("../fonts/NewsGothic-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Medium-webfont.woff") format("woff"), url("../fonts/NewsGothic-Medium-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-Medium-webfont.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-DemiBold-webfont.eot");
-  src: url("../fonts/NewsGothic-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold") format("svg"), url("../fonts/NewsGothic-DemiBold-webfont.woff") format("woff"), url("../fonts/NewsGothic-DemiBold-webfont.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "News Gothic";
-  src: url("../fonts/NewsGothic-MediumObl-webfont.eot");
-  src: url("../fonts/NewsGothic-MediumObl-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-MediumObl-webfont.woff") format("woff"), url("../fonts/NewsGothic-MediumObl-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-MediumObl-webfont.svg#NewsGothicFSMediumItalic") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "NewsGothicFSLightRegular";
-  src: url("../fonts/NewsGothic-Light-webfont.eot");
-  src: url("../fonts/NewsGothic-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Light-webfont.woff") format("woff"), url("../fonts/NewsGothic-Light-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-Light-webfont.svg#NewsGothicFSLightRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSLightItalic";
-  src: url("../fonts/NewsGothic-LightOblique-webfont.eot");
-  src: url("../fonts/NewsGothic-LightOblique-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-LightOblique-webfont.woff") format("woff"), url("../fonts/NewsGothic-LightOblique-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-LightOblique-webfont.svg#NewsGothicFSLightItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSBookBoldItalic";
-  src: url("../fonts/NewsGothic-DemiBoldObl-webfont.eot");
-  src: url("../fonts/NewsGothic-DemiBoldObl-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-DemiBoldObl-webfont.woff") format("woff"), url("../fonts/NewsGothic-DemiBoldObl-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-DemiBoldObl-webfont.svg#NewsGothicFSBookBoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSCapsLightRegular";
-  src: url("../fonts/NewsGothicCaps-Light-webfont.eot");
-  src: url("../fonts/NewsGothicCaps-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothicCaps-Light-webfont.woff") format("woff"), url("../fonts/NewsGothicCaps-Light-webfont.ttf") format("truetype"), url("../fonts/NewsGothicCaps-Light-webfont.svg#NewsGothicFSCapsLightRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSCapsBookRegular";
-  src: url("../fonts/NewsGothicCaps-Book-webfont.eot");
-  src: url("../fonts/NewsGothicCaps-Book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothicCaps-Book-webfont.woff") format("woff"), url("../fonts/NewsGothicCaps-Book-webfont.ttf") format("truetype"), url("../fonts/NewsGothicCaps-Book-webfont.svg#NewsGothicFSCapsBookRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSBookRegular";
-  src: url("../fonts/NewsGothic-Book-webfont.eot");
-  src: url("../fonts/NewsGothic-Book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Book-webfont.woff") format("woff"), url("../fonts/NewsGothic-Book-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-Book-webfont.svg#NewsGothicFSBookRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSBookItalic";
-  src: url("../fonts/NewsGothic-BookOblique-webfont.eot");
-  src: url("../fonts/NewsGothic-BookOblique-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-BookOblique-webfont.woff") format("woff"), url("../fonts/NewsGothic-BookOblique-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-BookOblique-webfont.svg#NewsGothicFSBookItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSMediumBold";
-  src: url("../fonts/NewsGothic-Bold-webfont.eot");
-  src: url("../fonts/NewsGothic-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Bold-webfont.woff") format("woff"), url("../fonts/NewsGothic-Bold-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-Bold-webfont.svg#NewsGothicFSMediumBold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NewsGothicFSMediumBoldItalic";
-  src: url("../fonts/NewsGothic-BoldOblique-webfont.eot");
-  src: url("../fonts/NewsGothic-BoldOblique-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-BoldOblique-webfont.woff") format("woff"), url("../fonts/NewsGothic-BoldOblique-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-BoldOblique-webfont.svg#NewsGothicFSMediumBoldItalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "News Gothic Old";
-  src: url("../fonts/NewsGothic-Medium.eot");
-  src: url("../fonts/NewsGothic-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-Medium.woff") format("woff"), url("../fonts/NewsGothic-Medium.ttf") format("truetype"), url("../fonts/NewsGothic-Medium.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "News Gothic Old";
-  src: url("../fonts/NewsGothic-DemiBold.eot");
-  src: url("../fonts/NewsGothic-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-DemiBold.woff") format("woff"), url("../fonts/NewsGothic-DemiBold.ttf") format("truetype"), url("../fonts/NewsGothic-DemiBold.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fedra Serif Old";
-  src: url("../fonts/FSerStdA-Book.eot");
-  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fedra Serif Old";
-  src: url("../fonts/FSerStdA-Bold.eot");
-  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-/**/
-/**
-* #Font Classes
-**/
-.NewsGothicFSLightRegular {
-  font-family: "NewsGothicFSLightRegular";
-}
-
-.NewsGothicFSLightItalic {
-  font-family: "NewsGothicFSLightItalic";
-}
-
-.NewsGothicFSBookBoldItalic {
-  font-family: "NewsGothicFSBookBoldItalic";
-}
-
-.NewsGothicFSCapsLightRegular {
-  font-family: "NewsGothicFSCapsLightRegular";
-}
-
-.NewsGothicFSCapsBookRegular {
-  font-family: "NewsGothicFSCapsBookRegular";
-}
-
-.NewsGothicFSBookRegular {
-  font-family: "NewsGothicFSBookRegular";
-}
-
-.NewsGothicFSBookItalic {
-  font-family: "NewsGothicFSBookItalic";
-}
-
-.NewsGothicFSMediumBold {
-  font-family: "NewsGothicFSMediumBold";
-}
-
-.NewsGothicFSMediumBoldItalic {
-  font-family: "NewsGothicFSMediumBoldItalic";
-}
-
-.FedraSerifScreenRegular3 {
-  font-family: "Fedra Serif Screen Regular 3";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
-.FedraSerifScreenItalic3 {
-  font-family: "Fedra Serif Screen Italic 3";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
-.FedraSerifScreenBold3 {
-  font-family: "Fedra Serif Screen Bold 3";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
-.FedraSerifScreenBoldItalic3 {
-  font-family: "Fedra Serif Screen Bold IZl5ds";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
-/**/
-/**
-* #PC/Chrome Overrides
-**/
-html.pc.chrome h1,
-html.pc.chrome .h1,
-html.pc.chrome h2,
-html.pc.chrome .h2,
-html.pc.chrome h3,
-html.pc.chrome .h3,
-html.pc.chrome .title-small,
-html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a,
-.node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a,
-html.pc.chrome .title-small,
-html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__3 .marquee__title, .marquee__3 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__4 .marquee__title, .marquee__4 html.pc.chrome .marquee__title,
-html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a,
-.node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
-  font-family: serif;
-}
-
-html.pc.chrome body {
-  font-family: sans-serif;
-}
-
-/**/
-/**
-*   #Table of Contents
-**/
-/**
-    #Styleguide - Typography
-    #Global Elements
-    #Objects
-    #Header
-    #Primary Navigation
-    #Uber Navigation
-    #Feeds
-    #Footer
-    #Images
-    #Supporters Widget
-    #Marquee
-    #MapBox
-    #Twitter
-    #ShareThis
-    #Facebook Comments
-
-    ### VIEWS ###
-    #News Listing
-    #Network Learning Listing
-    #Persons
-    #Supporters
-    #Network Learning
-
-    ### NODES ###
-    #National Organizations
-    #Spotlight
-    #Person
-    #News - Node
-    #1 Column Layout
-    #2 Column Layout
-    #Global Problem
-    #Donate
-    #Our Model
-    #Global Organization
-    #Results
-    #Media Block
-    #Join Our Staff
-
-    ### LANDING PAGES ###
-    #Front
-    #News - Landing
-    #Network Learning - Landing
-    #Privacy Policy
-    #A Global Problem
-    #Search
-    #National Organizations - Landing
-
-    #News - Latest
-    #Network Learning - Latest
-**/
 /**
 * #Styleguide - Typography
 **/
 h1, .h1 {
   color: #4d4d4d;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
+  font-family: "Fedra Serif", serif;
   font-weight: normal;
-  font-stretch: normal;
   line-height: 48px;
   margin-bottom: 5px;
   font-size: 42px;
-  font-size: 2.625rem;
+  font-size: 2.47059rem;
 }
 @media screen and (max-width: 767px) {
   h1, .h1 {
     font-size: 25px;
-    font-size: 1.5625rem;
+    font-size: 1.47059rem;
     line-height: 29px;
   }
 }
 
 h2, .h2 {
   font-size: 25px;
-  font-size: 1.5625rem;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
+  font-size: 1.47059rem;
+  font-family: "Fedra Serif", serif;
   font-weight: normal;
-  font-stretch: normal;
   line-height: 29px;
 }
 @media screen and (max-width: 767px) {
   h2, .h2 {
     font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1.05882rem;
     line-height: 22px;
   }
 }
 
-h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
-  font-family: "Fedra Serif Old";
-  font-style: normal;
+h3, .h3, .title-small, .marquee__2 .marquee__title,
+.marquee__3 .marquee__title,
+.marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
+  font-family: "Fedra Serif", serif;
   font-weight: normal;
-  font-stretch: normal;
   line-height: 22px;
   margin: 0 0 5px 0;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 @media screen and (max-width: 767px) {
-  h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
+  h3, .h3, .title-small, .marquee__2 .marquee__title,
+  .marquee__3 .marquee__title,
+  .marquee__4 .marquee__title, .node-type-page-global-organization .our-model-section .spotlights a {
     line-height: 20px;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 0.94118rem;
   }
+}
+
+html.pc.chrome h1, html.pc.chrome .h1, html.pc.chrome h2, html.pc.chrome .h2, html.pc.chrome h3, html.pc.chrome .h3, html.pc.chrome .title-small, html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
+html.pc.chrome .marquee__3 .marquee__title,
+.marquee__3 html.pc.chrome .marquee__title,
+html.pc.chrome .marquee__4 .marquee__title,
+.marquee__4 html.pc.chrome .marquee__title, html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a, .node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
+  font-family: serif;
 }
 
 h4, .h4 {
   line-height: 20px;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
 }
 
 .blurb, .no__blurb, .top-section__blurb {
   font-weight: bold;
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.11765rem;
   line-height: 38px;
   color: #91998c;
   margin: 20px 0;
@@ -491,62 +331,68 @@ a:hover {
 body {
   color: #4d4d4d;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
   line-height: 20px;
-  font-family: "News Gothic Old";
+  font-family: "News Gothic";
+}
+
+html.pc.chrome body {
+  font-family: sans-serif;
 }
 
 .body, .view-supporters p {
   color: #91998c;
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 25px;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif";
+}
+
+html.pc.chrome .body, html.pc.chrome .view-supporters p, .view-supporters html.pc.chrome p {
+  font-family: serif;
 }
 
 .section {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   font-weight: bold;
 }
 
 .small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-global-organization .our-model-section .spotlights p {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
   line-height: 20px;
   color: #4d4d4d;
 }
 
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 25px;
+  font-family: "Fedra Serif";
+  line-height: 1.7em;
   margin-bottom: 20px;
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
 }
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
+}
+
+html.pc.chrome .large-body, html.pc.chrome .node-type-page-our-model #main .our-model-section .intro p, .node-type-page-our-model #main .our-model-section .intro html.pc.chrome p {
+  font-family: serif;
 }
 
 .block-quote {
   color: #91998c;
   font-weight: bold;
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.11765rem;
   line-height: 38px;
 }
 
 .page-section {
   color: #4d4d4d;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
   letter-spacing: 3px;
   line-height: 20px;
   text-transform: uppercase;
@@ -558,24 +404,28 @@ body {
 }
 
 .footer-link-beige, #footer .content > ul > li > a {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 12px;
+  font-size: 0.70588rem;
   color: #dfd9c9;
-  font-family: "Fedra Serif Old";
+  font-family: "Fedra Serif", serif;
   font-weight: bold;
-  letter-spacing: .2em;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
   color: white;
 }
 
-.footer-link-grey, .privacy-policy {
+html.pc.chrome .footer-link-beige, html.pc.chrome #footer .content > ul > li > a, #footer html.pc.chrome .content > ul > li > a {
+  font-family: serif;
+}
+
+.footer-link-grey, .privacy-policy, #footer .content > ul > li > ul li a {
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   color: #999999;
 }
-.footer-link-grey:hover, .privacy-policy:hover {
+.footer-link-grey:hover, .privacy-policy:hover, #footer .content > ul > li > ul li a:hover {
   color: white;
 }
 
@@ -604,7 +454,7 @@ table td {
   margin: 20px 0;
   padding: 0;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 .breadcrumb a {
   color: #91998c;
@@ -632,13 +482,7 @@ textarea:focus, input:focus {
   line-height: 30px;
   text-align: center;
   font-size: 32px;
-  font-size: 2rem;
-}
-@media screen and (max-width: 475px) {
-  .site-slogan {
-    font-size: 22px;
-    font-size: 1.375rem;
-  }
+  font-size: 1.88235rem;
 }
 
 .full-list {
@@ -647,10 +491,10 @@ textarea:focus, input:focus {
   font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
-  padding: 7px 12px 5px 12px;
+  padding: 6px 12px 6px 12px;
   text-transform: uppercase;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 .full-list a {
   color: white;
@@ -672,7 +516,7 @@ textarea:focus, input:focus {
 
 label, input, button, select, textarea {
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
 }
 
 html.js input.form-autocomplete {
@@ -694,14 +538,14 @@ html.js input.throbbing {
 .btn-primary {
   background-color: #e69740;
 }
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover {
   background-color: #cf4753;
 }
 
 .btn__red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
   text-shadow: none;
   font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 0.64706rem;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -712,16 +556,17 @@ html.js input.throbbing {
   color: white;
   line-height: 26px;
   padding: 4px 44px;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .btn__red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
   color: white;
+}
+
+html.pc.chrome .btn__red, html.pc.chrome .view-persons .view-footer a.btn, .view-persons .view-footer html.pc.chrome a.btn, html.pc.chrome .view-supporters .view-footer .btn, .view-supporters .view-footer html.pc.chrome .btn {
+  font-family: serif;
 }
 
 .nav-tabs {
@@ -740,7 +585,7 @@ div.messages {
   padding-top: 0;
   text-transform: uppercase;
   font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 1.52941rem;
 }
 
 #main {
@@ -758,24 +603,24 @@ div.messages {
 
 h2.page-title {
   color: #e69740;
-  letter-spacing: .2em;
+  letter-spacing: 5px;
   line-height: 30px;
   margin-top: 0;
   text-transform: uppercase;
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 30px;
+  font-size: 1.76471rem;
 }
 @media screen and (max-width: 350px) {
   h2.page-title {
     font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 1.41176rem;
   }
 }
 
 @media screen and (max-width: 767px) {
   h2, .h2 {
     font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 1.17647rem;
   }
 }
 /**/
@@ -808,7 +653,7 @@ h2.page-title {
 
 .slug {
   font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 0.64706rem;
   color: #e69740;
   font-weight: bold;
   letter-spacing: 1px;
@@ -819,28 +664,26 @@ h2.page-title {
 
 .slug-medium {
   color: #e69740;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: .2em;
+  font-family: "Fedra Serif";
+  letter-spacing: 3px;
   line-height: 1.5em;
   text-transform: uppercase;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
 }
 
 .slug-large {
   color: #e69740;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif";
   letter-spacing: 4px;
   line-height: 1.2em;
   text-transform: uppercase;
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.41176rem;
+}
+
+html.pc.chrome .slug-medium, html.pc.chrome .slug-large {
+  font-family: serif;
 }
 
 .stats {
@@ -848,7 +691,7 @@ h2.page-title {
   font-weight: bold;
   line-height: 22px;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 
 /**/
@@ -857,7 +700,6 @@ h2.page-title {
 **/
 .header {
   margin-top: 10px;
-  position: relative;
 }
 
 .site-name {
@@ -869,17 +711,13 @@ h2.page-title {
 
 .donate {
   background-color: #e69740;
-  font-family: "Fedra Serif Old";
+  font-family: "Fedra Serif";
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  min-height: 20px;
-  letter-spacing: .2em;
+  letter-spacing: 2px;
   margin-right: 4px;
-  margin-top: 1px;
   padding: 0 5px;
   font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 0.64706rem;
 }
 .donate a {
   color: white;
@@ -890,13 +728,17 @@ h2.page-title {
   cursor: pointer;
 }
 
+html.pc.chrome .donate {
+  font-family: serif;
+}
+
 .social-media {
   background-color: #91998c;
   color: white;
   line-height: 1.3em;
   padding: 2px 3px;
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
 }
 .social-media:hover {
   background-color: #cf4753;
@@ -912,25 +754,9 @@ h2.page-title {
 /**
 * #Primary Navigation
 **/
-.sidr-toggle {
-  position: absolute;
-  left: 0;
-  top: 0;
+.navbar {
+  font-weight: bold;
 }
-@media screen and (min-width: 980px) {
-  .sidr-toggle {
-    display: none;
-  }
-}
-.sidr-toggle button {
-  outline: none;
-}
-.sidr-toggle .btn-navbar {
-  float: left;
-  padding: 8px;
-  margin: 0 5px 0 0;
-}
-
 .navbar .navbar-inner {
   background-color: #3c3835;
   background-image: none;
@@ -938,15 +764,33 @@ h2.page-title {
   padding: 0;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .navbar .navbar-inner {
-    background: none;
-    box-shadow: none;
-    margin-top: -40px;
-  }
-}
 .navbar .navbar-inner ul {
   margin: 0;
+}
+.navbar .navbar-inner .sidr-toggle {
+  display: inline-block;
+  float: left;
+  margin-left: 14px;
+  padding: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-inner .sidr-toggle {
+    display: none;
+  }
+}
+.navbar .navbar-inner .sidr-toggle .btn-navbar {
+  float: left;
+  padding: 8px;
+  margin: 0 5px 0 0;
+}
+.navbar .navbar-inner .sidr-toggle .btn-text {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  color: #eeeeee;
+  font-size: 12px;
+  font-size: 0.70588rem;
 }
 .navbar .navbar-inner .container {
   display: none;
@@ -974,19 +818,17 @@ h2.page-title {
   }
 }
 .navbar .navbar-inner .container .region-main-navigation {
-  font-family: "Fedra Serif Old";
+  font-family: "Fedra Serif";
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: .2em;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 12px;
+  font-size: 0.70588rem;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation {
     font-size: 11px;
-    font-size: 0.6875rem;
+    font-size: 0.64706rem;
     letter-spacing: 1px;
   }
 }
@@ -1091,21 +933,20 @@ h2.page-title {
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li {
   line-height: 20px;
   border-top: 1px solid #92998d;
-  font-family: "News Gothic Old";
+  font-family: "News Gothic";
+  font-weight: normal;
   letter-spacing: 0;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 16px;
+  font-size: 0.94118rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 20px;
-  font-weight: bold;
-  line-height: 1em;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
@@ -1126,11 +967,16 @@ h2.page-title {
   display: none;
 }
 
+html.pc.chrome .navbar .navbar-inner .container .region-main-navigation {
+  font-family: serif;
+}
+
 /**/
 /**
 * #Uber Navigation
 **/
 .uber-nav {
+  font-weight: bold;
   margin-top: -5px;
 }
 .uber-nav .content > .menu {
@@ -1155,6 +1001,7 @@ h2.page-title {
   border-right: none;
 }
 .uber-nav .content > .menu > li > a {
+  letter-spacing: 2px;
   margin-left: -1px;
   padding-left: 12px;
 }
@@ -1172,13 +1019,11 @@ h2.page-title {
   display: block;
 }
 .uber-nav a {
-  font-weight: bold;
   color: #92998d;
-  letter-spacing: .1em;
   padding: 5px 10px;
   text-transform: uppercase;
   font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 0.64706rem;
 }
 .uber-nav a:hover {
   color: #cf4753;
@@ -1201,7 +1046,7 @@ h2.page-title {
   border: none;
   font-weight: normal;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
   display: block;
   line-height: 12px;
   margin: 7px 3px;
@@ -1301,13 +1146,13 @@ h2.page-title {
   }
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 0.88235rem;
     display: inline-block;
     margin-bottom: 5px;
   }
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 17px;
-    font-size: 1.0625rem;
+    font-size: 1rem;
     display: inline-block;
     margin-bottom: 5px;
   }
@@ -1350,7 +1195,7 @@ h2.page-title {
   }
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.82353rem;
     padding: 2px 10px 0;
     margin-right: 9px;
     line-height: 32px;
@@ -1362,15 +1207,6 @@ h2.page-title {
     display: inline-block;
     padding: 7px 8px;
     margin-right: 5px;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 500px) {
-  #footer .row-fluid .span2 + .span3 .donate {
-    padding: 0;
-    margin: 0 0 20px 0;
-    text-align: center;
-    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1381,19 +1217,19 @@ h2.page-title {
 @media screen and (min-width: 768px) and (max-width: 979px) {
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.82353rem;
     display: inline-block;
     margin-bottom: 5px;
   }
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 0.94118rem;
     display: inline-block;
     margin-bottom: 5px;
   }
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.82353rem;
     padding: 2px 10px 0;
     margin-right: 60px;
     margin-bottom: 10px;
@@ -1403,7 +1239,6 @@ h2.page-title {
     display: inline-block;
     padding: 7px 8px;
     margin-right: 5px;
-    margin-bottom: 10px;
   }
 }
 #footer .footer-links .block-block, #footer .footer-links-2 .block-block {
@@ -1412,33 +1247,23 @@ h2.page-title {
 
 .footer__contact-us {
   color: #DFD9C9;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif",serif;
   text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-.footer__contact-us form label {
-  font-size: 14px;
-  font-size: 0.875rem;
-}
-.footer__contact-us form .form-text {
-  background-color: #dfd9c9;
-  border-radius: 10px;
-  width: 83%;
+  font-size: 12px;
+  font-size: 0.70588rem;
 }
 .footer__contact-us a {
   color: #dfd9c9;
-  letter-spacing: .2em;
-  font-size: 11px;
-  font-size: 0.6875rem;
 }
 .footer__contact-us a:hover {
   color: white;
+}
+
+html.pc.chrome .footer__contact-us {
+  font-family: serif;
 }
 
 .footer__copyright {
@@ -1454,14 +1279,6 @@ h2.page-title {
 
 .footer-links a {
   margin-left: 0;
-}
-.footer-links .content {
-  width: 150px;
-}
-@media screen and (max-width: 979px) {
-  .footer-links .content {
-    width: 100%;
-  }
 }
 .footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) {
   display: none;
@@ -1496,11 +1313,6 @@ h2.page-title {
   list-style-image: none;
   margin: 0;
 }
-#footer .content > ul > li > ul li a {
-  font-size: 16px;
-  font-size: 1rem;
-  color: #999999;
-}
 
 .footer__search {
   margin: 10px 0;
@@ -1510,15 +1322,12 @@ h2.page-title {
 }
 .footer__search p, .footer__search a {
   color: #dfd9c9;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif", serif;
   text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-size: 0.70588rem;
 }
 .footer__search a:hover {
   color: white;
@@ -1545,6 +1354,10 @@ h2.page-title {
   }
 }
 
+html.pc.chrome .footer__search p, html.pc.chrome .footer__search a {
+  font-family: serif;
+}
+
 /**/
 /**
 * #Images
@@ -1568,10 +1381,7 @@ img {
 }
 .widget_supporters .title {
   color: #ffb151;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif", serif;
   letter-spacing: 4px;
   display: block;
   margin-bottom: 6px;
@@ -1586,8 +1396,12 @@ img {
 .widget_supporters p {
   color: #999999;
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 21px;
+}
+
+html.pc.chrome .widget_supporters .title {
+  font-family: serif;
 }
 
 .fb-like-box {
@@ -1606,11 +1420,167 @@ img {
 
 /**/
 /**
+* #Marquee
+**/
+.marquee {
+  background-color: #91998c;
+}
+.marquee img {
+  width: 100%;
+}
+.marquee * {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.marquee__2,
+.marquee__3,
+.marquee__4 {
+  position: relative;
+}
+.marquee__2 .marquee__info-wrapper,
+.marquee__3 .marquee__info-wrapper,
+.marquee__4 .marquee__info-wrapper {
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  width: 90%;
+}
+.marquee__2 .marquee__preview,
+.marquee__3 .marquee__preview,
+.marquee__4 .marquee__preview {
+  display: none;
+}
+
+.marquee__info-wrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 70%;
+}
+
+.marquee__title {
+  font-weight: normal;
+}
+.marquee__title a {
+  color: white;
+}
+.marquee__title a:hover {
+  color: #cf4753;
+}
+
+.marquee__preview {
+  color: #999999;
+  font-family: "Fedra Serif", serif;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-size: 1rem;
+}
+
+html.pc.chrome .marquee__preview {
+  font-family: serif;
+}
+
+.marquee__link {
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 11px;
+  font-size: 0.64706rem;
+}
+.marquee__link a {
+  color: white;
+}
+.marquee__link a:hover {
+  color: #ffb151;
+}
+
+.marquee__large {
+  background-color: black;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+
+.marquee__medium {
+  background-color: #cf4753;
+  float: left;
+  position: relative;
+  width: 25%;
+}
+
+.marquee__small {
+  background-color: #e69740;
+  float: left;
+  position: relative;
+  width: 25%;
+}
+
+.marquee__hover {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.marquee__pane[data-effeckt-type="cover-fade"]:hover .marquee__hover, .marquee__pane[data-effeckt-type="cover-fade"]:active .marquee__active {
+  opacity: .8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .marquee__info-wrapper {
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 979px) {
+  .marquee__large {
+    width: 100%;
+  }
+
+  .marquee__hover {
+    background-color: transparent;
+    opacity: 1;
+    position: static;
+  }
+
+  .marquee__info-wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #3c3835;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: static;
+    width: 100%;
+  }
+
+  .marquee__preview {
+    display: none;
+  }
+}
+/**/
+/**
 * #MapBox
 **/
 .no__logo {
   width: 150px;
   height: 84px;
+}
+
+.no__map-main-img {
+  height: 164px;
 }
 
 #worldmap {
@@ -1634,7 +1604,7 @@ img {
   background-color: #80b4e4;
 }
 .worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  height: 92px;
+  height: 300px;
 }
 
 .worldmap__title {
@@ -1643,13 +1613,12 @@ img {
   box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
-  bottom: 45px;
+  top: 30px;
   left: 0;
   text-align: center;
   width: 100%;
   padding: 0 45px;
   z-index: 99;
-  font-size: .9em;
 }
 
 #map {
@@ -1660,14 +1629,7 @@ img {
 #map .leaflet-map-pane {
   width: 100%;
 }
-#map .popup img {
-  width: 130px;
-  float: left;
-  margin-right: 10px;
-}
-#map .popup h2 {
-  line-height: 1;
-}
+
 .leaflet-bar {
   border: none;
   border-radius: 0;
@@ -1693,19 +1655,14 @@ img {
 
 .leaflet-popup-pane {
   z-index: 9999;
-  top: -21px;
 }
 .leaflet-popup-pane a {
   color: #91998c;
-  display: block;
-  overflow: hidden;
+}
+.leaflet-popup-pane a:hover {
+  color: #e69740;
 }
 
-.leaflet-popup-pane a span {
-  display: block;
-  text-transform: uppercase;
-  font-size: .8em;
-}
 .leaflet-popup-content-wrapper {
   -webkit-box-shadow: 3px 3px 14px #888888;
   -moz-box-shadow: 3px 3px 14px #888888;
@@ -1715,13 +1672,43 @@ img {
   margin: 9px;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
+  text-align: right;
   font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 0.64706rem;
   color: #e69740;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 2px;
   margin-top: 3px;
+  margin-bottom: -19px;
 }
+.leaflet-popup-content-wrapper .leaflet-popup-content .btn {
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  text-shadow: none;
+  font-size: 16px;
+  font-size: 0.94118rem;
+  position: absolute;
+  bottom: 32px;
+  right: 10px;
+  background: #3c3835 url(../images/grey-more-btn-bg.png) left top repeat-x;
+  color: white;
+  line-height: 26px;
+  padding: 0px 17px;
+  font-family: "News Gothic";
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .btn:hover {
+  color: white;
+  background: #4d4d4d;
+}
+
+html.pc.chrome .leaflet-popup-content-wrapper .btn {
+  font-family: sans-serif;
+}
+
 /**/
 /**
 * #Twitter
@@ -1759,7 +1746,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   margin-top: 0;
   line-height: 18px;
 }
@@ -1772,22 +1759,17 @@ img {
 }
 .tweets .tweets__info {
   color: black;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
-  font-size: 0.75rem;
-}
-.tweets .tweets__info .field-content {
-  font-weight: bold;
-}
-.tweets .tweets__info .placeholder {
-  font-style: italic;
+  font-size: 0.70588rem;
 }
 .tweets .tweets__info a {
   color: black;
 }
 .tweets .tweets__text {
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   color: white;
   word-wrap: break-word;
 }
@@ -1843,7 +1825,9 @@ img {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
   display: inline-block;
-  line-height: 27px;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
   overflow: hidden;
 }
 .sharethis-buttons .stButton .stLarge:hover {
@@ -1863,24 +1847,14 @@ img {
   background-position: 9999px 9999px;
   color: white;
   display: inline !important;
-  padding: 9px 6px 6px 7px;
-  top: 2px;
+  padding: 6px;
+  top: 6px;
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.17647rem;
 }
 .st_twitter_large .stLarge:hover,
 .st_facebook_large .stLarge:hover {
   background-color: #cf4753;
-}
-
-.st_facebook_large .stLarge:before {
-  font-family: 'icomoon';
-  content: "\e602";
-}
-
-.st_twitter_large .stLarge:before {
-  font-family: 'icomoon';
-  content: "\e604";
 }
 
 /**/
@@ -1980,12 +1954,12 @@ img {
 .news__landing-byline, .network-learning__landing-byline {
   color: #999999;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
 }
 
 .news__author-info, .network-learning__author-info {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 .news__author-info div, .network-learning__author-info div {
   display: inline;
@@ -2089,7 +2063,7 @@ img {
 .view-persons .view-content .views-row .person-copy .person-title a {
   color: #030303;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   font-weight: bold;
 }
 .view-persons .view-content .views-row .person-copy .person-job-title {
@@ -2097,13 +2071,13 @@ img {
   clear: left;
   color: #91998c;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .view-persons .view-content .views-row .person-copy .person-bio, .view-persons .view-content .views-row .person-copy .person-bio-truncated {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
   display: none;
   overflow: hidden;
   float: left;
@@ -2121,7 +2095,7 @@ img {
 }
 .view-persons .view-content .views-row .person-copy .read-more-btn, .view-persons .view-content .views-row .person-copy .collapse-btn {
   font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 0.76471rem;
   display: none;
   clear: left;
   float: left;
@@ -2192,7 +2166,7 @@ img {
   display: inline-block;
   color: black;
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.41176rem;
   line-height: 22px;
   padding: 0 12px;
   border-right: 3px solid #92998d;
@@ -2243,11 +2217,8 @@ img {
 }
 .network-learning-front-block a.network-learning-main {
   font-size: 16px;
-  font-size: 1rem;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-size: 0.94118rem;
+  font-family: "Fedra Serif";
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
@@ -2274,7 +2245,7 @@ img {
 }
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag {
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.70588rem;
   color: #e69740;
   font-weight: bold;
   text-transform: uppercase;
@@ -2283,18 +2254,15 @@ img {
 }
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a {
   font-size: 22px;
-  font-size: 1.375rem;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-size: 1.29412rem;
+  font-family: "Fedra Serif";
   color: #4d4d4d;
   line-height: 24px;
 }
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover {
   color: #cf4753;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1170px) {
   .network-learning-front-block .view-display-id-network_learning_front_block {
     margin-top: 30px;
     text-align: center;
@@ -2306,8 +2274,15 @@ img {
     margin-bottom: 10px;
   }
   .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
-    max-width: 370px;
+    max-width: 570px;
   }
+}
+
+html.pc.chrome .network-learning-front-block a.network-learning-main {
+  font-family: serif;
+}
+html.pc.chrome .network-learning-front-block .view-display-id-network_learning_front_block .span4 .nl-front-title {
+  font-family: serif;
 }
 
 /**/
@@ -2322,8 +2297,12 @@ img {
 .no__ceo h2 a,
 .no__ceo .node a {
   font-size: 18px;
-  font-size: 1.125rem;
-  font-family: "News Gothic Old";
+  font-size: 1.05882rem;
+  font-family: "News Gothic";
+}
+
+html.pc.chrome .no__ceo .node {
+  font-family: sans-serif;
 }
 
 .no__image img {
@@ -2339,19 +2318,18 @@ img {
 }
 .no__info-block .field-item {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 .no__info-block a {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   font-weight: bold;
 }
 
 .no__stats {
   color: #91998c;
-  font-weight: bold;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 .no__stats strong {
   color: black;
@@ -2456,14 +2434,14 @@ img {
 .node-type-person .content .person-copy .person-title {
   color: #91998c;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .node-type-person .content .person-copy .person-bio {
   color: #4d4d4d;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
 }
 
 /**/
@@ -2504,7 +2482,7 @@ img {
   margin-top: 3px;
   font-style: italic;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 
 .news__video-caption {
@@ -2512,18 +2490,11 @@ img {
   font-style: italic;
   margin: -10px 0 10px 0;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 
 .news__content {
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 25px;
   margin-bottom: 10px;
-  font-size: 17px;
-  font-size: 1.0625rem;
 }
 
 .news__node-links {
@@ -2574,11 +2545,13 @@ img {
   height: 100%;
 }
 
-.node-page-1-col-layout h2 a {
+
+.span12 h2 a {
   color: #4d4d4d;
 }
-.node-page-1-col-layout h2 a:hover {
+.span12 h2 a:hover {
   color: #cf4753;
+  text-decoration: none;
 }
 
 /**/
@@ -2654,13 +2627,14 @@ img {
 
 .group_row_byline {
   color: #999999;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif";
   line-height: 1.4em;
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
+}
+
+html.pc.chrome .group_row_byline {
+  font-family: serif;
 }
 
 .group_info_row a:after {
@@ -2692,12 +2666,12 @@ img {
 .top-section__title {
   line-height: 1em;
   font-size: 34px;
-  font-size: 2.125rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 980px) {
   .top-section__title {
     font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 1.41176rem;
   }
 }
 
@@ -2708,21 +2682,21 @@ img {
 .top-section__subheader,
 .top-section__description {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.05882rem;
 }
 @media screen and (max-width: 980px) {
   .top-section__subheader,
   .top-section__description {
     line-height: 1.2em;
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.82353rem;
   }
 }
 @media screen and (max-width: 767px) {
   .top-section__subheader,
   .top-section__description {
     font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 1.05882rem;
   }
 }
 
@@ -2764,7 +2738,7 @@ img {
   color: #999999;
   font-weight: bold;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.94118rem;
 }
 
 /**/
@@ -2788,7 +2762,7 @@ img {
 .node-type-page-our-model #main .our-model-section h3 {
   color: #e69740;
   font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -2801,7 +2775,7 @@ img {
 }
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.82353rem;
 }
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a:hover {
   color: #cf4753;
@@ -2965,8 +2939,8 @@ img {
   position: relative;
 }
 
-.view-news .icon-play,
-.view-network-learning .icon-play {
+.view-news .ico-play,
+.view-network-learning .ico-play {
   background-color: #4d4d4d;
   color: #ffb151;
   padding: 7px 10px;
@@ -2974,15 +2948,15 @@ img {
   top: 10px;
   left: 10px;
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.17647rem;
 }
 @media screen and (max-width: 979px) {
-  .view-news .icon-play,
-  .view-network-learning .icon-play {
+  .view-news .ico-play,
+  .view-network-learning .ico-play {
     top: 5px;
     left: 5px;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 0.94118rem;
   }
 }
 
@@ -2995,7 +2969,7 @@ img {
 @media screen and (max-width: 767px) {
   .page-news .full-list, .page-network-learning .full-list {
     font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 0.70588rem;
     margin-bottom: 30px;
   }
 }
@@ -3011,7 +2985,7 @@ img {
     margin-top: 0;
     padding-bottom: 18px;
     font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 0.82353rem;
   }
 }
 .news-flexslider .flex-control-paging li a, .network-learning-flexslider .flex-control-paging li a {
@@ -3078,10 +3052,11 @@ img {
 
 .flexslider-preview {
   color: #91998c;
-  font-family: "Fedra Serif Old";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  font-family: "Fedra Serif", serif;
+}
+
+html.pc.chrome .flexslider-preview {
+  font-family: serif;
 }
 
 .flexslider-link {
@@ -3093,7 +3068,7 @@ img {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.70588rem;
 }
 .flexslider-link a:hover {
   color: #cf4753;
@@ -3204,7 +3179,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -.7em;
+  text-indent: -0.7em;
 }
 .unifying-principles li:before {
   content: "• ";
@@ -3220,433 +3195,4 @@ img {
   .page-network-learning-latest #main .teachforall-twitter-block {
     margin-top: 30px;
   }
-}
-
-/**
-* #Marquee
-**/
-.region-marquee {
-  background-color: #91998c;
-  height: 465px;
-  overflow: hidden;
-}
-@media screen and (max-width: 600px) {
-  .region-marquee {
-    background-color: transparent;
-    height: auto;
-  }
-}
-
-.marquee {
-  background-color: #91998c;
-}
-
-.view-id-tfall_marquee .flex-direction-nav {
-  display: block;
-}
-.view-id-tfall_marquee .flex-direction-nav a {
-  color: white;
-  display: block !important;
-  padding-top: 20px;
-  opacity: 1;
-  top: 35%;
-  font-size: 60px;
-  height: 62px;
-  z-index: 99999;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-  width: 45px;
-}
-@media screen and (max-width: 980px) {
-  .view-id-tfall_marquee .flex-direction-nav a {
-    color: white;
-    display: block;
-  }
-}
-.view-id-tfall_marquee .flex-direction-nav a:before {
-  font-family: 'icomoon';
-  font-size: 120px;
-  font-size: 7.5rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-}
-@media screen and (max-width: 600px) {
-  .view-id-tfall_marquee .flex-direction-nav a:before {
-    top: 25%;
-    font-size: 80px;
-    font-size: 5rem;
-  }
-}
-.view-id-tfall_marquee .flex-direction-nav a.flex-next:before {
-  content: "\e600";
-}
-.view-id-tfall_marquee .flex-direction-nav a.flex-prev:before {
-  content: "\e601";
-}
-.view-id-tfall_marquee li {
-  border-right: 1px solid #91998c;
-}
-@media screen and (max-width: 600px) {
-  .view-id-tfall_marquee li {
-    border: none;
-  }
-}
-.view-id-tfall_marquee li:last-child {
-  border: none;
-}
-.view-id-tfall_marquee .flexslider {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  margin: 0 auto;
-  width: 1170px;
-}
-@media screen and (max-width: 1200px) {
-  .view-id-tfall_marquee .flexslider {
-    width: 585px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .view-id-tfall_marquee .flexslider {
-    width: 90.8%;
-    overflow: hidden;
-  }
-}
-.view-id-tfall_marquee .flexslider:hover .flex-prev {
-  color: white;
-  left: 15px;
-  opacity: 1;
-}
-@media screen and (min-width: 980px) {
-  .view-id-tfall_marquee .flexslider:hover .flex-prev {
-    left: -50px;
-  }
-}
-.view-id-tfall_marquee .flexslider:hover .flex-next {
-  color: white;
-  opacity: 1;
-  right: 15px;
-}
-@media screen and (min-width: 980px) {
-  .view-id-tfall_marquee .flexslider:hover .flex-next {
-    right: -50px;
-  }
-}
-.view-id-tfall_marquee .marquee-body,
-.view-id-tfall_marquee .marquee-title {
-  background-color: #3c3835;
-  font-family: "Fedra Serif Screen Regular 3";
-}
-.view-id-tfall_marquee .marquee-title {
-  padding: 20px 20px 0 20px;
-}
-.view-id-tfall_marquee .marquee-title a {
-  color: white;
-}
-.view-id-tfall_marquee .marquee-title a:hover {
-  color: #e69740;
-}
-@media screen and (max-width: 480px) {
-  .view-id-tfall_marquee .marquee-title {
-    min-height: 60px;
-    padding: 10px;
-  }
-}
-.view-id-tfall_marquee .marquee-body {
-  color: #999999;
-  padding: 0 20px 20px 20px;
-  min-height: 40px;
-}
-@media screen and (max-width: 480px) {
-  .view-id-tfall_marquee .marquee-body {
-    display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .view-id-tfall_marquee .marquee-body {
-    min-height: 60px;
-  }
-}
-.view-id-tfall_marquee .flex-viewport {
-  overflow: visible !important;
-}
-
-.marquee-wrap {
-  position: relative;
-  overflow: visible;
-}
-
-.marquee-mask-left,
-.marquee-mask-right {
-  background-color: #91998c;
-  position: absolute;
-  opacity: 0.5;
-  height: 465px;
-  width: 1170px;
-  top: 0;
-  bottom: 0;
-  z-index: 9999;
-}
-
-.marquee-mask-left {
-  left: -1170px;
-}
-
-.marquee-mask-right {
-  right: -1170px;
-}
-
-/**/
-/**
-* #Constant Contact
-**/
-.sidebar-right .constant-contact {
-  min-height: 50px;
-}
-@media screen and (max-width: 1200px) {
-  .sidebar-right .constant-contact {
-    min-height: 80px;
-  }
-}
-.sidebar-right .constant-contact form {
-  margin: 0;
-}
-.sidebar-right .constant-contact .btn-primary {
-  background-color: #92998d;
-  font-family: "Fedra Serif Screen Regular 3";
-}
-.sidebar-right .constant-contact .btn-primary:hover {
-  background-color: #cf4753;
-}
-.sidebar-right .constant-contact .form-type-textfield input {
-  width: 88%;
-}
-@media screen and (max-width: 1200px) {
-  .sidebar-right .constant-contact .form-type-textfield input {
-    width: 93%;
-  }
-}
-
-.footer__contact-us .constant-contact form .form-text {
-  background-color: white;
-  border-radius: 4px;
-  padding: 4px 10px;
-  font-size: 13px;
-  line-height: 1;
-}
-
-.constant-contact .form-type-textfield {
-  margin: 0;
-  float: left;
-  width: 65%;
-}
-@media screen and (max-width: 1200px) {
-  .constant-contact .form-type-textfield {
-    width: 100%;
-  }
-}
-.constant-contact .btn-primary {
-  float: left;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-shadow: none;
-  height: 30px;
-  width: 35%;
-}
-@media screen and (max-width: 1200px) {
-  .constant-contact .btn-primary {
-    float: none;
-    clear: both;
-    width: auto;
-  }
-}
-.constant-contact .btn-primary:active {
-  background-color: #cf4753;
-}
-
-/**/
-/**
-* #Press - /press
-**/
-.page-press .full-list {
-  margin-top: 30px;
-}
-
-/**/
-/**
-* #Table of Contents
-**/
-/**
-    #Imports
-    #Uber Navigation
-    #Header
-    #Primary Navigation
-    #Main Content
-    #Footer
-    #Marquee
-
-    ### VIEWS ###
-    #Persons
-    #Supporters
-**/
-/**/
-html.lte-ie8 {
-  /**
-  * #Uber Navigation
-  **/
-  /**/
-  /**
-  * #Header
-  **/
-  /**/
-  /**
-  * #Primary Navigation
-  **/
-  /**/
-  /**
-  * #Main Content
-  **/
-  /**/
-  /**
-  * #Footer
-  **/
-  /**/
-  /**
-  * #Marquee
-  **/
-  /**/
-  /**
-  * #Persons
-  **/
-}
-html.lte-ie8 .uber-nav .content > .menu > li.last {
-  border: 0;
-}
-html.lte-ie8 .donate {
-  margin-top: 2px;
-  margin-right: 6px;
-}
-html.lte-ie8 .social-media {
-  display: inline-block;
-  width: 22px;
-  height: 20px;
-}
-html.lte-ie8 .ico-facebook:before, html.lte-ie8 .ico-vimeo:before, html.lte-ie8 .ico-twitter:before, html.lte-ie8 .ico-linkedin:before {
-  content: none;
-}
-html.lte-ie8 .ico-facebook {
-  background: url(../images/icon-facebook.png) center center no-repeat;
-}
-html.lte-ie8 .ico-vimeo {
-  background: url(../images/icon-vimeo.png) center center no-repeat;
-}
-html.lte-ie8 .ico-twitter {
-  background: url(../images/icon-twitter.png) center center no-repeat;
-}
-html.lte-ie8 .ico-linkedin {
-  background: url(../images/icon-linkedin.png) center center no-repeat;
-}
-html.lte-ie8 .navbar .navbar-inner .sidr-toggle {
-  display: none;
-}
-html.lte-ie8 .navbar .navbar-inner .container {
-  display: block;
-  width: 940px;
-}
-html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
-  width: 192px;
-}
-html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
-  width: 142px;
-}
-html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
-  width: 255px;
-}
-html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
-  width: 151px;
-}
-html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
-  width: 200px;
-}
-html.lte-ie8 #main .page-title, html.lte-ie8 #main h3 {
-  font-weight: bold;
-}
-html.lte-ie8 #main #content.span12 {
-  width: 100%;
-  margin: 0;
-}
-html.lte-ie8 .full-list {
-  width: 190px;
-}
-html.lte-ie8 .st_twitter_large {
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-  margin-right: 7px;
-}
-html.lte-ie8 .st_twitter_large .stButton {
-  background: url(../images/icon-twitter-lg.png) 0 0 no-repeat !important;
-}
-html.lte-ie8 .st_twitter_large .stLarge {
-  display: none !important;
-}
-html.lte-ie8 .st_facebook_large {
-  line-height: 32px;
-  width: 32px;
-  height: 32px;
-  display: inline-block;
-}
-html.lte-ie8 .st_facebook_large .stButton {
-  background: url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important;
-}
-html.lte-ie8 .st_facebook_large .stLarge {
-  display: none !important;
-}
-html.lte-ie8 .top-section__subheader {
-  margin-bottom: 10px;
-}
-html.lte-ie8 .top-section__description {
-  font-size: 15px;
-}
-html.lte-ie8 #footer .footer-links .content > ul > li + li + li + li {
-  display: none;
-}
-html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child {
-  display: none;
-}
-html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li, html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li + li {
-  display: none;
-}
-html.lte-ie8 #footer #edit-keys {
-  width: 162px;
-}
-html.lte-ie8 .marquee .marquee__pane:hover .marquee__hover,
-html.lte-ie8 .marquee .marquee__pane:hover .marquee__info-wrapper {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-html.lte-ie8 .marquee__hover {
-  width: 100%;
-}
-html.lte-ie8 .marquee__info-wrapper {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-}
-html.lte-ie8 .view-persons .view-content .view-persons-one-col {
-  display: none;
-}
-html.lte-ie8 .view-persons .view-content .view-persons-two-col {
-  display: block;
-}
-html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col, html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
-  float: left;
-  width: 49%;
-}
-html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col {
-  margin-right: 1%;
-  clear: left;
-}
-html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
-  margin-left: 1%;
 }
