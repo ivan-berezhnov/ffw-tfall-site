@@ -617,7 +617,9 @@ a.mapbox-icon-twitter {
 .leaflet-popup {
     pointer-events: none;
 }
-
+.worldmap__details .leaflet-popup-pane {
+	top: 0;
+}
 .leaflet-popup-close-button {
     pointer-events: all;
 }
