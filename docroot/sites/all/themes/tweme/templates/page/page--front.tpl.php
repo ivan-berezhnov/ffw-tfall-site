@@ -156,6 +156,7 @@
         </div>
         <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
         <div class="footer__contact-us">
+          <p>Subscribe to our Newsletter</p>
           <div class="constant-contact">
             <?php
             //including the file with the constant contact submit form block.

@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title">Latest News</h2>
+  <h2 class="page-title">News</h2>
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">

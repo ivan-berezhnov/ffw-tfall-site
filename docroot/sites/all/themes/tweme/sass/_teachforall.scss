@@ -55,11 +55,6 @@
 **/
 
 
-
-
-  content: "\e607";
-}
-
 /**
 * #Styleguide - Typography
 **/
@@ -1135,10 +1130,10 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
-  @include font-size(14);
+  @include font-size(11);
   form {
     label {
-      @include font-size(14);
+      @include font-size(11);
     }
     .form-text {
       background-color: $beige;
