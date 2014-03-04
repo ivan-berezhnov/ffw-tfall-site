@@ -34,7 +34,7 @@
         $embedded_field_video_size= sizeof($embedded_field);
         $is_embedded_video_field = ($embedded_field_video_size > 0);
         if ($is_embedded_video_field) {
-            print t('<div class="ico-play"></div>');
+            print t('<div class="icon-play"></div>');
         }
       ?>
     </div>
