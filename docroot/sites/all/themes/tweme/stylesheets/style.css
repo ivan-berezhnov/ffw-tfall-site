@@ -3134,7 +3134,9 @@ img {
 #worldmap.worldmap__details {
   background-color: #92b4a6;
 }
-
+#worldmap.worldmap__details .leaflet-popup-pane {
+  top: 21px;
+}
 /**/
 /**
 * #Search
