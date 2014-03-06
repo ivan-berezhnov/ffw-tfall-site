@@ -7,7 +7,8 @@
 					zoom: 2,
 					minZoom: 2,
 					maxZoom: 5,
-					maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230))
+					//maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230)),
+					worldCopyJump: false
 				}),
 				$mapTitle = $('.worldmap__title'),
 				fadeAnimateTime = 200,
@@ -65,7 +66,7 @@
 				// console.log(feature);
 				var popupContent =
 								'<a class="popup" href="' + feature.properties.url + '">' +
-								'<div class="no__map-main-img"><img class="no__main-img" src="' + feature.properties.mainpic + '"></div>' +
+								'<div class="no__map-main-img"><img class="no__main-img" width="130" height="73" src="' + feature.properties.mainpic + '"></div>' +
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<h3>' + feature.properties.name + '</h3>' +
 								// '<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
