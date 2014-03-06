@@ -1202,7 +1202,8 @@ h2.page-title {
   font-size: 14px;
   font-size: 0.875rem;
   display: block;
-  line-height: 12px;
+  line-height: 15px;
+  letter-spacing: 0em;
   margin: 7px 3px;
   padding: 0;
   text-transform: none;

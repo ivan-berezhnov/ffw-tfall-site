@@ -854,7 +854,8 @@ h2 {
         font-weight: normal;
         @include font-size(14);
         display: block;
-        line-height: 12px;
+        line-height: 15px;
+        letter-spacing: 0em;
         margin: 7px 3px;
         padding: 0;
         text-transform: none;
