@@ -10,15 +10,26 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
 ?>
 <div class="container header">
 
-  <div class="navbar navbar-medium navbar-inverse navbar-static-top visible-phone">
-    <div class="sidr-toggle">
-      <?php print $navbar_toggler ?>
-    </div>
-  </div>
+  <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
+
+    <h4>
+      Teach For All
+      <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
+    </h4>
+
+    <?php print render($page['main_navigation']) ?>
+    <?php print render($page['header']['menu_menu-uber-nav']); ?>
+
+  </nav>
 
   <div class="row-fluid">
+    <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
     <div class="uber-nav pull-left hidden-phone">
-      <?php print render($page['header']) ?>
+      <?php print render($page['header']); ?>
     </div>
     <div class="pull-right">
       <div class="donate pull-left">

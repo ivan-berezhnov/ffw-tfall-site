@@ -21,12 +21,12 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="/sites/all/themes/tweme/stylesheets/ie8.css">
     <![endif]-->
-    <link rel="stylesheet" href="http://fonts.typotheque.com/WF-021707-002785.css" type="text/css" />
+    <!--<link rel="stylesheet" href="http://fonts.typotheque.com/WF-021707-002785.css" type="text/css" />-->
     <?php print $scripts ?>
     <?php print $head_bottom ?>
   </head>
   <body class="<?php print $classes ?>"<?php print $attributes ?>>
-		<div id="fb-root"></div>
+    <div id="fb-root"></div>
     <?php print $page_top ?>
     <?php print $page ?>
     <?php print $page_bottom ?>
