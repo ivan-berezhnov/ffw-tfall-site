@@ -7,19 +7,22 @@
       <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
     </h4>
 
-    <?php print render($page['main_navigation']) ?>
-    <?php print render($page['header']['menu_menu-uber-nav']); ?>
+    <?php print render($page['main_navigation']); ?>
+    <?php print render($page['header']); ?>
 
   </nav>
 
+  <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
   <div class="row-fluid">
-    <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="uber-nav pull-left hidden-phone">
+
+    <div class="uber-nav pull-left">
       <?php print render($page['header']); ?>
+
     </div>
     <div class="pull-right">
       <div class="donate pull-left">

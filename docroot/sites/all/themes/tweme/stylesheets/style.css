@@ -931,6 +931,11 @@ h2.page-title {
   margin: 0 5px 0 0;
 }
 
+@media screen and (max-width: 1025px) {
+  .navbar {
+    display: none;
+  }
+}
 .navbar .navbar-inner {
   background-color: #3c3835;
   background-image: none;
@@ -1132,6 +1137,11 @@ h2.page-title {
 **/
 .uber-nav {
   margin-top: -5px;
+}
+@media screen and (max-width: 1025px) {
+  .uber-nav .block-menu {
+    display: none;
+  }
 }
 .uber-nav .content > .menu {
   position: relative;
@@ -3495,7 +3505,7 @@ img {
 **/
 .effeckt-off-screen-nav {
   position: fixed;
-  z-index: 99991;
+  z-index: 999991;
   top: 0;
   left: 0;
   bottom: 0;

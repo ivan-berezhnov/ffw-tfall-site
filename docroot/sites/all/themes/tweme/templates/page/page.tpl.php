@@ -17,7 +17,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
       <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
     </h4>
 
-    <?php print render($page['main_navigation']) ?>
+    <?php print render($page['main_navigation']); ?>
     <?php print render($page['header']['menu_menu-uber-nav']); ?>
 
   </nav>
@@ -55,10 +55,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
 
 		<div class="container">
 			<nav role="navigation">
-        <?php print render($page['main_navigation']) ?>
-        <div class="visible-phone">
-          <?php print render($page['header']['menu_menu-uber-nav']); ?>
-        </div>
+        <?php print render($page['main_navigation']); ?>
       </nav>
 		</div>
 	</div>

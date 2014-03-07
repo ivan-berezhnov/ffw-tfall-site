@@ -561,7 +561,9 @@ h2 {
 }
 
 .navbar {
-
+  @media screen and (max-width:1025px) {
+    display: none;
+  }
   .navbar-inner {
     background-color: $grey3;
     background-image: none;
@@ -781,9 +783,13 @@ h2 {
 * #Uber Navigation
 **/
 
-
 .uber-nav {
   margin-top: -5px;
+  .block-menu {
+    @media screen and (max-width:1025px) {
+      display: none;
+    }
+  }
   .content {
     > .menu {
       position: relative;
