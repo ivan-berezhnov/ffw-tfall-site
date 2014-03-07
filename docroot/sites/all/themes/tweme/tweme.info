@@ -16,13 +16,12 @@ stylesheets[all][] = assets/css/bootstrap-extra.css
 stylesheets[all][] = assets/css/drupal.css
 stylesheets[all][] = stylesheets/style.css
 stylesheets[all][] = stylesheets/press.css
-stylesheets[all][] = stylesheets/off-screen-nav.css
 
 ;scripts[] = assets/js/drupal.js
 
 ;probably shared!
-scripts[] = js/teachforall.js
-;scripts[] = js/teachforall.min.js
+;scripts[] = js/teachforall.js
+scripts[] = js/teachforall.min.js
 
 
 regions[header] = Header
