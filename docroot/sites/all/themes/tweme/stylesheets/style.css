@@ -1635,9 +1635,9 @@ img {
 .worldmap__national-orgs {
   background-color: #80b4e4;
 }
-.worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+/*.worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
   height: 92px;
-}
+}*/
 
 .worldmap__title {
   -webkit-box-sizing: border-box;
@@ -1704,9 +1704,7 @@ img {
   z-index: 9999;
   /*top: -21px;*/
 }
-.leaflet-popup-pane .leaflet-popup {
-  bottom: 24px !important;
-}
+
 .leaflet-popup-pane a {
   color: #91998c;
   display: block;
@@ -3137,9 +3135,7 @@ img {
 #worldmap.worldmap__details {
   background-color: #92b4a6;
 }
-#worldmap.worldmap__details .leaflet-popup-pane {
-  top: 21px;
-}
+
 /**/
 /**
 * #Search
