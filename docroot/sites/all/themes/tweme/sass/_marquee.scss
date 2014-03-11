@@ -21,7 +21,7 @@
     display: block;
     a {
       color: $white;
-      display: block !important; // shameful flexslider override
+      display: block;
       padding-top: 20px;
       opacity: 1;
       top: 35%;
@@ -76,22 +76,55 @@
       overflow: hidden;
     }
 
+    .flex-prev {
+      &.flex-disabled {
+        display: none;
+      }
+      @media screen and (max-width:860px) { // flexslider override
+        left: -50px;
+      }
+      @media screen and (max-width:720px) { // flexslider override
+        left: 10px;
+      }
+    }
+
+    .flex-next {
+      &.flex-disabled {
+        display: none;
+      }
+      @media screen and (max-width:860px) { // flexslider override
+        right: -50px;
+      }
+      @media screen and (max-width:720px) { // flexslider override
+        right: 10px;
+      }
+    }
+
     &:hover {
       .flex-prev {
         color: $white;
-        left: 15px;
         opacity: 1;
         @media screen and (min-width:980px) {
           left: -50px;
         }
-        //opacity: 1;
+        @media screen and (max-width:860px) { // flexslider override
+          left: -50px;
+        }
+        @media screen and (max-width:720px) { // flexslider override
+          left: 10px;
+        }
       }
       .flex-next {
         color: white;
         opacity: 1;
-        right: 15px;
         @media screen and (min-width:980px) {
           right: -50px;
+        }
+        @media screen and (max-width:860px) { // flexslider override
+          right: -50px;
+        }
+        @media screen and (max-width:720px) { // flexslider override
+          right: 10px;
         }
         //opacity: 1;
       }

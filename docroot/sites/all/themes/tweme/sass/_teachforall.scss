@@ -1325,6 +1325,16 @@ img {max-width: 100%;}
   background-color: $white;
   padding: 20px;
   text-align: center;
+  .view-nodequeue-supporter-list {
+    @media screen and (max-width:768px) {
+      margin: 0 auto;
+      width: 50%;
+    }
+    @media screen and (max-width:450px) {
+      width: 80%;
+    }
+  }
+
   .title {
     color: $orange2;
     font-family: $FedraSerifOLD;
@@ -2070,6 +2080,10 @@ img {max-width: 100%;}
     text-transform: uppercase;
     letter-spacing: 2px;
 
+    @media screen and (max-width:768px) {
+      margin-bottom: 0;
+    }
+
     &:hover {
       color: $red
     }
@@ -2079,8 +2093,16 @@ img {max-width: 100%;}
     margin-bottom: 15px;
     display: inline-block;
 
+    @media screen and (max-width:768px) {
+      margin-top: 0;
+    }
+
       .nl-front-image {
         margin-bottom: 20px;
+
+        @media screen and (max-width:768px) {
+          margin-top: 30px;
+        }
 
         a {
           display: block;
@@ -2117,7 +2139,6 @@ img {max-width: 100%;}
       }
 
       @media screen and (max-width: 767px) {
-        margin-top: 30px;
         text-align: center;
 
         &:first-child {
