@@ -1760,6 +1760,10 @@ img {
   background: #4d4d4d;
 }
 
+.worldmap__details #map {
+  background-color: #92b4a6;
+}
+
 /**/
 /**
 * #Twitter
