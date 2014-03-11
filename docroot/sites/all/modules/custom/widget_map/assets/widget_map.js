@@ -7,12 +7,14 @@
 					zoom: 2,
 					minZoom: 2,
 					maxZoom: 5,
-					maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230)),
-					worldCopyJump: false
+					maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230))
 				}),
 				$mapTitle = $('.worldmap__title'),
 				fadeAnimateTime = 200,
 				noTouch = $('html').hasClass('no-touch');
+			
+			//prevents wrapping
+			map.tileLayer.options.noWrap = true;
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
