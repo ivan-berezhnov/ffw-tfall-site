@@ -13,6 +13,9 @@
 			$zoomControls = $('.leaflet-control-zoom'),
 			hasTouch = $('html').hasClass('touch');
 
+			//prevents map repetition
+			map.tileLayer.options.noWrap = true;
+
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
 

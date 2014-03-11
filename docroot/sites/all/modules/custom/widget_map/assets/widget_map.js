@@ -13,7 +13,7 @@
 				fadeAnimateTime = 200,
 				noTouch = $('html').hasClass('no-touch');
 			
-			//prevents wrapping
+			//prevents map repetition
 			map.tileLayer.options.noWrap = true;
 
 			map.doubleClickZoom.disable();
