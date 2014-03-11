@@ -80,7 +80,7 @@
       &.flex-disabled {
         display: none;
       }
-      @media screen and (max-width:860px) { // flexslider override
+      @media screen and (max-width:980px) { // flexslider override
         left: -50px;
       }
       @media screen and (max-width:720px) { // flexslider override
@@ -92,7 +92,7 @@
       &.flex-disabled {
         display: none;
       }
-      @media screen and (max-width:860px) { // flexslider override
+      @media screen and (max-width:980px) { // flexslider override
         right: -50px;
       }
       @media screen and (max-width:720px) { // flexslider override

@@ -3367,7 +3367,7 @@ img {
 .view-id-tfall_marquee .flexslider .flex-prev.flex-disabled {
   display: none;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 980px) {
   .view-id-tfall_marquee .flexslider .flex-prev {
     left: -50px;
   }
@@ -3380,7 +3380,7 @@ img {
 .view-id-tfall_marquee .flexslider .flex-next.flex-disabled {
   display: none;
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 980px) {
   .view-id-tfall_marquee .flexslider .flex-next {
     right: -50px;
   }
