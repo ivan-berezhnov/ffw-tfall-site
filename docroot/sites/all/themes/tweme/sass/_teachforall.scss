@@ -558,7 +558,9 @@ h2 {
 }
 
 .navbar {
-
+  @media screen and (max-width:1025px) {
+    display: none;
+  }
   .navbar-inner {
     background-color: $grey3;
     background-image: none;
@@ -701,7 +703,7 @@ h2 {
               text-align: center;
 
               > a {
-                background: url(../images/nav-border.png) left center no-repeat;
+                background: url(../images/prod/nav-border.png) left center no-repeat;
               }
 
               &:first-child {
@@ -778,9 +780,13 @@ h2 {
 * #Uber Navigation
 **/
 
-
 .uber-nav {
   margin-top: -5px;
+  .block-menu {
+    @media screen and (max-width:1025px) {
+      display: none;
+    }
+  }
   .content {
     > .menu {
       position: relative;
@@ -1317,6 +1323,16 @@ img {max-width: 100%;}
   background-color: $white;
   padding: 20px;
   text-align: center;
+  .view-nodequeue-supporter-list {
+    @media screen and (max-width:768px) {
+      margin: 0 auto;
+      width: 50%;
+    }
+    @media screen and (max-width:450px) {
+      width: 80%;
+    }
+  }
+
   .title {
     color: $orange2;
     font-family: $FedraSerifOLD;
@@ -1476,7 +1492,7 @@ img {max-width: 100%;}
       position: absolute;
       bottom: 32px;
       right: 10px;
-      background: $grey3 url(../images/grey-more-btn-bg.png) left top repeat-x;
+      background: $grey3 url(../images/prod/grey-more-btn-bg.png) left top repeat-x;
       color: $white;
       line-height: 26px;
       padding: 0px 17px;
@@ -1487,6 +1503,12 @@ img {max-width: 100%;}
         background: $grey2;
       }
     }
+  }
+}
+
+.worldmap__details {
+  #map {
+    background-color: $map_color2;
   }
 }
 
@@ -2062,6 +2084,10 @@ img {max-width: 100%;}
     text-transform: uppercase;
     letter-spacing: 2px;
 
+    @media screen and (max-width:768px) {
+      margin-bottom: 0;
+    }
+
     &:hover {
       color: $red
     }
@@ -2071,8 +2097,16 @@ img {max-width: 100%;}
     margin-bottom: 15px;
     display: inline-block;
 
+    @media screen and (max-width:768px) {
+      margin-top: 0;
+    }
+
       .nl-front-image {
         margin-bottom: 20px;
+
+        @media screen and (max-width:768px) {
+          margin-top: 30px;
+        }
 
         a {
           display: block;
@@ -2109,7 +2143,6 @@ img {max-width: 100%;}
       }
 
       @media screen and (max-width: 767px) {
-        margin-top: 30px;
         text-align: center;
 
         &:first-child {
