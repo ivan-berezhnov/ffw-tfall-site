@@ -56,13 +56,18 @@
                   print render($content['sharethis']);
                 }
               ?>
-            <a class="archive-link" href="/news/latest">
+            <a href="/news/latest">
 	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
             </a>
   				  </div>
   				</div>
 
     	  </div>
+            <div class="span3">
+      <div class="stats">
+        <?php print t('Subscribe to our Newsletter'); ?>
+      </div>
+    </div>
         <div class="span3 sidebar-right">
           <div class="constant-contact">
             <?php
