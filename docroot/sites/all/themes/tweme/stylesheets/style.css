@@ -407,6 +407,9 @@ html.pc.chrome body {
 
     #News - Latest
     #Network Learning - Latest
+
+    ### PANELS ###
+    #2col-bricks
 **/
 /**
 * #Styleguide - Typography
@@ -3277,6 +3280,10 @@ img {
   .page-network-learning-latest #main .teachforall-twitter-block {
     margin-top: 30px;
   }
+}
+
+.panel-2col-bricks .center-wrapper .panel-panel {
+  margin-bottom: 20px;
 }
 
 /**
