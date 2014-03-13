@@ -1634,6 +1634,22 @@ img {
     margin: 0;
   }
 }
+@media screen and (max-width: 450px) {
+  .touch #worldmap {
+    display: none;
+    padding: 0;
+  }
+}
+
+#mobileworldmap {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .touch #mobileworldmap {
+    display: block;
+    padding: 0;
+  }
+}
 
 .worldmap__national-orgs {
   background-color: #80b4e4;

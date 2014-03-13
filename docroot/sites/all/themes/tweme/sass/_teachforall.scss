@@ -1387,6 +1387,19 @@ img {max-width: 100%;}
       width: 100%;
       margin: 0;
     }
+    @media screen and (max-width: 450px) {
+      display: none;
+      padding: 0;
+    }
+  }
+}
+#mobileworldmap {
+  display: none;
+  .touch & {
+    @media screen and (max-width: 450px) {
+      display: block;
+      padding: 0;
+    }
   }
 }
 
