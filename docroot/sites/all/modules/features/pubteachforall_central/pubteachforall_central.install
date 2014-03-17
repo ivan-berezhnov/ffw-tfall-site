@@ -6,10 +6,33 @@
  *
  * Enables modules maxlength and constant_contact
  */
-function pubteachforall_central_update_7100() {
+function pubteachforall_central_update_7100()
+{
   $modules = array(
-    'maxlength',
-    'constant_contact',
+      'maxlength',
+      'constant_contact',
+  );
+  module_enable($modules);
+  drupal_flush_all_caches();
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * Enables modules Bean, Bean Admin UI, Panels, Mini panels, Panel nodes, Panelizer, Panels-IPE, Modernizer, and JQuery update
+ */
+function pubteachforall_central_update_7101()
+{
+  $modules = array(
+      'bean',
+      'bean_admin_ui',
+      'panels',
+      'panels_mini',
+      'panels_node',
+      'panelizer',
+      'panels_ipe',
+      'modernizr',
+      'jquery_update',
   );
   module_enable($modules);
   drupal_flush_all_caches();

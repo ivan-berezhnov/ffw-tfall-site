@@ -1,14 +1,28 @@
 <div class="container header">
 
-  <div class="navbar navbar-medium navbar-inverse navbar-static-top visible-phone">
-    <div class="sidr-toggle">
-      <?php print $navbar_toggler ?>
-    </div>
-  </div>
+  <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
+
+    <h4>
+      Teach For All
+      <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
+    </h4>
+
+    <?php print render($page['main_navigation']); ?>
+    <?php print render($page['header']); ?>
+
+  </nav>
+
+  <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
 
   <div class="row-fluid">
-    <div class="uber-nav pull-left hidden-phone">
-			<?php print render($page['header']) ?>
+
+    <div class="uber-nav pull-left">
+      <?php print render($page['header']); ?>
+
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
@@ -23,7 +37,7 @@
   </div>
   <div class="row-fluid site-name">
     <div class="span12">
-      <a href="/"><img src="/sites/all/themes/tweme/images/tfa-logo@x2.png" srcset="/sites/all/themes/tweme/images/tfa-logo.png 1x, /sites/all/themes/tweme/images/tfa-logo.png 1.5x, /sites/all/themes/tweme/images/tfa-logo@x2.png 2x"></a>
+      <a href="/"><img src="/sites/all/themes/tweme/images/prod/tfa-logo@x2.png" srcset="/sites/all/themes/tweme/images/prod/tfa-logo.png 1x, /sites/all/themes/tweme/images/prod/tfa-logo.png 1.5x, /sites/all/themes/tweme/images/prod/tfa-logo@x2.png 2x"></a>
     </div>
   </div>
 </div>
@@ -35,9 +49,6 @@
 		<div class="container">
 			<nav role="navigation">
 				<?php print render($page['main_navigation']) ?>
-        <div class="visible-phone">
-          <?php print render($page['header']['menu_menu-uber-nav']); ?>
-        </div>
       </nav>
 		</div>
 	</div>
