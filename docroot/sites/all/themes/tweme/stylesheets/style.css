@@ -1650,13 +1650,29 @@ img {
   padding: 0px;
   position: relative;
 }
-.touch #worldmap {
+#worldmap .touch {
   background-color: white;
 }
 @media screen and (max-width: 767px) {
-  .touch #worldmap {
+  #worldmap .touch {
     width: 100%;
     margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  #worldmap .touch {
+    display: none;
+    padding: 0;
+  }
+}
+
+#mobileworldmap {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  #mobileworldmap .touch {
+    display: block;
+    padding: 0;
   }
 }
 

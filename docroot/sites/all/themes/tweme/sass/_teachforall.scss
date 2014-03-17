@@ -1400,12 +1400,26 @@ img {max-width: 100%;}
   position: relative;
 
   // Set outer color to white, so users can differentiate between the outer (scrollable) area and the map
-  .touch & {
+  .touch {
     background-color: $white;
 
     @media screen and (max-width: 767px) {
       width: 100%;
       margin: 0;
+    }
+    @media screen and (max-width: 450px) {
+      display: none;
+      padding: 0;
+    }
+  }
+}
+#mobileworldmap {
+  display: none;
+  .touch 
+    {
+    @media screen and (max-width: 450px) {
+      display: block;
+      padding: 0;
     }
   }
 }
