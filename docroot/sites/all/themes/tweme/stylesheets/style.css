@@ -3456,9 +3456,14 @@ img {
 }
 
 /********** CUSTOM ***********/
+.owl-carousel .owl-wrapper {
+  background: #91998c;
+}
 .owl-carousel .owl-item {
   background: #3c3835;
-  margin: 0 1px 0 0;
+}
+.owl-carousel .owl-item .views-row {
+  border-right: solid #91998c 1px;
 }
 .owl-carousel .owl-item .marquee-title {
   padding: 20px;
@@ -3478,13 +3483,38 @@ img {
 }
 .owl-carousel .owl-item .marquee-body {
   padding: 0 20px 20px 20px;
-  min-height: 100px;
+  min-height: 40px;
   color: #999;
   font-family: "Fedra Serif Screen Regular 3";
   font-family: 16px;
   font-size: 1.2rem;
   line-height: 20px;
   text-align: -webkit-match-parent;
+}
+@media screen and (max-width: 2330px) {
+  .owl-carousel .owl-item .marquee-body {
+    min-height: 80px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .owl-carousel .owl-item .marquee-body {
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .owl-carousel .owl-item .marquee-body {
+    min-height: 120px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .owl-carousel .owl-item .marquee-body {
+    min-height: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .owl-carousel .owl-item .marquee-body {
+    min-height: 80px;
+  }
 }
 
 /**

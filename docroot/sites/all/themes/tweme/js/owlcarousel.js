@@ -13,6 +13,8 @@
         	scrollPerPage: true,
         	pagination: false,
         	autoHeight: false,
+        	mouseDrag: true,
+        	touchDrag: true,
 
         });
 
