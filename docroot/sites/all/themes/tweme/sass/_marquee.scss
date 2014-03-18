@@ -150,3 +150,45 @@
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center
 }
+
+
+
+/********** CUSTOM ***********/
+
+.owl-carousel {
+  .owl-wrapper {
+    
+  }
+  .owl-item {
+    background: #3c3835;
+    margin: 0 1px 0 0;
+
+    .marquee-title {
+      padding: 20px;
+      overflow: hidden;
+      min-height: 10px;
+      max-height: 10px;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+
+      a {
+        color: $white;
+        font-family: "Fedra Serif Screen Regular 3";
+        font-family: 16px;
+        font-size: 1.2rem;
+        line-height: 20px;
+        text-align: -webkit-match-parent;
+      }
+    }
+    .marquee-body {
+        padding: 0 20px 20px 20px;
+        min-height: 100px;
+        color: #999;
+        font-family: "Fedra Serif Screen Regular 3";
+        font-family: 16px;
+        font-size: 1.2rem;
+        line-height: 20px;
+        text-align: -webkit-match-parent;
+    }
+  }
+}

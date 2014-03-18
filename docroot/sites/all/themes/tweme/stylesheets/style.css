@@ -3455,6 +3455,38 @@ img {
   background: url(AjaxLoader.gif) no-repeat center center;
 }
 
+/********** CUSTOM ***********/
+.owl-carousel .owl-item {
+  background: #3c3835;
+  margin: 0 1px 0 0;
+}
+.owl-carousel .owl-item .marquee-title {
+  padding: 20px;
+  overflow: hidden;
+  min-height: 10px;
+  max-height: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.owl-carousel .owl-item .marquee-title a {
+  color: white;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-family: 16px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  text-align: -webkit-match-parent;
+}
+.owl-carousel .owl-item .marquee-body {
+  padding: 0 20px 20px 20px;
+  min-height: 100px;
+  color: #999;
+  font-family: "Fedra Serif Screen Regular 3";
+  font-family: 16px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  text-align: -webkit-match-parent;
+}
+
 /**
 * #Constant Contact
 **/
