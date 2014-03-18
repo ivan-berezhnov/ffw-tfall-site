@@ -1396,26 +1396,36 @@ img {max-width: 100%;}
 
 
 
-#worldmap {
-  @include box-sizing(border-box);
-  padding: 0px;
-  position: relative;
 
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    margin: 0;
+
+
+
+  #worldmap {
+    @include box-sizing(border-box);
+    padding: 0px;
+    position: relative;
+
+    .touch & {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+        display: none;
+        padding: 0;
+      }
+    }
+  }
+
+  #mobileworldmap {
     display: none;
-    padding: 0;
+    .touch & {
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 0;
+      }
+    }
   }
-}
 
-#mobileworldmap {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: block;
-    padding: 0;
-  }
-}
+
 
 .worldmap__national-orgs {
   background-color: $blue1;
