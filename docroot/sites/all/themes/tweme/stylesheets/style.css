@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Imports */
 /**
 *	#Table of Contents
@@ -814,6 +815,8 @@ h2.page-title {
   line-height: 14px;
   margin-bottom: 5px;
   text-transform: uppercase;
+  font-family: 'News Gothic';
+  font-weight: bold;
 }
 
 .slug-medium {
@@ -1202,8 +1205,7 @@ h2.page-title {
   font-size: 14px;
   font-size: 0.875rem;
   display: block;
-  line-height: 15px;
-  letter-spacing: 0em;
+  line-height: 12px;
   margin: 7px 3px;
   padding: 0;
   text-transform: none;
@@ -1419,12 +1421,12 @@ h2.page-title {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .footer__contact-us form label {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .footer__contact-us form .form-text {
   background-color: #dfd9c9;
@@ -1613,10 +1615,6 @@ img {
   height: 84px;
 }
 
-.no__map-main-img {
-  height: 164px;
-}
-
 #worldmap {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1637,9 +1635,9 @@ img {
 .worldmap__national-orgs {
   background-color: #80b4e4;
 }
-.worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-  height: 300px;
-}
+/*.worldmap__national-orgs .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+  height: 92px;
+}*/
 
 .worldmap__title {
   -webkit-box-sizing: border-box;
@@ -1647,12 +1645,13 @@ img {
   box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
-  top: 30px;
+  bottom: 45px;
   left: 0;
   text-align: center;
   width: 100%;
   padding: 0 45px;
   z-index: 99;
+  font-size: .9em;
 }
 
 #map {
@@ -1663,7 +1662,21 @@ img {
 #map .leaflet-map-pane {
   width: 100%;
 }
-
+#map .popup img {
+  width: 130px;
+  float: left;
+  margin-right: 10px;
+}
+#map .popup h2 {
+  line-height: 1;
+  font-family: 'News Gothic';
+  font-weight: bold;
+  font-size: 11px;
+}
+#map .popup h3 {
+  margin-bottom: 0;
+  color: #4d4d4d;
+}
 .leaflet-bar {
   border: none;
   border-radius: 0;
@@ -1689,14 +1702,26 @@ img {
 
 .leaflet-popup-pane {
   z-index: 9999;
-}
-.leaflet-popup-pane a {
-  color: #91998c;
-}
-.leaflet-popup-pane a:hover {
-  color: #e69740;
+  /*top: -21px;*/
 }
 
+.leaflet-popup-pane a {
+  color: #91998c;
+  display: block;
+  overflow: hidden;
+}
+
+.leaflet-popup-pane a span {
+  display: block;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #91998c;
+  font-family: 'News Gothic';
+  font-weight: bold;
+}
+.leaflet-popup-pane a:hover span {
+  color: #cf4753;
+}
 .leaflet-popup-content-wrapper {
   -webkit-box-shadow: 3px 3px 14px #888888;
   -moz-box-shadow: 3px 3px 14px #888888;
@@ -1706,38 +1731,13 @@ img {
   margin: 9px;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
-  text-align: right;
   font-size: 11px;
   font-size: 0.6875rem;
   color: #e69740;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 3px;
-  margin-bottom: -19px;
 }
-.leaflet-popup-content-wrapper .leaflet-popup-content .btn {
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  border-radius: 13px;
-  text-shadow: none;
-  font-size: 16px;
-  font-size: 1rem;
-  position: absolute;
-  bottom: 32px;
-  right: 10px;
-  background: #3c3835 url(../images/grey-more-btn-bg.png) left top repeat-x;
-  color: white;
-  line-height: 26px;
-  padding: 0px 17px;
-  font-family: "News Gothic Old";
-}
-.leaflet-popup-content-wrapper .leaflet-popup-content .btn:hover {
-  color: white;
-  background: #4d4d4d;
-}
-
 /**/
 /**
 * #Twitter
@@ -2778,8 +2778,9 @@ img {
 
 .widget-map__blurb {
   color: #999999;
+  font-family: 'News Gothic';
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   font-size: 1rem;
 }
 
@@ -3220,7 +3221,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";
