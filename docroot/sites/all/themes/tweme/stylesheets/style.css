@@ -3503,16 +3503,6 @@ img {
 }
 @media screen and (max-width: 1064px) {
   .owl-carousel .owl-item .marquee-body {
-    min-height: 120px;
-  }
-}
-@media screen and (max-width: 570px) {
-  .owl-carousel .owl-item .marquee-body {
-    min-height: 150px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .owl-carousel .owl-item .marquee-body {
     min-height: 80px;
   }
 }

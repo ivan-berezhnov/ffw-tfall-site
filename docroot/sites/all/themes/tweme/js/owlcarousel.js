@@ -16,6 +16,10 @@
         	mouseDrag: true,
         	touchDrag: true,
 
+        	itemsTablet: [1024,2],
+        	itemsTabletSmall: [768,1],
+
+
         });
 
       });
