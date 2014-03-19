@@ -1580,7 +1580,6 @@ html.pc.chrome .marquee__preview {
 }
 
 .no__map-main-img {
-  width: 292px;
   height: 164px;
 }
 
@@ -2546,25 +2545,11 @@ html.pc.chrome .no__ceo .node {
   height: 100%;
 }
 
-<<<<<<< HEAD
+
 .span12 h2 a {
   color: #4d4d4d;
 }
 .span12 h2 a:hover {
-=======
-.span12 a {
-  color: #4d4d4d;
-}
-.span12 a:hover {
-  color: #cf4753;
-  text-decoration: none;
-}
-
-.slug a {
-  color: #cf4753;
-}
-.slug a:hover {
->>>>>>> 8317fb9ceb5c618d1bab06988a11cbf3d774460a
   color: #cf4753;
   text-decoration: none;
 }

@@ -31,6 +31,9 @@ function tweme_process_html(&$vars) {
  * Preprocesses variables for page.tpl.php.
  */
 function tweme_preprocess_page(&$vars) {
+  //allows form to show error messages
+  $variables['constant_contact_block'] = module_invoke('constant_contact', 'block_view', '1');
+
   $page = $vars['page'];
 
   // Prepare navbar menu:

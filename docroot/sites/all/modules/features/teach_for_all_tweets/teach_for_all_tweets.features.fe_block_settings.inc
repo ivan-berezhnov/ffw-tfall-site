@@ -21,6 +21,9 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,
@@ -41,6 +44,9 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,
@@ -61,6 +67,9 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,
@@ -81,6 +90,9 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,

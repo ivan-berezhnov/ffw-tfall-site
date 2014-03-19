@@ -21,6 +21,9 @@ function pubteachforall_marquee_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,
@@ -29,6 +32,29 @@ function pubteachforall_marquee_default_fe_block_settings() {
       ),
     ),
     'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-tfall_marquee-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'tfall_marquee-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'seven' => array(
+        'theme' => 'seven',
+      ),
+      'tweme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'tweme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
     'visibility' => 0,
   );
 

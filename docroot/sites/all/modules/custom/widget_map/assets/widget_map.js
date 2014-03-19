@@ -6,11 +6,15 @@
 					center: [30, 25],
 					zoom: 2,
 					minZoom: 2,
-					maxZoom: 5
+					maxZoom: 5,
+					maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230))
 				}),
 				$mapTitle = $('.worldmap__title'),
 				fadeAnimateTime = 200,
 				noTouch = $('html').hasClass('no-touch');
+			
+			//prevents map repetition
+			map.tileLayer.options.noWrap = true;
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
@@ -61,28 +65,28 @@
 				var marker = e.layer,feature = marker.feature;
 
 				marker.setIcon(L.icon(feature.properties.icon));
-
+				// console.log(feature);
 				var popupContent =
 								'<a class="popup" href="' + feature.properties.url + '">' +
-								'<div class="no__map-main-img"><img class="no__main-img" src="' + feature.properties.mainpic + '"></div>' +
+								'<div class="no__map-main-img"><img class="no__main-img" width="130" height="73" src="' + feature.properties.mainpic + '"></div>' +
 								'<h2>' + feature.properties.title + '</h2>' +
-								'<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
-								'<a class="btn btn-primary" href="' + feature.properties.url + '">more</a></a>';
+								'<h3>' + feature.properties.name + '</h3>' +
+								// '<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
+								'<span>Read More</span></a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,
-					minWidth: 291
+					minWidth: 275
 				});
 
 				marker.on('click', function(e){
 					window.location = $(marker._popup._content).attr('href');
-				})
+				});
 					
 			});
 
 			if (noTouch) {
 				map.markerLayer.on('mouseover',function(e) {
-					$mapTitle.fadeOut(fadeAnimateTime);
 					e.layer.openPopup();
 				});
 
@@ -111,4 +115,5 @@
 			});
 		}
 	};
+
 }(jQuery));

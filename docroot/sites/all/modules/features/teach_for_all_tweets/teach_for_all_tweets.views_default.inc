@@ -378,7 +378,6 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
   $handler->display->display_options['fields']['screen_name']['alter']['prefix'] = '@';
   $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['screen_name']['element_default_classes'] = FALSE;
   /* Field: Twitter: Created time */
   $handler->display->display_options['fields']['created_time']['id'] = 'created_time';
   $handler->display->display_options['fields']['created_time']['table'] = 'twitter';
