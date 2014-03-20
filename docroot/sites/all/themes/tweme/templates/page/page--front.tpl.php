@@ -155,6 +155,7 @@
           <?php print $navbar_search ?>
         </div>
         <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
+          <p>Subscribe to our Newsletter</p>
           <div class="constant-contact">
             <div class="footer__contact-us">
           <p>Subscribe to our Newsletter</p></div>
