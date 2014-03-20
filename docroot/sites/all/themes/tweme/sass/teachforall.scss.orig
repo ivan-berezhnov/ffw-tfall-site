@@ -1718,7 +1718,9 @@ html.pc.chrome {
   padding: 0 45px;
   z-index: 99;
 }
-
+.worldmap__details #map {
+  background-color: $map_color2;
+}
 #map {
   background-color: $blue1;
   width:100%;

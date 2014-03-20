@@ -3132,7 +3132,7 @@ img {
 /**
 * #A Global Problem
 **/
-#worldmap.worldmap__details {
+#worldmap.worldmap__details, #worldmap.worldmap__details #map {
   background-color: #92b4a6;
 }
 
