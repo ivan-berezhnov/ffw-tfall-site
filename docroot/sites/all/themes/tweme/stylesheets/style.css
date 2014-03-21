@@ -1668,6 +1668,7 @@ img {
   margin-right: 10px;
 }
 #map .popup h2 {
+  margin-top: 0;
   line-height: 1;
   font-family: 'News Gothic';
   font-weight: bold;
@@ -1712,10 +1713,12 @@ img {
 }
 
 .leaflet-popup-pane a span {
+  margin-bottom: 0;
   display: block;
   text-transform: uppercase;
   font-size: .8em;
   color: #91998c;
+  letter-spacing: 2px;
   font-family: 'News Gothic';
   font-weight: bold;
 }
@@ -1735,6 +1738,7 @@ img {
   font-size: 0.6875rem;
   color: #e69740;
   font-weight: bold;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 3px;
 }

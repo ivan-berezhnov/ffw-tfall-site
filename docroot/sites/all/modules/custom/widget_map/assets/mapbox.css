@@ -640,6 +640,7 @@ a.mapbox-icon-twitter {
 .leaflet-popup-content .marker-title {
     font-weight: bold;
     line-height: 2em;
+    letter-spacing: 2px;
 }
 
 .leaflet-popup-tip {
@@ -728,6 +729,7 @@ a.mapbox-icon-twitter {
     font-weight: bold;
     height: 26px;
     line-height: 26px;
+    letter-spacing: 2px;
     padding-left: 30px;
     text-decoration: none;
     width: 48%;
