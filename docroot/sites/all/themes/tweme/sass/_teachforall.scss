@@ -1370,9 +1370,9 @@ img {max-width: 100%;}
   height: 84px;
 }
 
-.no__map-main-img {
-  height: 164px;
-}
+//.no__map-main-img {
+//  height: 164px;
+//}
 
 #worldmap {
   @include box-sizing(border-box);
@@ -1392,21 +1392,22 @@ img {max-width: 100%;}
 
 .worldmap__national-orgs {
   background-color: $blue1;
-  .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
-    height: 300px; // height is set so that it moves properly when selected
-  }
+ // .leaflet-fade-anim .leaflet-map-pane .leaflet-popup {
+ //   height: 300px; // height is set so that it moves properly when selected
+ // }
 }
 
 .worldmap__title {
   @include box-sizing(border-box);
   letter-spacing: 2px;
   position: absolute;
-  top: 30px;
+  bottom: 45px;
   left: 0;
   text-align: center;
   width: 100%;
   padding: 0 45px;
   z-index: 99;
+  font-size: .9em;
 }
 
 #map {
@@ -1416,6 +1417,24 @@ img {max-width: 100%;}
 
   .leaflet-map-pane {
     width: 100%;
+  }
+  .popup {
+    img {
+      width: 130px;
+      float: left;
+      margin-right: 10px;
+        }
+    h2 {
+      margin-top: 0;
+      line-height: 1;
+      font-family: 'News Gothic';
+      font-weight: bold;
+      font-size: 11px;
+        }
+    h3 {
+      margin-bottom: 0;
+      color: #4d4d4d;
+    }
   }
 }
 
@@ -1446,8 +1465,20 @@ img {max-width: 100%;}
   z-index: 9999;
   a {
     color: $grey1;
-    &:hover {
-      color: $orange1;
+    display: block;
+    overflow: hidden;
+    span {
+      margin-bottom: 0;
+      display: block;
+      text-transform: uppercase;
+      font-size: .8em;
+      color: #91998c;
+      letter-spacing: 2px;
+      font-family: 'News Gothic';
+      font-weight: bold;
+    &:hover  {
+      color: $red;
+      }
     }
   }
 }
@@ -1459,33 +1490,33 @@ img {max-width: 100%;}
     margin: 9px;
 
     h2 {
-      text-align: right;
-      @include font-size(11);
-      color: $orange1;
+      font-size: 11px;
+      font-size: 0.6875rem;
+      color: #e69740;
       font-weight: bold;
+      letter-spacing: 2px;
       text-transform: uppercase;
       margin-top: 3px;
-      margin-bottom: -19px;
     }
 
-    .btn {
-      @include border-radius(13px);
-      @include single-text-shadow(none);
-      @include font-size(16);
-      position: absolute;
-      bottom: 32px;
-      right: 10px;
-      background: $grey3 url(../images/grey-more-btn-bg.png) left top repeat-x;
-      color: $white;
-      line-height: 26px;
-      padding: 0px 17px;
-      font-family: $NewsGothicOLD;
+    //.btn {
+    //  @include border-radius(13px);
+    //  @include single-text-shadow(none);
+    //  @include font-size(16);
+    //  position: absolute;
+    //  bottom: 32px;
+    //  right: 10px;
+    //  background: $grey3 url(../images/grey-more-btn-bg.png) left top repeat-x;
+    //  color: $white;
+    // line-height: 26px;
+    //  padding: 0px 17px;
+    //  font-family: $NewsGothicOLD;
 
-      &:hover {
-        color: $white;
-        background: $grey2;
-      }
-    }
+    //  &:hover {
+    //    color: $white;
+     //   background: $grey2;
+     // }
+    //}
   }
 }
 
