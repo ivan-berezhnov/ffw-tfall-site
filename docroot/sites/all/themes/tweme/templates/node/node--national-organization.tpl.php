@@ -77,7 +77,7 @@
 
           <?php if ($is_field_teachers_active_content_set): ?>
             <div class="no__stat">
-    					<strong><?php print render($content['field_teachers_active']); ?></strong> teachers active<br />
+    					<strong><?php print render($content['field_teachers_active']); ?></strong> current program teachers<br />
             </div>
           <?php endif; ?>
 
