@@ -107,6 +107,9 @@
     </div>
   </div>
 </div>
+<div id="mobileworldmap" class="worldmap__national-orgs">
+  <img src="<?php print drupal_get_path('theme', 'tweme') . '/images/mobile-homepage-map.jpg' ?>" alt="World Map of National Organizations" />
+</div>
 
 <!-- network learning -->
 <div class="container-wrapper network-learning-front-block">

@@ -1394,21 +1394,38 @@ img {max-width: 100%;}
   height: 164px;
 }
 
-#worldmap {
-  @include box-sizing(border-box);
-  padding: 0px;
-  position: relative;
 
-  // Set outer color to white, so users can differentiate between the outer (scrollable) area and the map
-  .touch & {
-    background-color: $white;
 
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      margin: 0;
+
+
+
+
+  #worldmap {
+    @include box-sizing(border-box);
+    padding: 0px;
+    position: relative;
+
+    .touch & {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+        display: none;
+        padding: 0;
+      }
     }
   }
-}
+
+  #mobileworldmap {
+    display: none;
+    .touch & {
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 0;
+      }
+    }
+  }
+
+
 
 .worldmap__national-orgs {
   background-color: $blue1;

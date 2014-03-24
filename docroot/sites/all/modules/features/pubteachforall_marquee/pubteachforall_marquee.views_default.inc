@@ -159,6 +159,17 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['hide_empty'] = TRUE;
   /* Field: Content: Blurb */
+  $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_network_learning_byline']['settings'] = array(
+    'trim_length' => '175',
+  );
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -166,17 +177,8 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_news_byline']['settings'] = array(
     'trim_length' => '175',
   );
   /* Field: Content: Link */
@@ -254,8 +256,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'flexslider';
-  $handler->display->display_options['style_options']['optionset'] = 'tfall_marquee';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
