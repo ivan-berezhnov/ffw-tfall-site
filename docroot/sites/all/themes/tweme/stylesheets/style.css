@@ -1663,7 +1663,6 @@ img {
   margin-right: 10px;
 }
 #map .popup h2 {
-  margin-top: 0;
   line-height: 1;
   font-family: 'News Gothic';
   font-weight: bold;
@@ -1706,7 +1705,6 @@ img {
   overflow: hidden;
 }
 .leaflet-popup-pane a span {
-  margin-bottom: 0;
   display: block;
   text-transform: uppercase;
   font-size: .8em;
@@ -3133,7 +3131,7 @@ img {
 /**
 * #A Global Problem
 **/
-#worldmap.worldmap__details {
+#worldmap.worldmap__details, #worldmap.worldmap__details #map {
   background-color: #92b4a6;
 }
 
