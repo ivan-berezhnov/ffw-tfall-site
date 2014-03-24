@@ -33,6 +33,7 @@ function news_wysiwyg_default_profiles() {
           'NumberedList' => 1,
           'Link' => 1,
           'Unlink' => 1,
+          'Anchor' => 1,
           'Image' => 1,
           'Source' => 1,
           'PasteFromWord' => 1,
@@ -44,6 +45,9 @@ function news_wysiwyg_default_profiles() {
           'Iframe' => 1,
           'SpellChecker' => 1,
           'Scayt' => 1,
+        ),
+        'imce' => array(
+          'imce' => 1,
         ),
       ),
       'toolbar_loc' => 'top',

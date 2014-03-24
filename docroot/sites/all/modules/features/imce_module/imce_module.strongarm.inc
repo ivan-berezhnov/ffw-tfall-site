@@ -21,7 +21,7 @@ function imce_module_strongarm() {
       'filesize' => '2',
       'quota' => '0',
       'tuquota' => '0',
-      'extensions' => 'jpg, gif, png, jpeg',
+      'extensions' => 'jpg gif png jpeg',
       'dimensions' => '1200x1200',
       'filenum' => '0',
       'directories' => array(
@@ -87,19 +87,29 @@ function imce_module_strongarm() {
     ),
     3 => array(
       'name' => 'Administrator Profile',
-      'usertab' => 1,
+      'usertab' => 0,
       'filesize' => '2',
       'quota' => '0',
       'tuquota' => '0',
       'extensions' => 'gif png jpg jpeg',
       'dimensions' => '1200x1200',
       'filenum' => '0',
-      'directories' => array(),
+      'directories' => array(
+        0 => array(
+          'name' => 'sites/default/files',
+          'subnav' => 1,
+          'browse' => 1,
+          'upload' => 1,
+          'thumb' => 1,
+          'delete' => 1,
+          'resize' => 1,
+        ),
+      ),
       'thumbnails' => array(
         0 => array(
           'name' => 'Thumb',
           'dimensions' => '90x90',
-          'prefix' => 'thumb_',
+          'prefix' => 'thumb_1',
           'suffix' => '',
         ),
       ),
@@ -112,11 +122,15 @@ function imce_module_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'imce_roles_profiles';
   $strongarm->value = array(
-    254633039 => array(
+    103866669 => array(
       'weight' => '0',
-      'public_pid' => '1',
+      'public_pid' => 0,
     ),
     3 => array(
+      'weight' => '0',
+      'public_pid' => '3',
+    ),
+    254633039 => array(
       'weight' => '0',
       'public_pid' => '3',
     ),
