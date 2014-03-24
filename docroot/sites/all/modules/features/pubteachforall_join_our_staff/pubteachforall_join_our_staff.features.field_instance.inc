@@ -46,7 +46,7 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_iframe',
     'label' => 'iFrame',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -55,6 +55,10 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 5,
       ),
       'type' => 'text_textarea',
