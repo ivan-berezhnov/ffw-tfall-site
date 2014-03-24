@@ -9,14 +9,8 @@
         });
       });
 
-    }
-  }
 
-
-
-  // brought in from assets/js/drupal.js
-  $(document).ready(function() {
-
+    // brought in from assets/js/drupal.js
     $('.field-type-text-long table').addClass('table table-bordered');
     $('.field-type-text-with-summary table').addClass('table table-bordered');
 
@@ -39,29 +33,27 @@
     } else {
       $('html').addClass('other-browser');
     }
-  });
 
-  var $body,
-    sideMenuEnabled = false,
-    hasTouch, mediaQueryMobile;
 
-  togglePersonFullBio = function() {
-    // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
-    var $this = $(this),
-      selectedBioName = $this.parent().parent().attr('class').split(' ')[1],
-      $bioItems = $('#main .view-persons-view .' + selectedBioName),
-      $bioTextElements = $bioItems.find('.person-bio, .person-bio-truncated'),
-      $readMoreButtons = $bioItems.find('.read-more-btn'),
-      $collapseButtons = $bioItems.find('.collapse-btn');
+    var $body,
+      sideMenuEnabled = false,
+      hasTouch, mediaQueryMobile;
+    togglePersonFullBio = function() {
+      // Update both Mobile (one-col) and Tablet/Desktop (two-col) elements
+      var $this = $(this),
+        selectedBioName = $this.parent().parent().attr('class').split(' ')[1],
+        $bioItems = $('#main .view-persons-view .' + selectedBioName),
+        $bioTextElements = $bioItems.find('.person-bio, .person-bio-truncated'),
+        $readMoreButtons = $bioItems.find('.read-more-btn'),
+        $collapseButtons = $bioItems.find('.collapse-btn');
 
-    $bioTextElements.toggleClass('is-visible');
-    $readMoreButtons.toggleClass('is-visible');
-    $collapseButtons.toggleClass('is-visible');
-  }
+      $bioTextElements.toggleClass('is-visible');
+      $readMoreButtons.toggleClass('is-visible');
+      $collapseButtons.toggleClass('is-visible');
+    }
 
-  $(document).ready(function() {
+  
     $body = $('body');
-
     if ($body.hasClass('page-about-leadership') || $body.hasClass('page-about-ceo') || $body.hasClass('page-about-board')) {
       $('#main .view-persons .person-copy').each(function() {
         var $this = $(this),
@@ -80,22 +72,10 @@
         $('#main .page-title').next().children().first().append($moreContentBtn);
       }
     }
-  });
-
-  // insert masks for the marquee slider
-  $(document).ready(function() {
-    var $marqueeNav = $('.view-tfall-marquee .flex-direction-nav');
-    $marqueeNav.after('<div class="marquee-mask-right"></div>');
-    $marqueeNav.after('<div class="marquee-mask-left"></div>');
-  });
-  // end
 
 
-  // The following javaScript was brought in from https://github.com/h5bp/Effeckt.css
-  // It takes care of the off screen navigation
-  $(document).ready(function() {
 
-    var Effeckt = {
+  var Effeckt = {
 
     isTouchDevice: Modernizr.touch,
     buttonPressedEvent: ( this.isTouchDevice ) ? 'touchstart' : 'click',
@@ -120,7 +100,6 @@
       this.transitionEndEventName = this.transitionEndEventNames[Modernizr.prefixed('transition')];
       this.animationEndEventName = this.animationEndEventNames[Modernizr.prefixed('animation')];
       this.transitionAnimationEndEvent = this.animationEndEventName + ' ' + this.transitionEndEventName;
-
     },
 
     getViewportHeight: function() {
@@ -134,12 +113,11 @@
       else
         return client;
     },
-  }
 
+  }
   Effeckt.init();
 
-
-    var EffecktOffScreenNav = {
+  var EffecktOffScreenNav = {
 
     nav: $("#effeckt-off-screen-nav"),
     closeButton: $("#effeckt-off-screen-nav-close"),
@@ -166,7 +144,6 @@
     init: function() {
 
       this.bindUIActions();
-
     },
 
     bindUIActions: function() {
@@ -176,7 +153,6 @@
       $(".off-screen-nav-button, #effeckt-off-screen-nav-close").on( Effeckt.buttonPressedEvent, function() {
         self.toggleNav(this);
       });
-
     },
 
     toggleNav: function(el) {
@@ -233,7 +209,6 @@
         this._checkForMoreOnHide()
 
       }
-
     },
 
     hideNav: function() {
@@ -403,12 +378,16 @@
       }
     }
 
-  };
+  }
 
   EffecktOffScreenNav.init();
 
-  // end of off screen navigation
 
-  });
 
+
+
+
+
+    }
+  }
 })(jQuery);
