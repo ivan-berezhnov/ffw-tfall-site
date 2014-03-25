@@ -3,11 +3,11 @@
 		attach: function(context, settings) {
 
 			var map = L.mapbox.map('map', Drupal.settings.widget_map.key, {
-				center: [30, 25],
+				center: [30, 38],
 				zoom: 2,
 				minZoom: 2,
 				maxZoom: 5,
-				maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 230))
+				maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 242))
 			}),
 			$mapTitle = $('.worldmap__title'),
 			$zoomControls = $('.leaflet-control-zoom'),
