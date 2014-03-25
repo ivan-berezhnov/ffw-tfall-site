@@ -18,7 +18,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
     </h4>
 
     <?php print render($page['main_navigation']); ?>
-    <?php print render($page['header']['menu_menu-uber-nav']); ?>
+    <?php print render($page['header']); ?>
 
   </nav>
 
