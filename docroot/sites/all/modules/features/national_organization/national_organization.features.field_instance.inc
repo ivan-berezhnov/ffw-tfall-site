@@ -10,6 +10,58 @@
 function national_organization_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-national_organization-field_about'
+  $field_instances['node-national_organization-field_about'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 23,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_about',
+    'label' => 'About',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 12,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-national_organization-field_active_flag'
   $field_instances['node-national_organization-field_active_flag'] = array(
     'bundle' => 'national_organization',
@@ -73,8 +125,13 @@ function national_organization_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
+        ),
+        'type' => 'number_integer',
         'weight' => 10,
       ),
       'global_organization' => array(
@@ -559,8 +616,13 @@ function national_organization_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
+        ),
+        'type' => 'number_integer',
         'weight' => 13,
       ),
       'global_organization' => array(
@@ -1021,8 +1083,13 @@ function national_organization_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
+        ),
+        'type' => 'number_integer',
         'weight' => 11,
       ),
       'global_organization' => array(
@@ -1130,8 +1197,13 @@ function national_organization_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'number',
-        'settings' => array(),
-        'type' => 'number_unformatted',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => 1,
+          'scale' => 0,
+          'thousand_separator' => ',',
+        ),
+        'type' => 'number_integer',
         'weight' => 9,
       ),
       'global_organization' => array(
@@ -1397,6 +1469,7 @@ function national_organization_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('About');
   t('Active Flag');
   t('Alumni');
   t('Avg. Total Years of Education');

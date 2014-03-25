@@ -22,7 +22,10 @@ function news_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => 'content',
@@ -45,7 +48,10 @@ function news_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',

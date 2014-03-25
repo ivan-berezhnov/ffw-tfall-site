@@ -61,6 +61,8 @@ function permissions_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'Content editor' => 'Content editor',
+      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -73,6 +75,7 @@ function permissions_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -82,6 +85,7 @@ function permissions_user_default_permissions() {
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'contextual',
@@ -91,6 +95,7 @@ function permissions_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'dashboard',
@@ -119,6 +124,7 @@ function permissions_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -218,6 +224,7 @@ function permissions_user_default_permissions() {
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'image',
@@ -384,6 +391,7 @@ function permissions_user_default_permissions() {
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -420,7 +428,10 @@ function permissions_user_default_permissions() {
   // Exported permission: 'create national_organizations content'.
   $permissions['create national_organizations content'] = array(
     'name' => 'create national_organizations content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -438,6 +449,7 @@ function permissions_user_default_permissions() {
   $permissions['create page content'] = array(
     'name' => 'create page content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -464,14 +476,19 @@ function permissions_user_default_permissions() {
   // Exported permission: 'create page_our_model content'.
   $permissions['create page_our_model content'] = array(
     'name' => 'create page_our_model content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'create page_results content'.
   $permissions['create page_results content'] = array(
     'name' => 'create page_results content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+    ),
     'module' => 'node',
   );
 
@@ -535,7 +552,10 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete any national_organizations content'.
   $permissions['delete any national_organizations content'] = array(
     'name' => 'delete any national_organizations content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -553,6 +573,7 @@ function permissions_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -588,7 +609,10 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete any page_results content'.
   $permissions['delete any page_results content'] = array(
     'name' => 'delete any page_results content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -643,7 +667,10 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete own national_organizations content'.
   $permissions['delete own national_organizations content'] = array(
     'name' => 'delete own national_organizations content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -661,6 +688,7 @@ function permissions_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -696,7 +724,10 @@ function permissions_user_default_permissions() {
   // Exported permission: 'delete own page_results content'.
   $permissions['delete own page_results content'] = array(
     'name' => 'delete own page_results content',
-    'roles' => array(),
+    'roles' => array(
+      'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
+    ),
     'module' => 'node',
   );
 
@@ -782,6 +813,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any national_organizations content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -800,6 +832,7 @@ function permissions_user_default_permissions() {
   $permissions['edit any page content'] = array(
     'name' => 'edit any page content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -885,6 +918,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own national_organizations content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -903,6 +937,7 @@ function permissions_user_default_permissions() {
   $permissions['edit own page content'] = array(
     'name' => 'edit own page content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -996,6 +1031,7 @@ function permissions_user_default_permissions() {
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -1109,7 +1145,9 @@ function permissions_user_default_permissions() {
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
     'module' => 'search',
   );
 
@@ -1117,6 +1155,7 @@ function permissions_user_default_permissions() {
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -1139,6 +1178,7 @@ function permissions_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1149,6 +1189,7 @@ function permissions_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1158,7 +1199,6 @@ function permissions_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'system',

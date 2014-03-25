@@ -159,6 +159,17 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_spotlight_type']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_spotlight_type']['hide_empty'] = TRUE;
   /* Field: Content: Blurb */
+  $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_network_learning_byline']['settings'] = array(
+    'trim_length' => '175',
+  );
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -166,17 +177,8 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_news_byline']['settings'] = array(
     'trim_length' => '175',
   );
   /* Field: Content: Link */
@@ -329,19 +331,37 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['title']['element_class'] = 'marquee-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
-  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_type'] = 'div';
-  $handler->display->display_options['fields']['body']['element_class'] = 'marquee-body';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_plain';
+  /* Field: Content: Blurb */
+  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
+  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_news_byline']['alter']['max_length'] = '125';
+  $handler->display->display_options['fields']['field_news_byline']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_news_byline']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_news_byline']['element_class'] = 'marquee-body';
+  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_byline']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['field_news_byline']['settings'] = array(
+    'trim_length' => '175',
+  );
+  /* Field: Content: Blurb */
+  $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
+  $handler->display->display_options['fields']['field_network_learning_byline']['label'] = '';
+  $handler->display->display_options['fields']['field_network_learning_byline']['alter']['max_length'] = '125';
+  $handler->display->display_options['fields']['field_network_learning_byline']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_class'] = 'marquee-body';
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_network_learning_byline']['type'] = 'text_plain';
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';

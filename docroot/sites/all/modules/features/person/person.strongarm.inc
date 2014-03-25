@@ -37,6 +37,12 @@ function person_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'our_model' => array(
+        'custom_settings' => TRUE,
+      ),
+      'global_organization' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -45,6 +51,12 @@ function person_strongarm() {
         ),
         'path' => array(
           'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '9',
+        ),
+        'redirect' => array(
+          'weight' => '8',
         ),
       ),
       'display' => array(),
