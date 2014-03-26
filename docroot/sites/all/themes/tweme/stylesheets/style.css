@@ -1671,6 +1671,7 @@ img {
 #map .popup h3 {
   margin-bottom: 4px;
   color: #4d4d4d;
+  font-size: 19px;
 }
 
 .leaflet-bar {
@@ -1707,10 +1708,10 @@ img {
 .leaflet-popup-pane a span {
   display: block;
   text-transform: uppercase;
-  font-size: .8em;
-  line-height: 1;
+  font-size: 11px;
+  line-height: 14px;
   color: #91998c;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: 'News Gothic';
   font-weight: bold;
   margin-top: 3px;
@@ -1732,7 +1733,8 @@ img {
   font-size: 0.6875rem;
   color: #e69740;
   font-weight: bold;
-  letter-spacing: 2px;
+  line-height: 14px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 4px;
@@ -2136,8 +2138,8 @@ img {
   margin: 10px 0 0 0;
 }
 .view-persons .view-content .views-row .person-copy .read-more-btn, .view-persons .view-content .views-row .person-copy .collapse-btn {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
   display: none;
   clear: left;
   float: left;
@@ -2145,6 +2147,8 @@ img {
   color: #cf4753;
   cursor: pointer;
   font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 14px;
 }
 .view-persons .view-content .views-row .person-copy .read-more-btn.is-visible, .view-persons .view-content .views-row .person-copy .collapse-btn.is-visible {
   display: block;
@@ -2777,6 +2781,7 @@ img {
 }
 
 .widget-map__blurb {
+  font-family: "News Gothic Old";
   color: #999999;
   font-weight: bold;
   font-size: 16px;
