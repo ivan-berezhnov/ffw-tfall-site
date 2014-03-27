@@ -489,7 +489,7 @@ function pubteachforall_central_strongarm() {
     'default_favicon' => 0,
     'favicon_path' => 'public://favicon.png',
     'favicon_upload' => '',
-    'jquery_source' => 'libraries',
+    'jquery_source' => 'drupal',
     'jquery_version' => '1.8.3',
     'bootstrap_source' => 'libraries',
     'bootstrap_version' => '2.3.2',
