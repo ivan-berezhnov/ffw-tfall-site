@@ -24,7 +24,7 @@
  * @ingroup views_templates
  */
 ?>
-<?php drupal_add_js(drupal_get_path('theme', 'tweme') . '/js/owl.carousel.min.js'); ?>
+<?php drupal_add_js(drupal_get_path('theme', 'tweme') . '/js/owl.carousel.js'); ?>
 <?php drupal_add_js(drupal_get_path('theme', 'tweme') . '/js/owlcarousel.js'); ?>
 
 <?php foreach ($fields as $id => $field): ?>
