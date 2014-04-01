@@ -24,6 +24,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 1,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -84,6 +90,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'video_embed_field',
         'weight' => 4,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -134,6 +146,12 @@ function spotlight_field_default_field_instances() {
           'image_style' => 'news_network_learning_node_image',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'global_organization' => array(
@@ -208,6 +226,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 2,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -259,6 +283,12 @@ function spotlight_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',
