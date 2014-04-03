@@ -55,6 +55,7 @@
 
     ### PANELS ###
     #2col-bricks
+    #panelizer
 **/
 
 
@@ -3222,3 +3223,55 @@ img {max-width: 100%;}
     }
   }
 }
+
+// #panelizer
+
+.panel-three-four-adaptive, .panels-ipe-processed {
+  width: 1170px !important;
+  margin: 0 auto;
+  @media screen and (max-width: 1169px) {
+    width: 100% !important;
+  }
+
+  h1, h2, h3, h4, h5, a {
+    color: $orange1;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 1rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: FedraSerifOLD;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $grey1;
+    letter-spacing: .1em;
+    margin-bottom: 1em;
+  }
+  .full-list {
+    color: #fff;
+    font-family: $NewsGothicOLD;
+    &:after {
+      color: $orange1;
+      content: " >>";
+    }
+    &:hover {
+      color: $orange1;
+    }
+  }
+  .btn__red {
+    color: #fff;  
+    &:hover {
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
+

@@ -410,6 +410,7 @@ html.pc.chrome body {
 
     ### PANELS ###
     #2col-bricks
+    #panelizer
 **/
 /**
 * #Styleguide - Typography
@@ -3293,6 +3294,53 @@ img {
 
 .panel-2col-bricks .center-wrapper .panel-panel {
   margin-bottom: 20px;
+}
+
+.panel-three-four-adaptive, .panels-ipe-processed {
+  width: 1170px !important;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1169px) {
+  .panel-three-four-adaptive, .panels-ipe-processed {
+    width: 100% !important;
+  }
+}
+.panel-three-four-adaptive h1, .panel-three-four-adaptive h2, .panel-three-four-adaptive h3, .panel-three-four-adaptive h4, .panel-three-four-adaptive h5, .panel-three-four-adaptive a, .panels-ipe-processed h1, .panels-ipe-processed h2, .panels-ipe-processed h3, .panels-ipe-processed h4, .panels-ipe-processed h5, .panels-ipe-processed a {
+  color: #e69740;
+}
+.panel-three-four-adaptive h1, .panels-ipe-processed h1 {
+  text-align: center;
+}
+.panel-three-four-adaptive h2, .panels-ipe-processed h2 {
+  font-size: 1rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+.panel-three-four-adaptive p, .panels-ipe-processed p {
+  font-family: FedraSerifOLD;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #91998c;
+  letter-spacing: .1em;
+  margin-bottom: 1em;
+}
+.panel-three-four-adaptive .full-list, .panels-ipe-processed .full-list {
+  color: #fff;
+  font-family: "News Gothic Old";
+}
+.panel-three-four-adaptive .full-list:after, .panels-ipe-processed .full-list:after {
+  color: #e69740;
+  content: " >>";
+}
+.panel-three-four-adaptive .full-list:hover, .panels-ipe-processed .full-list:hover {
+  color: #e69740;
+}
+.panel-three-four-adaptive .btn__red, .panel-three-four-adaptive .view-persons .view-footer a.btn, .view-persons .view-footer .panel-three-four-adaptive a.btn, .panel-three-four-adaptive .view-supporters .view-footer .btn, .view-supporters .view-footer .panel-three-four-adaptive .btn, .panels-ipe-processed .btn__red, .panels-ipe-processed .view-persons .view-footer a.btn, .view-persons .view-footer .panels-ipe-processed a.btn, .panels-ipe-processed .view-supporters .view-footer .btn, .view-supporters .view-footer .panels-ipe-processed .btn {
+  color: #fff;
+}
+.panel-three-four-adaptive .btn__red:hover, .panel-three-four-adaptive .view-persons .view-footer a.btn:hover, .view-persons .view-footer .panel-three-four-adaptive a.btn:hover, .panel-three-four-adaptive .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .panel-three-four-adaptive .btn:hover, .panels-ipe-processed .btn__red:hover, .panels-ipe-processed .view-persons .view-footer a.btn:hover, .view-persons .view-footer .panels-ipe-processed a.btn:hover, .panels-ipe-processed .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .panels-ipe-processed .btn:hover {
+  color: #fff;
+  opacity: 0.8;
 }
 
 /* 
