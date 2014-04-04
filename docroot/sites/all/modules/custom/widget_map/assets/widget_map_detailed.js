@@ -16,15 +16,13 @@
 			//prevents map repetition
 			map.tileLayer.options.noWrap = true;
 
+            var l = L.layerGroup().addTo(map)
+
+            var featureLayer = L.mapbox.featureLayer(null).addTo(map);
+            featureLayer.loadURL('/widget_map_detailedlist.json');
+
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
-
-			$.ajax({
-				url: '/widget_map_detailedlist.json',
-				success: function parseJson(data) {
-					map.markerLayer.setGeoJSON(data);
-				}
-			});
 
 			toggleMapTitle = function(element) {
 				var $mapPopup = $('.leaflet-popup-pane');
@@ -56,7 +54,7 @@
 				}
 			}
 
-			map.markerLayer.on('layeradd', function(e) {
+			featureLayer.on('layeradd', function (e) {
 				var marker = e.layer,feature = marker.feature;
 
 				marker.setIcon(L.icon(feature.properties.icon));
@@ -77,7 +75,7 @@
 				});
 			});
 
-			map.markerLayer.on('mouseover',function(e) {
+			featureLayer.on('mouseover', function (e) {
 				//$mapTitle.hide()
 				//$zoomControls.hide();
 				e.layer.openPopup();
@@ -104,7 +102,7 @@
 
 
 			if (hasTouch) {
-				map.markerLayer.on('click', function(e) {
+				featureLayer.on('click', function (e) {
 					toggleMapTitle('marker');
 				});
 
