@@ -1671,7 +1671,7 @@ img {
 #map .popup h3 {
   margin-bottom: 4px;
   color: #4d4d4d;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .leaflet-bar {
@@ -1709,7 +1709,7 @@ img {
   display: block;
   text-transform: uppercase;
   font-size: 11px;
-  line-height: 14px;
+  line-height: 1;
   color: #91998c;
   letter-spacing: 1px;
   font-family: 'News Gothic';
@@ -1729,6 +1729,7 @@ img {
   margin: 9px;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
+  font-family: 'News Gothic';
   font-size: 11px;
   color: #e69740;
   font-weight: bold;
@@ -1737,7 +1738,6 @@ img {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 4px;
-  font-family: 'News Gothic';
 }
 
 /**/
