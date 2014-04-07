@@ -15,7 +15,7 @@
         	autoHeight: false,
         	mouseDrag: true,
         	touchDrag: true,
-
+          autoPlay: true,
         	itemsTablet: [1024,2],
         	itemsTabletSmall: [768,1],
 
