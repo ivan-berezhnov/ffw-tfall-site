@@ -10,7 +10,7 @@
         	items: 4,
         	navigation: true,
         	navigationText : false,
-        	scrollPerPage: true,
+        	scrollPerPage: false,
         	pagination: false,
         	autoHeight: false,
         	mouseDrag: true,
