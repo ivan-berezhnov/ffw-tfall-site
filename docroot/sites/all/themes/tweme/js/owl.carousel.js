@@ -319,6 +319,17 @@ if (typeof Object.create !== "function") {
                 }
                 $this.data("owl-roundPages", roundPages);
             });
+
+            var newitemWidth = base.itemWidth*2
+            
+            //custom
+            //alert(base.options.items);
+            $('.owl-prev').css({
+                "width" : base.itemWidth + "px",
+            });
+            $('.owl-next').css({
+                "width" : base.itemWidth + "px",
+            });
         },
 
         appendWrapperSizes : function () {
@@ -409,12 +420,16 @@ if (typeof Object.create !== "function") {
 
             base.buttonPrev = $("<div/>", {
                 "class" : "owl-prev",
-                "html" : base.options.navigationText[0] || ""
+                "html" : base.options.navigationText[0] || "",
+                //custom
+                "style" : "width:" + base.itemWidth + "px", 
             });
 
             base.buttonNext = $("<div/>", {
                 "class" : "owl-next",
-                "html" : base.options.navigationText[1] || ""
+                "html" : base.options.navigationText[1] || "",
+                //custom
+                "style" : "width:" + base.itemWidth + "px", 
             });
 
             buttonsWrapper

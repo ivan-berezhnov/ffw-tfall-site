@@ -9,7 +9,7 @@
 
         	items: 4,
         	navigation: true,
-        	navigationText: ["prev","next"],
+        	navigationText : false,
         	scrollPerPage: true,
         	pagination: false,
         	autoHeight: false,

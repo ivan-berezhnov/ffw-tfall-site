@@ -3226,11 +3226,10 @@ img {max-width: 100%;}
 
 // #panelizer
 
-.panel-three-four-adaptive, .panels-ipe-processed {
-  width: 1170px !important;
-  margin: 0 auto;
-  @media screen and (max-width: 1169px) {
-    width: 100% !important;
+.panel-panel {
+
+  img {
+    width: 100%;
   }
 
   h1, h2, h3, h4, h5, a {
@@ -3268,6 +3267,30 @@ img {max-width: 100%;}
     &:hover {
       color: #fff;
       opacity: 0.8;
+    }
+  }
+  .panel-panel-inner {
+    margin-right: 0 !important;
+  }
+
+  .reverse {
+    .panel-panel {
+      float: right;
+      text-align: right;
+      .panel-panel-inner {
+        margin-right: 0;
+        margin-left: 0 !important;
+      }
+    }
+    .phelan-column2 {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+    .phelan-column1 {
+      .panel-panel-inner{
+        margin-right: 0 !important;
+        margin-left: 20px;
+      }
     }
   }
 }

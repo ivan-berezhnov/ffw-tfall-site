@@ -77,8 +77,38 @@
 */
 
 .owl-theme .owl-controls{
-  margin-top: 10px;
+  height: 100%;
   text-align: center;
+}
+
+.owl-controls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 1024px) {
+    display: none !important;
+  }
+}
+
+.owl-buttons {
+  position: relative;
+  height: 100%;
+  .owl-prev {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    text-align: right;
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    text-align: left;
+  }
+
 }
 
 /* Styling Next and Prev buttons */
@@ -88,21 +118,25 @@
   display: inline-block;
   zoom: 1;
   *display: inline;/*IE7 life-saver */
-  margin: 5px;
-  padding: 3px 10px;
   font-size: 12px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background: #869791;
-  filter: Alpha(Opacity=50);/*IE7 fix*/
-  opacity: 0.5;
+  background: url(../images/bg-transparent.png);
+  height: 100%;
+  display: table;
+
+  &:before {
+    font-family: 'icomoon';
+    font-size: 7.5rem;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    text-shadow: #000 1px 1px 3px;
+  }
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{
-  filter: Alpha(Opacity=100);/*IE7 fix*/
-  opacity: 1;
   text-decoration: none;
 }
 
