@@ -3559,10 +3559,22 @@ img {
 }
 .owl-carousel .owl-wrapper .owl-item {
   background: #3c3835;
+  height: 360px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1024px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 420px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 300px;
+  }
 }
 .owl-carousel .owl-wrapper .owl-item .views-row {
   border-right: solid #91998c 1px;
-  min-height: 400px;
+  height: 100%;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title {
   padding: 10px 10px 0 10px;
@@ -3578,7 +3590,6 @@ img {
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-body {
   padding: 0 10px 10px 10px;
-  height: 100px;
   overflow: hidden;
   color: #999;
   font-family: "Fedra Serif Screen Regular 3";
@@ -3586,32 +3597,6 @@ img {
   font-size: 1.2rem;
   line-height: 20px;
   text-align: -webkit-match-parent;
-}
-@media screen and (min-width: 320px) {
-  .owl-carousel .owl-wrapper {
-    background: #3c3835;
-  }
-  .owl-carousel .owl-wrapper .owl-item .views-row {
-    border: none;
-  }
-  .owl-carousel .owl-wrapper .owl-item .marquee-body {
-    height: auto;
-  }
-  .owl-carousel .owl-wrapper .owl-item .marquee-title {
-    height: auto;
-  }
-}
-@media screen and (min-width: 760px) {
-  .owl-carousel .owl-wrapper .owl-item .views-row {
-    border-right: solid #91998c 1px;
-    min-height: 450px;
-  }
-  .owl-carousel .owl-wrapper .owl-item .marquee-body {
-    height: auto;
-  }
-  .owl-carousel .owl-wrapper .owl-item .marquee-title {
-    height: auto;
-  }
 }
 
 /**

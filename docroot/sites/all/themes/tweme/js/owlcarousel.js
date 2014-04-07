@@ -16,10 +16,9 @@
         	mouseDrag: true,
         	touchDrag: true,
           autoPlay: true,
+          itemsScaleUp: false,
         	itemsTablet: [1024,2],
-        	itemsTabletSmall: [768,1],
-
-
+        	itemsTabletSmall: [420,1],
         });
 
       });
