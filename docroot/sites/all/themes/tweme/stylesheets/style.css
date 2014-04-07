@@ -3381,6 +3381,7 @@ img {
 .owl-carousel .owl-wrapper {
   display: none;
   position: relative;
+  z-index: 10;
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 
@@ -3483,6 +3484,7 @@ img {
   background: url(../images/bg-transparent.png);
   height: 100%;
   display: table;
+  z-index: 20;
 }
 .owl-theme .owl-controls .owl-buttons div:before {
   font-family: 'icomoon';
@@ -3549,24 +3551,24 @@ img {
 }
 
 /********** CUSTOM ***********/
+.owl-carousel {
+  overflow: hidden;
+}
 .owl-carousel .owl-wrapper {
   background: #91998c;
 }
-.owl-carousel .owl-item {
+.owl-carousel .owl-wrapper .owl-item {
   background: #3c3835;
 }
-.owl-carousel .owl-item .views-row {
+.owl-carousel .owl-wrapper .owl-item .views-row {
   border-right: solid #91998c 1px;
+  min-height: 400px;
 }
-.owl-carousel .owl-item .marquee-title {
-  padding: 20px;
-  overflow: hidden;
-  min-height: 10px;
-  max-height: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.owl-carousel .owl-wrapper .owl-item .marquee-title {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 10px;
 }
-.owl-carousel .owl-item .marquee-title a {
+.owl-carousel .owl-wrapper .owl-item .marquee-title a {
   color: white;
   font-family: "Fedra Serif Screen Regular 3";
   font-family: 16px;
@@ -3574,9 +3576,10 @@ img {
   line-height: 20px;
   text-align: -webkit-match-parent;
 }
-.owl-carousel .owl-item .marquee-body {
-  padding: 0 20px 20px 20px;
-  min-height: 40px;
+.owl-carousel .owl-wrapper .owl-item .marquee-body {
+  padding: 0 10px 10px 10px;
+  height: 100px;
+  overflow: hidden;
   color: #999;
   font-family: "Fedra Serif Screen Regular 3";
   font-family: 16px;
@@ -3584,19 +3587,30 @@ img {
   line-height: 20px;
   text-align: -webkit-match-parent;
 }
-@media screen and (max-width: 2330px) {
-  .owl-carousel .owl-item .marquee-body {
-    min-height: 80px;
+@media screen and (min-width: 320px) {
+  .owl-carousel .owl-wrapper {
+    background: #3c3835;
+  }
+  .owl-carousel .owl-wrapper .owl-item .views-row {
+    border: none;
+  }
+  .owl-carousel .owl-wrapper .owl-item .marquee-body {
+    height: auto;
+  }
+  .owl-carousel .owl-wrapper .owl-item .marquee-title {
+    height: auto;
   }
 }
-@media screen and (max-width: 1300px) {
-  .owl-carousel .owl-item .marquee-body {
-    min-height: 100px;
+@media screen and (min-width: 760px) {
+  .owl-carousel .owl-wrapper .owl-item .views-row {
+    border-right: solid #91998c 1px;
+    min-height: 450px;
   }
-}
-@media screen and (max-width: 1064px) {
-  .owl-carousel .owl-item .marquee-body {
-    min-height: 80px;
+  .owl-carousel .owl-wrapper .owl-item .marquee-body {
+    height: auto;
+  }
+  .owl-carousel .owl-wrapper .owl-item .marquee-title {
+    height: auto;
   }
 }
 
