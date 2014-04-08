@@ -205,11 +205,14 @@
         height: 400px;
       }
       @media screen and (min-width: 768px) {
-        height: 420px;
+        height: 380px;
       }
       @media screen and (min-width: 1280px) {
-        height: 490px;
+        height: 380px;
       }
+      @media screen and (min-width: 1776px) {
+        height: 490px;
+      }  
 
 
 
