@@ -261,11 +261,12 @@ textarea:focus, input:focus{
 .site-slogan {
   margin-top: 25px;
   color: $grey1;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
   @include font-size(32);
   @media screen and (max-width: 475px) {
     @include font-size(22);
+    line-height:  30px;
   }
 }
 
