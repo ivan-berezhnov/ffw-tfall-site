@@ -3478,7 +3478,6 @@ img {
 .owl-theme .owl-controls .owl-buttons div {
   color: #FFF;
   display: inline-block;
-  zoom: 1;
   *display: inline;
   /*IE7 life-saver */
   font-size: 12px;
@@ -3486,10 +3485,19 @@ img {
   height: 100%;
   display: table;
   z-index: 20;
+  font-family: 'icomoon';
+  speak: none;
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .owl-theme .owl-controls .owl-buttons div:before {
-  font-family: 'icomoon';
-  font-size: 7.5rem;
   display: table-cell;
   vertical-align: middle;
   height: 100%;
