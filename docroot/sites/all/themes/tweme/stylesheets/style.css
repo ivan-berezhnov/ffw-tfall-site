@@ -1653,7 +1653,7 @@ img {
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  .touch #worldmap {
+  #worldmap {
     width: 100%;
     margin: 0;
     display: none;
@@ -1663,9 +1663,15 @@ img {
 
 #mobileworldmap {
   display: none;
+  background: none !important;
+  text-align: center;
+}
+#mobileworldmap .btn__red, #mobileworldmap .view-persons .view-footer a.btn, .view-persons .view-footer #mobileworldmap a.btn, #mobileworldmap .view-supporters .view-footer .btn, .view-supporters .view-footer #mobileworldmap .btn {
+  padding: 4px 10px !important;
+  letter-spacing: 1px !important;
 }
 @media screen and (max-width: 767px) {
-  .touch #mobileworldmap {
+  #mobileworldmap {
     display: block;
     padding: 0;
   }
