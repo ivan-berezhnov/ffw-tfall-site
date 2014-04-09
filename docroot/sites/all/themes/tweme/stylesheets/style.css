@@ -3570,17 +3570,22 @@ img {
   background: #3c3835;
   overflow: hidden;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 318px) {
   .owl-carousel .owl-wrapper .owl-item {
     height: 400px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 764px) {
   .owl-carousel .owl-wrapper .owl-item {
     height: 380px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1020px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .owl-carousel .owl-wrapper .owl-item {
     height: 380px;
   }

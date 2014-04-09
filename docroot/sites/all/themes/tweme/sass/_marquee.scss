@@ -210,13 +210,16 @@
       background: #3c3835;
       overflow: hidden;
 
-      @media screen and (min-width: 320px) {
+      @media screen and (min-width: 318px) {
         height: 400px;
       }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 764px) {
         height: 380px;
       }
-      @media screen and (min-width: 1280px) {
+      @media screen and (min-width: 1020px) {
+        height: 440px;
+      }
+      @media screen and (min-width: 1200px) {
         height: 380px;
       }
       @media screen and (min-width: 1776px) {
