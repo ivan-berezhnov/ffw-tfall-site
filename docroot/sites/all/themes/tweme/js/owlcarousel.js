@@ -23,19 +23,19 @@
         	itemsTabletSmall: [420,1],
           afterInit: function(){
             if(this.currentItem === 0){
-              $('.owl-prev').hide();
+              $('.owl-prev').fadeOut();
             }
           },
           afterMove: function(){
             if(this.currentItem + 4 === this.itemsAmount){
-              $('.owl-next').hide();
+              $('.owl-next').fadeOut('fast');
             }else{
-              $('.owl-next').show();
+              $('.owl-next').fadeIn('fast');
             }
             if(this.currentItem >= 1){
-              $('.owl-prev').show();
+              $('.owl-prev').fadeIn('fast');
             }else{
-              $('.owl-prev').hide();
+              $('.owl-prev').fadeOut('fast');
             }
           },
         });
