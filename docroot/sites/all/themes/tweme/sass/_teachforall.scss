@@ -1407,14 +1407,14 @@ img {max-width: 100%;}
     padding: 0px;
     position: relative;
 
-    //.touch & {
+    .touch & {
       @media screen and (max-width: 767px) {
         width: 100%;
         margin: 0;
         display: none;
         padding: 0;
       }
-    //}
+    }
   }
 
   #mobileworldmap {
@@ -1425,12 +1425,12 @@ img {max-width: 100%;}
       padding: 4px 10px !important;
       letter-spacing: 1px !important;
     }
-    //.touch & {
+    .touch & {
       @media screen and (max-width: 767px) {
         display: block;
         padding: 0;
       }
-    //}
+    }
   }
 
 
