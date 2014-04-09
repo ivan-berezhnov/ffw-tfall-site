@@ -1408,7 +1408,7 @@ img {max-width: 100%;}
     position: relative;
 
     .touch & {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 1024px) {
         width: 100%;
         margin: 0;
         display: none;
@@ -1426,7 +1426,7 @@ img {max-width: 100%;}
       letter-spacing: 1px !important;
     }
     .touch & {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 1024px) {
         display: block;
         padding: 0;
       }

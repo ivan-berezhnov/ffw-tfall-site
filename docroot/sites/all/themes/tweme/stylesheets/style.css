@@ -1652,7 +1652,7 @@ img {
   padding: 0px;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .touch #worldmap {
     width: 100%;
     margin: 0;
@@ -1670,7 +1670,7 @@ img {
   padding: 4px 10px !important;
   letter-spacing: 1px !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .touch #mobileworldmap {
     display: block;
     padding: 0;
