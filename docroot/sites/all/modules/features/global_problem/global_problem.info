@@ -9,6 +9,7 @@ dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = image
 dependencies[] = link
+dependencies[] = panopoly_pages
 dependencies[] = pubteachforall_2_col_layout
 dependencies[] = spotlight
 dependencies[] = strongarm
