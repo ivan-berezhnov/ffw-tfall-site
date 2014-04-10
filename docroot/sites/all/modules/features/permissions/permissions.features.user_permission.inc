@@ -26,6 +26,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -77,6 +78,7 @@ function permissions_user_default_permissions() {
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -236,6 +238,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'menu',
   );
@@ -338,6 +341,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -460,6 +464,7 @@ function permissions_user_default_permissions() {
     'name' => 'create page_1_col_layout content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -469,6 +474,7 @@ function permissions_user_default_permissions() {
     'name' => 'create page_global_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -488,6 +494,7 @@ function permissions_user_default_permissions() {
     'name' => 'create page_results content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -497,6 +504,7 @@ function permissions_user_default_permissions() {
     'name' => 'create page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -584,6 +592,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any page_1_col_layout content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -593,6 +602,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any page_global_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -602,6 +612,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any page_our_model content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -621,6 +632,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete any page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -699,6 +711,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own page_1_col_layout content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -708,6 +721,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own page_global_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -717,6 +731,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own page_our_model content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -736,6 +751,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete own page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -766,6 +782,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -775,6 +792,7 @@ function permissions_user_default_permissions() {
     'name' => 'delete terms in news',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -843,6 +861,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any page_1_col_layout content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -852,6 +871,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any page_global_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -861,6 +881,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any page_our_model content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -870,6 +891,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any page_results content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -879,6 +901,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit any page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -948,6 +971,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page_1_col_layout content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -957,6 +981,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page_global_organization content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -966,6 +991,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page_our_model content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -975,6 +1001,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page_results content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -984,6 +1011,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit own page_story_grid content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -1013,6 +1041,7 @@ function permissions_user_default_permissions() {
     'name' => 'edit terms in news',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -1108,6 +1137,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1180,6 +1210,7 @@ function permissions_user_default_permissions() {
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1191,6 +1222,7 @@ function permissions_user_default_permissions() {
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
