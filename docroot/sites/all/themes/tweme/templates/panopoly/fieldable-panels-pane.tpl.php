@@ -4,15 +4,13 @@
   <?php
 
   if(isset($field_video_file)):
-//    print $fields;
     $wrapper = file_stream_wrapper_get_instance_by_uri($field_video_file['0']['uri']);
     $parts = $wrapper->get_parameters();
     $video_id = check_plain($parts['v']);
   ?>
       <?php
         if(isset($field_video_pane_thumbnail)):
-          $uri = $field_video_pane_thumbnail['0']['uri'];
-          $uri = 'http://tfall:8082/sites/default/files/yasmene_crop2_1.jpeg';
+          $uri = 'sites/default/files/'.$field_video_pane_thumbnail['0']['filename'];
       ?>
           <a href=http://www.youtube.com/v/<?php print $video_id ?>?html5=1><img src=<?php print $uri ?> /></a>
       <?php
