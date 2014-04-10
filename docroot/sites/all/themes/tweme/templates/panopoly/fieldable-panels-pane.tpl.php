@@ -17,7 +17,7 @@
         else:
       ?>
 
-      <a href=http://www.youtube.com/v/<?php print $video_id ?>?html5=1><img src=http://img.youtube.com/vi/<?php print $video_id ?>/maxresdefault.jpg /></a>
+      <a href=http://www.youtube.com/v/<?php print $video_id ?>><img src=http://img.youtube.com/vi/<?php print $video_id ?>/maxresdefault.jpg /></a>
       <?php
       endif;
       ?>
