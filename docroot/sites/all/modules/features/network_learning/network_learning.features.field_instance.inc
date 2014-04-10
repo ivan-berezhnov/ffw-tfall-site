@@ -24,6 +24,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -81,6 +87,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 7,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -136,6 +148,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'video_embed_field',
         'weight' => 6,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -184,6 +202,12 @@ function network_learning_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'global_organization' => array(
@@ -239,6 +263,12 @@ function network_learning_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',
@@ -300,6 +330,12 @@ function network_learning_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -350,6 +386,12 @@ function network_learning_field_default_field_instances() {
         ),
         'type' => 'image',
         'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',
