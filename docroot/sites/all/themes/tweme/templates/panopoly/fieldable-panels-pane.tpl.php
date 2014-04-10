@@ -12,12 +12,12 @@
         if(isset($field_video_pane_thumbnail)):
           $uri = 'sites/default/files/'.$field_video_pane_thumbnail['0']['filename'];
       ?>
-          <a href=http://www.youtube.com/watch?v=<?php print $video_id ?>><img src=<?php print $uri ?> /></a>
+          <a href=http://www.youtube.com/watch_popup?v=<?php print $video_id ?>><img src=<?php print $uri ?> /></a>
       <?php
         else:
       ?>
 
-      <a href=http://www.youtube.com/watch?v=<?php print $video_id ?>><img src=http://img.youtube.com/vi/<?php print $video_id ?>/maxresdefault.jpg /></a>
+      <a href=http://www.youtube.com/watch_popup?v=<?php print $video_id ?>><img src=http://img.youtube.com/vi/<?php print $video_id ?>/maxresdefault.jpg /></a>
       <?php
       endif;
       ?>
