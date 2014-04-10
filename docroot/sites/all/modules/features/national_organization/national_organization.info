@@ -48,6 +48,7 @@ features[field_base][] = field_program_launched
 features[field_base][] = field_schools
 features[field_base][] = field_spotlights
 features[field_base][] = field_teachers_active
+features[field_group][] = group_about|node|national_organization|form
 features[field_group][] = group_context_info|node|national_organization|form
 features[field_group][] = group_snapshot_info|node|national_organization|form
 features[field_instance][] = node-national_organization-field_about
