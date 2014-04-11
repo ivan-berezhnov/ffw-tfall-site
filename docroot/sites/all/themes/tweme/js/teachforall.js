@@ -11,7 +11,7 @@
 
       //modernzr panel videos
       if($('html',context).hasClass('no-touch')){
-        $('.pane-bundle-video a.shadow').attr('rel', 'shadowbox;width=405;height=340;player=iframe');
+        $('.pane-bundle-video a.shadowboxvideo').attr('rel', 'shadowbox;width=405;height=340;player=iframe');
       }
 
       // brought in from assets/js/drupal.js
