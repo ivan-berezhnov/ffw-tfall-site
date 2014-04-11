@@ -11,5 +11,6 @@ include_once 'pubteachforall_central.features.inc';
  * Implements hook_preprocess_page().
  */
 function pubteachforall_central_preprocess_page(&$vars) {
-  $vars['network_learning_block'] = render(views_embed_view('network_learning','network_learning_front_block'));
+  $network_learning_block = views_embed_view('network_learning','network_learning_front_block');
+  $vars['network_learning_block'] = render($network_learning_block);
 }
