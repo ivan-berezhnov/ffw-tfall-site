@@ -7,6 +7,7 @@ project = pubteachforall_donate
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = link
+dependencies[] = panopoly_pages
 dependencies[] = pubteachforall_2_col_layout
 dependencies[] = spotlight
 dependencies[] = strongarm

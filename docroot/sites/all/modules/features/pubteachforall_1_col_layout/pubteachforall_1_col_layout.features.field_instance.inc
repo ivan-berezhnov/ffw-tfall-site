@@ -143,6 +143,12 @@ function pubteachforall_1_col_layout_field_default_field_instances() {
         'type' => 'field_collection_view',
         'weight' => 4,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -191,6 +197,12 @@ function pubteachforall_1_col_layout_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',

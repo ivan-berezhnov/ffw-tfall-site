@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * news.features.wysiwyg.inc
+ * pubteachforall_central.features.wysiwyg.inc
  */
 
 /**
  * Implements hook_wysiwyg_default_profiles().
  */
-function news_wysiwyg_default_profiles() {
+function pubteachforall_central_wysiwyg_default_profiles() {
   $profiles = array();
 
-  // Exported profile: wysiwyg
-  $profiles['wysiwyg'] = array(
-    'format' => 'wysiwyg',
+  // Exported profile: wysiwyg_ckeditor
+  $profiles['wysiwyg_ckeditor'] = array(
+    'format' => 'wysiwyg_ckeditor',
     'editor' => 'ckeditor',
     'settings' => array(
       'default' => 1,

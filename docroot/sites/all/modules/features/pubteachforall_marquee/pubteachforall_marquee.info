@@ -13,6 +13,7 @@ dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = image
 dependencies[] = nodequeue
+dependencies[] = panopoly_pages
 dependencies[] = spotlight
 dependencies[] = text
 dependencies[] = views

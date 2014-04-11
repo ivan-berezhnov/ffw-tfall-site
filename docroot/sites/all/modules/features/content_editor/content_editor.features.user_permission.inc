@@ -318,15 +318,5 @@ function content_editor_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'use text format wysiwyg'.
-  $permissions['use text format wysiwyg'] = array(
-    'name' => 'use text format wysiwyg',
-    'roles' => array(
-      'Content editor' => 'Content editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'filter',
-  );
-
   return $permissions;
 }

@@ -24,6 +24,12 @@ function tfa_supporter_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -76,6 +82,12 @@ function tfa_supporter_field_default_field_instances() {
         'type' => 'taxonomy_term_reference_link',
         'weight' => 2,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -124,6 +136,12 @@ function tfa_supporter_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',
@@ -191,6 +209,12 @@ function tfa_supporter_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'global_organization' => array(
