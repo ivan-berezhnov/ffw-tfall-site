@@ -3307,6 +3307,9 @@ div#panels-ipe-control-container {
   visibility: hidden !important;
 }
 
+.pane-bundle-video {
+  margin-bottom: 10px;
+}
 .pane-bundle-video .pane-content a {
   font-family: 'icomoon';
   speak: none;
@@ -3334,7 +3337,7 @@ div#panels-ipe-control-container {
   text-shadow: #000 1px 1px 3px;
 }
 
-.panel-panel img {
+.panel-panel img, .panel-panel iframe {
   width: 100%;
 }
 .panel-panel h1, .panel-panel h2, .panel-panel h3, .panel-panel h4, .panel-panel h5, .panel-panel a {

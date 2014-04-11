@@ -3236,6 +3236,7 @@ img {max-width: 100%;}
 div#panels-ipe-control-container { visibility: hidden !important;} //hide panel menu
 
 .pane-bundle-video {
+  margin-bottom: 10px;
   .pane-content {
     a {
       font-family: 'icomoon';
@@ -3271,7 +3272,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
 
 .panel-panel {
 
-  img {
+  img, iframe {
     width: 100%;
   }
 
