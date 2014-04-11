@@ -72,7 +72,7 @@ function create_youtube_link($video_id, $image_uri = NULL)
   } else {
     $image_link = 'http://img.youtube.com/vi/' . $video_id . '/hqdefault.jpg';
   }
-  $link = '<a href=http://www.youtube.com/watch_popup?v=' . $video_id . '><img src=' . $image_link . '></a>';
+  $link = '<a rel="" href=http://www.youtube.com/watch_popup?v=' . $video_id . '><img src=' . $image_link . '></a>';
   return $link;
 
 }
@@ -90,7 +90,7 @@ function create_vimeo_link($video_id, $image_uri = NULL)
   } else {
     $image_link = getVimeoThumb($video_id);
   }
-  $link = '<a href=http://player.vimeo.com/video/' . $video_id . '><img src=' . $image_link . '></a>';
+  $link = '<a rel="" href=http://player.vimeo.com/video/' . $video_id . '><img src=' . $image_link . '></a>';
   return $link;
 
 }
