@@ -3303,6 +3303,37 @@ img {
   margin-bottom: 20px;
 }
 
+div#panels-ipe-control-container {
+  visibility: hidden !important;
+}
+
+.pane-bundle-video .pane-content a {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+}
+.pane-bundle-video .pane-content a:before {
+  content: "\e608";
+  font-size: 80px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  text-shadow: #000 1px 1px 3px;
+}
+
 .panel-panel img {
   width: 100%;
 }
@@ -3514,7 +3545,7 @@ img {
   width: 100%;
   padding: 0 10px;
   text-shadow: #000 1px 1px 3px;
-  font-size: 68px;
+  font-size: 100px;
 }
 
 /* Clickable class fix problem with hover on touch devices */

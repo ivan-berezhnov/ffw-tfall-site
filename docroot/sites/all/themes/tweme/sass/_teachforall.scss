@@ -3233,6 +3233,42 @@ img {max-width: 100%;}
 
 // #panelizer
 
+div#panels-ipe-control-container { visibility: hidden !important;} //hide panel menu
+
+.pane-bundle-video {
+  .pane-content {
+    a {
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      display: block;
+
+      &:before {
+        content: "\e608";
+        font-size: 80px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -40px;
+        margin-left: -40px;
+        text-shadow: #000 1px 1px 3px;
+      }
+    }
+  }
+}
+
 .panel-panel {
 
   img {
