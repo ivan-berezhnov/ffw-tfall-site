@@ -100,14 +100,20 @@
     left: 0;
     margin: 0;
     height: 100%;
-    text-align: right;
+    &:before {
+      text-align: right;
+    }
   }
   .owl-next {
     position: absolute;
     right: 0;
     margin: 0;
     height: 100%;
-    text-align: left;
+    
+
+    &:before {
+      text-align: left;
+    }
   }
 
 }
@@ -143,6 +149,7 @@
     width: 100%;
     padding: 0 10px;
     text-shadow: #000 1px 1px 3px;
+    font-size: 68px;
   }
 }
 /* Clickable class fix problem with hover on touch devices */
