@@ -3322,6 +3322,7 @@ div#panels-ipe-control-container {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
+  position: relative;
 }
 .pane-bundle-video .pane-content a:before {
   content: "\e608";
@@ -3335,6 +3336,7 @@ div#panels-ipe-control-container {
   margin-top: -40px;
   margin-left: -40px;
   text-shadow: #000 1px 1px 3px;
+  z-index: 20;
 }
 
 .panel-panel img, .panel-panel iframe {
