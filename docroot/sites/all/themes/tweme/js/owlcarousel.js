@@ -15,7 +15,7 @@
         	autoHeight: false,
         	mouseDrag: true,
         	touchDrag: true,
-          autoPlay: true,
+          autoPlay: false,
           lazyLoad: true,
           itemsScaleUp: false,
           rewindNav: false,
