@@ -1,3 +1,4 @@
+  
   (function ($) {
   Drupal.behaviors.suppressAbout = {
   attach: function (context, settings) {
@@ -8,6 +9,10 @@
         });
       });
 
+      //modernzr panel videos
+      if($('html',context).hasClass('no-touch')){
+        $('.pane-bundle-video a').attr('rel', 'shadowbox;width=405;height=340;player=iframe');
+      }
 
       // brought in from assets/js/drupal.js
       $('.field-type-text-long table',context).addClass('table table-bordered');
