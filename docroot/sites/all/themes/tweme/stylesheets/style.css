@@ -3043,7 +3043,8 @@ img {
 }
 
 .view-news .icon-play,
-.view-network-learning .icon-play {
+.view-network-learning .icon-play,
+.view-press .icon-play {
   background-color: #4d4d4d;
   color: #ffb151;
   padding: 7px 10px;
@@ -3055,7 +3056,8 @@ img {
 }
 @media screen and (max-width: 979px) {
   .view-news .icon-play,
-  .view-network-learning .icon-play {
+  .view-network-learning .icon-play,
+  .view-press .icon-play {
     top: 5px;
     left: 5px;
     font-size: 16px;
