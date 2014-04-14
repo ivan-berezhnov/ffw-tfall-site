@@ -8,6 +8,7 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = filter
 dependencies[] = media
+dependencies[] = shadowbox
 dependencies[] = strongarm
 dependencies[] = wysiwyg
 features[ctools][] = strongarm:strongarm:1
