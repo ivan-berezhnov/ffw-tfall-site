@@ -32,7 +32,7 @@
       $embedded_field_video_size= sizeof($embedded_field);
       $is_embedded_video_field = ($embedded_field_video_size > 0);
       if ($is_embedded_video_field) {
-          print t('<div class="ico-play"></div>');
+          print t('<div class="icon-play"></div>');
       }
     ?>
     </div>
@@ -42,11 +42,20 @@
       <?php print $fields['created']->content; ?>
     </div>
     <h3><?php print $fields['title']->content; ?></h3>
-    <?php if(isset($fields['field_byline']->content)): ?>
+
+    <?php
+    if (isset($fields['field_byline']->content)) {
+      $byline = $fields['field_byline']->content;
+    } elseif (isset($fields['field_byline_1']->content)) {
+      $byline = $fields['field_byline_1']->content;
+    }
+    ?>
+    <?php if ($byline): ?>
       <h3 class="news__landing-byline hidden-phone">
-        <?php print $fields['field_byline']->content; ?>
+        <?php print $byline; ?>
       </h3>
     <?php endif; ?>
+
     <?php if (isset($fields['field_author']->content)): ?>
       <div class="news__author-info">
         <?php print $fields['field_author']->content; ?>
