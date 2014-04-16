@@ -12,15 +12,15 @@
         	navigationText : false,
         	scrollPerPage: false,
         	pagination: false,
-        	autoHeight: false,
+        	autoHeight: true,
         	mouseDrag: true,
         	touchDrag: true,
           autoPlay: false,
           lazyLoad: true,
-          itemsScaleUp: false,
-          rewindNav: false,
+          rewindNav: true,
         	itemsTablet: [1024,2],
         	itemsTabletSmall: [420,1],
+
           afterInit: function(){
             if(this.currentItem === 0){
               $('.owl-prev').fadeOut();
@@ -39,6 +39,13 @@
             }
           },
         });
+
+        if($('html',context).hasClass('no-touch')){
+          var content = "<div class=\"owl-item lb\"><div class=\"views-row\"></div></div>";
+          slides.data('owlCarousel').addItem(content,0);
+          slides.data('owlCarousel').addItem(content);
+        }
+
       });
     }
   }

@@ -3609,6 +3609,28 @@ div#panels-ipe-control-container {
 }
 
 /********** CUSTOM ***********/
+#block-views-tfall-marquee-block .content {
+  overflow: hidden;
+}
+
+.view-tfall-marquee {
+  width: 160.6%;
+  position: relative;
+  left: -30.3%;
+}
+@media screen and (max-width: 1024px) {
+  .view-tfall-marquee {
+    width: 100%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .view-tfall-marquee {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .owl-carousel {
   overflow: hidden;
 }
@@ -3619,29 +3641,32 @@ div#panels-ipe-control-container {
   background: #3c3835;
   overflow: hidden;
 }
-@media screen and (min-width: 318px) {
+.owl-carousel .owl-wrapper .owl-item.lb {
+  background: #91998c;
+}
+@media screen and (min-width: 1441px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 400px;
+    height: 520px;
   }
 }
-@media screen and (min-width: 764px) {
+@media screen and (max-width: 1440px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 380px;
+    height: 470px;
   }
 }
-@media screen and (min-width: 1020px) {
+@media screen and (max-width: 1200px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 440px;
+    height: 410px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 380px;
+    height: 420px;
   }
 }
-@media screen and (min-width: 1776px) {
+@media screen and (max-width: 320px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 490px;
+    height: 300px;
   }
 }
 .owl-carousel .owl-wrapper .owl-item .views-row {
@@ -3655,7 +3680,7 @@ div#panels-ipe-control-container {
 .owl-carousel .owl-wrapper .owl-item .marquee-title a {
   color: white;
   font-family: "Fedra Serif Screen Regular 3";
-  font-family: 16px;
+  font-size: 16px;
   font-size: 1.2rem;
   line-height: 20px;
   text-align: -webkit-match-parent;
@@ -3665,7 +3690,7 @@ div#panels-ipe-control-container {
   overflow: hidden;
   color: #999;
   font-family: "Fedra Serif Screen Regular 3";
-  font-family: 16px;
+  font-size: 16px;
   font-size: 1.2rem;
   line-height: 20px;
   text-align: -webkit-match-parent;

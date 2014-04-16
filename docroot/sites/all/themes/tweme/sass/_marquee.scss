@@ -206,7 +206,22 @@
 
 
 /********** CUSTOM ***********/
-
+#block-views-tfall-marquee-block .content {
+  overflow: hidden;
+}
+.view-tfall-marquee {
+  width: 160.6%;
+  position: relative;
+  left: -30.3%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    left: 0;
+  } 
+  @media screen and (min-width: 1441px) {
+    width: 100%;
+    left: 0;
+  } 
+}
 .owl-carousel {
   overflow: hidden;
   .owl-wrapper {
@@ -217,21 +232,24 @@
       background: #3c3835;
       overflow: hidden;
 
-      @media screen and (min-width: 318px) {
-        height: 400px;
+      &.lb {
+        background: #91998c;
       }
-      @media screen and (min-width: 764px) {
-        height: 380px;
+      @media screen and (min-width: 1441px) {
+        height: 520px;
       }
-      @media screen and (min-width: 1020px) {
-        height: 440px;
+      @media screen and (max-width: 1440px) {
+        height: 470px;
       }
-      @media screen and (min-width: 1200px) {
-        height: 380px;
+      @media screen and (max-width: 1200px) {
+        height: 410px;
       }
-      @media screen and (min-width: 1776px) {
-        height: 490px;
-      }  
+      @media screen and (max-width: 1024px) {
+        height: 420px;
+      }   
+      @media screen and (max-width: 320px) {
+        height: 300px;
+      }
 
 
 
@@ -247,7 +265,7 @@
         a {
           color: $white;
           font-family: "Fedra Serif Screen Regular 3";
-          font-family: 16px;
+          font-size: 16px;
           font-size: 1.2rem;
           line-height: 20px;
           text-align: -webkit-match-parent;
@@ -258,16 +276,11 @@
         overflow: hidden;
         color: #999;
         font-family: "Fedra Serif Screen Regular 3";
-        font-family: 16px;
+        font-size: 16px;
         font-size: 1.2rem;
         line-height: 20px;
         text-align: -webkit-match-parent;
       }
-      .view-tfall-marquee {
-        width: 150%;
-        position: relative;
-        left: -25%;
-      }      }
     }
   }
 }
