@@ -254,15 +254,20 @@
         }
       }
       .marquee-body {
-          padding: 0 10px 10px 10px;
-          overflow: hidden;
-          color: #999;
-          font-family: "Fedra Serif Screen Regular 3";
-          font-family: 16px;
-          font-size: 1.2rem;
-          line-height: 20px;
-          text-align: -webkit-match-parent;
+        padding: 0 10px 10px 10px;
+        overflow: hidden;
+        color: #999;
+        font-family: "Fedra Serif Screen Regular 3";
+        font-family: 16px;
+        font-size: 1.2rem;
+        line-height: 20px;
+        text-align: -webkit-match-parent;
       }
+      .view-tfall-marquee {
+        width: 150%;
+        position: relative;
+        left: -25%;
+      }      }
     }
   }
 }
