@@ -3535,7 +3535,6 @@ div#panels-ipe-control-container {
   z-index: 20;
   font-family: 'icomoon';
   speak: none;
-  font-size: 7.5rem;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -3674,26 +3673,25 @@ div#panels-ipe-control-container {
   height: 100%;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title {
-  padding: 10px 10px 0 10px;
-  margin-bottom: 10px;
+  padding: 20px 20px 2px 20px;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title a {
   color: white;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: 'Fedra Serif Screen Regular 3';
   font-size: 16px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 20px;
-  text-align: -webkit-match-parent;
+  letter-spacing: 1px;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-body {
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 20px 20px;
   overflow: hidden;
   color: #999;
-  font-family: "Fedra Serif Screen Regular 3";
+  font-family: "Fedra Serif Screen Bold 3";
   font-size: 16px;
-  font-size: 1.2rem;
-  line-height: 20px;
-  text-align: -webkit-match-parent;
+  font-size: 1rem;
+  line-height: 18px;
+  letter-spacing: 1px;
 }
 
 /**
