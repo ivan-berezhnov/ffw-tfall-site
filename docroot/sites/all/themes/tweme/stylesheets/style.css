@@ -3629,6 +3629,18 @@ div#panels-ipe-control-container {
     left: 0;
   }
 }
+@media screen and (max-width: 1920px) {
+  .view-tfall-marquee {
+    width: 125%;
+    left: -12.3%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .view-tfall-marquee {
+    width: 160.6%;
+    left: -30.3%;
+  }
+}
 
 .owl-carousel {
   overflow: hidden;
@@ -3650,17 +3662,17 @@ div#panels-ipe-control-container {
 }
 @media screen and (max-width: 1920px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 580px;
+    height: 470px;
   }
 }
 @media screen and (max-width: 1680px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 520px;
+    height: 430px;
   }
 }
 @media screen and (max-width: 1600px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 500px;
+    height: 420px;
   }
 }
 @media screen and (max-width: 1440px) {
