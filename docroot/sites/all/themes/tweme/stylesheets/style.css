@@ -3643,9 +3643,14 @@ div#panels-ipe-control-container {
 .owl-carousel .owl-wrapper .owl-item.lb {
   background: #91998c;
 }
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1921px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 520px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 410px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -3653,9 +3658,19 @@ div#panels-ipe-control-container {
     height: 460px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1366px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 410px;
+    height: 440px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 430px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 400px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -3663,9 +3678,24 @@ div#panels-ipe-control-container {
     height: 420px;
   }
 }
+@media screen and (max-width: 768px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 360px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 380px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 360px;
+  }
+}
 @media screen and (max-width: 320px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 300px;
+    height: 350px;
   }
 }
 .owl-carousel .owl-wrapper .owl-item .views-row {
@@ -3685,7 +3715,6 @@ div#panels-ipe-control-container {
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-body {
   padding: 0 20px 20px 20px;
-  overflow: hidden;
   color: #999;
   font-family: "Fedra Serif Screen Bold 3";
   font-size: 16px;

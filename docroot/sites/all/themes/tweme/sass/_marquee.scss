@@ -234,21 +234,41 @@
       &.lb {
         background: #91998c;
       }
-      @media screen and (min-width: 1441px) {
-        height: 520px;
+      @media screen and (min-width: 1921px) {
+        height: 500px;
+      }
+      @media screen and (max-width: 1920px) {
+        height: 410px;
       }
       @media screen and (max-width: 1440px) {
         height: 460px;
       }
-      @media screen and (max-width: 1200px) {
-        height: 410px;
+      @media screen and (max-width: 1366px) {
+        height: 440px;
+      }
+      @media screen and (max-width: 1280px) {
+        height: 430px;
+      }
+      @media screen and (max-width: 1080px) {
+        height: 400px;
       }
       @media screen and (max-width: 1024px) {
         height: 420px;
-      }   
-      @media screen and (max-width: 320px) {
-        height: 300px;
       }
+      @media screen and (max-width: 768px) {
+        height: 360px;
+      }
+      @media screen and (max-width: 480px) {
+        height: 380px;
+      }
+      @media screen and (max-width: 420px) {
+        height: 360px;
+      }      
+      @media screen and (max-width: 320px) {
+        height: 350px;
+      }
+
+
 
 
       .views-row {
@@ -270,7 +290,6 @@
       }
       .marquee-body {
         padding: 0 20px 20px 20px;
-        overflow: hidden;
         color: #999;
         font-family: $FedraSerifScreenBold3;
         font-size: 16px;
