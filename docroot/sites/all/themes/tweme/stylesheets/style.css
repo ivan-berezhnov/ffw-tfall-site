@@ -3623,7 +3623,7 @@ div#panels-ipe-control-container {
     left: 0;
   }
 }
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1921px) {
   .view-tfall-marquee {
     width: 100%;
     left: 0;
@@ -3650,7 +3650,17 @@ div#panels-ipe-control-container {
 }
 @media screen and (max-width: 1920px) {
   .owl-carousel .owl-wrapper .owl-item {
-    height: 410px;
+    height: 580px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 520px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .owl-carousel .owl-wrapper .owl-item {
+    height: 500px;
   }
 }
 @media screen and (max-width: 1440px) {
