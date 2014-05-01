@@ -83,5 +83,4 @@
 
     </div>
   </div>
-<?php print $feed_icons ?>
 </div> <!-- container end -->

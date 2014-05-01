@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('NEWS'); ?></h2><?php print $feed_icons ?>
+  <h2 class="page-title"><?php print t('NEWS'); ?></h2>
   <div class="row-fluid">
     <div class="span9">
       <?php print render(views_embed_view('news','block_1')); //flexslider ?>
@@ -28,4 +28,3 @@
   </div>
   <a href="news/latest" class="full-list">More News <span class="orange2">>></span></a>
 </div>
-<?php print $feed_icons ?>

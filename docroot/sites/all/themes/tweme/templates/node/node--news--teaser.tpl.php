@@ -12,6 +12,5 @@
 		<div>
 			<?php print format_date($node->created, 'short'); ?> <!-- publish date -->
 		</div>
-<?php print $feed_icons ?>
   </div>
 </div>
