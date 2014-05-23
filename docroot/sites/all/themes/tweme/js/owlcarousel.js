@@ -40,11 +40,24 @@
           },
         });
 
+        //only for no touch
         if($('html',context).hasClass('no-touch')){
+
+          //add spacers left and right
           var content = "<div class=\"owl-item lb\"><div class=\"views-row\"></div></div>";
           slides.data('owlCarousel').addItem(content,0);
           slides.data('owlCarousel').addItem(content);
+
+          //move items in twos
+          $('.owl-next').bind('click',function(){
+            slides.data('owlCarousel').next();
+          });
+          $('.owl-prev').bind('click',function(){
+            slides.data('owlCarousel').prev();
+          });
         }
+
+
 
       });
     }
