@@ -48,11 +48,6 @@
           },
         });
 
-        //only for no touch
-        if($('html',context).hasClass('no-touch')){
-          $('.view-id-tfall_marquee').append('<div class="swipe"></div>');            
-        }
-
 
         if($('html',context).hasClass('no-touch')){
           //add spacers left and right
