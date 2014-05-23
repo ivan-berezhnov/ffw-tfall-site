@@ -10,7 +10,6 @@
             </div>
           </div>
         </div>
-		<?php print $feed_icons ?>
       <div class="span3 sidebar-right">
         <div class="constant-contact">
           <?php

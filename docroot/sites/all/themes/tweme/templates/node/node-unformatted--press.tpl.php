@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('PRESS'); ?></h2><?php print $feed_icons ?>
+  <h2 class="page-title"><?php print t('PRESS'); ?></h2>
   <div class="row-fluid">
     <div class="span9">
       <?php print render(views_embed_view('press','block_1')); //flexslider ?>
@@ -28,4 +28,3 @@
   </div>
   <a href="press/latest" class="full-list">More Press <span class="orange2">>></span></a>
 </div>
-<?php print $feed_icons ?>

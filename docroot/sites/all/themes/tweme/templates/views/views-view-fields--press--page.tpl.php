@@ -52,7 +52,7 @@
     ?>
     <?php if ($byline): ?>
       <h3 class="news__landing-byline hidden-phone">
-        <?php print $byline; ?>
+        <?php if(isset($byline)){print $byline;} ?>
       </h3>
     <?php endif; ?>
 
