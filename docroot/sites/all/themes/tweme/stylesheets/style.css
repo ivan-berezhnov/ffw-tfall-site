@@ -3341,6 +3341,16 @@ div#panels-ipe-control-container {
   z-index: 20;
 }
 
+.panel-panel .slug {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  color: #e69740;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
 .panel-panel img, .panel-panel iframe {
   width: 100%;
 }
@@ -3355,6 +3365,12 @@ div#panels-ipe-control-container {
   letter-spacing: .2em;
   text-transform: uppercase;
 }
+.panel-panel h2 a {
+  color: #000;
+}
+.panel-panel h2 a:hover {
+  color: #cf4753;
+}
 .panel-panel p {
   font-family: FedraSerifOLD;
   font-size: 1.2rem;
@@ -3362,6 +3378,9 @@ div#panels-ipe-control-container {
   color: #91998c;
   letter-spacing: .1em;
   margin-bottom: 1em;
+}
+.panel-panel p a {
+  color: #cf4753;
 }
 .panel-panel .full-list {
   color: #fff;
@@ -3406,6 +3425,32 @@ div#panels-ipe-control-container {
  *  v1.3.2
  */
 /* clearfix */
+.swipe {
+  position: absolute;
+  height: 120px;
+  width: 240px;
+  background: url(../images/swipe.png) no-repeat;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -120px;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-animation: slide 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 120px;
+    opacity: 1;
+  }
+
+  to {
+    background-position: 0;
+    opacity: 0;
+  }
+}
+
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;

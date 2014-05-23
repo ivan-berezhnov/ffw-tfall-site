@@ -4,6 +4,31 @@
  */
 
 /* clearfix */
+.swipe {
+  position: absolute;
+  height: 120px;
+  width: 240px;
+  background: url(../images/swipe.png)no-repeat; 
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -120px;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-animation: slide 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes slide {
+  from{
+      background-position:120px;
+      opacity: 1;
+  }
+  to{
+      background-position:0;
+      opacity: 0;
+  }
+}
+
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;

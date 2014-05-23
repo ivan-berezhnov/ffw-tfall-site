@@ -17,13 +17,17 @@
         	touchDrag: true,
           autoPlay: false,
           lazyLoad: true,
-          rewindNav: true,
+          rewindNav: false,
         	itemsTablet: [1024,2],
         	itemsTabletSmall: [420,1],
 
           afterInit: function(){
             if(this.currentItem === 0){
               $('.owl-prev').fadeOut();
+            }
+            //only for no touch
+            if($('html',context).hasClass('touch')){
+              $('.view-id-tfall_marquee').append('<div class="swipe"></div>');            
             }
           },
           afterMove: function(){
@@ -37,12 +41,20 @@
             }else{
               $('.owl-prev').fadeOut('fast');
             }
+            //only for no touch
+            if($('html',context).hasClass('touch')){
+              $('.swipe').hide();
+            }
           },
         });
 
         //only for no touch
         if($('html',context).hasClass('no-touch')){
+          $('.view-id-tfall_marquee').append('<div class="swipe"></div>');            
+        }
 
+
+        if($('html',context).hasClass('no-touch')){
           //add spacers left and right
           var content = "<div class=\"owl-item lb\"><div class=\"views-row\"></div></div>";
           slides.data('owlCarousel').addItem(content,0);
@@ -56,8 +68,6 @@
             slides.data('owlCarousel').prev();
           });
         }
-
-
 
       });
     }
