@@ -3309,6 +3309,10 @@ div#panels-ipe-control-container {
   visibility: hidden !important;
 }
 
+.pane-content .panel-display {
+  width: 100%;
+}
+
 .pane-bundle-video {
   margin-bottom: 10px;
 }
@@ -3773,21 +3777,25 @@ div#panels-ipe-control-container {
   padding: 20px 20px 2px 20px;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title a {
+  font-family: "Fedra Serif Old";
+  font-weight: normal;
+  font-style: normal;
   color: white;
-  font-family: 'Fedra Serif Screen Regular 3';
   font-size: 16px;
   font-size: 1rem;
-  line-height: 20px;
-  letter-spacing: 1px;
+}
+.owl-carousel .owl-wrapper .owl-item .marquee-title a:hover {
+  color: #e69740;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-body {
   padding: 0 20px 20px 20px;
   color: #999;
-  font-family: "Fedra Serif Screen Bold 3";
+  font-family: "Fedra Serif Old";
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 18px;
-  letter-spacing: 1px;
+  line-height: 20px;
 }
 
 /**
