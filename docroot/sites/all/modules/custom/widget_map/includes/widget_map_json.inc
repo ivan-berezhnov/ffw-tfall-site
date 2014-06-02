@@ -24,6 +24,7 @@ function _widget_map_listofall() {
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
 			'title' => $item->field_country[LANGUAGE_NONE][0]['value'],
+			'name' => $item->title,
 			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
 			'logo' => image_style_url('map_logo',$item->field_no_logo[LANGUAGE_NONE][0]['uri']),
 			'mainpic' => image_style_url('map_thumbnail',$item->field_no_image[LANGUAGE_NONE][0]['uri']),

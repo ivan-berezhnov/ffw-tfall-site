@@ -1,110 +1,116 @@
-(function ($) {
-    Drupal.behaviors.widget_map = {
-        attach: function (context, settings) {
+(function($) {
+	Drupal.behaviors.widget_map = {
+		attach: function(context, settings) {
 
-            var map = L.mapbox.map('map', Drupal.settings.widget_map.key, {
-                    center: [30, 25],
-                    zoom: 2,
-                    minZoom: 2,
-                    maxZoom: 5
-                }),
-                $mapTitle = $('.worldmap__title'),
-                fadeAnimateTime = 200,
-                noTouch = $('html').hasClass('no-touch');
+			var map = L.mapbox.map('map', Drupal.settings.widget_map.key, {
+				center: [30, 38],
+				zoom: 2,
+				minZoom: 2,
+				maxZoom: 5,
+				maxBounds: L.latLngBounds(L.latLng(-70, -210),L.latLng(130, 242))
+			}),
+			$mapTitle = $('.worldmap__title'),
+			$zoomControls = $('.leaflet-control-zoom'),
+			hasTouch = $('html').hasClass('touch');
+
+			//prevents map repetition
+			map.tileLayer.options.noWrap = true;
 
             var l = L.layerGroup().addTo(map)
 
             var featureLayer = L.mapbox.featureLayer(null).addTo(map);
             featureLayer.loadURL('/widget_map_detailedlist.json');
 
-            map.doubleClickZoom.disable();
-            map.scrollWheelZoom.disable();
+			map.doubleClickZoom.disable();
+			map.scrollWheelZoom.disable();
 
-            toggleMapTitle = function (element) {
-                var $mapPopup = $('.leaflet-popup-pane');
+			toggleMapTitle = function(element) {
+				var $mapPopup = $('.leaflet-popup-pane');
 
-                switch (element) {
-                    case 'marker':
-                        if (noTouch) {
-                            if ($mapPopup.children().length) {
-                                $mapTitle.fadeIn(fadeAnimateTime);
-                            } else {
-                                $mapTitle.fadeOut(fadeAnimateTime);
-                            }
-                        } else {
-// Touch-enabled devices
-// Note: added 200ms delay for iOS7, as it was reaching the conditional before the the popup rendered
-                            setTimeout(function () {
-                                if ($mapPopup.children().length) {
-                                    $mapTitle.fadeOut(fadeAnimateTime);
-                                } else {
-                                    $mapTitle.fadeIn(fadeAnimateTime);
-                                }
-                            }, 200);
-                        }
+				switch(element) {
+					case 'marker':
+						// Note: added 200ms delay for iOS7, as it was reaching the conditional before the the popup rendered
+						setTimeout(function() {
+							if ($mapPopup.children().length) {
+								$mapTitle.hide();
+								$zoomControls.hide();
+							} else {
+								$mapTitle.show();
+								$zoomControls.show();
+							}
+						}, (hasTouch ? 200 : 0) );
 
-                        break;
-                    case 'map':
-                        if ($mapPopup.children().length) {
-                            $mapTitle.fadeOut(fadeAnimateTime);
-                        } else {
-                            $mapTitle.fadeIn(fadeAnimateTime);
-                        }
+						break;
+					case 'map':
+						if ($mapPopup.children().length) {
+						  $mapTitle.hide();
+						  $zoomControls.hide();
+						} else {
+						  $mapTitle.show();
+						  $zoomControls.show();
+						}
 
-                        break;
-                }
-            }
+						break;
+				}
+			}
 
-            featureLayer.on('layeradd', function (e) {
-                var marker = e.layer, feature = marker.feature;
+			featureLayer.on('layeradd', function (e) {
+				var marker = e.layer,feature = marker.feature;
 
-                marker.setIcon(L.icon(feature.properties.icon));
+				marker.setIcon(L.icon(feature.properties.icon));
 
-                var popupContent =
-                    '<div class="slug">' + feature.properties.title + '</div>' +
-                        '<div class="widget-map__blurb">' + feature.properties.blurb + '</div>';
+				var popupContent =
+								'<a class="popup" href="' + feature.properties.url + '">' +
+								'<div class="slug">' + feature.properties.title + '</div>' +
+								'<div class="widget-map__blurb">' + feature.properties.blurb + '</div>'
+								+ '</a>';
 
-                marker.bindPopup(popupContent, {
-                    closeButton: false,
-                    minWidth: 291
-                });
+				marker.bindPopup(popupContent, {
+					closeButton: false,
+					minWidth: 320
+				});
 
-                marker.on('click', function (e) {
-                    window.location = $(marker._popup._content).attr('href');
-                })
+				marker.on('click', function(e){
+					window.location = $(marker._popup._content).attr('href');
+				});
+			});
 
-            });
+			featureLayer.on('mouseover', function (e) {
+				//$mapTitle.hide()
+				//$zoomControls.hide();
+				e.layer.openPopup();
+			});
 
-            if (noTouch) {
-                featureLayer.on('mouseover', function (e) {
-                    $mapTitle.fadeOut(fadeAnimateTime);
-                    e.layer.openPopup();
-                });
+			// map.markerLayer.on('mouseout',function(e) {
+			// 	$mapTitle.show();
+			// 	$zoomControls.show();
+			// 	//e.layer.closePopup();
+			// });
 
-                map.on('popupopen', function (e) {
+			map.on('popupopen', function(e){
 
-// had to go outside leaflet because they don't seem
-// to expose any methods to handle hover events on popups
-                    var popup = $('.leaflet-popup-content-wrapper');
+				// had to go outside leaflet because they don't seem
+				// to expose any methods to handle hover events on popups
+				var popup = $('.leaflet-popup-content-wrapper');
+				
+				// using mouseleave as mouseout fires when hovering over
+				// child elements
+				popup.on('mouseleave', function(e){
+					map.closePopup();
+				});
+			});
 
-// using mouseleave as mouseout fires when hovering over
-// child elements
-                    popup.on('mouseleave', function (e) {
-                        map.closePopup();
-                    });
-                });
-                map.on('popupclose', function (e) {
-                    $mapTitle.fadeIn(fadeAnimateTime);
-                });
-            }
 
-            featureLayer.on('click', function (e) {
-                toggleMapTitle('marker');
-            });
+			if (hasTouch) {
+				featureLayer.on('click', function (e) {
+					toggleMapTitle('marker');
+				});
 
-            map.on('click', function () {
-                toggleMapTitle('map');
-            });
-        }
-    };
+				map.on('click', function() {
+					toggleMapTitle('map');
+				});
+			}
+		}
+	};
+
 }(jQuery));
