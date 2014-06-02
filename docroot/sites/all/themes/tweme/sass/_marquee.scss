@@ -318,23 +318,25 @@
       .marquee-title {
         padding: 20px 20px 2px 20px;
 
+
         a {
+          font-family: $FedraSerifOLD; font-weight: normal;
+          font-style: normal;
           color: $white;
-          font-family: 'Fedra Serif Screen Regular 3';
-          font-size: 16px;
-          font-size: 1rem;
-          line-height: 20px;
-          letter-spacing: 1px;
+          @include font-size(16);
+
+          &:hover {
+            color: $orange1;
+          }
         }
       }
       .marquee-body {
         padding: 0 20px 20px 20px;
         color: #999;
-        font-family: $FedraSerifScreenBold3;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 18px;
-        letter-spacing: 1px;
+        font-family: $FedraSerifOLD; font-weight: normal;
+        font-style: normal;
+        @include font-size(16);
+        line-height: 20px;
       }
     }
   }

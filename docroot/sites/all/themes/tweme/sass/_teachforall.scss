@@ -3236,6 +3236,10 @@ img {max-width: 100%;}
 
 div#panels-ipe-control-container { visibility: hidden !important;} //hide panel menu
 
+.pane-content .panel-display {
+  width: 100%;
+}
+
 .pane-bundle-video {
   margin-bottom: 10px;
   .pane-content {
