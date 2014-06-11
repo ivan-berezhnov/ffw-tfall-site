@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+/* Croatian i18n for the jQuery UI date picker plugin. */
+=======
+﻿/* Croatian i18n for the jQuery UI date picker plugin. */
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
+/* Written by Vjekoslav Nesek. */
+jQuery(function($){
+	$.datepicker.regional['hr'] = {
+		closeText: 'Zatvori',
+<<<<<<< HEAD
+		prevText: '&#x3C;',
+		nextText: '&#x3E;',
+=======
+		prevText: '&#x3c;',
+		nextText: '&#x3e;',
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
+		currentText: 'Danas',
+		monthNames: ['Siječanj','Veljača','Ožujak','Travanj','Svibanj','Lipanj',
+		'Srpanj','Kolovoz','Rujan','Listopad','Studeni','Prosinac'],
+		monthNamesShort: ['Sij','Velj','Ožu','Tra','Svi','Lip',
+		'Srp','Kol','Ruj','Lis','Stu','Pro'],
+		dayNames: ['Nedjelja','Ponedjeljak','Utorak','Srijeda','Četvrtak','Petak','Subota'],
+		dayNamesShort: ['Ned','Pon','Uto','Sri','Čet','Pet','Sub'],
+		dayNamesMin: ['Ne','Po','Ut','Sr','Če','Pe','Su'],
+		weekHeader: 'Tje',
+		dateFormat: 'dd.mm.yy.',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''};
+	$.datepicker.setDefaults($.datepicker.regional['hr']);
+<<<<<<< HEAD
+});
+=======
+});
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
