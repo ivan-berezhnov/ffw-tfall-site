@@ -276,32 +276,4 @@ $FedraSerifOLD: "Fedra Serif Old";
   font-stretch: normal;
 }
 
-/**/
 
-
-
-
-/**
-* #PC/Chrome Overrides
-**/
-
-html.pc.chrome h1,
-html.pc.chrome .h1,
-html.pc.chrome h2,
-html.pc.chrome .h2,
-html.pc.chrome h3,
-html.pc.chrome .h3,
-html.pc.chrome .title-small,
-html.pc.chrome .marquee__2 .marquee__title, .marquee__2 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__3 .marquee__title, .marquee__3 html.pc.chrome .marquee__title,
-html.pc.chrome .marquee__4 .marquee__title, .marquee__4 html.pc.chrome .marquee__title,
-html.pc.chrome .node-type-page-global-organization .our-model-section .spotlights a,
-.node-type-page-global-organization .our-model-section .spotlights html.pc.chrome a {
-  font-family: serif;
-}
-
-html.pc.chrome body {
-  font-family: sans-serif;
-}
-
-/**/
