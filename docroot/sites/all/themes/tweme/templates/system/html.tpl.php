@@ -10,8 +10,7 @@
 
 <!DOCTYPE html>
 
-<!--[if lte IE 8]><html lang="<?php print $language->language ?>" class="no-js lte-ie8"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="<?php print $language->language ?>" class="no-js"><!--<![endif]-->
+<html lang="<?php print $language->language ?>" class="no-js">
   <head profile="<?php print $grddl_profile ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
