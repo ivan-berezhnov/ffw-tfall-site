@@ -14,7 +14,4 @@ regions[highlighted] = Highlighted
 regions[help] = Help
 
 ; Information added by Drupal.org packaging script on 2014-05-08
-version = "7.28"
-project = "drupal"
-datestamp = "1399522731"
 
