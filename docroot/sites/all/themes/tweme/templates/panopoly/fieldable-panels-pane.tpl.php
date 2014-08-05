@@ -23,6 +23,12 @@
 </div>
 
 
+  <?php if (isset($content['field_caption'])): ?>
+    <div class="small body">
+      <?php print render($content['field_caption']); ?>
+      </div>
+  <?php endif; ?>
+
 <?php
 
 //check to see if the field is a video file
