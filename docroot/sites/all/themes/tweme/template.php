@@ -158,8 +158,7 @@ function tweme_preprocess_views_view_unformatted__nos_az(&$vars) {
 	$vars['cols'] = $cols;
 }
 
-function tweme_preprocess_node__network_learning(&$vars) {
-
-	$res = module_invoke('facebook_comments_box', 'block_view', 'facebook_comments_box');
-	$vars['block_facebook_comments_box'] = $res['content'];
+function tfallplp_preprocess_comment(&$vars, $hook) {
+  $comment = $vars['comment'];
+  $comment_wrapper = entity_metadata_wrapper('comment', $comment);
 }
