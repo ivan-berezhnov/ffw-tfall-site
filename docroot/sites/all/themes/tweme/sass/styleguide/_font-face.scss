@@ -1,8 +1,10 @@
 /**
-* #Font Variables
+* #Font  Variables
 **/
 
 $NewsGothicRegular:             "News Gothic";
+$NewsGothicRegularDB:           "News Gothic Demi-Bold";
+$NewsGothicRegularDBO:          "News Gothic DB Oblique";
 $NewsGothicFSLightRegular:      "NewsGothicFSLightRegular";
 $NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
 $NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
@@ -43,7 +45,7 @@ $FedraSerifOLD: "Fedra Serif Old";
 }
 
 @font-face {
-  font-family: $NewsGothicRegular;
+  font-family: $NewsGothicRegularDB;
   src: url('../fonts/NewsGothic-DemiBold-webfont.eot');
   src: url('../fonts/NewsGothic-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold') format('svg'),
@@ -54,7 +56,7 @@ $FedraSerifOLD: "Fedra Serif Old";
 }
 
 @font-face {
-  font-family: $NewsGothicRegular;
+  font-family: $NewsGothicRegularDBO;
   src: url('../fonts/NewsGothic-MediumObl-webfont.eot');
   src: url('../fonts/NewsGothic-MediumObl-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/NewsGothic-MediumObl-webfont.woff') format('woff'),
@@ -225,6 +227,12 @@ $FedraSerifOLD: "Fedra Serif Old";
 
 .NewsGothicFSLightRegular {
   font-family: $NewsGothicFSLightRegular;
+}
+.NewsGothicRegularDB {
+  font-family: $NewsGothicRegularDB;
+}
+.NewsGothicRegularDBO {
+  font-family: $NewsGothicRegularDBO;
 }
 .NewsGothicFSLightItalic {
   font-family: $NewsGothicFSLightItalic;

@@ -19,6 +19,7 @@ $grey3:   #3c3835;
 $grey4:   #999;
 $grey5:   #92998d;
 $grey6:   #ccc;
+$grey7:   #999999;
 $red:     #cf4753;
 $red2:    #db4b57;
 $orange1: #e69740;
@@ -36,7 +37,7 @@ $background_color1: #DFD9C9;
 $base-font-size: 16;
 
 /**
-* #WYSIWYG Classes
+* #WYSIWYG  Classes
 **/
 
 .beige {
@@ -64,6 +65,14 @@ $base-font-size: 16;
 
 .almostblack {
   color: $grey2;
+}
+
+.navbargrey {
+  color: $grey3;
+}
+
+.lightgrey {
+  color: $grey7;
 }
 
 h1, h2, h3, h4 {
