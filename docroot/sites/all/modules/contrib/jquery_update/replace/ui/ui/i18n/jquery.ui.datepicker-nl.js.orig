@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+/* Dutch (UTF-8) initialisation for the jQuery UI date picker plugin. */
+=======
+﻿/* Dutch (UTF-8) initialisation for the jQuery UI date picker plugin. */
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
+/* Written by Mathias Bynens <http://mathiasbynens.be/> */
+jQuery(function($){
+	$.datepicker.regional.nl = {
+		closeText: 'Sluiten',
+		prevText: '←',
+		nextText: '→',
+		currentText: 'Vandaag',
+		monthNames: ['januari', 'februari', 'maart', 'april', 'mei', 'juni',
+		'juli', 'augustus', 'september', 'oktober', 'november', 'december'],
+<<<<<<< HEAD
+		monthNamesShort: ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun',
+=======
+		monthNamesShort: ['jan', 'feb', 'maa', 'apr', 'mei', 'jun',
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
+		'jul', 'aug', 'sep', 'okt', 'nov', 'dec'],
+		dayNames: ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'],
+		dayNamesShort: ['zon', 'maa', 'din', 'woe', 'don', 'vri', 'zat'],
+		dayNamesMin: ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'],
+		weekHeader: 'Wk',
+<<<<<<< HEAD
+		dateFormat: 'dd-mm-yy',
+=======
+		dateFormat: 'dd/mm/yy',
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''};
+	$.datepicker.setDefaults($.datepicker.regional.nl);
+<<<<<<< HEAD
+});
+=======
+});
+>>>>>>> e12e3c9129e125a080e06897a04e369a9348ffec
