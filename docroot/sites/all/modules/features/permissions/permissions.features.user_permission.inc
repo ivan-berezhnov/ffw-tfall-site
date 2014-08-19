@@ -26,7 +26,6 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -97,7 +96,6 @@ function permissions_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'dashboard',
@@ -126,7 +124,6 @@ function permissions_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'Content editor' => 'Content editor',
-      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'user',
@@ -341,7 +338,6 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -782,7 +778,6 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'node',
   );

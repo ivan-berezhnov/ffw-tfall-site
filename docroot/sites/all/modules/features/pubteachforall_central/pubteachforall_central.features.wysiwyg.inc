@@ -37,13 +37,13 @@ function pubteachforall_central_wysiwyg_default_profiles() {
           'Image' => 1,
           'Source' => 1,
           'PasteFromWord' => 1,
+          'ShowBlocks' => 1,
           'RemoveFormat' => 1,
           'SpecialChar' => 1,
-          'FontSize' => 1,
+          'Font' => 1,
           'Styles' => 1,
           'Table' => 1,
           'Iframe' => 1,
-          'SpellChecker' => 1,
           'Scayt' => 1,
         ),
         'imce' => array(
@@ -57,16 +57,17 @@ function pubteachforall_central_wysiwyg_default_profiles() {
       'verify_html' => 1,
       'preformatted' => 0,
       'convert_fonts_to_spans' => 1,
-      'remove_linebreaks' => 1,
-      'apply_source_formatting' => 0,
-      'paste_auto_cleanup_on_paste' => 0,
-      'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
+      'remove_linebreaks' => 0,
+      'apply_source_formatting' => 1,
+      'paste_auto_cleanup_on_paste' => 1,
+      'block_formats' => 'p,h2,h3,h4,h5,h6,pre',
       'css_setting' => 'self',
       'css_path' => '/sites/all/themes/tweme/stylesheets/style.css',
       'css_classes' => 'H1=h1
 H2=h2
 H3=h3
-H4=div.page-section
+H4=p.page-section
+Body=div.body
 BodySmall=div.small-body
 BodyLarge=div.large-body
 BlockQuote=div.block-quote
