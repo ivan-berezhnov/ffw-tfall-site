@@ -58,10 +58,13 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   color: black;
 }
 
+/**
+* #Icomoon
+**/
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-hd3gdd");
-  src: url("fonts/icomoon.eot?#iefix-hd3gdd") format("embedded-opentype"), url("fonts/icomoon.woff?-hd3gdd") format("woff"), url("fonts/icomoon.ttf?-hd3gdd") format("truetype"), url("fonts/icomoon.svg?-hd3gdd#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -77,6 +80,14 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-angle-right:before, .owl-next:before {
+  content: "\e600";
+}
+
+.icon-angle-left:before, .owl-prev:before {
+  content: "\e601";
 }
 
 .icon-play:before {
@@ -107,14 +118,6 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e608";
 }
 
-.icon-angle-right:before {
-  content: "\e600";
-}
-
-.icon-angle-left:before {
-  content: "\e601";
-}
-
 .icon-linkedin:before {
   content: "\e607";
 }
@@ -123,6 +126,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e609";
 }
 
+/**/
 /**
 * #Font Variables
 **/
@@ -521,13 +525,13 @@ body {
 
 .caption {
   color: #4d4d4d;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 18px;
   font-family: "News Gothic";
+  line-height: 18px;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-size: 14px;
+  font-size: 0.875rem;
   margin: 2px 0px 2px 0px;
 }
 

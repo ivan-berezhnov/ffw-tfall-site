@@ -177,12 +177,12 @@ body {
 
 .caption {
   color: $grey2;
-  @include font-size(14);
-  line-height: 18px;
   font-family: $NewsGothicRegular;
+  line-height: 18px;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  @include font-size(14);
   margin: 2px 0px 2px 0px;
 }
 
