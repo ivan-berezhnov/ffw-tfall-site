@@ -175,6 +175,17 @@ body {
   line-height: 38px;
 }
 
+.caption {
+  color: $grey2;
+  @include font-size(14);
+  line-height: 18px;
+  font-family: $NewsGothicRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  margin: 2px 0px 2px 0px;
+}
+
 .page-section {
   color: $grey2;
   @include font-size(16);
@@ -3275,7 +3286,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
       position: relative;
 
       &:before {
-        content: "\e608";
+        content: "\e60a";
         font-size: 80px;
         display: table-cell;
         vertical-align: middle;

@@ -23,7 +23,7 @@
 </div>
 
 <?php if (isset($content['field_caption'])): ?>
-  <div class="small body">
+  <div class="caption">
    <p> <?php print render($content['field_caption']); ?> </p>
     </div>
 <?php endif; ?>

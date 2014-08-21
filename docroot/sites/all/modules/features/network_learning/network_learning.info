@@ -5,6 +5,7 @@ package = pubteach4all
 version = 7.x-1.9
 project = network_learning
 dependencies[] = ctools
+dependencies[] = facebook_comments_box
 dependencies[] = fe_nodequeue
 dependencies[] = features
 dependencies[] = flexslider_views
