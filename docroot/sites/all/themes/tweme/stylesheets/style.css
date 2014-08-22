@@ -400,22 +400,24 @@ a:hover {
   text-decoration: none;
 }
 
+caption {
+  color: #4d4d4d;
+  font-family: "News Gothic Old";
+  line-height: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 5px 0px 5px 0px;
+}
+
 body {
   color: #4d4d4d;
   font-size: 16px;
   font-size: 1rem;
   line-height: 20px;
   font-family: "News Gothic Old";
-}
-
-.caption {
-  line-height: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin: 2px 0px 2px 0px;
 }
 
 .body, .view-supporters p {
@@ -3251,8 +3253,6 @@ div#panels-ipe-control-container {
 }
 .pane-bundle-video .pane-content a:before {
   content: "\e60a";
-  background-color: white;
-  border-radius: 50%;
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
@@ -3297,7 +3297,7 @@ div#panels-ipe-control-container {
   color: #cf4753;
 }
 .panel-panel p {
-  font-family: FedraSerifOLD;
+  font-family: "Fedra Serif Old";
   font-size: 1.2rem;
   line-height: 1.4rem;
   color: #91998c;
