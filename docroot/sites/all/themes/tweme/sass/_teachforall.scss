@@ -126,18 +126,18 @@ a {
   }
 }
 
-caption {
+caption, .caption {
+  @include font-size(14);
   color: $grey2;
   font-family: $NewsGothicOLD;
   line-height: 18px;
   font-style: normal;
-  font-weight: bold;
   font-stretch: normal;
-  @include font-size(14);
-  margin: 5px 0px 5px 0px;
-    a {
-      color: $red;
-      text-decoration: none;
+  font-weight: normal;
+  margin: 10px 0px 10px 0px;
+  a {
+    color: $red;
+    text-decoration: none;
     }
 }
 

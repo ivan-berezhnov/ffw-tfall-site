@@ -400,18 +400,18 @@ a:hover {
   text-decoration: none;
 }
 
-caption {
+caption, .caption {
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #4d4d4d;
   font-family: "News Gothic Old";
   line-height: 18px;
   font-style: normal;
-  font-weight: bold;
   font-stretch: normal;
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin: 5px 0px 5px 0px;
+  font-weight: normal;
+  margin: 10px 0px 10px 0px;
 }
-caption a {
+caption a, .caption a {
   color: #cf4753;
   text-decoration: none;
 }
