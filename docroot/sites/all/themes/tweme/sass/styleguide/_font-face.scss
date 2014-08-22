@@ -25,6 +25,8 @@ $FedraSerifOLD: "Fedra Serif Old";
 
 
 
+
+
 /**
 * #Font-Face
 **/
@@ -193,87 +195,22 @@ $FedraSerifOLD: "Fedra Serif Old";
 
 @font-face {
   font-family: $FedraSerifOLD;
-  src: url('../fonts/fserstda-bold.eot');
-  src: url('../fonts/fserstda-bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fserstda-bold.woff') format('woff'),
-       url('../fonts/fserstda-bold.ttf') format('truetype'),
-       url('../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular') format('svg');
+  src: url('../fonts/FSerStdA-Book.eot');
+  src: url('../fonts/FSerStdA-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Book.woff') format('woff'),
+       url('../fonts/FSerStdA-Book.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: $FedraSerifOLD;
-  src: url('../fonts/fserstda-bold.eot');
-  src: url('../fonts/fserstda-bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fserstda-bold.woff') format('woff'),
-       url('../fonts/fserstda-bold.ttf') format('truetype'),
-       url('../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular') format('svg');
+  src: url('../fonts/FSerStdA-Bold.eot');
+  src: url('../fonts/FSerStdA-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FSerStdA-Bold.woff') format('woff'),
+       url('../fonts/FSerStdA-Bold.ttf') format('truetype'),
+       url('../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular') format('svg');
   font-weight: bold;
   font-style: normal;
 }
-
-/**/
-
-
-
-
-
-/**
-* #Font Classes
-**/
-
-.NewsGothicFSLightRegular {
-  font-family: $NewsGothicFSLightRegular;
-}
-.NewsGothicFSLightItalic {
-  font-family: $NewsGothicFSLightItalic;
-}
-.NewsGothicFSBookBoldItalic {
-  font-family: $NewsGothicFSBookBoldItalic;
-}
-.NewsGothicFSCapsLightRegular {
-  font-family: $NewsGothicFSCapsLightRegular;
-}
-.NewsGothicFSCapsBookRegular {
-  font-family: $NewsGothicFSCapsBookRegular;
-}
-.NewsGothicFSBookRegular {
-  font-family: $NewsGothicFSBookRegular;
-}
-.NewsGothicFSBookItalic {
-  font-family: $NewsGothicFSBookItalic;
-}
-.NewsGothicFSMediumBold {
-  font-family: $NewsGothicFSMediumBold;
-}
-.NewsGothicFSMediumBoldItalic {
-  font-family: $NewsGothicFSMediumBoldItalic;
-}
-
-.FedraSerifScreenRegular3 {
-  font-family: $FedraSerifScreenRegular3;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-.FedraSerifScreenItalic3 {
-  font-family: $FedraSerifScreenItalic3;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-.FedraSerifScreenBold3 {
-  font-family: $FedraSerifScreenBold3;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-.FedraSerifScreenBoldItalic3 {
-  font-family: $FedraSerifScreenBoldItalic3;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
-
