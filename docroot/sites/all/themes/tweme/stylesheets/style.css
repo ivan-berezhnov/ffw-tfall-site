@@ -411,6 +411,10 @@ caption {
   font-size: 0.875rem;
   margin: 5px 0px 5px 0px;
 }
+caption a {
+  color: #cf4753;
+  text-decoration: none;
+}
 
 body {
   color: #4d4d4d;
