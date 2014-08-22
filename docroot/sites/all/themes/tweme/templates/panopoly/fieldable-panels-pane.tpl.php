@@ -24,7 +24,7 @@
 
 <?php if (isset($content['field_caption'])): ?>
   <div class="caption">
-   <p> <?php print render($content['field_caption']); ?> </p>
+   <?php print render($content['field_caption']); ?>
     </div>
 <?php endif; ?>
 

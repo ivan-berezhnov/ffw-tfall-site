@@ -126,22 +126,21 @@ a {
   }
 }
 
-caption {
-  color: $grey2;
-  font-family: $NewsGothicOLD;
-  line-height: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  @include font-size(14);
-  margin: 2px 0px 2px 0px;
-}
 
 body {
   color: $grey2;
   @include font-size(16);
   line-height: 20px;
   font-family: $NewsGothicOLD;
+}
+
+.caption {
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  @include font-size(14);
+  margin: 2px 0px 2px 0px;
 }
 
 .body {
@@ -3288,6 +3287,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
       &:before {
         content: "\e60a";
         background-color: $white;
+        border-radius: 50%;
         font-size: 80px;
         display: table-cell;
         vertical-align: middle;

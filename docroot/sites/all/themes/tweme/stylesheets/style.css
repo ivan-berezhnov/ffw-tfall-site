@@ -400,9 +400,15 @@ a:hover {
   text-decoration: none;
 }
 
-caption {
+body {
   color: #4d4d4d;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
   font-family: "News Gothic Old";
+}
+
+.caption {
   line-height: 18px;
   font-style: normal;
   font-weight: normal;
@@ -410,14 +416,6 @@ caption {
   font-size: 14px;
   font-size: 0.875rem;
   margin: 2px 0px 2px 0px;
-}
-
-body {
-  color: #4d4d4d;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 20px;
-  font-family: "News Gothic Old";
 }
 
 .body, .view-supporters p {
@@ -3254,6 +3252,7 @@ div#panels-ipe-control-container {
 .pane-bundle-video .pane-content a:before {
   content: "\e60a";
   background-color: white;
+  border-radius: 50%;
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
