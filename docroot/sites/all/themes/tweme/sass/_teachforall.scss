@@ -126,6 +126,17 @@ a {
   }
 }
 
+caption {
+  color: $grey2;
+  font-family: $NewsGothicOLD;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  @include font-size(14);
+  margin: 2px 0px 2px 0px;
+}
+
 body {
   color: $grey2;
   @include font-size(16);
@@ -173,16 +184,6 @@ body {
   font-weight: bold;
   @include font-size(36);
   line-height: 38px;
-}
-
-.caption {
-  color: $grey2;
-  line-height: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  @include font-size(14);
-  margin: 2px 0px 2px 0px;
 }
 
 .page-section {
@@ -3286,6 +3287,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
 
       &:before {
         content: "\e60a";
+        background-color: $white;
         font-size: 80px;
         display: table-cell;
         vertical-align: middle;

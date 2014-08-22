@@ -400,6 +400,18 @@ a:hover {
   text-decoration: none;
 }
 
+caption {
+  color: #4d4d4d;
+  font-family: "News Gothic Old";
+  line-height: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 2px 0px 2px 0px;
+}
+
 body {
   color: #4d4d4d;
   font-size: 16px;
@@ -453,17 +465,6 @@ body {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 38px;
-}
-
-.caption {
-  color: #4d4d4d;
-  line-height: 18px;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin: 2px 0px 2px 0px;
 }
 
 .page-section {
@@ -3252,6 +3253,7 @@ div#panels-ipe-control-container {
 }
 .pane-bundle-video .pane-content a:before {
   content: "\e60a";
+  background-color: white;
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
