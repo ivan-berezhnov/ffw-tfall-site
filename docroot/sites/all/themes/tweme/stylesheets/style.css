@@ -90,7 +90,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e601";
 }
 
-.icon-play:before {
+.icon-play:before, .pane-content:before {
   content: "\e60a";
 }
 
