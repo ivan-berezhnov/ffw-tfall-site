@@ -3290,6 +3290,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
       position: relative;
 
       &:before {
+        font-family: 'icomoon';
         content: "\e60a";
         font-size: 80px;
         display: table-cell;

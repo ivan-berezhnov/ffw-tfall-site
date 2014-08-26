@@ -3256,6 +3256,7 @@ div#panels-ipe-control-container {
   position: relative;
 }
 .pane-bundle-video .pane-content a:before {
+  font-family: 'icomoon';
   content: "\e60a";
   font-size: 80px;
   display: table-cell;
