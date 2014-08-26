@@ -409,7 +409,7 @@ caption, .caption {
   font-style: normal;
   font-stretch: normal;
   font-weight: normal;
-  margin: 10px 0px 10px 0px;
+  margin: 15px 0px 15px 0px;
 }
 caption a, .caption a {
   color: #cf4753;
@@ -2967,9 +2967,9 @@ img {
   position: relative;
 }
 
-.view-news .icon-play,
-.view-network-learning .icon-play,
-.view-press .icon-play {
+.view-news .icon-play2,
+.view-network-learning .icon-play2,
+.view-press .icon-play2 {
   background-color: #4d4d4d;
   color: #ffb151;
   padding: 7px 10px;
@@ -2980,9 +2980,9 @@ img {
   font-size: 1.25rem;
 }
 @media screen and (max-width: 979px) {
-  .view-news .icon-play,
-  .view-network-learning .icon-play,
-  .view-press .icon-play {
+  .view-news .icon-play2,
+  .view-network-learning .icon-play2,
+  .view-press .icon-play2 {
     top: 5px;
     left: 5px;
     font-size: 16px;
@@ -3241,8 +3241,7 @@ div#panels-ipe-control-container {
 .pane-bundle-video {
   margin-bottom: 10px;
 }
-.pane-bundle-video .pane-content a {
-  font-family: 'icomoon';
+.pane-bundle-video .pane-content a .icon-play {
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -3255,8 +3254,7 @@ div#panels-ipe-control-container {
   display: block;
   position: relative;
 }
-.pane-bundle-video .pane-content a:before {
-  content: "\e60a";
+.pane-bundle-video .pane-content a .icon-play:before {
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
