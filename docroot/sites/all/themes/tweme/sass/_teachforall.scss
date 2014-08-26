@@ -134,7 +134,7 @@ caption, .caption {
   font-style: normal;
   font-stretch: normal;
   font-weight: normal;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 10px 0px;
   a {
     color: $red;
     text-decoration: none;
@@ -2967,7 +2967,7 @@ img {max-width: 100%;}
 .view-news,
 .view-network-learning,
 .view-press {
-  .icon-play2 {
+  .icon-play {
     background-color: $grey2;
     color: $orange2;
     padding: 7px 10px;
@@ -3272,8 +3272,9 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
 
 .pane-bundle-video {
   margin-bottom: 10px;
-  .pane-content, .icon-play {
+  .pane-content {
     a {
+      font-family: 'icomoon';
       speak: none;
       font-style: normal;
       font-weight: normal;
@@ -3289,6 +3290,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
       position: relative;
 
       &:before {
+        content: "\e60a";
         font-size: 80px;
         display: table-cell;
         vertical-align: middle;
@@ -3304,6 +3306,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     }
   }
 }
+
 .panel-panel {
 
   .slug {

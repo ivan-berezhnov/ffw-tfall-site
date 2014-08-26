@@ -90,7 +90,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e601";
 }
 
-.icon-play:before, .pane-content:before {
+.icon-play:before {
   content: "\e60a";
 }
 
@@ -409,7 +409,7 @@ caption, .caption {
   font-style: normal;
   font-stretch: normal;
   font-weight: normal;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 10px 0px;
 }
 caption a, .caption a {
   color: #cf4753;
@@ -2967,9 +2967,9 @@ img {
   position: relative;
 }
 
-.view-news .icon-play2,
-.view-network-learning .icon-play2,
-.view-press .icon-play2 {
+.view-news .icon-play,
+.view-network-learning .icon-play,
+.view-press .icon-play {
   background-color: #4d4d4d;
   color: #ffb151;
   padding: 7px 10px;
@@ -2980,9 +2980,9 @@ img {
   font-size: 1.25rem;
 }
 @media screen and (max-width: 979px) {
-  .view-news .icon-play2,
-  .view-network-learning .icon-play2,
-  .view-press .icon-play2 {
+  .view-news .icon-play,
+  .view-network-learning .icon-play,
+  .view-press .icon-play {
     top: 5px;
     left: 5px;
     font-size: 16px;
@@ -3241,7 +3241,8 @@ div#panels-ipe-control-container {
 .pane-bundle-video {
   margin-bottom: 10px;
 }
-.pane-bundle-video .pane-content a, .pane-bundle-video .icon-play a {
+.pane-bundle-video .pane-content a {
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -3254,7 +3255,8 @@ div#panels-ipe-control-container {
   display: block;
   position: relative;
 }
-.pane-bundle-video .pane-content a:before, .pane-bundle-video .icon-play a:before {
+.pane-bundle-video .pane-content a:before {
+  content: "\e60a";
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
