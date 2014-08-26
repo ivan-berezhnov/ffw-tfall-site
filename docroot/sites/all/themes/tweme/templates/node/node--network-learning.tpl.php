@@ -45,6 +45,13 @@
             <?php endif; ?>
           </div>
 
+          <div class="row-fluid">
+            <div class="span12">
+              <?php if (!empty($content['comments'])): ?>
+              <?php print render($content['comments']); ?>
+              <?php endif; ?>
+            </div>
+          </div>
           <div class="row-fluid news__node-links">
             <div class="span12">
               <?php
@@ -57,13 +64,6 @@
               </a>
             </div>
           </div>
-
-          <div class="row-fluid">
-            <div class="span12">
-              <?php print $block_facebook_comments_box; ?>
-            </div>
-          </div>
-
         </div>
         <div class="span3">
           <?php print render(views_embed_view('tfall_tweets','block')); ?>

@@ -269,9 +269,10 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
     'marquee' => 'marquee',
     'supporter_list' => 0,
+    'network_learning_front_list' => 0,
     'board_list' => 0,
     'leaders_list' => 0,
-    'network_learning_front_list' => 0,
+    'ceos_list' => 0,
   );
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_spotlight_image']['id'] = 'field_spotlight_image';
