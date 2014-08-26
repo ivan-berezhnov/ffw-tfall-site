@@ -55,7 +55,7 @@ function create_video_file_template($field_video_file, $field_video_pane_thumbna
 
   } elseif ($field_video_file['0']['filemime'] == 'video/vimeo') {
     if (isset($field_video_pane_thumbnail)) {
-      $image_uri = $baseurl . 'sites/default/files/' . $field_video_pane_thumbnail['0']['filename'];
+      $image_uri = $baseurl . '/sites/default/files/' . $field_video_pane_thumbnail['0']['filename'];
       $video_link = create_vimeo_link($video_id, $image_uri);
     } else {
       $video_link = create_vimeo_link($video_id);
