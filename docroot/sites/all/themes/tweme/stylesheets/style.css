@@ -90,8 +90,8 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e601";
 }
 
-.icon-play:before {
-  content: "\e60a";
+.icon-linkedin:before {
+  content: "\e607";
 }
 
 .icon-feed:before {
@@ -114,12 +114,8 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   content: "\e605";
 }
 
-.icon-play2:before {
+.icon-play:before {
   content: "\e608";
-}
-
-.icon-linkedin:before {
-  content: "\e607";
 }
 
 .icon-mail:before {
@@ -409,7 +405,7 @@ caption, .caption {
   font-style: normal;
   font-stretch: normal;
   font-weight: normal;
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 10px 0px;
 }
 caption a, .caption a {
   color: #cf4753;
@@ -3256,8 +3252,7 @@ div#panels-ipe-control-container {
   position: relative;
 }
 .pane-bundle-video .pane-content a:before {
-  font-family: 'icomoon';
-  content: "\e60a";
+  content: "\e608";
   font-size: 80px;
   display: table-cell;
   vertical-align: middle;
