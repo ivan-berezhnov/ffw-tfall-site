@@ -18,6 +18,14 @@
           </div>
         <?php endif; ?>
 
+          <?php if (isset($content['field_teach_page'])): ?>
+          <div class="no__website-info no__info-block">
+            <div class="slug"><?php print t('Careers'); ?></div>
+            <?php print render($content['field_teach_page']); ?>
+            <?php print render($content['field_careers_page']); ?>
+          </div>
+        <?php endif; ?>
+
         <?php if (isset($content['field_ceo_profile'])): ?>
           <div class="no__info-block no__ceo">
             <div class="slug"><?php print t('CEO'); ?></div>
