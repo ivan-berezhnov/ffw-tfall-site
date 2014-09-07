@@ -1,0 +1,3 @@
+name = Locale Language negotiation from Browser with Cache
+description = Provides a Locale Language negotiation from Browser even when drupal caching is enabled
+core = 7.x
