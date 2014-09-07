@@ -1,0 +1,3 @@
+[submodule "docroot/vagrant"]
+	path = docroot/vagrant
+	url = git@github.com:AmazeeLabs/vagrant.git
