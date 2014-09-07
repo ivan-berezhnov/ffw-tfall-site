@@ -158,3 +158,154 @@ function contact_block_contents($delta)
     }
 
 }
+
+function _misc_enable_translation() {
+  $entities = array(
+    'taxonomy_term' => array(
+      'languages' => array(
+        'replace_fields' => array('name'),
+      ),
+      'network_learning' => array(
+        'replace_fields' => array('name'),
+      ),
+      'news' => array(
+        'replace_fields' => array('name'),
+      ),
+      'supporter_levels' => array(
+        'replace_fields' => array('name'),
+      ),
+    ),
+    'file' => array(
+      'image' => array(
+        'replace_fields' => array('filename'),
+      ),
+    ),
+    'node' => array(
+      'page' => array(
+        'replace_fields' => array('title'),
+      ),
+      'national_organization' => array(
+        'replace_fields' => array('title'),
+      ),
+      'network_learning' => array(
+        'replace_fields' => array('title'),
+      ),
+      'news' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_1_col_layout' => array(
+        'replace_fields' => array('title'),
+      ),
+      'global_problem' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_donate' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_join_our_staff' => array(
+        'replace_fields' => array('title'),
+      ),
+      'national_organizations' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_our_model' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_results' => array(
+        'replace_fields' => array('title'),
+      ),
+      'page_story_grid' => array(
+        'replace_fields' => array('title'),
+      ),
+      'person' => array(
+        'replace_fields' => array('title'),
+      ),
+      'spotlight' => array(
+        'replace_fields' => array('title'),
+      ),
+      'tfa_supporter' => array(
+        'replace_fields' => array('title'),
+      ),
+    )
+  );
+
+
+  foreach ($entities as $entity_type => $definition) {
+    foreach ($definition as $bundle => $data) {
+
+
+      if (!empty($data['replace_fields'])) {
+        foreach ($data['replace_fields'] as $field_name) {
+          if (!title_field_replacement_enabled($entity_type, $bundle, $field_name)) {
+            title_field_replacement_toggle($entity_type, $bundle, $field_name);
+            title_field_replacement_batch_set($entity_type, $bundle, $field_name);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  $fields = array(
+    'body',
+    'field_blurb',
+    'field_links',
+    'field_teach_page',
+    'field_careers_page',
+    'field_contact_info',
+    'field_city_1',
+    'field_about',
+    'field_key_facebook',
+    'field_national_organization_twit',
+    'field_network_learning_byline',
+    'field_author',
+    'field_embedded_video',
+    'field_link',
+    'field_text_area',
+    'field_top_section_title',
+    'field_top_section_subheader',
+    'field_top_section_description',
+    'field_globalproblem_subheader',
+    'field_iframe',
+    'field_nov2_intro',
+    'field_nov2_principles_left',
+    'field_nov2_principles_right',
+    'field_nov2_links',
+    'field_ourmodelintro_teachers',
+    'field_ourmodelintro_leaders',
+    'field_ourmodelintro_systemchange',
+    'field_nov2_links',
+    'field_nov2_intro',
+    'field_summary',
+    'field_content_top',
+    'field_headline',
+    'field_headline_2',
+    'field_blurb_2',
+    'field_content_bottom',
+    'field_job_title',
+    'field_person_bio',
+    'field_tfa_supporter_link',
+    'field_tfa_supporter_description',
+    'field_file_image_alt_text',
+    'field_file_image_title_text',
+
+  );
+
+
+  // Enable translation for the specified fields.
+  module_load_include('admin.inc', 'entity_translation');
+  foreach ($fields as $field_name) {
+    $field = field_info_field($field_name);
+    if (empty($field['translatable'])) {
+      entity_translation_translatable_form_submit(array(), array(
+        'values' => array(
+          'translatable' => '0', // Should be a string.
+          'copy_all_languages' => TRUE,
+        ),
+        'field' => $field,
+      ));
+    }
+  }
+}
