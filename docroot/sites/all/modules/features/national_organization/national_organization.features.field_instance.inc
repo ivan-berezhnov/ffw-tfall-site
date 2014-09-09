@@ -382,7 +382,7 @@ function national_organization_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
-        'type' => 'link_url',
+        'type' => 'link_default',
         'weight' => 22,
       ),
       'featured' => array(
