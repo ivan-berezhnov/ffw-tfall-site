@@ -21,7 +21,7 @@ function national_organization_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'About',
-    'weight' => '9',
+    'weight' => '14',
     'children' => array(
       0 => 'field_about',
     ),
@@ -48,7 +48,7 @@ function national_organization_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Local context info',
-    'weight' => '10',
+    'weight' => '15',
     'children' => array(
       0 => 'field_avg_total_years_of_edu',
       1 => 'field_living_below_poverty_line',
@@ -77,7 +77,7 @@ function national_organization_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Program snapshot info',
-    'weight' => '9',
+    'weight' => '13',
     'children' => array(
       0 => 'field_alumni',
       1 => 'field_cohorts_placed',

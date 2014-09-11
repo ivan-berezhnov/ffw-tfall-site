@@ -43,6 +43,9 @@ function national_organization_strongarm() {
       'global_organization' => array(
         'custom_settings' => TRUE,
       ),
+      'featured' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -51,6 +54,12 @@ function national_organization_strongarm() {
         ),
         'path' => array(
           'weight' => '2',
+        ),
+        'metatags' => array(
+          'weight' => '22',
+        ),
+        'redirect' => array(
+          'weight' => '21',
         ),
       ),
       'display' => array(),
