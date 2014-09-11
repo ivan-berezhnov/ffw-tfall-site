@@ -569,3 +569,8 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/pubteach4all/pubteach4all-settings.inc');
 }
+
+$local_settings_filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'settings.local.php';
+if (file_exists($local_settings_filename)) {
+    require_once $local_settings_filename;
+}

@@ -1,0 +1,5 @@
+name = Title views integration
+description = Substitute the original title field with the title_field (if any) in views.
+core = 7.x
+
+dependencies[] = title
