@@ -16,13 +16,18 @@ function pubteachforall_menus_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'menu-primary-navigation',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'menu',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',
@@ -39,13 +44,18 @@ function pubteachforall_menus_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'menu-uber-nav',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'menu',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',

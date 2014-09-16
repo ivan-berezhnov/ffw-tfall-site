@@ -16,6 +16,8 @@ function network_learning_default_fe_block_settings() {
     'cache' => 1,
     'custom' => 0,
     'delta' => 'facebook_comments_box',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'facebook_comments_box',
     'node_types' => array(),
     'pages' => '',

@@ -30,6 +30,7 @@ function global_problem_field_default_field_instances() {
     'label' => 'Description',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -68,6 +69,7 @@ function global_problem_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -120,6 +122,7 @@ function global_problem_field_default_field_instances() {
     'label' => 'Subheader',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -154,6 +157,7 @@ function global_problem_field_default_field_instances() {
     'label' => 'Title',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -216,6 +220,7 @@ function global_problem_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -275,6 +280,7 @@ function global_problem_field_default_field_instances() {
     'label' => 'Subheader',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -344,6 +350,7 @@ function global_problem_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
@@ -407,6 +414,7 @@ function global_problem_field_default_field_instances() {
     'label' => 'top section',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -415,6 +423,67 @@ function global_problem_field_default_field_instances() {
       'settings' => array(),
       'type' => 'field_collection_embed',
       'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-global_problem-title_field'
+  $field_instances['node-global_problem-title_field'] = array(
+    'bundle' => 'global_problem',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
     ),
   );
 

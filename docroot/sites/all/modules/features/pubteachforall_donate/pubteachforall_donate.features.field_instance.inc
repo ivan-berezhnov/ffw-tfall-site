@@ -58,6 +58,7 @@ function pubteachforall_donate_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -116,6 +117,7 @@ function pubteachforall_donate_field_default_field_instances() {
     'label' => 'DONATE NOW',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -185,6 +187,7 @@ function pubteachforall_donate_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
@@ -246,6 +249,7 @@ function pubteachforall_donate_field_default_field_instances() {
     'label' => 'Text Area',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -260,6 +264,67 @@ function pubteachforall_donate_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-page_donate-title_field'
+  $field_instances['node-page_donate-title_field'] = array(
+    'bundle' => 'page_donate',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
@@ -267,6 +332,7 @@ function pubteachforall_donate_field_default_field_instances() {
   t('Jump Link');
   t('Text Area');
   t('This text area will appear below the page title and above the 2 column donate area.');
+  t('Title');
 
   return $field_instances;
 }
