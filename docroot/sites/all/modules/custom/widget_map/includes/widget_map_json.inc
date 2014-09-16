@@ -43,7 +43,7 @@ function _widget_map_listofall() {
 }
 
 
-function _widget_map_detailedlist() {
+function _widget_map_detailedlist($language) {
 
 	$query = new EntityFieldQuery();
 
@@ -59,13 +59,17 @@ function _widget_map_detailedlist() {
 	}
 
 	foreach ($items as $item) {
+	    // Get item language.
+	    $lang = field_language('node', $item, 'field_blurb', $language);
+	    
+	    // Build marker.
 		$marker = null;
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
 			'title' => $item->field_country[LANGUAGE_NONE][0]['value'],
 			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
-			'blurb' => $item->field_blurb[LANGUAGE_NONE][0]['value'],
+			'blurb' => $item->field_blurb[$lang][0]['value'],
 			'icon' => array(
 				'iconUrl' => '/' . drupal_get_path('module', 'widget_map') . '/assets/map_marker.png',
 				'iconSize' => array(21, 21),
