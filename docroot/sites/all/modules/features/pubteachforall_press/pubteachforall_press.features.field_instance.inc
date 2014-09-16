@@ -58,6 +58,7 @@ function pubteachforall_press_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -116,6 +117,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Article Language',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -184,6 +186,7 @@ function pubteachforall_press_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 0,
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -251,6 +254,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Author',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -311,6 +315,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Blurb',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -371,6 +376,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Country',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -432,6 +438,7 @@ function pubteachforall_press_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 1,
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -489,6 +496,7 @@ function pubteachforall_press_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'txt pdf',
       'max_filesize' => '',
@@ -554,6 +562,7 @@ function pubteachforall_press_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -626,6 +635,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Partner',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -686,6 +696,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Press Type',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -752,6 +763,7 @@ function pubteachforall_press_field_default_field_instances() {
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -815,6 +827,7 @@ function pubteachforall_press_field_default_field_instances() {
     'label' => 'Publication Name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -835,6 +848,49 @@ function pubteachforall_press_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-languages-name_field'
+  $field_instances['taxonomy_term-languages-name_field'] = array(
+    'bundle' => 'languages',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Article Language');
@@ -846,6 +902,7 @@ function pubteachforall_press_field_default_field_instances() {
   t('Embedded Video');
   t('File');
   t('Image');
+  t('Name');
   t('Partner');
   t('Press Type');
   t('Publication Date');

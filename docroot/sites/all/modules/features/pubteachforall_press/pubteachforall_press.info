@@ -6,16 +6,28 @@ version = 7.x-1.0
 project = pubteachforall_press
 dependencies[] = ctools
 dependencies[] = date
+<<<<<<< HEAD
+=======
+dependencies[] = entityreference
+>>>>>>> feature/multilingual
 dependencies[] = features
+dependencies[] = file
 dependencies[] = flexslider_views
 dependencies[] = image
 dependencies[] = imagefield_crop
+dependencies[] = link
+dependencies[] = list
 dependencies[] = news
+<<<<<<< HEAD
+=======
+dependencies[] = options
+>>>>>>> feature/multilingual
 dependencies[] = path_breadcrumbs
 dependencies[] = person
 dependencies[] = pubteachforall_2_col_layout
 dependencies[] = spotlight
 dependencies[] = strongarm
+dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = video_embed_field
 dependencies[] = views
@@ -30,6 +42,10 @@ features[field_base][] = field_file
 features[field_base][] = field_press_type
 features[field_base][] = field_publication_date
 features[field_base][] = field_publication_name
+<<<<<<< HEAD
+=======
+features[field_base][] = name_field
+>>>>>>> feature/multilingual
 features[field_instance][] = node-press-body
 features[field_instance][] = node-press-field_article_language
 features[field_instance][] = node-press-field_article_link
@@ -43,11 +59,26 @@ features[field_instance][] = node-press-field_organization
 features[field_instance][] = node-press-field_press_type
 features[field_instance][] = node-press-field_publication_date
 features[field_instance][] = node-press-field_publication_name
+<<<<<<< HEAD
+=======
+features[field_instance][] = taxonomy_term-languages-name_field
+>>>>>>> feature/multilingual
 features[node][] = press
 features[path_breadcrumbs][] = main_press_page
 features[path_breadcrumbs][] = press_latest
 features[taxonomy][] = languages
+<<<<<<< HEAD
+=======
+features[variable][] = comment_anonymous_press
+features[variable][] = comment_default_mode_press
+features[variable][] = comment_default_per_page_press
+features[variable][] = comment_form_location_press
+features[variable][] = comment_press
+features[variable][] = comment_preview_press
+features[variable][] = comment_subject_field_press
+>>>>>>> feature/multilingual
 features[variable][] = field_bundle_settings_node__press
+features[variable][] = language_content_type_press
 features[variable][] = menu_options_press
 features[variable][] = menu_parent_press
 features[variable][] = node_options_press

@@ -1,0 +1,101 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+function language_redirect_permission() {
+  return array(
+    'administer language redirect' => array(
+      'title' => t('Administer language redirect'),
+    ),
+    'access temporary disabled languages' => array(
+      'title' => t('Access temporary disabled languages'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_init().
+ */
+function language_redirect_init() {
+  if ($target_language = _language_redirect_is_redirect_case()) {
+    // First check for recursion redirect (some module may alter outbound URLs
+    // and change the language).
+    $current_path = current_path();
+    $options = array('query' => drupal_get_query_parameters());
+    $option_with_language = $options + array('language' => $target_language);
+    if (url($current_path, $options) != url($current_path, $option_with_language)) {
+      drupal_goto($current_path, $option_with_language);
+    }
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function language_redirect_menu() {
+  $items = array();
+  $items['admin/config/regional/language/language-redirect'] = array(
+    'title' => 'Language redirect',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('language_redirect_config_form'),
+    'access arguments' => array('administer languages'),
+    'weight' => 10,
+    'file' => 'language_redirect.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_language_switch_links_alter().
+ */
+function language_redirect_language_switch_links_alter(array &$links, $type, $path) {
+
+  // Hide links for languages that will redirect user.
+  foreach ($links as $langcode => $_) {
+    if (_language_redirect_is_redirect_case($langcode)) {
+      unset($links[$langcode]);
+    }
+  }
+}
+
+/**
+ * Detects redirect case.
+ *
+ * @param string|null $langcode
+ *   Langcode to check. If omitted, the current language will be used.
+ *
+ * @return object|null
+ *   The target language object if redirect case, NULL otherwise.
+ */
+function _language_redirect_is_redirect_case($langcode = NULL) {
+  if ($langcode === NULL) {
+    $langcode = $GLOBALS['language']->language;
+  }
+  if (
+    // Detect if current language should trigger redirect.
+    in_array($langcode, _language_redirect_get_temporary_disabled_languages())
+    // Ensure common request.
+    && (!isset($_SERVER['REQUEST_METHOD']) || in_array($_SERVER['REQUEST_METHOD'], array('GET', 'HEAD')))
+    && (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest')
+    // Ensure target language.
+    && ($languages = language_list())
+    && ($target_language = trim(variable_get('language_redirect_target_language')))
+    && (isset($languages[$target_language]))
+    // Ensure that user has to be redirected.
+    && !user_access('access temporary disabled languages')
+  ) {
+    return $languages[$target_language];
+  }
+  return NULL;
+}
+
+/**
+ * Returns the list of langcodes to redirect from.
+ *
+ * @return array
+ */
+function _language_redirect_get_temporary_disabled_languages() {
+  return array_filter(array_map('trim', explode(',', variable_get('language_redirect_temporary_disabled_languages', ''))));
+}

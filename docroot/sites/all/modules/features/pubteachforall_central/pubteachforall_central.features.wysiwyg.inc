@@ -40,14 +40,11 @@ function pubteachforall_central_wysiwyg_default_profiles() {
           'ShowBlocks' => 1,
           'RemoveFormat' => 1,
           'SpecialChar' => 1,
-          'Font' => 1,
+          'FontSize' => 1,
           'Styles' => 1,
           'Table' => 1,
           'Iframe' => 1,
           'Scayt' => 1,
-        ),
-        'imce' => array(
-          'imce' => 1,
         ),
       ),
       'toolbar_loc' => 'top',
@@ -66,8 +63,7 @@ function pubteachforall_central_wysiwyg_default_profiles() {
       'css_classes' => 'H1=h1
 H2=h2
 H3=h3
-H4=p.page-section
-Body=div.body
+H4=div.page-section
 BodySmall=div.small-body
 BodyLarge=div.large-body
 BlockQuote=div.block-quote

@@ -111,6 +111,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
   $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
