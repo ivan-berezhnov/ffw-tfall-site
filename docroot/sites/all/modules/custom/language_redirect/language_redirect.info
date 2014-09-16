@@ -1,0 +1,5 @@
+name = Language redirect
+description = Allows to temporary disable some languages for translation purposes.
+core = 7.x
+
+dependencies[] = locale
