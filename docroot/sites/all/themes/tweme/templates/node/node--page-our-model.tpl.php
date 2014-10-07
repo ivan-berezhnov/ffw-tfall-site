@@ -13,7 +13,7 @@
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
-      <h3>TEACHERS</h3>
+      <h3><?php print t('TEACHERS'); ?></h3>
 			<div class="intro">
         <?php print render($content['field_ourmodelintro_teachers']); ?>
       </div>
@@ -27,7 +27,7 @@
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
-      <h3>ALUMNI</h3>
+      <h3><?php print t('ALUMNI'); ?></h3>
 			<div class="intro">
         <?php print render($content['field_ourmodelintro_leaders']); ?>
       </div>
@@ -41,7 +41,7 @@
 
 	<div class="row-fluid our-model-section">
     <div class="span12">
-      <h3>SYSTEM CHANGE</h3>
+      <h3><?php print t('SYSTEM CHANGE'); ?></h3>
 			<div class="intro">
         <?php print render($content['field_ourmodelintro_systemchange']); ?>
       </div>
