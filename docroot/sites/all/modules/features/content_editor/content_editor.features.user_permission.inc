@@ -171,6 +171,7 @@ function content_editor_user_default_permissions() {
     'name' => 'delete terms in network_learning',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -180,6 +181,7 @@ function content_editor_user_default_permissions() {
     'name' => 'delete terms in supporter_levels',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -305,6 +307,7 @@ function content_editor_user_default_permissions() {
     'name' => 'edit terms in network_learning',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -314,6 +317,7 @@ function content_editor_user_default_permissions() {
     'name' => 'edit terms in supporter_levels',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
