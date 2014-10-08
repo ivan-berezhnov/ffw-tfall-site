@@ -69,7 +69,7 @@ function panopoly_widgets_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text_long',
   );
 
@@ -98,7 +98,7 @@ function panopoly_widgets_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text_with_summary',
   );
 
@@ -182,7 +182,7 @@ function panopoly_widgets_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'lock_values' => 0,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'tablefield',
   );
 
@@ -211,7 +211,7 @@ function panopoly_widgets_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text_long',
   );
 
@@ -241,7 +241,7 @@ function panopoly_widgets_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'max_length' => 255,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text',
   );
 
@@ -270,7 +270,7 @@ function panopoly_widgets_field_default_field_bases() {
     'settings' => array(
       'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'text_long',
   );
 
@@ -301,7 +301,7 @@ function panopoly_widgets_field_default_field_bases() {
       'title_value' => '',
       'url' => 0,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'link_field',
   );
 

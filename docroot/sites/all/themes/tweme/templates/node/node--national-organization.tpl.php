@@ -73,31 +73,31 @@
 
           <?php if ($is_field_program_launched_content_set): ?>
             <div class="no__stat">
-  						<strong><?php print render($content['field_program_launched']); ?></strong> program launched<br />
+  						<strong><?php print render($content['field_program_launched']); ?></strong><?php print t(' program launched'); ?><br />
   					</div>
           <?php endif; ?>
 
           <?php if ($is_field_cohorts_placed_content_set): ?>
             <div class="no__stat">
-    					<strong><?php print render($content['field_cohorts_placed']); ?></strong> cohorts placed<br />
+    					<strong><?php print render($content['field_cohorts_placed']); ?></strong><?php print t(' cohorts placed'); ?> <br />
     				</div>
           <?php endif; ?>
 
           <?php if ($is_field_teachers_active_content_set): ?>
             <div class="no__stat">
-    					<strong><?php print render($content['field_teachers_active']); ?></strong> current program teachers<br />
+    					<strong><?php print render($content['field_teachers_active']); ?></strong><?php print t(' current program teachers'); ?> <br />
             </div>
           <?php endif; ?>
 
           <?php if ($is_field_field_alumni_set): ?>
             <div class="no__stat">
-    					<strong><?php print render($content['field_alumni']); ?></strong> alumni<br />
+    					<strong><?php print render($content['field_alumni']); ?></strong><?php print t(' alumni'); ?> <br />
             </div>
           <?php endif; ?>
 
           <?php if ($is_field_field_schools_set): ?>
             <div class="no__stat">
-  						<strong><?php print render($content['field_schools']); ?></strong> schools
+  						<strong><?php print render($content['field_schools']); ?></strong><?php print t(' schools'); ?>
               <?php if (isset($content['field_city_1'])): ?>
                 in <?php print render($content['field_city_1']); ?>
               <?php endif; ?>
@@ -129,19 +129,19 @@
           </div>
           <div class="no__stat">
   					<?php if ($is_field_population_content_set): ?>
-  						<strong><?php print render($content['field_population']); ?></strong> population<br />
+  						<strong><?php print render($content['field_population']); ?></strong><?php print t(' population'); ?> <br />
   					<?php endif; ?>
           </div>
 
           <div class="no__stat">
   					<?php if ($is_field_living_below_poverty_line_content_set): ?>
-  						<strong><?php print render($content['field_living_below_poverty_line']); ?>%</strong> living below poverty line<br />
+  						<strong><?php print render($content['field_living_below_poverty_line']); ?>%</strong><?php print t(' living below poverty line'); ?><br />
   					<?php endif; ?>
           </div>
 
           <div class="no__stat">
   					<?php if ($is_field_avg_total_years_of_edu_content_set): ?>
-  						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong> avg. total years of education<br />
+  						<strong><?php print render($content['field_avg_total_years_of_edu']); ?></strong><?php print t(' avg. total years of education'); ?> <br />
   					<?php endif; ?>
           </div>
 		</div>  

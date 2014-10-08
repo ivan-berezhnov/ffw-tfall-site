@@ -3,7 +3,7 @@
 /*
  * list of all NO markers
  */
-function _widget_map_listofall() {
+function _widget_map_listofall($language) {
 
 	$query = new EntityFieldQuery();
 
@@ -19,13 +19,19 @@ function _widget_map_listofall() {
 	}
 
 	foreach ($items as $item) {
+    // Get item language.
+	  $langcountry = field_language('node', $item, 'field_country', $language);
+	  $langtitle = field_language('node', $item, 'title_field', $language);
+	  
+	  // Build the marker.
 		$marker = null;
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
-			'title' => $item->field_country[LANGUAGE_NONE][0]['value'],
-			'name' => $item->title,
-			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
+			'title' => $item->field_country[$langcountry][0]['value'],
+			'name' => $item->title_field[$langtitle][0]['value'],
+			'url' => '/' . drupal_get_path_alias('node/'. $item->nid),
+			'readmore' => t('Read More'),
 			'logo' => image_style_url('map_logo',$item->field_no_logo[LANGUAGE_NONE][0]['uri']),
 			'mainpic' => image_style_url('map_thumbnail',$item->field_no_image[LANGUAGE_NONE][0]['uri']),
 			'icon' => array(
@@ -59,15 +65,16 @@ function _widget_map_detailedlist($language) {
 	}
 
 	foreach ($items as $item) {
-	    // Get item language.
-	    $lang = field_language('node', $item, 'field_blurb', $language);
+    // Get item language.
+    $lang = field_language('node', $item, 'field_blurb', $language);
+    $langcountry = field_language('node', $item, 'field_country', $language);
 	    
-	    // Build marker.
+    // Build marker.
 		$marker = null;
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
-			'title' => $item->field_country[LANGUAGE_NONE][0]['value'],
+			'title' => $item->field_country[$langcountry][0]['value'],
 			'url' => '/' . drupal_get_path_alias('node/' . $item->nid),
 			'blurb' => $item->field_blurb[$lang][0]['value'],
 			'icon' => array(

@@ -52,6 +52,10 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['created_time']['field'] = 'created_time';
   $handler->display->display_options['fields']['created_time']['label'] = '';
   $handler->display->display_options['fields']['created_time']['date_format'] = 'time ago';
+  /* Field: Twitter: Login name */
+  $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
+  $handler->display->display_options['fields']['screen_name']['table'] = 'twitter_account';
+  $handler->display->display_options['fields']['screen_name']['field'] = 'screen_name';
   /* Sort criterion: Twitter: Created time */
   $handler->display->display_options['sorts']['created_time']['id'] = 'created_time';
   $handler->display->display_options['sorts']['created_time']['table'] = 'twitter';
@@ -245,6 +249,10 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['row_options']['separator'] = ' &#8212; ';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Unfiltered text */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Twitter: Login name */
   $handler->display->display_options['fields']['screen_name']['id'] = 'screen_name';
@@ -255,6 +263,7 @@ function teach_for_all_tweets_views_default_views() {
   $handler->display->display_options['fields']['screen_name']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['screen_name']['alter']['path'] = 'https://twitter.com/[screen_name]';
   $handler->display->display_options['fields']['screen_name']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['screen_name']['alter']['link_class'] = 'tweets__info';
   $handler->display->display_options['fields']['screen_name']['alter']['prefix'] = '@';
   $handler->display->display_options['fields']['screen_name']['element_label_colon'] = FALSE;
   /* Field: Twitter: Created time */

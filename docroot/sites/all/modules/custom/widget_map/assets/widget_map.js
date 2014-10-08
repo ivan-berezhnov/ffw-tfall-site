@@ -18,9 +18,11 @@
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();
-
+      
+      var lang = Drupal.settings.widget_map.language;
+			
 			$.ajax({
-				url: '/widget_map_listofall.json',
+        url: '/widget_map_listofall.json' + '/' + lang,
 				success: function parseJson(data) {
 					map.markerLayer.setGeoJSON(data);
 				}
@@ -72,7 +74,7 @@
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<h3>' + feature.properties.name + '</h3>' +
 								// '<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
-								'<span>Read More</span></a>';
+								'<span>' + feature.properties.readmore + '</span></a>';
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,

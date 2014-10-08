@@ -166,12 +166,12 @@
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
 		<a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
         <div class="footer__search">
-          <p>Search the Site</p>
+          <p><?php print t('Search the Site'); ?></p>
           <?php print $navbar_search ?>
         </div>
         <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
         <div class="footer__contact-us">
-          <p>Subscribe to our Newsletter</p>
+          <p><?php print t('Subscribe to our Newsletter'); ?></p>
           <div class="constant-contact">
             <?php
             //including the file with the constant contact submit form block.
