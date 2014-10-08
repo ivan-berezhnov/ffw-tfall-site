@@ -17,6 +17,11 @@ function pubteachforall_marquee_context_default_contexts() {
   $context->description = 'Main front page media block.';
   $context->tag = 'Marquee';
   $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'en' => 'en',
+      ),
+    ),
     'path' => array(
       'values' => array(
         '<front>' => '<front>',

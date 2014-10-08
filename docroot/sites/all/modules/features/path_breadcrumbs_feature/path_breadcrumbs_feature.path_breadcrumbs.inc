@@ -284,7 +284,7 @@ get-involved/*',
       1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
