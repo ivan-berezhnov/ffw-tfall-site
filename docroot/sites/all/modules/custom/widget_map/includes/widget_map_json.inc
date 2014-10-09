@@ -67,14 +67,16 @@ function _widget_map_detailedlist($language) {
 	foreach ($items as $item) {
     // Get item language.
     $lang = field_language('node', $item, 'field_blurb', $language);
-    $langcountry = field_language('node', $item, 'field_country', $language);
+    
+    // Define the current country.
+    $country = $item->field_country['en'][0]['value'];
       
     // Build marker.
 		$marker = null;
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
-			'title' => $item->field_country[$langcountry][0]['value'],
+			'title' => i18n_string('field:field_country:#allowed_values:' . $country, $country, array('langcode' => $language)),
 			'url' => $GLOBALS['base_url'] . $GLOBALS['base_path'] . $language . '/' . drupal_get_path_alias('node/' . $item->nid),
 			'blurb' => $item->field_blurb[$lang][0]['value'],
 			'icon' => array(
