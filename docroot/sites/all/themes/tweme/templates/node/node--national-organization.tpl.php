@@ -97,9 +97,9 @@
 
           <?php if ($is_field_field_schools_set): ?>
             <div class="no__stat">
-  						<strong><?php print render($content['field_schools']); ?></strong><?php print t(' schools'); ?>
+  						<strong><?php print render($content['field_schools']); ?></strong><?php print t(' schools in'); ?>
               <?php if (isset($content['field_city_1'])): ?>
-                in <?php print render($content['field_city_1']); ?>
+                <?php print render($content['field_city_1']); ?>
               <?php endif; ?>
             </div>
           <?php endif; ?>
