@@ -20,15 +20,17 @@ function _widget_map_listofall($language) {
 
 	foreach ($items as $item) {
     // Get item language.
-	  $langcountry = field_language('node', $item, 'field_country', $language);
 	  $langtitle = field_language('node', $item, 'title_field', $language);
+	  
+    // Define the current country.
+    $country = $item->field_country['en'][0]['value'];
 
 	  // Build the marker.
 		$marker = null;
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(
-			'title' => $item->field_country[$langcountry][0]['value'],
+			'title' => i18n_string('field:field_country:#allowed_values:' . $country, $country, array('langcode' => $language)),
 			'name' => $item->title_field[$langtitle][0]['value'],
 			'url' => $GLOBALS['base_url'] . $GLOBALS['base_path'] . $language . '/' . drupal_get_path_alias('node/' . $item->nid),
 			'readmore' => t('Read More'),
