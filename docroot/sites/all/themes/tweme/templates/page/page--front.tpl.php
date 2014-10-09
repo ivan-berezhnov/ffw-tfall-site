@@ -108,7 +108,7 @@
   </div>
 </div>
 <div id="mobileworldmap" class="worldmap__national-orgs">
-  <a class="btn__red" href="/our-network-and-impact/national-organizations" title="National Organizations">See All National Organizations</a>
+  <a class="btn__red" href="/our-network-and-impact/national-organizations" title="National Organizations"><?php print t('See All National Organizations'); ?></a>
   <!--<img src="<?php print drupal_get_path('theme', 'tweme') . '/images/mobile-homepage-map.jpg' ?>" alt="World Map of National Organizations" />-->
 </div>
 
@@ -118,7 +118,7 @@
 		<div class="row-fluid">
 			<div class="span12">
         <a href="network-learning" class="network-learning-main"><?php print t('Network Learning'); ?></a>
-        <?php print $network_learning_block; //front block ?>
+        <?php print render($page['net_learning_front']) ?>
       </div>
 		</div>
 	</div>
@@ -130,7 +130,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span9">
-        <h3>TWITTER</h3>
+        <h3><?php print t('TWITTER'); ?></h3>
         <?php print render($page['twitter_front']); ?>
       </div>
 			<div class="span3 facebook">

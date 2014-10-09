@@ -13,7 +13,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
   <nav class="effeckt-off-screen-nav" id="effeckt-off-screen-nav">
 
     <h4>
-      Teach For All
+      <?php print t('Teach For All'); ?>
       <a href="#0" id="effeckt-off-screen-nav-close" class="effeckt-off-screen-nav-close">×</a>
     </h4>
 
