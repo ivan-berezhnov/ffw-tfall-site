@@ -428,7 +428,6 @@ h2 {
     @include font-size(20);
   }
 }
-
 /**/
 
 /**
@@ -541,7 +540,9 @@ h2 {
   background-color: $grey1;
   color: $white;
   line-height: 1.3em;
-  padding: 2px 3px;
+  padding: 0px 3px;
+  margin: 0 5px 0 0;
+  float: left;
   @include font-size(17);
   &:hover {
     background-color: $red;
@@ -554,6 +555,30 @@ h2 {
   }
 }
 
+.language-switcher-locale-url {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline; 
+    float: left;
+    }
+  a {
+    border-right: 2px solid black;
+    float: left;
+    margin: 0 6px 0 0;
+    padding: 0 5px 0 0;
+    color: orange;
+    }
+    &:hover {
+    color: black;
+    font-weight: bold;
+    }
+    &:last-child {
+      border-right: 0 none;
+    }
+  }
 /**/
 
 /**
@@ -2151,7 +2176,7 @@ img {max-width: 100%;}
     }
   }
 
-  .view-display-id-network_learning_front_block {
+  .view-display-id-network_learning_front_block, .view-display-id-network_learning_front_block_spanish{
     margin-bottom: 15px;
     display: inline-block;
 
