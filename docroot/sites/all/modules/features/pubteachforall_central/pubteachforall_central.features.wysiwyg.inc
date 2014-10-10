@@ -76,6 +76,8 @@ Orange=span.orange
 Orange2=span.orange2
 Beige=span.beige
 Black=span.black
+Almost black=span.almostblack
+Dove gray=span.dovegrey
 NGLightRegular=span.NewsGothicFSLightRegular
 NGLightItalic=span.NewsGothicFSLightItalic
 NGBookBoldItalic=span.NewsGothicFSBookBoldItalic
@@ -84,11 +86,7 @@ NGCapsBookRegular=span.NewsGothicFSCapsBookRegular
 NGBookRegular=span.NewsGothicFSBookRegular
 NGBookItalic=span.NewsGothicFSBookItalic
 NGMediumBold=span.NewsGothicFSMediumBold
-NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic
-FSRegular3=span.FedraSerifScreenRegular3
-FSItalic3=span.FedraSerifScreenItalic3
-FSBold3=span.FedraSerifScreenBold3
-FSBoldItalic3=span.FedraSerifScreenBoldItalic3',
+NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic',
     ),
     'rdf_mapping' => array(),
   );

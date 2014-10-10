@@ -67,6 +67,11 @@ function tfa_supporter_view_feature_views_default_views() {
     'news' => 0,
     'tags' => 0,
   );
+  /* Relationship: Content: Entity translation: translations */
+  $handler->display->display_options['relationships']['entity_translations']['id'] = 'entity_translations';
+  $handler->display->display_options['relationships']['entity_translations']['table'] = 'node';
+  $handler->display->display_options['relationships']['entity_translations']['field'] = 'entity_translations';
+  $handler->display->display_options['relationships']['entity_translations']['required'] = TRUE;
   /* Field: Content: TFA Supporter Link */
   $handler->display->display_options['fields']['field_tfa_supporter_link']['id'] = 'field_tfa_supporter_link';
   $handler->display->display_options['fields']['field_tfa_supporter_link']['table'] = 'field_data_field_tfa_supporter_link';
@@ -88,14 +93,15 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
+  /* Field: Taxonomy term: Description */
+  $handler->display->display_options['fields']['description_field']['id'] = 'description_field';
+  $handler->display->display_options['fields']['description_field']['table'] = 'field_data_description_field';
+  $handler->display->display_options['fields']['description_field']['field'] = 'description_field';
+  $handler->display->display_options['fields']['description_field']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['fields']['description_field']['label'] = '';
+  $handler->display->display_options['fields']['description_field']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['description_field']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['description_field']['link_to_entity'] = 0;
   /* Field: Content: TFA Supporter Level */
   $handler->display->display_options['fields']['field_tfa_supporter_level']['id'] = 'field_tfa_supporter_level';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['table'] = 'field_data_field_tfa_supporter_level';
@@ -103,7 +109,7 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['fields']['field_tfa_supporter_level']['label'] = '';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['text'] = '<h3>[field_tfa_supporter_level]</h3>[description]';
+  $handler->display->display_options['fields']['field_tfa_supporter_level']['alter']['text'] = '<h3>[field_tfa_supporter_level]</h3>[description_field]';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['element_type'] = '0';
   $handler->display->display_options['fields']['field_tfa_supporter_level']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tfa_supporter_level']['type'] = 'taxonomy_term_reference_plain';
@@ -130,6 +136,20 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'tfa_supporter' => 'tfa_supporter',
   );
+  /* Filter criterion: Entity translation: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'entity_translation';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['relationship'] = 'entity_translations';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
+  );
+  /* Filter criterion: Entity translation: Translation status */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'entity_translation';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['relationship'] = 'entity_translations';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
