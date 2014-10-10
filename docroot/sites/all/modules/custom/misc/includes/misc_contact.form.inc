@@ -3,19 +3,19 @@
 function misc_contact_form($form, &$form_state) {
 
 	$form['firstname'] = array(
-		'#title' => 'Name',
+		'#title' => t('Name'),
 		'#type' => 'textfield',
 		'#required' => true,
 	);
 
 	$form['email'] = array(
-		'#title' => 'Email',
+		'#title' => t('Email'),
 		'#type' => 'textfield',
 		'#required' => true,
 	);
 
 	$form['country'] = array(
-		'#title' => 'Country of interest',
+		'#title' => t('Country of interest'),
 		'#type' => 'select',
 		'#required' => true,
 		'#options' => array(
@@ -24,13 +24,13 @@ function misc_contact_form($form, &$form_state) {
 	);
 
 	$form['summary'] = array(
-		'#title' => 'Summary of your background and what motivates you to pursue this opportunity',
+		'#title' => t('Summary of your background and what motivates you to pursue this opportunity'),
 		'#required' => true,
 		'#type' => 'textarea',
 	);
 
 	$form['statement'] = array(
-		'#title' => 'Brief statement regarding your vision of how Teach For All’s model could address educational inequity in your country',
+		'#title' => t('Brief statement regarding your vision of how Teach For All’s model could address educational inequity in your country'),
 		'#required' => true,
 		'#type' => 'textarea',
 	);
