@@ -14,7 +14,7 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'about_breadcrumb';
   $path_breadcrumb->name = 'About breadcrumb';
-  $path_breadcrumb->path = 'about/*';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'About',
@@ -25,11 +25,32 @@ function path_breadcrumbs_feature_path_breadcrumbs_settings_info() {
       1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
-    'access' => array(),
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'about/*',
+          ),
+          'context' => 'empty',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = -88;
+  $path_breadcrumb->weight = -85;
   $export['about_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -93,27 +114,50 @@ get-involved/*',
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -89;
+  $path_breadcrumb->weight = -77;
   $export['default'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'get_involved';
   $path_breadcrumb->name = 'Get Involved';
-  $path_breadcrumb->path = 'get-involved';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'Get Involved',
+      1 => '!page_title',
     ),
     'paths' => array(
-      0 => '<none>',
+      0 => 'get-involved',
+      1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
-    'access' => array(),
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'get-involved/*',
+          ),
+          'context' => 'empty',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = -85;
+  $path_breadcrumb->weight = -87;
   $export['get_involved'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -131,31 +175,55 @@ get-involved/*',
       1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -92;
+  $path_breadcrumb->weight = -81;
   $export['get_involved_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'global_problem';
   $path_breadcrumb->name = 'Global Problem';
-  $path_breadcrumb->path = 'global-problem';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Global Problem',
+      0 => 'Home',
+      1 => 'Global Problem',
     ),
     'paths' => array(
-      0 => '<none>',
+      0 => '<front>',
+      1 => '<none>',
     ),
-    'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
-    'access' => array(),
+    'home' => 0,
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'global_problem' => 'global_problem',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = -83;
+  $path_breadcrumb->weight = -91;
   $export['global_problem'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -165,66 +233,113 @@ get-involved/*',
   $path_breadcrumb->path = 'news';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'News',
+      0 => 'Home',
+      1 => 'News',
     ),
     'paths' => array(
-      0 => '<none>',
+      0 => '<front>',
+      1 => '<none>',
     ),
-    'home' => 1,
-    'translatable' => 0,
+    'home' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -94;
+  $path_breadcrumb->weight = -100;
   $export['main_news_page'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'national_organizations_breadcrumbs';
   $path_breadcrumb->name = 'National Organizations breadcrumbs';
-  $path_breadcrumb->path = 'national-organization/*';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Our Network and Impact',
-      1 => 'National Organizations',
-      2 => '!page_title',
+      0 => 'Home',
+      1 => 'Our Network and Impact',
+      2 => 'National Organizations',
+      3 => '!page_title',
     ),
     'paths' => array(
-      0 => 'our-network-and-impact',
-      1 => 'our-network-and-impact/national-organizations',
-      2 => '<none>',
+      0 => '<front>',
+      1 => 'our-network-impact',
+      2 => 'our-network-and-impact/national-organizations',
+      3 => '<none>',
     ),
-    'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
-    'access' => array(),
+    'home' => 0,
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'national_organization' => 'national_organization',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = -96;
+  $path_breadcrumb->weight = -80;
   $export['national_organizations_breadcrumbs'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'network_learning_breadcrumb';
   $path_breadcrumb->name = 'Network Learning Breadcrumb';
-  $path_breadcrumb->path = 'network-learning/*';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Network Learning',
-      1 => '!page_title',
+      0 => 'Home',
+      1 => 'Network Learning',
+      2 => '!page_title',
     ),
     'paths' => array(
-      0 => 'network-learning',
-      1 => '<none>',
+      0 => '<front>',
+      1 => 'network-learning',
+      2 => '<none>',
     ),
-    'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
+    'home' => 0,
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
     'access' => array(
-      'plugins' => array(),
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'network_learning' => 'network_learning',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
+        ),
+      ),
       'logic' => 'and',
     ),
   );
-  $path_breadcrumb->weight = -97;
+  $path_breadcrumb->weight = -95;
   $export['network_learning_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -246,7 +361,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -99;
+  $path_breadcrumb->weight = -96;
   $export['network_learning_latest'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -256,37 +371,63 @@ get-involved/*',
   $path_breadcrumb->path = 'network-learning';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'Network Learning',
+      0 => 'Home',
+      1 => 'Network Learning',
     ),
     'paths' => array(
-      0 => '<none>',
+      0 => '<front>',
+      1 => '<none>',
     ),
-    'home' => 1,
-    'translatable' => 0,
+    'home' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -93;
+  $path_breadcrumb->weight = -97;
   $export['network_learning_main'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'news_breadcrumb';
   $path_breadcrumb->name = 'News Breadcrumb';
-  $path_breadcrumb->path = 'news/*';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
-      0 => 'News',
-      1 => '!page_title',
+      0 => 'Home',
+      1 => 'News',
+      2 => '!page_title',
     ),
     'paths' => array(
-      0 => 'news',
-      1 => '<none>',
+      0 => '<front>',
+      1 => 'news',
+      2 => '<none>',
     ),
-    'home' => 1,
+    'home' => 0,
     'translatable' => 1,
-    'arguments' => array(),
-    'access' => array(),
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'news' => 'news',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
   $path_breadcrumb->weight = -98;
   $export['news_breadcrumb'] = $path_breadcrumb;
@@ -310,7 +451,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -100;
+  $path_breadcrumb->weight = -99;
   $export['news_latest'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -330,7 +471,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -84;
+  $path_breadcrumb->weight = -75;
   $export['our_answer'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -352,7 +493,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -91;
+  $path_breadcrumb->weight = -79;
   $export['our_answer_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -372,7 +513,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -87;
+  $path_breadcrumb->weight = -76;
   $export['our_network_and_impact'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -390,11 +531,11 @@ get-involved/*',
       1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -90;
+  $path_breadcrumb->weight = -78;
   $export['our_network_and_impact_breadcrumb'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -414,7 +555,7 @@ get-involved/*',
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -86;
+  $path_breadcrumb->weight = -82;
   $export['privacy_policy'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
@@ -430,18 +571,18 @@ get-involved/*',
       0 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -88;
+  $path_breadcrumb->weight = -83;
   $export['search'] = $path_breadcrumb;
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'spotlight';
   $path_breadcrumb->name = 'Spotlight';
-  $path_breadcrumb->path = 'spotlight/*';
+  $path_breadcrumb->path = 'node/%node';
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'Spotlight',
@@ -452,11 +593,33 @@ get-involved/*',
       1 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(),
-    'access' => array(),
+    'translatable' => 1,
+    'arguments' => array(
+      'node' => array(
+        'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Node: ID',
+        ),
+      ),
+    ),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'spotlight' => 'spotlight',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
   );
-  $path_breadcrumb->weight = -95;
+  $path_breadcrumb->weight = -92;
   $export['spotlight'] = $path_breadcrumb;
 
   return $export;
