@@ -276,8 +276,15 @@ function pubteachforall_central_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
+    'about' => TRUE,
     'file' => TRUE,
+    'get-involved' => TRUE,
+    'network-learning' => TRUE,
+    'news' => TRUE,
     'node' => TRUE,
+    'our-approach' => TRUE,
+    'our-network-impact' => TRUE,
+    'press' => TRUE,
     'taxonomy' => TRUE,
     'user' => TRUE,
   );
