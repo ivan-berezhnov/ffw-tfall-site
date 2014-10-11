@@ -59,7 +59,7 @@
                   print render($content['sharethis']);
                 }
               ?>
-              <a href="/network-learning/latest">
+              <a href="network-learning/latest">
                 <div class="full-list"><?php print t('Network Learning Archive'); ?> <span class="orange2">>></span></div>
               </a>
             </div>
