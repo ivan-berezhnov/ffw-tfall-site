@@ -33,7 +33,6 @@ function _widget_map_listofall($language) {
 			'title' => i18n_string('field:field_country:#allowed_values:' . $country, $country, array('langcode' => $language)),
 			'name' => $item->title_field[$langtitle][0]['value'],
 			'url' => $GLOBALS['base_url'] . $GLOBALS['base_path'] . $language . '/' . drupal_get_path_alias('node/' . $item->nid),
-			'readmore' => t('Read More'),
 			'logo' => image_style_url('map_logo',$item->field_no_logo[LANGUAGE_NONE][0]['uri']),
 			'mainpic' => image_style_url('map_thumbnail',$item->field_no_image[LANGUAGE_NONE][0]['uri']),
 			'icon' => array(
