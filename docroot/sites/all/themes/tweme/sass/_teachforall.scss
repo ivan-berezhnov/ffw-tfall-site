@@ -560,25 +560,35 @@ h2 {
   margin: 0;
   padding: 0;
   li {
-    list-style: none;
-    display: inline; 
-    float: left;
-    }
-  a {
-    border-right: 2px solid black;
-    float: left;
+    border-right: 1px solid $grey5;
+    height: 8px;
+    line-height: .4em;
+    font-weight: bold;
     margin: 0 6px 0 0;
     padding: 0 5px 0 0;
-    color: orange;
-    }
-    &:hover {
-    color: black;
-    font-weight: bold;
-    }
+    position: relative;
+    display: inline;
+    list-style: none;
+    float: left;
     &:last-child {
-      border-right: 0 none;
+      border-right: none;
     }
   }
+    a {
+    font-weight: bold;
+    color: $black;
+    letter-spacing: .1em;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    @include font-size(11);
+    &.active {
+            color: $orange1;
+          }
+    &:hover {
+      color: $orange1;
+    }
+  }
+}
 /**/
 
 /**
