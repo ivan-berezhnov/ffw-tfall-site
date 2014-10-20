@@ -40,6 +40,7 @@ function panopoly_core_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'categories',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',

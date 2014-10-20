@@ -30,6 +30,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'label' => 'Byline',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -64,6 +65,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'label' => 'Headline',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -102,6 +104,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -165,6 +168,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
@@ -197,6 +201,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
+          'translate' => 'Translate',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
@@ -232,6 +237,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
     'label' => '2 Column Row',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -298,6 +304,7 @@ function pubteachforall_2_col_layout_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,

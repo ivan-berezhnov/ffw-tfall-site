@@ -1182,7 +1182,6 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'filter',

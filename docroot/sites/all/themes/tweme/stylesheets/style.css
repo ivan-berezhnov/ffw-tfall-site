@@ -887,7 +887,9 @@ h2.page-title {
   background-color: #91998c;
   color: white;
   line-height: 1.3em;
-  padding: 2px 3px;
+  padding: 0px 3px;
+  margin: 0 5px 0 0;
+  float: left;
   font-size: 17px;
   font-size: 1.0625rem;
 }
@@ -899,6 +901,42 @@ h2.page-title {
 }
 .social-media[class*=" icon-"] {
   vertical-align: middle;
+}
+
+.language-switcher-locale-url {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.language-switcher-locale-url li {
+  border-right: 1px solid #92998d;
+  height: 8px;
+  line-height: .4em;
+  font-weight: bold;
+  margin: 0 6px 0 0;
+  padding: 0 5px 0 0;
+  position: relative;
+  display: inline;
+  list-style: none;
+  float: left;
+}
+.language-switcher-locale-url li:last-child {
+  border-right: none;
+}
+.language-switcher-locale-url a {
+  font-weight: bold;
+  color: black;
+  letter-spacing: .1em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+.language-switcher-locale-url a.active {
+  color: #e69740;
+}
+.language-switcher-locale-url a:hover {
+  color: #e69740;
 }
 
 /**/
@@ -2316,30 +2354,30 @@ img {
 .network-learning-front-block a.network-learning-main:hover {
   color: #cf4753;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block {
+.network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
   margin-bottom: 15px;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block {
+  .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     margin-top: 0;
   }
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-top: 30px;
   }
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a {
   display: block;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
   width: 100%;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-tag {
   font-size: 12px;
   font-size: 0.75rem;
   color: #e69740;
@@ -2348,7 +2386,7 @@ img {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a {
   font-size: 22px;
   font-size: 1.375rem;
   font-family: "Fedra Serif Old";
@@ -2358,20 +2396,20 @@ img {
   color: #4d4d4d;
   line-height: 24px;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 767px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block {
+  .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     text-align: center;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block:first-child {
+  .network-learning-front-block .view-display-id-network_learning_front_block:first-child, .network-learning-front-block .view-display-id-network_learning_front_block_spanish:first-child {
     margin-top: 0;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-bottom: 10px;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
     max-width: 370px;
   }
 }

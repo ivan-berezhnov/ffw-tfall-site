@@ -34,6 +34,9 @@ function spotlight_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
@@ -62,8 +65,9 @@ function spotlight_field_default_field_bases() {
         'Featured Story' => 'Featured Story',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'list_text',
   );
 
@@ -91,6 +95,9 @@ function spotlight_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,

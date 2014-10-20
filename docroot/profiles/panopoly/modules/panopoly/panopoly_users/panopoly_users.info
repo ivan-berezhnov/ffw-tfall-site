@@ -2,6 +2,7 @@ name = Panopoly Users
 description = Maintains user accounts and user workflows.
 core = 7.x
 package = Panopoly
+version = 7.x-1.6
 project = panopoly_users
 dependencies[] = ctools
 dependencies[] = defaultconfig
@@ -12,7 +13,9 @@ dependencies[] = page_manager
 dependencies[] = panelizer
 dependencies[] = pm_existing_pages
 dependencies[] = strongarm
+dependencies[] = text
 dependencies[] = user_picture_field
+datestamp = 1400718268
 features[ctools][] = field_group:field_group:1
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = panelizer:panelizer:1
@@ -53,10 +56,3 @@ features[variable][] = pm_existing_pages_disabled_user_register
 features[variable][] = user_picture_field_source_bundle
 features[variable][] = user_picture_field_source_entity
 features[variable][] = user_picture_field_source_field
-
-; Information added by Drupal.org packaging script on 2014-05-22
-version = "7.x-1.6"
-core = "7.x"
-project = "panopoly_users"
-datestamp = "1400718268"
-

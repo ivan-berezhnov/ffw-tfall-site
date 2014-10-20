@@ -39,6 +39,7 @@ regions[sidebar_first] = Sidebar first
 regions[sidebar_first_affix] = Sidebar first affixed
 regions[sidebar_second] = Sidebar second
 regions[sidebar_second_affix] = Sidebar second affixed
+regions[net_learning_front] = Network Learning Front
 regions[twitter_front] = Front Page Twitter Region
 regions[no_map] = National Organizations Map
 regions[primary_bottom] = Footer - Primary Nav

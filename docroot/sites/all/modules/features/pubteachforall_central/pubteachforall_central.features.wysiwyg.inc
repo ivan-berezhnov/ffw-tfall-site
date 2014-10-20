@@ -40,7 +40,7 @@ function pubteachforall_central_wysiwyg_default_profiles() {
           'ShowBlocks' => 1,
           'RemoveFormat' => 1,
           'SpecialChar' => 1,
-          'Font' => 1,
+          'FontSize' => 1,
           'Styles' => 1,
           'Table' => 1,
           'Iframe' => 1,
@@ -66,8 +66,7 @@ function pubteachforall_central_wysiwyg_default_profiles() {
       'css_classes' => 'H1=h1
 H2=h2
 H3=h3
-H4=p.page-section
-Body=div.body
+H4=div.page-section
 BodySmall=div.small-body
 BodyLarge=div.large-body
 BlockQuote=div.block-quote
@@ -80,6 +79,8 @@ Orange=span.orange
 Orange2=span.orange2
 Beige=span.beige
 Black=span.black
+Almost black=span.almostblack
+Dove gray=span.dovegrey
 NGLightRegular=span.NewsGothicFSLightRegular
 NGLightItalic=span.NewsGothicFSLightItalic
 NGBookBoldItalic=span.NewsGothicFSBookBoldItalic
@@ -88,11 +89,7 @@ NGCapsBookRegular=span.NewsGothicFSCapsBookRegular
 NGBookRegular=span.NewsGothicFSBookRegular
 NGBookItalic=span.NewsGothicFSBookItalic
 NGMediumBold=span.NewsGothicFSMediumBold
-NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic
-FSRegular3=span.FedraSerifScreenRegular3
-FSItalic3=span.FedraSerifScreenItalic3
-FSBold3=span.FedraSerifScreenBold3
-FSBoldItalic3=span.FedraSerifScreenBoldItalic3',
+NGMediumBoldItalic=span.NewsGothicFSMediumBoldItalic',
     ),
     'rdf_mapping' => array(),
   );

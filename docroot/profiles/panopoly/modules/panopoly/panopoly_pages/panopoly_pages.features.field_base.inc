@@ -34,8 +34,10 @@ function panopoly_pages_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(),
-    'translatable' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 1,
     'type' => 'text_with_summary',
   );
 
@@ -68,6 +70,7 @@ function panopoly_pages_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -94,6 +97,7 @@ function panopoly_pages_field_default_field_bases() {
         1 => 'Yes',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'list_boolean',

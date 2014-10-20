@@ -33,6 +33,13 @@ function pubteachforall_1_col_layout_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_page_1_col_layout';
+  $strongarm->value = '4';
+  $export['language_content_type_page_1_col_layout'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_page_1_col_layout';
   $strongarm->value = array(
     0 => 'menu-primary-navigation',

@@ -54,6 +54,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'About',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -116,6 +117,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Active Flag',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -176,6 +178,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Alumni',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -235,6 +238,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Avg. Total Years of Education',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -294,6 +298,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Blurb',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -354,6 +359,7 @@ function national_organization_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'description_field' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'careers',
       'file_extensions' => 'txt pdf',
       'max_filesize' => '',
@@ -426,6 +432,7 @@ function national_organization_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -496,6 +503,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'CEO Profile',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -555,6 +563,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Cities With Schools',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -613,6 +622,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Cohorts Placed',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -672,6 +682,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Contact Info',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -703,9 +714,9 @@ function national_organization_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'list',
+        'module' => 'i18n_field',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'i18n_list_default',
         'weight' => 1,
       ),
       'featured' => array(
@@ -738,6 +749,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Country',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -793,6 +805,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Facebook Account Name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -862,6 +875,7 @@ function national_organization_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'optional',
       'title_maxlength' => 128,
@@ -928,6 +942,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Living below Poverty Line',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -998,6 +1013,7 @@ function national_organization_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'cardinality' => 1,
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1053,6 +1069,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'National Organization Twitter Widget',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1115,6 +1132,7 @@ function national_organization_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1195,6 +1213,7 @@ function national_organization_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1275,6 +1294,7 @@ function national_organization_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -1356,6 +1376,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Population',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -1415,6 +1436,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Program Launched',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -1479,6 +1501,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Schools',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -1541,6 +1564,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Spotlights',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1611,6 +1635,7 @@ function national_organization_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 1,
+      'entity_translation_sync' => FALSE,
       'linkit' => array(
         'enable' => 0,
         'insert_plugin' => '',
@@ -1683,6 +1708,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Teachers Active',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max' => '',
       'min' => '',
       'prefix' => '',
@@ -1695,6 +1721,67 @@ function national_organization_field_default_field_instances() {
       'settings' => array(),
       'type' => 'number',
       'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organization-title_field'
+  $field_instances['node-national_organization-title_field'] = array(
+    'bundle' => 'national_organization',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
     ),
   );
 
@@ -1742,6 +1829,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Introduction',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1811,6 +1899,7 @@ function national_organization_field_default_field_instances() {
         'url_cutoff' => 80,
       ),
       'enable_tokens' => 0,
+      'entity_translation_sync' => FALSE,
       'rel_remove' => 'default',
       'title' => 'required',
       'title_maxlength' => 128,
@@ -1872,6 +1961,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Principles #1',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1930,6 +2020,7 @@ function national_organization_field_default_field_instances() {
     'label' => 'Principles #2',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -1941,6 +2032,67 @@ function national_organization_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-national_organizations-title_field'
+  $field_instances['node-national_organizations-title_field'] = array(
+    'bundle' => 'national_organizations',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
     ),
   );
 
@@ -1978,6 +2130,7 @@ function national_organization_field_default_field_instances() {
   t('Spotlights');
   t('Teach Page');
   t('Teachers Active');
+  t('Title');
   t('To display the Facebook Like Box for this organization, please enter the account\'s name i.e. http://facebook.com/<strong>account_name</strong>');
   t('blurb/compelling statistic text');
   t('link(s) to organization\'s website');

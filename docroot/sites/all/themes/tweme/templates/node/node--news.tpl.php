@@ -2,7 +2,7 @@
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
     <div class="content"<?php print $content_attributes; ?>>
-      <h2 class="page-title date">NEWS</h2>
+      <h2 class="page-title date"><?php print t('NEWS'); ?></h2>
 
     	<div class="row-fluid">
     	  <div class="span9">
@@ -56,7 +56,7 @@
                   print render($content['sharethis']);
                 }
               ?>
-            <a href="/news/latest">
+            <a href="news/latest">
 	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
             </a>
   				  </div>
