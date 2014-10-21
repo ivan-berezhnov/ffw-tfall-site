@@ -17,6 +17,14 @@
             <?php print render($content['field_links']); ?>
           </div>
         <?php endif; ?>
+        
+        <?php if (isset($content['field_careers_page'])): ?>
+          <div class="no__website-info no__info-block">
+            <div class="slug"><?php print t('Careers'); ?></div>
+            <?php print render($content['field_careers_page']); ?><br />
+            <?php print render($content['field_teach_page']); ?>
+          </div>
+        <?php endif; ?>
 
           <?php if (isset($content['field_teach_page'])): ?>
           <div class="no__website-info no__info-block">

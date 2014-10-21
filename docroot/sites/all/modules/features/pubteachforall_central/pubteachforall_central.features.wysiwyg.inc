@@ -46,6 +46,9 @@ function pubteachforall_central_wysiwyg_default_profiles() {
           'Iframe' => 1,
           'Scayt' => 1,
         ),
+        'imce' => array(
+          'imce' => 1,
+        ),
       ),
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',

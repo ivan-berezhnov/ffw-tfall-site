@@ -422,7 +422,7 @@ function network_learning_views_default_views() {
   $handler->display->display_options['block_description'] = 'Front Network Learning Block';
 
   /* Display: Spanish Network Learning Front */
-  $handler = $view->new_display('block', 'Spanish Network Learning Front', 'block_2');
+  $handler = $view->new_display('block', 'Spanish Network Learning Front', 'network_learning_front_block_spanish');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'row-fluid';

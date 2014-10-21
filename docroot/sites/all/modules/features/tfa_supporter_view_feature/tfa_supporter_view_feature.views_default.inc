@@ -48,7 +48,8 @@ function tfa_supporter_view_feature_views_default_views() {
   $handler->display->display_options['header']['area']['label'] = 'Title and Intro Paragraph';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
   $handler->display->display_options['header']['area']['content'] = '<h2 class="page-title">Supporters</h2>
-<p>Teach For All is grateful to all of our supporters.</p>';
+<p>Teach For All is grateful to all of our supporters.</p>
+';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';

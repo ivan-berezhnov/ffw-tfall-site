@@ -74,7 +74,7 @@
 								'<h2>' + feature.properties.title + '</h2>' +
 								'<h3>' + feature.properties.name + '</h3>' +
 								// '<div class="no__logo"><img src="' + feature.properties.logo + '"></div>' +
-								'<span>' + feature.properties.readmore + '</span></a>';
+								'<span>' + Drupal.t('READ MORE') + '</span></a>'
 
 				marker.bindPopup(popupContent, {
 					closeButton: false,

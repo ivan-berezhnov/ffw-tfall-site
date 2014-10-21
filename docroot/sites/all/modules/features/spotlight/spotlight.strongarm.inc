@@ -92,6 +92,9 @@ function spotlight_strongarm() {
       'global_organization' => array(
         'custom_settings' => TRUE,
       ),
+      'featured' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

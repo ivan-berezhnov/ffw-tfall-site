@@ -26,5 +26,5 @@
         <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="press/latest" class="full-list">More Press <span class="orange2">>></span></a>
+  <a href="press/latest" class="full-list"><?php print t('More Press '); ?><span class="orange2">>></span></a>
 </div>

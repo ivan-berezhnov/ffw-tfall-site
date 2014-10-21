@@ -37,9 +37,11 @@ function widget_map_theme($existing, $type, $theme, $path) {
 	return array(
 		'widget_map' => array(
 			'template' => 'templates/widget-map',
+			'variables' => array('title' => t('NATIONAL ORGANIZATIONS')),
 		),
 		'widget_map_detailed' => array(
 			'template' => 'templates/widget-map-detailed',
+			'variables' => array('title' => t('NATIONAL STATISTICS')),
 		),
 	);
 }

@@ -6,6 +6,7 @@ version = 7.x-1.0
 project = spotlight
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = i18n_field
 dependencies[] = image
 dependencies[] = list
 dependencies[] = options
