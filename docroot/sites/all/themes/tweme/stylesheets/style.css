@@ -1,6 +1,6 @@
 /* Imports */
 /**
-*	#Table of Contents
+* #Table of Contents
 **/
 /**
 
@@ -9,7 +9,7 @@
 
 **/
 /**
-	#Colours
+  #Colours
 **/
 /**
 * #WYSIWYG Classes
@@ -244,20 +244,19 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 
 @font-face {
   font-family: "Fedra Serif Old";
-  src: url("../fonts/fserstda-bold.eot");
-  src: url("../fonts/fserstda-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fserstda-bold.woff") format("woff"), url("../fonts/fserstda-bold.ttf") format("truetype"), url("../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular") format("svg");
+  src: url("../fonts/FSerStdA-Book.eot");
+  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif Old";
-  src: url("../fonts/fserstda-bold.eot");
-  src: url("../fonts/fserstda-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fserstda-bold.woff") format("woff"), url("../fonts/fserstda-bold.ttf") format("truetype"), url("../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular") format("svg");
+  src: url("../fonts/FSerStdA-Bold.eot");
+  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular") format("svg");
   font-weight: bold;
   font-style: normal;
 }
-
 
 /**
 *   #Table of Contents
