@@ -52,6 +52,7 @@ function _widget_map_listofall($language) {
 
 function _widget_map_detailedlist($language) {
 
+	sleep(1);
 	$query = new EntityFieldQuery();
 
 	$result = $query->entityCondition('entity_type', 'node')
