@@ -24,6 +24,12 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'global_organization' => array(
         'label' => 'above',
         'settings' => array(),
@@ -46,7 +52,7 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_iframe',
     'label' => 'iFrame',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -55,6 +61,10 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
         'rows' => 5,
       ),
       'type' => 'text_textarea',
@@ -75,6 +85,12 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',
@@ -141,6 +157,12 @@ function pubteachforall_join_our_staff_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'global_organization' => array(
         'label' => 'above',

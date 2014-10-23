@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pubteachforall_press feature.
+ */
+
+include_once 'pubteachforall_press.features.inc';

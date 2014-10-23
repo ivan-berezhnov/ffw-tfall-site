@@ -3,3 +3,6 @@ docroot/files
 docroot/sites/*/files
 docroot/sites/*/private
 
+*.komodoproject
+/.komodotools/
+settings.local.php

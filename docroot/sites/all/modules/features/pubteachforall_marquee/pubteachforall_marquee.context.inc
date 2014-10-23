@@ -17,6 +17,11 @@ function pubteachforall_marquee_context_default_contexts() {
   $context->description = 'Main front page media block.';
   $context->tag = 'Marquee';
   $context->conditions = array(
+    'language' => array(
+      'values' => array(
+        'en' => 'en',
+      ),
+    ),
     'path' => array(
       'values' => array(
         '<front>' => '<front>',
@@ -26,9 +31,9 @@ function pubteachforall_marquee_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-nodequeue_marquee-block' => array(
+        'views-tfall_marquee-block' => array(
           'module' => 'views',
-          'delta' => 'nodequeue_marquee-block',
+          'delta' => 'tfall_marquee-block',
           'region' => 'marquee',
           'weight' => '-10',
         ),

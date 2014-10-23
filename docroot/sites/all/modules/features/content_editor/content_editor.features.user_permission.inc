@@ -171,6 +171,7 @@ function content_editor_user_default_permissions() {
     'name' => 'delete terms in network_learning',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -180,6 +181,7 @@ function content_editor_user_default_permissions() {
     'name' => 'delete terms in supporter_levels',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -305,6 +307,7 @@ function content_editor_user_default_permissions() {
     'name' => 'edit terms in network_learning',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
   );
@@ -314,18 +317,9 @@ function content_editor_user_default_permissions() {
     'name' => 'edit terms in supporter_levels',
     'roles' => array(
       'Content editor' => 'Content editor',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'use text format wysiwyg'.
-  $permissions['use text format wysiwyg'] = array(
-    'name' => 'use text format wysiwyg',
-    'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
-    'module' => 'filter',
+    'module' => 'taxonomy',
   );
 
   return $permissions;

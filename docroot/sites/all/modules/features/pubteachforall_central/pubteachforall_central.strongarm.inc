@@ -100,7 +100,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_national_organizations_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = 'our-network-and-impact/[node:title]';
   $export['pathauto_node_national_organizations_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -163,7 +163,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_page_our_model_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = 'our-approach/[node:title]';
   $export['pathauto_node_page_our_model_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -177,7 +177,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_page_results_pattern';
-  $strongarm->value = '[node:title]';
+  $strongarm->value = 'our-network-and-impact/[node:title]';
   $export['pathauto_node_page_results_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -276,7 +276,15 @@ function pubteachforall_central_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
+    'about' => TRUE,
+    'file' => TRUE,
+    'get-involved' => TRUE,
+    'network-learning' => TRUE,
+    'news' => TRUE,
     'node' => TRUE,
+    'our-approach' => TRUE,
+    'our-network-impact' => TRUE,
+    'press' => TRUE,
     'taxonomy' => TRUE,
     'user' => TRUE,
   );
@@ -293,7 +301,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_comments';
-  $strongarm->value = FALSE;
+  $strongarm->value = 0;
   $export['sharethis_comments'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -307,14 +315,14 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_location';
-  $strongarm->value = 'content';
+  $strongarm->value = 'block';
   $export['sharethis_location'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_node_option';
-  $strongarm->value = 'network_learning,news,spotlight,0,0,0,0,0,0,0,0,0,0,0,0,0';
+  $strongarm->value = 'network_learning,news,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0';
   $export['sharethis_node_option'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -352,7 +360,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_twitter_handle';
-  $strongarm->value = '';
+  $strongarm->value = 'teachforall';
   $export['sharethis_twitter_handle'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -393,9 +401,59 @@ function pubteachforall_central_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'theme_bootstrap_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 0,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 0,
+    'logo_path' => 'profiles/acquia/AcquiaDrupalLogo.png',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'bootstrap_rebuild_registry' => 0,
+    'cdn_bootstrap' => 1,
+    'cdn_bootstrap_version' => '2.3.2',
+  );
+  $export['theme_bootstrap_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'theme_default';
   $strongarm->value = 'tweme';
   $export['theme_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'theme_settings';
+  $strongarm->value = array(
+    'toggle_logo' => 1,
+    'toggle_name' => 1,
+    'toggle_slogan' => 1,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 0,
+    'toggle_comment_user_verification' => 0,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://favicon.png',
+    'favicon_upload' => '',
+    'favicon_mimetype' => 'image/png',
+  );
+  $export['theme_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -428,19 +486,19 @@ function pubteachforall_central_strongarm() {
     'toggle_logo' => 1,
     'toggle_name' => 1,
     'toggle_slogan' => 1,
-    'toggle_node_user_picture' => 1,
-    'toggle_comment_user_picture' => 1,
-    'toggle_comment_user_verification' => 1,
+    'toggle_node_user_picture' => 0,
+    'toggle_comment_user_picture' => 0,
+    'toggle_comment_user_verification' => 0,
     'toggle_favicon' => 1,
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
-    'default_logo' => 0,
-    'logo_path' => 'profiles/acquia/AcquiaDrupalLogo.png',
+    'default_logo' => 1,
+    'logo_path' => '',
     'logo_upload' => '',
     'default_favicon' => 0,
     'favicon_path' => 'public://favicon.png',
     'favicon_upload' => '',
-    'jquery_source' => 'libraries',
+    'jquery_source' => 'drupal',
     'jquery_version' => '1.8.3',
     'bootstrap_source' => 'libraries',
     'bootstrap_version' => '2.3.2',
@@ -454,13 +512,6 @@ function pubteachforall_central_strongarm() {
   $strongarm->name = 'twitter_host';
   $strongarm->value = 'http://twitter.com';
   $export['twitter_host'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'user_admin_role';
-  $strongarm->value = '3';
-  $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

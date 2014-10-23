@@ -38,7 +38,7 @@ function tweme_theme($existing, $type, $theme, $path) {
     ),
     'navbar_toggler' => array(),
     'preface' => array(
-      'path' => $path . '/templates',
+      'path' => $path . '/templates/system',
       'template' => 'preface',
       'variables' => array(
         'breadcrumb' => NULL,
@@ -89,6 +89,22 @@ function tweme_preprocess_field(&$vars, $hook) {
 	if (function_exists($function_name)) {
 		$function_name($vars);
 	}
+	
+  //Translate the countries string for titles.
+  if ($vars['element']['#field_name'] == 'field_country') {
+    global $language;
+
+    // Translate if necessary.
+    if ($language->language != 'en') {
+      // Country string is always English.
+      $country = $vars['items'][0]['#markup'];
+      
+      // Set translation.
+      $vars['items'][0]['#markup'] = i18n_string('field:field_country:#allowed_values:' . $country, $country, array('langcode' => $language->language));
+    }
+  }
+
+		
 }
 
 /*
@@ -100,6 +116,7 @@ function tweme_preprocess_node(&$vars) {
 	if (empty($vars['node'])) {
 		return;
 	}
+
 
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['node']->nid;
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
@@ -130,14 +147,30 @@ function tweme_preprocess_views_view_unformatted__nos_az(&$vars) {
 	$results = $vars['view']->result;
 	$rows = $vars['rows'];
 
-	$groups = array();
+  global $language;
 
+  $groups = array();
 	$n = 0;
+	
 	foreach ($results as $result) {
+	
+    //Translate the country name strings if necessary.
+	  if ($language->language != 'en') {
+	  
+	    // Get the current country string (always English).
+	    $curr_country = $result->field_data_field_country_field_country_value;
+	    
+	    $result->field_data_field_country_field_country_value = i18n_string('field:field_country:#allowed_values:' . $curr_country, $curr_country, array('langcode' => $language->language));
+    }
+	  
+	  // Create the array to sort.
 		$groups[$result->field_data_field_country_field_country_value][] = $rows[$n];
 		$n++;
 	}
 
+  // Sort the array alphabetically depending on translated country key.
+  ksort($groups);
+  
 	$count = sizeof($groups);
 
 	$cols = array();
@@ -158,8 +191,7 @@ function tweme_preprocess_views_view_unformatted__nos_az(&$vars) {
 	$vars['cols'] = $cols;
 }
 
-function tweme_preprocess_node__network_learning(&$vars) {
-
-	$res = module_invoke('facebook_comments_box', 'block_view', 'facebook_comments_box');
-	$vars['block_facebook_comments_box'] = $res['content'];
+function tfallplp_preprocess_comment(&$vars, $hook) {
+  $comment = $vars['comment'];
+  $comment_wrapper = entity_metadata_wrapper('comment', $comment);
 }

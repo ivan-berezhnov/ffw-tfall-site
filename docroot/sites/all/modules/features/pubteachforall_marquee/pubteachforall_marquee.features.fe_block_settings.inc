@@ -16,11 +16,19 @@ function pubteachforall_marquee_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'nodequeue_marquee-block',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,
@@ -29,6 +37,34 @@ function pubteachforall_marquee_default_fe_block_settings() {
       ),
     ),
     'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['views-tfall_marquee-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'tfall_marquee-block',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
+      'tweme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'tweme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
     'visibility' => 0,
   );
 

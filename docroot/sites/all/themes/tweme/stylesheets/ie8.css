@@ -32,64 +32,51 @@
 /**
 * #WYSIWYG Classes
 **/
-/* line 42, ../sass/_variables.scss */
 .beige {
   color: #dfd9c9;
 }
 
-/* line 46, ../sass/_variables.scss */
 .orange {
   color: #e69740;
 }
 
-/* line 50, ../sass/_variables.scss */
 .orange2 {
   color: #ffb151;
 }
 
-/* line 54, ../sass/_variables.scss */
 .red {
   color: #cf4753;
 }
 
-/* line 58, ../sass/_variables.scss */
 .black {
   color: black;
 }
 
-/* line 62, ../sass/_variables.scss */
 .dovegrey {
   color: #91998c;
 }
 
-/* line 66, ../sass/_variables.scss */
 .almostblack {
   color: #4d4d4d;
 }
 
-/* line 71, ../sass/_variables.scss */
 h1 .beige, h2 .beige, h3 .beige, h4 .beige {
   color: #dfd9c9;
 }
-/* line 75, ../sass/_variables.scss */
 h1 .orange, h2 .orange, h3 .orange, h4 .orange {
   color: #e69740;
 }
-/* line 79, ../sass/_variables.scss */
 h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
   color: #ffb151;
 }
-/* line 83, ../sass/_variables.scss */
 h1 .red, h2 .red, h3 .red, h4 .red {
   color: #cf4753;
 }
-/* line 86, ../sass/_variables.scss */
 h1 .black, h2 .black, h3 .black, h4 .black {
   color: black;
 }
 
 /**/
-/* line 30, ../sass/ie8.scss */
 html.lte-ie8 {
   /**
   * #Uber Navigation
@@ -119,84 +106,65 @@ html.lte-ie8 {
   * #Persons
   **/
 }
-/* line 38, ../sass/ie8.scss */
 html.lte-ie8 .uber-nav .content > .menu > li.last {
   border: 0;
 }
-/* line 51, ../sass/ie8.scss */
 html.lte-ie8 .donate {
   margin-top: 2px;
   margin-right: 6px;
 }
-/* line 56, ../sass/ie8.scss */
 html.lte-ie8 .social-media {
   display: inline-block;
   width: 22px;
   height: 20px;
 }
-/* line 62, ../sass/ie8.scss */
 html.lte-ie8 .ico-facebook:before, html.lte-ie8 .ico-vimeo:before, html.lte-ie8 .ico-twitter:before, html.lte-ie8 .ico-linkedin:before {
   content: none;
 }
-/* line 66, ../sass/ie8.scss */
 html.lte-ie8 .ico-facebook {
   background: url(../images/icon-facebook.png) center center no-repeat;
 }
-/* line 69, ../sass/ie8.scss */
 html.lte-ie8 .ico-vimeo {
   background: url(../images/icon-vimeo.png) center center no-repeat;
 }
-/* line 72, ../sass/ie8.scss */
 html.lte-ie8 .ico-twitter {
   background: url(../images/icon-twitter.png) center center no-repeat;
 }
-/* line 75, ../sass/ie8.scss */
 html.lte-ie8 .ico-linkedin {
   background: url(../images/icon-linkedin.png) center center no-repeat;
 }
-/* line 87, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .sidr-toggle {
   display: none;
 }
-/* line 91, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container {
   display: block;
   width: 940px;
 }
-/* line 99, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child {
   width: 192px;
 }
-/* line 103, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li {
   width: 142px;
 }
-/* line 106, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li {
   width: 255px;
 }
-/* line 109, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li {
   width: 151px;
 }
-/* line 112, ../sass/ie8.scss */
 html.lte-ie8 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child + li + li + li + li {
   width: 200px;
 }
-/* line 128, ../sass/ie8.scss */
 html.lte-ie8 #main .page-title, html.lte-ie8 #main h3 {
   font-weight: bold;
 }
-/* line 132, ../sass/ie8.scss */
 html.lte-ie8 #main #content.span12 {
   width: 100%;
   margin: 0;
 }
-/* line 139, ../sass/ie8.scss */
 html.lte-ie8 .full-list {
   width: 190px;
 }
-/* line 143, ../sass/ie8.scss */
 html.lte-ie8 .st_twitter_large {
   line-height: 32px;
   width: 32px;
@@ -204,87 +172,68 @@ html.lte-ie8 .st_twitter_large {
   display: inline-block;
   margin-right: 7px;
 }
-/* line 150, ../sass/ie8.scss */
 html.lte-ie8 .st_twitter_large .stButton {
   background: url(../images/icon-twitter-lg.png) 0 0 no-repeat !important;
 }
-/* line 154, ../sass/ie8.scss */
 html.lte-ie8 .st_twitter_large .stLarge {
   display: none !important;
 }
-/* line 159, ../sass/ie8.scss */
 html.lte-ie8 .st_facebook_large {
   line-height: 32px;
   width: 32px;
   height: 32px;
   display: inline-block;
 }
-/* line 165, ../sass/ie8.scss */
 html.lte-ie8 .st_facebook_large .stButton {
   background: url(../images/icon-facebook-lg.png) 0px 0px no-repeat !important;
 }
-/* line 169, ../sass/ie8.scss */
 html.lte-ie8 .st_facebook_large .stLarge {
   display: none !important;
 }
-/* line 175, ../sass/ie8.scss */
 html.lte-ie8 .top-section__subheader {
   margin-bottom: 10px;
 }
-/* line 179, ../sass/ie8.scss */
 html.lte-ie8 .top-section__description {
   font-size: 15px;
 }
-/* line 193, ../sass/ie8.scss */
 html.lte-ie8 #footer .footer-links .content > ul > li + li + li + li {
   display: none;
 }
-/* line 203, ../sass/ie8.scss */
 html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child {
   display: none;
 }
-/* line 206, ../sass/ie8.scss */
 html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li, html.lte-ie8 #footer .footer-links-2 .content > ul > li:first-child + li + li {
   display: none;
 }
-/* line 214, ../sass/ie8.scss */
 html.lte-ie8 #footer #edit-keys {
   width: 162px;
 }
-/* line 229, ../sass/ie8.scss */
 html.lte-ie8 .marquee .marquee__pane:hover .marquee__hover,
 html.lte-ie8 .marquee .marquee__pane:hover .marquee__info-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 236, ../sass/ie8.scss */
 html.lte-ie8 .marquee__hover {
   width: 100%;
 }
-/* line 240, ../sass/ie8.scss */
 html.lte-ie8 .marquee__info-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 253, ../sass/ie8.scss */
 html.lte-ie8 .view-persons .view-content .view-persons-one-col {
   display: none;
 }
-/* line 257, ../sass/ie8.scss */
 html.lte-ie8 .view-persons .view-content .view-persons-two-col {
   display: block;
 }
-/* line 260, ../sass/ie8.scss */
 html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col, html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
   float: left;
   width: 49%;
 }
-/* line 265, ../sass/ie8.scss */
 html.lte-ie8 .view-persons .view-content .view-persons-two-col .left-col {
   margin-right: 1%;
   clear: left;
 }
-/* line 270, ../sass/ie8.scss */
 html.lte-ie8 .view-persons .view-content .view-persons-two-col .right-col {
   margin-left: 1%;
 }

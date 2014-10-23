@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ *  Provides a Locale Language negotiation from Browser even when drupal caching is enabled
+ */
+
+function locale_language_from_browser_cache_language_negotiation_info() {
+	return array(
+			'locale_language_from_browser_cache' => array(
+				'callbacks' => array('language' => 'locale_language_from_browser'),
+				'file' => $file,
+				'weight' => -2,
+				'cache' => 1,
+				'name' => t('Browser with Cache'),
+				'description' => t("Determine the language from the browser's language settings even with enabled cache."),
+			),
+	);
+
+}

@@ -1,147 +1,3 @@
-/**
-* #WYSIWYG Elements
-**/
-
-@font-face {
-  font-family: "Fedra Serif";
-  src: url("fonts/FSerStdA-Book.otf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Fedra Serif";
-  src: url("fonts/FSerStdA-Bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "News Gothic";
-  src: url("fonts/NewsGothic-Medium.otf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "News Gothic";
-  src: url("fonts/NewsGothic-DemiBold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-h1, .h1 {
-  color: #4d4d4d;
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 48px;
-  margin-bottom: 5px;
-  font-size: 42px;
-  font-size: 2.47059rem;
-}
-
-h2, .h2 {
-  font-size: 25px;
-  font-size: 1.47059rem;
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 29px;
-}
-
-h3, .h3 {
-  font-family: "Fedra Serif", serif;
-  font-weight: normal;
-  line-height: 22px;
-  margin: 0 0 5px 0;
-  font-size: 18px;
-  font-size: 1.05882rem;
-}
-
-h4, .h4 {
-  line-height: 20px;
-  font-size: 16px;
-  font-size: 0.94118rem;
-}
-
-.beige {
-  color: #dfd9c9;
-}
-
-.orange {
-  color: #e69740;
-}
-
-.orange2 {
-  color: #ffb151;
-}
-
-.red {
-  color: #cf4753;
-}
-
-.slug {
-  font-size: 11px;
-  font-size: 0.64706rem;
-  color: #e69740;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 14px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.slug-medium {
-  color: #e69740;
-  font-family: "Fedra Serif";
-  letter-spacing: 4px;
-  font-size: 16px;
-  font-size: 0.94118rem;
-}
-
-.small-body {
-  font-size:16px;
-  font-size:0.94118rem;
-  line-height: 20px;
-  color:#4c4c4c
-}
-
-.slug-large {
-  color: #e69740;
-  font-family: "Fedra Serif";
-  letter-spacing: 4px;
-  line-height: 1.2em;
-  font-size: 24px;
-  font-size: 1.41176rem;
-}
-
-.large-body {
-  color: #91998c;
-  font-family: "Fedra Serif";
-  line-height: 1.7em;
-  margin-bottom: 20px;
-  font-size: 17px;
-  font-size: 1rem;
-}
-.large-body:last-child {
-  margin-bottom: 0;
-}
-
-.block-quote{
-  color:#91998c;
-  font-weight:bold;
-  font-size:36px;
-  font-size:2.11765rem;
-  line-height:38px;
-}
-
-.page-section {
-  color:#4d4d4d;
-  font-size:16px;
-  font-size:0.94118rem;
-  letter-spacing:3px;
-  line-height:20px;
-  text-transform:uppercase;
-}
 
 /**
  * Generic elements.
@@ -152,7 +8,7 @@ body {
   font: normal 81.3%/1.538em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 a {
-  color: #cf4753;
+  color: #0074BD;
   text-decoration: none;
 }
 a:hover {
@@ -618,6 +474,12 @@ table th {
   border-style: solid;
   border-color: #bebfb9;
   padding: 3px 10px;
+}
+/**
+ * Force browsers to calculate the width of a 'select all' TH element.
+ */
+table th.select-all {
+  width: 1px;
 }
 table th.active {
   background: #bdbeb9;

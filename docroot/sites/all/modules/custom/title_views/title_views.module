@@ -1,0 +1,87 @@
+<?php
+
+// WARNING Only {node}.title, {taxonomy_term_data}.name, and
+// {file_managed}.filename fields are supported.
+
+/**
+ * Implements hook_query_TAG_alter().
+ */
+function title_views_query_views_alter(QueryAlterableInterface $query) {
+  if ($query instanceof SelectQueryInterface) {
+    // Definitions of the replacement fields.
+    $definitions = array(
+      array(
+        'entity_type' => 'node',
+        'base_table' => 'node',
+        'entity_id_field' => 'nid',
+        'original_field_name' => 'title',
+        'replacement_field_name' => 'title_field',
+      ),
+      array(
+        'entity_type' => 'taxonomy_term',
+        'base_table' => 'taxonomy_term_data',
+        'entity_id_field' => 'tid',
+        'original_field_name' => 'name',
+        'replacement_field_name' => 'name_field',
+      ),
+      array(
+        'entity_type' => 'file',
+        'base_table' => 'file_managed',
+        'entity_id_field' => 'fid',
+        'original_field_name' => 'filename',
+        'replacement_field_name' => 'filename_field',
+      ),
+    );
+    $tables = $query->getTables();
+    $fields = $query->getFields();
+    foreach ($definitions as $definition) {
+      // Try to find the field which could be replaced.
+      $original_field = FALSE;
+      foreach ($fields as $field) {
+        if ($field['field'] == $definition['original_field_name']) {
+          foreach ($tables as $table) {
+            if ($table['alias'] == $field['table'] && $table['table'] == $definition['base_table']) {
+              $original_field = $field;
+              break 2;
+            }
+          }
+        }
+      }
+      if ($original_field) {
+        // Join the replacement field table.
+        $table_name = 'field_data_' . $definition['replacement_field_name'];
+        $query->leftJoin(
+          $table_name,
+          "title_views_{$table_name}",
+          "title_views_{$table_name}.entity_type = '{$definition['entity_type']}'
+            AND title_views_{$table_name}.entity_id = {$original_field['table']}.{$definition['entity_id_field']}
+            AND title_views_{$table_name}.language = '{$GLOBALS['language']->language}'"
+        );
+        $query->addField("title_views_{$table_name}", "{$definition['replacement_field_name']}_value", "title_views_{$definition['replacement_field_name']}_value");
+        // Store mapping for further use.
+        /* @see title_views_views_post_execute() */
+        $query->getMetaData('view')->title_views_map[$original_field['alias']] = "title_views_{$definition['replacement_field_name']}_value";
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_post_execute().
+ */
+function title_views_views_post_execute(&$view) {
+  if (!empty($view->result) && !empty($view->title_views_map)) {
+    foreach ($view->title_views_map as $original_field => $replacement_field) {
+      foreach ($view->result as $key => $row) {
+        // Replace the original field only we there is a value in the
+        // replacement field.
+        if (isset($row->{$replacement_field})) {
+          $view->result[$key]->{$original_field} = $row->{$replacement_field};
+        }
+        // Remove the replacement field, so the $view->result has only expected
+        // values.
+        unset($view->result[$key]->{$replacement_field});
+      }
+    }
+  }
+}

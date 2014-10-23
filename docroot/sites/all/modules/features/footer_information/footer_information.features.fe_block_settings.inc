@@ -21,6 +21,12 @@ function footer_information_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => 0,
+      ),
       'tweme' => array(
         'region' => '',
         'status' => 0,

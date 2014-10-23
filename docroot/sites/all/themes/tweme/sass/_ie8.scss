@@ -1,0 +1,267 @@
+/**
+* #Table of Contents
+**/
+
+/**
+    #Imports
+    #Uber Navigation
+    #Header
+    #Primary Navigation
+    #Main Content
+    #Footer
+    #Marquee
+
+    ### VIEWS ###
+    #Persons
+    #Supporters
+**/
+
+/**/
+
+html.lte-ie8 {
+  /**
+  * #Uber Navigation
+  **/
+
+  .uber-nav {
+    .content {
+      > .menu {
+        > li.last {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  /**/
+
+  /**
+  * #Header
+  **/
+
+  .donate {
+    margin-top: 2px;
+    margin-right: 6px;
+  }
+
+  .social-media {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+  }
+
+  .ico-facebook:before, .ico-vimeo:before, .ico-twitter:before, .ico-linkedin:before {
+    content: none;
+  }
+
+  .ico-facebook {
+    background: url(../images/prod/icon-facebook.png) center center no-repeat;
+  }
+  .ico-vimeo {
+    background: url(../images/prod/icon-vimeo.png) center center no-repeat;
+  }
+  .ico-twitter {
+    background: url(../images/prod/icon-twitter.png) center center no-repeat;
+  }
+  .ico-linkedin {
+    background: url(../images/prod/icon-linkedin.png) center center no-repeat;
+  }
+
+  /**/
+
+  /**
+  * #Primary Navigation
+  **/
+
+  .navbar {
+    .navbar-inner {
+      .sidr-toggle {
+        display: none;
+      }
+
+      .container {
+        display: block;
+        width: 940px;
+
+        .region-main-navigation {
+          .content {
+            > .menu {
+            // A Global Problem
+              > li:first-child {
+                width: 192px;
+
+                // Our Answer
+                & + li { width: 142px; }
+
+                // Our Network and Impact
+                & + li + li { width: 255px; }
+
+                // Get Involved
+                & + li + li + li { width: 151px; }
+
+                // Network Learning
+                & + li + li + li + li { width: 200px; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /**/
+
+  /**
+  * #Main Content
+  **/
+
+  #main {
+    .page-title, h3 {
+      font-weight: bold;
+    }
+
+    #content.span12 {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  // Social Icons and More Button
+  .full-list {
+    width: 190px;
+  }
+
+  .st_twitter_large {
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 7px;
+
+    .stButton {
+      background: url(../images/prod/icon-twitter-lg.png) 0 0 no-repeat !important;
+    }
+
+    .stLarge {
+      display: none !important;
+    }
+  }
+
+  .st_facebook_large {
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+
+    .stButton {
+      background: url(../images/prod/icon-facebook-lg.png) 0px 0px no-repeat !important;
+    }
+
+    .stLarge {
+      display: none !important;
+    }
+  }
+
+  // A Global Problem - info boxes
+  .top-section__subheader {
+    margin-bottom: 10px;
+  }
+
+  .top-section__description {
+    font-size: 15px;
+  }
+
+  /**/
+
+  /**
+  * #Footer
+  **/
+
+  #footer {
+    .footer-links {
+      .content {
+        > ul {
+          > li + li + li + li {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .footer-links-2 {
+      .content {
+        > ul {
+          > li:first-child {
+            display: none;
+
+            & + li, & + li + li {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    #edit-keys {
+      width: 162px;
+    }
+  }
+
+  /**/
+
+  /**
+  * #Marquee
+  **/
+
+  .marquee {
+    .marquee__pane {
+      &:hover {
+        .marquee__hover,
+        .marquee__info-wrapper {
+          @include opacity(1);
+        }
+      }
+    }
+  }
+
+  .marquee__hover {
+    width: 100%;
+  }
+
+  .marquee__info-wrapper {
+    @include opacity(0);
+  }
+
+  /**/
+
+
+  /**
+  * #Persons
+  **/
+
+  .view-persons {
+    .view-content {
+      .view-persons-one-col {
+        display: none;
+      }
+
+      .view-persons-two-col {
+        display: block;
+
+        .left-col, .right-col {
+          float: left;
+          width: 49%;
+        }
+
+        .left-col {
+          margin-right: 1%;
+          clear: left;
+        }
+
+        .right-col {
+          margin-left: 1%;
+        }
+      }
+    }
+  }
+} // html.lte-ie8
