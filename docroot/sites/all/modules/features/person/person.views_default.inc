@@ -63,6 +63,7 @@ function person_views_default_views() {
   /* Display: CEO only */
   $handler = $view->new_display('entityreference', 'CEO only', 'entityreference_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['field_language'] = 'und';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'entityreference_style';

@@ -22,7 +22,6 @@ features[field_base][] = field_organization
 features[field_base][] = field_person_bio
 features[field_base][] = field_person_image
 features[field_base][] = field_person_type
-features[field_base][] = title_field
 features[field_instance][] = node-person-field_country
 features[field_instance][] = node-person-field_job_title
 features[field_instance][] = node-person-field_organization
