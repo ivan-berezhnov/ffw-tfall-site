@@ -18,13 +18,15 @@
           </div>
         <?php endif; ?>
         
-        <?php if (isset($content['field_careers_page'])): ?>
+        <?php if (isset($content['field_teach_page'])): ?>
           <div class="no__website-info no__info-block">
-            <div class="slug"><?php print t('Careers'); ?></div>
-            <?php print render($content['field_careers_page']); ?><br />
+            <div class="slug"><?php print t('Careers'); ?></div>   
             <?php print render($content['field_teach_page']); ?>
-          </div>
-        <?php endif; ?>
+            <?php endif; ?>
+            <?php if (isset($content['field_careers_page'])): ?> 
+            <?php print render($content['field_careers_page']); ?><br />
+            <?php endif; ?>
+        </div>    
 
         <?php if (isset($content['field_ceo_profile'])): ?>
           <div class="no__info-block no__ceo">
