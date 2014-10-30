@@ -26,7 +26,7 @@
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="/get-involved/donate"><?php print t('DONATE'); ?></a>
+        <a href="<?php print t('@donate', array('@donate' => url('get-involved/donate'))); ?>"><?php print t('DONATE'); ?></a>
       </div>
       <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-twitter"></a>
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
@@ -118,7 +118,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-        <a href="network-learning" class="network-learning-main"><?php print t('Network Learning'); ?></a>
+        <a href="<?php print t('@network-learning', array('@network-learning' => url('network-learning'))); ?>" class="network-learning-main"><?php print t('Network Learning'); ?></a>
         <?php print render($page['net_learning_front']) ?>
       </div>
 		</div>
