@@ -237,7 +237,7 @@ function national_organization_field_default_field_bases() {
       ),
       'target_type' => 'node',
     ),
-    'translatable' => 0,
+    'translatable' => 1,
     'type' => 'entityreference',
   );
 
