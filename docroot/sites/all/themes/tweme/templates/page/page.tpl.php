@@ -33,7 +33,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="/get-involved/donate"><?php print t('DONATE'); ?></a>
+        <a href="<?php print t('@donate', array('@donate' => url('get-involved/donate'))); ?>"><?php print t('DONATE'); ?></a>
       </div>
       <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-twitter"></a>
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>

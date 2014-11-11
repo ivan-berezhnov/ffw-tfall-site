@@ -164,9 +164,17 @@ body {
 }
 
 .small-body {
-  @include font-size(16);
-  line-height: 20px;
   color: $grey2;
+  font-family: $FedraSerifOLD;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  margin-bottom: 20px;
+  @include font-size(16);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .large-body {

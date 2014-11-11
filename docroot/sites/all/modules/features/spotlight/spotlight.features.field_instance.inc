@@ -261,9 +261,9 @@ function spotlight_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'list',
+        'module' => 'i18n_field',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'i18n_list_default',
         'weight' => 1,
       ),
     ),

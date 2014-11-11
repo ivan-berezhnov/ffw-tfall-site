@@ -1,5 +1,5 @@
 /**
-*	#Table of Contents
+* #Table of Contents
 **/
 
 /**
@@ -10,7 +10,7 @@
 **/
 
 /**
-	#Colours
+  #Colours
 **/
 
 $grey1:   #91998c;
@@ -19,11 +19,12 @@ $grey3:   #3c3835;
 $grey4:   #999;
 $grey5:   #92998d;
 $grey6:   #ccc;
+$grey7:   #999999;
 $red:     #cf4753;
 $red2:    #db4b57;
 $orange1: #e69740;
 $orange2: #ffb151;
-$blue1:		#80b4e4;
+$blue1:   #80b4e4;
 $beige:   #dfd9c9;
 $nearwhite: #eee;
 $white:   #fff;
@@ -58,12 +59,21 @@ $base-font-size: 16;
 .black {
   color: $black;
 }
+
 .dovegrey {
   color: $grey1;
 }
 
 .almostblack {
   color: $grey2;
+}
+
+.navbargrey {
+  color: $grey3;
+}
+
+.lightgrey {
+  color: $grey7;
 }
 
 h1, h2, h3, h4 {
@@ -85,4 +95,89 @@ h1, h2, h3, h4 {
   .black {
     color: $black;
   }
+}
+
+/**
+* #WYSIWYG Fonts
+**/
+$NewsGothicOLD: "News Gothic Old";
+$NewsGothicFSLightRegular:      "NewsGothicFSLightRegular";
+$NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
+$NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
+$NewsGothicFSMediumBold:        "NewsGothicFSMediumBold";
+$NewsGothicFSMediumBoldItalic:  "NewsGothicFSMediumBoldItalic";
+$FedraSerifOLD: "Fedra Serif Old";
+
+.NewsGothic {
+  font-family: $NewsGothicOLD;
+  font-size: 18px;
+  color: $grey1;
+}
+
+.NGLightRegular {
+  font-family: $NewsGothicFSLightRegular;
+}
+
+.NGLightOblique {
+  font-family: $NewsGothicFSLightItalic;
+}
+
+.NGMedium {
+  font-family: $NewsGothicOLD;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.NGMediumOblique {
+  font-family: $NewsGothicOLD;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.NGDemiBold {
+  font-family: $NewsGothicOLD;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.NGDemiBoldOblique {
+  font-family: $NewsGothicFSBookBoldItalic;
+}
+
+.NGBold {
+  font-family: $NewsGothicFSMediumBold;
+}
+
+.NGBoldOblique {
+  font-family: $NewsGothicFSMediumBoldItalic;
+}
+
+.FedraSerif {
+  font-family: $FedraSerifOLD;
+  font-size: 18px;
+  color: $grey1;
+}
+
+.FSRegular {
+  font-family: $FedraSerifOLD;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.FSItalic {
+  font-family: $FedraSerifOLD;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.FSBold {
+  font-family: $FedraSerifOLD;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.FSBoldItalic {
+  font-family: $FedraSerifOLD;
+  font-weight: bold;
+  font-style: italic;
 }
