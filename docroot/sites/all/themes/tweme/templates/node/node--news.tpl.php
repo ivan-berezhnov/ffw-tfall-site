@@ -38,6 +38,12 @@
           </div>
           <?php endif; ?>
 
+          <div class="caption">
+            <?php if (isset($content['field_image_credit'])): ?>
+              <?php print render($content['field_image_credit']); ?>
+            <?php endif; ?>
+          </div>
+
   				<div class="news__content">
             <?php if (isset($content['field_embedded_video'])): ?>
               <div class="news__video-caption">
