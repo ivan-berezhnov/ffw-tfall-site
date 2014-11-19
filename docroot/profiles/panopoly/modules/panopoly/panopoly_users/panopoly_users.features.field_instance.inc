@@ -37,6 +37,7 @@ function panopoly_users_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => 0,
     ),
@@ -82,6 +83,7 @@ function panopoly_users_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'pictures',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',

@@ -10,13 +10,13 @@
 function pubteachforall_central_filter_default_formats() {
   $formats = array();
 
-  // Exported format: Filtered HTML.
+  // Exported format: Basic HTML Editor.
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
-    'name' => 'Filtered HTML',
+    'name' => 'Basic HTML Editor',
     'cache' => 1,
     'status' => 1,
-    'weight' => -4,
+    'weight' => -6,
     'filters' => array(
       'filter_url' => array(
         'weight' => 0,
@@ -47,13 +47,13 @@ function pubteachforall_central_filter_default_formats() {
     ),
   );
 
-  // Exported format: Full HTML.
+  // Exported format: Advanced HTML Editor.
   $formats['full_html'] = array(
     'format' => 'full_html',
-    'name' => 'Full HTML',
+    'name' => 'Advanced HTML Editor',
     'cache' => 1,
     'status' => 1,
-    'weight' => -7,
+    'weight' => -9,
     'filters' => array(
       'filter_url' => array(
         'weight' => 0,
@@ -81,7 +81,7 @@ function pubteachforall_central_filter_default_formats() {
     'name' => 'Plain text',
     'cache' => 1,
     'status' => 1,
-    'weight' => -6,
+    'weight' => -7,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,
@@ -103,10 +103,10 @@ function pubteachforall_central_filter_default_formats() {
     ),
   );
 
-  // Exported format: WYSIWYG CKEditor.
+  // Exported format: Primary Text Editor.
   $formats['wysiwyg_ckeditor'] = array(
     'format' => 'wysiwyg_ckeditor',
-    'name' => 'WYSIWYG CKEditor',
+    'name' => 'Primary Text Editor',
     'cache' => 1,
     'status' => 1,
     'weight' => -10,

@@ -23,7 +23,7 @@ function pubteachforall_press_path_breadcrumbs_settings_info() {
       0 => '<none>',
     ),
     'home' => 1,
-    'translatable' => 0,
+    'translatable' => 1,
     'arguments' => array(),
     'access' => array(),
   );
@@ -49,7 +49,7 @@ function pubteachforall_press_path_breadcrumbs_settings_info() {
     'arguments' => array(),
     'access' => array(),
   );
-  $path_breadcrumb->weight = -100;
+  $path_breadcrumb->weight = -93;
   $export['press_latest'] = $path_breadcrumb;
 
   return $export;

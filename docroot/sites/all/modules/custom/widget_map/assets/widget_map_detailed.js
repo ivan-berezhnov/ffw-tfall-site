@@ -19,7 +19,10 @@
             var l = L.layerGroup().addTo(map)
 
             var featureLayer = L.mapbox.featureLayer(null).addTo(map);
-            featureLayer.loadURL('/widget_map_detailedlist.json');
+            
+            // Pass the current language to build the json output.
+            var lang = Drupal.settings.widget_map.language;
+            featureLayer.loadURL('/widget_map_detailedlist.json' + '/' + lang);
 
 			map.doubleClickZoom.disable();
 			map.scrollWheelZoom.disable();

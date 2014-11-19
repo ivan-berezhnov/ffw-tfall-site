@@ -1,72 +1,5 @@
 /* Imports */
 /**
-*	#Table of Contents
-**/
-/**
-
-#Colours
-#WYSIWYG Classes
-
-**/
-/**
-	#Colours
-**/
-/**
-* #WYSIWYG  Classes
-**/
-.beige {
-  color: #dfd9c9;
-}
-
-.orange {
-  color: #e69740;
-}
-
-.orange2 {
-  color: #ffb151;
-}
-
-.red {
-  color: #cf4753;
-}
-
-.black {
-  color: black;
-}
-
-.dovegrey {
-  color: #91998c;
-}
-
-.almostblack {
-  color: #4d4d4d;
-}
-
-.navbargrey {
-  color: #3c3835;
-}
-
-.lightgrey {
-  color: #999999;
-}
-
-h1 .beige, h2 .beige, h3 .beige, h4 .beige {
-  color: #dfd9c9;
-}
-h1 .orange, h2 .orange, h3 .orange, h4 .orange {
-  color: #e69740;
-}
-h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
-  color: #ffb151;
-}
-h1 .red, h2 .red, h3 .red, h4 .red {
-  color: #cf4753;
-}
-h1 .black, h2 .black, h3 .black, h4 .black {
-  color: black;
-}
-
-/**
 * #Icomoon
 **/
 @font-face {
@@ -132,7 +65,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 
 /**/
 /**
-* #Font  Variables
+* #Font Variables
 **/
 /**/
 /**
@@ -147,7 +80,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 }
 
 @font-face {
-  font-family: "News Gothic Demi-Bold";
+  font-family: "News Gothic";
   src: url("../fonts/NewsGothic-DemiBold-webfont.eot");
   src: url("../fonts/NewsGothic-DemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-DemiBold-webfont.svg#NewsGothicFSBookBold") format("svg"), url("../fonts/NewsGothic-DemiBold-webfont.woff") format("woff"), url("../fonts/NewsGothic-DemiBold-webfont.ttf") format("truetype");
   font-weight: bold;
@@ -155,7 +88,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 }
 
 @font-face {
-  font-family: "News Gothic DB Oblique";
+  font-family: "News Gothic";
   src: url("../fonts/NewsGothic-MediumObl-webfont.eot");
   src: url("../fonts/NewsGothic-MediumObl-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/NewsGothic-MediumObl-webfont.woff") format("woff"), url("../fonts/NewsGothic-MediumObl-webfont.ttf") format("truetype"), url("../fonts/NewsGothic-MediumObl-webfont.svg#NewsGothicFSMediumItalic") format("svg");
   font-weight: normal;
@@ -252,94 +185,162 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 
 @font-face {
   font-family: "Fedra Serif Old";
-  src: url("../fonts/fserstda-bold.eot");
-  src: url("../fonts/fserstda-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fserstda-bold.woff") format("woff"), url("../fonts/fserstda-bold.ttf") format("truetype"), url("../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular") format("svg");
+  src: url("../fonts/FSerStdA-Book.eot");
+  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fedra Serif Old";
-  src: url("../fonts/fserstda-bold.eot");
-  src: url("../fonts/fserstda-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fserstda-bold.woff") format("woff"), url("../fonts/fserstda-bold.ttf") format("truetype"), url("../fonts/fserstda-bold.svg#NewsGothicFSMediumRegular") format("svg");
+  src: url("../fonts/FSerStdA-Bold.eot");
+  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
-/**/
 /**
-* #Font Classes
+* #Table of Contents
 **/
-.NewsGothicFSLightRegular {
+/**
+
+#Colours
+#WYSIWYG Classes
+
+**/
+/**
+  #Colours
+**/
+/**
+* #WYSIWYG Classes
+**/
+.beige {
+  color: #dfd9c9;
+}
+
+.orange {
+  color: #e69740;
+}
+
+.orange2 {
+  color: #ffb151;
+}
+
+.red {
+  color: #cf4753;
+}
+
+.black {
+  color: black;
+}
+
+.dovegrey {
+  color: #91998c;
+}
+
+.almostblack {
+  color: #4d4d4d;
+}
+
+.navbargrey {
+  color: #3c3835;
+}
+
+.lightgrey {
+  color: #999999;
+}
+
+h1 .beige, h2 .beige, h3 .beige, h4 .beige {
+  color: #dfd9c9;
+}
+h1 .orange, h2 .orange, h3 .orange, h4 .orange {
+  color: #e69740;
+}
+h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
+  color: #ffb151;
+}
+h1 .red, h2 .red, h3 .red, h4 .red {
+  color: #cf4753;
+}
+h1 .black, h2 .black, h3 .black, h4 .black {
+  color: black;
+}
+
+/**
+* #WYSIWYG Fonts
+**/
+.NewsGothic {
+  font-family: "News Gothic Old";
+  font-size: 18px;
+  color: #91998c;
+}
+
+.NGLightRegular {
   font-family: "NewsGothicFSLightRegular";
 }
 
-.NewsGothicRegularDB {
-  font-family: "News Gothic Demi-Bold";
-}
-
-.NewsGothicRegularDBO {
-  font-family: "News Gothic DB Oblique";
-}
-
-.NewsGothicFSLightItalic {
+.NGLightOblique {
   font-family: "NewsGothicFSLightItalic";
 }
 
-.NewsGothicFSBookBoldItalic {
+.NGMedium {
+  font-family: "News Gothic Old";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.NGMediumOblique {
+  font-family: "News Gothic Old";
+  font-weight: normal;
+  font-style: italic;
+}
+
+.NGDemiBold {
+  font-family: "News Gothic Old";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.NGDemiBoldOblique {
   font-family: "NewsGothicFSBookBoldItalic";
 }
 
-.NewsGothicFSCapsLightRegular {
-  font-family: "NewsGothicFSCapsLightRegular";
-}
-
-.NewsGothicFSCapsBookRegular {
-  font-family: "NewsGothicFSCapsBookRegular";
-}
-
-.NewsGothicFSBookRegular {
-  font-family: "NewsGothicFSBookRegular";
-}
-
-.NewsGothicFSBookItalic {
-  font-family: "NewsGothicFSBookItalic";
-}
-
-.NewsGothicFSMediumBold {
+.NGBold {
   font-family: "NewsGothicFSMediumBold";
 }
 
-.NewsGothicFSMediumBoldItalic {
+.NGBoldOblique {
   font-family: "NewsGothicFSMediumBoldItalic";
 }
 
-.FedraSerifScreenRegular3 {
-  font-family: "Fedra Serif Screen Regular 3";
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+.FedraSerif {
+  font-family: "Fedra Serif Old";
+  font-size: 18px;
+  color: #91998c;
 }
 
-.FedraSerifScreenItalic3 {
-  font-family: "Fedra Serif Screen Italic 3";
-  font-style: normal;
+.FSRegular {
+  font-family: "Fedra Serif Old";
   font-weight: normal;
-  font-stretch: normal;
+  font-style: normal;
 }
 
-.FedraSerifScreenBold3 {
-  font-family: "Fedra Serif Screen Bold 3";
-  font-style: normal;
+.FSItalic {
+  font-family: "Fedra Serif Old";
   font-weight: normal;
-  font-stretch: normal;
+  font-style: italic;
 }
 
-.FedraSerifScreenBoldItalic3 {
-  font-family: "Fedra Serif Screen Bold IZl5ds";
+.FSBold {
+  font-family: "Fedra Serif Old";
+  font-weight: bold;
   font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+}
+
+.FSBoldItalic {
+  font-family: "Fedra Serif Old";
+  font-weight: bold;
+  font-style: italic;
 }
 
 /**
@@ -480,6 +481,22 @@ a:hover {
   text-decoration: none;
 }
 
+caption, .caption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #4d4d4d;
+  font-family: "News Gothic Old";
+  line-height: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: normal;
+  margin: 20px 0px 20px 0px;
+}
+caption a, .caption a {
+  color: #cf4753;
+  text-decoration: none;
+}
+
 body {
   color: #4d4d4d;
   font-size: 16px;
@@ -506,10 +523,18 @@ body {
 }
 
 .small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-global-organization .our-model-section .spotlights p {
+  color: #4d4d4d;
+  font-family: "Fedra Serif Old";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  margin-bottom: 20px;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 20px;
-  color: #4d4d4d;
+}
+.small-body:last-child, .node-type-page-our-model #main .our-model-section .spotlights .span4 a:last-child, .node-type-page-global-organization .our-model-section .spotlights p:last-child {
+  margin-bottom: 0;
 }
 
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
@@ -887,7 +912,9 @@ h2.page-title {
   background-color: #91998c;
   color: white;
   line-height: 1.3em;
-  padding: 2px 3px;
+  padding: 0px 3px;
+  margin: 0 5px 0 0;
+  float: left;
   font-size: 17px;
   font-size: 1.0625rem;
 }
@@ -899,6 +926,42 @@ h2.page-title {
 }
 .social-media[class*=" icon-"] {
   vertical-align: middle;
+}
+
+.language-switcher-locale-url {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.language-switcher-locale-url li {
+  border-right: 1px solid #92998d;
+  height: 8px;
+  line-height: .4em;
+  font-weight: bold;
+  margin: 0 6px 0 0;
+  padding: 0 5px 0 0;
+  position: relative;
+  display: inline;
+  list-style: none;
+  float: left;
+}
+.language-switcher-locale-url li:last-child {
+  border-right: none;
+}
+.language-switcher-locale-url a {
+  font-weight: bold;
+  color: black;
+  letter-spacing: .1em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+.language-switcher-locale-url a.active {
+  color: #e69740;
+}
+.language-switcher-locale-url a:hover {
+  color: #e69740;
 }
 
 /**/
@@ -2316,30 +2379,30 @@ img {
 .network-learning-front-block a.network-learning-main:hover {
   color: #cf4753;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block {
+.network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
   margin-bottom: 15px;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block {
+  .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     margin-top: 0;
   }
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-top: 30px;
   }
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a {
   display: block;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
   width: 100%;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-tag {
   font-size: 12px;
   font-size: 0.75rem;
   color: #e69740;
@@ -2348,7 +2411,7 @@ img {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a {
   font-size: 22px;
   font-size: 1.375rem;
   font-family: "Fedra Serif Old";
@@ -2358,20 +2421,20 @@ img {
   color: #4d4d4d;
   line-height: 24px;
 }
-.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover {
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 767px) {
-  .network-learning-front-block .view-display-id-network_learning_front_block {
+  .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     text-align: center;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block:first-child {
+  .network-learning-front-block .view-display-id-network_learning_front_block:first-child, .network-learning-front-block .view-display-id-network_learning_front_block_spanish:first-child {
     margin-top: 0;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-bottom: 10px;
   }
-  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img {
+  .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
     max-width: 370px;
   }
 }
@@ -3365,7 +3428,7 @@ div#panels-ipe-control-container {
   color: #cf4753;
 }
 .panel-panel p {
-  font-family: FedraSerifOLD;
+  font-family: "Fedra Serif Old";
   font-size: 1.2rem;
   line-height: 1.4rem;
   color: #91998c;
@@ -3852,14 +3915,6 @@ div#panels-ipe-control-container {
 }
 .constant-contact .btn-primary:active {
   background-color: #cf4753;
-}
-
-/**/
-/**
-* #Press - /press
-**/
-.page-press .full-list {
-  margin-top: 30px;
 }
 
 /**/

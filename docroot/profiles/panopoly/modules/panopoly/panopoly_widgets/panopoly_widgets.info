@@ -2,6 +2,7 @@ name = Panopoly Widgets
 description = Creates generic widget functionality to customize wide and far.
 core = 7.x
 package = Panopoly
+version = 7.x-1.6
 project = panopoly_widgets
 dependencies[] = ctools
 dependencies[] = defaultconfig
@@ -17,6 +18,7 @@ dependencies[] = media_youtube
 dependencies[] = menu_block
 dependencies[] = number
 dependencies[] = page_manager
+dependencies[] = panopoly_widgets
 dependencies[] = simple_gmap
 dependencies[] = tablefield
 dependencies[] = text
@@ -24,6 +26,8 @@ dependencies[] = views
 dependencies[] = views_autocomplete_filters
 dependencies[] = views_content
 stylesheets[all][] = panopoly-widgets.css
+datestamp = 1400718538
+explanation = Field type(s) in use - see <a href="/en/admin/reports/fields">Field list</a>
 features[ctools][] = file_entity:file_default_displays:1
 features[ctools][] = views:views_default:3.0
 features[defaultconfig][] = user_default_permissions:add media from remote sources
@@ -109,10 +113,4 @@ features[file_display][] = video__preview__media_youtube_image
 features[file_display][] = video__teaser__media_youtube_image
 features[file_display][] = video__teaser__media_youtube_video
 features[views_view][] = panopoly_widgets_general_content
-
-; Information added by Drupal.org packaging script on 2014-05-22
-version = "7.x-1.6"
-core = "7.x"
-project = "panopoly_widgets"
-datestamp = "1400718538"
-
+required = 1

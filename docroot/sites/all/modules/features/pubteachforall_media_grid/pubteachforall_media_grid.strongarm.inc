@@ -13,6 +13,55 @@ function pubteachforall_media_grid_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_page_story_grid';
+  $strongarm->value = 0;
+  $export['comment_anonymous_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_page_story_grid';
+  $strongarm->value = 1;
+  $export['comment_default_mode_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_page_story_grid';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_page_story_grid';
+  $strongarm->value = 1;
+  $export['comment_form_location_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_page_story_grid';
+  $strongarm->value = '1';
+  $export['comment_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_page_story_grid';
+  $strongarm->value = '1';
+  $export['comment_preview_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_page_story_grid';
+  $strongarm->value = 1;
+  $export['comment_subject_field_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__page_story_grid';
   $strongarm->value = array(
     'view_modes' => array(
@@ -61,6 +110,13 @@ function pubteachforall_media_grid_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_page_story_grid';
+  $strongarm->value = '4';
+  $export['language_content_type_page_story_grid'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_page_story_grid';
   $strongarm->value = array(
     0 => 'menu-primary-navigation',
@@ -72,7 +128,7 @@ function pubteachforall_media_grid_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_page_story_grid';
-  $strongarm->value = 'menu-primary-navigation:562';
+  $strongarm->value = 'menu-primary-navigation:0';
   $export['menu_parent_page_story_grid'] = $strongarm;
 
   $strongarm = new stdClass();

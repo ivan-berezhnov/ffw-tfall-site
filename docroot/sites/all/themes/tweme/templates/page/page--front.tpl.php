@@ -26,18 +26,19 @@
     </div>
     <div class="pull-right">
       <div class="donate pull-left">
-        <a href="/get-involved/donate"><?php print t('DONATE'); ?></a>
+        <a href="<?php print t('@donate', array('@donate' => url('get-involved/donate'))); ?>"><?php print t('DONATE'); ?></a>
       </div>
       <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-twitter"></a>
       <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
       <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
       <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
 	  <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
+	  <?php $block = module_invoke('locale', 'block_view', 'language'); print $block['content']; ?>
     </div>
   </div>
   <div class="row-fluid site-name">
     <div class="span12">
-      <a href="/"><img src="/sites/all/themes/tweme/images/prod/tfa-logo@x2.png" srcset="/sites/all/themes/tweme/images/prod/tfa-logo.png 1x, /sites/all/themes/tweme/images/prod/tfa-logo.png 1.5x, /sites/all/themes/tweme/images/prod/tfa-logo@x2.png 2x"></a>
+      <a href="<?php print $front_page; ?>"><img src="/sites/all/themes/tweme/images/prod/tfa-logo@x2.png" srcset="/sites/all/themes/tweme/images/prod/tfa-logo.png 1x, /sites/all/themes/tweme/images/prod/tfa-logo.png 1.5x, /sites/all/themes/tweme/images/prod/tfa-logo@x2.png 2x"></a><!<?php //print $front_page; ?>!>
     </div>
   </div>
 </div>
@@ -108,7 +109,7 @@
   </div>
 </div>
 <div id="mobileworldmap" class="worldmap__national-orgs">
-  <a class="btn__red" href="/our-network-and-impact/national-organizations" title="National Organizations">See All National Organizations</a>
+  <a class="btn__red" href="/our-network-and-impact/national-organizations" title="National Organizations"><?php print t('See All National Organizations'); ?></a>
   <!--<img src="<?php print drupal_get_path('theme', 'tweme') . '/images/mobile-homepage-map.jpg' ?>" alt="World Map of National Organizations" />-->
 </div>
 
@@ -117,8 +118,8 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-        <a href="network-learning" class="network-learning-main"><?php print t('Network Learning'); ?></a>
-        <?php print $network_learning_block; //front block ?>
+        <a href="<?php print t('@network-learning', array('@network-learning' => url('network-learning'))); ?>" class="network-learning-main"><?php print t('Network Learning'); ?></a>
+        <?php print render($page['net_learning_front']) ?>
       </div>
 		</div>
 	</div>
@@ -130,7 +131,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span9">
-        <h3>TWITTER</h3>
+        <h3><?php print t('TWITTER'); ?></h3>
         <?php print render($page['twitter_front']); ?>
       </div>
 			<div class="span3 facebook">
@@ -165,13 +166,14 @@
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
 		<a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
+
         <div class="footer__search">
-          <p>Search the Site</p>
+          <p><?php print t('Search the Site'); ?></p>
           <?php print $navbar_search ?>
         </div>
-        <div class="footer__contact-us"><a href="/contact-us">Contact Us</a></div>
+        <div class="footer__contact-us"><a href="/contact-us"><?php print t('Contact Us'); ?></a></div>
         <div class="footer__contact-us">
-          <p>Subscribe to our Newsletter</p>
+          <p><?php print t('Subscribe to our Newsletter'); ?></p>
           <div class="constant-contact">
             <?php
             //including the file with the constant contact submit form block.
@@ -183,7 +185,7 @@
           <p><?php print t('Copyright &#169; 2014<br />  TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
         <ul>
-          <li><a class="privacy-policy" href="/privacy-policy">Privacy Policy</a></li>
+          <li><a class="privacy-policy" href="/privacy-policy"><?php print t('Privacy Policy'); ?></a></li>
         </ul>
       </div>
       <div class="span3 footer-links widget_supporters">

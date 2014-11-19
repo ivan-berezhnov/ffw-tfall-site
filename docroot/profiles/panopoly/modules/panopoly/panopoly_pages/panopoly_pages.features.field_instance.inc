@@ -33,7 +33,19 @@ function panopoly_pages_field_default_field_instances() {
         'type' => 'text_summary_or_trimmed',
         'weight' => 1,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'grid' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -64,6 +76,7 @@ function panopoly_pages_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'display_summary' => 0,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -99,6 +112,18 @@ function panopoly_pages_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'settings' => array(),
@@ -117,6 +142,7 @@ function panopoly_pages_field_default_field_instances() {
     'label' => 'Categories',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -154,7 +180,19 @@ function panopoly_pages_field_default_field_instances() {
         'type' => 'image',
         'weight' => 0,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'grid' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -188,6 +226,7 @@ function panopoly_pages_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 1,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'pages',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -246,6 +285,18 @@ function panopoly_pages_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'search_result' => array(
         'label' => 'above',
         'settings' => array(),
@@ -264,6 +315,7 @@ function panopoly_pages_field_default_field_instances() {
     'label' => 'Feature content',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(

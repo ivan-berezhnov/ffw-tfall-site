@@ -16,13 +16,18 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'tfall_tweets-block',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'live-video-stream',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',
@@ -32,20 +37,25 @@ function teach_for_all_tweets_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['views-tfall_tweets-block_1'] = array(
     'cache' => -1,
     'custom' => 0,
     'delta' => 'tfall_tweets-block_1',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',
@@ -62,13 +72,18 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'tfall_tweets-block_2',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',
@@ -85,13 +100,18 @@ function teach_for_all_tweets_default_fe_block_settings() {
     'cache' => -1,
     'custom' => 0,
     'delta' => 'tfall_tweets-block_3',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
     'themes' => array(
       'seven' => array(
+        'region' => '',
+        'status' => 0,
         'theme' => 'seven',
+        'weight' => 0,
       ),
       'tweme' => array(
         'region' => '',

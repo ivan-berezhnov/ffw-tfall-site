@@ -5,3 +5,4 @@ docroot/sites/*/private
 
 *.komodoproject
 /.komodotools/
+settings.local.php

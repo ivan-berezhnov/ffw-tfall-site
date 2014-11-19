@@ -9,17 +9,16 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "mixins";
-@import "variables";
 
 ////////////////////////
 // Import original file (should one day be refactored into partials)
 ////////////////////////
 @import 'icomoon';
 @import 'styleguide/font-face';
+@import 'variables';
 @import 'teachforall';
 @import 'marquee';
 @import 'constant-contact';
-@import 'page/press';
 @import 'off-screen-nav';
 
 ////////////////////////

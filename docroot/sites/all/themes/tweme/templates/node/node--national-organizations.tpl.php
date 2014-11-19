@@ -51,7 +51,7 @@
       <div class="row-fluid">
 
   			<div class="span12">
-  				<h3 class="title-small">UNIFYING PRINCIPLES</h3>
+  				<h3 class="title-small"><?php print t('UNIFYING PRINCIPLES'); ?></h3>
   			</div>
 
         <div class="row-fluid">

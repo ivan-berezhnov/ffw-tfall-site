@@ -36,6 +36,6 @@
    <?php print $fields['field_organization']->content; ?></div>
    <div class="person-bio"><?php print $fields['field_person_bio']->content; ?></div>
    <div class="person-bio-truncated"><?php print $fields['field_person_bio_1']->content; ?></div>
-   <span class="read-more-btn">READ MORE</span>
-   <span class="collapse-btn">COLLAPSE</span>
+   <span class="read-more-btn"><?php print t('READ MORE'); ?></span>
+   <span class="collapse-btn"><?php print t('COLLAPSE'); ?></span>
 </div>

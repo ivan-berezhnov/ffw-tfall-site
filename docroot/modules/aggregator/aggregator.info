@@ -7,5 +7,8 @@ files[] = aggregator.test
 configure = admin/config/services/aggregator/settings
 stylesheets[all][] = aggregator.css
 
-; Information added by Drupal.org packaging script on 2014-05-08
+; Information added by Drupal.org packaging script on 2014-11-07
+version = "7.33"
+project = "drupal"
+datestamp = "1415375131"
 

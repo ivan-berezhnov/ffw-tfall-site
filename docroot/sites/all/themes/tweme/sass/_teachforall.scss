@@ -126,6 +126,21 @@ a {
   }
 }
 
+caption, .caption {
+  @include font-size(14);
+  color: $grey2;
+  font-family: $NewsGothicOLD;
+  line-height: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: normal;
+  margin: 20px 0px 20px 0px;
+  a {
+    color: $red;
+    text-decoration: none;
+    }
+}
+
 body {
   color: $grey2;
   @include font-size(16);
@@ -149,9 +164,17 @@ body {
 }
 
 .small-body {
-  @include font-size(16);
-  line-height: 20px;
   color: $grey2;
+  font-family: $FedraSerifOLD;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  margin-bottom: 20px;
+  @include font-size(16);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .large-body {
@@ -413,7 +436,6 @@ h2 {
     @include font-size(20);
   }
 }
-
 /**/
 
 /**
@@ -526,7 +548,9 @@ h2 {
   background-color: $grey1;
   color: $white;
   line-height: 1.3em;
-  padding: 2px 3px;
+  padding: 0px 3px;
+  margin: 0 5px 0 0;
+  float: left;
   @include font-size(17);
   &:hover {
     background-color: $red;
@@ -539,6 +563,40 @@ h2 {
   }
 }
 
+.language-switcher-locale-url {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  li {
+    border-right: 1px solid $grey5;
+    height: 8px;
+    line-height: .4em;
+    font-weight: bold;
+    margin: 0 6px 0 0;
+    padding: 0 5px 0 0;
+    position: relative;
+    display: inline;
+    list-style: none;
+    float: left;
+    &:last-child {
+      border-right: none;
+    }
+  }
+    a {
+    font-weight: bold;
+    color: $black;
+    letter-spacing: .1em;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    @include font-size(11);
+    &.active {
+            color: $orange1;
+          }
+    &:hover {
+      color: $orange1;
+    }
+  }
+}
 /**/
 
 /**
@@ -2136,7 +2194,7 @@ img {max-width: 100%;}
     }
   }
 
-  .view-display-id-network_learning_front_block {
+  .view-display-id-network_learning_front_block, .view-display-id-network_learning_front_block_spanish{
     margin-bottom: 15px;
     display: inline-block;
 
@@ -3328,7 +3386,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     }
   }
   p {
-    font-family: FedraSerifOLD;
+    font-family: $FedraSerifOLD;
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: $grey1;
