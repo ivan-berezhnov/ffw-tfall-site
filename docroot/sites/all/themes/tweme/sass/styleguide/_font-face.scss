@@ -4,7 +4,7 @@
 
 $NewsGothicRegular:             "News Gothic";
 $NewsGothicRegularDB:           "News Gothic Demi-Bold";
-$NewsGothicRegularDBO:          "News Gothic DB Oblique";
+$NewsGothicRegularDBO:       "News Gothic DB Oblique";
 $NewsGothicFSLightRegular:      "NewsGothicFSLightRegular";
 $NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
 $NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
@@ -65,7 +65,7 @@ $FedraSerifOLD: "Fedra Serif Old";
        url('../fonts/NewsGothic-MediumObl-webfont.ttf') format('truetype'),
        url('../fonts/NewsGothic-MediumObl-webfont.svg#NewsGothicFSMediumItalic') format('svg');
   font-weight: normal;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -216,9 +216,3 @@ $FedraSerifOLD: "Fedra Serif Old";
   font-weight: bold;
   font-style: normal;
 }
-}
-.NewsGothicRegularDB {
-  font-family: $NewsGothicRegularDB;
-}
-.NewsGothicRegularDBO {
-  font-family: $NewsGothicRegularDBO;

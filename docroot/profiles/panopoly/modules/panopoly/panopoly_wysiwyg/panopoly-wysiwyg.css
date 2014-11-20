@@ -117,3 +117,9 @@ div.ctools-modal-content .format-toggle,
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.cke_combo_text {
+
+width: auto !important;
+
+}
