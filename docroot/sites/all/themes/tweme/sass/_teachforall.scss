@@ -3441,6 +3441,18 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
   }
 }
 
-
+  .large-image {
+      img {
+        height: auto;
+        margin-bottom: 20px;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width:640px) {
+          margin-bottom: 10px;
+        }
+      }
+  }
 
 
