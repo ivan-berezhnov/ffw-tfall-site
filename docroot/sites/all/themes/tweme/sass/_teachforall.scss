@@ -65,25 +65,19 @@
 
 h1, .h1 {
   color: $grey2;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include FedraRegular;
   line-height: 48px;
   margin-bottom: 5px;
-  @include font-size(42);
+  @include font-size(43);
   @media screen and (max-width: 767px) {
-    @include font-size(25);
-    line-height: 29px;
+    @include font-size(26);
+    line-height: 30px;
   }
 }
 
 h2, .h2 {
-  @include font-size(25);
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include font-size(26);
+  @include FedraRegular;
   line-height: 29px;
   @media screen and (max-width: 767px) {
     @include font-size(18);
@@ -92,16 +86,13 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 22px;
+  @include FedraRegular;
+  line-height: 23px;
   margin: 0 0 5px 0;
-  @include font-size(18);
+  @include font-size(19);
   @media screen and (max-width: 767px) {
-    line-height: 20px;
-    @include font-size(16);
+    line-height: 21px;
+    @include font-size(17);
   }
 }
 
@@ -150,12 +141,9 @@ body {
 
 .body {
   color: $grey1;
-  @include font-size(17);
-  line-height: 25px;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include font-size(18);
+  line-height: 26px;
+  @include FedraRegular;
 }
 
 .section {
@@ -165,13 +153,10 @@ body {
 
 .small-body {
   color: $grey2;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 20px;
+  @include FedraRegular;
+  line-height: 21px;
   margin-bottom: 20px;
-  @include font-size(16);
+  @include font-size(17);
   &:last-child {
     margin-bottom: 0;
   }
@@ -179,13 +164,10 @@ body {
 
 .large-body {
   color: $grey1;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 25px;
+  @include FedraRegular;
+  line-height: 26px;
   margin-bottom: 20px;
-  @include font-size(17);
+  @include font-size(18);
   &:last-child {
     margin-bottom: 0;
   }
@@ -213,10 +195,10 @@ body {
 }
 
 .footer-link-beige {
-  @include font-size(11);
+  @include font-size(12);
   color: $beige;
-  font-family: $FedraSerifOLD; font-weight: bold;
-  letter-spacing: .2em;
+  @include FedraBold;
+  letter-spacing: .17em;
   text-transform: uppercase;
   &:hover {
     color: $white;
@@ -363,17 +345,14 @@ html {
 
 .btn__red {
   @include single-text-shadow(none);
-  @include font-size(11);
+  @include font-size(12);
   @include border-radius(20px);
   display: inline-block;
   background: $red;
   color: $white;
-  line-height: 26px;
+  line-height: 27px;
   padding: 4px 44px;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include FedraRegular;
   letter-spacing: 2px;
   text-transform: uppercase;
 
@@ -474,26 +453,20 @@ h2 {
 
 .slug-medium {
   color: $orange1;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: .2em;
+  @include FedraRegular;
+  letter-spacing: .17em;
   line-height: 1.5em;
   text-transform: uppercase;
-  @include font-size(16);
+  @include font-size(17);
 }
 
 .slug-large {
   color: $orange1;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include FedraRegular;
   letter-spacing: 4px;
   line-height: 1.2em;
   text-transform: uppercase;
-  @include font-size(24);
+  @include font-size(25);
 }
 
 .stats {
@@ -523,16 +496,12 @@ h2 {
 
 .donate {
   background-color: $orange1;
-  font-family: $FedraSerifOLD; font-weight: bold;
-  font-style: normal;
-  //font-weight: normal;
-  font-stretch: normal;
+  @include FedraBold;
   min-height: 20px;
-  letter-spacing: .2em;
+  letter-spacing: .17em;
   margin-right: 4px;
-  margin-top: 1px;
-  padding: 0 5px;
-  @include font-size(11);
+  padding: 1px 5px;
+  @include font-size(12);
 
   a {
     color: $white;
@@ -663,13 +632,10 @@ h2 {
       }
 
       .region-main-navigation {
-        font-family: $FedraSerifOLD; font-weight: bold;
-        font-style: normal;
-        //font-weight: normal;
-        font-stretch: normal;
-        letter-spacing: .2em;
+        @include FedraBold;
+        letter-spacing: .17em;
         text-transform: uppercase;
-        @include font-size(11);
+        @include font-size(12);
 
         @media screen and (min-width: 768px) and (max-width: 979px) {
           @include font-size(11);
@@ -1192,15 +1158,11 @@ h2 {
 
 .footer__contact-us {
   color: #DFD9C9;
-  font-family: $FedraSerifOLD;
-  font-weight: bold;
-  font-style: normal;
-  //font-weight: normal;
-  font-stretch: normal;
+  @include FedraBold;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
-  @include font-size(11);
+  @include font-size(12);
   form {
     label {
       @include font-size(11);
@@ -1327,13 +1289,10 @@ h2 {
 
   p, a {
     color: $beige;
-    font-family: $FedraSerifOLD; font-weight: bold;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
+    @include FedraRegular;
     text-transform: uppercase;
-    letter-spacing: .2em;
-    @include font-size(11);
+    letter-spacing: .17em;
+    @include font-size(12);
   }
 
   a {
@@ -1398,10 +1357,7 @@ img {max-width: 100%;}
 
   .title {
     color: $orange2;
-    font-family: $FedraSerifOLD;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
+    @include FedraRegular;
     letter-spacing: 4px;
     display: block;
     margin-bottom: 6px;
@@ -1588,7 +1544,7 @@ img {max-width: 100%;}
 }
 
 .leaflet-popup-content-wrapper {
-  @include single-box-shadow(#888, 3px, 3px, 14px);
+  @include single-box-shadow(3px, 3px, 14px, #888, false);
 
   .leaflet-popup-content {
     margin: 9px;
@@ -2172,11 +2128,8 @@ img {max-width: 100%;}
   padding-top: 30px;
 
   a.network-learning-main {
-    @include font-size(16);
-    font-family: $FedraSerifOLD;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
+    @include font-size(17);
+    @include FedraRegular;
     display: block;
     margin-top: 0;
     margin-bottom: 15px;
@@ -2229,11 +2182,8 @@ img {max-width: 100%;}
 
       .nl-front-title {
         a {
-          @include font-size(22);
-          font-family: $FedraSerifOLD;
-          font-style: normal;
-          font-weight: normal;
-          font-stretch: normal;
+          @include font-size(23);
+          @include FedraRegular;
           color: $grey2;
           line-height: 24px;
 
@@ -2485,13 +2435,10 @@ img {max-width: 100%;}
 }
 
 .news__content {
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 25px;
+  @include FedraRegular;
+  line-height: 26px;
   margin-bottom: 10px;
-  @include font-size(17);
+  @include font-size(18);
 }
 
 .news__node-links {
@@ -2646,12 +2593,9 @@ img {max-width: 100%;}
 
 .group_row_byline {
   color: $grey4;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include FedraRegular;
   line-height: 1.4em;
-  @include font-size(18);
+  @include font-size(19);
 }
 
 .group_info_row {
@@ -3127,10 +3071,7 @@ img {max-width: 100%;}
 
 .flexslider-preview {
   color: $grey1;
-  font-family: $FedraSerifOLD;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
+  @include FedraRegular;
 }
 
 .flexslider-link {
@@ -3386,7 +3327,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     }
   }
   p {
-    font-family: $FedraSerifOLD;
+    @include FedraRegular;
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: $grey1;
@@ -3409,7 +3350,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     }
   }
   .btn__red {
-    color: #fff;  
+    color: #fff;
     &:hover {
       color: #fff;
       opacity: 0.8;

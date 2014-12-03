@@ -1,4 +1,4 @@
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.2
  */
@@ -8,7 +8,7 @@
   position: absolute;
   height: 120px;
   width: 240px;
-  background: url(../images/swipe.png)no-repeat; 
+  background: url(../images/swipe.png)no-repeat;
   top: 50%;
   left: 50%;
   margin-top: -60px;
@@ -62,7 +62,7 @@
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
 }
-  
+
 .owl-carousel .owl-item{
   float: left;
 }
@@ -80,7 +80,7 @@
 }
 
 /* mouse grab icon */
-.grabbing { 
+.grabbing {
     cursor:url(grabbing.png) 8 8, move;
 }
 
@@ -98,7 +98,7 @@
 
 
 /*
-*   Owl Carousel Owl Demo Theme 
+*   Owl Carousel Owl Demo Theme
 * v1.3.2
 */
 
@@ -134,7 +134,7 @@
     right: 0;
     margin: 0;
     height: 100%;
-    
+
 
     &:before {
       text-align: left;
@@ -240,7 +240,7 @@
   @media screen and (min-width: 1921px) {
     width: 100%;
     left: 0;
-  } 
+  }
   @media screen and (max-width: 1920px) {
     width: 125%;
     left: -12.3%;
@@ -252,7 +252,7 @@
   @media screen and (max-width: 1024px) {
     width: 100%;
     left: 0;
-  } 
+  }
 }
 .owl-carousel {
   overflow: hidden;
@@ -302,7 +302,7 @@
       }
       @media screen and (max-width: 420px) {
         height: 360px;
-      }      
+      }
       @media screen and (max-width: 320px) {
         height: 350px;
       }
@@ -320,10 +320,9 @@
 
 
         a {
-          font-family: $FedraSerifOLD; font-weight: normal;
-          font-style: normal;
+          @include FedraRegular;
           color: $white;
-          @include font-size(16);
+          @include font-size(17);
 
           &:hover {
             color: $orange1;
@@ -333,9 +332,8 @@
       .marquee-body {
         padding: 0 20px 20px 20px;
         color: #999;
-        font-family: $FedraSerifOLD; font-weight: normal;
-        font-style: normal;
-        @include font-size(16);
+        @include FedraRegular;
+        @include font-size(17);
         line-height: 20px;
       }
     }

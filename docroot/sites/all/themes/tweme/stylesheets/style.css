@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Imports */
 /**
 * #Icomoon
@@ -9,7 +10,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -78,7 +78,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "News Gothic";
   src: url("../fonts/NewsGothic-DemiBold-webfont.eot");
@@ -86,7 +85,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "News Gothic";
   src: url("../fonts/NewsGothic-MediumObl-webfont.eot");
@@ -94,7 +92,6 @@
   font-weight: normal;
   font-style: italic;
 }
-
 @font-face {
   font-family: "NewsGothicFSLightRegular";
   src: url("../fonts/NewsGothic-Light-webfont.eot");
@@ -102,7 +99,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSLightItalic";
   src: url("../fonts/NewsGothic-LightOblique-webfont.eot");
@@ -110,7 +106,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSBookBoldItalic";
   src: url("../fonts/NewsGothic-DemiBoldObl-webfont.eot");
@@ -118,7 +113,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSCapsLightRegular";
   src: url("../fonts/NewsGothicCaps-Light-webfont.eot");
@@ -126,7 +120,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSCapsBookRegular";
   src: url("../fonts/NewsGothicCaps-Book-webfont.eot");
@@ -134,7 +127,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSBookRegular";
   src: url("../fonts/NewsGothic-Book-webfont.eot");
@@ -142,7 +134,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSBookItalic";
   src: url("../fonts/NewsGothic-BookOblique-webfont.eot");
@@ -150,7 +141,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSMediumBold";
   src: url("../fonts/NewsGothic-Bold-webfont.eot");
@@ -158,7 +148,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "NewsGothicFSMediumBoldItalic";
   src: url("../fonts/NewsGothic-BoldOblique-webfont.eot");
@@ -166,7 +155,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "News Gothic Old";
   src: url("../fonts/NewsGothic-Medium.eot");
@@ -174,7 +162,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "News Gothic Old";
   src: url("../fonts/NewsGothic-DemiBold.eot");
@@ -182,23 +169,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "Fedra Serif Old";
-  src: url("../fonts/FSerStdA-Book.eot");
-  src: url("../fonts/FSerStdA-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Book.woff") format("woff"), url("../fonts/FSerStdA-Book.ttf") format("truetype"), url("../fonts/FSerStdA-Book.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Fedra Serif Old";
-  src: url("../fonts/FSerStdA-Bold.eot");
-  src: url("../fonts/FSerStdA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FSerStdA-Bold.woff") format("woff"), url("../fonts/FSerStdA-Bold.ttf") format("truetype"), url("../fonts/FSerStdA-Bold.svg#NewsGothicFSMediumRegular") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
 /**
 * #Table of Contents
 **/
@@ -314,33 +284,40 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 }
 
 .FedraSerif {
-  font-family: "Fedra Serif Old";
-  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  font-size: 19px;
   color: #91998c;
 }
 
 .FSRegular {
-  font-family: "Fedra Serif Old";
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
 }
 
 .FSItalic {
-  font-family: "Fedra Serif Old";
+  font-style: normal;
   font-weight: normal;
-  font-style: italic;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Italic 3", Georgia, "Times New Roman", serif;
 }
 
 .FSBold {
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
   font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Bold 3", Georgia, "Times New Roman", serif;
 }
 
 .FSBoldItalic {
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
-  font-style: italic;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Bold InM0VH", Georgia, "Times New Roman", serif;
 }
 
 /**
@@ -406,30 +383,30 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 **/
 h1, .h1 {
   color: #4d4d4d;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   line-height: 48px;
   margin-bottom: 5px;
-  font-size: 42px;
-  font-size: 2.625rem;
+  font-size: 43px;
+  font-size: 2.6875rem;
 }
 @media screen and (max-width: 767px) {
   h1, .h1 {
-    font-size: 25px;
-    font-size: 1.5625rem;
-    line-height: 29px;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 30px;
   }
 }
 
 h2, .h2 {
-  font-size: 25px;
-  font-size: 1.5625rem;
-  font-family: "Fedra Serif Old";
+  font-size: 26px;
+  font-size: 1.625rem;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   line-height: 29px;
 }
 @media screen and (max-width: 767px) {
@@ -441,20 +418,20 @@ h2, .h2 {
 }
 
 h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 22px;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  line-height: 23px;
   margin: 0 0 5px 0;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 19px;
+  font-size: 1.1875rem;
 }
 @media screen and (max-width: 767px) {
   h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .spotlights a {
-    line-height: 20px;
-    font-size: 16px;
-    font-size: 1rem;
+    line-height: 21px;
+    font-size: 17px;
+    font-size: 1.0625rem;
   }
 }
 
@@ -507,13 +484,13 @@ body {
 
 .body, .view-supporters p {
   color: #91998c;
-  font-size: 17px;
-  font-size: 1.0625rem;
-  line-height: 25px;
-  font-family: "Fedra Serif Old";
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 26px;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
 }
 
 .section {
@@ -524,14 +501,14 @@ body {
 
 .small-body, .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-global-organization .our-model-section .spotlights p {
   color: #4d4d4d;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 20px;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  line-height: 21px;
   margin-bottom: 20px;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .small-body:last-child, .node-type-page-our-model #main .our-model-section .spotlights .span4 a:last-child, .node-type-page-global-organization .our-model-section .spotlights p:last-child {
   margin-bottom: 0;
@@ -539,14 +516,14 @@ body {
 
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 25px;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  line-height: 26px;
   margin-bottom: 20px;
-  font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
@@ -575,12 +552,14 @@ body {
 }
 
 .footer-link-beige, #footer .content > ul > li > a {
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   color: #dfd9c9;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
-  letter-spacing: .2em;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Bold 3", Georgia, "Times New Roman", serif;
+  letter-spacing: .17em;
   text-transform: uppercase;
 }
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
@@ -718,22 +697,20 @@ html.js input.throbbing {
 
 .btn__red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
   text-shadow: none;
-  font-size: 11px;
-  font-size: 0.6875rem;
-  -webkit-border-radius: 20px;
+  font-size: 12px;
+  font-size: 0.75rem;
   -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   display: inline-block;
   background: #cf4753;
   color: white;
-  line-height: 26px;
+  line-height: 27px;
   padding: 4px 44px;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -817,10 +794,8 @@ h2.page-title {
   background-color: #91998c;
   color: white;
   padding: 8px 20px;
-  -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
 }
 
@@ -837,28 +812,28 @@ h2.page-title {
 
 .slug-medium {
   color: #e69740;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  letter-spacing: .2em;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  letter-spacing: .17em;
   line-height: 1.5em;
   text-transform: uppercase;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
 }
 
 .slug-large {
   color: #e69740;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   letter-spacing: 4px;
   line-height: 1.2em;
   text-transform: uppercase;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .stats {
@@ -887,17 +862,16 @@ h2.page-title {
 
 .donate {
   background-color: #e69740;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
   font-style: normal;
+  font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Bold 3", Georgia, "Times New Roman", serif;
   min-height: 20px;
-  letter-spacing: .2em;
+  letter-spacing: .17em;
   margin-right: 4px;
-  margin-top: 1px;
-  padding: 0 5px;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  padding: 1px 5px;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .donate a {
   color: white;
@@ -1035,14 +1009,14 @@ h2.page-title {
   }
 }
 .navbar .navbar-inner .container .region-main-navigation {
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
   font-style: normal;
+  font-weight: normal;
   font-stretch: normal;
-  letter-spacing: .2em;
+  font-family: "Fedra Serif Screen Bold 3", Georgia, "Times New Roman", serif;
+  letter-spacing: .17em;
   text-transform: uppercase;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   .navbar .navbar-inner .container .region-main-navigation {
@@ -1161,8 +1135,8 @@ h2.page-title {
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
   font-size: 14px;
   font-size: 0.875rem;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 20px;
   font-weight: bold;
@@ -1409,8 +1383,8 @@ h2.page-title {
     margin-right: 5%;
   }
   #footer .row-fluid .span2 + .span3 {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     clear: both;
     padding: 0 5% 20px;
@@ -1422,6 +1396,16 @@ h2.page-title {
     margin-right: 9px;
     line-height: 32px;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 500px) {
+  #footer .row-fluid .span2 + .span3 .donate {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
   #footer .row-fluid .span2 + .span3 .footer__search {
     display: none;
   }
@@ -1430,14 +1414,6 @@ h2.page-title {
     padding: 7px 8px;
     margin-right: 5px;
     margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 767px) and (max-width: 500px) {
-  #footer .row-fluid .span2 + .span3 .donate {
-    padding: 0;
-    margin: 0 0 20px 0;
-    text-align: center;
-    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1479,15 +1455,15 @@ h2.page-title {
 
 .footer__contact-us {
   color: #DFD9C9;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
   font-style: normal;
+  font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Bold 3", Georgia, "Times New Roman", serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .footer__contact-us form label {
   font-size: 11px;
@@ -1577,15 +1553,14 @@ h2.page-title {
 }
 .footer__search p, .footer__search a {
   color: #dfd9c9;
-  font-family: "Fedra Serif Old";
-  font-weight: bold;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 11px;
-  font-size: 0.6875rem;
+  letter-spacing: .17em;
+  font-size: 12px;
+  font-size: 0.75rem;
 }
 .footer__search a:hover {
   color: white;
@@ -1595,10 +1570,8 @@ h2.page-title {
 }
 .footer__search .navbar-search .search-query {
   background-color: #dfd9c9;
-  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -1646,10 +1619,10 @@ img {
 }
 .widget_supporters .title {
   color: #ffb151;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   letter-spacing: 4px;
   display: block;
   margin-bottom: 6px;
@@ -1692,8 +1665,8 @@ img {
 }
 
 #worldmap {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px;
   position: relative;
@@ -1728,8 +1701,8 @@ img {
 }
 
 .worldmap__title {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: 2px;
   position: absolute;
@@ -1814,8 +1787,8 @@ img {
 }
 
 .leaflet-popup-content-wrapper {
-  -webkit-box-shadow: 3px 3px 14px #888888;
   -moz-box-shadow: 3px 3px 14px #888888;
+  -webkit-box-shadow: 3px 3px 14px #888888;
   box-shadow: 3px 3px 14px #888888;
 }
 .leaflet-popup-content-wrapper .leaflet-popup-content {
@@ -2152,8 +2125,8 @@ img {
 }
 @media screen and (max-width: 680px) {
   .view-persons .view-content .views-row {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
   .view-persons .view-content .views-row:after {
@@ -2169,8 +2142,8 @@ img {
 }
 @media screen and (max-width: 370px) {
   .view-persons .view-content .views-row .person-image {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: none;
     width: 100%;
@@ -2182,8 +2155,8 @@ img {
   height: auto;
 }
 .view-persons .view-content .views-row .person-copy {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left;
@@ -2264,8 +2237,8 @@ img {
 * #Supporters
 **/
 .view-supporters {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1200px;
   padding: 0 40px;
@@ -2288,8 +2261,8 @@ img {
   margin-bottom: 19px;
 }
 .view-supporters p {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 40px;
 }
@@ -2357,12 +2330,12 @@ img {
   padding-top: 30px;
 }
 .network-learning-front-block a.network-learning-main {
-  font-size: 16px;
-  font-size: 1rem;
-  font-family: "Fedra Serif Old";
+  font-size: 17px;
+  font-size: 1.0625rem;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   display: block;
   margin-top: 0;
   margin-bottom: 15px;
@@ -2412,12 +2385,12 @@ img {
   letter-spacing: 1px;
 }
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a {
-  font-size: 22px;
-  font-size: 1.375rem;
-  font-family: "Fedra Serif Old";
+  font-size: 23px;
+  font-size: 1.4375rem;
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   color: #4d4d4d;
   line-height: 24px;
 }
@@ -2554,8 +2527,8 @@ img {
 }
 @media screen and (max-width: 370px) {
   .node-type-person .content .person-image {
-    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     float: none;
     width: 100%;
@@ -2567,8 +2540,8 @@ img {
   height: auto;
 }
 .node-type-person .content .person-copy {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left;
@@ -2645,14 +2618,14 @@ img {
 }
 
 .news__content {
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  line-height: 25px;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  line-height: 26px;
   margin-bottom: 10px;
-  font-size: 17px;
-  font-size: 1.0625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .news__node-links {
@@ -2783,13 +2756,13 @@ img {
 
 .group_row_byline {
   color: #999999;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   line-height: 1.4em;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .group_info_row a:after {
@@ -3184,8 +3157,8 @@ img {
 }
 
 .flexslider-info {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: black;
   opacity: .8;
@@ -3209,10 +3182,10 @@ img {
 
 .flexslider-preview {
   color: #91998c;
-  font-family: "Fedra Serif Old";
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
 }
 
 .flexslider-link {
@@ -3335,7 +3308,7 @@ img {
 }
 .unifying-principles li {
   padding-left: 1em;
-  text-indent: -0.7em;
+  text-indent: -.7em;
 }
 .unifying-principles li:before {
   content: "• ";
@@ -3428,7 +3401,10 @@ div#panels-ipe-control-container {
   color: #cf4753;
 }
 .panel-panel p {
-  font-family: "Fedra Serif Old";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   font-size: 1.2rem;
   line-height: 1.4rem;
   color: #91998c;
@@ -3476,7 +3452,7 @@ div#panels-ipe-control-container {
   margin-left: 20px;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.2
  */
@@ -3506,7 +3482,6 @@ div#panels-ipe-control-container {
     opacity: 0;
   }
 }
-
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;
@@ -3560,7 +3535,7 @@ div#panels-ipe-control-container {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* mouse grab icon */
@@ -3580,7 +3555,7 @@ div#panels-ipe-control-container {
 }
 
 /*
-*   Owl Carousel Owl Demo Theme 
+*   Owl Carousel Owl Demo Theme
 * v1.3.2
 */
 .owl-theme .owl-controls {
@@ -3829,12 +3804,13 @@ div#panels-ipe-control-container {
   padding: 20px 20px 2px 20px;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title a {
-  font-family: "Fedra Serif Old";
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
   color: white;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 17px;
+  font-size: 1.0625rem;
 }
 .owl-carousel .owl-wrapper .owl-item .marquee-title a:hover {
   color: #e69740;
@@ -3842,11 +3818,12 @@ div#panels-ipe-control-container {
 .owl-carousel .owl-wrapper .owl-item .marquee-body {
   padding: 0 20px 20px 20px;
   color: #999;
-  font-family: "Fedra Serif Old";
-  font-weight: normal;
   font-style: normal;
-  font-size: 16px;
-  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: "Fedra Serif Screen Regular 3", Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 20px;
 }
 
@@ -4434,7 +4411,6 @@ div#panels-ipe-control-container {
     padding-top: 0;
   }
 }
-
 @-o-keyframes navFromTopBounceIn {
   0% {
     -o-transform: translateY(-100%);
@@ -4455,7 +4431,6 @@ div#panels-ipe-control-container {
     padding-top: 0;
   }
 }
-
 @keyframes navFromTopBounceIn {
   0% {
     -webkit-transform: translateY(-100%);
@@ -4480,7 +4455,6 @@ div#panels-ipe-control-container {
     padding-top: 0;
   }
 }
-
 @-webkit-keyframes navFromTopBounceOut {
   0% {
     -webkit-transform: translateY(0%);
@@ -4503,7 +4477,6 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 @-o-keyframes navFromTopBounceOut {
   0% {
     -o-transform: translateY(0%);
@@ -4526,7 +4499,6 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 @keyframes navFromTopBounceOut {
   0% {
     -webkit-transform: translateY(0%);
@@ -4555,7 +4527,6 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 .effeckt-off-screen-nav-bottom-bounce {
   width: 100%;
   top: auto;
@@ -4621,7 +4592,6 @@ div#panels-ipe-control-container {
     padding-bottom: 0;
   }
 }
-
 @-o-keyframes navFromBottomBounceIn {
   0% {
     -o-transform: translateY(100%);
@@ -4642,7 +4612,6 @@ div#panels-ipe-control-container {
     padding-bottom: 0;
   }
 }
-
 @keyframes navFromBottomBounceIn {
   0% {
     -webkit-transform: translateY(100%);
@@ -4667,7 +4636,6 @@ div#panels-ipe-control-container {
     padding-bottom: 0;
   }
 }
-
 @-webkit-keyframes navFromBottomBounceOut {
   0% {
     -webkit-transform: translateY(0%);
@@ -4690,7 +4658,6 @@ div#panels-ipe-control-container {
     transform: translateY(100%);
   }
 }
-
 @-o-keyframes navFromBottomBounceOut {
   0% {
     -o-transform: translateY(0%);
@@ -4713,7 +4680,6 @@ div#panels-ipe-control-container {
     transform: translateY(100%);
   }
 }
-
 @keyframes navFromBottomBounceOut {
   0% {
     -webkit-transform: translateY(0%);
@@ -4742,7 +4708,6 @@ div#panels-ipe-control-container {
     transform: translateY(100%);
   }
 }
-
 .effeckt-off-screen-nav-push-top {
   width: 100%;
   bottom: auto;
@@ -5299,14 +5264,12 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 @-o-keyframes slideFromTop {
   from {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
   }
 }
-
 @keyframes slideFromTop {
   from {
     -webkit-transform: translateY(-100%);
@@ -5315,21 +5278,18 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 @-webkit-keyframes slideToTop {
   to {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
   }
 }
-
 @-o-keyframes slideToTop {
   to {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
   }
 }
-
 @keyframes slideToTop {
   to {
     -webkit-transform: translateY(-100%);
@@ -5338,21 +5298,18 @@ div#panels-ipe-control-container {
     transform: translateY(-100%);
   }
 }
-
 @-webkit-keyframes slideFromRight {
   from {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
-
 @-o-keyframes slideFromRight {
   from {
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
-
 @keyframes slideFromRight {
   from {
     -webkit-transform: translateX(100%);
@@ -5361,21 +5318,18 @@ div#panels-ipe-control-container {
     transform: translateX(100%);
   }
 }
-
 @-webkit-keyframes slideToRight {
   to {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
-
 @-o-keyframes slideToRight {
   to {
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
 }
-
 @keyframes slideToRight {
   to {
     -webkit-transform: translateX(100%);
@@ -5384,21 +5338,18 @@ div#panels-ipe-control-container {
     transform: translateX(100%);
   }
 }
-
 @-webkit-keyframes slideFromBottom {
   from {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
 }
-
 @-o-keyframes slideFromBottom {
   from {
     -o-transform: translateY(100%);
     transform: translateY(100%);
   }
 }
-
 @keyframes slideFromBottom {
   from {
     -webkit-transform: translateY(100%);
@@ -5407,21 +5358,18 @@ div#panels-ipe-control-container {
     transform: translateY(100%);
   }
 }
-
 @-webkit-keyframes slideToBottom {
   to {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
   }
 }
-
 @-o-keyframes slideToBottom {
   to {
     -o-transform: translateY(100%);
     transform: translateY(100%);
   }
 }
-
 @keyframes slideToBottom {
   to {
     -webkit-transform: translateY(100%);
@@ -5430,21 +5378,18 @@ div#panels-ipe-control-container {
     transform: translateY(100%);
   }
 }
-
 @-webkit-keyframes slideFromLeft {
   from {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
-
 @-o-keyframes slideFromLeft {
   from {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
-
 @keyframes slideFromLeft {
   from {
     -webkit-transform: translateX(-100%);
@@ -5453,21 +5398,18 @@ div#panels-ipe-control-container {
     transform: translateX(-100%);
   }
 }
-
 @-webkit-keyframes slideToLeft {
   to {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
-
 @-o-keyframes slideToLeft {
   to {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
-
 @keyframes slideToLeft {
   to {
     -webkit-transform: translateX(-100%);
@@ -5476,7 +5418,6 @@ div#panels-ipe-control-container {
     transform: translateX(-100%);
   }
 }
-
 @-webkit-keyframes scaleUpFromBehind {
   from {
     opacity: 0;
@@ -5484,7 +5425,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @-o-keyframes scaleUpFromBehind {
   from {
     opacity: 0;
@@ -5492,7 +5432,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @keyframes scaleUpFromBehind {
   from {
     opacity: 0;
@@ -5502,7 +5441,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @-webkit-keyframes scaleUpToFront {
   to {
     opacity: 0;
@@ -5510,7 +5448,6 @@ div#panels-ipe-control-container {
     transform: scale(1.3);
   }
 }
-
 @-o-keyframes scaleUpToFront {
   to {
     opacity: 0;
@@ -5518,7 +5455,6 @@ div#panels-ipe-control-container {
     transform: scale(1.3);
   }
 }
-
 @keyframes scaleUpToFront {
   to {
     opacity: 0;
@@ -5528,7 +5464,6 @@ div#panels-ipe-control-container {
     transform: scale(1.3);
   }
 }
-
 @-webkit-keyframes scaleDownToBehind {
   to {
     opacity: 0;
@@ -5536,7 +5471,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @-o-keyframes scaleDownToBehind {
   to {
     opacity: 0;
@@ -5544,7 +5478,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @keyframes scaleDownToBehind {
   to {
     opacity: 0;
@@ -5554,7 +5487,6 @@ div#panels-ipe-control-container {
     transform: scale(0.5);
   }
 }
-
 @-webkit-keyframes scaleDownFromFront {
   from {
     opacity: 0;
@@ -5566,7 +5498,6 @@ div#panels-ipe-control-container {
     opacity: 1;
   }
 }
-
 @-o-keyframes scaleDownFromFront {
   from {
     opacity: 0;
@@ -5578,7 +5509,6 @@ div#panels-ipe-control-container {
     opacity: 1;
   }
 }
-
 @keyframes scaleDownFromFront {
   from {
     opacity: 0;
@@ -5592,7 +5522,6 @@ div#panels-ipe-control-container {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes scaleDownSlideToLeft {
   25% {
     opacity: 0.5;
@@ -5612,7 +5541,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(-200%);
   }
 }
-
 @-o-keyframes scaleDownSlideToLeft {
   25% {
     opacity: 0.5;
@@ -5632,7 +5560,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(-200%);
   }
 }
-
 @keyframes scaleDownSlideToLeft {
   25% {
     opacity: 0.5;
@@ -5658,7 +5585,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(-200%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideFromRight {
   0%, 25% {
     opacity: 0.5;
@@ -5678,7 +5604,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0);
   }
 }
-
 @-o-keyframes scaleDownSlideFromRight {
   0%, 25% {
     opacity: 0.5;
@@ -5698,7 +5623,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0);
   }
 }
-
 @keyframes scaleDownSlideFromRight {
   0%, 25% {
     opacity: 0.5;
@@ -5724,7 +5648,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0);
   }
 }
-
 @-webkit-keyframes scaleDownSlideFromLeft {
   0%, 25% {
     opacity: 0.5;
@@ -5744,7 +5667,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0%);
   }
 }
-
 @-o-keyframes scaleDownSlideFromLeft {
   0%, 25% {
     opacity: 0.5;
@@ -5764,7 +5686,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0%);
   }
 }
-
 @keyframes scaleDownSlideFromLeft {
   0%, 25% {
     opacity: 0.5;
@@ -5790,7 +5711,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateX(0%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideToRight {
   25% {
     opacity: 0.5;
@@ -5810,7 +5730,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(200%);
   }
 }
-
 @-o-keyframes scaleDownSlideToRight {
   25% {
     opacity: 0.5;
@@ -5830,7 +5749,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(200%);
   }
 }
-
 @keyframes scaleDownSlideToRight {
   25% {
     opacity: 0.5;
@@ -5856,7 +5774,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateX(200%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideFromTop {
   0%, 25% {
     opacity: 0.5;
@@ -5876,7 +5793,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @-o-keyframes scaleDownSlideFromTop {
   0%, 25% {
     opacity: 0.5;
@@ -5896,7 +5812,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @keyframes scaleDownSlideFromTop {
   0%, 25% {
     opacity: 0.5;
@@ -5922,7 +5837,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideToBottom {
   25% {
     opacity: 0.5;
@@ -5942,7 +5856,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(200%);
   }
 }
-
 @-o-keyframes scaleDownSlideToBottom {
   25% {
     opacity: 0.5;
@@ -5962,7 +5875,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(200%);
   }
 }
-
 @keyframes scaleDownSlideToBottom {
   25% {
     opacity: 0.5;
@@ -5988,7 +5900,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(200%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideFromBottom {
   0%, 25% {
     opacity: 0.5;
@@ -6008,7 +5919,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @-o-keyframes scaleDownSlideFromBottom {
   0%, 25% {
     opacity: 0.5;
@@ -6028,7 +5938,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @keyframes scaleDownSlideFromBottom {
   0%, 25% {
     opacity: 0.5;
@@ -6054,7 +5963,6 @@ div#panels-ipe-control-container {
     transform: translateZ(0) translateY(0%);
   }
 }
-
 @-webkit-keyframes scaleDownSlideToTop {
   25% {
     opacity: 0.5;
@@ -6074,7 +5982,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(-200%);
   }
 }
-
 @-o-keyframes scaleDownSlideToTop {
   25% {
     opacity: 0.5;
@@ -6094,7 +6001,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(-200%);
   }
 }
-
 @keyframes scaleDownSlideToTop {
   25% {
     opacity: 0.5;
@@ -6120,7 +6026,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) translateY(-200%);
   }
 }
-
 @-webkit-keyframes rotateToBehind {
   to {
     opacity: 0;
@@ -6128,7 +6033,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(90deg);
   }
 }
-
 @-o-keyframes rotateToBehind {
   to {
     opacity: 0;
@@ -6136,7 +6040,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(90deg);
   }
 }
-
 @keyframes rotateToBehind {
   to {
     opacity: 0;
@@ -6146,7 +6049,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(90deg);
   }
 }
-
 @-webkit-keyframes rotateToFront {
   from {
     opacity: 0;
@@ -6154,7 +6056,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(-90deg);
   }
 }
-
 @-o-keyframes rotateToFront {
   from {
     opacity: 0;
@@ -6162,7 +6063,6 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(-90deg);
   }
 }
-
 @keyframes rotateToFront {
   from {
     opacity: 0;
@@ -6172,21 +6072,18 @@ div#panels-ipe-control-container {
     transform: translateZ(-500px) rotateY(-90deg);
   }
 }
-
 @-webkit-keyframes flipToRight {
   to {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
-
 @-o-keyframes flipToRight {
   to {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
-
 @keyframes flipToRight {
   to {
     -webkit-transform: rotateY(180deg);
@@ -6195,21 +6092,18 @@ div#panels-ipe-control-container {
     transform: rotateY(180deg);
   }
 }
-
 @-webkit-keyframes flipToRightBack {
   from {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
 }
-
 @-o-keyframes flipToRightBack {
   from {
     -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
 }
-
 @keyframes flipToRightBack {
   from {
     -webkit-transform: rotateY(-180deg);
@@ -6218,21 +6112,18 @@ div#panels-ipe-control-container {
     transform: rotateY(-180deg);
   }
 }
-
 @-webkit-keyframes flipToLeft {
   to {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
 }
-
 @-o-keyframes flipToLeft {
   to {
     -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
   }
 }
-
 @keyframes flipToLeft {
   to {
     -webkit-transform: rotateY(-180deg);
@@ -6241,21 +6132,18 @@ div#panels-ipe-control-container {
     transform: rotateY(-180deg);
   }
 }
-
 @-webkit-keyframes flipToLeftBack {
   from {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
-
 @-o-keyframes flipToLeftBack {
   from {
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
-
 @keyframes flipToLeftBack {
   from {
     -webkit-transform: rotateY(180deg);
@@ -6264,21 +6152,18 @@ div#panels-ipe-control-container {
     transform: rotateY(180deg);
   }
 }
-
 @-webkit-keyframes flipToTop {
   to {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
   }
 }
-
 @-o-keyframes flipToTop {
   to {
     -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
   }
 }
-
 @keyframes flipToTop {
   to {
     -webkit-transform: rotateX(180deg);
@@ -6287,21 +6172,18 @@ div#panels-ipe-control-container {
     transform: rotateX(180deg);
   }
 }
-
 @-webkit-keyframes flipToTopBack {
   from {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
 }
-
 @-o-keyframes flipToTopBack {
   from {
     -o-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
 }
-
 @keyframes flipToTopBack {
   from {
     -webkit-transform: rotateX(-180deg);
@@ -6310,21 +6192,18 @@ div#panels-ipe-control-container {
     transform: rotateX(-180deg);
   }
 }
-
 @-webkit-keyframes flipToBottom {
   to {
     -webkit-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
 }
-
 @-o-keyframes flipToBottom {
   to {
     -o-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
   }
 }
-
 @keyframes flipToBottom {
   to {
     -webkit-transform: rotateX(-180deg);
@@ -6333,21 +6212,18 @@ div#panels-ipe-control-container {
     transform: rotateX(-180deg);
   }
 }
-
 @-webkit-keyframes flipToBottomBack {
   from {
     -webkit-transform: rotateX(180deg);
     transform: rotateX(180deg);
   }
 }
-
 @-o-keyframes flipToBottomBack {
   from {
     -o-transform: rotateX(180deg);
     transform: rotateX(180deg);
   }
 }
-
 @keyframes flipToBottomBack {
   from {
     -webkit-transform: rotateX(180deg);
@@ -6356,7 +6232,6 @@ div#panels-ipe-control-container {
     transform: rotateX(180deg);
   }
 }
-
 .page-on-top,
 [data-effeckt-page].scale-up-to-front.effeckt-page-animating,
 [data-effeckt-page].scale-down-from-front.effeckt-page-animating {
@@ -6550,7 +6425,7 @@ html.lte-ie8 #footer #edit-keys {
 }
 html.lte-ie8 .marquee .marquee__pane:hover .marquee__hover,
 html.lte-ie8 .marquee .marquee__pane:hover .marquee__info-wrapper {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 html.lte-ie8 .marquee__hover {

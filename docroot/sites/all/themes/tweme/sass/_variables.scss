@@ -106,7 +106,6 @@ $NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
 $NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
 $NewsGothicFSMediumBold:        "NewsGothicFSMediumBold";
 $NewsGothicFSMediumBoldItalic:  "NewsGothicFSMediumBoldItalic";
-$FedraSerifOLD: "Fedra Serif Old";
 
 .NewsGothic {
   font-family: $NewsGothicOLD;
@@ -153,31 +152,20 @@ $FedraSerifOLD: "Fedra Serif Old";
 }
 
 .FedraSerif {
-  font-family: $FedraSerifOLD;
-  font-size: 18px;
+  @include FedraRegular;
+  font-size: 19px;
   color: $grey1;
 }
 
 .FSRegular {
-  font-family: $FedraSerifOLD;
-  font-weight: normal;
-  font-style: normal;
+  @include FedraRegular;
 }
-
 .FSItalic {
-  font-family: $FedraSerifOLD;
-  font-weight: normal;
-  font-style: italic;
+  @include FedraItalic;
 }
-
 .FSBold {
-  font-family: $FedraSerifOLD;
-  font-weight: bold;
-  font-style: normal;
+  @include FedraBold;
 }
-
 .FSBoldItalic {
-  font-family: $FedraSerifOLD;
-  font-weight: bold;
-  font-style: italic;
+  @include FedraBoldItalic;
 }
