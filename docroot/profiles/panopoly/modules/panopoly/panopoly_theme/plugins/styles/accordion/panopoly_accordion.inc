@@ -38,7 +38,7 @@ function theme_panopoly_theme_panopoly_accordion_style_render_region($vars) {
   $output = '<div class="drulog-panels-accordion" id="' . $region_id . '">';
   foreach ($panes as $pane_id => $pane) {
     if ($pane_id != 'empty_placeholder') {
-      $output .= !empty($display->content[$pane_id]->title) ? '<h2 class="accordion-title">' . $display->content[$pane_id]->title . '</h2>' : '<h2 class="accordion-title">' . '&nbsp;' . '</h2>';
+      $output .= !empty($display->content[$pane_id]->title) ? '<h4 class="accordion-title">' . $display->content[$pane_id]->title . '</h4>' : '<h4 class="accordion-title">' . '&nbsp;' . '</h4>';
       $output .= '<div class="accordion-content ' . $region_id . '-' . $pane_id . '">' . $pane . '</div>';
     } 
   }
@@ -51,7 +51,7 @@ function theme_panopoly_theme_panopoly_accordion_style_render_region($vars) {
 
   // Inject the Javascript
   $settings_js = array(
-    'accordion' => array($region_id  => array('options' => array('header' => 'h2.accordion-title')))
+    'accordion' => array($region_id  => array('options' => array('header' => 'h4.accordion-title')))
   );
   $settings_js['accordion'][$region_id]['options'] += $settings;
   $settings_js['accordion'][$region_id]['options']['active'] = (int) $settings_js['accordion'][$region_id]['options']['active'];
