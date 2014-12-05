@@ -11,8 +11,9 @@
  * Allows the user to pick a format for their media file.
  * Can also have additional params depending on the media type.
  */
-function media_wysiwyg_format_form($form, &$form_state, $file) {
-  $form_state['file'] = $file;
+function media_wysiwyg_format_form($form, $form_state, $file) {
+  $form = array();
+  $form['#media'] = $file;
 
   // Allow for overrides to the fields.
   $query_fields = isset($_GET['fields']) ? drupal_json_decode($_GET['fields']) : array();

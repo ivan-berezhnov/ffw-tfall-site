@@ -1,8 +1,9 @@
 <?php
+// $Id: $
 
 /**
  * @file
- * Provide views data and handlers for the Publication Date module.
+ * Provide views data and handlers for publication_date.module
  */
 
 /**

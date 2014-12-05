@@ -1,9 +1,15 @@
 <?php
-
+// $Id: $
 /**
  * @file
- * Installation functions for the Publication Date module.
+ *
+ * @author Clever Age
+ * @author Emmanuelle Gouleau
+ * @author Tristan Marly
+ *
+ * Initial D7 Port: Joost van der Locht
  */
+
 
 /**
  * Implements hook_schema().
@@ -39,10 +45,10 @@ function publication_date_schema() {
  */
 function publication_date_install() {
 
-  // Set publication dates for existing nodes.
+  // update existing nodes
   _publication_date_update_existing();
 
-  // This module must be called after some other modules (i.e. Scheduler).
+  // The hooks of this module must be called after some other modules (scheduler, ...)
   db_update('system')
     ->fields(array('weight' => 99))
     ->condition('name', 'publication_date')
@@ -50,10 +56,7 @@ function publication_date_install() {
 }
 
 /**
- * Helper function to update the existing nodes on install.
- *
- * We can not know the exact date of publication, so $node->published_at will
- * initially contain the creation date for already publisned nodes.
+ * Function to update the existing nodes on install so sorting will work properly.
  */
 function _publication_date_update_existing() {
   $query = db_select('node');
