@@ -97,66 +97,42 @@ h1, h2, h3, h4 {
   }
 }
 
-/**
-* #WYSIWYG Fonts
-**/
-$NewsGothicOLD: "News Gothic Old";
-$NewsGothicFSLightRegular:      "NewsGothicFSLightRegular";
-$NewsGothicFSLightItalic:       "NewsGothicFSLightItalic";
-$NewsGothicFSBookBoldItalic:    "NewsGothicFSBookBoldItalic";
-$NewsGothicFSMediumBold:        "NewsGothicFSMediumBold";
-$NewsGothicFSMediumBoldItalic:  "NewsGothicFSMediumBoldItalic";
-
+// WYSIWYG FONTS
+// =============================================================================
 .NewsGothic {
-  font-family: $NewsGothicOLD;
+  @include NewsGothicRegular;
   font-size: 18px;
   color: $grey1;
 }
-
 .NGLightRegular {
-  font-family: $NewsGothicFSLightRegular;
+  @include NewsGothicLight;
 }
-
 .NGLightOblique {
-  font-family: $NewsGothicFSLightItalic;
+  @include NGLightOblique;
 }
-
 .NGMedium {
-  font-family: $NewsGothicOLD;
-  font-weight: normal;
-  font-style: normal;
+  @include NGMedium;
 }
-
 .NGMediumOblique {
-  font-family: $NewsGothicOLD;
-  font-weight: normal;
-  font-style: italic;
+  @include NGMediumOblique
 }
-
 .NGDemiBold {
-  font-family: $NewsGothicOLD;
-  font-weight: bold;
-  font-style: normal;
+  @include NGDemiBold;
 }
-
 .NGDemiBoldOblique {
-  font-family: $NewsGothicFSBookBoldItalic;
+  @include NGDemiBoldOblique;
 }
-
 .NGBold {
-  font-family: $NewsGothicFSMediumBold;
+  @include NGBold;
 }
-
 .NGBoldOblique {
-  font-family: $NewsGothicFSMediumBoldItalic;
+  @include NGBoldOblique;
 }
-
 .FedraSerif {
   @include FedraRegular;
   font-size: 19px;
   color: $grey1;
 }
-
 .FSRegular {
   @include FedraRegular;
 }
@@ -168,4 +144,98 @@ $NewsGothicFSMediumBoldItalic:  "NewsGothicFSMediumBoldItalic";
 }
 .FSBoldItalic {
   @include FedraBoldItalic;
+}
+
+// SPECIAL STYLING FOR THE 'STYLES' DROPDOWN
+// =============================================================================
+.cke_combopanel__styles {
+  width: 290px !important;
+  height: 320px !important;
+  .cke_panel_frame {
+    width: 290px !important;
+    height: 320px !important;
+  }
+  .cke_panel_container {
+    width: 290px !important;
+    height: 320px !important;
+  }
+}
+
+
+// ARROWS IN WYSIWYG BEFORE COLOR FOR BETTER VISUAL INDICATION
+// =============================================================================
+.cke_panel_block {
+  .beige {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $beige, right);
+    }
+  }
+  .orange {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $orange1, right);
+    }
+  }
+  .orange2 {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $orange2, right);
+    }
+  }
+  .red {
+    width: 290px !important;
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $red, right);
+    }
+  }
+  .black {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $black, right);
+    }
+  }
+  .dovegrey {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $grey1, right);
+    }
+  }
+  .almostblack {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $grey2, right);
+    }
+  }
+  .navbargrey {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $grey3, right);
+    }
+  }
+  .lightgrey {
+    &:before {
+      content: "";
+      float: left;
+      margin: 3px 5px 0 0;
+      @include triangle(15px 15px, $grey7, right);
+    }
+  }
 }
