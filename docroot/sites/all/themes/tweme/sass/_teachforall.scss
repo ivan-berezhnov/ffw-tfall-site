@@ -102,11 +102,11 @@ h4, .h4 {
 }
 
 .blurb {
-  font-weight: bold;
   @include font-size(36);
   line-height: 38px;
   color: $grey1;
   margin: 20px 0;
+  @include NGDemiBold;
 }
 
 a {
@@ -179,9 +179,9 @@ body {
 
 .block-quote {
   color: $grey1;
-  font-weight: bold;
   @include font-size(36);
   line-height: 38px;
+  @include NGDemiBold;
 }
 
 .page-section {
@@ -288,12 +288,12 @@ textarea:focus, input:focus{
   }
   background-color: $grey2;
   color: $white;
-  font-weight: bold;
   display: inline-block;
   letter-spacing: 1px;
-  padding: 7px 12px 5px 12px;
+  padding: 6px 12px;
   text-transform: uppercase;
   @include font-size(14);
+  @include NGDemiBold;
   &:hover {
     color: $orange2;
   }
@@ -448,11 +448,11 @@ h2 {
 .slug {
   @include font-size(11);
   color: $orange1;
-  font-weight: bold;
   letter-spacing: 1px;
   line-height: 14px;
   margin-bottom: 5px;
   text-transform: uppercase;
+  @include NGDemiBold;
 }
 
 .slug-medium {
@@ -475,9 +475,9 @@ h2 {
 
 .stats {
   color: $grey1;
-  font-weight: bold;
   line-height: 22px;
   @include font-size(18);
+  @include NGDemiBold;
 }
 
 /**/
@@ -1629,7 +1629,7 @@ img {max-width: 100%;}
     text-transform: uppercase;
     @include font-size(12);
     .field-content {
-      font-weight: bold;
+      @include NGDemiBold;
     }
     .placeholder {
       font-style: italic;
@@ -1936,11 +1936,10 @@ img {max-width: 100%;}
 
         .person-title {
           float: left;
-
           a {
             color: $nearblack;
             @include font-size(18);
-            font-weight: bold;
+            @include NGDemiBold;
           }
         }
 
@@ -1949,8 +1948,8 @@ img {max-width: 100%;}
           clear: left;
           color: $grey1;
           @include font-size(18);
-          font-weight: bold;
           margin-bottom: 10px;
+          @include NGDemiBold;
         }
 
         .person-bio, .person-bio-truncated {
@@ -1982,7 +1981,7 @@ img {max-width: 100%;}
           margin-top: 5px;
           color: $red;
           cursor: pointer;
-          font-weight: bold;
+          @include NGDemiBold;
 
           &.is-visible {
             display: block;
@@ -2072,8 +2071,7 @@ img {max-width: 100%;}
       padding: 0 12px;
       border-right: 3px solid $border_color1;
       margin-bottom: 8px;
-      font-weight: bold;
-
+      @include NGDemiBold;
       &.views-row-last {
         border-right: 0;
       }
@@ -2272,10 +2270,11 @@ img {max-width: 100%;}
 
 .no__stats {
   color: $grey1;
-  font-weight: bold;
+  @include NGDemiBold;
   @include font-size(18);
   strong {
     color: $black;
+    font-weight: normal;
   }
 }
 
@@ -2673,7 +2672,7 @@ img {max-width: 100%;}
 
 .top-section__info-wrapper {
   color: $white;
-  font-weight: bold;
+  @include NGDemiBold;
   position: absolute;
   top: 55%;
   right: 30px;
@@ -3089,10 +3088,10 @@ img {max-width: 100%;}
   margin-top: 5px;
   a {
     color: $white;
-    font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     @include font-size(12);
+    @include NGDemiBold;
     &:hover {
       color: $red;
     }
@@ -3205,6 +3204,10 @@ img {max-width: 100%;}
   padding: 30px 0;
   @media screen and (max-width:767px) {
     padding: 20px 10px;
+  }
+  strong {
+    @include NGDemiBold;
+    font-weight: normal;
   }
   .title-small {
     margin-bottom: 20px;
@@ -3351,9 +3354,8 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
   }
   .full-list {
     color: #fff;
-    // font-family: $NewsGothicOLD;
-    // font-family: $NewsGothicRegular;
-    @include NewsGothicRegular;
+    // @include NewsGothicRegular;
+    @include NGDemiBold;
     &:after {
       color: $orange1;
       content: " >>";
@@ -3394,7 +3396,9 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     }
   }
 }
-
-
-
-
+.comment--user-wrapper {
+  .stats,
+  .slug {
+    @include FedraBold;
+  }
+}

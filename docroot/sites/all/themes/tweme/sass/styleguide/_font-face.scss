@@ -53,6 +53,7 @@
 // =============================================================================
 @mixin FedraRegular {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
 }
 @mixin FedraBold {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
