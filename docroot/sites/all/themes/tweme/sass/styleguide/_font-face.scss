@@ -56,9 +56,15 @@
 @mixin FedraRegular {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
+  em {
+    font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  }
 }
 @mixin FedraBold {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
+  em {
+    font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  }
 }
 @mixin FedraItalic {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;

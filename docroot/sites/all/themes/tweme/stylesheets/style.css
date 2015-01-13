@@ -301,11 +301,19 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   font-size: 19px;
   color: #91998c;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.FedraSerif em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 
 /* line 136, ../sass/_variables.scss */
 .FSRegular {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.FSRegular em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /* line 139, ../sass/_variables.scss */
@@ -316,6 +324,10 @@ h1 .black, h2 .black, h3 .black, h4 .black {
 /* line 142, ../sass/_variables.scss */
 .FSBold {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
+/* line 65, ../sass/styleguide/_font-face.scss */
+.FSBold em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /* line 145, ../sass/_variables.scss */
@@ -514,6 +526,10 @@ h1, .h1 {
   font-size: 42px;
   font-size: 2.625rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+h1 em, .h1 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 @media screen and (max-width: 767px) {
   /* line 66, ../sass/_teachforall.scss */
   h1, .h1 {
@@ -530,6 +546,10 @@ h2, .h2 {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
   line-height: 29px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+h2 em, .h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 @media screen and (max-width: 767px) {
   /* line 78, ../sass/_teachforall.scss */
@@ -548,6 +568,10 @@ h3, .h3, .title-small, .node-type-page-global-organization .our-model-section .s
   margin: 0 0 5px 0;
   font-size: 18px;
   font-size: 1.125rem;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+h3 em, .h3 em, .title-small em, .node-type-page-global-organization .our-model-section .spotlights a em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 @media screen and (max-width: 767px) {
   /* line 88, ../sass/_teachforall.scss */
@@ -621,6 +645,10 @@ body {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.body em, .view-supporters p em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 
 /* line 153, ../sass/_teachforall.scss */
 .section {
@@ -639,6 +667,10 @@ body {
   font-size: 16px;
   font-size: 1rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.small-body em, .node-type-page-our-model #main .our-model-section .spotlights .span4 a em, .node-type-page-global-organization .our-model-section .spotlights p em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 164, ../sass/_teachforall.scss */
 .small-body:last-child, .node-type-page-our-model #main .our-model-section .spotlights .span4 a:last-child, .node-type-page-global-organization .our-model-section .spotlights p:last-child {
   margin-bottom: 0;
@@ -653,6 +685,10 @@ body {
   margin-bottom: 20px;
   font-size: 17px;
   font-size: 1.0625rem;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.large-body em, .node-type-page-our-model #main .our-model-section .intro p em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 /* line 175, ../sass/_teachforall.scss */
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
@@ -692,6 +728,10 @@ body {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
   letter-spacing: .2em;
   text-transform: uppercase;
+}
+/* line 65, ../sass/styleguide/_font-face.scss */
+.footer-link-beige em, #footer .content > ul > li > a em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 /* line 207, ../sass/_teachforall.scss */
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
@@ -871,6 +911,10 @@ html.js input.throbbing {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.btn__red em, .view-persons .view-footer a.btn em, .view-supporters .view-footer .btn em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 363, ../sass/_teachforall.scss */
 .btn__red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
@@ -992,6 +1036,10 @@ h2.page-title {
   font-size: 16px;
   font-size: 1rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.slug-medium em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 
 /* line 467, ../sass/_teachforall.scss */
 .slug-large {
@@ -1003,6 +1051,10 @@ h2.page-title {
   text-transform: uppercase;
   font-size: 24px;
   font-size: 1.5rem;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.slug-large em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /* line 476, ../sass/_teachforall.scss */
@@ -1043,6 +1095,10 @@ h2.page-title {
   font-size: 11px;
   font-size: 0.6875rem;
   line-height: 1em;
+}
+/* line 65, ../sass/styleguide/_font-face.scss */
+.donate em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 /* line 510, ../sass/_teachforall.scss */
 .donate a {
@@ -1211,6 +1267,10 @@ h2.page-title {
   text-transform: uppercase;
   font-size: 11px;
   font-size: 0.6875rem;
+}
+/* line 65, ../sass/styleguide/_font-face.scss */
+.navbar .navbar-inner .container .region-main-navigation em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
   /* line 640, ../sass/_teachforall.scss */
@@ -1744,6 +1804,10 @@ h2.page-title {
   font-size: 11px;
   font-size: 0.6875rem;
 }
+/* line 65, ../sass/styleguide/_font-face.scss */
+.footer__contact-us em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 1176, ../sass/_teachforall.scss */
 .footer__contact-us form label {
   font-size: 11px;
@@ -1860,6 +1924,10 @@ h2.page-title {
   font-size: 11px;
   font-size: 0.6875rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.footer__search p em, .footer__search a em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 1308, ../sass/_teachforall.scss */
 .footer__search a:hover {
   color: white;
@@ -1933,6 +2001,10 @@ img {
   letter-spacing: 4px;
   display: block;
   margin-bottom: 6px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.widget_supporters .title em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 /* line 1374, ../sass/_teachforall.scss */
 .widget_supporters ul {
@@ -2774,6 +2846,10 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.network-learning-front-block a.network-learning-main em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 @media screen and (max-width: 768px) {
   /* line 2137, ../sass/_teachforall.scss */
   .network-learning-front-block a.network-learning-main {
@@ -2831,6 +2907,10 @@ img {
   font-weight: normal;
   color: #4d4d4d;
   line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a em, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 /* line 2197, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a:hover {
@@ -3106,6 +3186,10 @@ img {
   font-size: 17px;
   font-size: 1.0625rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.news__content em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 
 /* line 2454, ../sass/_teachforall.scss */
 .news__node-links {
@@ -3268,6 +3352,10 @@ img {
   line-height: 1.4em;
   font-size: 18px;
   font-size: 1.125rem;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.group_row_byline em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /* line 2613, ../sass/_teachforall.scss */
@@ -3766,6 +3854,10 @@ img {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.flexslider-preview em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 
 /* line 3087, ../sass/_teachforall.scss */
 .flexslider-link {
@@ -4034,6 +4126,10 @@ div#panels-ipe-control-container {
   letter-spacing: .1em;
   margin-bottom: 1em;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.panel-panel p em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 3351, ../sass/_teachforall.scss */
 .panel-panel p a {
   color: #cf4753;
@@ -4090,6 +4186,11 @@ div#panels-ipe-control-container {
 .comment--user-wrapper .stats,
 .comment--user-wrapper .slug {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
+/* line 65, ../sass/styleguide/_font-face.scss */
+.comment--user-wrapper .stats em,
+.comment--user-wrapper .slug em {
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /*
@@ -4505,6 +4606,10 @@ div#panels-ipe-control-container {
   font-size: 16px;
   font-size: 1rem;
 }
+/* line 59, ../sass/styleguide/_font-face.scss */
+.owl-carousel .owl-wrapper .owl-item .marquee-title a em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+}
 /* line 327, ../sass/_marquee.scss */
 .owl-carousel .owl-wrapper .owl-item .marquee-title a:hover {
   color: #e69740;
@@ -4518,6 +4623,10 @@ div#panels-ipe-control-container {
   font-size: 16px;
   font-size: 1rem;
   line-height: 20px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.owl-carousel .owl-wrapper .owl-item .marquee-body em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 
 /**
