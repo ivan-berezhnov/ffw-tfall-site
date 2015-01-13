@@ -18,6 +18,8 @@
 // 'FEDRA SERIF' VARIANTS
 @include font-face("Fedra Serif", font-files("FSerStdA-Book.woff", "FSerStdA-Book.ttf", "FSerStdA-Book.svg"), "FSerStdA-Book.eot", normal, normal);
 @include font-face("Fedra Serif Bold", font-files("FSerStdA-Bold.woff", "FSerStdA-Bold.ttf", "FSerStdA-Bold.svg"), "FSerStdA-Bold.eot", normal, normal);
+@include font-face("Fedra Serif Italic", font-files("FSerStdABookItalic.woff", "FSerStdABookItalic.ttf", "FSerStdABookItalic.svg"), "FSerStdABookItalic.eot", normal, normal);
+@include font-face("Fedra Serif Bold Italic", font-files("FSerStdAMediumItalic.woff", "FSerStdAMediumItalic.ttf", "FSerStdAMediumItalic.svg"), "FSerStdAMediumItalic.eot", normal, normal);
 
 // 'NEWS GOTHIC' FONT MIXIN LIBRARY (LOCAL FONTS)
 // =============================================================================
@@ -59,10 +61,8 @@
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 @mixin FedraItalic {
-  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-style: italic;
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
 @mixin FedraBoldItalic {
-  font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-style: italic;
+  font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
