@@ -12,7 +12,4 @@ required = TRUE
 stylesheets[all][] = theme/field.css
 
 ; Information added by Drupal.org packaging script on 2014-11-07
-version = "7.33"
-project = "drupal"
-datestamp = "1415375131"
 
