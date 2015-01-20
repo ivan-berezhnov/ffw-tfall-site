@@ -2375,20 +2375,20 @@ img {
 * #ShareThis
 **/
 /* line 1698, ../sass/_teachforall.scss */
-.sharethis-buttons {
+.block-sharethis {
   float: left;
   width: 88px;
 }
 /* line 1702, ../sass/_teachforall.scss */
-.sharethis-buttons .stButton {
+.block-sharethis .stButton {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
-  display: inline-block;
+  display: inline-block !important;
   line-height: 27px;
   overflow: hidden;
 }
 /* line 1708, ../sass/_teachforall.scss */
-.sharethis-buttons .stButton .stLarge:hover {
+.block-sharethis .stButton .stLarge:hover {
   opacity: 1;
 }
 
