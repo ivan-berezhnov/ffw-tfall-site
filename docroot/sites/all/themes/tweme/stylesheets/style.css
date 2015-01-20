@@ -4220,6 +4220,25 @@ div#panels-ipe-control-container {
   font-style: normal;
 }
 
+.large-image img {
+  height: auto;
+  margin-bottom: 20px;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 640px) {
+  .large-image img {
+    margin-bottom: 10px;
+  }
+}
+
+.rolph-container {
+  width: 82.97872340425532%;
+  margin: 0 auto;
+}
+
 /*
  *  Core Owl Carousel CSS File
  *  v1.3.2

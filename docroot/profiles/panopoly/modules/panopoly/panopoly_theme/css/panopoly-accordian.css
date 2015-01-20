@@ -1,11 +1,55 @@
-h4.ui-accordion-header {
+h2.ui-accordion-header {
   cursor: pointer;
-  padding: .25em 1.75em;
+  position: relative;
+  padding: 0 0 0 20px !important;
+  color: #000 !important;
+  font-family: "News Gothic Old";
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: .2em;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-size: 1.125rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border-bottom: 0 !important;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.ui-state-hover {
+  border: 0 !important; 
+  background: transparent !important; 
+  font-weight: bold !important; 
+  color: #000 !important;
+  font-size: 1.125rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border-bottom: 0 !important;
+  overflow: hidden;
+  float: none;
+}
+
+.ui-icon {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.ui-accordion .ui-accordion-header-active {
+  border-bottom: 0 !important;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .ui-accordion .accordion-content {
-  font-size: .8em;
-  padding: .25em 2em .5em 2em;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.ui-accordion .ui-accordion-content-active {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .accordion-content .pane-title { 

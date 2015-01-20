@@ -3402,3 +3402,21 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     @include FedraBold;
   }
 }
+
+  .large-image {
+      img {
+        height: auto;
+        margin-bottom: 20px;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width:640px) {
+          margin-bottom: 10px;
+        }
+      }
+  }
+.rolph-container {
+  width: 82.97872340425532%;
+  margin: 0 auto;
+}
