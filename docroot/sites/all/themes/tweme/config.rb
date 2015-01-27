@@ -9,7 +9,8 @@ fonts_dir = "fonts"
 minify_css = true
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :expanded
-environment = :production
+environment = :development
+# environment = :production
 
 relative_assets = true
 
@@ -24,3 +25,10 @@ relative_assets = true
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+# Conditionally enable line comments when in development mode.
+line_comments = (environment == :production) ? false : true
+
+# Output debugging info in development mode.
+sass_options = (environment == :production) ? {} : {:debug_info => true}
+sass_options = {:sourcemap => true}
