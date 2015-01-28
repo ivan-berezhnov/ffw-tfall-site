@@ -2375,20 +2375,20 @@ img {
 * #ShareThis
 **/
 /* line 1698, ../sass/_teachforall.scss */
-.sharethis-buttons {
+.block-sharethis {
   float: left;
   width: 88px;
 }
 /* line 1702, ../sass/_teachforall.scss */
-.sharethis-buttons .stButton {
+.block-sharethis .stButton {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
-  display: inline-block;
+  display: inline-block !important;
   line-height: 27px;
   overflow: hidden;
 }
 /* line 1708, ../sass/_teachforall.scss */
-.sharethis-buttons .stButton .stLarge:hover {
+.block-sharethis .stButton .stLarge:hover {
   opacity: 1;
 }
 
@@ -4220,7 +4220,6 @@ div#panels-ipe-control-container {
   font-style: normal;
 }
 
-/*
 .large-image img {
   height: auto;
   margin-bottom: 20px;
@@ -4240,7 +4239,7 @@ div#panels-ipe-control-container {
   margin: 0 auto;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  *  v1.3.2
  */

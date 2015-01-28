@@ -58,9 +58,10 @@
   				<div class="row-fluid news__node-links">
   				  <div class="span12">
               <?php
-                if (isset($content['sharethis'])) {
-                  print render($content['sharethis']);
-                }
+                $blockObject = block_load('sharethis', 'sharethis_block');
+                $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+                $output = drupal_render($block);
+                print $output;
               ?>
             <a href="news/latest">
 	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>

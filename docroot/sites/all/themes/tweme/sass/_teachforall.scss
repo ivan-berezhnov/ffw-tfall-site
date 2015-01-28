@@ -1695,14 +1695,13 @@ img {max-width: 100%;}
 * #ShareThis
 **/
 
-.sharethis-buttons {
+.block-sharethis {
   float: left;
   width: 88px;
 
   .stButton {
     margin: 0 8px 0 0;
     background-color: $grey2;
-    display: inline-block;
     line-height: 27px;
     overflow: hidden;
     .stLarge:hover {
@@ -3402,6 +3401,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     @include FedraBold;
   }
 }
+
   .large-image {
       img {
         height: auto;
@@ -3415,9 +3415,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
         }
       }
   }
-
 .rolph-container {
   width: 82.97872340425532%;
   margin: 0 auto;
 }
-
