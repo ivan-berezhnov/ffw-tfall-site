@@ -21,9 +21,8 @@ h2.ui-accordion-header {
 .ui-state-hover {
   border: 0 !important; 
   background: transparent !important; 
-  font-weight: bold !important; 
   color: #000 !important;
-  font-size: 1.125rem !important;
+  font-size: 18 !important;
   text-transform: none !important;
   letter-spacing: normal !important;
   border-bottom: 0 !important;

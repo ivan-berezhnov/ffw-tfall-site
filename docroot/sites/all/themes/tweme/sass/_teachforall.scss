@@ -943,7 +943,7 @@ h2 {
 **/
 
 #feeds {
-	background-color: $orange1;
+  background-color: $orange1;
   padding: 28px 0 40px;
 
   .row-fluid {
@@ -1212,7 +1212,7 @@ h2 {
     margin-left: 0;
   }
   .content {
-	width: 150px;
+  width: 150px;
   @media screen and (max-width:979px) {
     width: 100%;
   }
@@ -1374,9 +1374,9 @@ img {max-width: 100%;}
   ul {
     padding: 0px;
     margin: 0px;
-		li a {
-			margin:0px;
-		}
+    li a {
+      margin:0px;
+    }
   }
   p {
     color: $grey4;
@@ -1386,7 +1386,7 @@ img {max-width: 100%;}
 }
 
 .fb-like-box {
-	background-color: $white;
+  background-color: $white;
 }
 
 /* responsive fb like box */
@@ -2502,13 +2502,13 @@ img {max-width: 100%;}
 }
 
 .node-page-1-col-layout {
-	h2 {
-		a {
-		  color: $grey2;
-		  &:hover {
-			color: $red;
-		  }
-		}
+  h2 {
+    a {
+      color: $grey2;
+      &:hover {
+      color: $red;
+      }
+    }
   }
 }
 
