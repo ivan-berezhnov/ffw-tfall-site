@@ -22,25 +22,32 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
 
   </nav>
 
+  <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
   <div class="row-fluid">
-    <button class="off-screen-nav-button pull-left" data-effeckt-type="effeckt-off-screen-nav-left-push">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+
     <div class="uber-nav pull-left hidden-phone">
       <?php print render($page['header']); ?>
     </div>
+
     <div class="pull-right">
-      <div class="donate pull-left">
-        <a href="<?php print t('@donate', array('@donate' => url('get-involved/donate'))); ?>"><?php print t('DONATE'); ?></a>
+      <div class="donate-social-media-block">
+        <div class="donate pull-left">
+          <a href="<?php print t('@donate', array('@donate' => url('get-involved/donate'))); ?>"><?php print t('DONATE'); ?></a>
+        </div>
+        <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-twitter"></a>
+        <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
+        <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
+        <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
+        <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
       </div>
-      <a href="https://twitter.com/TeachForAll" target="_blank" class="social-media icon-twitter"></a>
-      <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
-      <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
-      <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
-	  <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
-	  <?php $block = module_invoke('locale', 'block_view', 'language'); print $block['content']; ?>
+      <div class="language-switcher-block">
+        <?php $block = module_invoke('locale', 'block_view', 'language'); print $block['content']; ?>
+      </div>
     </div>
   </div>
   <div class="row-fluid site-name">

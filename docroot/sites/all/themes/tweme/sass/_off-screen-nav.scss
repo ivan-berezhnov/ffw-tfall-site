@@ -65,9 +65,64 @@
   border: none;
   background-color: $grey3;
   display: none;
+  float: left;
+  margin: 0 20px 0 0;
   padding: 0.6em 0.7em;
-  @media screen and (max-width:1025px) {
-    display: block;
+  @media screen and (max-width: 374px) {
+    margin: 0 10px 0 0;
+  }
+}
+@media screen and (max-width: 1025px) {
+.off-screen-nav-button {
+  display: block;
+  + .row-fluid {
+    overflow: hidden;
+    width: auto;
+    .pull-right {
+      text-align: right;
+      width: 100%;
+    }
+    .language-switcher-locale-url {
+      li {
+        margin: 0 1px 0 0;
+        // display: inline-block;
+        border-right: 0 none;
+        float: none;
+        height: auto;
+        line-height: 1em;
+        padding: 0;
+        &:last-child {
+          margin: 0;
+        }
+      }
+      // a {
+      //   padding: 5px 0;
+      // }
+    }
+  }
+}
+}
+@media screen and (max-width: 479px) {
+  .off-screen-nav-button {
+    + .row-fluid {
+      .language-switcher-locale-url {
+        border-top: 1px dotted #ccc;
+        clear: both;
+        margin: 6px 0 0;
+        width: 100%;
+        a {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1025px) {
+  .language-switcher-locale-url {
+    a {
+      float: left;
+      padding: 7px 10px;
+    }
   }
 }
 
