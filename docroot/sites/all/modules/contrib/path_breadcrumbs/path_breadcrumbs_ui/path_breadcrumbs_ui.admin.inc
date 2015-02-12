@@ -299,6 +299,13 @@ function path_breadcrumbs_ui_settings($form, $form_state) {
     '#default_value' => variable_get('path_breadcrumbs_decode_entities', TRUE),
   );
 
+  $form['path_breadcrumbs_settings']['path_breadcrumbs_enable_on_error_pages'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enable Path Breadcrumbs on error pages'),
+    '#description' => t('Enables Path Breadcrumbs on error pages (403, 404). <strong>Only for advanced users. May require additional access checks.</strong>'),
+    '#default_value' => variable_get('path_breadcrumbs_enable_on_error_pages', FALSE),
+  );
+
   $form['#submit'][] = 'path_breadcrumbs_ui_settings_submit';
 
   return system_settings_form($form);
@@ -331,6 +338,7 @@ function path_breadcrumbs_ui_settings_submit($form, &$form_state) {
  * Form for path breadcrumbs clone.
  */
 function path_breadcrumbs_clone_breadcrumb($path_breadcrumb) {
+  $path_breadcrumb->clone_from = $path_breadcrumb->machine_name;
   $path_breadcrumb->machine_name .= '_clone';
   $path_breadcrumb->export_type = NULL;
   unset($path_breadcrumb->path_id);
