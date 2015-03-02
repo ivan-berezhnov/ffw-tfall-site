@@ -1,0 +1,137 @@
+/*-  Base styles
+----------------------------------------------------------------------*/
+body {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  min-width: 1000px;
+  font-family: Arial, Verdana, san-serif;
+  font-size: 11px;
+  background-repeat: no-repeat;
+  background-position:top center; 
+
+}
+
+#container {
+  width: 900px;
+  margin: 0px auto 0px auto;
+  padding: 0;
+  text-align: left;
+  color: #000;
+}
+
+#left {
+  width: 280px;
+  font-family: Arial, Verdana, san-serif;
+  color: white;
+  font-weight:bold;  
+  line-height: 160%;
+  letter-spacing: .2em;
+  margin-top: 178px;
+  margin-bottom: 30px;
+  background: #2e1405;
+  padding: 0px 8px 8px 0px;
+  font-size: 11px;
+  float: left;
+  opacity:0.85;
+  filter: alpha(opacity=85);
+}
+
+
+#right {
+  width: 545px;
+  color: #ffffff;
+  margin-top: 0px;
+  height:100%;
+  background: #990000;
+  font-family: Arial, Verdana, san-serif;
+  font-size: 10px;
+  line-height: 190%;
+  float: right;
+  opacity:0.83;
+  filter: alpha(opacity=83);
+}
+
+#right_inside {
+  width: 519px;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 15px;
+  float: right;
+}
+
+a {
+  color: #ecedca;
+  text-decoration:none;
+}
+
+a:hover,a:active {
+  color: ffffff;
+    padding: 0px;
+  text-decoration:underline;
+}
+
+.hidden
+{position:absolute;
+left:0px;
+top:-500px;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+
+/*-  Content styles
+----------------------------------------------------------------------*/
+
+#content {
+  width: 994px;
+  margin: 0px;
+  padding: 4px;
+  line-height:180%;
+}
+
+
+.subheader {
+  font-family: Arial, Verdana, san-serif;
+  color: ffffff;
+  margin-top: 10px;
+  letter-spacing: .2em;
+  line-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-weight:bold;  
+  font-size: 12px;
+  float: left;
+}
+
+.affiliation {
+  width: 280px;
+  font-family: Arial, Verdana, san-serif;
+  font-weight:regular;  
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  float: left;
+}
+
+/*-  Header Links
+----------------------------------------------------------------------*/
+
+a.header_top1 {
+display: inline-block;
+margin-top: 25px;
+height: 285px;
+width: 545px;
+background: url("images/2011_symposium_header2.gif");
+background-repeat: no-repeat;
+text-decoration: none;
+
+}
+
+}
+
+
+
