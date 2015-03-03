@@ -1,0 +1,31 @@
+<?php
+/**
+ * @file
+ * Code for the tfa_forum feature.
+ */
+
+include_once 'tfa_forum.features.inc';
+
+function tfa_forum_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id === 'comment_node_tfa_opinion_form') {
+    $form['#submit'][] = '_tfa_forum_custom_submit';
+    $form_state['referrer_node'] = $_GET['q'];
+/*
+    kpr($form);
+    kpr($form_state);
+*/
+  }
+}
+
+
+function _tfa_forum_custom_submit(&$form, &$form_state){
+
+  $form_state['redirect'] = array(
+    $form_state['referrer_node'],
+    array(
+      'fragment' => 'node-' . $form['#node']->nid,
+    ),
+  );
+    $form_state['rebuild'] = false;
+    $form_state['no_redirect'] = false;
+}
