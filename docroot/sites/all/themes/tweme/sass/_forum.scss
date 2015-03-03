@@ -1,0 +1,15 @@
+/* opinion link list */
+#opinion-menu {
+  clear:both;
+}
+
+/* opinion nodes */
+.opinion-block {
+  display: block;
+  border: 1px solid #333;
+  padding: 0 10px 10px;
+}
+
+.opinion-block.hidden {
+  display: none;
+}
