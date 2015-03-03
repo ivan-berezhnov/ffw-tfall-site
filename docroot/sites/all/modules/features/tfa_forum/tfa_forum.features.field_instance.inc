@@ -370,7 +370,7 @@ function tfa_forum_field_default_field_instances() {
       'file_directory' => 'forum/moderators',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '300x200',
+      'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
@@ -780,6 +780,12 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -836,7 +842,7 @@ function tfa_forum_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 1,
     ),
   );
 
@@ -847,6 +853,13 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -889,7 +902,7 @@ function tfa_forum_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tfa_opinion_author',
-    'label' => 'Author\'s Name',
+    'label' => 'Author Name',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -909,7 +922,7 @@ function tfa_forum_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -920,6 +933,15 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 100,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -961,7 +983,7 @@ function tfa_forum_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tfa_opinion_author_bio',
-    'label' => 'Author\'s Bio',
+    'label' => 'Author Bio',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -983,7 +1005,7 @@ function tfa_forum_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
@@ -994,6 +1016,12 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -1051,7 +1079,7 @@ function tfa_forum_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -1061,6 +1089,16 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'thumbnail',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'image',
@@ -1112,7 +1150,7 @@ function tfa_forum_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_tfa_opinion_image',
-    'label' => 'Image',
+    'label' => 'Author Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -1121,7 +1159,7 @@ function tfa_forum_field_default_field_instances() {
       'file_directory' => 'opinions',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
-      'max_resolution' => '300x200',
+      'max_resolution' => '',
       'min_resolution' => '',
       'title_field' => 0,
       'user_register_form' => FALSE,
@@ -1147,7 +1185,7 @@ function tfa_forum_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -1158,6 +1196,13 @@ function tfa_forum_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -1220,19 +1265,19 @@ function tfa_forum_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Author\'s Bio');
-  t('Author\'s Name');
+  t('Author Bio');
+  t('Author Image');
+  t('Author Name');
   t('Body');
   t('Comment');
   t('Downloads');
   t('External Link');
-  t('Image');
   t('Job Title');
   t('Moderator Bio');
   t('Moderator Image');

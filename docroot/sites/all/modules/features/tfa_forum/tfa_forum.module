@@ -29,3 +29,32 @@ function _tfa_forum_custom_submit(&$form, &$form_state){
     $form_state['rebuild'] = false;
     $form_state['no_redirect'] = false;
 }
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * Adds an 'Promotion' view mode for entities
+ */
+function tfa_forum_entity_info_alter(&$entity_info) {
+  foreach ($entity_info as $entity_type => $info) {
+    if (!isset($entity_info[$entity_type]['view modes'])) {
+      $entity_info[$entity_type]['view modes'] = array();
+    }
+    
+    $entity_info[$entity_type]['view modes']['alt_teaser'] = array(
+      'label' => t('Alt Teaser'),
+      'custom settings' => FALSE,
+    );
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function tfa_forum_preprocess_node(&$variables, $hook) {
+  $node = $variables['node'];
+  if($variables['view_mode'] == 'tfa_forum') {
+    $variables['theme_hook_suggestions'][] = 'node__' . $node->type . '__alt_teaser';
+    $variables['classes_array'][] = 'node-' . $node->type . '-alt-teaser';
+  }
+}
