@@ -56,6 +56,13 @@ function tfa_forum_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   /* Field: Content: Opinions */
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['id'] = 'field_tfa_forum_opinions';
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['table'] = 'field_data_field_tfa_forum_opinions';
@@ -64,7 +71,7 @@ function tfa_forum_views_default_views() {
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['alter']['text'] = '[field_tfa_forum_opinions]';
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_tfa_forum_opinions']['alter']['path'] = '[field_tfa_forum_opinions-target_id]';
+  $handler->display->display_options['fields']['field_tfa_forum_opinions']['alter']['path'] = 'node/[nid]#opinion-[field_tfa_forum_opinions-target_id]';
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['type'] = 'entityreference_entity_view';
   $handler->display->display_options['fields']['field_tfa_forum_opinions']['settings'] = array(
