@@ -1,15 +1,233 @@
 /* opinion link list */
 #opinion-menu {
-  clear:both;
+  clear: both;
 }
 
-/* opinion nodes */
-.opinion-block {
+// CONTENT HEADER
+// =============================================================================
+.content-header {
+  margin: 0 0 60px;
+  h1 {
+    margin-bottom: 22px;
+  }
+  h3 {
+    @include forum-section-headers;
+    margin-bottom: 16px;
+  }
+  p {
+    color: $grey1;
+    @include FedraRegular;
+    @include font-size(18);
+    line-height: 24px;
+  }
+}
+
+// FAUX SIDEBAR
+// =============================================================================
+.node-tfa-forum-post {
+  .content-sidebar {
+    float: left;
+    margin-left: 0;
+    width: 25%; // This is a hacky way to fix the padding.
+    h3 {
+      @include forum-section-headers;
+      margin-bottom: 14px;
+    }
+  }
+}
+.forum-block {
+  float: left;
+  margin: 0 30px 48px 0;
+}
+img.forum-headshot {
   display: block;
-  border: 1px solid #333;
-  padding: 0 10px 10px;
+  max-width: 60px;
 }
 
+// OPINION BLOCKS
+// =============================================================================
+.forum-opinion-links {
+  margin: 0 0 48px 0;
+}
+#opinion-menu {
+  list-style: none;
+  margin: 0;
+  li {
+    background-color: $beige;
+    clear: both;
+    color: $grey1;
+    display: inline-block;
+    @include font-size(17);
+    @include NGDemiBold;
+    line-height: 20px;
+    margin: 0 0 1px;
+    @include box-sizing(border-box);
+    width: 100%;
+    @include transition(background 0.2s ease);
+    &:hover {
+      background-color: #d1c9b4;
+    }
+  }
+  a {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    color: $grey1;
+    display: inline-block;
+    padding: 15px;
+    @include box-sizing(border-box);
+    position: relative;
+    width: 100%;
+    z-index: 100;
+  }
+  .open {
+    background-color: $white;
+    border-color: $grey1;
+    padding: 15px 17px 15px 15px;
+    width: calc(100% + 2px);
+  }
+}
+.opinion-author-image {
+  float: left;
+  margin: 0 15px 0 0;
+}
+.opinion-author-info {
+  overflow: hidden;
+}
+.opinion-author-name {
+  color: $nearblack;
+}
+.opinion-author-title {
+  clear: both;
+  color: $grey1;
+  float: left;
+}
+
+// FORUM MODERATOR BLOCK
+// =============================================================================
+.forum-moderator {
+  background-color: $grey8;
+  color: $white;
+  padding: 15px;
+  .forum-headshot {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  .moderator-info {
+    overflow: hidden;
+  }
+  .moderator-title {
+    color: $grey1;
+    float: left;
+  }
+}
+.moderator-bio {
+  float: left;
+  margin: 18px 0;
+  width: 100%;
+}
+.moderator-more {
+  float: left;
+  width: 100%;
+  a {
+    color: #fff;
+    @include NGBold;
+    text-transform: uppercase;
+    @include transition(color 0.2s ease);
+    &:hover {
+      color: $orange1;
+    }
+    &:after {
+      color: $orange1;
+      content: ">>";
+      margin: 0 0 0 6px;
+    }
+  }
+}
+
+// RELATED LINKS BLOCK
+// =============================================================================
+.forum-related-links {
+  .item-list {
+    ul {
+      float: left;
+      margin: 0 0 0 16px;
+    }
+    li {
+      float: left;
+      line-height: 25px;
+      margin: 12px 0;
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// RELATED LINKS & DOWNLOADS BLOCK
+// =============================================================================
+.forum-related-links,
+.forum-downloads {
+  @include FedraRegular;
+  @include font-size(17);
+  line-height: 25px;
+}
+
+// FILE STYlES
+// =============================================================================
+.file {
+  float: left;
+  margin: 12px 0;
+  img {
+    display: none;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a[href$=".pdf"]:before {
+    background-image: url(../images/icon-pdf.png);
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    content: " ";
+    float: left;
+    height: 33px;
+    margin: 0 20px 0 0;
+    width: 30px;
+  }
+}
+
+// OPINION NODES
+// =============================================================================
+.content-opinion {
+  border: 1px solid $grey1;
+  float: right;
+  margin-bottom: 80px;
+  width: 75%;
+  @include box-sizing(border-box);
+}
+.opinion-block {
+  display: block; // This must stay - integrates with JS.
+  padding: 60px;
+  h2 {
+    a {
+      color: $grey9;
+    }
+  }
+  .content {
+    p {
+      color: $grey9;
+      @include FedraRegular;
+      @include font-size(17);
+      line-height: 25px;
+      text-align: left !important;
+    }
+  }
+}
 .opinion-block.hidden {
-  display: none;
+  display: none; // This must stay - integrates with JS.
 }

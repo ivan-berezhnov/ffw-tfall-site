@@ -98,41 +98,51 @@
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php else: ?>
-      <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>    
+      <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <h3><?php print t('Introduction'); ?></h3>
     <?php print render($content['body']); ?>
     </div>
     <div class="content-main">
-      <div class="content span9 pull-right"<?php print $content_attributes; ?>>
+      <div class="content-opinion"<?php print $content_attributes; ?>>
         <div id="opinion-content">
           <?php print $opinion_content; ?>
         </div>
       </div>
 
-      <div class="content-sidebar span3 pull-left">
-        <div class="forum-opinion-links">
+      <div class="content-sidebar">
+        <div class="forum-opinion-links forum-block">
           <h3><?php print t('Opinions'); ?></h3>
           <?php print $opinion_links; ?>
         </div>
-        <div class="forum-moderator">
-          <h3><?php print t('Moderator'); ?></h3>
+        <h3><?php print t('Moderator'); ?></h3>
+        <div class="forum-moderator forum-block">
           <?php print render($content['field_moderator_image']); ?>
-          <?php print render($content['field_moderator_name']); ?>
-          <?php print render($content['field_moderator_title']); ?>
-          <?php print render($content['field_moderator_bio']); ?>
-          <?php print render($content['field_moderator_external_link']); ?>
+          <div class="moderator-info">
+            <span class="moderator-name">
+              <?php print render($content['field_moderator_name']); ?>
+            </span>
+            <span class="moderator-title">
+              <?php print render($content['field_moderator_title']); ?>
+            </span>
+          </div>
+          <span class="moderator-bio">
+            <?php print render($content['field_moderator_bio']); ?>
+          </span>
+          <div class="moderator-more">
+            <?php print render($content['field_moderator_external_link']); ?>
+          </div>
         </div>
-        <div class="forum-releated-links">
+        <div class="forum-related-links forum-block">
           <h3><?php print t('Related Links'); ?></h3>
           <?php print $related_links; ?>
         </div>
-        <div class="forum-downloads">
+        <div class="forum-downloads forum-block">
           <h3><?php print t('Downloads'); ?></h3>
           <?php print render($content['field_tfa_forum_downloads']); ?>
         </div>
-        <div class="forum-share-links">
+        <div class="forum-share-links forum-block">
           <h3><?php print t('Share'); ?></h3>
           <div class="block-sharethis">
             <?php print $share_links; ?>
