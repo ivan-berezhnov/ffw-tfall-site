@@ -106,7 +106,19 @@
     <?php print render($content['body']); ?>
   </div>
 
-  <?php print render($content['links']); ?>
+  <div class="opinion-end-author">
+    <?php print render($content['field_tfa_opinion_image']); ?>
+    <div class="opinion-end-info">
+      <span class="opinion-end-name">
+        <?php print render($content['field_tfa_opinion_author']); ?>
+      </span>
+      <span class="opinion-end-bio">
+        <?php print render($content['field_tfa_opinion_author_bio']); ?>
+        <?php print render($content['field_tfa_opinion_external_link']); ?>
+      </span>
+    </div>
+  </div>
+  <?php //print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
 

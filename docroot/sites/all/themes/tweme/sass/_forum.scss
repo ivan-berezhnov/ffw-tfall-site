@@ -5,20 +5,23 @@
 
 // CONTENT HEADER
 // =============================================================================
-.content-header {
-  margin: 0 0 60px;
-  h1 {
-    margin-bottom: 22px;
-  }
-  h3 {
-    @include forum-section-headers;
-    margin-bottom: 16px;
-  }
-  p {
-    color: $grey1;
-    @include FedraRegular;
-    @include font-size(18);
-    line-height: 24px;
+.node-tfa-forum-post {
+  .content-header {
+    margin: 0 0 60px;
+    h1 {
+      margin-bottom: 22px;
+      margin-top: 32px;
+    }
+    h3 {
+      @include forum-section-headers;
+      margin-bottom: 16px;
+    }
+    p {
+      color: $grey1;
+      @include FedraRegular;
+      @include font-size(18);
+      line-height: 24px;
+    }
   }
 }
 
@@ -209,8 +212,12 @@ img.forum-headshot {
   margin-bottom: 80px;
   width: 75%;
   @include box-sizing(border-box);
+  .node h2:first-child {
+    margin-bottom: 36px;
+  }
 }
 .opinion-block {
+  float: right;
   display: block; // This must stay - integrates with JS.
   padding: 60px;
   h2 {
@@ -230,4 +237,36 @@ img.forum-headshot {
 }
 .opinion-block.hidden {
   display: none; // This must stay - integrates with JS.
+}
+.opinion-end-author {
+  clear: both;
+  float: left;
+  @include font-size(17);
+  margin: 60px 0;
+  width: 100%;
+  .forum-headshot {
+    float: left;
+    margin: 0 30px 0 0;
+  }
+}
+.opinion-end-info {
+  overflow: hidden;
+}
+.opinion-end-name {
+  color: $nearblack;
+  @include NGBold;
+}
+.opinion-end-bio {
+  @include NGMediumOblique;
+  float: left;
+  a {
+    @include transition(color 0.2s ease);
+    &:hover {
+      color: $red2;
+    }
+    &:after {
+      content: ">>";
+      padding: 0 0 0 6px;
+    }
+  }
 }
