@@ -9,25 +9,27 @@ include_once 'tfa_forum.features.inc';
 function tfa_forum_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id === 'comment_node_tfa_opinion_form') {
     $form['#submit'][] = '_tfa_forum_custom_submit';
-    $form_state['referrer_node'] = $_GET['q'];
-/*
-    kpr($form);
-    kpr($form_state);
-*/
   }
 }
 
 
 function _tfa_forum_custom_submit(&$form, &$form_state){
+  $nid = $form_state['values']['nid'];
+  
+  $query = db_query("
+  SELECT field_tfa_forum_opinions_node.nid AS field_tfa_forum_opinions_node_nid 
+  FROM {node} node 
+  LEFT JOIN {field_data_field_tfa_forum_opinions} field_data_field_tfa_forum_opinions 
+  ON node.nid = field_data_field_tfa_forum_opinions.field_tfa_forum_opinions_target_id 
+  AND (field_data_field_tfa_forum_opinions.entity_type = 'node' 
+  AND field_data_field_tfa_forum_opinions.deleted = '0')
+  LEFT JOIN {node} field_tfa_forum_opinions_node ON field_data_field_tfa_forum_opinions.entity_id = field_tfa_forum_opinions_node.nid
+  WHERE (( (node.nid = :nid ) )AND(( (node.status = '1') )))", array(':nid' => $nid));
 
-  $form_state['redirect'] = array(
-    $form_state['referrer_node'],
-    array(
-      'fragment' => 'node-' . $form['#node']->nid,
-    ),
-  );
-    $form_state['rebuild'] = false;
-    $form_state['no_redirect'] = false;
+  $referencer_id = $query->fetchField();
+
+  $form_state['redirect'] = array('node/' . $referencer_id, array('fragment' => 'opinion-' . $nid));
+  cache_clear_all();  
 }
 
 /**
