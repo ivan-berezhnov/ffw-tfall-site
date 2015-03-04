@@ -270,3 +270,33 @@ img.forum-headshot {
     }
   }
 }
+
+// OPINION COMMENTS
+// =============================================================================
+.view-opinion-comments {
+  @include NewsGothicRegular;
+  .username {
+    color: $nearblack;
+    @include NGBold;
+    @include font-size(15);
+  }
+  .slug {
+    @include NGDemiBold;
+    @include font-size(12);
+  }
+  .content {
+    p {
+      @include NewsGothicRegular;
+      @include font-size(16);
+      line-height: 20px;
+    }
+  }
+  .view-content {
+    margin-bottom: 60px;
+  }
+}
+h3.comments {
+  clear: both;
+  @include forum-section-headers;
+  margin-bottom: 34px;
+}

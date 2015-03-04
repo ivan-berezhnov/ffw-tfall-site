@@ -7916,6 +7916,47 @@ img.forum-headshot {
   padding: 0 0 0 6px;
 }
 
+/* line 276, ../sass/_forum.scss */
+.view-opinion-comments {
+  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+}
+/* line 278, ../sass/_forum.scss */
+.view-opinion-comments .username {
+  color: #030303;
+  font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+/* line 283, ../sass/_forum.scss */
+.view-opinion-comments .slug {
+  font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 288, ../sass/_forum.scss */
+.view-opinion-comments .content p {
+  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+}
+/* line 294, ../sass/_forum.scss */
+.view-opinion-comments .view-content {
+  margin-bottom: 60px;
+}
+
+/* line 303, ../sass/_forum.scss */
+h3.comments {
+  clear: both;
+  color: #e69740;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+
 /**
 * #Table of Contents
 **/

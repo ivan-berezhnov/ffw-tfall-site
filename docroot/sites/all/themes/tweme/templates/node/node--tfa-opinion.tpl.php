@@ -119,7 +119,9 @@
     </div>
   </div>
   <?php //print render($content['links']); ?>
-
+  <?php if ($comment_count > 0): ?>
+      <h3 class="comments"><?php print t('Comments'); ?></h3>
+  <?php endif; ?>
   <?php print render($content['comments']); ?>
 
 </div>
