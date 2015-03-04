@@ -277,3 +277,69 @@ function getVimeoThumb($id) {
   $data = json_decode($data);
   return $data[0]->thumbnail_large;
 }
+
+/*
+ * Implements hook_preprocess_node
+ * extended for tfa_forum_post content type (Forum Post) templates
+ */
+function tweme_preprocess_node__tfa_forum_post(&$vars) {
+
+  $opinions = $vars['field_tfa_forum_opinions'];
+  if (count($opinions) > 0) {
+    $items = array();
+    $links = array();
+    $title = null;
+    $type = 'ul';
+    $attributes = array(
+      'id' => 'opinion-menu',
+      'class' => '',
+    );
+    $i = 0;
+    foreach($opinions as $opinion => $value) {
+      $entity = $value['entity'];
+      $tab_content = drupal_render(entity_view('node', array($entity), 'teaser'));
+      
+      $hidden = $i > 0 ? 'hidden' : '';
+      $full_content = '<div id="opinion-' . $entity->nid . '" class="opinion-block ' . $hidden . '">';
+      $full_content .= drupal_render(entity_view('node', array($entity), 'full'));
+      $full_content .= views_embed_view('opinion_comments','block', $entity->nid);
+      $full_content .=  drupal_render(drupal_get_form("comment_node_{$entity->type}_form", (object) array('nid' => $entity->nid)));
+      $full_content .= '</div>';
+
+      $open = $i == 0 ? 'open' : '';
+      $links[] = l($tab_content, '', array('html' => true, 'fragment' => 'opinion-' . $entity->nid, 'external' => true, 'attributes' => array('class' => array($open))));
+      $items[] = $full_content;
+      $i++;
+    }
+    $vars['opinion_links'] = theme('item_list', array('items' => $links, 'title' => $title, 'type' => $type, 'attributes' => $attributes));
+    $vars['opinion_content'] = implode('', $items);
+  }
+  
+  $related_links = $vars['field_tfa_forum_related_links'];
+  if (count($related_links) > 0) {
+    $items = array();
+    $title = null;
+    $type = 'ul';
+    $attributes = array(
+      'id' => '',
+      'class' => '',
+    );
+    
+    foreach($related_links as $related_link => $link) {
+      $items[] = l($link['title'], $link['url'], array('attributes' => $link['attributes']));
+    }
+    $vars['related_links'] = theme('item_list', array('items' => $items, 'title' => $title, 'type' => $type, 'attributes' => $attributes));
+  }
+  
+  $sharethis_block = module_invoke('sharethis', 'block_view', 'sharethis_block');
+  $vars['share_links'] = $sharethis_block['content'];
+  
+}
+
+/*
+ * Implements hook_preprocess_node
+ * extended for tfa_opinion content type (Opinion) templates
+ */
+function tweme_preprocess_node__tfa_opinion(&$vars) {
+  // do some fun things here if needed
+}

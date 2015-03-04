@@ -390,4 +390,50 @@
 
   }
   }
+  
+  Drupal.behaviors.openOpinions = {
+    attach: function (context, settings) {
+    
+      $('#opinion-menu a', context).on('click', function(e){
+
+        if($(this).hasClass('open')) {
+        // do nothing because the link is already open
+        } else {
+          var oldcontent = $('#opinion-menu a.open').attr('href');
+          var newcontent = $(this).attr('href');
+      
+          $(oldcontent).fadeOut('fast', function(){
+            $(newcontent).fadeIn().removeClass('hidden');
+            $(oldcontent).addClass('hidden');
+          });
+      
+          $('#opinion-menu a').removeClass('open');
+          $(this).addClass('open');
+        }
+      
+      });
+
+    }
+  }
+  
+  Drupal.behaviors.launchOpinion = {
+    attach: function (context, settings) {
+      var url = window.location.hash;
+
+      if(url.indexOf("opinion") > -1) {
+        $('.opinion-block').each(function(){
+          $(this).addClass('hidden');
+        });
+        $('#opinion-menu a').each(function(){
+          $(this).removeClass('open');
+        });
+        
+        $('a[href="'+url+'"]').addClass('open');
+        $(url).removeClass('hidden');
+      }
+      
+    }
+  }
+
+
   })(jQuery);
