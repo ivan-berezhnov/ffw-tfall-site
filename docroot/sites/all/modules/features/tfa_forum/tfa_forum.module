@@ -9,23 +9,54 @@ include_once 'tfa_forum.features.inc';
 function tfa_forum_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id === 'comment_node_tfa_opinion_form') {
     $form['#submit'][] = '_tfa_forum_custom_submit';
-    $form_state['referrer_node'] = $_GET['q'];
-/*
-    kpr($form);
-    kpr($form_state);
-*/
   }
 }
 
 
 function _tfa_forum_custom_submit(&$form, &$form_state){
+  $nid = $form_state['values']['nid'];
+  
+  $query = db_query("
+  SELECT field_tfa_forum_opinions_node.nid AS field_tfa_forum_opinions_node_nid 
+  FROM {node} node 
+  LEFT JOIN {field_data_field_tfa_forum_opinions} field_data_field_tfa_forum_opinions 
+  ON node.nid = field_data_field_tfa_forum_opinions.field_tfa_forum_opinions_target_id 
+  AND (field_data_field_tfa_forum_opinions.entity_type = 'node' 
+  AND field_data_field_tfa_forum_opinions.deleted = '0')
+  LEFT JOIN {node} field_tfa_forum_opinions_node ON field_data_field_tfa_forum_opinions.entity_id = field_tfa_forum_opinions_node.nid
+  WHERE (( (node.nid = :nid ) )AND(( (node.status = '1') )))", array(':nid' => $nid));
 
-  $form_state['redirect'] = array(
-    $form_state['referrer_node'],
-    array(
-      'fragment' => 'node-' . $form['#node']->nid,
-    ),
-  );
-    $form_state['rebuild'] = false;
-    $form_state['no_redirect'] = false;
+  $referencer_id = $query->fetchField();
+
+  $form_state['redirect'] = array('node/' . $referencer_id, array('fragment' => 'opinion-' . $nid));
+  cache_clear_all();  
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * Adds an 'Promotion' view mode for entities
+ */
+function tfa_forum_entity_info_alter(&$entity_info) {
+  foreach ($entity_info as $entity_type => $info) {
+    if (!isset($entity_info[$entity_type]['view modes'])) {
+      $entity_info[$entity_type]['view modes'] = array();
+    }
+    
+    $entity_info[$entity_type]['view modes']['alt_teaser'] = array(
+      'label' => t('Alt Teaser'),
+      'custom settings' => FALSE,
+    );
+  }
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function tfa_forum_preprocess_node(&$variables, $hook) {
+  $node = $variables['node'];
+  if($variables['view_mode'] == 'tfa_forum') {
+    $variables['theme_hook_suggestions'][] = 'node__' . $node->type . '__alt_teaser';
+    $variables['classes_array'][] = 'node-' . $node->type . '-alt-teaser';
+  }
 }
