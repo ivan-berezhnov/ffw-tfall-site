@@ -39,8 +39,11 @@
   }
 }
 .forum-block {
+  clear: both;
   float: left;
   margin: 0 30px 48px 0;
+  width: 100%;
+  @include box-sizing(border-box);
 }
 img.forum-headshot {
   display: block;

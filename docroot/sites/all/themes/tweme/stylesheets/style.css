@@ -7620,27 +7620,32 @@ div#panels-ipe-control-container {
 
 /* line 41, ../sass/_forum.scss */
 .forum-block {
+  clear: both;
   float: left;
   margin: 0 30px 48px 0;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 45, ../sass/_forum.scss */
+/* line 48, ../sass/_forum.scss */
 img.forum-headshot {
   display: block;
   max-width: 60px;
 }
 
-/* line 52, ../sass/_forum.scss */
+/* line 55, ../sass/_forum.scss */
 .forum-opinion-links {
   margin: 0 0 48px 0;
 }
 
-/* line 55, ../sass/_forum.scss */
+/* line 58, ../sass/_forum.scss */
 #opinion-menu {
   list-style: none;
   margin: 0;
 }
-/* line 58, ../sass/_forum.scss */
+/* line 61, ../sass/_forum.scss */
 #opinion-menu li {
   background-color: #dfd9c9;
   clear: both;
@@ -7660,11 +7665,11 @@ img.forum-headshot {
   -webkit-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 70, ../sass/_forum.scss */
+/* line 73, ../sass/_forum.scss */
 #opinion-menu li:hover {
   background-color: #d1c9b4;
 }
-/* line 74, ../sass/_forum.scss */
+/* line 77, ../sass/_forum.scss */
 #opinion-menu a {
   border-color: transparent;
   border-style: solid;
@@ -7679,7 +7684,7 @@ img.forum-headshot {
   width: 100%;
   z-index: 100;
 }
-/* line 86, ../sass/_forum.scss */
+/* line 89, ../sass/_forum.scss */
 #opinion-menu .open {
   background-color: white;
   border-color: #91998c;
@@ -7687,63 +7692,63 @@ img.forum-headshot {
   width: calc(100% + 2px);
 }
 
-/* line 93, ../sass/_forum.scss */
+/* line 96, ../sass/_forum.scss */
 .opinion-author-image {
   float: left;
   margin: 0 15px 0 0;
 }
 
-/* line 97, ../sass/_forum.scss */
+/* line 100, ../sass/_forum.scss */
 .opinion-author-info {
   overflow: hidden;
 }
 
-/* line 100, ../sass/_forum.scss */
+/* line 103, ../sass/_forum.scss */
 .opinion-author-name {
   color: #030303;
 }
 
-/* line 103, ../sass/_forum.scss */
+/* line 106, ../sass/_forum.scss */
 .opinion-author-title {
   clear: both;
   color: #91998c;
   float: left;
 }
 
-/* line 111, ../sass/_forum.scss */
+/* line 114, ../sass/_forum.scss */
 .forum-moderator {
   background-color: #3b3734;
   color: white;
   padding: 15px;
 }
-/* line 115, ../sass/_forum.scss */
+/* line 118, ../sass/_forum.scss */
 .forum-moderator .forum-headshot {
   float: left;
   margin: 0 15px 0 0;
 }
-/* line 119, ../sass/_forum.scss */
+/* line 122, ../sass/_forum.scss */
 .forum-moderator .moderator-info {
   overflow: hidden;
 }
-/* line 122, ../sass/_forum.scss */
+/* line 125, ../sass/_forum.scss */
 .forum-moderator .moderator-title {
   color: #91998c;
   float: left;
 }
 
-/* line 127, ../sass/_forum.scss */
+/* line 130, ../sass/_forum.scss */
 .moderator-bio {
   float: left;
   margin: 18px 0;
   width: 100%;
 }
 
-/* line 132, ../sass/_forum.scss */
+/* line 135, ../sass/_forum.scss */
 .moderator-more {
   float: left;
   width: 100%;
 }
-/* line 135, ../sass/_forum.scss */
+/* line 138, ../sass/_forum.scss */
 .moderator-more a {
   color: #fff;
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
@@ -7753,34 +7758,34 @@ img.forum-headshot {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 140, ../sass/_forum.scss */
+/* line 143, ../sass/_forum.scss */
 .moderator-more a:hover {
   color: #e69740;
 }
-/* line 143, ../sass/_forum.scss */
+/* line 146, ../sass/_forum.scss */
 .moderator-more a:after {
   color: #e69740;
   content: ">>";
   margin: 0 0 0 6px;
 }
 
-/* line 155, ../sass/_forum.scss */
+/* line 158, ../sass/_forum.scss */
 .forum-related-links .item-list ul {
   float: left;
   margin: 0 0 0 16px;
 }
-/* line 159, ../sass/_forum.scss */
+/* line 162, ../sass/_forum.scss */
 .forum-related-links .item-list li {
   float: left;
   line-height: 25px;
   margin: 12px 0;
 }
-/* line 165, ../sass/_forum.scss */
+/* line 168, ../sass/_forum.scss */
 .forum-related-links .item-list a:hover {
   text-decoration: underline;
 }
 
-/* line 174, ../sass/_forum.scss */
+/* line 177, ../sass/_forum.scss */
 .forum-related-links,
 .forum-downloads {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -7796,20 +7801,20 @@ img.forum-headshot {
   font-style: normal;
 }
 
-/* line 183, ../sass/_forum.scss */
+/* line 186, ../sass/_forum.scss */
 .file {
   float: left;
   margin: 12px 0;
 }
-/* line 186, ../sass/_forum.scss */
+/* line 189, ../sass/_forum.scss */
 .file img {
   display: none;
 }
-/* line 190, ../sass/_forum.scss */
+/* line 193, ../sass/_forum.scss */
 .file a:hover {
   text-decoration: underline;
 }
-/* line 194, ../sass/_forum.scss */
+/* line 197, ../sass/_forum.scss */
 .file a[href$=".pdf"]:before {
   background-image: url(../images/icon-pdf.png);
   background-position: 0 3px;
@@ -7822,7 +7827,7 @@ img.forum-headshot {
   width: 30px;
 }
 
-/* line 209, ../sass/_forum.scss */
+/* line 212, ../sass/_forum.scss */
 .content-opinion {
   border: 1px solid #91998c;
   float: right;
@@ -7832,22 +7837,22 @@ img.forum-headshot {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 215, ../sass/_forum.scss */
+/* line 218, ../sass/_forum.scss */
 .content-opinion .node h2:first-child {
   margin-bottom: 36px;
 }
 
-/* line 219, ../sass/_forum.scss */
+/* line 222, ../sass/_forum.scss */
 .opinion-block {
   float: right;
   display: block;
   padding: 60px;
 }
-/* line 224, ../sass/_forum.scss */
+/* line 227, ../sass/_forum.scss */
 .opinion-block h2 a {
   color: #4d4d4d;
 }
-/* line 229, ../sass/_forum.scss */
+/* line 232, ../sass/_forum.scss */
 .opinion-block .content p {
   color: #4d4d4d;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -7863,12 +7868,12 @@ img.forum-headshot {
   font-style: normal;
 }
 
-/* line 238, ../sass/_forum.scss */
+/* line 241, ../sass/_forum.scss */
 .opinion-block.hidden {
   display: none;
 }
 
-/* line 241, ../sass/_forum.scss */
+/* line 244, ../sass/_forum.scss */
 .opinion-end-author {
   clear: both;
   float: left;
@@ -7877,75 +7882,75 @@ img.forum-headshot {
   margin: 60px 0;
   width: 100%;
 }
-/* line 247, ../sass/_forum.scss */
+/* line 250, ../sass/_forum.scss */
 .opinion-end-author .forum-headshot {
   float: left;
   margin: 0 30px 0 0;
 }
 
-/* line 252, ../sass/_forum.scss */
+/* line 255, ../sass/_forum.scss */
 .opinion-end-info {
   overflow: hidden;
 }
 
-/* line 255, ../sass/_forum.scss */
+/* line 258, ../sass/_forum.scss */
 .opinion-end-name {
   color: #030303;
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 259, ../sass/_forum.scss */
+/* line 262, ../sass/_forum.scss */
 .opinion-end-bio {
   font-family: "News Gothic Medium Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
   float: left;
 }
-/* line 262, ../sass/_forum.scss */
+/* line 265, ../sass/_forum.scss */
 .opinion-end-bio a {
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 264, ../sass/_forum.scss */
+/* line 267, ../sass/_forum.scss */
 .opinion-end-bio a:hover {
   color: #db4b57;
 }
-/* line 267, ../sass/_forum.scss */
+/* line 270, ../sass/_forum.scss */
 .opinion-end-bio a:after {
   content: ">>";
   padding: 0 0 0 6px;
 }
 
-/* line 276, ../sass/_forum.scss */
+/* line 279, ../sass/_forum.scss */
 .view-opinion-comments {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 278, ../sass/_forum.scss */
+/* line 281, ../sass/_forum.scss */
 .view-opinion-comments .username {
   color: #030303;
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
 }
-/* line 283, ../sass/_forum.scss */
+/* line 286, ../sass/_forum.scss */
 .view-opinion-comments .slug {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 288, ../sass/_forum.scss */
+/* line 291, ../sass/_forum.scss */
 .view-opinion-comments .content p {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 20px;
 }
-/* line 294, ../sass/_forum.scss */
+/* line 297, ../sass/_forum.scss */
 .view-opinion-comments .view-content {
   margin-bottom: 60px;
 }
 
-/* line 303, ../sass/_forum.scss */
+/* line 301, ../sass/_forum.scss */
 h3.comments {
   clear: both;
   color: #e69740;
@@ -7955,6 +7960,72 @@ h3.comments {
   line-height: 22px;
   text-transform: uppercase;
   margin-bottom: 34px;
+}
+
+/* line 2, ../sass/_forum-landing.scss */
+.view-forum-landing-page {
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  /* line 2, ../sass/_forum-landing.scss */
+  .view-forum-landing-page {
+    width: 724px;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  /* line 2, ../sass/_forum-landing.scss */
+  .view-forum-landing-page {
+    width: 940px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 2, ../sass/_forum-landing.scss */
+  .view-forum-landing-page {
+    width: 1170px;
+  }
+}
+/* line 13, ../sass/_forum-landing.scss */
+.view-forum-landing-page .view-content {
+  float: left;
+  margin-bottom: 80px;
+  width: 100%;
+}
+/* line 18, ../sass/_forum-landing.scss */
+.view-forum-landing-page .views-row {
+  border-bottom: 1px solid #4d4d4d;
+  float: left;
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  padding: 60px 0 70px;
+  width: 100%;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.view-forum-landing-page .views-row em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+/* line 25, ../sass/_forum-landing.scss */
+.view-forum-landing-page .views-field-title {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 29px;
+}
+/* line 28, ../sass/_forum-landing.scss */
+.view-forum-landing-page .views-field-title a {
+  color: #4d4d4d;
+}
+/* line 32, ../sass/_forum-landing.scss */
+.view-forum-landing-page .landing-forum {
+  float: left;
+  padding: 0 30px 0 0;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 38, ../sass/_forum-landing.scss */
+.view-forum-landing-page .landing-opinions {
+  overflow: hidden;
 }
 
 /**
