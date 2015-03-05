@@ -402,11 +402,8 @@
           var oldcontent = $('#opinion-menu a.open').attr('href');
           var newcontent = $(this).attr('href');
       
-          $(oldcontent).fadeOut('fast', function(){
-            $(newcontent).fadeIn().removeClass('hidden');
-            $(oldcontent).addClass('hidden');
-          });
-      
+          $(newcontent).removeClass('hidden');
+          $(oldcontent).addClass('hidden');
           $('#opinion-menu a').removeClass('open');
           $(this).addClass('open');
         }
