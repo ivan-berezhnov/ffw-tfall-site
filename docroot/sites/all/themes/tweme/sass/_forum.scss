@@ -39,8 +39,10 @@
   }
 }
 .forum-block {
+  clear: both;
   float: left;
   margin: 0 30px 48px 0;
+  @include box-sizing(border-box);
 }
 img.forum-headshot {
   display: block;
@@ -99,6 +101,8 @@ img.forum-headshot {
 }
 .opinion-author-name {
   color: $nearblack;
+  float: left;
+  width: 100%;
 }
 .opinion-author-title {
   clear: both;
@@ -207,7 +211,7 @@ img.forum-headshot {
 // OPINION NODES
 // =============================================================================
 .content-opinion {
-  border: 1px solid $grey1;
+  // border: 1px solid $grey1;
   float: right;
   margin-bottom: 80px;
   width: 75%;
@@ -219,7 +223,7 @@ img.forum-headshot {
 .opinion-block {
   float: right;
   display: block; // This must stay - integrates with JS.
-  padding: 60px;
+  // padding: 60px;
   h2 {
     a {
       color: $grey9;
@@ -238,11 +242,35 @@ img.forum-headshot {
 .opinion-block.hidden {
   display: none; // This must stay - integrates with JS.
 }
+.opinion-content {
+  border: 1px solid $grey1;
+  margin: 0 0 55px 0;
+  padding: 60px;
+  position: relative;
+  &:after,
+  &:before {
+      content: "";
+      border-style: solid;
+      border-width: 20px;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 100%;
+      left: 60px
+  }
+  &:before {
+      border-color: $grey1 transparent transparent;
+  }
+  &:after {
+      margin-top: -2px;
+      border-color: #fff transparent transparent;
+  }
+}
 .opinion-end-author {
   clear: both;
   float: left;
   @include font-size(17);
-  margin: 60px 0;
+  margin: 60px 0 0;
   width: 100%;
   .forum-headshot {
     float: left;
@@ -273,6 +301,9 @@ img.forum-headshot {
 
 // OPINION COMMENTS
 // =============================================================================
+.opinion-comment-content {
+  padding: 0 60px;
+}
 .view-opinion-comments {
   @include NewsGothicRegular;
   .username {
@@ -295,8 +326,11 @@ img.forum-headshot {
     margin-bottom: 60px;
   }
 }
-h3.comments {
+h3.comments-title {
   clear: both;
   @include forum-section-headers;
   margin-bottom: 34px;
+}
+.comment--user-wrapper {
+  margin: 0 0 30px;
 }
