@@ -300,10 +300,20 @@ function tweme_preprocess_node__tfa_forum_post(&$vars) {
       $tab_content = drupal_render(entity_view('node', array($entity), 'teaser'));
       
       $hidden = $i > 0 ? 'hidden' : '';
-      $full_content = '<div id="opinion-' . $entity->nid . '" class="opinion-block ' . $hidden . '">';
-      $full_content .= drupal_render(entity_view('node', array($entity), 'full'));
-      $full_content .= views_embed_view('opinion_comments','block', $entity->nid);
-      $full_content .=  drupal_render(drupal_get_form("comment_node_{$entity->type}_form", (object) array('nid' => $entity->nid)));
+      $full_content  = '<div id="opinion-' . $entity->nid . '" class="opinion-block ' . $hidden . '">';
+      $full_content .= '<div class="opinion-content">' . drupal_render(entity_view('node', array($entity), 'full')) . '</div>';
+      $full_content .= '<div class="opinion-comment-content">';
+      
+      if ($view = views_get_view('opinion_comments')) {
+        $view->set_display('block');
+        $view->set_arguments(array($entity->nid));
+  
+        $full_content .= '<h3 class="comments-title">' . $view->get_title() . '</h3>';
+        $full_content .= $view->preview();
+      }
+      
+      $full_content .= drupal_render(drupal_get_form("comment_node_{$entity->type}_form", (object) array('nid' => $entity->nid)));
+      $full_content .= '</div>';
       $full_content .= '</div>';
 
       $open = $i == 0 ? 'open' : '';
