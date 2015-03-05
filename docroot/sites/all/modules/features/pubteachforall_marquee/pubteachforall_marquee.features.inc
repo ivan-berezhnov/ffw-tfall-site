@@ -49,6 +49,7 @@ function pubteachforall_marquee_fe_nodequeue_export_fields() {
       0 => 'network_learning',
       1 => 'news',
       2 => 'spotlight',
+      3 => 'tfa_forum_post',
     ),
     'roles' => array(),
     'count' => 0,
