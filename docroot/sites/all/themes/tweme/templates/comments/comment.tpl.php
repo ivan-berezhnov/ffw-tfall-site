@@ -59,48 +59,44 @@
  * @ingroup themeable
  */
 ?>
-
+<?php
+  // We hide the comments and links now so that we can render them later.
+  hide($content['links']);
+?>
 <div class="comment--user-wrapper">
 
   <div class="comment--line"></div>
-
-  <div class="comment--picture">
-    <?php if(isset($profile_image)): ?>
-      <?php print $profile_image; ?>
-    <?php else: ?>
-      <span class="icon-person"></span>
-    <?php endif; ?>
-  </div>
-
+  
   <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+  
+    <?php if ($new): ?>
+      <span class="new"><?php print $new ?></span>
+    <?php endif; ?>
 
-    <div class="js-arrow-left"></div>
-<p>
+    <div class="comment--picture">
+      <?php if(isset($profile_image)): ?>
+        <?php print $profile_image; ?>
+      <?php else: ?>
+        <span class="icon-person"></span>
+      <?php endif; ?>
+    </div>
     <div class="comment--header">
-      <div class="stats">
-        <?php print $author; ?>
-      </div>
       <div class="slug">
         <?php print $created; ?>
       </div>
-    </div>
-  </p>
-<p>
-    <div class="comment--body">
-      <?php if ($new): ?>
-        <span class="new"><?php print $new ?></span>
-      <?php endif; ?>
-</p>
-      <div class="content"<?php print $content_attributes; ?>>
-        <?php
-          // We hide the comments and links now so that we can render them later.
-          hide($content['links']);
-          print render($content);
-        ?>
+      <div class="stats">
+        <?php print $author; ?>
       </div>
-<p>
-      <div class="slug"><?php print render($content['links']) ?></div></p>
     </div>
-  </div>
+    <div class="comment--body">
+      <div class="content"<?php print $content_attributes; ?>>
+        <?php print render($content); ?>
+      </div>
+      <div class="slug">
+        <?php print render($content['links']) ?>
+      </div>
+    </div>
+    
+  </div><!-- comment -->
 
-</div>
+</div><!-- comment--user-wrapper -->
