@@ -335,7 +335,7 @@ function tfa_forum_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'thumbnail',
+          'image_style' => 'forum_headshot',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -1253,7 +1253,7 @@ function tfa_forum_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'thumbnail',
+          'image_style' => 'forum_headshot',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -1279,7 +1279,7 @@ function tfa_forum_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'thumbnail',
+          'image_style' => 'forum_headshot',
         ),
         'type' => 'image',
         'weight' => 1,
@@ -1301,7 +1301,7 @@ function tfa_forum_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'thumbnail',
+          'image_style' => 'forum_headshot',
         ),
         'type' => 'image',
         'weight' => 0,
