@@ -8022,7 +8022,14 @@ h3.comments-title {
   background-size: cover;
   text-align: center;
 }
-/* line 21, ../sass/_forum-landing.scss */
+@media screen and (max-width: 767px) {
+  /* line 14, ../sass/_forum-landing.scss */
+  .page-forum-landing-page #main .block-block {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+/* line 25, ../sass/_forum-landing.scss */
 .page-forum-landing-page #main .block-block p {
   color: white;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -8036,12 +8043,20 @@ h3.comments-title {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 27, ../sass/_forum-landing.scss */
-.page-forum-landing-page #main .block-block .content {
-  max-width: 40%;
-  padding: 140px 0 170px;
+@media screen and (max-width: 767px) {
+  /* line 31, ../sass/_forum-landing.scss */
+  .page-forum-landing-page #main .block-block .content {
+    padding: 40px 20px;
+  }
 }
-/* line 32, ../sass/_forum-landing.scss */
+@media screen and (min-width: 768px) {
+  /* line 31, ../sass/_forum-landing.scss */
+  .page-forum-landing-page #main .block-block .content {
+    max-width: 40%;
+    padding: 140px 0 170px;
+  }
+}
+/* line 41, ../sass/_forum-landing.scss */
 .page-forum-landing-page #main h1 {
   color: #e69740;
   font-size: 26px;
@@ -8053,46 +8068,52 @@ h3.comments-title {
   text-transform: uppercase;
 }
 
-/* line 46, ../sass/_forum-landing.scss */
+/* line 55, ../sass/_forum-landing.scss */
 .page-forum-landing-page #main .content,
 .view-forum-landing-page {
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 46, ../sass/_forum-landing.scss */
+  /* line 55, ../sass/_forum-landing.scss */
   .page-forum-landing-page #main .content,
   .view-forum-landing-page {
     width: 724px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 46, ../sass/_forum-landing.scss */
+  /* line 55, ../sass/_forum-landing.scss */
   .page-forum-landing-page #main .content,
   .view-forum-landing-page {
     width: 940px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 46, ../sass/_forum-landing.scss */
+  /* line 55, ../sass/_forum-landing.scss */
   .page-forum-landing-page #main .content,
   .view-forum-landing-page {
     width: 1170px;
   }
 }
 
-/* line 63, ../sass/_forum-landing.scss */
+/* line 72, ../sass/_forum-landing.scss */
 .view-forum-landing-page .view-content {
   float: left;
-  margin: 40px 0 130px;
+  margin: 0 0 10px;
   width: 100%;
 }
-/* line 68, ../sass/_forum-landing.scss */
+@media screen and (min-width: 768px) {
+  /* line 72, ../sass/_forum-landing.scss */
+  .view-forum-landing-page .view-content {
+    margin: 40px 0 130px;
+  }
+}
+/* line 80, ../sass/_forum-landing.scss */
 .view-forum-landing-page .views-row {
   border-bottom: 1px solid #4d4d4d;
   float: left;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
-  padding: 60px 0 40px;
+  padding: 20px 0 0;
   width: 100%;
 }
 /* line 59, ../sass/styleguide/_font-face.scss */
@@ -8100,35 +8121,46 @@ h3.comments-title {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 75, ../sass/_forum-landing.scss */
+@media screen and (min-width: 768px) {
+  /* line 80, ../sass/_forum-landing.scss */
+  .view-forum-landing-page .views-row {
+    padding: 60px 0 40px;
+  }
+}
+/* line 90, ../sass/_forum-landing.scss */
 .view-forum-landing-page .views-field-title {
   font-size: 25px;
   font-size: 1.5625rem;
   line-height: 29px;
 }
-/* line 78, ../sass/_forum-landing.scss */
+/* line 93, ../sass/_forum-landing.scss */
 .view-forum-landing-page .views-field-title a {
   color: #4d4d4d;
 }
 
-/* line 83, ../sass/_forum-landing.scss */
+/* line 98, ../sass/_forum-landing.scss */
 .landing-forum {
-  float: left;
-  padding: 0 60px 0 0;
-  width: 50%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 88, ../sass/_forum-landing.scss */
+@media screen and (min-width: 768px) {
+  /* line 98, ../sass/_forum-landing.scss */
+  .landing-forum {
+    float: left;
+    padding: 0 60px 0 0;
+    width: 50%;
+  }
+}
+/* line 105, ../sass/_forum-landing.scss */
 .landing-forum h2 {
   margin-bottom: 14px;
 }
-/* line 90, ../sass/_forum-landing.scss */
+/* line 107, ../sass/_forum-landing.scss */
 .landing-forum h2 a {
   color: #4d4d4d;
 }
-/* line 94, ../sass/_forum-landing.scss */
+/* line 111, ../sass/_forum-landing.scss */
 .landing-forum p {
   color: #91998c;
   font-size: 16px;
@@ -8136,7 +8168,7 @@ h3.comments-title {
   line-height: 25px;
   margin-bottom: 20px;
 }
-/* line 99, ../sass/_forum-landing.scss */
+/* line 116, ../sass/_forum-landing.scss */
 .landing-forum p + a {
   font-size: 11px;
   font-size: 0.6875rem;
@@ -8168,35 +8200,50 @@ h3.comments-title {
   color: white;
 }
 
-/* line 105, ../sass/_forum-landing.scss */
-.landing-opinions {
-  overflow: hidden;
+@media screen and (max-width: 767px) {
+  /* line 122, ../sass/_forum-landing.scss */
+  .landing-opinions {
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+  }
 }
-/* line 107, ../sass/_forum-landing.scss */
+@media screen and (min-width: 768px) {
+  /* line 122, ../sass/_forum-landing.scss */
+  .landing-opinions {
+    overflow: hidden;
+  }
+}
+/* line 131, ../sass/_forum-landing.scss */
 .landing-opinions a {
   background-color: #dfd9c9;
   float: left;
   padding: 15px;
   margin-bottom: 30px;
-  width: calc(50% - 15px);
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 114, ../sass/_forum-landing.scss */
-.landing-opinions a:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  /* line 131, ../sass/_forum-landing.scss */
+  .landing-opinions a {
+    width: calc(50% - 15px);
+  }
+  /* line 139, ../sass/_forum-landing.scss */
+  .landing-opinions a:nth-child(odd) {
+    margin-right: 30px;
+  }
+  /* line 142, ../sass/_forum-landing.scss */
+  .landing-opinions a:nth-child(2n+3) {
+    clear: both;
+  }
 }
-/* line 117, ../sass/_forum-landing.scss */
-.landing-opinions a:nth-child(2n+3) {
-  clear: both;
-}
-/* line 121, ../sass/_forum-landing.scss */
+/* line 148, ../sass/_forum-landing.scss */
 .landing-opinions a:hover .opinion-author-bio {
   color: #cf4753;
 }
 
-/* line 127, ../sass/_forum-landing.scss */
+/* line 154, ../sass/_forum-landing.scss */
 .opinion-author-bio {
   clear: both;
   color: #4d4d4d;
