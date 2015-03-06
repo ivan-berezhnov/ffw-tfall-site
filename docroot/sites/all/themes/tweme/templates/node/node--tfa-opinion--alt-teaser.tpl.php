@@ -15,6 +15,6 @@
   </span>
 </div>
 <span class="opinion-author-bio">
-  <?php print render($content['field_tfa_opinion_author_bio']); ?>
+  <?php print $title; ?>
 </span>
 </span>
