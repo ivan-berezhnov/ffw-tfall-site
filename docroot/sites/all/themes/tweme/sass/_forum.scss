@@ -124,9 +124,11 @@ img.forum-headshot {
 .opinion-author-image {
   float: left;
   margin: 0 15px 0 0;
+  display: block;
 }
 .opinion-author-info {
   overflow: hidden;
+  display: inline-block;
   // float: left;
   // width: calc(100% - 75px);
 }
