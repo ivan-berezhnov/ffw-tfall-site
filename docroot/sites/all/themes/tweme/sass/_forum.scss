@@ -66,6 +66,7 @@ img.forum-headshot {
 // =============================================================================
 .forum-opinion-links {
   margin: 0 0 48px 0;
+  width: 100%;
 }
 #opinion-menu {
   clear: both;
@@ -128,14 +129,11 @@ img.forum-headshot {
 }
 .opinion-author-info {
   overflow: hidden;
-  display: inline-block;
-  // float: left;
-  // width: calc(100% - 75px);
+  display: block;
 }
 .opinion-author-name {
   color: $nearblack;
   display: inline-block;
-  // float: left;
   @include NGDemiBold;
   @include font-size(17);
   line-height: 20px;
