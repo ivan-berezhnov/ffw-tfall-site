@@ -105,6 +105,12 @@
     <?php print render($content['body']); ?>
     </div>
     <div class="content-main">
+
+      <div class="forum-opinion-links opinions-mobile forum-block">
+        <h3><?php print t('Opinions'); ?></h3>
+        <?php print $opinion_links; ?>
+      </div>
+
       <div class="content-opinion"<?php print $content_attributes; ?>>
         <div id="opinion-content">
           <?php print $opinion_content; ?>
@@ -112,7 +118,7 @@
       </div>
 
       <div class="content-sidebar">
-        <div class="forum-opinion-links forum-block">
+        <div class="forum-opinion-links opinions-sidebar forum-block">
           <h3><?php print t('Opinions'); ?></h3>
           <?php print $opinion_links; ?>
         </div>

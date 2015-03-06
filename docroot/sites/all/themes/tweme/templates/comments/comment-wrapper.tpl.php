@@ -37,8 +37,6 @@
  */
 ?>
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-
-
   <?php if ($content['comment_form']): ?>
     <h2 class="slug-medium comment-form"><?php print t('Add new comment'); ?></h2>
     <div class="news__content">
