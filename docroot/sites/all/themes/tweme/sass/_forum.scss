@@ -296,9 +296,13 @@ img.forum-headshot {
     p {
       color: $grey9;
       @include FedraRegular;
-      @include font-size(17);
-      line-height: 25px;
+      @include font-size(14);
+      line-height: 21px;
       text-align: left !important;
+      @media screen and (min-width: 768px) {
+        @include font-size(17);
+        line-height: 25px;
+      }
     }
   }
 }
@@ -334,9 +338,12 @@ img.forum-headshot {
 .opinion-end-author {
   clear: both;
   float: left;
-  @include font-size(17);
+  @include font-size(15);
   margin: 60px 0 0;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    @include font-size(17);
+  }
   .forum-headshot {
     float: left;
     margin: 0 30px 0 0;
@@ -389,8 +396,12 @@ img.forum-headshot {
   .content {
     p {
       @include NewsGothicRegular;
-      @include font-size(16);
-      line-height: 20px;
+      @include font-size(14);
+      line-height: 18px;
+      @media screen and (min-width: 768px) {
+        @include font-size(16);
+        line-height: 20px;
+      }
     }
   }
   .view-content {
