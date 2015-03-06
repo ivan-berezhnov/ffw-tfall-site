@@ -21,6 +21,9 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="/sites/all/themes/tweme/stylesheets/ie8.css">
     <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/sites/all/themes/tweme/stylesheets/ie.css">
+    <![endif]-->
     <link rel="stylesheet" href="http://fonts.typotheque.com/WF-021707-002785.css" type="text/css" />
     <?php print $scripts ?>
     <?php print $head_bottom ?>
