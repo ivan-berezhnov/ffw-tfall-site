@@ -110,6 +110,10 @@
     margin-bottom: 14px;
     a {
       color: $grey9;
+      @include transition(all 0.2s ease);
+      &:hover {
+        color: $red;
+      }
     }
   }
   p {
