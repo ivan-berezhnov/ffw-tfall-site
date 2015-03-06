@@ -122,6 +122,7 @@
           <h3><?php print t('Opinions'); ?></h3>
           <?php print $opinion_links; ?>
         </div>
+        <?php if(array_key_exists(0, $content['field_moderator_image']) || array_key_exists(0, $content['field_moderator_name']) || array_key_exists(0, $content['field_moderator_title']) || array_key_exists(0, $content['field_moderator_bio']) || array_key_exists(0, $content['field_moderator_external_link'])): ?>
         <h3><?php print t('Moderator'); ?></h3>
         <div class="forum-moderator forum-block">
           <?php print render($content['field_moderator_image']); ?>
@@ -140,14 +141,22 @@
             <?php print render($content['field_moderator_external_link']); ?>
           </div>
         </div>
+        <?php endif; ?>
+        
+        <?php if ($related_links): ?>
         <div class="forum-related-links forum-block">
           <h3><?php print t('Related Links'); ?></h3>
           <?php print $related_links; ?>
         </div>
+        <?php endif; ?>
+
+        <?php if (array_key_exists(0, $content['field_tfa_forum_downloads'])): ?>
         <div class="forum-downloads forum-block">
           <h3><?php print t('Downloads'); ?></h3>
           <?php print render($content['field_tfa_forum_downloads']); ?>
         </div>
+        <?php endif; ?>
+
         <div class="forum-share-links forum-block">
           <h3><?php print t('Share'); ?></h3>
           <div class="block-sharethis">
