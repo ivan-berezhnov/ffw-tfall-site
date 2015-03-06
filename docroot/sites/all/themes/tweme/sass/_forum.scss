@@ -32,7 +32,14 @@
     }
     .forum-block {
       @media screen and (min-width: 590px) and (max-width: 979px) {
+        clear: none;
         width: 50%;
+        &:nth-child(2n+3) {
+          clear: both;
+        }
+        &:nth-child(even) {
+          padding: 0 0 0 30px;
+        }
       }
     }
     h3 {
@@ -349,7 +356,7 @@ img.forum-headshot {
     @include NGDemiBold;
     @include font-size(11);
     letter-spacing: 1px;
-    text-transform: uppecase;
+    text-transform: uppercase;
     @include transition(color 0.2s ease);
     &:hover {
       color: $red2;
