@@ -7655,15 +7655,16 @@ img.forum-headshot {
 /* line 67, ../sass/_forum.scss */
 .forum-opinion-links {
   margin: 0 0 48px 0;
+  width: 100%;
 }
 
-/* line 70, ../sass/_forum.scss */
+/* line 71, ../sass/_forum.scss */
 #opinion-menu {
   clear: both;
   list-style: none;
   margin: 0;
 }
-/* line 74, ../sass/_forum.scss */
+/* line 75, ../sass/_forum.scss */
 #opinion-menu li {
   background-color: #dfd9c9;
   clear: both;
@@ -7684,23 +7685,23 @@ img.forum-headshot {
   transition: background 0.2s ease;
 }
 @media screen and (min-width: 590px) and (max-width: 979px) {
-  /* line 74, ../sass/_forum.scss */
+  /* line 75, ../sass/_forum.scss */
   #opinion-menu li {
     clear: none;
     float: left;
     margin: 0 0 4px;
     width: calc(50% - 2px);
   }
-  /* line 91, ../sass/_forum.scss */
+  /* line 92, ../sass/_forum.scss */
   #opinion-menu li:nth-child(odd) {
     margin: 0 4px 4px 0;
   }
 }
-/* line 95, ../sass/_forum.scss */
+/* line 96, ../sass/_forum.scss */
 #opinion-menu li:hover {
   background-color: #d1c9b4;
 }
-/* line 99, ../sass/_forum.scss */
+/* line 100, ../sass/_forum.scss */
 #opinion-menu a {
   border-color: transparent;
   border-style: solid;
@@ -7716,37 +7717,39 @@ img.forum-headshot {
   z-index: 100;
 }
 @media screen and (min-width: 980px) {
-  /* line 99, ../sass/_forum.scss */
+  /* line 100, ../sass/_forum.scss */
   #opinion-menu a {
     border-width: 1px 0 1px 1px;
   }
 }
-/* line 114, ../sass/_forum.scss */
+/* line 115, ../sass/_forum.scss */
 #opinion-menu .open {
   background-color: white;
   border-color: #91998c;
   width: 100%;
 }
 @media screen and (min-width: 980px) {
-  /* line 114, ../sass/_forum.scss */
+  /* line 115, ../sass/_forum.scss */
   #opinion-menu .open {
     padding: 15px 17px 15px 15px;
     width: calc(100% + 2px);
   }
 }
 
-/* line 124, ../sass/_forum.scss */
+/* line 125, ../sass/_forum.scss */
 .opinion-author-image {
   float: left;
   margin: 0 15px 0 0;
+  display: block;
 }
 
-/* line 128, ../sass/_forum.scss */
+/* line 130, ../sass/_forum.scss */
 .opinion-author-info {
   overflow: hidden;
+  display: block;
 }
 
-/* line 133, ../sass/_forum.scss */
+/* line 134, ../sass/_forum.scss */
 .opinion-author-name {
   color: #030303;
   display: inline-block;
@@ -8382,12 +8385,12 @@ h3.comments-title {
   }
 }
 /* line 156, ../sass/_forum-landing.scss */
-.landing-opinions a:hover .opinion-author-bio {
+.landing-opinions a:hover .opinion-author-post {
   color: #cf4753;
 }
 
 /* line 162, ../sass/_forum-landing.scss */
-.opinion-author-bio {
+.opinion-author-post {
   clear: both;
   color: #4d4d4d;
   float: left;
