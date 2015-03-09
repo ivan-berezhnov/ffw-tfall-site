@@ -431,6 +431,22 @@
       
     }
   }
+  
+  Drupal.behaviors.videoTeaserCount = {
+    attach: function (context, settings) {
+      var children_vids = $('.view-id-featured_videos .view-content').children().length;
+      var vid_offset = '';
+      switch (children_vids) {
+        case 1:
+          vid_offset = 'offset4';
+          break;
+        case 2:
+          vid_offset = 'offset2';
+          break;          
+      }
+      $('.view-id-featured_videos .view-content .node').first().addClass(vid_offset);
+    }
+  };
 
 
   })(jQuery);
