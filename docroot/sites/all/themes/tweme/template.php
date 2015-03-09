@@ -112,7 +112,12 @@ function tweme_preprocess_field(&$vars, $hook) {
 function tweme_preprocess_field__field_embedded_video(&$vars, $hook) {
   if ($vars['element']['#bundle'] === 'video') {
     foreach ($vars['element']['#items'] as $item => $value) {
-      $vars['items'][$item]['#prefix'] = '<a href="'. $value['video_url'] .'" rel="shadowbox">';
+      $video_data = unserialize($value['video_data']);
+      $video_uri = '';
+      if ($video_data['handler'] === 'vimeo') {
+        $video_uri = 'http://player.vimeo.com/video/' . $video_data['id'];
+      }
+      $vars['items'][$item]['#prefix'] = '<a href="'. $video_uri .'" rel="shadowbox">';
       $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
     }
   }
