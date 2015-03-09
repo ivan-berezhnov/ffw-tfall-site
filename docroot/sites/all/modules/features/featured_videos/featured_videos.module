@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Featured Videos feature.
+ */
+
+include_once 'featured_videos.features.inc';

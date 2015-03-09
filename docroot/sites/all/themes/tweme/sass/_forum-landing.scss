@@ -153,13 +153,13 @@
     }
 
     &:hover {
-      .opinion-author-bio {
+      .opinion-author-post {
         color: $red;
       }
     }
   }
 }
-.opinion-author-bio {
+.opinion-author-post {
   clear: both;
   color: $grey9;
   float: left;

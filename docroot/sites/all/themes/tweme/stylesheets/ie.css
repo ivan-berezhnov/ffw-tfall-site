@@ -1,0 +1,6 @@
+
+@media screen and (min-width: 980px) {
+  #opinion-menu .open {
+    margin: 0 0 -4px;
+  }
+}
