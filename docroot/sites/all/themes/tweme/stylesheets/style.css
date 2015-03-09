@@ -871,7 +871,7 @@ textarea:focus, input:focus {
 }
 
 /* line 298, ../sass/_teachforall.scss */
-.full-list {
+.full-list, .landing-forum p + a {
   background-color: #4d4d4d;
   color: #fff;
   display: inline-block;
@@ -883,15 +883,15 @@ textarea:focus, input:focus {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 /* line 299, ../sass/_teachforall.scss */
-.full-list a {
+.full-list a, .landing-forum p + a a {
   color: #fff;
 }
 /* line 301, ../sass/_teachforall.scss */
-.full-list a:hover {
+.full-list a:hover, .landing-forum p + a a:hover {
   color: #ffb151;
 }
 /* line 313, ../sass/_teachforall.scss */
-.full-list:hover {
+.full-list:hover, .landing-forum p + a:hover {
   color: #ffb151;
 }
 
@@ -3411,18 +3411,18 @@ img {
   margin-top: 30px;
 }
 /* line 2577, ../sass/_teachforall.scss */
-.news__node-links .full-list {
+.news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
   min-width: 179px;
 }
 @media screen and (max-width: 767px) {
   /* line 2577, ../sass/_teachforall.scss */
-  .news__node-links .full-list {
+  .news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 372px) {
   /* line 2577, ../sass/_teachforall.scss */
-  .news__node-links .full-list {
+  .news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
     margin-top: 20px;
   }
 }
@@ -3962,12 +3962,12 @@ img {
   margin-bottom: 35px;
 }
 /* line 3110, ../sass/_teachforall.scss */
-.page-news .full-list, .page-network-learning .full-list {
+.page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
   /* line 3110, ../sass/_teachforall.scss */
-  .page-news .full-list, .page-network-learning .full-list {
+  .page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
     font-size: 12px;
     font-size: 0.75rem;
     margin-bottom: 30px;
@@ -4353,17 +4353,17 @@ div#panels-ipe-control-container {
   color: #cf4753;
 }
 /* line 3475, ../sass/_teachforall.scss */
-.panel-panel .full-list {
+.panel-panel .full-list, .panel-panel .landing-forum p + a, .landing-forum .panel-panel p + a {
   color: #fff;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 /* line 3479, ../sass/_teachforall.scss */
-.panel-panel .full-list:after {
+.panel-panel .full-list:after, .panel-panel .landing-forum p + a:after, .landing-forum .panel-panel p + a:after {
   color: #e69740;
   content: " >>";
 }
 /* line 3483, ../sass/_teachforall.scss */
-.panel-panel .full-list:hover {
+.panel-panel .full-list:hover, .panel-panel .landing-forum p + a:hover, .landing-forum .panel-panel p + a:hover {
   color: #e69740;
 }
 /* line 3487, ../sass/_teachforall.scss */
@@ -7380,15 +7380,16 @@ img.forum-headshot {
 /* line 67, ../sass/_forum.scss */
 .forum-opinion-links {
   margin: 0 0 48px 0;
+  width: 100%;
 }
 
-/* line 70, ../sass/_forum.scss */
+/* line 71, ../sass/_forum.scss */
 #opinion-menu {
   clear: both;
   list-style: none;
   margin: 0;
 }
-/* line 74, ../sass/_forum.scss */
+/* line 75, ../sass/_forum.scss */
 #opinion-menu li {
   background-color: #dfd9c9;
   clear: both;
@@ -7409,23 +7410,23 @@ img.forum-headshot {
   transition: background 0.2s ease;
 }
 @media screen and (min-width: 590px) and (max-width: 979px) {
-  /* line 74, ../sass/_forum.scss */
+  /* line 75, ../sass/_forum.scss */
   #opinion-menu li {
     clear: none;
     float: left;
     margin: 0 0 4px;
     width: calc(50% - 2px);
   }
-  /* line 91, ../sass/_forum.scss */
+  /* line 92, ../sass/_forum.scss */
   #opinion-menu li:nth-child(odd) {
     margin: 0 4px 4px 0;
   }
 }
-/* line 95, ../sass/_forum.scss */
+/* line 96, ../sass/_forum.scss */
 #opinion-menu li:hover {
   background-color: #d1c9b4;
 }
-/* line 99, ../sass/_forum.scss */
+/* line 100, ../sass/_forum.scss */
 #opinion-menu a {
   border-color: transparent;
   border-style: solid;
@@ -7441,39 +7442,39 @@ img.forum-headshot {
   z-index: 100;
 }
 @media screen and (min-width: 980px) {
-  /* line 99, ../sass/_forum.scss */
+  /* line 100, ../sass/_forum.scss */
   #opinion-menu a {
     border-width: 1px 0 1px 1px;
   }
 }
-/* line 114, ../sass/_forum.scss */
+/* line 115, ../sass/_forum.scss */
 #opinion-menu .open {
   background-color: #fff;
   border-color: #91998c;
   width: 100%;
 }
 @media screen and (min-width: 980px) {
-  /* line 114, ../sass/_forum.scss */
+  /* line 115, ../sass/_forum.scss */
   #opinion-menu .open {
     padding: 15px 17px 15px 15px;
     width: calc(100% + 2px);
   }
 }
 
-/* line 124, ../sass/_forum.scss */
+/* line 125, ../sass/_forum.scss */
 .opinion-author-image {
   float: left;
   margin: 0 15px 0 0;
   display: block;
 }
 
-/* line 129, ../sass/_forum.scss */
+/* line 130, ../sass/_forum.scss */
 .opinion-author-info {
   overflow: hidden;
-  display: inline-block;
+  display: block;
 }
 
-/* line 135, ../sass/_forum.scss */
+/* line 134, ../sass/_forum.scss */
 .opinion-author-name {
   color: #030303;
   display: inline-block;
@@ -7484,7 +7485,7 @@ img.forum-headshot {
   width: 100%;
 }
 
-/* line 144, ../sass/_forum.scss */
+/* line 142, ../sass/_forum.scss */
 .opinion-author-title {
   clear: both;
   display: block;
@@ -7496,12 +7497,12 @@ img.forum-headshot {
 }
 
 @media screen and (min-width: 980px) {
-  /* line 153, ../sass/_forum.scss */
+  /* line 151, ../sass/_forum.scss */
   .opinions-mobile {
     display: none;
   }
 }
-/* line 157, ../sass/_forum.scss */
+/* line 155, ../sass/_forum.scss */
 .opinions-mobile h3 {
   color: #e69740;
   font-size: 16px;
@@ -7512,59 +7513,59 @@ img.forum-headshot {
   margin-bottom: 14px;
 }
 
-/* line 162, ../sass/_forum.scss */
+/* line 160, ../sass/_forum.scss */
 .opinions-sidebar {
   display: none;
 }
 @media screen and (min-width: 980px) {
-  /* line 162, ../sass/_forum.scss */
+  /* line 160, ../sass/_forum.scss */
   .opinions-sidebar {
     display: block;
   }
 }
 
-/* line 171, ../sass/_forum.scss */
+/* line 169, ../sass/_forum.scss */
 .forum-moderator {
   background-color: #3b3734;
   color: #fff;
   padding: 15px;
 }
-/* line 175, ../sass/_forum.scss */
+/* line 173, ../sass/_forum.scss */
 .forum-moderator .forum-headshot {
   float: left;
   margin: 0 15px 0 0;
 }
-/* line 179, ../sass/_forum.scss */
+/* line 177, ../sass/_forum.scss */
 .forum-moderator .moderator-info {
   overflow: hidden;
 }
-/* line 182, ../sass/_forum.scss */
+/* line 180, ../sass/_forum.scss */
 .forum-moderator .moderator-title {
   color: #91998c;
   float: left;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 188, ../sass/_forum.scss */
+/* line 186, ../sass/_forum.scss */
 .moderator-name {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 17px;
   font-size: 1.0625rem;
 }
 
-/* line 192, ../sass/_forum.scss */
+/* line 190, ../sass/_forum.scss */
 .moderator-bio {
   float: left;
   margin: 18px 0;
   width: 100%;
 }
 
-/* line 197, ../sass/_forum.scss */
+/* line 195, ../sass/_forum.scss */
 .moderator-more {
   float: left;
   width: 100%;
 }
-/* line 200, ../sass/_forum.scss */
+/* line 198, ../sass/_forum.scss */
 .moderator-more a {
   color: #fff;
   font-size: 11px;
@@ -7577,34 +7578,34 @@ img.forum-headshot {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 207, ../sass/_forum.scss */
+/* line 205, ../sass/_forum.scss */
 .moderator-more a:hover {
   color: #e69740;
 }
-/* line 210, ../sass/_forum.scss */
+/* line 208, ../sass/_forum.scss */
 .moderator-more a:after {
   color: #e69740;
   content: ">>";
   margin: 0 0 0 6px;
 }
 
-/* line 222, ../sass/_forum.scss */
+/* line 220, ../sass/_forum.scss */
 .forum-related-links .item-list ul {
   float: left;
   margin: 0 0 0 16px;
 }
-/* line 226, ../sass/_forum.scss */
+/* line 224, ../sass/_forum.scss */
 .forum-related-links .item-list li {
   float: left;
   line-height: 25px;
   margin: 12px 0;
 }
-/* line 232, ../sass/_forum.scss */
+/* line 230, ../sass/_forum.scss */
 .forum-related-links .item-list a:hover {
   text-decoration: underline;
 }
 
-/* line 241, ../sass/_forum.scss */
+/* line 239, ../sass/_forum.scss */
 .forum-related-links,
 .forum-downloads {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -7620,20 +7621,20 @@ img.forum-headshot {
   font-style: normal;
 }
 
-/* line 250, ../sass/_forum.scss */
+/* line 248, ../sass/_forum.scss */
 .file {
   float: left;
   margin: 12px 0;
 }
-/* line 253, ../sass/_forum.scss */
+/* line 251, ../sass/_forum.scss */
 .file img {
   display: none;
 }
-/* line 257, ../sass/_forum.scss */
+/* line 255, ../sass/_forum.scss */
 .file a:hover {
   text-decoration: underline;
 }
-/* line 261, ../sass/_forum.scss */
+/* line 259, ../sass/_forum.scss */
 .file a[href$=".pdf"]:before {
   background-image: url(../images/icon-pdf.png);
   background-position: 0 3px;
@@ -7646,7 +7647,7 @@ img.forum-headshot {
   width: 30px;
 }
 
-/* line 276, ../sass/_forum.scss */
+/* line 274, ../sass/_forum.scss */
 .content-opinion {
   margin-bottom: 80px;
   -moz-box-sizing: border-box;
@@ -7654,32 +7655,32 @@ img.forum-headshot {
   box-sizing: border-box;
 }
 @media screen and (min-width: 980px) {
-  /* line 276, ../sass/_forum.scss */
+  /* line 274, ../sass/_forum.scss */
   .content-opinion {
     float: right;
     width: 75%;
   }
 }
-/* line 283, ../sass/_forum.scss */
+/* line 281, ../sass/_forum.scss */
 .content-opinion .node h2:first-child {
   margin-bottom: 36px;
 }
 
-/* line 287, ../sass/_forum.scss */
+/* line 285, ../sass/_forum.scss */
 .opinion-block {
   display: block;
 }
 @media screen and (min-width: 980px) {
-  /* line 287, ../sass/_forum.scss */
+  /* line 285, ../sass/_forum.scss */
   .opinion-block {
     float: right;
   }
 }
-/* line 293, ../sass/_forum.scss */
+/* line 291, ../sass/_forum.scss */
 .opinion-block h2 a {
   color: #4d4d4d;
 }
-/* line 298, ../sass/_forum.scss */
+/* line 296, ../sass/_forum.scss */
 .opinion-block .content p {
   color: #4d4d4d;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -7695,7 +7696,7 @@ img.forum-headshot {
   font-style: normal;
 }
 @media screen and (min-width: 768px) {
-  /* line 298, ../sass/_forum.scss */
+  /* line 296, ../sass/_forum.scss */
   .opinion-block .content p {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -7703,23 +7704,23 @@ img.forum-headshot {
   }
 }
 
-/* line 311, ../sass/_forum.scss */
+/* line 309, ../sass/_forum.scss */
 .opinion-block.hidden {
   display: none;
 }
 
-/* line 314, ../sass/_forum.scss */
+/* line 312, ../sass/_forum.scss */
 .opinion-content {
   margin: 0 0 55px 0;
   position: relative;
 }
 @media screen and (min-width: 980px) {
-  /* line 314, ../sass/_forum.scss */
+  /* line 312, ../sass/_forum.scss */
   .opinion-content {
     border: 1px solid #91998c;
     padding: 60px;
   }
-  /* line 320, ../sass/_forum.scss */
+  /* line 318, ../sass/_forum.scss */
   .opinion-content:after, .opinion-content:before {
     content: "";
     border-style: solid;
@@ -7730,18 +7731,18 @@ img.forum-headshot {
     top: 100%;
     left: 60px;
   }
-  /* line 331, ../sass/_forum.scss */
+  /* line 329, ../sass/_forum.scss */
   .opinion-content:before {
     border-color: #91998c transparent transparent;
   }
-  /* line 334, ../sass/_forum.scss */
+  /* line 332, ../sass/_forum.scss */
   .opinion-content:after {
     margin-top: -2px;
     border-color: #fff transparent transparent;
   }
 }
 
-/* line 340, ../sass/_forum.scss */
+/* line 338, ../sass/_forum.scss */
 .opinion-end-author {
   clear: both;
   float: left;
@@ -7751,35 +7752,35 @@ img.forum-headshot {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 340, ../sass/_forum.scss */
+  /* line 338, ../sass/_forum.scss */
   .opinion-end-author {
     font-size: 17px;
     font-size: 1.0625rem;
   }
 }
-/* line 349, ../sass/_forum.scss */
+/* line 347, ../sass/_forum.scss */
 .opinion-end-author .forum-headshot {
   float: left;
   margin: 0 30px 0 0;
 }
 
-/* line 354, ../sass/_forum.scss */
+/* line 352, ../sass/_forum.scss */
 .opinion-end-info {
   overflow: hidden;
 }
 
-/* line 357, ../sass/_forum.scss */
+/* line 355, ../sass/_forum.scss */
 .opinion-end-name {
   color: #030303;
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 361, ../sass/_forum.scss */
+/* line 359, ../sass/_forum.scss */
 .opinion-end-bio {
   font-family: "News Gothic Medium Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
   float: left;
 }
-/* line 364, ../sass/_forum.scss */
+/* line 362, ../sass/_forum.scss */
 .opinion-end-bio a {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 11px;
@@ -7791,41 +7792,41 @@ img.forum-headshot {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 370, ../sass/_forum.scss */
+/* line 368, ../sass/_forum.scss */
 .opinion-end-bio a:hover {
   color: #db4b57;
 }
-/* line 373, ../sass/_forum.scss */
+/* line 371, ../sass/_forum.scss */
 .opinion-end-bio a:after {
   content: ">>";
   padding: 0 0 0 6px;
 }
 
 @media screen and (min-width: 980px) {
-  /* line 382, ../sass/_forum.scss */
+  /* line 380, ../sass/_forum.scss */
   .opinion-comment-content {
     padding: 0 60px;
   }
 }
 
-/* line 387, ../sass/_forum.scss */
+/* line 385, ../sass/_forum.scss */
 .view-opinion-comments {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 389, ../sass/_forum.scss */
+/* line 387, ../sass/_forum.scss */
 .view-opinion-comments .username {
   color: #030303;
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
 }
-/* line 394, ../sass/_forum.scss */
+/* line 392, ../sass/_forum.scss */
 .view-opinion-comments .slug {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 399, ../sass/_forum.scss */
+/* line 397, ../sass/_forum.scss */
 .view-opinion-comments .content p {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -7833,19 +7834,19 @@ img.forum-headshot {
   line-height: 18px;
 }
 @media screen and (min-width: 768px) {
-  /* line 399, ../sass/_forum.scss */
+  /* line 397, ../sass/_forum.scss */
   .view-opinion-comments .content p {
     font-size: 16px;
     font-size: 1rem;
     line-height: 20px;
   }
 }
-/* line 409, ../sass/_forum.scss */
+/* line 407, ../sass/_forum.scss */
 .view-opinion-comments .view-content {
   margin-bottom: 60px;
 }
 
-/* line 413, ../sass/_forum.scss */
+/* line 411, ../sass/_forum.scss */
 h3.comments-title {
   clear: both;
   color: #e69740;
@@ -7857,7 +7858,7 @@ h3.comments-title {
   margin-bottom: 34px;
 }
 
-/* line 418, ../sass/_forum.scss */
+/* line 416, ../sass/_forum.scss */
 .comment--user-wrapper {
   margin: 0 0 30px;
 }
@@ -7970,7 +7971,7 @@ h3.comments-title {
 }
 /* line 84, ../sass/_forum-landing.scss */
 .view-forum-landing-page .views-row {
-  border-bottom: 1px solid #4d4d4d;
+  border-bottom: 1px solid #999;
   float: left;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -8037,40 +8038,14 @@ h3.comments-title {
   line-height: 25px;
   margin-bottom: 20px;
 }
-/* line 124, ../sass/_forum-landing.scss */
-.landing-forum p + a {
-  font-size: 11px;
-  font-size: 0.6875rem;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  display: inline-block;
-  background: #cf4753;
-  color: #fff;
-  line-height: 26px;
-  padding: 4px 26px 2px;
-  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-weight: normal;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-/* line 59, ../sass/styleguide/_font-face.scss */
-.landing-forum p + a em {
-  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-style: normal;
-}
-/* line 118, ../sass/_mixins.scss */
-.landing-forum p + a:hover {
-  background: #db4b57;
-  color: #fff;
+/* line 126, ../sass/_forum-landing.scss */
+.landing-forum p + a:after {
+  color: #e69740;
+  content: " >>";
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 129, ../sass/_forum-landing.scss */
+  /* line 133, ../sass/_forum-landing.scss */
   .landing-opinions {
     float: left;
     margin-top: 30px;
@@ -8078,12 +8053,12 @@ h3.comments-title {
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 129, ../sass/_forum-landing.scss */
+  /* line 133, ../sass/_forum-landing.scss */
   .landing-opinions {
     overflow: hidden;
   }
 }
-/* line 138, ../sass/_forum-landing.scss */
+/* line 142, ../sass/_forum-landing.scss */
 .landing-opinions a {
   background-color: #dfd9c9;
   float: left;
@@ -8093,28 +8068,29 @@ h3.comments-title {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+  height: 178px;
 }
 @media screen and (min-width: 768px) {
-  /* line 138, ../sass/_forum-landing.scss */
+  /* line 142, ../sass/_forum-landing.scss */
   .landing-opinions a {
     width: calc(50% - 15px);
   }
-  /* line 147, ../sass/_forum-landing.scss */
+  /* line 152, ../sass/_forum-landing.scss */
   .landing-opinions a:nth-child(odd) {
     margin-right: 30px;
   }
-  /* line 150, ../sass/_forum-landing.scss */
+  /* line 155, ../sass/_forum-landing.scss */
   .landing-opinions a:nth-child(2n+3) {
     clear: both;
   }
 }
-/* line 156, ../sass/_forum-landing.scss */
-.landing-opinions a:hover .opinion-author-bio {
+/* line 161, ../sass/_forum-landing.scss */
+.landing-opinions a:hover .opinion-author-post {
   color: #cf4753;
 }
 
-/* line 162, ../sass/_forum-landing.scss */
-.opinion-author-bio {
+/* line 167, ../sass/_forum-landing.scss */
+.opinion-author-post {
   clear: both;
   color: #4d4d4d;
   float: left;
@@ -8301,7 +8277,7 @@ html.lte-ie8 #main #content.span12 {
   margin: 0;
 }
 /* line 130, ../sass/_ie8.scss */
-html.lte-ie8 .full-list {
+html.lte-ie8 .full-list, html.lte-ie8 .landing-forum p + a, .landing-forum html.lte-ie8 p + a {
   width: 190px;
 }
 /* line 134, ../sass/_ie8.scss */
