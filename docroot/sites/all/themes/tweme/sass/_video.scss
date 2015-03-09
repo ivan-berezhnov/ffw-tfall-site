@@ -1,0 +1,40 @@
+.network-learning-front-block {
+  background-color: #3b3734;
+  padding-bottom: 46px;
+  margin-bottom: 0px;
+}
+
+#block-views-featured-videos-block {
+  h2 {
+    @include FedraRegular;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: normal;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #e69740;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 24px;
+  }
+}
+
+.node--video--teaser {
+  @extend .span4;
+  a {
+    height: 209px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .video-embed-description {
+    @include FedraRegular;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 24px;
+  }
+}
