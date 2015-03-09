@@ -1,7 +1,8 @@
 
 // HIDE THE BREADCRUMBS ON THIS LANDING PAGE
 // =============================================================================
-.page-forum-landing-page {
+.page-forum-landing-page,
+.page-forum {
   .breadcrumb {
     display: none;
   }
@@ -9,7 +10,8 @@
 
 // CONTEXTUAL BLOCK ON TOP OF FORUM LANDING PAGE
 // =============================================================================
-.page-forum-landing-page {
+.page-forum-landing-page,
+.page-forum {
   #main {
     .block-block {
       background: url(../images/forum-landing-bg.jpg) no-repeat center center;
@@ -57,6 +59,7 @@
 // CONTAINERS FOR THE LANDING PAGE
 // =============================================================================
 .page-forum-landing-page #main .content,
+.page-forum #main .content,
 .view-forum-landing-page {
   margin: 0 auto;
   @media screen and (min-width: 768px) and (max-width: 979px) {
