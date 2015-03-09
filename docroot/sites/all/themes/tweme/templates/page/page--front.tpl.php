@@ -132,7 +132,7 @@
 	<div class="container">
 		<div class="row-fluid">
 			<div class="span12">
-        <a href="<?php print t('@network-learning', array('@network-learning' => url('network-learning'))); ?>" class="network-learning-main"><?php print t('Network Learning'); ?></a>
+<!--         <a href="<?php print t('@network-learning', array('@network-learning' => url('network-learning'))); ?>" class="network-learning-main"><?php print t('Network Learning'); ?></a> -->
         <?php print render($page['net_learning_front']) ?>
       </div>
 		</div>

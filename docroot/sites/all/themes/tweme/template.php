@@ -102,9 +102,20 @@ function tweme_preprocess_field(&$vars, $hook) {
       // Set translation.
       $vars['items'][0]['#markup'] = i18n_string('field:field_country:#allowed_values:' . $country, $country, array('langcode' => $language->language));
     }
-  }
+  }		
+}
 
-		
+/*
+ * Implements hook_preprocess_field
+ * extend support for fields
+ */
+function tweme_preprocess_field__field_embedded_video(&$vars, $hook) {
+  if ($vars['element']['#bundle'] === 'video') {
+    foreach ($vars['element']['#items'] as $item => $value) {
+      $vars['items'][$item]['#prefix'] = '<a href="'. $value['video_url'] .'" rel="shadowbox">';
+      $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
+    }
+  }
 }
 
 /*
@@ -121,6 +132,8 @@ function tweme_preprocess_node(&$vars) {
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['node']->nid;
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
 	$vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'] . '__' . $vars['node']->nid;
+
+	$vars['classes_array'][] = 'node--' . $vars['node']->type . '--' . $vars['view_mode'];
 
 	$function_name = __FUNCTION__ . '__' . $vars['node']->type;
 	if (function_exists($function_name)) {
