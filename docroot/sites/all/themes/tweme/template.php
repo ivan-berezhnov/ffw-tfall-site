@@ -117,6 +117,9 @@ function tweme_preprocess_field__field_embedded_video(&$vars, $hook) {
       if ($video_data['handler'] === 'vimeo') {
         $video_uri = 'http://player.vimeo.com/video/' . $video_data['id'];
       }
+      if ($video_data['handler'] === 'youtube') {
+        $video_uri = 'http://www.youtube.com/watch_popup?v=' . $video_data['id'];
+      }
       $vars['items'][$item]['#prefix'] = '<a href="'. $video_uri .'" rel="shadowbox">';
       $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
     }
