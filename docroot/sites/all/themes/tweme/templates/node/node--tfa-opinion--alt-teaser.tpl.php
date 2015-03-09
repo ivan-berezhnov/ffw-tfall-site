@@ -15,6 +15,6 @@
   </span>
 </span>
 <span class="opinion-author-post">
-  <?php print $title; ?>
+  <?php print strlen($title) > 75 ? substr($title,0,75)."..." : $title; ?>
 </span>
 </span>
