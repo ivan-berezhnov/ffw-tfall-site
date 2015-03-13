@@ -8124,8 +8124,8 @@ h3.comments-title {
   margin-bottom: 0px;
 }
 
-/* line 8, ../sass/_video.scss */
-#block-views-featured-videos-block h2 {
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-1 h2 {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
   font-size: 22px;
@@ -8141,19 +8141,217 @@ h3.comments-title {
   line-height: 24px;
 }
 /* line 59, ../sass/styleguide/_font-face.scss */
-#block-views-featured-videos-block h2 em {
+#block-views-featured-videos-block-1 h2 em {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
 
-/* line 26, ../sass/_video.scss */
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-2 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-2 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-3 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-3 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-4 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-4 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-5 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-5 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-6 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-6 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-7 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-7 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-8 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-8 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-9 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-9 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 9, ../sass/_video.scss */
+#block-views-featured-videos-block-10 h2 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #e69740;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+#block-views-featured-videos-block-10 h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* line 28, ../sass/_video.scss */
 .node--video--teaser a {
   height: 209px;
   overflow: hidden;
   display: block;
   margin-bottom: 20px;
 }
-/* line 32, ../sass/_video.scss */
+/* line 34, ../sass/_video.scss */
 .node--video--teaser .video-embed-description {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
