@@ -121,7 +121,7 @@ function tfa_forum_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'forum-landing-page';
+  $handler->display->display_options['path'] = 'forum';
   $export['forum_landing_page'] = $view;
 
   $view = new view();

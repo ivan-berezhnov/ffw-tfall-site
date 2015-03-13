@@ -4,20 +4,22 @@
   margin-bottom: 0px;
 }
 
-#block-views-featured-videos-block {
-  h2 {
-    @include FedraRegular;
-    font-size: 22px;
-    font-size: 1.375rem;
-    font-weight: normal;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #e69740;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 24px;
+@for $i from 1 through 10 {
+  #block-views-featured-videos-block-#{$i} {
+    h2 {
+      @include FedraRegular;
+      font-size: 22px;
+      font-size: 1.375rem;
+      font-weight: normal;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #e69740;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 24px;
+    }
   }
 }
 
