@@ -1675,7 +1675,7 @@ h2.page-title {
 @media screen and (max-width: 767px) {
   /* line 966, ../sass/_teachforall.scss */
   #feeds {
-    padding: 20px 0 0;
+    padding: 0;
     background: white;
   }
   /* line 986, ../sass/_teachforall.scss */
@@ -8566,28 +8566,53 @@ h3.comments-title {
 
 /* line 28, ../sass/_video.scss */
 .node--video--teaser a {
-  height: 209px;
-  overflow: hidden;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-/* line 34, ../sass/_video.scss */
+@media screen and (min-width: 768px) {
+  /* line 28, ../sass/_video.scss */
+  .node--video--teaser a {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+/* line 36, ../sass/_video.scss */
+.node--video--teaser a img {
+  max-width: 100%;
+}
+@media screen and (min-width: 440px) and (max-width: 767px) {
+  /* line 36, ../sass/_video.scss */
+  .node--video--teaser a img {
+    max-width: 400px;
+  }
+}
+/* line 43, ../sass/_video.scss */
 .node--video--teaser .video-embed-description {
+  color: white;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
-  font-size: 22px;
-  font-size: 1.375rem;
   font-weight: normal;
-  color: #fff;
   line-height: 24px;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
 }
 /* line 59, ../sass/styleguide/_font-face.scss */
 .node--video--teaser .video-embed-description em {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
+@media screen and (min-width: 768px) {
+  /* line 43, ../sass/_video.scss */
+  .node--video--teaser .video-embed-description {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
 
-/* line 45, ../sass/_video.scss */
+/* line 59, ../sass/_video.scss */
 .region-net-learning-front h2 {
   color: #ffffff;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -8606,27 +8631,12 @@ h3.comments-title {
   font-style: normal;
 }
 @media screen and (max-width: 767px) {
-  /* line 45, ../sass/_video.scss */
+  /* line 59, ../sass/_video.scss */
   .region-net-learning-front h2 {
     line-height: 20px;
     font-size: 16px;
     font-size: 1rem;
   }
-}
-/* line 59, ../sass/_video.scss */
-.region-net-learning-front .video-embed-description {
-  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-weight: normal;
-  font-weight: normal;
-  font-style: normal;
-  color: white;
-  font-size: 16px;
-  font-size: 1rem;
-}
-/* line 59, ../sass/styleguide/_font-face.scss */
-.region-net-learning-front .video-embed-description em {
-  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-style: normal;
 }
 
 /**

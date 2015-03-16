@@ -26,18 +26,32 @@
 .node--video--teaser {
   @extend .span4;
   a {
-    height: 209px;
-    overflow: hidden;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    img {
+      max-width: 100%;
+      @media screen and (min-width: 440px) and (max-width: 767px) {
+        max-width: 400px;
+      }
+    }
   }
   .video-embed-description {
+    color: $white;
     @include FedraRegular;
-    font-size: 22px;
-    font-size: 1.375rem;
     font-weight: normal;
-    color: #fff;
     line-height: 24px;
+    @include font-size(16);
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 }
 
@@ -55,12 +69,5 @@
       line-height: 20px;
       @include font-size(16);
     }
-  }
-  .video-embed-description {
-    @include FedraRegular;
-    font-weight: normal;
-    font-style: normal;
-    color: $white;
-    @include font-size(16);
   }
 }
