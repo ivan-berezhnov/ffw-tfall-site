@@ -26,6 +26,7 @@
 ?>
 <div class="news__flexslider__wrapper flexslider-wrapper">
   <?php print $fields['field_news_image']->content; ?>
+  <?php print $fields['field_network_learning_image']->content; ?>
   <div class="news__flexslider__info flexslider-info">
     <?php print $fields['field_category']->content; ?>
     <h2><?php print $fields['title']->content; ?></h2>
