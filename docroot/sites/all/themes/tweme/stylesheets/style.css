@@ -8587,6 +8587,48 @@ h3.comments-title {
   font-style: normal;
 }
 
+/* line 45, ../sass/_video.scss */
+.region-net-learning-front h2 {
+  color: #ffffff;
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  line-height: 22px;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.region-net-learning-front h2 em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+@media screen and (max-width: 767px) {
+  /* line 45, ../sass/_video.scss */
+  .region-net-learning-front h2 {
+    line-height: 20px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+/* line 59, ../sass/_video.scss */
+.region-net-learning-front .video-embed-description {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* line 59, ../sass/styleguide/_font-face.scss */
+.region-net-learning-front .video-embed-description em {
+  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
 /**
 * #Table of Contents
 **/
