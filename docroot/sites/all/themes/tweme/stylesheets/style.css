@@ -8568,7 +8568,15 @@ h3.comments-title {
 .node--video--teaser a {
   display: block;
   margin-bottom: 10px;
+  position: relative;
   text-align: center;
+}
+@media screen and (min-width: 440px) and (max-width: 767px) {
+  /* line 28, ../sass/_video.scss */
+  .node--video--teaser a {
+    margin: 0 auto 10px;
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 768px) {
   /* line 28, ../sass/_video.scss */
@@ -8577,17 +8585,40 @@ h3.comments-title {
     text-align: left;
   }
 }
-/* line 36, ../sass/_video.scss */
+/* line 41, ../sass/_video.scss */
 .node--video--teaser a img {
   max-width: 100%;
 }
 @media screen and (min-width: 440px) and (max-width: 767px) {
-  /* line 36, ../sass/_video.scss */
+  /* line 41, ../sass/_video.scss */
   .node--video--teaser a img {
     max-width: 400px;
   }
 }
-/* line 43, ../sass/_video.scss */
+/* line 48, ../sass/_video.scss */
+.node--video--teaser a:hover:after {
+  background-color: transparent;
+}
+/* line 52, ../sass/_video.scss */
+.node--video--teaser a:after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url(../images/play.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+/* line 68, ../sass/_video.scss */
 .node--video--teaser .video-embed-description {
   color: white;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -8605,14 +8636,14 @@ h3.comments-title {
   font-style: normal;
 }
 @media screen and (min-width: 768px) {
-  /* line 43, ../sass/_video.scss */
+  /* line 68, ../sass/_video.scss */
   .node--video--teaser .video-embed-description {
     margin-bottom: 0;
     text-align: left;
   }
 }
 
-/* line 59, ../sass/_video.scss */
+/* line 84, ../sass/_video.scss */
 .region-net-learning-front h2 {
   color: #ffffff;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -8631,7 +8662,7 @@ h3.comments-title {
   font-style: normal;
 }
 @media screen and (max-width: 767px) {
-  /* line 59, ../sass/_video.scss */
+  /* line 84, ../sass/_video.scss */
   .region-net-learning-front h2 {
     line-height: 20px;
     font-size: 16px;
