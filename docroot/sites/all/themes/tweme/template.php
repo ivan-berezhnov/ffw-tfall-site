@@ -374,3 +374,24 @@ function tweme_preprocess_node__tfa_forum_post(&$vars) {
 function tweme_preprocess_node__tfa_opinion(&$vars) {
   // do some fun things here if needed
 }
+
+/*
+ * Implements hook_preprocess_html
+ */
+function tweme_preprocess_html(&$vars) {
+  _tweme_load_bootstrap();
+  _tweme_load_html5shiv();
+  _tweme_load_assets();
+  $path = drupal_get_path_alias();
+  $pattern ="comment/*\nreply";
+  if (drupal_match_path($path, $pattern)) {
+    $element = array(
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'robots',
+        'content' => 'noindex',
+      ),
+    );
+    drupal_add_html_head($element, 'robots');
+  }
+}
