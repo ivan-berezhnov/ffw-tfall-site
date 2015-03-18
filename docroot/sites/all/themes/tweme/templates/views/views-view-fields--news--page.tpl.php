@@ -47,7 +47,7 @@
     <?php if(isset($fields['field_network_learning_byline']->content)): ?>
       <h3 class="news__landing-byline hidden-phone">
         <?php print $fields['field_news_byline']->content; ?>
-        <?php if(isset($fields['field_network_learning_byline']->content)): ?>
+        <?php print $fields['field_network_learning_byline']->content; ?>
       </h3>
     <?php endif; ?>
     <?php if (isset($fields['field_author']->content)): ?>
