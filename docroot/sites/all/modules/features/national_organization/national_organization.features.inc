@@ -31,17 +31,9 @@ function national_organization_image_default_styles() {
 
   // Exported image style: map_logo.
   $styles['map_logo'] = array(
-    'name' => 'map_logo',
     'label' => 'map logo',
     'effects' => array(
       5 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => 150,
@@ -55,17 +47,9 @@ function national_organization_image_default_styles() {
 
   // Exported image style: map_thumbnail.
   $styles['map_thumbnail'] = array(
-    'name' => 'map_thumbnail',
     'label' => 'map thumbnail',
     'effects' => array(
       6 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 292,
@@ -78,17 +62,9 @@ function national_organization_image_default_styles() {
 
   // Exported image style: national_organization_logo.
   $styles['national_organization_logo'] = array(
-    'name' => 'national_organization_logo',
     'label' => 'National Organization Logo',
     'effects' => array(
       3 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 270,
@@ -124,5 +100,6 @@ function national_organization_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

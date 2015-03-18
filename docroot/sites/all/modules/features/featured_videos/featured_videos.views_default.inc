@@ -52,6 +52,11 @@ function featured_videos_views_default_views() {
     'spanish_marquee' => 0,
     'spanish_nl_front' => 0,
   );
+  /* Relationship: Content: Entity translation: translations */
+  $handler->display->display_options['relationships']['entity_translations']['id'] = 'entity_translations';
+  $handler->display->display_options['relationships']['entity_translations']['table'] = 'node';
+  $handler->display->display_options['relationships']['entity_translations']['field'] = 'entity_translations';
+  $handler->display->display_options['relationships']['entity_translations']['required'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -78,13 +83,13 @@ function featured_videos_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Filter criterion: Content: Language */
+  /* Filter criterion: Entity translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
-  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['table'] = 'entity_translation';
   $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['relationship'] = 'entity_translations';
   $handler->display->display_options['filters']['language']['value'] = array(
-    'und' => 'und',
-    'en' => 'en',
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
   );
 
   /* Display: EN Featured Video Block */
@@ -92,6 +97,8 @@ function featured_videos_views_default_views() {
 
   /* Display: ES Featured Video Block */
   $handler = $view->new_display('block', 'ES Featured Video Block', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Videos Destacados';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -108,12 +115,13 @@ function featured_videos_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'video' => 'video',
   );
-  /* Filter criterion: Content: Language */
+  /* Filter criterion: Entity translation: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
-  $handler->display->display_options['filters']['language']['table'] = 'node';
+  $handler->display->display_options['filters']['language']['table'] = 'entity_translation';
   $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['relationship'] = 'entity_translations';
   $handler->display->display_options['filters']['language']['value'] = array(
-    'es' => 'es',
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
   );
   $export['featured_videos'] = $view;
 

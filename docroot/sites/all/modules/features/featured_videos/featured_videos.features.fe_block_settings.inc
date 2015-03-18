@@ -14,8 +14,10 @@ function featured_videos_default_fe_block_settings() {
 
   $export['views-featured_videos-block'] = array(
     'cache' => -1,
+    'custom' => 0,
     'delta' => 'featured_videos-block',
     'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -34,12 +36,16 @@ function featured_videos_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   $export['views-featured_videos-block_1'] = array(
     'cache' => -1,
+    'custom' => 0,
     'delta' => 'featured_videos-block_1',
     'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -58,6 +64,8 @@ function featured_videos_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 0,
   );
 
   return $export;

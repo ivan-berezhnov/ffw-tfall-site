@@ -60,17 +60,9 @@ function network_learning_image_default_styles() {
 
   // Exported image style: network_learning_front_thumbnail.
   $styles['network_learning_front_thumbnail'] = array(
-    'name' => 'network_learning_front_thumbnail',
     'label' => 'Network Learning Front Thumbnail (370 x 210)',
     'effects' => array(
       1 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 370,
@@ -98,5 +90,6 @@ function network_learning_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

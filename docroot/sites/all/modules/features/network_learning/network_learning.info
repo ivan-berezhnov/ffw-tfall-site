@@ -12,6 +12,7 @@ dependencies[] = flexslider_views
 dependencies[] = image
 dependencies[] = news
 dependencies[] = options
+dependencies[] = pubteachforall_1_col_layout
 dependencies[] = spotlight
 dependencies[] = strongarm
 dependencies[] = taxonomy
