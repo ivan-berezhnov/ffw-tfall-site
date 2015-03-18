@@ -4265,9 +4265,7 @@ div#panels-ipe-control-container {
 }
 /* line 3396, ../sass/_teachforall.scss */
 .panel-panel h2 {
-  font-size: 1rem;
-  letter-spacing: .2em;
-  text-transform: uppercase;
+  font-size: 25px;
 }
 /* line 3401, ../sass/_teachforall.scss */
 .panel-panel h2 a {
