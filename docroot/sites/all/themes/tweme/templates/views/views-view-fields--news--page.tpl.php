@@ -44,9 +44,12 @@
     </div>
     <h3><?php print $fields['title']->content; ?></h3>
     <?php if(isset($fields['field_news_byline']->content)): ?>
-    <?php if(isset($fields['field_network_learning_byline']->content)): ?>
       <h3 class="news__landing-byline hidden-phone">
         <?php print $fields['field_news_byline']->content; ?>
+      </h3>
+    <?php endif; ?>
+    <?php if(isset($fields['field_network_learning_byline']->content)): ?>
+      <h3 class="network-learning__landing-byline hidden-phone">
         <?php print $fields['field_network_learning_byline']->content; ?>
       </h3>
     <?php endif; ?>
