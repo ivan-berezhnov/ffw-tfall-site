@@ -102,6 +102,20 @@ function national_organization_views_default_views() {
   /* Display: Careers Pane */
   $handler = $view->new_display('panel_pane', 'Careers Pane', 'panel_pane_2');
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Careers Page */
+  $handler->display->display_options['fields']['field_careers_page']['id'] = 'field_careers_page';
+  $handler->display->display_options['fields']['field_careers_page']['table'] = 'field_data_field_careers_page';
+  $handler->display->display_options['fields']['field_careers_page']['field'] = 'field_careers_page';
+  $handler->display->display_options['fields']['field_careers_page']['label'] = '';
+  $handler->display->display_options['fields']['field_careers_page']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_careers_page']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_careers_page']['alter']['text'] = '<a href="[field_careers_page-url]">Join the Team</a>';
+  $handler->display->display_options['fields']['field_careers_page']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_careers_page']['element_class'] = 'red';
+  $handler->display->display_options['fields']['field_careers_page']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_careers_page']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_careers_page']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_careers_page']['type'] = 'link_url';
   /* Field: Content: Country */
   $handler->display->display_options['fields']['field_country']['id'] = 'field_country';
   $handler->display->display_options['fields']['field_country']['table'] = 'field_data_field_country';
@@ -116,10 +130,12 @@ function national_organization_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_careers_page]';
+  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['title']['element_class'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   /* Field: Content: Careers Document */
@@ -135,28 +151,6 @@ function national_organization_views_default_views() {
   $handler->display->display_options['fields']['field_careers_document']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_careers_document']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_careers_document']['type'] = 'file_url_plain';
-  /* Field: Content: Careers Page */
-  $handler->display->display_options['fields']['field_careers_page']['id'] = 'field_careers_page';
-  $handler->display->display_options['fields']['field_careers_page']['table'] = 'field_data_field_careers_page';
-  $handler->display->display_options['fields']['field_careers_page']['field'] = 'field_careers_page';
-  $handler->display->display_options['fields']['field_careers_page']['label'] = '';
-  $handler->display->display_options['fields']['field_careers_page']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_careers_page']['alter']['text'] = '<a href="[field_careers_page-url]">Join the Team</a>';
-  $handler->display->display_options['fields']['field_careers_page']['element_type'] = 'p';
-  $handler->display->display_options['fields']['field_careers_page']['element_class'] = 'red';
-  $handler->display->display_options['fields']['field_careers_page']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_careers_page']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_careers_page']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_careers_page']['type'] = 'link_url';
-  /* Field: Content: Contact Info */
-  $handler->display->display_options['fields']['field_contact_info']['id'] = 'field_contact_info';
-  $handler->display->display_options['fields']['field_contact_info']['table'] = 'field_data_field_contact_info';
-  $handler->display->display_options['fields']['field_contact_info']['field'] = 'field_contact_info';
-  $handler->display->display_options['fields']['field_contact_info']['label'] = '';
-  $handler->display->display_options['fields']['field_contact_info']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_contact_info']['element_class'] = 'small-body';
-  $handler->display->display_options['fields']['field_contact_info']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_contact_info']['hide_empty'] = TRUE;
 
   /* Display: Teach Pane */
   $handler = $view->new_display('panel_pane', 'Teach Pane', 'panel_pane_3');
