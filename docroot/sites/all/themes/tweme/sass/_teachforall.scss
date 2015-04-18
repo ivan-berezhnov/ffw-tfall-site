@@ -268,7 +268,7 @@ textarea:focus, input:focus{
 }
 
 .site-slogan {
-  margin-top: 25px;
+  margin: 25px 0 10px;
   color: $grey1;
   text-align: center;
   @include font-size(16);
@@ -482,12 +482,7 @@ h2 {
 }
 
 .slug-medium {
-  color: $orange1;
-  @include FedraRegular;
-  letter-spacing: .2em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  @include font-size(16);
+  @include slug-medium;
 }
 
 .slug-large {

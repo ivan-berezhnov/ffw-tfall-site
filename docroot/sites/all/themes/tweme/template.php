@@ -395,3 +395,19 @@ function tweme_preprocess_html(&$vars) {
     drupal_add_html_head($element, 'robots');
   }
 }
+
+/*
+ * Override default theme_breadcrumb().
+ */
+function tweme_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<span class="element-invisible">' . t('You are here') . '</span>';
+
+    $output .= '<div class="breadcrumb">' . implode(' | ', $breadcrumb) . '</div>';
+    return $output;
+  }
+}

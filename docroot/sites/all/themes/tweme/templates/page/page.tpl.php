@@ -102,6 +102,11 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
     <?php endif ?>
     <!-- Content -->
     <section id="content" class="span<?php print $content_cols ?>">
+        <div class="region-title">
+          <?php print render($title_prefix); ?>
+          <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+          <?php print render($title_suffix); ?>
+        </div>
         <?php
         $current_path = request_path();
         $path_snippets = explode('/', $current_path);

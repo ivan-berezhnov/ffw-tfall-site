@@ -1,0 +1,13 @@
+
+.region-title {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    width: 724px;
+  }
+  @media screen and (min-width: 980px) and (max-width: 1199px) {
+    width: 940px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+}
