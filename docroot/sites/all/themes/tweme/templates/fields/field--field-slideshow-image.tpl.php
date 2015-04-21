@@ -44,13 +44,13 @@
  * @ingroup themeable
  */
 ?>
-<div class="flexslider" id="flexslider-<?php print $element['#object']->nid; ?>">
-  <ul class="slides">
+<div class="carousel-container">
+  <div id="owl-carousel-<?php print $element['#object']->nid; ?>" class="owl-carousel">
     <?php foreach ($items as $delta => $item): ?>
-      <li>
+      <div class="slide">
         <?php print render($item); ?>
-        <p class="flex-caption"><?php print $item['#item']['title']; ?></p>
-      </li>
+        <div class="marquee-title"><?php print $item['#item']['title']; ?></div>
+      </div>
     <?php endforeach; ?>
-  </ul>
+  </div>
 </div>
