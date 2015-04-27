@@ -487,6 +487,7 @@ function pubteachforall_central_strongarm() {
   $strongarm->value = array(
     'about' => TRUE,
     'file' => TRUE,
+    'forum-landing-page' => TRUE,
     'get-involved' => TRUE,
     'network-learning' => TRUE,
     'news' => TRUE,
