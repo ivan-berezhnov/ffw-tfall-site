@@ -4,7 +4,7 @@
       <h2 class="page-title date"><?php print render($content['field_network_learning_tags']); ?></h2>
       <div class="row-fluid">
         <div class="span9">
-		
+
 		          <div class="slug">
                 <span class="news__category"><?php print format_date($node->created, 'short'); ?></span>
           </div>
@@ -59,7 +59,7 @@
                   print render($content['sharethis']);
                 }
               ?>
-              <a href="network-learning/latest">
+              <a href="/network-learning/latest">
                 <div class="full-list"><?php print t('Network Learning Archive'); ?> <span class="orange2">>></span></div>
               </a>
             </div>
