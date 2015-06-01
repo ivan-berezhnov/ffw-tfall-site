@@ -53,6 +53,6 @@
   }
 }
 h2.news__title {
-  font-size(42);
+  @include font-size(42);
   line-height: 48px
 }
