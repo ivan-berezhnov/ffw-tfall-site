@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('PRESS'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('Press'); ?></h1>
   <div class="row-fluid">
     <div class="span9">
       <?php print render(views_embed_view('press','block_1')); //flexslider ?>

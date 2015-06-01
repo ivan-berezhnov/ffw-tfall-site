@@ -23,3 +23,16 @@
     }
   }
 }
+.page-about-vision-and-mission {
+  .region-title {
+    h1 {
+      @include slug-medium;
+      margin-top: 40px;
+    }
+  }
+}
+.page-news {
+  #page-title {
+    @include h1;
+  }
+}
