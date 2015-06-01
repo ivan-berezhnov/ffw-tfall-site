@@ -31,7 +31,8 @@
     }
   }
 }
-.page-news {
+.page-news,
+.page-press {
   #page-title {
     @include h1;
   }

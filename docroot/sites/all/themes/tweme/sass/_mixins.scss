@@ -135,6 +135,7 @@
   letter-spacing: .2em;
   line-height: 30px;
   margin: 0 0 30px;
+  text-align: center;
   text-transform: uppercase;
   @include font-size(26);
   @media screen and (max-width: 350px) {
