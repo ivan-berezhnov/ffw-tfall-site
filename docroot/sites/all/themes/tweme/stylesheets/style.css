@@ -8482,8 +8482,27 @@ h3.comments-title {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
+/* line 34, ../sass/_typography.scss */
+.page-about-vision-and-mission .vision p {
+  color: #4d4d4d;
+  font-size: 42px;
+  font-size: 2.625rem;
+  letter-spacing: 0;
+  line-height: 56px;
+  margin: 0 auto 20px;
+  max-width: 620px;
+  text-align: center;
+}
+@media screen and (max-width: 350px) {
+  /* line 34, ../sass/_typography.scss */
+  .page-about-vision-and-mission .vision p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 54px;
+  }
+}
 
-/* line 36, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 .page-news #page-title,
 .page-press #page-title {
   color: #e69740;
@@ -8496,7 +8515,7 @@ h3.comments-title {
   font-size: 1.625rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 36, ../sass/_typography.scss */
+  /* line 51, ../sass/_typography.scss */
   .page-news #page-title,
   .page-press #page-title {
     font-size: 24px;

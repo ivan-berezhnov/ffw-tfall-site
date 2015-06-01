@@ -30,6 +30,21 @@
       margin-top: 40px;
     }
   }
+  .vision {
+    p {
+      color: #4d4d4d;
+      @include font-size(42);
+      letter-spacing: 0;
+      line-height: 56px;
+      margin: 0 auto 20px;
+      max-width: 620px;
+      text-align: center;
+      @media screen and (max-width: 350px) {
+        @include font-size(24);
+        line-height: 54px;
+      }
+    }
+  }
 }
 .page-news,
 .page-press {
