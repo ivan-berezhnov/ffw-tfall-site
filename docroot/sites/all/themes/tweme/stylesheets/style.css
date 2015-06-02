@@ -4384,7 +4384,7 @@ div#panels-ipe-control-container {
 
 /* line 3487, ../sass/_teachforall.scss */
 .press-sidebar {
-  float: right;
+  float: right !important;
   position: relative;
   z-index: 100;
 }

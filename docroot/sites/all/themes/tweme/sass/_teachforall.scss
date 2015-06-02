@@ -3485,7 +3485,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
   }
 }
 .press-sidebar {
-  float: right;
+  float: right !important;
   position: relative;
   z-index: 100;
   div {
