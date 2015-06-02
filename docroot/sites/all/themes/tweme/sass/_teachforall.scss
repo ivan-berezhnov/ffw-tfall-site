@@ -3478,3 +3478,20 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
   width: 82.97872340425532%;
   margin: 0 auto;
 }
+.page-press {
+  .region-content {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}
+.press-sidebar {
+  float: right;
+  position: relative;
+  z-index: 100;
+  div {
+    clear: both;
+  }
+  .full-list {
+    margin: 20px 0 0;
+  }
+}

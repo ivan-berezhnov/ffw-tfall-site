@@ -1,7 +1,7 @@
 <h1 class="title" id="page-title"><?php print t('Press'); ?></h1>
-<div class="container">
-  <div class="row-fluid span3">
-    <div class="span9">
+<div class="span3 press-sidebar">
+  <div class="row-fluid">
+    <div>
       <?php print render(views_embed_view('press','block_1')); //flexslider ?>
       <div class="row-fluid">
         <div>

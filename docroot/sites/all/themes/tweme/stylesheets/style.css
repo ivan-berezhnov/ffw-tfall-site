@@ -4376,6 +4376,27 @@ div#panels-ipe-control-container {
   margin: 0 auto;
 }
 
+/* line 3482, ../sass/_teachforall.scss */
+.page-press .region-content {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* line 3487, ../sass/_teachforall.scss */
+.press-sidebar {
+  float: right;
+  position: relative;
+  z-index: 100;
+}
+/* line 3491, ../sass/_teachforall.scss */
+.press-sidebar div {
+  clear: both;
+}
+/* line 3494, ../sass/_teachforall.scss */
+.press-sidebar .full-list, .press-sidebar .landing-forum p + a, .landing-forum .press-sidebar p + a {
+  margin: 20px 0 0;
+}
+
 /**
 * #Constant Contact
 **/
