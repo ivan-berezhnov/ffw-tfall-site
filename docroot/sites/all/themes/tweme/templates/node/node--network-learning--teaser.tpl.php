@@ -5,13 +5,13 @@
       <div class="row-fluid">
         <div class="span9">
 
-		      <div class="slug">
+          <div class="slug">
             <span class="news__category"><?php print format_date($node->created, 'short'); ?></span>
           </div>
 
-          <h1 class="news__title"><?php print $title; ?></h1>
+          <h2 class="news__title"><?php print $title; ?></h2>
 
-		      <div class="news__byline">
+          <div class="news__byline">
             <?php if (isset($content['field_author'])): ?>
               <h3><?php print render($content['field_author']); ?></h3>
             <?php endif; ?>
