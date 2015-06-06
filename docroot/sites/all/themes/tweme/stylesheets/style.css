@@ -7308,25 +7308,22 @@ div#panels-ipe-control-container {
 .node-slideshow .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
-  -webkit-backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-  background-color: #3c3835;
   display: table-cell;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 69, ../sass/_slideshow.scss */
+/* line 65, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-item img {
   display: block;
 }
-/* line 75, ../sass/_slideshow.scss */
+/* line 70, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-nav.disabled,
 .node-slideshow .owl-carousel .owl-dots.disabled {
   display: none;
 }
-/* line 80, ../sass/_slideshow.scss */
+/* line 75, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-nav .owl-prev,
 .node-slideshow .owl-carousel .owl-nav .owl-next,
 .node-slideshow .owl-carousel .owl-dot {
@@ -7338,31 +7335,31 @@ div#panels-ipe-control-container {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 92, ../sass/_slideshow.scss */
+/* line 87, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-loaded {
   display: block;
 }
-/* line 96, ../sass/_slideshow.scss */
+/* line 91, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
 }
-/* line 101, ../sass/_slideshow.scss */
+/* line 96, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-hidden {
   opacity: 0;
 }
-/* line 105, ../sass/_slideshow.scss */
+/* line 100, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-refresh .owl-item {
   display: none;
 }
-/* line 109, ../sass/_slideshow.scss */
+/* line 104, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-drag .owl-item {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-/* line 116, ../sass/_slideshow.scss */
+/* line 111, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-grab {
   cursor: move;
   cursor: -webkit-grab;
@@ -7370,38 +7367,46 @@ div#panels-ipe-control-container {
   cursor: -ms-grab;
   cursor: grab;
 }
-/* line 124, ../sass/_slideshow.scss */
+/* line 119, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-rtl {
   direction: rtl;
 }
-/* line 127, ../sass/_slideshow.scss */
+/* line 122, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
-/* line 130, ../sass/_slideshow.scss */
+/* line 125, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .views-row {
   height: 100%;
 }
-/* line 133, ../sass/_slideshow.scss */
+/* line 128, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-title {
-  background-color: #3c3835;
-  border-top: 1px solid #91998c;
-  padding: 20px 20px 18px;
+  background-color: #000;
+  bottom: 0;
+  padding: 15px 20px;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
   font-weight: normal;
   font-style: normal;
-  color: #fff;
+  color: #91998c;
   font-size: 16px;
   font-size: 1rem;
-  text-align: center;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
 }
 /* line 59, ../sass/styleguide/_font-face.scss */
 .node-slideshow .owl-carousel .marquee-title em {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 144, ../sass/_slideshow.scss */
+/* line 141, ../sass/_slideshow.scss */
+.node-slideshow .owl-carousel .marquee-title .slideshow-caption {
+  float: left;
+  width: 75%;
+}
+/* line 146, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-body {
   padding: 0 20px 20px 20px;
   color: #999;
@@ -7418,16 +7423,16 @@ div#panels-ipe-control-container {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 155, ../sass/_slideshow.scss */
+/* line 157, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls {
   height: 100%;
   width: 100%;
 }
-/* line 158, ../sass/_slideshow.scss */
+/* line 160, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav {
   height: 100%;
 }
-/* line 161, ../sass/_slideshow.scss */
+/* line 163, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev {
   position: absolute;
   left: -999em;
@@ -7435,22 +7440,22 @@ div#panels-ipe-control-container {
   height: 100%;
   text-indent: -999em;
 }
-/* line 167, ../sass/_slideshow.scss */
+/* line 169, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev:before {
   text-align: right;
 }
-/* line 171, ../sass/_slideshow.scss */
+/* line 173, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-next {
   position: absolute;
   right: -999em;
   margin: 0;
   height: 100%;
 }
-/* line 176, ../sass/_slideshow.scss */
+/* line 178, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-next:before {
   text-align: left;
 }
-/* line 180, ../sass/_slideshow.scss */
+/* line 182, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav div {
   color: #fff;
   display: inline-block;
@@ -7474,7 +7479,7 @@ div#panels-ipe-control-container {
   -moz-osx-font-smoothing: grayscale;
   z-index: 70;
 }
-/* line 201, ../sass/_slideshow.scss */
+/* line 203, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav div:before {
   display: table-cell;
   vertical-align: middle;
@@ -7485,43 +7490,51 @@ div#panels-ipe-control-container {
   font-size: 100px;
 }
 
+/* line 216, ../sass/_slideshow.scss */
+img.slideshow {
+  width: 100%;
+}
+
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 217, ../sass/_slideshow.scss */
+/* line 222, ../sass/_slideshow.scss */
 .owl-controls.clickable .owl-nav div:hover {
   text-decoration: none;
 }
 
 /* No Js */
-/* line 222, ../sass/_slideshow.scss */
+/* line 227, ../sass/_slideshow.scss */
 .no-js .owl-carousel {
   display: block;
 }
 
-/* line 226, ../sass/_slideshow.scss */
+/* line 231, ../sass/_slideshow.scss */
 .owl-theme .owl-dots {
-  background-color: #fff;
-  margin: 12px 0 0;
-  text-align: center;
+  bottom: 14px;
+  position: absolute;
+  right: 14px;
+  text-align: right;
+  width: 25%;
+  z-index: 100;
 }
-/* line 230, ../sass/_slideshow.scss */
+/* line 238, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
-  margin: 5px 7px;
+  margin: 0 6px;
   zoom: 1;
 }
-/* line 235, ../sass/_slideshow.scss */
+/* line 243, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot.active span {
   background: #e69740;
 }
-/* line 240, ../sass/_slideshow.scss */
+/* line 248, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #cf4753;
 }
-/* line 244, ../sass/_slideshow.scss */
+/* line 252, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot span {
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
   background: #91998c;
   display: block;
   -webkit-backface-visibility: visible;
@@ -7529,13 +7542,10 @@ div#panels-ipe-control-container {
   -o-transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
 }
 
 /* Feel free to change duration  */
-/* line 258, ../sass/_slideshow.scss */
+/* line 265, ../sass/_slideshow.scss */
 .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -7545,20 +7555,20 @@ div#panels-ipe-control-container {
 
 /* .owl-animated-out - only for current item */
 /* This is very important class. Use z-index if you want move Out item above In item */
-/* line 267, ../sass/_slideshow.scss */
+/* line 274, ../sass/_slideshow.scss */
 .owl-animated-out {
   z-index: 1;
 }
 
 /* .owl-animated-in - only for upcoming item
 /* This is very important class. Use z-index if you want move In item above Out item */
-/* line 272, ../sass/_slideshow.scss */
+/* line 279, ../sass/_slideshow.scss */
 .owl-animated-in {
   z-index: 0;
 }
 
 /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-/* line 276, ../sass/_slideshow.scss */
+/* line 283, ../sass/_slideshow.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;

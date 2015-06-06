@@ -5,13 +5,12 @@
     attach: function (context, settings) {
       var $container = $('.owl-carousel', context);
       $container.owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeOut',
         items: 1,
-        navigation: false,
+        navigation: true,
         dots: true,
         autoplay: true,
-        smartSpeed: 450
+        autoplayHoverPause: true,
+        loop: true
       });
     }
   };
