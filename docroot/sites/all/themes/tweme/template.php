@@ -376,6 +376,21 @@ function tweme_preprocess_node__tfa_opinion(&$vars) {
 }
 
 /*
+ * Implements hook_preprocess_node
+ */
+// function tweme_preprocess_node__slideshow(&$vars) {
+//   drupal_add_library('flexslider', 'flexslider');
+
+//   $script = "\n";
+//   $script .= "(function($) {\n\t";
+//   $script .= "$('#flexslider-" . $vars['node']->nid . "').flexslider();\n";
+//   $script .= "})(jQuery);";
+//   $script .= "\n";
+//   drupal_add_js($script, array('type' => 'inline', 'scope' => 'footer', 'weight' => 5));
+// }
+
+
+/*
  * Implements hook_preprocess_html
  */
 function tweme_preprocess_html(&$vars) {

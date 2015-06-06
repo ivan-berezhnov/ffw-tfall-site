@@ -66,17 +66,9 @@ function pubteachforall_marquee_image_default_styles() {
 
   // Exported image style: marquee_full_width.
   $styles['marquee_full_width'] = array(
-    'name' => 'marquee_full_width',
     'label' => 'Marquee Full Width',
     'effects' => array(
       5 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 590,
@@ -89,17 +81,9 @@ function pubteachforall_marquee_image_default_styles() {
 
   // Exported image style: marquee_vertical_image.
   $styles['marquee_vertical_image'] = array(
-    'name' => 'marquee_vertical_image',
     'label' => 'Marquee Vertical Image',
     'effects' => array(
       6 => array(
-        'label' => 'Scale and crop',
-        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
-        'effect callback' => 'image_scale_and_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'image_resize_form',
-        'summary theme' => 'image_resize_summary',
-        'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 293,

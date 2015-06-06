@@ -22,6 +22,8 @@ stylesheets[all][] = stylesheets/press.css
 ;probably shared!
 scripts[] = js/teachforall.js
 ;scripts[] = js/teachforall.min.js
+scripts[] = js/owl.carousel2.js
+scripts[] = js/slideshow.js
 
 
 regions[header] = Header

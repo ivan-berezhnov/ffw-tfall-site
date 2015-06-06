@@ -1,0 +1,302 @@
+.node-slideshow {
+  background-color: $white;
+  margin: 1em 0;
+  overflow: hidden !important;
+  width: 100% !important;
+
+  // Core Owl Carousel CSS File
+  .owl-carousel {
+    display: none;
+    margin: 0 auto;
+    -webkit-tap-highlight-color: transparent;
+    /* position relative and z-index fix webkit rendering fonts issue */
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 859px) {
+      width: 640px;
+    }
+    @media screen and (min-width: 860px) and (max-width: 979px) {
+      width: 724px;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1079px) {
+      width: 860px;
+    }
+    @media screen and (min-width: 1080px) and (max-width: 1199px) {
+      width: 940px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1299px) {
+      width: 1080px;
+    }
+    @media screen and (min-width: 1300px) {
+      width: 1170px;
+    }
+
+    .owl-stage {
+      position: relative;
+      -ms-touch-action: pan-Y;
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+
+    .owl-stage-outer {
+      position: relative;
+      overflow: visible;
+      // overflow: hidden;
+      /* fix for flashing background */
+      -webkit-transform: translate3d(0px, 0px, 0px);
+      width: 100%;
+      z-index: 60;
+    }
+
+    .owl-item {
+      position: relative;
+      min-height: 1px;
+      -webkit-touch-callout: none;
+      display: table-cell;
+
+      @include box-sizing(border-box);
+      img {
+        display: block;
+      }
+    }
+
+    .owl-nav.disabled,
+    .owl-dots.disabled {
+      display: none;
+    }
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next,
+    .owl-dot {
+      cursor: pointer;
+      cursor: hand;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    &.owl-loaded {
+      display: block;
+    }
+
+    &.owl-loading {
+      opacity: 0;
+      display: block;
+    }
+
+    &.owl-hidden {
+      opacity: 0;
+    }
+
+    &.owl-refresh .owl-item {
+      display: none;
+    }
+
+    &.owl-drag .owl-item {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    &.owl-grab {
+      cursor: move;
+      cursor: -webkit-grab;
+      cursor: -o-grab;
+      cursor: -ms-grab;
+      cursor: grab;
+    }
+
+    &.owl-rtl {
+      direction: rtl;
+    }
+    &.owl-rtl .owl-item {
+      float: right;
+    }
+    .views-row {
+      height: 100%;
+    }
+    .marquee-title {
+      background-color: #000;
+      bottom: 0;
+      padding: 15px 20px;
+      @include FedraRegular;
+      font-weight: normal;
+      font-style: normal;
+      color: $grey1;
+      @include font-size(16);
+      opacity: 0.8;
+      position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      .slideshow-caption {
+        float: left;
+        width: 75%;
+      }
+    }
+    .marquee-body {
+      padding: 0 20px 20px 20px;
+      color: #999;
+      @include FedraRegular;
+      font-weight: normal;
+      font-style: normal;
+      @include font-size(16);
+      line-height: 20px;
+    }
+  }
+  /* Styling Next and Prev buttons */
+  .owl-controls {
+    height: 100%;
+    width: 100%;
+    .owl-nav {
+      // position: relative;
+      height: 100%;
+      .owl-prev {
+        position: absolute;
+        left: -999em;
+        margin: 0;
+        height: 100%;
+        text-indent: -999em;
+        &:before {
+          text-align: right;
+        }
+      }
+      .owl-next {
+        position: absolute;
+        right: -999em;
+        margin: 0;
+        height: 100%;
+        &:before {
+          text-align: left;
+        }
+      }
+      div {
+        color: #fff;
+        display: inline-block;
+        *display: inline; /*IE7 life-saver */
+        font-size: 12px;
+        background: url(../images/bg-transparent.png);
+        height: 100%;
+        display: table;
+        z-index: 20;
+        font-family: 'icomoon';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        width: 999em;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        z-index: 70;
+        &:before {
+          display: table-cell;
+          vertical-align: middle;
+          height: 100%;
+          width: 100%;
+          padding: 0 10px;
+          text-shadow: #000 1px 1px 3px;
+          font-size: 100px;
+        }
+      }
+    }
+  }
+}
+img.slideshow {
+  width: 100%;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-controls.clickable .owl-nav div:hover {
+  text-decoration: none;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+.owl-theme {
+  .owl-dots {
+    bottom: 14px;
+    position: absolute;
+    right: 14px;
+    text-align: right;
+    width: 25%;
+    z-index: 100;
+    .owl-dot {
+      display: inline-block;
+      margin: 0 6px;
+      zoom: 1;
+      &.active {
+        span {
+          background: #e69740;
+        }
+      }
+      &:hover {
+        span {
+          background: $red;
+        }
+      }
+      span {
+        width: 11px;
+        height: 11px;
+        background: $grey1;
+        display: block;
+        -webkit-backface-visibility: visible;
+        @include transition(all 0.2s ease);
+      }
+    }
+  }
+}
+
+/* Feel free to change duration  */
+.animated  {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* .owl-animated-out - only for current item */
+/* This is very important class. Use z-index if you want move Out item above In item */
+.owl-animated-out {
+  z-index: 1;
+}
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */
+.owl-animated-in {
+  z-index: 0;
+}
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+.fadeOut  {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeOut  {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut  {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
