@@ -5,6 +5,7 @@ package = pubteach4all
 version = 7.x-1.4
 project = teach_for_all_tweets
 dependencies[] = context
+dependencies[] = fe_block
 dependencies[] = news
 dependencies[] = twitter
 dependencies[] = views_content

@@ -18,14 +18,12 @@ dependencies[] = media_youtube
 dependencies[] = menu_block
 dependencies[] = number
 dependencies[] = page_manager
-dependencies[] = panopoly_widgets
 dependencies[] = simple_gmap
 dependencies[] = tablefield
 dependencies[] = text
 dependencies[] = views
 dependencies[] = views_autocomplete_filters
 dependencies[] = views_content
-stylesheets[all][] = panopoly-widgets.css
 datestamp = 1400718538
 explanation = Field type(s) in use - see <a href="/en/admin/reports/fields">Field list</a>
 features[ctools][] = file_entity:file_default_displays:1

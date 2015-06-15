@@ -15,6 +15,8 @@ function footer_information_default_fe_block_settings() {
   $export['block-footer_information'] = array(
     'cache' => -1,
     'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
     'machine_name' => 'footer_information',
     'module' => 'block',
     'node_types' => array(),

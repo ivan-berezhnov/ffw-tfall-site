@@ -103,7 +103,7 @@ function pubteachforall_marquee_views_default_views() {
     'image_style' => 'marquee_full_width',
     'image_link' => 'content',
   );
-  /* Field: Content: Marquee Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
   $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
   $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
@@ -169,7 +169,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_network_learning_byline']['settings'] = array(
     'trim_length' => '175',
   );
-  /* Field: Content: Marquee Blurb */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -296,7 +296,7 @@ function pubteachforall_marquee_views_default_views() {
     'image_style' => 'flexslider_full',
     'image_link' => 'content',
   );
-  /* Field: Content: Marquee Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
   $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
   $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
@@ -339,7 +339,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['title']['element_class'] = 'marquee-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  /* Field: Content: Marquee Blurb */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';

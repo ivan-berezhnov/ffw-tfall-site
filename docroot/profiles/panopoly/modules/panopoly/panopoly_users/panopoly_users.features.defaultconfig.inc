@@ -75,6 +75,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user breadcrumbs'] = array(
     'name' => 'administer panelizer user user breadcrumbs',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -84,6 +85,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user content'] = array(
     'name' => 'administer panelizer user user content',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -93,6 +95,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user context'] = array(
     'name' => 'administer panelizer user user context',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -102,6 +105,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user defaults'] = array(
     'name' => 'administer panelizer user user defaults',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -111,6 +115,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user layout'] = array(
     'name' => 'administer panelizer user user layout',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -120,6 +125,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user overview'] = array(
     'name' => 'administer panelizer user user overview',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -129,6 +135,7 @@ function panopoly_users_defaultconfig_user_default_permissions() {
   $permissions['administer panelizer user user settings'] = array(
     'name' => 'administer panelizer user user settings',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
