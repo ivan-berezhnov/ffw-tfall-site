@@ -1,7 +1,7 @@
 name = pubteachforall_1_col_layout
 core = 7.x
 package = pubteach4all
-version = 7.x-1.0
+version = 7.x-1.1
 project = pubteachforall_1_col_layout
 dependencies[] = ctools
 dependencies[] = features

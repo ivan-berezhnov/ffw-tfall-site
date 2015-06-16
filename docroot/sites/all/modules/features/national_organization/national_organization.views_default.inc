@@ -157,6 +157,41 @@ function national_organization_views_default_views() {
   $handler->display->display_options['fields']['field_contact_info']['element_class'] = 'small-body';
   $handler->display->display_options['fields']['field_contact_info']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_contact_info']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'national_organization' => 'national_organization',
+  );
+  /* Filter criterion: Entity translation: Language */
+  $handler->display->display_options['filters']['language']['id'] = 'language';
+  $handler->display->display_options['filters']['language']['table'] = 'entity_translation';
+  $handler->display->display_options['filters']['language']['field'] = 'language';
+  $handler->display->display_options['filters']['language']['relationship'] = 'entity_translations';
+  $handler->display->display_options['filters']['language']['value'] = array(
+    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
+  );
+  /* Filter criterion: Entity translation: Translation status */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'entity_translation';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['relationship'] = 'entity_translations';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
+  /* Filter criterion: Content: Careers Page (field_careers_page:url) */
+  $handler->display->display_options['filters']['field_careers_page_url']['id'] = 'field_careers_page_url';
+  $handler->display->display_options['filters']['field_careers_page_url']['table'] = 'field_data_field_careers_page';
+  $handler->display->display_options['filters']['field_careers_page_url']['field'] = 'field_careers_page_url';
+  $handler->display->display_options['filters']['field_careers_page_url']['operator'] = 'not empty';
 
   /* Display: Teach Pane */
   $handler = $view->new_display('panel_pane', 'Teach Pane', 'panel_pane_3');

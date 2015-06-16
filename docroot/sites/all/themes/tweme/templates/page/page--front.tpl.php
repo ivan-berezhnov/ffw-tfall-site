@@ -43,7 +43,7 @@
   <div class="row-fluid site-name">
     <div class="span12">
       <a href="<?php print $front_page; ?>">
-        <img src="/sites/all/themes/tweme/images/tfa-logo.png" />
+        <img src="/sites/all/themes/tweme/images/tfa-logo.png" alt="<?php print $site_name; ?>" />
       </a><!<?php //print $front_page; ?>!>
     </div>
   </div>
@@ -93,7 +93,7 @@
         ?>
 			<section id="content" class="span<?php print $content_cols ?>">
 				<div>
-          <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
+          <h1 class="site-slogan"><?php print $site_slogan; ?></h1>
 				</div>
 			</section>
 		</div>

@@ -10,13 +10,13 @@
 function imce_module_filter_default_formats() {
   $formats = array();
 
-  // Exported format: Filtered HTML.
+  // Exported format: Basic HTML Editor.
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
-    'name' => 'Filtered HTML',
+    'name' => 'Basic HTML Editor',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -6,
     'filters' => array(
       'filter_url' => array(
         'weight' => 0,

@@ -25,6 +25,7 @@ function panopoly_wysiwyg_defaultconfig_user_default_permissions() {
   $permissions['use text format panopoly_html_text'] = array(
     'name' => 'use text format panopoly_html_text',
     'roles' => array(
+      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -36,7 +37,6 @@ function panopoly_wysiwyg_defaultconfig_user_default_permissions() {
     'name' => 'use text format panopoly_wysiwyg_text',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
     ),
     'module' => 'filter',
   );

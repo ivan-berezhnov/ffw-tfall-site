@@ -268,7 +268,7 @@ textarea:focus, input:focus{
 }
 
 .site-slogan {
-  margin-top: 25px;
+  margin: 25px 0 10px;
   color: $grey1;
   text-align: center;
   @include font-size(16);
@@ -482,12 +482,7 @@ h2 {
 }
 
 .slug-medium {
-  color: $orange1;
-  @include FedraRegular;
-  letter-spacing: .2em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  @include font-size(16);
+  @include slug-medium;
 }
 
 .slug-large {
@@ -3482,4 +3477,21 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
 .rolph-container {
   width: 82.97872340425532%;
   margin: 0 auto;
+}
+.page-press {
+  .region-content {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}
+.press-sidebar {
+  float: right !important;
+  position: relative;
+  z-index: 100;
+  div {
+    clear: both;
+  }
+  .full-list {
+    margin: 20px 0 0;
+  }
 }

@@ -4,14 +4,14 @@
       <h2 class="page-title date"><?php print render($content['field_network_learning_tags']); ?></h2>
       <div class="row-fluid">
         <div class="span9">
-		
-		          <div class="slug">
-                <span class="news__category"><?php print format_date($node->created, 'short'); ?></span>
+
+		      <div class="slug">
+            <span class="news__category"><?php print format_date($node->created, 'short'); ?></span>
           </div>
 
           <h1 class="news__title"><?php print $title; ?></h1>
 
-		  <div class="news__byline">
+		      <div class="news__byline">
             <?php if (isset($content['field_author'])): ?>
               <h3><?php print render($content['field_author']); ?></h3>
             <?php endif; ?>
@@ -31,8 +31,6 @@
               <?php endif; ?>
             </div>
           <?php endif; ?>
-
-
 
           <div class="news__content">
             <?php if (isset($content['field_embedded_video'])): ?>
@@ -59,7 +57,7 @@
                   print render($content['sharethis']);
                 }
               ?>
-              <a href="network-learning/latest">
+              <a href="/network-learning/latest">
                 <div class="full-list"><?php print t('Network Learning Archive'); ?> <span class="orange2">>></span></div>
               </a>
             </div>

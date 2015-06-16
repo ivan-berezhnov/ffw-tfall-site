@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('NEWS'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('News'); ?></h1>
   <div class="row-fluid">
     <div class="span9">
       <?php print render(views_embed_view('news','block_1')); //flexslider ?>
@@ -26,5 +26,5 @@
         <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="news/latest/?page=1" class="full-list"><?php print t('More News '); ?> <span class="orange2">>></span></a>
+  <a href="/news/latest/?page=1" class="full-list"><?php print t('More News '); ?> <span class="orange2">>></span></a>
 </div>

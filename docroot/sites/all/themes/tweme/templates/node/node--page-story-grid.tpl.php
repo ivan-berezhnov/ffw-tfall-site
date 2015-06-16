@@ -84,8 +84,6 @@
 <div class="container">
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-    <h2 class="page-title"><?php print $title; ?></h2>
-
     <div class="row-fluid">
       <div class="span12">
         <?php print render($content['field_content_top']); ?>

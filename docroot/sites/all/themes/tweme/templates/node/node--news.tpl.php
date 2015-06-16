@@ -63,7 +63,7 @@
                 $output = drupal_render($block);
                 print $output;
               ?>
-            <a href="news/latest">
+            <a href="/news/latest">
 	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
             </a>
   				  </div>

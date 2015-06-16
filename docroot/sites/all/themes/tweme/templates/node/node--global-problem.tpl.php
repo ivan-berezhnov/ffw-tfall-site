@@ -1,5 +1,4 @@
 <div class="container">
-  <h2 class="page-title"><?php print $title; ?></h2>
 
   <div class="row-fluid">
     <div class="span12">

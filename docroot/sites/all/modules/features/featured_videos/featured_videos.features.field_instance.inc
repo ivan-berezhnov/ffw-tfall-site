@@ -15,7 +15,7 @@ function featured_videos_field_default_field_instances() {
     'bundle' => 'video',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => '*Important* If the video is hosted on YouTube, please format the Video URL as such: https://www.youtube.com/embed/kefrdEqytOI ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -51,7 +51,7 @@ function featured_videos_field_default_field_instances() {
         'settings' => array(
           'description' => 1,
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'video_teaser',
         ),
         'type' => 'video_embed_field_thumbnail',
         'weight' => 0,
@@ -79,6 +79,7 @@ function featured_videos_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('*Important* If the video is hosted on YouTube, please format the Video URL as such: https://www.youtube.com/embed/kefrdEqytOI ');
   t('Embedded Video');
 
   return $field_instances;

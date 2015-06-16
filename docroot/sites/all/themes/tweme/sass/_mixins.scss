@@ -120,3 +120,25 @@
     color: $white;
   }
 }
+
+@mixin slug-medium {
+  color: $orange1;
+  @include FedraRegular;
+  letter-spacing: .2em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  @include font-size(16);
+}
+
+@mixin h1 {
+  color: $orange1;
+  letter-spacing: .2em;
+  line-height: 30px;
+  margin: 0 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  @include font-size(26);
+  @media screen and (max-width: 350px) {
+    @include font-size(24);
+  }
+}
