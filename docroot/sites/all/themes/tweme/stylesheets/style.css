@@ -8907,6 +8907,25 @@ h2.news__title {
   text-align: left;
 }
 
+/* line 68, ../sass/_typography.scss */
+.page-network-learning-latest h1 {
+  color: #e69740;
+  letter-spacing: .2em;
+  line-height: 30px;
+  margin: 0 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+@media screen and (max-width: 350px) {
+  /* line 68, ../sass/_typography.scss */
+  .page-network-learning-latest h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
 /**
 * #Table of Contents
 **/
