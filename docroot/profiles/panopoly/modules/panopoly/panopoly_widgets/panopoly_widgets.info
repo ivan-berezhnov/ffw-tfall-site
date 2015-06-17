@@ -2,7 +2,7 @@ name = Panopoly Widgets
 description = Creates generic widget functionality to customize wide and far.
 core = 7.x
 package = Panopoly
-version = 7.x-1.7
+version = 7.x-1.6
 project = panopoly_widgets
 dependencies[] = ctools
 dependencies[] = defaultconfig
@@ -25,6 +25,7 @@ dependencies[] = text
 dependencies[] = views
 dependencies[] = views_autocomplete_filters
 dependencies[] = views_content
+stylesheets[all][] = panopoly-widgets.css
 datestamp = 1400718538
 explanation = Field type(s) in use - see <a href="/en/admin/reports/fields">Field list</a>
 features[ctools][] = file_entity:file_default_displays:1

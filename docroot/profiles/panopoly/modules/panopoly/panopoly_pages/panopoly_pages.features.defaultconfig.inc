@@ -25,7 +25,6 @@ function panopoly_pages_defaultconfig_user_default_permissions() {
   $permissions['create panopoly_page content'] = array(
     'name' => 'create panopoly_page content',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -35,7 +34,6 @@ function panopoly_pages_defaultconfig_user_default_permissions() {
   $permissions['delete any panopoly_page content'] = array(
     'name' => 'delete any panopoly_page content',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -45,7 +43,6 @@ function panopoly_pages_defaultconfig_user_default_permissions() {
   $permissions['delete own panopoly_page content'] = array(
     'name' => 'delete own panopoly_page content',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -55,7 +52,6 @@ function panopoly_pages_defaultconfig_user_default_permissions() {
   $permissions['edit any panopoly_page content'] = array(
     'name' => 'edit any panopoly_page content',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -65,7 +61,6 @@ function panopoly_pages_defaultconfig_user_default_permissions() {
   $permissions['edit own panopoly_page content'] = array(
     'name' => 'edit own panopoly_page content',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',

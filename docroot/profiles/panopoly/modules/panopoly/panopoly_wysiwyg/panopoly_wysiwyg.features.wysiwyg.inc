@@ -43,7 +43,6 @@ function panopoly_wysiwyg_wysiwyg_default_profiles() {
       'css_path' => '',
       'css_classes' => '',
     ),
-    'rdf_mapping' => array(),
   );
 
   // Exported profile: panopoly_wysiwyg_text
@@ -118,7 +117,6 @@ function panopoly_wysiwyg_wysiwyg_default_profiles() {
       'css_path' => '',
       'css_classes' => '',
     ),
-    'rdf_mapping' => array(),
   );
 
   return $profiles;
