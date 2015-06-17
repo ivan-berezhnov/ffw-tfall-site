@@ -96,6 +96,13 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
   <?php endif; ?>
   <!-- Content -->
   <section id="content">
+    <?php if ($title): ?>
+      <div class="region-title">
+        <?php print render($title_prefix); ?>
+        <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <?php print render($title_suffix); ?>
+      </div>
+    <?php endif; ?>
     <?php print render($page['content']); ?>
   </section>
 </div>

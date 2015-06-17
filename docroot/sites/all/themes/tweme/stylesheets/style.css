@@ -8901,6 +8901,12 @@ h2.news__title {
   line-height: 48px;
 }
 
+/* line 61, ../sass/_typography.scss */
+.node-type-network-learning .panel-panel h1 {
+  color: #4d4d4d;
+  text-align: left;
+}
+
 /**
 * #Table of Contents
 **/

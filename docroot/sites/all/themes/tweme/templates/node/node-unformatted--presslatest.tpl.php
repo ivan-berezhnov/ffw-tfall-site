@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('Latest Press'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('Latest Press'); ?></h1>
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
