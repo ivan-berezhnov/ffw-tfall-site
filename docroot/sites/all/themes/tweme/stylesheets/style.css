@@ -8907,7 +8907,8 @@ h2.news__title {
   text-align: left;
 }
 
-/* line 68, ../sass/_typography.scss */
+/* line 69, ../sass/_typography.scss */
+.page-network-learning h1,
 .page-network-learning-latest h1 {
   color: #e69740;
   letter-spacing: .2em;
@@ -8919,7 +8920,8 @@ h2.news__title {
   font-size: 1.625rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 68, ../sass/_typography.scss */
+  /* line 69, ../sass/_typography.scss */
+  .page-network-learning h1,
   .page-network-learning-latest h1 {
     font-size: 24px;
     font-size: 1.5rem;
