@@ -4222,7 +4222,7 @@ div#panels-ipe-control-container {
 }
 /* line 3344, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a:after {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
   background-position: center center;
