@@ -8901,6 +8901,33 @@ h2.news__title {
   line-height: 48px;
 }
 
+/* line 61, ../sass/_typography.scss */
+.node-type-network-learning .panel-panel h1 {
+  color: #4d4d4d;
+  text-align: left;
+}
+
+/* line 69, ../sass/_typography.scss */
+.page-network-learning h1,
+.page-network-learning-latest h1 {
+  color: #e69740;
+  letter-spacing: .2em;
+  line-height: 30px;
+  margin: 0 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-size: 1.625rem;
+}
+@media screen and (max-width: 350px) {
+  /* line 69, ../sass/_typography.scss */
+  .page-network-learning h1,
+  .page-network-learning-latest h1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
 /**
 * #Table of Contents
 **/

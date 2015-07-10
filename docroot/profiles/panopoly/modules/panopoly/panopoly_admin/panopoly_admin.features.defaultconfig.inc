@@ -57,8 +57,8 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -67,8 +67,6 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
-      'Content editor' => 'Content editor',
-      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -80,8 +78,6 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
-      'Content editor' => 'Content editor',
-      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -91,14 +87,17 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   // Exported permission: 'access navbar'.
   $permissions['access navbar'] = array(
     'name' => 'access navbar',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'navbar',
   );
 
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -109,8 +108,8 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -119,8 +118,8 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -129,7 +128,6 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      'Content editor' => 'Content editor',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -139,15 +137,17 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   // Exported permission: 'save draft'.
   $permissions['save draft'] = array(
     'name' => 'save draft',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'save_draft',
   );
 
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
-      'Content editor' => 'Content editor',
-      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -158,8 +158,6 @@ function panopoly_admin_defaultconfig_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      'Content editor' => 'Content editor',
-      'Content reviewer' => 'Content reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),

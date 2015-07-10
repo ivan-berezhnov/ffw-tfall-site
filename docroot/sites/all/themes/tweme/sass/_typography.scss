@@ -32,7 +32,7 @@
   }
   .vision {
     p {
-      color: #4d4d4d;
+      color: $grey2;
       @include font-size(42);
       letter-spacing: 0;
       line-height: 56px;
@@ -55,4 +55,27 @@
 h2.news__title {
   @include font-size(42);
   line-height: 48px
+}
+.node-type-network-learning  {
+  .panel-panel {
+    h1 {
+      color: $grey2;
+      text-align: left;
+    }
+  }
+}
+.page-network-learning,
+.page-network-learning-latest {
+  h1 {
+    color: $orange1;
+    letter-spacing: .2em;
+    line-height: 30px;
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(26);
+    @media screen and (max-width: 350px) {
+      @include font-size(24);
+    }
+  }
 }

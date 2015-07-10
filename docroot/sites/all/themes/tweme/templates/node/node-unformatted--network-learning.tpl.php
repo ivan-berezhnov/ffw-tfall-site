@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('NETWORK LEARNING'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('NETWORK LEARNING'); ?></h1>
   <div class="row-fluid">
     <div class="span9">
       <?php
