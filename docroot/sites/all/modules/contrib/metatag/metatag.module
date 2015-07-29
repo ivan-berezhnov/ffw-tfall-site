@@ -329,7 +329,7 @@ function metatag_config_save($config) {
   // hook_metatag_config_presave().
   module_invoke_all('metatag_config_presave', $config);
 
-  // Update the i18n string
+  // Update the i18n string.
   if (function_exists('i18n_string_update')) {
     $instance = $config->instance;
 
@@ -2289,6 +2289,49 @@ function metatag_translate($name, $string, $langcode = NULL, $update = FALSE) {
   }
   else {
     return $string;
+  }
+}
+
+/**
+ * Translate a set of metatags to the current language.
+ *
+ * @param array $metatags
+ * @param string $instance
+ */
+function metatag_translate_metatags(&$metatags, $instance) {
+  global $language;
+
+  if (!empty($metatags[LANGUAGE_NONE])) {
+    $translated_metatags = array();
+    foreach ($metatags[LANGUAGE_NONE] as $key => $data) {
+      if (!empty($data['value']) && is_string($data['value'])) {
+        $name = "metatag:" . $instance . ":" . $key;
+        $translated_metatags[$key] = array(
+          'value' => metatag_translate($name, $data['value']),
+        );
+      }
+    }
+    $metatags[$language->language] = $translated_metatags;
+  }
+}
+
+/**
+ * Update the translated definitions of meta tags.
+ *
+ * @param array $metatags
+ * @param string $instance
+ */
+function metatag_update_translations(&$metatags, $instance) {
+  global $language;
+
+  // Update the i18n string
+  if (function_exists('i18n_string_update')) {
+    foreach ($metatags as $key => $data) {
+      if (!empty($data['value']) && is_string($data['value'])) {
+        $name = 'metatag:' . $instance . ":" . $key;
+        i18n_string_update($name, $data['value']);
+      }
+    }
   }
 }
 
