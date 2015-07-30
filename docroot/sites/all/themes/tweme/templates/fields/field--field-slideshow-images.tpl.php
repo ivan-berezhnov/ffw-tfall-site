@@ -49,8 +49,9 @@
     <?php foreach ($items as $delta => $item): ?>
       <div class="slide">
         <?php //print render($item); ?>
-        <img src="<?php print $item['#item']['uri']; ?>" alt="Test" />
-        <div class="marquee-title">Kathryn's Test</div>
+        <?php print '<img src="' . $item['#item']['uri'] . '" alt="' . $item['#item']['title'] . '">'; ?>
+        <!--<img src="<?php //print $item['#item']['uri']; ?>" alt="Test" />-->
+        <div class="marquee-title"><?php print $item['#item']['title']; ?></div>
         <!--<div class="marquee-title"><?php //print $item['#item']['title']; ?></div>-->
       </div>
     <?php endforeach; ?>
