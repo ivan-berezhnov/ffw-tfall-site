@@ -591,7 +591,7 @@ function manualcrop_form_field_ui_field_edit_form_alter(&$form, $form_state) {
  * Implements hook_form_FORM_ID_alter().
  */
 function manualcrop_form_file_entity_file_type_form_alter(&$form, &$form_state) {
-  if (isset($form['#file_type'])) {
+  if (isset($form['#file_type']) && $form['#file_type']->type == 'image') {
     // Get the previously saved or default settings.
     $settings = variable_get('manualcrop_file_entity_settings_' . $form['#file_type']->type, manualcrop_default_widget_settings());
 
