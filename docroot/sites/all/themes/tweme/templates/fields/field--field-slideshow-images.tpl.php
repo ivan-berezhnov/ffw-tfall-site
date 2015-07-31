@@ -49,10 +49,6 @@
     <?php foreach ($items as $delta => $item): ?>
       <div class="slide">
         <?php print render($item); ?>
-        <?php dpm($item); ?>
-        <?php print '<img src="' . $item['#item']['uri'] . '" alt="' . $item['#item']['title'] . '">'; ?>
-        <!--<img src="<?php //print $item['#item']['uri']; ?>" alt="Test" />-->
-        <div class="marquee-title">Test</div>
       </div>
     <?php endforeach; ?>
   </div>
