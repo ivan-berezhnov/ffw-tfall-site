@@ -14,12 +14,39 @@ function tfa_slideshow_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function tfa_slideshow_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: slide.
+  $styles['slide'] = array(
+    'label' => 'Slide 16:9',
+    'effects' => array(
+      7 => array(
+        'name' => 'manualcrop_crop',
+        'data' => array(
+          'width' => 1170,
+          'height' => 658,
+          'keepproportions' => 1,
+          'reuse_crop_style' => '',
+          'style_name' => 'slide',
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function tfa_slideshow_node_info() {
   $items = array(
     'slideshow' => array(
-      'name' => t('slideshow'),
+      'name' => t('Slideshow'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
