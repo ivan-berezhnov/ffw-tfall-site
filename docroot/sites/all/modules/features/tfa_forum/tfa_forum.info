@@ -1,8 +1,8 @@
-name = Forum Posts
-description = forum and opinion content type
+name = TFA Forum
+description = Forum and Opinion content types
 core = 7.x
 package = pubteach4all
-version = 7.x-1.4
+version = 7.x-1.5
 project = tfa_forum
 dependencies[] = context
 dependencies[] = ctools

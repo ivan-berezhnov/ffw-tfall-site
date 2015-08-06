@@ -26,17 +26,17 @@ function tfa_forum_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-27' => array(
+        'block-31' => array(
           'module' => 'block',
-          'delta' => '27',
+          'delta' => '31',
           'region' => 'content',
-          'weight' => '-76',
+          'weight' => '-10',
         ),
         'system-main' => array(
           'module' => 'system',
           'delta' => 'main',
           'region' => 'content',
-          'weight' => '-75',
+          'weight' => '-9',
         ),
       ),
     ),
