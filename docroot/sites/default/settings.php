@@ -212,15 +212,28 @@
  */
 $databases = array();
 
-$databases['default']['default'] = array(
-  'driver' => 'mysql',
-  'database' => 'pubteach4all',
-  'username' => 'root',
-  'password' => '',
-  'host' => 'localhost',
-  'prefix' => '',
-);
-
+if(getenv("AMAZEEIO_SITENAME")) {
+  $databases['default']['default'] = array (
+    'database' => getenv("AMAZEEIO_SITENAME"),
+    'username' => getenv("AMAZEEIO_DB_USERNAME"),
+    'password' => getenv("AMAZEEIO_DB_PASSWORD"),
+    'prefix' => '',
+    'host' => getenv("AMAZEEIO_DB_HOST"),
+    'port' => getenv("AMAZEEIO_DB_PORT"),
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver' => 'mysql',
+  );
+}
+else {
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'pubteach4all',
+    'username' => 'root',
+    'password' => '',
+    'host' => 'localhost',
+    'prefix' => '',
+  );
+}
 /**
  * Access control for update.php script.
  *
