@@ -26,8 +26,8 @@
 <div class="row-fluid">
   <div class="span3">
     <div class="news__image-video-wrapper">
-    <?php print $fields['field_news_image']->content; ?>
-    <?php print $fields['field_network_learning_image']->content; ?>
+    <?php print (isset($fields['field_news_image']->content) ? $fields['field_news_image']->content : ''); ?>
+    <?php print (isset($fields['field_network_learning_image']->content) ? $fields['field_network_learning_image']->content : ''); ?>
     <?php
       $embedded_field = $row->_field_data['nid']['entity']->field_embedded_video;
       $embedded_field_video_size= sizeof($embedded_field);
