@@ -23,7 +23,7 @@ function tfa_slideshow_image_default_styles() {
   $styles['slide'] = array(
     'label' => 'Slide 16:9',
     'effects' => array(
-      7 => array(
+      11 => array(
         'name' => 'manualcrop_crop',
         'data' => array(
           'width' => 1170,

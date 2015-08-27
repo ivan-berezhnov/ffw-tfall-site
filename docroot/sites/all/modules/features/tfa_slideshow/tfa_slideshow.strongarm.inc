@@ -65,10 +65,19 @@ function tfa_slideshow_strongarm() {
   $strongarm->name = 'field_bundle_settings_node__slideshow';
   $strongarm->value = array(
     'view_modes' => array(
-      'full' => array(
+      'teaser' => array(
         'custom_settings' => TRUE,
       ),
-      'teaser' => array(
+      'our_model' => array(
+        'custom_settings' => FALSE,
+      ),
+      'global_organization' => array(
+        'custom_settings' => FALSE,
+      ),
+      'featured' => array(
+        'custom_settings' => FALSE,
+      ),
+      'full' => array(
         'custom_settings' => FALSE,
       ),
       'rss' => array(
@@ -81,15 +90,6 @@ function tfa_slideshow_strongarm() {
         'custom_settings' => FALSE,
       ),
       'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-      'our_model' => array(
-        'custom_settings' => FALSE,
-      ),
-      'global_organization' => array(
-        'custom_settings' => FALSE,
-      ),
-      'featured' => array(
         'custom_settings' => FALSE,
       ),
       'alt_teaser' => array(
@@ -115,9 +115,6 @@ function tfa_slideshow_strongarm() {
         ),
         'language' => array(
           'weight' => '5',
-        ),
-        'xmlsitemap' => array(
-          'weight' => '30',
         ),
       ),
       'display' => array(),
