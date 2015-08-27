@@ -50,6 +50,7 @@
       @include box-sizing(border-box);
       img {
         display: block;
+        width: 100%;
       }
     }
 
@@ -120,6 +121,7 @@
       font-style: normal;
       color: $grey1;
       @include font-size(16);
+      min-height: 50px;
       opacity: 0.8;
       position: absolute;
       width: 100%;
@@ -234,6 +236,9 @@ img.slideshow {
     text-align: right;
     width: 25%;
     z-index: 100;
+    @media screen and (max-width: 670px) {
+      display: none !important;
+    }
     .owl-dot {
       display: inline-block;
       margin: 0 6px;
