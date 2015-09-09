@@ -169,7 +169,7 @@
         <!-- Last Column -->
         <div class="span3">
           <?php if (module_exists('widget_facebook') && isset($content['field_key_facebook'])): ?>
-            <?php $widget_facebook = render(widget_facebook_embed(render($content['field_key_facebook'])));?>
+            <?php $_render = widget_facebook_embed(render($content['field_key_facebook'])); $widget_facebook = render($_render);?>
             <?php print $widget_facebook; ?>
           <?php endif; ?>
           <div class="no__twitter">

@@ -236,6 +236,8 @@ class cc {
 		$this->http_user = $this->api_key . "%" . $api_username;
 		$this->http_pass = $api_password;
 		$this->http_set_content_type($this->http_default_content_type);
+
+		$this->list_meta_data = new stdClass();
 	}
 
 

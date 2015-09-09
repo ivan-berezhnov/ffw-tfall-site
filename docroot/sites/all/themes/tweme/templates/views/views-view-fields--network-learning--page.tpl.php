@@ -41,7 +41,7 @@
   </div>
   <div class="span6">
     <div class="slug">
-      <?php print $fields['field_network_learning_tags']->content; ?>
+      <?php print (isset($fields['field_network_learning_tags']->content) ? $fields['field_network_learning_tags']->content : ''); ?>
     </div>
     <h3><?php print $fields['title']->content; ?></h3>
     <?php if(isset($fields['field_network_learning_byline']->content)): ?>

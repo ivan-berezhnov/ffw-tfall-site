@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="span3">
-          <?php print render(views_embed_view('tfall_tweets','block')); ?>
+          <?php $_render = views_embed_view('tfall_tweets','block'); print render($_render); ?>
           <?php if (module_exists('widget_facebook')): ?>
             <?php $widget_facebook = widget_facebook_embed_homepage() ;?>
             <?php print render($widget_facebook); ?>
