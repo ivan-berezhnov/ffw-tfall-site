@@ -87,7 +87,7 @@ function tweme_preprocess_field(&$vars, $hook) {
 	$element = $vars['element'];
 	$function_name = __FUNCTION__ . '__' . $element['#field_name'];
 	if (function_exists($function_name)) {
-		$function_name($vars);
+		$function_name($vars, $hook);
 	}
 
   //Translate the countries string for titles.
@@ -318,11 +318,13 @@ function tweme_preprocess_node__tfa_forum_post(&$vars) {
     $i = 0;
     foreach($opinions as $opinion => $value) {
       $entity = $value['entity'];
-      $tab_content = drupal_render(entity_view('node', array($entity), 'teaser'));
+      $_render = entity_view('node', array($entity), 'teaser');
+      $tab_content = drupal_render($_render);
 
       $hidden = $i > 0 ? 'hidden' : '';
       $full_content  = '<div id="opinion-' . $entity->nid . '" class="opinion-block ' . $hidden . '">';
-      $full_content .= '<div class="opinion-content">' . drupal_render(entity_view('node', array($entity), 'full')) . '</div>';
+      $_render = entity_view('node', array($entity), 'full');
+      $full_content .= '<div class="opinion-content">' . drupal_render($_render) . '</div>';
       $full_content .= '<div class="opinion-comment-content">';
 
       if ($view = views_get_view('opinion_comments')) {
@@ -333,7 +335,8 @@ function tweme_preprocess_node__tfa_forum_post(&$vars) {
         $full_content .= $view->preview();
       }
 
-      $full_content .= drupal_render(drupal_get_form("comment_node_{$entity->type}_form", (object) array('nid' => $entity->nid)));
+      $_render = drupal_get_form("comment_node_{$entity->type}_form", (object) array('nid' => $entity->nid));
+      $full_content .= drupal_render($_render);
       $full_content .= '</div>';
       $full_content .= '</div>';
 

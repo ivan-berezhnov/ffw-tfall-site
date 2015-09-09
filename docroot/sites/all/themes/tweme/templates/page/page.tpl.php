@@ -104,7 +104,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
     <section id="content" class="span<?php print $content_cols ?>">
 
       <!-- Page Title H1 -->
-      <?php if ($node->type != 'news' && $node->type != 'network_learning'): ?>
+      <?php if (isset($node->type) && $node->type != 'news' && $node->type != 'network_learning'): ?>
         <?php if ($title): ?>
           <div class="region-title">
             <?php print render($title_prefix); ?>

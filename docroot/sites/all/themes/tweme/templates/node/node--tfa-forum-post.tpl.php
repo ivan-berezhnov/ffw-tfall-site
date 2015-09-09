@@ -122,7 +122,7 @@
           <h3><?php print t('Opinions'); ?></h3>
           <?php print $opinion_links; ?>
         </div>
-        <?php if(array_key_exists(0, $content['field_moderator_image']) || array_key_exists(0, $content['field_moderator_name']) || array_key_exists(0, $content['field_moderator_title']) || array_key_exists(0, $content['field_moderator_bio']) || array_key_exists(0, $content['field_moderator_external_link'])): ?>
+        <?php if ((!empty($content['field_moderator_image']) && array_key_exists(0, $content['field_moderator_image'])) || (!empty($content['field_moderator_name']) && array_key_exists(0, $content['field_moderator_name'])) || (!empty($content['field_moderator_title']) && array_key_exists(0, $content['field_moderator_title'])) || (!empty($content['field_moderator_bio']) && array_key_exists(0, $content['field_moderator_bio'])) || (!empty($content['field_moderator_external_link']) && array_key_exists(0, $content['field_moderator_external_link']))): ?>
         <h3><?php print t('Moderator'); ?></h3>
         <div class="forum-moderator forum-block">
           <?php print render($content['field_moderator_image']); ?>
@@ -143,7 +143,7 @@
         </div>
         <?php endif; ?>
         
-        <?php if ($related_links): ?>
+        <?php if (!empty($related_links)): ?>
         <div class="forum-related-links forum-block">
           <h3><?php print t('Related Links'); ?></h3>
           <?php print $related_links; ?>
