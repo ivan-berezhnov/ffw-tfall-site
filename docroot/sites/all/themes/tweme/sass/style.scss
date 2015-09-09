@@ -17,9 +17,14 @@
 @import 'styleguide/font-face';
 @import 'variables';
 @import 'teachforall';
-@import 'marquee';
 @import 'constant-contact';
 @import 'off-screen-nav';
+@import 'frontpage-marquee';
+@import 'slideshow';
+@import 'forum';
+@import 'forum-landing';
+@import 'video';
+@import 'typography';
 
 ////////////////////////
 // Import original file (should one day be refactored into partials)

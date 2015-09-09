@@ -94,7 +94,8 @@ function misc_entity_info_alter(&$entity_info) {
  */
 function misc_widget_contact_form() {
     module_load_include('inc', 'misc', 'includes/misc_contact.form');
-    return render(drupal_get_form('misc_contact_form'));
+  $_render = drupal_get_form('misc_contact_form');
+  return render($_render);
 }
 
 /*

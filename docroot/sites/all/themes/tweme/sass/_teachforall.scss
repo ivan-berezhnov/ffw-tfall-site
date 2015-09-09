@@ -268,14 +268,30 @@ textarea:focus, input:focus{
 }
 
 .site-slogan {
-  margin-top: 25px;
+  margin: 25px 0 10px;
   color: $grey1;
-  line-height: 40px;
   text-align: center;
-  @include font-size(32);
-  @media screen and (max-width: 475px) {
-    @include font-size(22);
-    line-height:  30px;
+  @include font-size(16);
+  line-height: 24px;
+  @media screen and (min-width: 371px) and (max-width: 475px) {
+    @include font-size(19);
+    line-height: 26px;
+  }
+  @media screen and (min-width: 476px) and (max-width: 590px) {
+    @include font-size(24);
+    line-height: 32px;
+  }
+  @media screen and (min-width: 591px) {
+    line-height: 40px;
+  }
+  @media screen and (min-width: 591px) and (max-width: 979px) {
+    @include font-size(32);
+  }
+  @media screen and (min-width: 980px) and (max-width: 1199px) {
+    @include font-size(28);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-size(32);
   }
 }
 
@@ -359,10 +375,20 @@ html {
   @include FedraRegular;
   letter-spacing: 2px;
   text-transform: uppercase;
-
   &:hover {
     background: $red2;
     color: $white;
+  }
+  &.mobilemap {
+    text-align: center;
+    margin: 0 auto 0;
+  }
+}
+#mobileworldmap {
+  .btn__red {
+    &.mobilemap {
+      padding: 4px 20px !important;
+    }
   }
 }
 
@@ -456,12 +482,7 @@ h2 {
 }
 
 .slug-medium {
-  color: $orange1;
-  @include FedraRegular;
-  letter-spacing: .2em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  @include font-size(16);
+  @include slug-medium;
 }
 
 .slug-large {
@@ -492,25 +513,71 @@ h2 {
 }
 
 .site-name {
+  clear: both;
   text-align: center;
   img {
     margin: 20px 0;
   }
 }
 
+.header {
+  .donate {
+    @media screen and (max-width: 1025px) {
+      float: none;
+      display: inline-block;
+      @include box-sizing(border-box);
+    }
+    @media screen and (max-width: 374px) {
+      margin: 0 -1px 0 0;
+      max-height: 25px;
+      min-height: 25px;
+      padding: 3px 3px 0 4px;
+    }
+    @media screen and (min-width: 375px) and (max-width: 1025px) {
+      margin: 0 0 0 0;
+      max-height: 30px;
+      min-height: 30px;
+      padding: 6px 9px 4px 10px;
+    }
+    a {
+      @media screen and (min-width: 1026px) {
+        float: left;
+      }
+    }
+  }
+  .social-media {
+    &[class*=" icon-"] {
+      @media screen and (max-width:1025px) {
+        float: none;
+        display: inline-block;
+        @include box-sizing(border-box);
+        text-align: center;
+      }
+      @media screen and (max-width: 374px) {
+        margin: 0 -1px 0 0;
+        padding: 2px;
+        width: 25px;
+        height: 25px;
+      }
+      @media screen and (min-width: 375px) and (max-width: 1025px) {
+        margin: 0 0 0 0;
+        padding: 4px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
 .donate {
   background-color: $orange1;
   @include FedraBold;
   height: 22px;
   letter-spacing: .2em;
   margin-right: 5px;
-  // padding: 1px 5px;
   @include font-size(11);
-  line-height: 1em;
   a {
     color: $white;
-    float: left;
-    padding: 6px 5px 5px;
+    padding: 2px 5px 0;
   }
   &:hover {
     background-color: $red;
@@ -518,7 +585,6 @@ h2 {
     cursor: pointer;
   }
 }
-
 .social-media {
   background-color: $grey1;
   color: $white;
@@ -538,32 +604,37 @@ h2 {
   }
 }
 
+.donate-social-media-block {
+  float: right;
+}
+.language-switcher-block {
+  @media screen and (min-width: 1026px) {
+    float: left;
+  }
+}
 .language-switcher-locale-url {
   display: inline-block;
   margin: 0;
   padding: 0;
   li {
-    border-right: 1px solid $grey5;
     height: 8px;
     line-height: .4em;
-    font-weight: bold;
-    margin: 0 6px 0 0;
-    padding: 0 5px 0 0;
     position: relative;
     display: inline;
     list-style: none;
     float: left;
-    &:last-child {
-      border-right: none;
+    &.active {
+      display: none;
     }
   }
-    a {
-    color: $black;
-    // letter-spacing: .1em;
+  a {
+    color: $grey5;
+    letter-spacing: .1em;
     padding: 5px 10px;
     text-transform: uppercase;
     @include font-size(11);
-    @include NewsGothicRegular;
+    // @include NewsGothicRegular;
+    @include NGDemiBold;
     &.active {
       color: $orange1;
     }
@@ -620,7 +691,6 @@ h2 {
       display: none;
       height: 40px;
       width: 100%;
-
       @media screen and (min-width: 768px) {
         display: block;
       }
@@ -676,77 +746,23 @@ h2 {
           // Main menu styles
           > .menu {
             height: 40px;
-
-            @media screen and (min-width: 768px) and (max-width: 979px) {
-              // A Global Problem
-              > li:first-child {
-                width: 146px;
-
-                // Our Answer
-                & + li { width: 107px; }
-
-                // Our Network and Impact
-                & + li + li { width: 201px; }
-
-                // Get Involved
-                & + li + li + li { width: 114px; }
-
-                // Network Learning
-                & + li + li + li + li { width: 156px; }
-              }
-            }
-
-            @media screen and (min-width: 980px) and (max-width: 1199px) {
-              // A Global Problem
-              > li:first-child {
-                width: 192px;
-
-                // Our Answer
-                & + li { width: 142px; }
-
-                // Our Network and Impact
-                & + li + li { width: 255px; }
-
-                // Get Involved
-                & + li + li + li { width: 151px; }
-
-                // Network Learning
-                & + li + li + li + li { width: 200px; }
-              }
-            }
-
-            @media screen and (min-width: 1200px) {
-              // A Global Problem
-              > li:first-child {
-                width: 238px;
-
-                // Our Answer
-                & + li { width: 188px; }
-
-                // Our Network and Impact
-                & + li + li { width: 301px; }
-
-                // Get Involved
-                & + li + li + li { width: 197px; }
-
-                // Network Learning
-                & + li + li + li + li { width: 246px; }
-              }
-            }
-
+            text-align: center;
             > li {
+              display: inline-block;
+              float: none;
               text-align: center;
-
               > a {
                 background: url(../images/prod/nav-border.png) left center no-repeat;
+                padding: 0 20px;
+                @media screen and (min-width: 1200px) {
+                  padding: 0 40px;
+                }
               }
-
               &:first-child {
                 > a {
                   background: none;
                 }
               }
-
               &:hover {
                 & > a {
                   color: $white;
@@ -943,7 +959,7 @@ h2 {
 **/
 
 #feeds {
-	background-color: $orange1;
+  background-color: $orange1;
   padding: 28px 0 40px;
 
   .row-fluid {
@@ -957,7 +973,7 @@ h2 {
   }
 
   @media screen and (max-width: 767px) {
-    padding: 20px 0 0;
+    padding: 0;
 
     background: $white;
 
@@ -1016,6 +1032,14 @@ h2 {
 
   ul {
     margin: 0;
+  }
+
+  .donate {
+    a {
+      @media screen and (min-width: 980px) {
+        display: block;
+      }
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -1079,29 +1103,31 @@ h2 {
         @include box-sizing(border-box);
         clear: both;
         padding: 0 5% 20px;
-
         .donate {
           @include font-size(14);
-          padding: 2px 10px 0;
-          margin-right: 9px;
-          line-height: 32px;
+          padding: 2px 10px;
+          margin-right: 10px;
+          height: 28px;
           @media screen and (max-width: 500px) {
             padding: 0;
-            margin: 0 0 20px 0;
+            margin: 0 0 10px 0;
             text-align: center;
-            width: 100%
+            width: 100%;
+            min-height: 26px;
+            max-height: 26px;
+          }
+          a {
+            display: block;
+            padding: 4px 5px 0;
           }
         }
-
         .footer__search {
           display: none;
         }
-
         .social-media {
           display: inline-block;
-          padding: 7px 8px;
-          margin-right: 5px;
-          margin-bottom: 10px;
+          margin-right: 10px;
+          padding: 5px 8px;
         }
       }
     }
@@ -1142,15 +1168,14 @@ h2 {
       .span2 + .span3 {
         .donate {
           @include font-size(14);
-          padding: 2px 10px 0;
+          padding: 0 10px 0;
           margin-right: 60px;
           margin-bottom: 10px;
           line-height: 32px;
+          height: 30px;
         }
-
         .social-media {
           display: inline-block;
-          padding: 7px 8px;
           margin-right: 5px;
           margin-bottom: 10px;
         }
@@ -1166,12 +1191,17 @@ h2 {
 }
 
 .footer__contact-us {
+  clear: both;
   color: #DFD9C9;
   @include FedraBold;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
   @include font-size(11);
+  @media screen and (max-width: 767px) {
+    float: left;
+    width: 100%;
+  }
   form {
     label {
       @include font-size(11);
@@ -1196,6 +1226,7 @@ h2 {
   color: $grey4;
   margin-top: 20px;
   width: 80%;
+  clear: both;
 }
 
 .privacy-policy {
@@ -1212,7 +1243,7 @@ h2 {
     margin-left: 0;
   }
   .content {
-	width: 150px;
+  width: 150px;
   @media screen and (max-width:979px) {
     width: 100%;
   }
@@ -1374,9 +1405,9 @@ img {max-width: 100%;}
   ul {
     padding: 0px;
     margin: 0px;
-		li a {
-			margin:0px;
-		}
+    li a {
+      margin:0px;
+    }
   }
   p {
     color: $grey4;
@@ -1386,7 +1417,7 @@ img {max-width: 100%;}
 }
 
 .fb-like-box {
-	background-color: $white;
+  background-color: $white;
 }
 
 /* responsive fb like box */
@@ -1419,44 +1450,74 @@ img {max-width: 100%;}
 //  height: 164px;
 //}
 
-
-
-
-
-
-
-  #worldmap {
-    @include box-sizing(border-box);
-    padding: 0px;
-    position: relative;
-
-    .touch & {
-      @media screen and (max-width: 1024px) {
-        width: 100%;
-        margin: 0;
-        display: none;
-        padding: 0;
-      }
-    }
-  }
-
-  #mobileworldmap {
+#worldmap {
+  @include box-sizing(border-box);
+  padding: 0px;
+  position: relative;
+  @media screen and (max-width: 1024px) {
     display: none;
-    background: none !important;
-    text-align: center;
-    .btn__red {
-      padding: 4px 10px !important;
-      letter-spacing: 1px !important;
-    }
-    .touch & {
-      @media screen and (max-width: 1024px) {
-        display: block;
-        padding: 0;
-      }
+  }
+  .container {
+    width: 100%;
+  }
+  .touch & {
+    @media screen and (max-width: 1025px) {
+      width: 100%;
+      margin: 0;
+      display: none;
+      padding: 0;
     }
   }
+}
 
-
+#mobileworldmap {
+  text-align: center;
+  background-image: url(../images/worldmap-940.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 46.06%; /* (img-height / img-width * width) */
+  position: relative;
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+  .btn__red {
+    padding: 4px 10px !important;
+    letter-spacing: 1px !important;
+  }
+  .touch & {
+    @media screen and (max-width: 1025px) {
+      display: block;
+      // padding: 0;
+    }
+  }
+}
+.fake-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.fake-table-cell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+.button-center-div {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // display: table;
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
 
 .worldmap__national-orgs {
   background-color: $blue1;
@@ -1480,7 +1541,7 @@ img {max-width: 100%;}
 
 #map {
   background-color: $blue1;
-  width:100%;
+  width: 100%;
   height:580px;
 
   .leaflet-map-pane {
@@ -1695,14 +1756,13 @@ img {max-width: 100%;}
 * #ShareThis
 **/
 
-.sharethis-buttons {
+.block-sharethis {
   float: left;
   width: 88px;
 
   .stButton {
     margin: 0 8px 0 0;
     background-color: $grey2;
-    display: inline-block;
     line-height: 27px;
     overflow: hidden;
     .stLarge:hover {
@@ -2503,13 +2563,13 @@ img {max-width: 100%;}
 }
 
 .node-page-1-col-layout {
-	h2 {
-		a {
-		  color: $grey2;
-		  &:hover {
-			color: $red;
-		  }
-		}
+  h2 {
+    a {
+      color: $grey2;
+      &:hover {
+      color: $red;
+      }
+    }
   }
 }
 
@@ -3224,7 +3284,7 @@ img {max-width: 100%;}
   }
 
   li:before {
-      content: "• ";
+      content: "\2022 \0020";
       color: $orange1;
   }
 }
@@ -3272,34 +3332,29 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
   margin-bottom: 10px;
   .pane-content {
     a {
-      font-family: 'icomoon';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-
-      /* Better Font Rendering =========== */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-
       display: block;
       position: relative;
-
-      &:before {
-        content: "\e608";
-        font-size: 80px;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+      speak: none;
+      text-align: center;
+      &:hover {
+        &:after {
+          background-color: rgba(0,0,0,0);
+        }
+      }
+      &:after {
+        background-color: rgba(0,0,0,0.15);
+        background-image: url(../images/play.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 80px auto;
+        content: "";
+        height: 100%;
+        left: 0;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -40px;
-        margin-left: -40px;
-        text-shadow: #000 1px 1px 3px;
-        z-index: 20;
+        @include transition(all 0.2s ease);
+        top: 0;
+        width: 100%;
+        z-index: 10;
       }
     }
   }
@@ -3329,9 +3384,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     text-align: center;
   }
   h2 {
-    font-size: 1rem;
-    letter-spacing: .2em;
-    text-transform: uppercase;
+    font-size: 25px;
 
     a {
       color: #000;
@@ -3402,6 +3455,7 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
     @include FedraBold;
   }
 }
+
   .large-image {
       img {
         height: auto;
@@ -3415,9 +3469,24 @@ div#panels-ipe-control-container { visibility: hidden !important;} //hide panel 
         }
       }
   }
-
 .rolph-container {
   width: 82.97872340425532%;
   margin: 0 auto;
 }
-
+.page-press {
+  .region-content {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+}
+.press-sidebar {
+  float: right !important;
+  position: relative;
+  z-index: 100;
+  div {
+    clear: both;
+  }
+  .full-list {
+    margin: 20px 0 0;
+  }
+}

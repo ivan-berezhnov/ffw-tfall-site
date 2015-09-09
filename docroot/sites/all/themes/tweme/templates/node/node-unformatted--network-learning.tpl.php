@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('NETWORK LEARNING'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('NETWORK LEARNING'); ?></h1>
   <div class="row-fluid">
     <div class="span9">
       <?php
@@ -21,5 +21,5 @@
       <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="network-learning/latest/?page=1" class="full-list"><?php print t('More Network Learning '); ?><span class="orange2">>></span></a>
+  <a href="/network-learning/latest/?page=1" class="full-list"><?php print t('More Network Learning '); ?><span class="orange2">>></span></a>
 </div>

@@ -94,3 +94,51 @@
     border-color: $background-color $foreground-color $background-color $background-color;
   }
 }
+
+@mixin forum-section-headers {
+  color: $orange1;
+  @include font-size(16);
+  letter-spacing: 3px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+@mixin button {
+  @include font-size(11);
+  @include border-radius(20px);
+  display: inline-block;
+  background: $red;
+  color: $white;
+  line-height: 26px;
+  padding: 4px 26px 2px;
+  @include FedraRegular;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include transition(all 0.2s ease);
+  &:hover {
+    background: $red2;
+    color: $white;
+  }
+}
+
+@mixin slug-medium {
+  color: $orange1;
+  @include FedraRegular;
+  letter-spacing: .2em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  @include font-size(16);
+}
+
+@mixin h1 {
+  color: $orange1;
+  letter-spacing: .2em;
+  line-height: 30px;
+  margin: 0 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  @include font-size(26);
+  @media screen and (max-width: 350px) {
+    @include font-size(24);
+  }
+}

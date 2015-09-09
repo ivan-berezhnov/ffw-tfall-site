@@ -30,10 +30,10 @@
 </div>
 
 <div class="person-copy">
-	<div class="slug"><?php print $fields['field_country']->content; ?></div>
+	<div class="slug"><?php print (isset($fields['field_country']->content) ? $fields['field_country']->content : ''); ?></div>
    <div class="person-title"><?php print $fields['title']->content; ?></div>
    <div class="person-job-title"><?php print $fields['field_job_title']->content; ?>
-   <?php print $fields['field_organization']->content; ?></div>
+   <?php print (isset($fields['field_organization']->content) ? $fields['field_organization']->content : ''); ?></div>
    <div class="person-bio"><?php print $fields['field_person_bio']->content; ?></div>
    <div class="person-bio-truncated"><?php print $fields['field_person_bio_1']->content; ?></div>
    <span class="read-more-btn"><?php print t('READ MORE'); ?></span>

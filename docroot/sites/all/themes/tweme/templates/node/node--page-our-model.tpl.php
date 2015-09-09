@@ -1,5 +1,4 @@
 <div class="container">
-  <h2 class="page-title"><?php print $title; ?></h2>
 
   <?php if(isset($content['field_ourmodel_infographic'])): ?>
     <div class="row-fluid our-model-banner">

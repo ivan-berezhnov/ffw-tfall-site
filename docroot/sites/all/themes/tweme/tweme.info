@@ -20,8 +20,10 @@ stylesheets[all][] = stylesheets/press.css
 ;scripts[] = assets/js/drupal.js
 
 ;probably shared!
-;scripts[] = js/teachforall.js
-scripts[] = js/teachforall.min.js
+scripts[] = js/teachforall.js
+;scripts[] = js/teachforall.min.js
+scripts[] = js/owl.carousel2.js
+scripts[] = js/slideshow.js
 
 
 regions[header] = Header

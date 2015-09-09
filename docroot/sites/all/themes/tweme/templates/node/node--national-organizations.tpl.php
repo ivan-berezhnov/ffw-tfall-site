@@ -4,8 +4,6 @@
     <div class="row-fluid">
       <div class="span12">
 
-        <h2 class="page-title"><?php print $title; ?></h2>
-
         <div class="nov2__intro">
   				<?php print render ($content['field_nov2_intro']); //intro text?>
         </div>

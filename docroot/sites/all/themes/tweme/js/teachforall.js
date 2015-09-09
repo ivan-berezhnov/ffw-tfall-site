@@ -390,4 +390,63 @@
 
   }
   }
+  
+  Drupal.behaviors.openOpinions = {
+    attach: function (context, settings) {
+    
+      $('#opinion-menu a', context).on('click', function(e){
+
+        if($(this).hasClass('open')) {
+        // do nothing because the link is already open
+        } else {
+          var oldcontent = $('#opinion-menu a.open').attr('href');
+          var newcontent = $(this).attr('href');
+      
+          $(newcontent).removeClass('hidden');
+          $(oldcontent).addClass('hidden');
+          $('#opinion-menu a').removeClass('open');
+          $(this).addClass('open');
+        }
+      
+      });
+
+    }
+  }
+  
+  Drupal.behaviors.launchOpinion = {
+    attach: function (context, settings) {
+      var url = window.location.hash;
+
+      if(url.indexOf("opinion") > -1) {
+        $('.opinion-block').each(function(){
+          $(this).addClass('hidden');
+        });
+        $('#opinion-menu a').each(function(){
+          $(this).removeClass('open');
+        });
+        
+        $('a[href="'+url+'"]').addClass('open');
+        $(url).removeClass('hidden');
+      }
+      
+    }
+  }
+  
+  Drupal.behaviors.videoTeaserCount = {
+    attach: function (context, settings) {
+      var children_vids = $('.view-id-featured_videos .view-content').children().length;
+      var vid_offset = '';
+      switch (children_vids) {
+        case 1:
+          vid_offset = 'offset4';
+          break;
+        case 2:
+          vid_offset = 'offset2';
+          break;          
+      }
+      $('.view-id-featured_videos .view-content .node').first().addClass(vid_offset);
+    }
+  };
+
+
   })(jQuery);

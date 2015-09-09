@@ -6,15 +6,6 @@
  */
 
 /**
- * Preprocesses variables for html.tpl.php.
- */
-function tweme_preprocess_html(&$vars) {
-  _tweme_load_bootstrap();
-  _tweme_load_html5shiv();
-  _tweme_load_assets();
-}
-
-/**
  * Processes variables for html.tpl.php.
  */
 function tweme_process_html(&$vars) {
@@ -66,7 +57,7 @@ function tweme_preprocess_page(&$vars) {
  */
 function tweme_process_page(&$vars) {
   $page = $vars['page'];
-  
+
   // Provide additional variables to theme:
   $vars['navbar_brand'] = theme('navbar_brand', array(
     'name' => $vars['site_name'],
@@ -108,7 +99,7 @@ function tweme_menu_local_tasks(&$vars) {
  * Overrides theme_item_list().
  */
 function tweme_item_list($vars) {
-  if (isset($vars['attributes']['class']) && in_array('pager', $vars['attributes']['class'])) {
+  if (isset($vars['attributes']['class']) && is_array($vars['attributes']['class']) && in_array('pager', $vars['attributes']['class'])) {
     unset($vars['attributes']['class']);
     foreach ($vars['items'] as $i => &$item) {
       if (in_array('pager-current', $item['class'])) {

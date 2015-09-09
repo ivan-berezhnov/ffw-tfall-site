@@ -1,7 +1,7 @@
 name = pubteachforall_2_col_layout
 core = 7.x
 package = pubteach4all
-version = 7.x-1.0
+version = 7.x-1.1
 project = pubteachforall_2_col_layout
 dependencies[] = ctools
 dependencies[] = features
@@ -41,4 +41,3 @@ features[variable][] = menu_parent_page_2_col_layout
 features[variable][] = node_options_page_2_col_layout
 features[variable][] = node_preview_page_2_col_layout
 features[variable][] = node_submitted_page_2_col_layout
-mtime = 1418235399

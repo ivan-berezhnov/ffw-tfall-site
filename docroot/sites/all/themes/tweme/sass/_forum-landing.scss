@@ -1,0 +1,178 @@
+
+// HIDE THE BREADCRUMBS ON THIS LANDING PAGE
+// =============================================================================
+.page-forum-landing-page,
+.page-forum {
+  .breadcrumb {
+    display: none;
+  }
+}
+
+// CONTEXTUAL BLOCK ON TOP OF FORUM LANDING PAGE
+// =============================================================================
+.page-forum-landing-page,
+.page-forum {
+  #main {
+    .block-block {
+      background: url(../images/forum-landing-bg.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      @media screen and (max-width: 767px) {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      p {
+        color: $white;
+        @include FedraRegular;
+        @include font-size(17);
+        line-height: 25px;
+      }
+      .content {
+        @media screen and (max-width: 767px) {
+          padding: 40px 20px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+          max-width: 80%;
+          padding: 100px 0;
+        }
+        @media screen and (min-width: 1025px) {
+          max-width: 40%;
+          padding: 140px 0 170px;
+        }
+      }
+    }
+    h1 {
+      color: $orange1;
+      @include font-size(26);
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// CONTAINERS FOR THE LANDING PAGE
+// =============================================================================
+.page-forum-landing-page #main .content,
+.page-forum #main .content,
+.view-forum-landing-page {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    width: 724px;
+  }
+  @media screen and (min-width: 980px) and (max-width: 1199px) {
+    width: 940px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+// FORUM VIEW
+// =============================================================================
+.view-forum-landing-page {
+  .view-content {
+    float: left;
+    margin: 0 0 10px;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      margin: 40px 0 130px;
+    }
+  }
+  .views-row {
+    border-bottom: 1px solid $grey4;
+    float: left;
+    @include FedraRegular;
+    padding: 20px 0 0;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      padding: 60px 0 40px;
+    }
+  }
+  .views-field-title {
+    @include font-size(25);
+    line-height: 29px;
+    a {
+      color: $grey9;
+    }
+  }
+}
+.landing-forum {
+  @include box-sizing(border-box);
+  @media screen and (min-width: 1024px) {
+    float: left;
+    padding: 0 60px 0 0;
+    width: 50%;
+  }
+  h2 {
+    margin-bottom: 14px;
+    a {
+      color: $grey9;
+      @include transition(all 0.2s ease);
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  p {
+    color: $grey1;
+    @include font-size(16);
+    line-height: 25px;
+    margin-bottom: 20px;
+    + a {
+      @extend .full-list;
+      &:after {
+        color: $orange1;
+        content: " >>";
+      }
+    }
+  }
+}
+.landing-opinions {
+  @media screen and (max-width: 1023px) {
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1024px) {
+    overflow: hidden;
+  }
+  a {
+    background-color: $beige;
+    float: left;
+    padding: 15px;
+    margin-bottom: 30px;
+    @include box-sizing(border-box);
+    width: 100%;
+    height: 190px;
+    @media screen and (min-width: 768px) {
+      width: calc(50% - 15px);
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      &:nth-child(2n+3) {
+        clear: both;
+      }
+    }
+
+    &:hover {
+      .opinion-author-post {
+        color: $red;
+      }
+    }
+  }
+}
+.opinion-author-post {
+  clear: both;
+  color: $grey9;
+  float: left;
+  @include font-size(17);
+  line-height: 22px;
+  margin-top: 14px;
+  @include transition(all 0.2s ease);
+}

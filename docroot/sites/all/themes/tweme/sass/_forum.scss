@@ -1,0 +1,433 @@
+
+// CONTENT HEADER
+// =============================================================================
+.node-tfa-forum-post {
+  .content-header {
+    margin: 0 0 60px;
+    h1 {
+      margin-bottom: 22px;
+      margin-top: 32px;
+    }
+    h3 {
+      @include forum-section-headers;
+      margin-bottom: 16px;
+    }
+    p {
+      color: $grey1;
+      @include FedraRegular;
+      @include font-size(18);
+      line-height: 24px;
+    }
+  }
+}
+
+// FAUX SIDEBAR
+// =============================================================================
+.node-tfa-forum-post {
+  .content-sidebar {
+    @media screen and (min-width: 980px) {
+      float: left;
+      margin-left: 0;
+      width: 25%; // This is a hacky way to fix the padding.
+    }
+    .forum-block {
+      @media screen and (min-width: 590px) and (max-width: 979px) {
+        clear: none;
+        width: 50%;
+        &:nth-child(2n+3) {
+          clear: both;
+        }
+        &:nth-child(even) {
+          padding: 0 0 0 30px;
+        }
+      }
+    }
+    h3 {
+      @include forum-section-headers;
+      margin-bottom: 14px;
+    }
+  }
+}
+.forum-block {
+  clear: both;
+  float: left;
+  margin: 0 0 30px 0;
+  @include box-sizing(border-box);
+  @media screen and (min-width: 980px) {
+    margin: 0 30px 48px 0;
+  }
+}
+img.forum-headshot {
+  display: block;
+  max-width: 60px;
+}
+
+// OPINION BLOCKS
+// =============================================================================
+.forum-opinion-links {
+  margin: 0 0 48px 0;
+  width: 100%;
+}
+#opinion-menu {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  li {
+    background-color: $beige;
+    clear: both;
+    color: $grey1;
+    display: inline-block;
+    @include font-size(17);
+    @include NGDemiBold;
+    line-height: 20px;
+    margin: 0 0 1px;
+    @include box-sizing(border-box);
+    width: 100%;
+    @include transition(background 0.2s ease);
+    @media screen and (min-width: 590px) and (max-width: 979px) {
+      clear: none;
+      float: left;
+      margin: 0 0 4px;
+      width: calc(50% - 2px);
+      &:nth-child(odd) {
+        margin: 0 4px 4px 0;
+      }
+    }
+    &:hover {
+      background-color: #d1c9b4;
+    }
+  }
+  a {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    color: $grey1;
+    display: inline-block;
+    padding: 15px;
+    @include box-sizing(border-box);
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    @media screen and (min-width: 980px) {
+      border-width: 1px 0 1px 1px;
+    }
+  }
+  .open {
+    background-color: $white;
+    border-color: $grey1;
+    width: 100%;
+    @media screen and (min-width: 980px) {
+      padding: 15px 17px 15px 15px;
+      width: calc(100% + 2px);
+    }
+  }
+}
+.opinion-author-image {
+  float: left;
+  margin: 0 15px 0 0;
+  display: block;
+}
+.opinion-author-info {
+  overflow: hidden;
+  display: block;
+}
+.opinion-author-name {
+  color: $nearblack;
+  display: inline-block;
+  @include NGDemiBold;
+  @include font-size(17);
+  line-height: 20px;
+  width: 100%;
+}
+.opinion-author-title {
+  clear: both;
+  display: block;
+  color: $grey1;
+  @include NGDemiBold;
+  @include font-size(17);
+  line-height: 20px;
+}
+
+.opinions-mobile {
+  @media screen and (min-width: 980px) {
+    display: none;
+  }
+  h3 {
+    @include forum-section-headers;
+    margin-bottom: 14px;
+  }
+}
+.opinions-sidebar {
+  display: none;
+  @media screen and (min-width: 980px) {
+    display: block;
+  }
+}
+
+// FORUM MODERATOR BLOCK
+// =============================================================================
+.forum-moderator {
+  background-color: $grey8;
+  color: $white;
+  padding: 15px;
+  .forum-headshot {
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  .moderator-info {
+    overflow: hidden;
+  }
+  .moderator-title {
+    color: $grey1;
+    float: left;
+    @include NGDemiBold;
+  }
+}
+.moderator-name {
+  @include NGDemiBold;
+  @include font-size(17);
+}
+.moderator-bio {
+  float: left;
+  margin: 18px 0;
+  width: 100%;
+}
+.moderator-more {
+  float: left;
+  width: 100%;
+  a {
+    color: #fff;
+    @include font-size(11);
+    @include NGDemiBold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include transition(color 0.2s ease);
+    &:hover {
+      color: $orange1;
+    }
+    &:after {
+      color: $orange1;
+      content: ">>";
+      margin: 0 0 0 6px;
+    }
+  }
+}
+
+// RELATED LINKS BLOCK
+// =============================================================================
+.forum-related-links {
+  .item-list {
+    ul {
+      float: left;
+      margin: 0 0 0 16px;
+    }
+    li {
+      float: left;
+      line-height: 25px;
+      margin: 12px 0;
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// RELATED LINKS & DOWNLOADS BLOCK
+// =============================================================================
+.forum-related-links,
+.forum-downloads {
+  @include FedraRegular;
+  @include font-size(17);
+  line-height: 25px;
+}
+
+// FILE STYlES
+// =============================================================================
+.file {
+  float: left;
+  margin: 12px 0;
+  img {
+    display: none;
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a[href$=".pdf"]:before {
+    background-image: url(../images/icon-pdf.png);
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    content: " ";
+    float: left;
+    height: 33px;
+    margin: 0 20px 0 0;
+    width: 30px;
+  }
+}
+
+// OPINION NODES
+// =============================================================================
+.content-opinion {
+  margin-bottom: 80px;
+  @include box-sizing(border-box);
+  @media screen and (min-width: 980px) {
+    float: right;
+    width: 75%;
+  }
+  .node h2:first-child {
+    margin-bottom: 36px;
+  }
+}
+.opinion-block {
+  display: block; // This must stay - integrates with JS.
+  @media screen and (min-width: 980px) {
+    float: right;
+  }
+  h2 {
+    a {
+      color: $grey9;
+    }
+  }
+  .content {
+    p {
+      color: $grey9;
+      @include FedraRegular;
+      @include font-size(14);
+      line-height: 21px;
+      text-align: left !important;
+      @media screen and (min-width: 768px) {
+        @include font-size(17);
+        line-height: 25px;
+      }
+    }
+  }
+}
+.opinion-block.hidden {
+  display: none; // This must stay - integrates with JS.
+}
+.opinion-content {
+  margin: 0 0 55px 0;
+  position: relative;
+  @media screen and (min-width: 980px) {
+    border: 1px solid $grey1;
+    padding: 60px;
+    &:after,
+    &:before {
+      content: "";
+      border-style: solid;
+      border-width: 20px;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 100%;
+      left: 60px;
+    }
+    &:before {
+      border-color: $grey1 transparent transparent;
+    }
+    &:after {
+      margin-top: -2px;
+      border-color: #fff transparent transparent;
+    }
+  }
+}
+.opinion-end-author {
+  clear: both;
+  float: left;
+  @include font-size(15);
+  margin: 60px 0 0;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    @include font-size(17);
+  }
+  .forum-headshot {
+    float: left;
+    margin: 0 30px 0 0;
+  }
+}
+.opinion-end-info {
+  overflow: hidden;
+}
+.opinion-end-name {
+  color: $nearblack;
+  @include NGBold;
+}
+.opinion-end-bio {
+  @include NGMediumOblique;
+  float: left;
+  a {
+    @include NGDemiBold;
+    @include font-size(11);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include transition(color 0.2s ease);
+    &:hover {
+      color: $red2;
+    }
+    &:after {
+      content: ">>";
+      padding: 0 0 0 6px;
+    }
+  }
+}
+.node-type-tfa-opinion,
+.page-comment {
+  #main {
+    margin: 0 auto 80px;
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+      width: 724px;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1199px) {
+      width: 940px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+}
+
+// OPINION COMMENTS
+// =============================================================================
+.opinion-comment-content {
+  @media screen and (min-width: 980px) {
+    padding: 0 60px;
+  }
+}
+.view-opinion-comments {
+  @include NewsGothicRegular;
+  .username {
+    color: $nearblack;
+    @include NGBold;
+    @include font-size(15);
+  }
+  .slug {
+    @include NGDemiBold;
+    @include font-size(12);
+  }
+  .content {
+    p {
+      @include NewsGothicRegular;
+      @include font-size(14);
+      line-height: 18px;
+      @media screen and (min-width: 768px) {
+        @include font-size(16);
+        line-height: 20px;
+      }
+    }
+  }
+  .view-content {
+    margin-bottom: 60px;
+  }
+}
+h3.comments-title {
+  clear: both;
+  @include forum-section-headers;
+  margin-bottom: 34px;
+}
+.comment--user-wrapper {
+  margin: 0 0 30px;
+}

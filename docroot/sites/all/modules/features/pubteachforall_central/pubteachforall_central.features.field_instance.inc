@@ -10,6 +10,54 @@
 function pubteachforall_central_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'fieldable_panels_pane-video-field_caption'
+  $field_instances['fieldable_panels_pane-video-field_caption'] = array(
+    'bundle' => 'video',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'fieldable_panels_pane',
+    'field_name' => 'field_caption',
+    'label' => 'Caption',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'fieldable_panels_pane-video-field_video_pane_thumbnail'
   $field_instances['fieldable_panels_pane-video-field_video_pane_thumbnail'] = array(
     'bundle' => 'video',
@@ -75,6 +123,7 @@ function pubteachforall_central_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Caption');
   t('Video Pane Thumbnail');
 
   return $field_instances;

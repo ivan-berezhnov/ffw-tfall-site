@@ -1,12 +1,12 @@
 <div class="container">
-  <h2 class="page-title"><?php print t('Latest Press'); ?></h2>
+  <h1 class="title" id="page-title"><?php print t('Latest Press'); ?></h1>
   <div class="row-fluid">
     <div class="span12">
       <div class="row-fluid">
         <div class="span9">
           <div class="row-fluid">
             <div class="span12">
-              <?php print render(views_embed_view('press','page_1')); //latest news ?>
+              <?php $_render = views_embed_view('press','page_1'); print render($_render); //latest news ?>
             </div>
           </div>
         </div>
@@ -17,7 +17,7 @@
           include($GLOBALS['theme_path'] . "/includes/templates/t4all_constant_contact_block.inc");
           ?>
         </div>
-        <?php print render(views_embed_view('tfall_tweets', 'block')); //twitter block ?>
+        <?php $_render = views_embed_view('tfall_tweets', 'block'); print render($_render); //twitter block ?>
         <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
         <?php print render($widget_facebook); ?>
       </div>

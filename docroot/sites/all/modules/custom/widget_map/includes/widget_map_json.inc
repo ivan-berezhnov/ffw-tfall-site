@@ -26,7 +26,7 @@ function _widget_map_listofall($language) {
     $country = $item->field_country['en'][0]['value'];
 
 	  // Build the marker.
-		$marker = null;
+		$marker = new stdClass();
 		$marker->type = 'Feature';
 		$marker->geometry = array('type' => 'Point', 'coordinates' => array($item->field_location[LANGUAGE_NONE][0]['lon'], $item->field_location[LANGUAGE_NONE][0]['lat']));
 		$marker->properties = array(

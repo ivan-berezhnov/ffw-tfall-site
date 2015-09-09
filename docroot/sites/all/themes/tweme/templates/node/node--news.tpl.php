@@ -58,11 +58,12 @@
   				<div class="row-fluid news__node-links">
   				  <div class="span12">
               <?php
-                if (isset($content['sharethis'])) {
-                  print render($content['sharethis']);
-                }
+                $blockObject = block_load('sharethis', 'sharethis_block');
+                $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+                $output = drupal_render($block);
+                print $output;
               ?>
-            <a href="news/latest">
+            <a href="/news/latest">
 	            <div class="full-list"><?php print t('More Recent News'); ?> <span class="orange2">>></span></div>
             </a>
   				  </div>
@@ -81,7 +82,7 @@
             include ($GLOBALS['theme_path']."/includes/templates/t4all_constant_contact_block.inc");
             ?>
           </div>
-          <?php print render(views_embed_view('tfall_tweets','block')); //twitter block ?>
+          <?php $_render = views_embed_view('tfall_tweets','block'); print render($_render); //twitter block ?>
           <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
           <?php print render($widget_facebook); ?>
         </div>

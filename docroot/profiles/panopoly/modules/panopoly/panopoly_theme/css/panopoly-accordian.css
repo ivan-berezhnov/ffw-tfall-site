@@ -3,8 +3,8 @@ h2.ui-accordion-header {
   position: relative;
   padding: 0 0 0 20px !important;
   color: #000 !important;
-  font-family: "News Gothic Old";
-  font-weight: bold;
+  font-size: 18;
+  font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-style: normal;
   letter-spacing: .2em;
   line-height: 22px;
@@ -15,14 +15,14 @@ h2.ui-accordion-header {
   border-bottom: 0 !important;
   background-color: transparent;
   border-color: transparent;
+  line-height: 22px;
 }
 
 .ui-state-hover {
   border: 0 !important; 
   background: transparent !important; 
-  font-weight: bold !important; 
   color: #000 !important;
-  font-size: 1.125rem !important;
+  font-size: 18 !important;
   text-transform: none !important;
   letter-spacing: normal !important;
   border-bottom: 0 !important;

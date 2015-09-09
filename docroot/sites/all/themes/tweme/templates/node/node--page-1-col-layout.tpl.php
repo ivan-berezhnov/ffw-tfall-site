@@ -84,12 +84,10 @@
 <div class="container">
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-    <h2 class="page-title"><?php print $title; ?></h2>
-
     <div class="row-fluid">
       <div class="span12">
         <?php
-        $jump_link = $content['field_link'];
+        $jump_link = isset($content['field_link']) ? $content['field_link'] : '';
         unset($content['field_link']);
 
         print render($content);

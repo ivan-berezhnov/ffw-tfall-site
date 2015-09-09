@@ -1,7 +1,5 @@
 <div class="container">
 
-  <h2 class="page-title"><?php print $title; ?></h2>
-
   <div class="person-image">
      <?php print render($content['field_person_image']); ?>
   </div>

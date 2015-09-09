@@ -1,6 +1,4 @@
 <div class="container">
-  <h2 class="page-title"><?php print $title; ?></h2>
-
   <div class="row-fluid">
     <div class="span12">
       <?php print render($content['field_top_section']); ?>
