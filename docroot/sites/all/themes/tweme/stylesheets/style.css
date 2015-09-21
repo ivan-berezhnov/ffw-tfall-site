@@ -8841,23 +8841,6 @@ h3.comments-title {
 }
 
 /* line 28, ../sass/_typography.scss */
-.page-about-vision-and-mission .region-title h1 {
-  color: #e69740;
-  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-weight: normal;
-  letter-spacing: .2em;
-  line-height: 1.5em;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-size: 1rem;
-  margin-top: 40px;
-}
-/* line 59, ../sass/styleguide/_font-face.scss */
-.page-about-vision-and-mission .region-title h1 em {
-  font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
-  font-style: normal;
-}
-/* line 34, ../sass/_typography.scss */
 .page-about-vision-and-mission .vision p {
   color: #4d4d4d;
   font-size: 42px;
@@ -8869,7 +8852,7 @@ h3.comments-title {
   text-align: center;
 }
 @media screen and (max-width: 350px) {
-  /* line 34, ../sass/_typography.scss */
+  /* line 28, ../sass/_typography.scss */
   .page-about-vision-and-mission .vision p {
     font-size: 24px;
     font-size: 1.5rem;
@@ -8877,7 +8860,7 @@ h3.comments-title {
   }
 }
 
-/* line 51, ../sass/_typography.scss */
+/* line 45, ../sass/_typography.scss */
 .page-news #page-title,
 .page-press #page-title {
   color: #e69740;
@@ -8890,7 +8873,7 @@ h3.comments-title {
   font-size: 1.625rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 51, ../sass/_typography.scss */
+  /* line 45, ../sass/_typography.scss */
   .page-news #page-title,
   .page-press #page-title {
     font-size: 24px;
@@ -8898,20 +8881,20 @@ h3.comments-title {
   }
 }
 
-/* line 55, ../sass/_typography.scss */
+/* line 49, ../sass/_typography.scss */
 h2.news__title {
   font-size: 42px;
   font-size: 2.625rem;
   line-height: 48px;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 55, ../sass/_typography.scss */
 .node-type-network-learning .panel-panel h1 {
   color: #4d4d4d;
   text-align: left;
 }
 
-/* line 69, ../sass/_typography.scss */
+/* line 63, ../sass/_typography.scss */
 .page-network-learning h1,
 .page-network-learning-latest h1 {
   color: #e69740;
@@ -8924,7 +8907,7 @@ h2.news__title {
   font-size: 1.625rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 69, ../sass/_typography.scss */
+  /* line 63, ../sass/_typography.scss */
   .page-network-learning h1,
   .page-network-learning-latest h1 {
     font-size: 24px;
