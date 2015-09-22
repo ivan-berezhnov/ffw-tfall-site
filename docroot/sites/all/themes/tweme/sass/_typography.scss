@@ -24,12 +24,6 @@
   }
 }
 .page-about-vision-and-mission {
-  .region-title {
-    h1 {
-      @include slug-medium;
-      margin-top: 40px;
-    }
-  }
   .vision {
     p {
       color: $grey2;
