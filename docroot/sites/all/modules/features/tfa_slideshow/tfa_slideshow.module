@@ -5,3 +5,13 @@
  */
 
 include_once 'tfa_slideshow.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function tfa_slideshow_entity_info_alter(&$entity_info) {
+  $entity_info['file']['view modes']['slideshow'] = array(
+    'label' => t('Slideshow'),
+    'custom settings' => TRUE,
+  );
+}
