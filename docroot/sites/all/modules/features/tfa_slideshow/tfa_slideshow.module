@@ -15,3 +15,78 @@ function tfa_slideshow_entity_info_alter(&$entity_info) {
     'custom settings' => TRUE,
   );
 }
+
+/**
+ * Implements hook_file_formatter_info().
+ */
+function tfa_slideshow_file_formatter_info() {
+  return array(
+    'tfa_youtube_vimeo_popup' => array(
+      'label' => t('Youtube/Vimeo Popup'),
+      'file types' => array('video'),
+      'default settings' => array(
+        'image_style' => '',
+      ),
+      'view callback' => 'tfa_slideshow_file_formatter_tfa_youtube_vimeo_popup_view',
+      'settings callback' => 'tfa_slideshow_file_formatter_tfa_youtube_vimeo_popup_settings',
+    ),
+  );
+}
+
+/**
+ * Implements hook_file_formatter_FORMATTER_view().
+ */
+function tfa_slideshow_file_formatter_tfa_youtube_vimeo_popup_view($file, $display, $langcode) {
+  $scheme = file_uri_scheme($file->uri);
+  if (!in_array($scheme, array('vimeo', 'youtube'))) {
+    return NULL;
+  }
+  /** @var MediaVimeoStreamWrapper|MediaYouTubeStreamWrapper $wrapper */
+  $wrapper = file_stream_wrapper_get_instance_by_uri($file->uri);
+
+  // Prepare thumbnail.
+  $image_style = $display['settings']['image_style'];
+  $valid_image_styles = image_style_options(FALSE);
+  if (empty($image_style) || !isset($valid_image_styles[$image_style])) {
+    $element = array(
+      '#theme' => 'image',
+      '#path' => $wrapper->getOriginalThumbnailPath(),
+    );
+  }
+  else {
+    $element = array(
+      '#theme' => 'image_style',
+      '#style_name' => $image_style,
+      '#path' => $wrapper->getLocalThumbnailPath(),
+    );
+  }
+
+  // Add video popup. Do it in the same way as it done in
+  /* @see tweme_preprocess_field__field_embedded_video() */
+  $params = $wrapper->get_parameters();
+  if ($scheme == 'vimeo') {
+    $video_uri = 'http://player.vimeo.com/video/' . $params['v'] . '/?autoplay=1';
+  }
+  else {
+    $video_uri = 'http://www.youtube.com/embed/' . $params['v'] . '?autoplay=1';
+  }
+  $element['#prefix'] = '<a href="' . $video_uri . '" rel="shadowbox">';
+  $element['#suffix'] = '</a>';
+
+  return $element;
+}
+
+/**
+ * Implements hook_file_formatter_FORMATTER_settings().
+ */
+function tfa_slideshow_file_formatter_tfa_youtube_vimeo_popup_settings($form, &$form_state, $settings) {
+  $element = array();
+  $element['image_style'] = array(
+    '#title' => t('Image style'),
+    '#type' => 'select',
+    '#options' => image_style_options(FALSE),
+    '#default_value' => $settings['image_style'],
+    '#empty_option' => t('None (original image)'),
+  );
+  return $element;
+}
