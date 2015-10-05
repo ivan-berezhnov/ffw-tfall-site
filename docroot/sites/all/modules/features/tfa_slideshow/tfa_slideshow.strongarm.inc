@@ -116,6 +116,9 @@ function tfa_slideshow_strongarm() {
         'language' => array(
           'weight' => '5',
         ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -142,6 +145,13 @@ function tfa_slideshow_strongarm() {
   $strongarm->name = 'menu_parent_slideshow';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_slideshow'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__slideshow';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__slideshow'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
