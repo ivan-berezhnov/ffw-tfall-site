@@ -49,7 +49,7 @@
     <?php foreach ($items as $delta => $item): ?>
       <div class="slide">
         <?php print render($item); ?>
-        <div class="marquee-title"><span class="slideshow-caption"><?php print $item['#item']['title']; ?></span></div>
+        <div class="marquee-title"><span class="slideshow-caption"><?php print $item['#file_caption']; ?></span></div>
       </div>
     <?php endforeach; ?>
   </div>

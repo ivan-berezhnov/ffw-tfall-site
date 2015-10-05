@@ -126,6 +126,20 @@ function tweme_preprocess_field__field_embedded_video(&$vars, $hook) {
   }
 }
 
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tweme_preprocess_field__field_slideshow_slides(&$vars) {
+  foreach ($vars['items'] as &$item) {
+    $_item = NULL;
+    try {
+      $_item = field_get_items('file', $item['#file'], 'field_file_caption');
+    }
+    catch (Exception $e) { }
+    $item['#file_caption'] = empty($_item[0]['value']) ? '' : check_plain($_item[0]['value']);
+  }
+}
+
 /*
  * Implements hook_preprocess_node
  * extend support for node view modes templates if needed
