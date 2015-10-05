@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function tfa_slideshow_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -19,20 +22,51 @@ function tfa_slideshow_ctools_plugin_api($module = NULL, $api = NULL) {
 function tfa_slideshow_image_default_styles() {
   $styles = array();
 
-  // Exported image style: slide.
-  $styles['slide'] = array(
-    'label' => 'Slide 16:9',
+  // Exported image style: 16_9_slide.
+  $styles['16_9_slide'] = array(
+    'label' => '16:9 Slide',
     'effects' => array(
-      11 => array(
+      14 => array(
         'name' => 'manualcrop_crop',
         'data' => array(
           'width' => 1170,
           'height' => 658,
           'keepproportions' => 1,
           'reuse_crop_style' => '',
-          'style_name' => 'slide',
+          'style_name' => '16_9_slide',
         ),
         'weight' => 0,
+      ),
+      15 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 2340,
+          'height' => 1316,
+          'upscale' => 1,
+        ),
+        'weight' => 2,
+      ),
+      16 => array(
+        'name' => 'canvasactions_definecanvas',
+        'data' => array(
+          'RGB' => array(
+            'HEX' => '#000000',
+          ),
+          'under' => 1,
+          'exact' => array(
+            'width' => 2340,
+            'height' => 1316,
+            'xpos' => 'center',
+            'ypos' => 'center',
+          ),
+          'relative' => array(
+            'leftdiff' => '',
+            'rightdiff' => '',
+            'topdiff' => '',
+            'bottomdiff' => '',
+          ),
+        ),
+        'weight' => 3,
       ),
     ),
   );
