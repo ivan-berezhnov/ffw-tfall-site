@@ -7374,7 +7374,7 @@ div#panels-ipe-control-container {
 }
 /* line 115, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-title {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
   padding: 15px 20px;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -7385,7 +7385,6 @@ div#panels-ipe-control-container {
   font-size: 16px;
   font-size: 1rem;
   min-height: 50px;
-  opacity: 0.8;
   position: absolute;
   width: 100%;
   box-sizing: border-box;
@@ -7403,12 +7402,12 @@ div#panels-ipe-control-container {
     width: 100%;
   }
 }
-/* line 134, ../sass/_slideshow.scss */
+/* line 133, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-title .slideshow-caption {
   float: left;
   width: 75%;
 }
-/* line 140, ../sass/_slideshow.scss */
+/* line 139, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-body {
   padding: 0 20px 20px 20px;
   color: #999;
@@ -7425,7 +7424,7 @@ div#panels-ipe-control-container {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 151, ../sass/_slideshow.scss */
+/* line 150, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls {
   height: 100%;
   left: 0;
@@ -7433,17 +7432,17 @@ div#panels-ipe-control-container {
   top: 0;
   width: 100%;
 }
-/* line 157, ../sass/_slideshow.scss */
+/* line 156, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav {
   height: 100%;
 }
 @media screen and (max-width: 600px) {
-  /* line 157, ../sass/_slideshow.scss */
+  /* line 156, ../sass/_slideshow.scss */
   .node-slideshow .owl-controls .owl-nav {
     display: none !important;
   }
 }
-/* line 162, ../sass/_slideshow.scss */
+/* line 161, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev {
   position: absolute;
   left: 0;
@@ -7452,11 +7451,11 @@ div#panels-ipe-control-container {
   text-indent: -999em;
   top: 40%;
 }
-/* line 169, ../sass/_slideshow.scss */
+/* line 168, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev:before {
   text-align: right;
 }
-/* line 173, ../sass/_slideshow.scss */
+/* line 172, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-next {
   position: absolute;
   right: 0;
@@ -7464,11 +7463,11 @@ div#panels-ipe-control-container {
   height: 20%;
   top: 40%;
 }
-/* line 179, ../sass/_slideshow.scss */
+/* line 178, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-next:before {
   text-align: left;
 }
-/* line 183, ../sass/_slideshow.scss */
+/* line 182, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav div {
   color: #fff;
   display: inline-block;
@@ -7491,7 +7490,7 @@ div#panels-ipe-control-container {
   -moz-osx-font-smoothing: grayscale;
   z-index: 70;
 }
-/* line 204, ../sass/_slideshow.scss */
+/* line 203, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav div:before {
   display: table-cell;
   vertical-align: middle;
@@ -7502,25 +7501,25 @@ div#panels-ipe-control-container {
   font-size: 100px;
 }
 
-/* line 217, ../sass/_slideshow.scss */
+/* line 216, ../sass/_slideshow.scss */
 img.slideshow {
   width: 100%;
 }
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 223, ../sass/_slideshow.scss */
+/* line 222, ../sass/_slideshow.scss */
 .owl-controls.clickable .owl-nav div:hover {
   text-decoration: none;
 }
 
 /* No Js */
-/* line 228, ../sass/_slideshow.scss */
+/* line 227, ../sass/_slideshow.scss */
 .no-js .owl-carousel {
   display: block;
 }
 
-/* line 232, ../sass/_slideshow.scss */
+/* line 231, ../sass/_slideshow.scss */
 .owl-theme .owl-dots {
   bottom: 14px;
   position: absolute;
@@ -7530,26 +7529,26 @@ img.slideshow {
   z-index: 100;
 }
 @media screen and (max-width: 670px) {
-  /* line 232, ../sass/_slideshow.scss */
+  /* line 231, ../sass/_slideshow.scss */
   .owl-theme .owl-dots {
     display: none !important;
   }
 }
-/* line 242, ../sass/_slideshow.scss */
+/* line 241, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   margin: 0 6px;
   zoom: 1;
 }
-/* line 247, ../sass/_slideshow.scss */
+/* line 246, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot.active span {
   background: #e69740;
 }
-/* line 252, ../sass/_slideshow.scss */
+/* line 251, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #cf4753;
 }
-/* line 256, ../sass/_slideshow.scss */
+/* line 255, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot span {
   width: 11px;
   height: 11px;
@@ -7563,7 +7562,7 @@ img.slideshow {
 }
 
 /* Feel free to change duration  */
-/* line 269, ../sass/_slideshow.scss */
+/* line 268, ../sass/_slideshow.scss */
 .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -7573,20 +7572,20 @@ img.slideshow {
 
 /* .owl-animated-out - only for current item */
 /* This is very important class. Use z-index if you want move Out item above In item */
-/* line 278, ../sass/_slideshow.scss */
+/* line 277, ../sass/_slideshow.scss */
 .owl-animated-out {
   z-index: 1;
 }
 
 /* .owl-animated-in - only for upcoming item
 /* This is very important class. Use z-index if you want move In item above Out item */
-/* line 283, ../sass/_slideshow.scss */
+/* line 282, ../sass/_slideshow.scss */
 .owl-animated-in {
   z-index: 0;
 }
 
 /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-/* line 287, ../sass/_slideshow.scss */
+/* line 286, ../sass/_slideshow.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -7608,6 +7607,24 @@ img.slideshow {
     opacity: 0;
   }
 }
+/* line 311, ../sass/_slideshow.scss */
+.node-slideshow .owl-item .file {
+  margin: 0;
+}
+/* line 314, ../sass/_slideshow.scss */
+.node-slideshow .owl-item .caption {
+  display: none;
+}
+/* line 318, ../sass/_slideshow.scss */
+.node-slideshow .owl-custom-counter {
+  bottom: 0;
+  color: #ffffff;
+  padding: 15px 0;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
+
 /* line 5, ../sass/_forum.scss */
 .node-tfa-forum-post .content-header {
   margin: 0 0 60px;

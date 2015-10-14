@@ -113,7 +113,7 @@
       height: 100%;
     }
     .marquee-title {
-      background-color: #000;
+      background-color: rgba(0,0,0,0.8);
       bottom: 0;
       padding: 15px 20px;
       @include FedraRegular;
@@ -122,7 +122,6 @@
       color: $grey1;
       @include font-size(16);
       min-height: 50px;
-      opacity: 0.8;
       position: absolute;
       width: 100%;
       box-sizing: border-box;
@@ -302,5 +301,26 @@ img.slideshow {
   }
   100% {
     opacity: 0;
+  }
+}
+
+// TFA-176 SLIDESHOW THEMING
+// =============================================================================
+.node-slideshow {
+  .owl-item {
+    .file {
+      margin: 0;
+    }
+    .caption {
+      display: none;
+    }
+  }
+  .owl-custom-counter {
+    bottom: 0;
+    color: #ffffff;
+    padding: 15px 0;
+    position: absolute;
+    right: 20px;
+    z-index: 100;
   }
 }
