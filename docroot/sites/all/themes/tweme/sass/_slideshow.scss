@@ -326,32 +326,34 @@ img.slideshow {
     z-index: 100;
   }
   .file-video {
-    a {
-      display: block;
-      position: relative;
-      speak: none;
-      text-align: center;
-      &:hover {
-        &:after {
-          background-color: rgba(0,0,0,0);
+    .content {
+      a {
+        display: block;
+        position: relative;
+        speak: none;
+        text-align: center;
+        &:hover {
+          &:after {
+            background-color: rgba(0,0,0,0);
+          }
         }
-      }
-      &:after {
-        background-color: rgba(0,0,0,0.25);
-        background-image: url(../images/play.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 80px auto;
-        content: "";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        @include transition(all 0.2s ease);
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        @media screen and (min-width: 768px) {
-          background-size: 120px auto;
+        &:after {
+          background-color: rgba(0,0,0,0.25);
+          background-image: url(../images/play.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 80px auto;
+          content: "";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          @include transition(all 0.2s ease);
+          top: 0;
+          width: 100%;
+          z-index: 10;
+          @media screen and (min-width: 768px) {
+            background-size: 120px auto;
+          }
         }
       }
     }
