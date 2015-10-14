@@ -19,7 +19,7 @@
           // On the first call data.owlCarousel is not available.
           count = $('.owl-item:not(.cloned)', e.target).size();
           position = 1;
-          $container.find('.owl-dots').before('<div class="owl-custom-counter" />');
+          $container.find('.owl-controls').after('<div class="owl-custom-counter" />');
         }
         $container.find('.owl-custom-counter').text(position + '/' + count);
       });
@@ -27,8 +27,8 @@
       $container.owlCarousel({
         items: 1,
         navigation: true,
-        dots: true,
-        autoplay: true,
+        dots: false,
+        autoplay: false,
         autoplayHoverPause: true,
         callbacks: true,
         loop: true
