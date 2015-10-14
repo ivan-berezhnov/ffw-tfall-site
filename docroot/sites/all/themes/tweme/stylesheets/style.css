@@ -7444,83 +7444,55 @@ div#panels-ipe-control-container {
   }
 }
 /* line 163, ../sass/_slideshow.scss */
-.node-slideshow .owl-controls .owl-nav .owl-prev {
-  position: absolute;
-  left: 0;
-  margin: 0;
-  height: 20%;
-  text-indent: -999em;
-  top: 40%;
-}
-/* line 170, ../sass/_slideshow.scss */
-.node-slideshow .owl-controls .owl-nav .owl-prev:before {
-  text-align: right;
-}
-/* line 174, ../sass/_slideshow.scss */
+.node-slideshow .owl-controls .owl-nav .owl-prev,
 .node-slideshow .owl-controls .owl-nav .owl-next {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 36px auto;
+  display: block;
+  height: 60px;
+  margin: -30px 0 0;
   position: absolute;
-  right: 0;
-  margin: 0;
-  height: 20%;
-  top: 40%;
+  text-indent: -999em;
+  top: 50%;
+  width: 36px;
+  z-index: 60;
+}
+/* line 176, ../sass/_slideshow.scss */
+.node-slideshow .owl-controls .owl-nav .owl-prev:before,
+.node-slideshow .owl-controls .owl-nav .owl-next:before {
+  display: none;
 }
 /* line 180, ../sass/_slideshow.scss */
-.node-slideshow .owl-controls .owl-nav .owl-next:before {
-  text-align: left;
+.node-slideshow .owl-controls .owl-nav .owl-prev {
+  background-image: url(../images/prev.png);
+  left: 14px;
 }
 /* line 184, ../sass/_slideshow.scss */
-.node-slideshow .owl-controls .owl-nav div {
-  color: #fff;
-  display: inline-block;
-  *display: inline;
-  /*IE7 life-saver */
-  font-size: 12px;
-  height: 100%;
-  display: table;
-  z-index: 20;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  width: 54px;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  z-index: 70;
-}
-/* line 205, ../sass/_slideshow.scss */
-.node-slideshow .owl-controls .owl-nav div:before {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  width: 54px;
-  padding: 0 10px;
-  text-shadow: #000 1px 1px 3px;
-  font-size: 100px;
+.node-slideshow .owl-controls .owl-nav .owl-next {
+  background-image: url(../images/next.png);
+  right: 14px;
 }
 
-/* line 218, ../sass/_slideshow.scss */
+/* line 243, ../sass/_slideshow.scss */
 img.slideshow {
   width: 100%;
 }
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 224, ../sass/_slideshow.scss */
+/* line 249, ../sass/_slideshow.scss */
 .owl-controls.clickable .owl-nav div:hover {
   text-decoration: none;
 }
 
 /* No Js */
-/* line 229, ../sass/_slideshow.scss */
+/* line 254, ../sass/_slideshow.scss */
 .no-js .owl-carousel {
   display: block;
 }
 
-/* line 233, ../sass/_slideshow.scss */
+/* line 258, ../sass/_slideshow.scss */
 .owl-theme .owl-dots {
   bottom: 14px;
   position: absolute;
@@ -7530,26 +7502,26 @@ img.slideshow {
   z-index: 100;
 }
 @media screen and (max-width: 670px) {
-  /* line 233, ../sass/_slideshow.scss */
+  /* line 258, ../sass/_slideshow.scss */
   .owl-theme .owl-dots {
     display: none !important;
   }
 }
-/* line 243, ../sass/_slideshow.scss */
+/* line 268, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   margin: 0 6px;
   zoom: 1;
 }
-/* line 248, ../sass/_slideshow.scss */
+/* line 273, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot.active span {
   background: #e69740;
 }
-/* line 253, ../sass/_slideshow.scss */
+/* line 278, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #cf4753;
 }
-/* line 257, ../sass/_slideshow.scss */
+/* line 282, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot span {
   width: 11px;
   height: 11px;
@@ -7563,7 +7535,7 @@ img.slideshow {
 }
 
 /* Feel free to change duration  */
-/* line 270, ../sass/_slideshow.scss */
+/* line 295, ../sass/_slideshow.scss */
 .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -7573,20 +7545,20 @@ img.slideshow {
 
 /* .owl-animated-out - only for current item */
 /* This is very important class. Use z-index if you want move Out item above In item */
-/* line 279, ../sass/_slideshow.scss */
+/* line 304, ../sass/_slideshow.scss */
 .owl-animated-out {
   z-index: 1;
 }
 
 /* .owl-animated-in - only for upcoming item
 /* This is very important class. Use z-index if you want move In item above Out item */
-/* line 284, ../sass/_slideshow.scss */
+/* line 309, ../sass/_slideshow.scss */
 .owl-animated-in {
   z-index: 0;
 }
 
 /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-/* line 288, ../sass/_slideshow.scss */
+/* line 313, ../sass/_slideshow.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -7608,15 +7580,15 @@ img.slideshow {
     opacity: 0;
   }
 }
-/* line 313, ../sass/_slideshow.scss */
+/* line 338, ../sass/_slideshow.scss */
 .node-slideshow .owl-item .file {
   margin: 0;
 }
-/* line 316, ../sass/_slideshow.scss */
+/* line 341, ../sass/_slideshow.scss */
 .node-slideshow .owl-item .caption {
   display: none;
 }
-/* line 320, ../sass/_slideshow.scss */
+/* line 345, ../sass/_slideshow.scss */
 .node-slideshow .owl-custom-counter {
   bottom: 0;
   color: #ffffff;
@@ -7625,18 +7597,18 @@ img.slideshow {
   right: 20px;
   z-index: 100;
 }
-/* line 330, ../sass/_slideshow.scss */
+/* line 355, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a {
   display: block;
   position: relative;
   speak: none;
   text-align: center;
 }
-/* line 336, ../sass/_slideshow.scss */
+/* line 361, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a:hover:after {
   background-color: transparent;
 }
-/* line 340, ../sass/_slideshow.scss */
+/* line 365, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a:after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url(../images/play.png);
@@ -7656,7 +7628,7 @@ img.slideshow {
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
-  /* line 340, ../sass/_slideshow.scss */
+  /* line 365, ../sass/_slideshow.scss */
   .node-slideshow .file-video .content a:after {
     background-size: 120px auto;
   }

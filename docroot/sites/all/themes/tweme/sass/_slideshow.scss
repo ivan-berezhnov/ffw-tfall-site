@@ -160,58 +160,83 @@
         display: none !important;
       }
       height: 100%;
-      .owl-prev {
+      .owl-prev,
+      .owl-next {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 36px auto;
+        display: block;
+        height: 60px;
+        margin: -30px 0 0;
         position: absolute;
-        left: 0;
-        margin: 0;
-        height: 20%;
         text-indent: -999em;
-        top: 40%;
+        top: 50%;
+        width: 36px;
+        z-index: 60;
         &:before {
-          text-align: right;
+          display: none;
         }
+      }
+      .owl-prev {
+        background-image: url(../images/prev.png);
+        left: 14px;
       }
       .owl-next {
-        position: absolute;
-        right: 0;
-        margin: 0;
-        height: 20%;
-        top: 40%;
-        &:before {
-          text-align: left;
-        }
+        background-image: url(../images/next.png);
+        right: 14px;
       }
-      div {
-        color: #fff;
-        display: inline-block;
-        *display: inline; /*IE7 life-saver */
-        font-size: 12px;
-        // background: url(../images/bg-transparent.png);
-        height: 100%;
-        display: table;
-        z-index: 20;
-        font-family: 'icomoon';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        width: 54px;
-        /* Better Font Rendering =========== */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        z-index: 70;
-        &:before {
-          display: table-cell;
-          vertical-align: middle;
-          height: 100%;
-          width: 54px;
-          padding: 0 10px;
-          text-shadow: #000 1px 1px 3px;
-          font-size: 100px;
-        }
-      }
+      // .owl-prev {
+      //   position: absolute;
+      //   left: 0;
+      //   margin: 0;
+      //   height: 20%;
+      //   text-indent: -999em;
+      //   top: 40%;
+      //   &:before {
+      //     text-align: right;
+      //   }
+      // }
+      // .owl-next {
+      //   position: absolute;
+      //   right: 0;
+      //   margin: 0;
+      //   height: 20%;
+      //   top: 40%;
+      //   &:before {
+      //     text-align: left;
+      //   }
+      // }
+      // div {
+      //   color: #fff;
+      //   display: inline-block;
+      //   *display: inline; /*IE7 life-saver */
+      //   font-size: 12px;
+      //   // background: url(../images/bg-transparent.png);
+      //   height: 100%;
+      //   display: table;
+      //   z-index: 20;
+      //   font-family: 'icomoon';
+      //   speak: none;
+      //   font-style: normal;
+      //   font-weight: normal;
+      //   font-variant: normal;
+      //   text-transform: none;
+      //   line-height: 1;
+      //   width: 54px;
+      //   /* Better Font Rendering =========== */
+      //   -webkit-font-smoothing: antialiased;
+      //   -moz-osx-font-smoothing: grayscale;
+      //   z-index: 70;
+      //   &:before {
+      //     display: table-cell;
+      //     vertical-align: middle;
+      //     height: 100%;
+      //     width: 54px;
+      //     padding: 0 10px;
+      //     text-shadow: #000 1px 1px 3px;
+      //     font-size: 100px;
+      //   }
+      // }
     }
   }
 }
