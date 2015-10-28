@@ -26,5 +26,13 @@
         <?php print render($widget_facebook); ?>
     </div>
   </div>
-  <a href="/en/news/latest/?page=1" class="full-list"><?php print t('More News '); ?> <span class="orange2">>></span></a>
+  <?php
+    global $language;
+    if ($language->language == 'es') {
+      print '<a href="/es/noticias/recientes?page=1" class="full-list">' . t('More News ') . '<span class="orange2">>></span></a>';
+    }
+    else {
+      print '<a href="/en/news/latest/?page=1" class="full-list">' . t('More News ') . '<span class="orange2">>></span></a>';
+    }
+  ?>
 </div>
