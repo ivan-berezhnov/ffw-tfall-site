@@ -843,9 +843,6 @@ h2 {
   .content {
     > .menu {
       position: relative;
-      > li:nth-child(2) {
-        display: none; // hide the 'donate' menu tree in the uber nav
-      }
       > li {
         border-right: 1px solid $orange1;
         float: left;
