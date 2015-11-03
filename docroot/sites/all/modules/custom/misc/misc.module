@@ -43,6 +43,23 @@ function misc_theme() {
 }
 
 /**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */
+function misc_field_widget_media_generic_form_alter(&$element, &$form_state, $context) {
+
+  // The manualcrop module adds it's own #process callback to the _weight
+  // element. Then, because the #process element is already presents in on the
+  // form element, its default #process value is not loaded from the "weight"
+  // element type. As a result, weight form element is not rendered at all.
+  /* @see manualcrop_field_widget_form_alter() */
+  /* @see system_element_info() $types['weight'] */
+  // Fix this.
+  if (isset($element['_weight']) && empty($element['_weight']['#process'])) {
+    $element['_weight']['#process'] = array('form_process_weight', 'ajax_process_form');
+  }
+}
+
+/**
  * implements hook_form_alter
  * @param $form
  * @param $form_state
