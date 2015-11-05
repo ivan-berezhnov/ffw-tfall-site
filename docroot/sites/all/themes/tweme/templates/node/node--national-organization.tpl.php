@@ -77,7 +77,7 @@
 
             <?php if ($is_field_program_launched_content_set): ?>
               <div class="no__stat">
-                <strong><?php print render($content['field_program_launched']); ?></strong><?php print t(' program launched'); ?><br />
+                <strong><?php print render($content['field_program_launched']); ?></strong><?php print t(' first cohort'); ?><br />
               </div>
             <?php endif; ?>
 
