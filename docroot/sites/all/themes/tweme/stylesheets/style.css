@@ -7244,15 +7244,29 @@ div#panels-ipe-control-container {
   text-decoration: none;
 }
 
-/* line 1, ../sass/_slideshow.scss */
+/* line 2, ../sass/_slideshow.scss */
+.node-slideshow.node--slideshow--full {
+  margin: 1em 0 3em;
+}
+@media screen and (min-width: 1200px) {
+  /* line 4, ../sass/_slideshow.scss */
+  .node-slideshow.node--slideshow--full .owl-carousel {
+    width: 1170px;
+  }
+}
+/* line 10, ../sass/_slideshow.scss */
+.node-slideshow.node--slideshow--teaser {
+  margin: 0 0 20px;
+}
+
+/* line 14, ../sass/_slideshow.scss */
 .node-slideshow {
   background-color: #000000;
-  margin: 1em 0 3em;
   overflow: hidden !important;
   width: 100% !important;
   /* Styling Next and Prev buttons */
 }
-/* line 9, ../sass/_slideshow.scss */
+/* line 21, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel {
   display: none;
   margin: 0 auto;
@@ -7263,18 +7277,12 @@ div#panels-ipe-control-container {
   z-index: 1;
   width: 100%;
 }
-@media screen and (min-width: 1200px) {
-  /* line 9, ../sass/_slideshow.scss */
-  .node-slideshow .owl-carousel {
-    width: 1170px;
-  }
-}
-/* line 22, ../sass/_slideshow.scss */
+/* line 31, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
 }
-/* line 25, ../sass/_slideshow.scss */
+/* line 34, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
@@ -7283,7 +7291,7 @@ div#panels-ipe-control-container {
   line-height: 0;
   height: 0;
 }
-/* line 35, ../sass/_slideshow.scss */
+/* line 44, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: visible;
@@ -7292,7 +7300,7 @@ div#panels-ipe-control-container {
   width: 100%;
   z-index: 60;
 }
-/* line 45, ../sass/_slideshow.scss */
+/* line 54, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
@@ -7302,17 +7310,17 @@ div#panels-ipe-control-container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 52, ../sass/_slideshow.scss */
+/* line 61, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-item img {
   display: block;
   width: 100%;
 }
-/* line 58, ../sass/_slideshow.scss */
+/* line 67, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-nav.disabled,
 .node-slideshow .owl-carousel .owl-dots.disabled {
   display: none;
 }
-/* line 63, ../sass/_slideshow.scss */
+/* line 72, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .owl-nav .owl-prev,
 .node-slideshow .owl-carousel .owl-nav .owl-next,
 .node-slideshow .owl-carousel .owl-dot {
@@ -7324,31 +7332,31 @@ div#panels-ipe-control-container {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 75, ../sass/_slideshow.scss */
+/* line 84, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-loaded {
   display: block;
 }
-/* line 79, ../sass/_slideshow.scss */
+/* line 88, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
 }
-/* line 84, ../sass/_slideshow.scss */
+/* line 93, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-hidden {
   opacity: 0;
 }
-/* line 88, ../sass/_slideshow.scss */
+/* line 97, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-refresh .owl-item {
   display: none;
 }
-/* line 92, ../sass/_slideshow.scss */
+/* line 101, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-drag .owl-item {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-/* line 99, ../sass/_slideshow.scss */
+/* line 108, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-grab {
   cursor: move;
   cursor: -webkit-grab;
@@ -7356,19 +7364,19 @@ div#panels-ipe-control-container {
   cursor: -ms-grab;
   cursor: grab;
 }
-/* line 107, ../sass/_slideshow.scss */
+/* line 116, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-rtl {
   direction: rtl;
 }
-/* line 110, ../sass/_slideshow.scss */
+/* line 119, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel.owl-rtl .owl-item {
   float: right;
 }
-/* line 113, ../sass/_slideshow.scss */
+/* line 122, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .views-row {
   height: 100%;
 }
-/* line 116, ../sass/_slideshow.scss */
+/* line 125, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-title {
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
@@ -7391,7 +7399,7 @@ div#panels-ipe-control-container {
   font-style: normal;
 }
 @media screen and (max-width: 600px) {
-  /* line 116, ../sass/_slideshow.scss */
+  /* line 125, ../sass/_slideshow.scss */
   .node-slideshow .owl-carousel .marquee-title {
     background-color: #3c3835;
     float: left;
@@ -7399,12 +7407,12 @@ div#panels-ipe-control-container {
     width: 100%;
   }
 }
-/* line 135, ../sass/_slideshow.scss */
+/* line 144, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-title .slideshow-caption {
   float: left;
   width: 75%;
 }
-/* line 141, ../sass/_slideshow.scss */
+/* line 150, ../sass/_slideshow.scss */
 .node-slideshow .owl-carousel .marquee-body {
   padding: 0 20px 20px 20px;
   color: #999;
@@ -7421,7 +7429,7 @@ div#panels-ipe-control-container {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 152, ../sass/_slideshow.scss */
+/* line 161, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls {
   height: 100%;
   left: 0;
@@ -7429,17 +7437,17 @@ div#panels-ipe-control-container {
   top: 0;
   width: 100%;
 }
-/* line 158, ../sass/_slideshow.scss */
+/* line 167, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav {
   height: 100%;
 }
 @media screen and (max-width: 600px) {
-  /* line 158, ../sass/_slideshow.scss */
+  /* line 167, ../sass/_slideshow.scss */
   .node-slideshow .owl-controls .owl-nav {
     display: none !important;
   }
 }
-/* line 163, ../sass/_slideshow.scss */
+/* line 172, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev,
 .node-slideshow .owl-controls .owl-nav .owl-next {
   background-repeat: no-repeat;
@@ -7454,41 +7462,41 @@ div#panels-ipe-control-container {
   width: 36px;
   z-index: 60;
 }
-/* line 176, ../sass/_slideshow.scss */
+/* line 185, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev:before,
 .node-slideshow .owl-controls .owl-nav .owl-next:before {
   display: none;
 }
-/* line 180, ../sass/_slideshow.scss */
+/* line 189, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-prev {
   background-image: url(../images/prev.png);
   left: 14px;
 }
-/* line 184, ../sass/_slideshow.scss */
+/* line 193, ../sass/_slideshow.scss */
 .node-slideshow .owl-controls .owl-nav .owl-next {
   background-image: url(../images/next.png);
   right: 14px;
 }
 
-/* line 243, ../sass/_slideshow.scss */
+/* line 252, ../sass/_slideshow.scss */
 img.slideshow {
   width: 100%;
 }
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 249, ../sass/_slideshow.scss */
+/* line 258, ../sass/_slideshow.scss */
 .owl-controls.clickable .owl-nav div:hover {
   text-decoration: none;
 }
 
 /* No Js */
-/* line 254, ../sass/_slideshow.scss */
+/* line 263, ../sass/_slideshow.scss */
 .no-js .owl-carousel {
   display: block;
 }
 
-/* line 258, ../sass/_slideshow.scss */
+/* line 267, ../sass/_slideshow.scss */
 .owl-theme .owl-dots {
   bottom: 14px;
   position: absolute;
@@ -7498,26 +7506,26 @@ img.slideshow {
   z-index: 100;
 }
 @media screen and (max-width: 670px) {
-  /* line 258, ../sass/_slideshow.scss */
+  /* line 267, ../sass/_slideshow.scss */
   .owl-theme .owl-dots {
     display: none !important;
   }
 }
-/* line 268, ../sass/_slideshow.scss */
+/* line 277, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   margin: 0 6px;
   zoom: 1;
 }
-/* line 273, ../sass/_slideshow.scss */
+/* line 282, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot.active span {
   background: #e69740;
 }
-/* line 278, ../sass/_slideshow.scss */
+/* line 287, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #cf4753;
 }
-/* line 282, ../sass/_slideshow.scss */
+/* line 291, ../sass/_slideshow.scss */
 .owl-theme .owl-dots .owl-dot span {
   width: 11px;
   height: 11px;
@@ -7531,7 +7539,7 @@ img.slideshow {
 }
 
 /* Feel free to change duration  */
-/* line 295, ../sass/_slideshow.scss */
+/* line 304, ../sass/_slideshow.scss */
 .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -7541,20 +7549,20 @@ img.slideshow {
 
 /* .owl-animated-out - only for current item */
 /* This is very important class. Use z-index if you want move Out item above In item */
-/* line 304, ../sass/_slideshow.scss */
+/* line 313, ../sass/_slideshow.scss */
 .owl-animated-out {
   z-index: 1;
 }
 
 /* .owl-animated-in - only for upcoming item
 /* This is very important class. Use z-index if you want move In item above Out item */
-/* line 309, ../sass/_slideshow.scss */
+/* line 318, ../sass/_slideshow.scss */
 .owl-animated-in {
   z-index: 0;
 }
 
 /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-/* line 313, ../sass/_slideshow.scss */
+/* line 322, ../sass/_slideshow.scss */
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -7576,15 +7584,15 @@ img.slideshow {
     opacity: 0;
   }
 }
-/* line 338, ../sass/_slideshow.scss */
+/* line 347, ../sass/_slideshow.scss */
 .node-slideshow .owl-item .file {
   margin: 0;
 }
-/* line 341, ../sass/_slideshow.scss */
+/* line 350, ../sass/_slideshow.scss */
 .node-slideshow .owl-item .caption {
   display: none;
 }
-/* line 345, ../sass/_slideshow.scss */
+/* line 354, ../sass/_slideshow.scss */
 .node-slideshow .owl-custom-counter {
   bottom: 0;
   color: #ffffff;
@@ -7593,18 +7601,18 @@ img.slideshow {
   right: 20px;
   z-index: 100;
 }
-/* line 355, ../sass/_slideshow.scss */
+/* line 364, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a {
   display: block;
   position: relative;
   speak: none;
   text-align: center;
 }
-/* line 361, ../sass/_slideshow.scss */
+/* line 370, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a:hover:after {
   background-color: transparent;
 }
-/* line 365, ../sass/_slideshow.scss */
+/* line 374, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a:after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url(../images/play.png);
@@ -7624,7 +7632,7 @@ img.slideshow {
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
-  /* line 365, ../sass/_slideshow.scss */
+  /* line 374, ../sass/_slideshow.scss */
   .node-slideshow .file-video .content a:after {
     background-size: 120px auto;
   }

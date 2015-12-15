@@ -1,7 +1,19 @@
 .node-slideshow {
+  &.node--slideshow--full {
+    margin: 1em 0 3em;
+    .owl-carousel {
+      @media screen and (min-width: 1200px) {
+        width: 1170px;
+      }
+    }
+  }
+  &.node--slideshow--teaser {
+    margin: 0 0 20px;
+  }
+}
+.node-slideshow {
   // background-color: $white;
   background-color: #000000;
-  margin: 1em 0 3em;
   overflow: hidden !important;
   width: 100% !important;
 
@@ -15,9 +27,6 @@
     position: relative;
     z-index: 1;
     width: 100%;
-    @media screen and (min-width: 1200px) {
-      width: 1170px;
-    }
 
     .owl-stage {
       position: relative;
