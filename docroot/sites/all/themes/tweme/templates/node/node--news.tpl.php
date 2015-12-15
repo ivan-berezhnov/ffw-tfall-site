@@ -25,6 +25,10 @@
             </div>
   				</div>
 
+          <?php if(isset($content['field_news_slideshow'])): ?>
+            <?php print render($content['field_news_slideshow']); ?>
+          <?php endif; ?>
+
           <?php if (isset($content['field_embedded_video'])): ?>
             <div class="news__image news__video">
               <?php print render($content['field_embedded_video']); ?>
