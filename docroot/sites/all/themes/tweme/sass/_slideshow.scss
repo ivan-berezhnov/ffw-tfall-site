@@ -135,6 +135,7 @@
       position: absolute;
       width: 100%;
       box-sizing: border-box;
+      z-index: 10;
       @media screen and (max-width: 600px) {
         background-color: #3c3835;
         float: left;
@@ -366,30 +367,63 @@ img.slideshow {
         position: relative;
         speak: none;
         text-align: center;
-        &:hover {
-          &:after {
-            background-color: rgba(0,0,0,0);
-          }
-        }
-        &:after {
-          background-color: rgba(0,0,0,0.25);
-          background-image: url(../images/play.png);
-          background-repeat: no-repeat;
-          background-position: center center;
-          background-size: 80px auto;
-          content: "";
-          height: 100%;
-          left: 0;
-          position: absolute;
-          @include transition(all 0.2s ease);
-          top: 0;
-          width: 100%;
-          z-index: 10;
-          @media screen and (min-width: 768px) {
-            background-size: 120px auto;
-          }
-        }
       }
+    }
+  }
+}
+
+.video-slide {
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  .slide-video-play-button {
+    background-image: url(../images/play.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80px auto;
+    content: "";
+    height: 80px;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    position: absolute !important;
+    @include opacity(0.8);
+    @include transition(all 0.2s ease);
+    top: 50%;
+    width: 80px;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+      background-size: 120px auto;
+      height: 120px;
+      margin: -60px 0 0 -60px;
+      width: 120px;
+    }
+    &:hover {
+      @include opacity(1);
+    }
+  }
+}
+
+.slide-link {
+  background: url(../images/slide-link.png) no-repeat 0 1px;
+  background-size: 15px auto;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  .slide-icon {
+    display: inline-block;
+    text-indent: -999em;
+    width: 15px;
+    + .slide-caption {
+      margin-left: 5px;
+    }
+  }
+  .slide-caption {
+    color: #91998c;
+    @include transition(all 0.2s ease);
+  }
+  &:hover {
+    .slide-caption {
+      color: #fff;
     }
   }
 }
