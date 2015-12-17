@@ -47,12 +47,12 @@
 <div class="carousel-container">
   <div id="owl-carousel-<?php print $element['#object']->nid; ?>" class="owl-carousel">
     <?php foreach ($items as $delta => $item): ?>
-      <?php $slide_link = $item['file']['#item']['field_file_image_link']['und'][0]['url']; ?>
       <div class="slide">
         <?php print render($item); ?>
         <div class="marquee-title">
           <div class="slideshow-caption">
-            <?php if ($slide_link != NULL): ?>
+            <?php if ($item['file']['#item']['field_file_image_link']['und'][0]['url'] != NULL): ?>
+              <?php $slide_link = $item['file']['#item']['field_file_image_link']['und'][0]['url']; ?>
               <a class="slide-link" href="<?php print $slide_link; ?>">
                 <span class="slide-icon"><?php print t('Link'); ?></span>
                 <?php if ($item['#file_caption'] != NULL): ?>
