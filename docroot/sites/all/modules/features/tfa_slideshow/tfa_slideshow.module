@@ -70,8 +70,9 @@ function tfa_slideshow_file_formatter_tfa_youtube_vimeo_popup_view($file, $displ
   else {
     $video_uri = 'http://www.youtube.com/embed/' . $params['v'] . '?autoplay=1';
   }
-  $element['#prefix'] = '<a href="' . $video_uri . '" rel="shadowbox">';
-  $element['#suffix'] = '</a>';
+  // $element['#prefix'] = '<a href="' . $video_uri . '" rel="shadowbox">';
+  $element['#prefix'] = '<span class="video-slide">';
+  $element['#suffix'] = '<a class="slide-video-play-button" href="' . $video_uri . '" rel="shadowbox"></a></span>';
 
   return $element;
 }

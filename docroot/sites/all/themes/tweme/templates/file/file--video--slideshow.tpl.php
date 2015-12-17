@@ -89,7 +89,7 @@
       hide($content['field_video_custom_thumbnail']);
       if (!empty($field_video_custom_thumbnail)) {
         $prefix = $content['file']['#prefix'];
-        $suffix = '</a>';
+        $suffix = $content['file']['#suffix'];
         print $prefix . render($content['field_video_custom_thumbnail']) . $suffix;
       } else {
         print render($content);
