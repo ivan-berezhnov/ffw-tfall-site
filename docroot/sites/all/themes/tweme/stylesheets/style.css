@@ -7608,13 +7608,8 @@ img.slideshow {
   speak: none;
   text-align: center;
 }
-/* line 370, ../sass/_slideshow.scss */
-.node-slideshow .file-video .content a:hover:after {
-  background-color: transparent;
-}
-/* line 374, ../sass/_slideshow.scss */
+/* line 369, ../sass/_slideshow.scss */
 .node-slideshow .file-video .content a:after {
-  background-color: rgba(0, 0, 0, 0.25);
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -7632,7 +7627,7 @@ img.slideshow {
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
-  /* line 374, ../sass/_slideshow.scss */
+  /* line 369, ../sass/_slideshow.scss */
   .node-slideshow .file-video .content a:after {
     background-size: 120px auto;
   }
