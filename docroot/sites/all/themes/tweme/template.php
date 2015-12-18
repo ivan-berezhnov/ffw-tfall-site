@@ -133,10 +133,12 @@ function tweme_preprocess_field__field_slideshow_slides(&$vars) {
   foreach ($vars['items'] as &$item) {
     $_item = NULL;
     try {
-      $_item = field_get_items('file', $item['#file'], 'field_file_caption');
+      $_caption = field_get_items('file', $item['#file'], 'field_file_caption');
+      $_link = field_get_items('file', $item['#file'], 'field_file_image_link');
     }
     catch (Exception $e) { }
-    $item['#file_caption'] = empty($_item[0]['value']) ? '' : check_plain($_item[0]['value']);
+    $item['#file_caption'] = empty($_caption[0]['value']) ? '' : check_plain($_caption[0]['value']);
+    $item['#file_link'] = empty($_link[0]['url']) ? '' : check_plain($_link[0]['url']);
   }
 }
 
