@@ -7659,18 +7659,19 @@ img.slideshow {
   background-size: 15px auto;
   display: inline-block;
   margin: 0 5px 0 0;
+  text-decoration: none !important;
 }
-/* line 412, ../sass/_slideshow.scss */
+/* line 413, ../sass/_slideshow.scss */
 .slide-link .slide-icon {
   display: inline-block;
   text-indent: -999em;
   width: 15px;
 }
-/* line 416, ../sass/_slideshow.scss */
+/* line 417, ../sass/_slideshow.scss */
 .slide-link .slide-icon + .slide-caption {
   margin-left: 5px;
 }
-/* line 420, ../sass/_slideshow.scss */
+/* line 421, ../sass/_slideshow.scss */
 .slide-link .slide-caption {
   color: #91998c;
   -moz-transition: all 0.2s ease;
@@ -7678,7 +7679,7 @@ img.slideshow {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 425, ../sass/_slideshow.scss */
+/* line 426, ../sass/_slideshow.scss */
 .slide-link:hover .slide-caption {
   color: #fff;
 }
