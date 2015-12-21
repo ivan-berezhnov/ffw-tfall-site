@@ -54,7 +54,7 @@
           <div class="slideshow-caption">
             <?php if ($file_link != NULL): ?>
               <?php
-                if (strpos($file_link, 'teachforall.org') || strpos($file_link, 'teach-for-all.org') !== false) {
+                if (strpos($file_link, 'teachforall.org') || strpos($file_link, 'teach-for-all.org') || strpos($file_link, 'pubteach4all') !== false) {
                   $target = '_self';
                 } else {
                   $target = '_blank';
