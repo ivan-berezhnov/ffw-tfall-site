@@ -53,7 +53,14 @@
         <div class="marquee-title">
           <div class="slideshow-caption">
             <?php if ($file_link != NULL): ?>
-              <a class="slide-link" href="<?php print $file_link; ?>">
+              <?php
+                if (strpos($file_link, 'teachforall.org') || strpos($file_link, 'teach-for-all.org') !== false) {
+                  $target = '_self';
+                } else {
+                  $target = '_blank';
+                }
+              ?>
+              <a class="slide-link" href="<?php print $file_link; ?>" target="<?php print $target; ?>">
                 <span class="slide-icon"><?php print t('Link'); ?></span>
                 <?php if ($item['#file_caption'] != NULL): ?>
                   <span class="slide-caption"><?php print $item['#file_caption']; ?></span>
