@@ -1,0 +1,399 @@
+/* hold.css */
+/*  Temp styles - kappaluppa  */
+.white2,
+a .white2 {
+	color: #fff;
+	font-size: 14px;
+}
+a .orange2 {
+	color: #e69740;
+}
+.panel-panel .news__content p {
+  color: #4d4d4d;
+  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+.captcha form-wrapper,
+.login-forgot,
+form#user-profile-form,
+.form-item.form-type-password.form-item-pass,
+.form-item.form-type-textfield.form-item-name,
+.page-student-leaders-campaign-login div#edit-actions,
+.node-form.node-student_leaders_campaign-form,
+.user-info-from-cookie {
+  margin: 0 auto;
+  width: 1170px;
+}
+.panel-pane.pane-node-form-author.pane-form h2,
+.panel-pane.pane-node-form-publishing.pane-form h2 {
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 29px;
+  display: none;
+}
+.panel-panel .view-slc-landing .views-field-title h3 {
+  margin: 10px 0;
+}
+ .panel-panel .view-slc-landing .views-field-title h3 a {
+  color: #000;
+  margin-top: 20px;
+}
+.slc-panel.top .pane-content {
+	background: #4d4d4d;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.slc-panel .pane-content{
+	background: #e69740;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.slc-panel.top span.NewsGothic {
+	color: #fff;
+    font-size: 1.25em;
+}
+.slc-panel .page-section,
+.slc-panel .page-section a {
+	color: #000;
+	text-decoration: none;
+}
+.slc-panel.top .pane-content p {
+	color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+}
+.slc-panel .pane-content p {
+	color: #000;
+	font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: normal;
+}
+.slc-campaign-page .NGMedium {
+	font-size: 1.25em;
+	margin: 20px 0 10px;
+}
+#student-leaders-campaign-node-form .form-actions {
+	background: transparent;
+}
+#student-leaders-campaign-node-form .btn {
+    text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+#student-leaders-campaign-node-form .form-item .description,
+#student-leaders-campaign-node-form .counter {
+  color: #91998c;
+  font-size: 0.85em;
+  font-style: italic;
+}
+#student-leaders-campaign-node-form #node-edit .panel-pane.pane-node-form-author.pane-form label,
+#student-leaders-campaign-node-form #node-edit .panel-pane.pane-node-form-publishing.pane-form label,
+#student-leaders-campaign-node-form #node-edit .vertical-tabs-panes.vertical-tabs-processed label,
+.panel-panel #edit-metatags p,
+.panel-panel .slc-panel p,
+#student-leaders-campaign-node-form #node-edit .vertical-tabs-panes.vertical-tabs-processed  input {
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+.node-form.node-student_leaders_campaign-form #node-edit .form-item-title label {
+    display: block;
+}
+#field-project-summary-add-more-wrapper .clearfix {
+    height: 0;
+}
+#student-leaders-campaign-node-form fieldset.sub-fieldset#node_student_leaders_campaign_form_group_socialmedia label {
+    margin: 5px 0;
+}
+#student-leaders-campaign-node-form #node-edit #edit-title {
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 35px;
+  line-height: 40px;
+  padding: 4px 6px;
+  width: 90%;
+}
+#student-leaders-campaign-node-form #node-edit .form-item-path-alias label {
+  font-size: 12px;
+}
+#student-leaders-campaign-node-form #node-edit .form-item.form-type-textfield.form-item-field-slc-headline-und-0-value input {
+    width: 90%;
+   	border-radius: 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
+#student-leaders-campaign-node-form #node-edit label {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 30px;
+}
+
+#student-leaders-campaign-node-form .text-format-wrapper .description {
+    margin-top: 0em;
+    margin-bottom: 2em;  
+    font-size: 0.85em;  
+}
+.form-type-link-field .form-item {
+  margin: 0;
+}
+#student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
+  background: #e69740 none repeat scroll 0 0;
+  border: 0 solid #ccc;
+  border-radius: 0;
+  box-shadow: 0 0 0 0 #d2d2d2;
+  color: #fff;
+  cursor: pointer;
+  font: normal 12px/32px "Fedra Serif", Georgia, "Times New Roman", serif;
+  height: 33px;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  outline: medium none;
+  padding: 2px 13px 1px;
+  text-decoration: none;
+}
+#student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit:hover {
+  background: #cf4753 none repeat scroll 0 0;
+}
+#student-leaders-campaign-node-form #node-edit .form-actions input#edit-draft {
+  background: #cf4753 none repeat scroll 0 0;
+  border: 0 solid #ccc;
+  border-radius: 0;
+  box-shadow: 0 0 0 0 #d2d2d2;
+  color: #fff;
+  cursor: pointer;
+  font: normal 12px/32px "Fedra Serif", Georgia, "Times New Roman", serif;
+  height: 33px;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  outline: medium none;
+  padding: 2px 13px 1px;
+  text-decoration: none;  
+}
+#student-leaders-campaign-node-form #node-edit .form-actions input#edit-draft:hover {
+  background: #e69740 none repeat scroll 0 0;
+}
+
+#student-leaders-campaign-node-form .ui-state-default {
+	background: #e69740;
+}
+#student-leaders-campaign-node-form .ui-state-hover a,
+#student-leaders-campaign-node-form .ui-state-active a,
+#student-leaders-campaign-node-form .ui-state-default a {
+	color: #fff;
+    font: normal 20px/32px "Fedra Serif", Georgia, "Times New Roman", serif;
+    height: 33px;
+    font-weight: normal;  
+    margin-left: 20px; 	
+}
+#student-leaders-campaign-node-form .ui-state-active,
+#student-leaders-campaign-node-form .ui-state-hover {
+	background: #cf4753 !important;
+	border: 0;
+}
+#student-leaders-campaign-node-form  .ui-icon {
+  left: 0;
+  position: absolute;
+  top: 10px;
+}
+#student-leaders-campaign-node-form .text-full.form-text.required {
+  width: 90%;
+}
+
+.main-fieldset legend {
+	background: #e69740;
+	color: #fff;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 29px;	
+  margin-left: 0px;
+  width: 90%;
+}
+.main-fieldset legend a.fieldset-title {
+	color: #fff;
+}
+#node_student_leaders_campaign_form_group_socialmedia legend .fieldset-description,
+#node_student_leaders_campaign_form_group_pic_caption legend .fieldset-description,
+#node_student_leaders_campaign_form_group_vid_caption legend .fieldset-description,
+#node_student_leaders_campaign_form_group_support_docs legend .fieldset-description {
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 29px;	
+}	
+.sub-fieldset .fieldset-wrapper {
+  margin-left: 25px;
+ } 
+ .sub-fieldset legend {
+  background: #91998c;
+  color: #fff;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 29px;  
+  margin-left: 20px;
+  padding-right: 100px;
+  width: 300px;
+}
+.admin-menu .admin-main-fieldset {
+  display: block;
+}
+.admin-main-fieldset {
+  display: none;
+}
+#edit-field-video-link-caption table,
+#edit-field-photos-caption table,
+#edit-field-support-info-links table {
+  width: 100%;
+}
+#edit-field-video-link-caption table#field-video-link-caption-values  tr.even,
+#edit-field-photos-caption table#field-photos-caption-values  tr.even {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 0.6em;
+}
+#edit-field-photos-caption table#field-photos-caption-values th.field-label label, 
+#edit-field-video-link-caption table#field-video-link-caption-values th.field-label label, 
+#edit-field-video-link-caption table#field-video-link-caption-values legend{
+  display: none;
+}
+#edit-field-video-link-caption table#field-video-link-caption-values  tr.odd,
+#edit-field-photos-caption table#field-photos-caption-values  tr.odd {
+	background-color: #f3f4ee;
+}
+#field-photos-caption-values input,
+#field-video-link-caption-values input,
+#field-support-info-links-values input {
+	width: 80%;
+}
+#student-leaders-campaign-node-form #node-edit tr.draggable label {
+  font-size: 18px;
+}
+#edit-field-support-docs fieldset legend .fieldset-legend {
+	display: none;
+} 
+fieldset legend .fieldset-legend {
+	font-size: 20px;
+}
+table#field-video-link-caption-values tbody tr.draggable td,
+table#field-photos-caption-values tbody tr.draggable td {
+  padding: 20px 10px;
+}
+
+/*** project page   ***/
+.slc-campaign-page .fieldable-panels-pane {
+  text-align: center;
+}
+.slc-campaign-page .panel-pane.pane-custom.pane-1 {
+  border-top: 1px solid #ccc;
+  clear: both;
+  padding-top: 30px;
+}
+.slc-leaders.pane-bundle-image {
+  text-align: center;
+}
+.slc-leaders img.panopoly-image-full {
+  height: auto;
+  margin-bottom: 0.5em;
+  max-width: 50%;
+  width: 50% !important;
+}
+.slc-campaign-page .panel-panel .social-media {
+  font-size: 1.5rem;
+}
+.slc-campaign-page .panel-panel a.social-media  {
+  color: #fff;
+}
+.NGMedium.large.orange {
+	font-size: 24px;
+	float: left;
+	margin: 5px 10px;
+}
+.panel-pane.pane-views-panes.pane-field-collection-view-panel-pane-2 {
+  clear: both;
+  padding-bottom: 20px;
+}
+.views-field.views-field-field-slc-main-image.span8 {
+  margin: 10px 0;
+}
+.view-field-collection-view .views-row, 
+.view-field-collection-view .views-row.views-row-first {
+  min-height: 350px;
+  margin: 0;
+  padding: 10px;
+}
+.views-field-field-slc-headline h1.field-content {
+  color: #4d4d4d;
+  margin-top: 10px;
+  text-align: left;
+}
+.basic__content,
+.panel-panel .news__content .basic__content p {
+  color: #4d4d4d;
+  font-family: "News Gothic Medium","News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 1.0625rem;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.basic__content.orange,
+.panel-panel .news__content .basic__content.orange p {
+  color: #e69740;
+  font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.basic__content.orange.22 {
+  color: #e69740;
+  font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.views-field.views-field-field-slc-facebook {
+  clear: both;
+}
+/** SLC landing  **/
+.panel-panel .slc-title h1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.slc-campaign-landing h1 {
+	display: none;
+}
+.views-field.views-field-field-slc-headline h2.black,
+.views-field.views-field-field-slc-headline h3.black {
+  color: #000;
+  margin-top: 10px;
+}
+.panel-pane.pane-views-panes.pane-slc-landing-panel-pane-1.news__content {
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+.panel-pane.pane-views-panes.pane-slc-landing-panel-pane-2 {
+  clear: both;
+}
+.pane-slc-landing-panel-pane-2 .pane-title {
+  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+

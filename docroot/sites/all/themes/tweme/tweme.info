@@ -14,6 +14,7 @@ settings[affixed_sidebars] = 1
 stylesheets[all][] = stylesheets/bootstrap-combined.min.css
 stylesheets[all][] = assets/css/bootstrap-extra.css
 stylesheets[all][] = assets/css/drupal.css
+stylesheets[all][] = assets/css/hold.css
 stylesheets[all][] = stylesheets/style.css
 stylesheets[all][] = stylesheets/press.css
 
