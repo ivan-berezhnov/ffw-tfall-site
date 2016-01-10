@@ -44,6 +44,10 @@ form#user-profile-form,
   line-height: 29px;
   display: none;
 }
+.panel-panel .view-slc-landing-slider .flexslider-info h2 a {
+  color: #fff;
+  font-weight: normal;
+}
 .panel-panel .view-slc-landing .views-field-title h3 {
   margin: 10px 0;
 }
