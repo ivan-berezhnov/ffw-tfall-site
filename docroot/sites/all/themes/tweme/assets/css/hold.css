@@ -16,6 +16,15 @@ a .orange2 {
   line-height: 25px;
   letter-spacing: 0;
 }
+.panel-panel .panel-pane.disclaimer p {
+  color: #91998c;
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: .85rem;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1rem;
+  margin-bottom: 1em;
+}
 .captcha form-wrapper,
 .login-forgot,
 form#user-profile-form,
