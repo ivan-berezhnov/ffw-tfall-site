@@ -49,7 +49,15 @@ form#user-profile-form,
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
 }
+
+.panel-panel .view-slc-landing.view-display-id-panel_pane_1 .views-field-title h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  line-height: 29px;
+}
 .panel-panel .view-slc-landing .views-field-title h3 {
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   margin: 10px 0;
 }
 .panel-panel .view-slc-landing .views-field-title h3 a {
@@ -158,17 +166,24 @@ form#user-profile-form,
 #student-leaders-campaign-node-form fieldset.sub-fieldset#node_student_leaders_campaign_form_group_socialmedia label {
     margin: 5px 0;
 }
+
 #student-leaders-campaign-node-form #node-edit input#edit-title {
-  box-sizing: border-box;
-  font-size: 14px;
-  height: 35px;
-  line-height: 40px;
-  padding: 4px 6px;
-  width: 90%;
+    width: 90%;
+    border-radius: 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
 }
+
 #student-leaders-campaign-node-form #node-edit .form-item-path-alias label {
   font-size: 12px;
 }
+
 #student-leaders-campaign-node-form #node-edit .form-item.form-type-textfield.form-item-field-slc-headline-und-0-value input {
     width: 90%;
    	border-radius: 4px;
@@ -197,6 +212,7 @@ form#user-profile-form,
 .form-type-link-field .form-item {
   margin: 0;
 }
+
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
   background: #e69740 none repeat scroll 0 0;
   border: 0 solid #ccc;
@@ -212,9 +228,11 @@ form#user-profile-form,
   padding: 2px 13px 1px;
   text-decoration: none;
 }
+
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit:hover {
   background: #cf4753 none repeat scroll 0 0;
 }
+
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-draft {
   background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;
@@ -230,6 +248,7 @@ form#user-profile-form,
   padding: 2px 13px 1px;
   text-decoration: none;  
 }
+
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-draft:hover {
   background: #e69740 none repeat scroll 0 0;
 }
@@ -385,6 +404,11 @@ table#field-photos-caption-values tbody tr.draggable td {
   margin-top: 10px;
   text-align: left;
 }
+
+
+.panel-panel .news__content .views-field-field-project-summary .field-content.basic__content > p {
+  color: #91998c;
+}
 .basic__content,
 .panel-panel .news__content .basic__content p {
   color: #4d4d4d;
@@ -418,6 +442,10 @@ table#field-photos-caption-values tbody tr.draggable td {
   clear: both;
 }
 /** SLC landing  **/
+
+.row-fluid .view-slc-landing .views-row.span3 {
+  margin: 0 0.95%;
+}
 .panel-panel .slc-title h1 {
   margin-bottom: 20px;
   text-align: left;
