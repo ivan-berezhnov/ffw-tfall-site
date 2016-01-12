@@ -46,18 +46,26 @@ form#user-profile-form,
 }
 .panel-panel .view-slc-landing-slider .flexslider-info h2 a {
   color: #fff;
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
 }
 .panel-panel .view-slc-landing .views-field-title h3 {
   margin: 10px 0;
 }
- .panel-panel .view-slc-landing .views-field-title h3 a {
+.panel-panel .view-slc-landing .views-field-title h3 a {
   color: #000;
   margin-top: 20px;
 }
+.panel-panel .view-slc-landing .flexslider-link > a {
+  color: #fff;
+  font-family: "News Gothic Demi Bold","News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .slc-panel.top .pane-content {
 	background: #4d4d4d;
-	padding: 10px;
+	padding: 15px 10px;
 	margin-bottom: 20px;
 }
 .slc-panel .pane-content{
@@ -69,11 +77,39 @@ form#user-profile-form,
 	color: #fff;
     font-size: 1.25em;
 }
-.slc-panel .page-section,
+/*.slc-panel .page-section,
 .slc-panel .page-section a {
 	color: #000;
 	text-decoration: none;
+}*/
+.slc-panel .page-section.xlbutton > a {
+  color: #fff;
+  font-family:  "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2px;  
 }
+.slc-panel .page-section.xlbutton > a:hover {
+  color: #e69740;
+}
+.slc-panel .page-section.xlbutton a .headlinearrows {
+  color: #e69740;
+}
+.slc-panel .page-section.headlines a {
+  color: #fff;
+  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: none;
+} 
+.slc-panel .page-section.headlines a:hover {
+  color: #dfd9c9;
+} 
+.slc-panel .page-section.headlines a .headlinearrows {
+  color: #dfd9c9;
+  font-size: 22px;
+} 
 .slc-panel.top .pane-content p {
 	color: #fff;
     font-size: 1em;
@@ -107,10 +143,10 @@ form#user-profile-form,
 .panel-panel #edit-metatags p,
 .panel-panel .slc-panel p,
 #student-leaders-campaign-node-form #node-edit .vertical-tabs-panes.vertical-tabs-processed  input {
-  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
-  font-size: 1.0625rem;
+  font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
+  font-size: 13px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 21px;
   letter-spacing: 0;
 }
 .node-form.node-student_leaders_campaign-form #node-edit .form-item-title label {
@@ -122,7 +158,7 @@ form#user-profile-form,
 #student-leaders-campaign-node-form fieldset.sub-fieldset#node_student_leaders_campaign_form_group_socialmedia label {
     margin: 5px 0;
 }
-#student-leaders-campaign-node-form #node-edit #edit-title {
+#student-leaders-campaign-node-form #node-edit input#edit-title {
   box-sizing: border-box;
   font-size: 14px;
   height: 35px;
@@ -362,7 +398,7 @@ table#field-photos-caption-values tbody tr.draggable td {
 .panel-panel .news__content .basic__content.orange p {
   color: #e69740;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: normal;
   line-height: 20px;
   margin-bottom: 0px;
