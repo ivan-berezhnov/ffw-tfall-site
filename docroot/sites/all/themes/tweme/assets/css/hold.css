@@ -72,12 +72,12 @@ form#user-profile-form,
   text-transform: uppercase;
 }
 .slc-panel.top .pane-content {
-  background: #4d4d4d;
+  background: #cf4753;
   padding: 15px 10px;
   margin-bottom: 20px;
 }
 .slc-panel .pane-content{
-  background: #e69740;
+  background: #e0dac9;
   padding: 10px;
   margin-bottom: 20px;
 }
