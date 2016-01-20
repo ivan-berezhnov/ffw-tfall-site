@@ -2,11 +2,11 @@
 /*  Temp styles - kappaluppa  */
 .white2,
 a .white2 {
-	color: #fff;
-	font-size: 14px;
+  color: #fff;
+  font-size: 14px;
 }
 a .orange2 {
-	color: #e69740;
+  color: #e69740;
 }
 .panel-panel .news__content p {
   color: #4d4d4d;
@@ -72,23 +72,23 @@ form#user-profile-form,
   text-transform: uppercase;
 }
 .slc-panel.top .pane-content {
-	background: #4d4d4d;
-	padding: 15px 10px;
-	margin-bottom: 20px;
+  background: #4d4d4d;
+  padding: 15px 10px;
+  margin-bottom: 20px;
 }
 .slc-panel .pane-content{
-	background: #e69740;
-	padding: 10px;
-	margin-bottom: 20px;
+  background: #e69740;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 .slc-panel.top span.NewsGothic {
-	color: #fff;
+  color: #fff;
     font-size: 1.25em;
 }
 /*.slc-panel .page-section,
 .slc-panel .page-section a {
-	color: #000;
-	text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }*/
 .slc-panel .page-section.xlbutton > a {
   color: #fff;
@@ -119,22 +119,22 @@ form#user-profile-form,
   font-size: 22px;
 } 
 .slc-panel.top .pane-content p {
-	color: #fff;
+  color: #fff;
     font-size: 1em;
     font-weight: normal;
 }
 .slc-panel .pane-content p {
-	color: #000;
-	font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+  color: #000;
+  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
     font-size: 14px !important;
     font-weight: normal;
 }
 .slc-campaign-page .NGMedium {
-	font-size: 1.25em;
-	margin: 20px 0 10px;
+  font-size: 1.25em;
+  margin: 20px 0 10px;
 }
 #student-leaders-campaign-node-form .form-actions {
-	background: transparent;
+  background: transparent;
 }
 #student-leaders-campaign-node-form .btn {
     text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
@@ -186,7 +186,7 @@ form#user-profile-form,
 
 #student-leaders-campaign-node-form #node-edit .form-item.form-type-textfield.form-item-field-slc-headline-und-0-value input {
     width: 90%;
-   	border-radius: 4px;
+    border-radius: 4px;
     color: #555555;
     display: inline-block;
     font-size: 14px;
@@ -254,21 +254,21 @@ form#user-profile-form,
 }
 
 #student-leaders-campaign-node-form .ui-state-default {
-	background: #e69740;
+  background: #e69740;
 }
 #student-leaders-campaign-node-form .ui-state-hover a,
 #student-leaders-campaign-node-form .ui-state-active a,
 #student-leaders-campaign-node-form .ui-state-default a {
-	color: #fff;
+  color: #fff;
     font: normal 20px/32px "Fedra Serif", Georgia, "Times New Roman", serif;
     height: 33px;
     font-weight: normal;  
-    margin-left: 20px; 	
+    margin-left: 20px;  
 }
 #student-leaders-campaign-node-form .ui-state-active,
 #student-leaders-campaign-node-form .ui-state-hover {
-	background: #cf4753 !important;
-	border: 0;
+  background: #cf4753 !important;
+  border: 0;
 }
 #student-leaders-campaign-node-form  .ui-icon {
   left: 0;
@@ -280,16 +280,16 @@ form#user-profile-form,
 }
 
 .main-fieldset legend {
-	background: #e69740;
-	color: #fff;
+  background: #e69740;
+  color: #fff;
   font-size: 1.0625rem;
   font-weight: normal;
-  line-height: 29px;	
+  line-height: 29px;  
   margin-left: 0px;
   width: 90%;
 }
 .main-fieldset legend a.fieldset-title {
-	color: #fff;
+  color: #fff;
 }
 #node_student_leaders_campaign_form_group_socialmedia legend .fieldset-description,
 #node_student_leaders_campaign_form_group_pic_caption legend .fieldset-description,
@@ -297,8 +297,8 @@ form#user-profile-form,
 #node_student_leaders_campaign_form_group_support_docs legend .fieldset-description {
   font-size: 1.0625rem;
   font-weight: normal;
-  line-height: 29px;	
-}	
+  line-height: 29px;  
+} 
 .sub-fieldset .fieldset-wrapper {
   margin-left: 25px;
  } 
@@ -336,21 +336,21 @@ form#user-profile-form,
 }
 #edit-field-video-link-caption table#field-video-link-caption-values  tr.odd,
 #edit-field-photos-caption table#field-photos-caption-values  tr.odd {
-	background-color: #f3f4ee;
+  background-color: #f3f4ee;
 }
 #field-photos-caption-values input,
 #field-video-link-caption-values input,
 #field-support-info-links-values input {
-	width: 80%;
+  width: 80%;
 }
 #student-leaders-campaign-node-form #node-edit tr.draggable label {
   font-size: 18px;
 }
 #edit-field-support-docs fieldset legend .fieldset-legend {
-	display: none;
+  display: none;
 } 
 fieldset legend .fieldset-legend {
-	font-size: 20px;
+  font-size: 20px;
 }
 table#field-video-link-caption-values tbody tr.draggable td,
 table#field-photos-caption-values tbody tr.draggable td {
@@ -382,9 +382,9 @@ table#field-photos-caption-values tbody tr.draggable td {
   color: #fff;
 }
 .NGMedium.large.orange {
-	font-size: 24px;
-	float: left;
-	margin: 5px 10px;
+  float: left;
+  font-size: 24px;
+  margin: 5px 10px 5px 0;
 }
 .panel-pane.pane-views-panes.pane-field-collection-view-panel-pane-2 {
   clear: both;
@@ -451,7 +451,7 @@ table#field-photos-caption-values tbody tr.draggable td {
   text-align: left;
 }
 .slc-campaign-landing h1 {
-	display: none;
+  display: none;
 }
 .views-field.views-field-field-slc-headline h2.black,
 .views-field.views-field-field-slc-headline h3.black {
@@ -472,5 +472,14 @@ table#field-photos-caption-values tbody tr.draggable td {
   font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 25px;
+}
+.slc-share {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+.views-field.views-field-nothing-2 {
+  clear: both;
+  padding-top: 10px;
 }
 
