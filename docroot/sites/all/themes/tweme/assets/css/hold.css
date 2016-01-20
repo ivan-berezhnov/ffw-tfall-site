@@ -8,6 +8,9 @@ a .white2 {
 a .orange2 {
   color: #e69740;
 }
+.panel-panel .slug {
+  font-weight: normal;
+}
 .panel-panel .news__content p {
   color: #4d4d4d;
   font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
@@ -97,10 +100,10 @@ form#user-profile-form,
   letter-spacing: 2px;  
 }
 .slc-panel .page-section.xlbutton > a:hover {
-  color: #e69740;
+  color: #cf4753;
 }
 .slc-panel .page-section.xlbutton a .headlinearrows {
-  color: #e69740;
+  color: #cf4753;
 }
 .slc-panel .page-section.headlines a {
   color: #cf4753;
@@ -112,10 +115,10 @@ form#user-profile-form,
   text-transform: none;
 } 
 .slc-panel .page-section.headlines a:hover {
-  color: #dfd9c9;
+  color: #cf4753;
 } 
 .slc-panel .page-section.headlines a .headlinearrows {
-  color: #dfd9c9;
+  color: #cf4753;
   font-size: 22px;
 } 
 .slc-panel.top .pane-content p {
