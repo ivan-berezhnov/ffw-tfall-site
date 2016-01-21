@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function slc_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -37,7 +37,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_pic_caption|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_pic_caption|node|student_leaders_campaign|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -67,7 +67,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_pics_videos_docs|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_pics_videos_docs|node|student_leaders_campaign|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -100,7 +100,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_slc_info_reflection|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_slc_info_reflection|node|student_leaders_campaign|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -130,7 +130,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_socialmedia|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_socialmedia|node|student_leaders_campaign|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -158,7 +158,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_studentleaders|node|student_leaders_campaign_|form'] = $field_group;
+  $field_groups['group_studentleaders|node|student_leaders_campaign_|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -190,7 +190,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsible',
     ),
   );
-  $export['group_submitter_info|node|student_leaders_campaign_|form'] = $field_group;
+  $field_groups['group_submitter_info|node|student_leaders_campaign_|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -219,7 +219,7 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_support_docs|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_support_docs|node|student_leaders_campaign|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -248,7 +248,18 @@ function slc_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_vid_caption|node|student_leaders_campaign|form'] = $field_group;
+  $field_groups['group_vid_caption|node|student_leaders_campaign|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Internal');
+  t('Pictures');
+  t('Project Information and Reflection');
+  t('Social Media');
+  t('Submitter & Group Information');
+  t('Supporting Pictures, Videos and Resources');
+  t('Supporting Resources');
+  t('Videos ');
+
+  return $field_groups;
 }
