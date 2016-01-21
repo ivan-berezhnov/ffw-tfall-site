@@ -1,7 +1,7 @@
 name = SLC
 core = 7.x
 package = SLC
-version = 7.x-1.8
+version = 7.x-1.9
 project = slc
 dependencies[] = block
 dependencies[] = context
@@ -82,8 +82,6 @@ features[field_instance][] = node-student_leaders_campaign-field_support_docs
 features[field_instance][] = node-student_leaders_campaign-field_support_info_links
 features[field_instance][] = node-student_leaders_campaign-field_video_link_caption
 features[node][] = student_leaders_campaign
-features[page_manager_handlers][] = node_view__slc_landing
-features[page_manager_handlers][] = node_view__student_leaders_campaign_page
 features[taxonomy][] = partners
 features[user_role][] = SLC Reviewer
 features[user_role][] = Student Leader Submission
