@@ -585,6 +585,155 @@ function slc_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: What Teach For All partner organization are you a part of? */
+  $handler->display->display_options['fields']['field_partner']['id'] = 'field_partner';
+  $handler->display->display_options['fields']['field_partner']['table'] = 'field_data_field_partner';
+  $handler->display->display_options['fields']['field_partner']['field'] = 'field_partner';
+  $handler->display->display_options['fields']['field_partner']['label'] = '';
+  $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
+  /* Field: Content: Main Image */
+  $handler->display->display_options['fields']['field_slc_main_image']['id'] = 'field_slc_main_image';
+  $handler->display->display_options['fields']['field_slc_main_image']['table'] = 'field_data_field_slc_main_image';
+  $handler->display->display_options['fields']['field_slc_main_image']['field'] = 'field_slc_main_image';
+  $handler->display->display_options['fields']['field_slc_main_image']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_main_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slc_main_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_slc_main_image']['settings'] = array(
+    'image_style' => '2_column_layout_image',
+    'image_link' => '',
+  );
+  /* Field: Content: Student Leaders */
+  $handler->display->display_options['fields']['field_student_names']['id'] = 'field_student_names';
+  $handler->display->display_options['fields']['field_student_names']['table'] = 'field_data_field_student_names';
+  $handler->display->display_options['fields']['field_student_names']['field'] = 'field_student_names';
+  $handler->display->display_options['fields']['field_student_names']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_student_names']['element_label_class'] = 'slug-medium';
+  $handler->display->display_options['fields']['field_student_names']['element_label_colon'] = FALSE;
+  /* Field: Content: Age of students */
+  $handler->display->display_options['fields']['field_age_grade']['id'] = 'field_age_grade';
+  $handler->display->display_options['fields']['field_age_grade']['table'] = 'field_data_field_age_grade';
+  $handler->display->display_options['fields']['field_age_grade']['field'] = 'field_age_grade';
+  $handler->display->display_options['fields']['field_age_grade']['element_label_colon'] = FALSE;
+  /* Field: Content: First Name */
+  $handler->display->display_options['fields']['field_submitters_fname']['id'] = 'field_submitters_fname';
+  $handler->display->display_options['fields']['field_submitters_fname']['table'] = 'field_data_field_submitters_fname';
+  $handler->display->display_options['fields']['field_submitters_fname']['field'] = 'field_submitters_fname';
+  $handler->display->display_options['fields']['field_submitters_fname']['label'] = '';
+  $handler->display->display_options['fields']['field_submitters_fname']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_submitters_fname']['element_label_colon'] = FALSE;
+  /* Field: Content: Last Name */
+  $handler->display->display_options['fields']['field_submitters_lname']['id'] = 'field_submitters_lname';
+  $handler->display->display_options['fields']['field_submitters_lname']['table'] = 'field_data_field_submitters_lname';
+  $handler->display->display_options['fields']['field_submitters_lname']['field'] = 'field_submitters_lname';
+  $handler->display->display_options['fields']['field_submitters_lname']['label'] = 'Adult Supporter';
+  $handler->display->display_options['fields']['field_submitters_lname']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_submitters_lname']['alter']['text'] = '[field_submitters_fname] [field_submitters_lname]';
+  $handler->display->display_options['fields']['field_submitters_lname']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_submitters_lname']['element_label_class'] = 'slug-medium';
+  $handler->display->display_options['fields']['field_submitters_lname']['element_label_colon'] = FALSE;
+  /* Field: Content: Project Summary */
+  $handler->display->display_options['fields']['field_project_summary']['id'] = 'field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['table'] = 'field_data_field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['field'] = 'field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_project_summary']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_project_summary']['element_label_class'] = 'slug-medium';
+  $handler->display->display_options['fields']['field_project_summary']['element_label_colon'] = FALSE;
+  /* Field: Content: Facebook */
+  $handler->display->display_options['fields']['field_slc_facebook']['id'] = 'field_slc_facebook';
+  $handler->display->display_options['fields']['field_slc_facebook']['table'] = 'field_data_field_slc_facebook';
+  $handler->display->display_options['fields']['field_slc_facebook']['field'] = 'field_slc_facebook';
+  $handler->display->display_options['fields']['field_slc_facebook']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_facebook']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slc_facebook']['click_sort_column'] = 'url';
+  /* Field: Content: Instagram */
+  $handler->display->display_options['fields']['field_slc_instagram']['id'] = 'field_slc_instagram';
+  $handler->display->display_options['fields']['field_slc_instagram']['table'] = 'field_data_field_slc_instagram';
+  $handler->display->display_options['fields']['field_slc_instagram']['field'] = 'field_slc_instagram';
+  $handler->display->display_options['fields']['field_slc_instagram']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_instagram']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slc_instagram']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_instagram']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_instagram']['click_sort_column'] = 'url';
+  /* Field: Content: Twitter */
+  $handler->display->display_options['fields']['field_slc_twitter']['id'] = 'field_slc_twitter';
+  $handler->display->display_options['fields']['field_slc_twitter']['table'] = 'field_data_field_slc_twitter';
+  $handler->display->display_options['fields']['field_slc_twitter']['field'] = 'field_slc_twitter';
+  $handler->display->display_options['fields']['field_slc_twitter']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_twitter']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slc_twitter']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_twitter']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_twitter']['click_sort_column'] = 'url';
+  /* Field: Content: Reflection Question 1: Please describe how your students exercised their leadership and the impact they had. */
+  $handler->display->display_options['fields']['field_question1']['id'] = 'field_question1';
+  $handler->display->display_options['fields']['field_question1']['table'] = 'field_data_field_question1';
+  $handler->display->display_options['fields']['field_question1']['field'] = 'field_question1';
+  $handler->display->display_options['fields']['field_question1']['label'] = 'Please describe how your students exercised their leadership and the impact they had.';
+  $handler->display->display_options['fields']['field_question1']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_question1']['element_label_class'] = 'NGMedium';
+  $handler->display->display_options['fields']['field_question1']['element_label_colon'] = FALSE;
+  /* Field: Content: Reflection Question 2: What role did you play in supporting your students’ leadership? */
+  $handler->display->display_options['fields']['field_question2']['id'] = 'field_question2';
+  $handler->display->display_options['fields']['field_question2']['table'] = 'field_data_field_question2';
+  $handler->display->display_options['fields']['field_question2']['field'] = 'field_question2';
+  $handler->display->display_options['fields']['field_question2']['label'] = 'What role did you play in supporting your students’ leadership?';
+  $handler->display->display_options['fields']['field_question2']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_question2']['element_label_class'] = 'NGMedium';
+  $handler->display->display_options['fields']['field_question2']['element_label_colon'] = FALSE;
+  /* Field: Content: Reflection Question 3: What did you and your students learn in this activity that will endure beyond today? */
+  $handler->display->display_options['fields']['field_question3']['id'] = 'field_question3';
+  $handler->display->display_options['fields']['field_question3']['table'] = 'field_data_field_question3';
+  $handler->display->display_options['fields']['field_question3']['field'] = 'field_question3';
+  $handler->display->display_options['fields']['field_question3']['label'] = 'What did you and your students learn in this activity that will endure beyond today?';
+  $handler->display->display_options['fields']['field_question3']['element_label_type'] = 'div';
+  $handler->display->display_options['fields']['field_question3']['element_label_class'] = 'NGMedium';
+  $handler->display->display_options['fields']['field_question3']['element_label_colon'] = FALSE;
+  /* Field: Content: Photos */
+  $handler->display->display_options['fields']['field_photos_caption']['id'] = 'field_photos_caption';
+  $handler->display->display_options['fields']['field_photos_caption']['table'] = 'field_data_field_photos_caption';
+  $handler->display->display_options['fields']['field_photos_caption']['field'] = 'field_photos_caption';
+  $handler->display->display_options['fields']['field_photos_caption']['label'] = '';
+  $handler->display->display_options['fields']['field_photos_caption']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_photos_caption']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_photos_caption']['settings'] = array(
+    'add' => 'Add',
+    'edit' => 'Edit',
+    'translate' => 'Translate',
+    'delete' => 'Delete',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_photos_caption']['delta_offset'] = '0';
+  /* Field: Content: Video links */
+  $handler->display->display_options['fields']['field_video_link_caption']['id'] = 'field_video_link_caption';
+  $handler->display->display_options['fields']['field_video_link_caption']['table'] = 'field_data_field_video_link_caption';
+  $handler->display->display_options['fields']['field_video_link_caption']['field'] = 'field_video_link_caption';
+  $handler->display->display_options['fields']['field_video_link_caption']['label'] = '';
+  $handler->display->display_options['fields']['field_video_link_caption']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_video_link_caption']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video_link_caption']['settings'] = array(
+    'add' => 'Add',
+    'edit' => 'Edit',
+    'translate' => 'Translate',
+    'delete' => 'Delete',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_video_link_caption']['delta_offset'] = '0';
+  /* Field: Global: PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_output'] = '             <?php
+                $blockObject = block_load(\'sharethis\', \'sharethis_block\');
+                $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+                $output = drupal_render($block);
+                print $output;
+              ?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   $handler->display->display_options['path'] = 'slc-project-page';
 
   /* Display: Block */
@@ -696,6 +845,23 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_slc_twitter']['type'] = 'link_plain';
+  /* Field: Global: PHP */
+  $handler->display->display_options['fields']['php']['id'] = 'php';
+  $handler->display->display_options['fields']['php']['table'] = 'views';
+  $handler->display->display_options['fields']['php']['field'] = 'php';
+  $handler->display->display_options['fields']['php']['label'] = '';
+  $handler->display->display_options['fields']['php']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['php']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['fields']['php']['php_output'] = '             <?php
+                $blockObject = block_load(\'sharethis\', \'sharethis_block\');
+                $block = _block_get_renderable_array(_block_render_blocks(array($blockObject)));
+                $output = drupal_render($block);
+                print $output;
+              ?>';
+  $handler->display->display_options['fields']['php']['use_php_click_sortable'] = '0';
+  $handler->display->display_options['fields']['php']['php_click_sortable'] = '';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
@@ -705,7 +871,7 @@ function slc_views_default_views() {
 <div class="slc-partner slug">[field_partner] </div>
 <div class="slc-main-image">[field_slc_main_image]</div>
 <div class="slc-share">
-<div class="NGMedium large orange">SHARE THIS PAGE </div><div class="sociallinks"><a class="social-media icon-twitter" target="_blank" href="https://twitter.com/TeachForAll"></a>  <a class="social-media icon-facebook" target="_blank" href="https://facebook.com/teachforall"></a>  <a class="social-media icon-linkedin" target="_blank" href="https://www.linkedin.com/company/teach-for-all"></a> <a class="social-media icon-vimeo" target="_blank" href="https://vimeo.com/teachforall"></a></div>
+[php]
 </div>
 </div>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
