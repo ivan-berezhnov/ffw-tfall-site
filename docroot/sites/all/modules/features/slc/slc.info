@@ -1,7 +1,7 @@
 name = SLC
 core = 7.x
 package = SLC
-version = 7.x-1.6
+version = 7.x-1.7
 project = slc
 dependencies[] = block
 dependencies[] = context
@@ -30,8 +30,6 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[ctools_custom_content][] = slc_logo_link
 features[ctools_custom_content][] = slc_top_logo_link
-features[fe_block_boxes][] = slc_sidebar_block
-features[fe_block_boxes][] = slc_sidebartop_block
 features[fe_nodequeue][] = slc_featured
 features[fe_nodequeue][] = slc_slider
 features[features_api][] = api:2
