@@ -146,11 +146,11 @@ function slc_default_page_manager_handlers() {
     $display->content['new-f4de853d-88d5-41a4-bbbf-183a88101f91'] = $pane;
     $display->panels['footer'][1] = 'new-f4de853d-88d5-41a4-bbbf-183a88101f91';
     $pane = new stdClass();
-    $pane->pid = 'new-61584232-5eef-4985-ac6f-e310751e7d40';
+    $pane->pid = 'new-faaf0749-f819-4ba0-8505-2a81f3c19b72';
     $pane->panel = 'header';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:1967';
-    $pane->shown = TRUE;
+    $pane->subtype = 'fpid:1946';
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'view_mode' => 'full',
@@ -166,11 +166,40 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '61584232-5eef-4985-ac6f-e310751e7d40';
-    $display->content['new-61584232-5eef-4985-ac6f-e310751e7d40'] = $pane;
-    $display->panels['header'][0] = 'new-61584232-5eef-4985-ac6f-e310751e7d40';
+    $pane->uuid = 'faaf0749-f819-4ba0-8505-2a81f3c19b72';
+    $display->content['new-faaf0749-f819-4ba0-8505-2a81f3c19b72'] = $pane;
+    $display->panels['header'][0] = 'new-faaf0749-f819-4ba0-8505-2a81f3c19b72';
     $pane = new stdClass();
-    $pane->pid = 'new-9e8a1f87-44ec-43ba-b4a2-bc9847cb73d2';
+    $pane->pid = 'new-e51b69f0-c676-4391-9389-85e76677a642';
+    $pane->panel = 'header';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '',
+      'format' => 'wysiwyg_ckeditor',
+      'substitute' => TRUE,
+      'name' => 'slc_top_logo_link',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-leaders',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'e51b69f0-c676-4391-9389-85e76677a642';
+    $display->content['new-e51b69f0-c676-4391-9389-85e76677a642'] = $pane;
+    $display->panels['header'][1] = 'new-e51b69f0-c676-4391-9389-85e76677a642';
+    $pane = new stdClass();
+    $pane->pid = 'new-c48764de-9266-4e44-a656-6409767bf07b';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
     $pane->subtype = 'block-38';
@@ -192,11 +221,11 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '9e8a1f87-44ec-43ba-b4a2-bc9847cb73d2';
-    $display->content['new-9e8a1f87-44ec-43ba-b4a2-bc9847cb73d2'] = $pane;
-    $display->panels['sidebar'][0] = 'new-9e8a1f87-44ec-43ba-b4a2-bc9847cb73d2';
+    $pane->uuid = 'c48764de-9266-4e44-a656-6409767bf07b';
+    $display->content['new-c48764de-9266-4e44-a656-6409767bf07b'] = $pane;
+    $display->panels['sidebar'][0] = 'new-c48764de-9266-4e44-a656-6409767bf07b';
     $pane = new stdClass();
-    $pane->pid = 'new-b75ebd65-88bb-4faa-a8d8-0764fe62bf3f';
+    $pane->pid = 'new-1ddc4b46-378f-425f-aa86-168db4259800';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
     $pane->subtype = 'block-37';
@@ -218,11 +247,11 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = 'b75ebd65-88bb-4faa-a8d8-0764fe62bf3f';
-    $display->content['new-b75ebd65-88bb-4faa-a8d8-0764fe62bf3f'] = $pane;
-    $display->panels['sidebar'][1] = 'new-b75ebd65-88bb-4faa-a8d8-0764fe62bf3f';
+    $pane->uuid = '1ddc4b46-378f-425f-aa86-168db4259800';
+    $display->content['new-1ddc4b46-378f-425f-aa86-168db4259800'] = $pane;
+    $display->panels['sidebar'][1] = 'new-1ddc4b46-378f-425f-aa86-168db4259800';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-9e8a1f87-44ec-43ba-b4a2-bc9847cb73d2';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view__slc_landing'] = $handler;
 
@@ -305,7 +334,7 @@ function slc_default_page_manager_handlers() {
     $display->content['new-cf7e5bcb-df44-4cca-b502-8475a566142e'] = $pane;
     $display->panels['contentmain'][0] = 'new-cf7e5bcb-df44-4cca-b502-8475a566142e';
     $pane = new stdClass();
-    $pane->pid = 'new-4c700685-68c4-495f-9937-dac428aeb21e';
+    $pane->pid = 'new-14b5f8ae-ae66-435d-a659-65e7f3cc10e6';
     $pane->panel = 'footer';
     $pane->type = 'views_panes';
     $pane->subtype = 'field_collection_view-panel_pane_1';
@@ -320,18 +349,15 @@ function slc_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '4c700685-68c4-495f-9937-dac428aeb21e';
-    $display->content['new-4c700685-68c4-495f-9937-dac428aeb21e'] = $pane;
-    $display->panels['footer'][0] = 'new-4c700685-68c4-495f-9937-dac428aeb21e';
+    $pane->uuid = '14b5f8ae-ae66-435d-a659-65e7f3cc10e6';
+    $display->content['new-14b5f8ae-ae66-435d-a659-65e7f3cc10e6'] = $pane;
+    $display->panels['footer'][0] = 'new-14b5f8ae-ae66-435d-a659-65e7f3cc10e6';
     $pane = new stdClass();
-    $pane->pid = 'new-6b5f2a8d-b096-4b2c-9bf3-c7851988702f';
+    $pane->pid = 'new-18214f98-ea79-45c3-8a97-c2e5250d971c';
     $pane->panel = 'footer';
     $pane->type = 'views_panes';
     $pane->subtype = 'field_collection_view-panel_pane_2';
@@ -346,18 +372,15 @@ function slc_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => '',
-    );
+    $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '6b5f2a8d-b096-4b2c-9bf3-c7851988702f';
-    $display->content['new-6b5f2a8d-b096-4b2c-9bf3-c7851988702f'] = $pane;
-    $display->panels['footer'][1] = 'new-6b5f2a8d-b096-4b2c-9bf3-c7851988702f';
+    $pane->uuid = '18214f98-ea79-45c3-8a97-c2e5250d971c';
+    $display->content['new-18214f98-ea79-45c3-8a97-c2e5250d971c'] = $pane;
+    $display->panels['footer'][1] = 'new-18214f98-ea79-45c3-8a97-c2e5250d971c';
     $pane = new stdClass();
-    $pane->pid = 'new-c23354b9-cc8b-4e01-90d5-bdf312ddbd80';
+    $pane->pid = 'new-74d97c0b-a060-407f-8252-eeade165c498';
     $pane->panel = 'footer';
     $pane->type = 'custom';
     $pane->subtype = 'custom';
@@ -367,7 +390,7 @@ function slc_default_page_manager_handlers() {
       'admin_title' => '',
       'title' => '',
       'body' => '<div class="slcfooter span4">  
-<a href="#" class="full-list"> More Student Leaders Stories</a>
+<a href="/student-leaders-campaign" class="full-list"> CONTINUE EXPLORING STUDENT LEADERSHIP</a>
 </div>
 <div class="slcfooter span4">
 
@@ -386,15 +409,15 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = 'c23354b9-cc8b-4e01-90d5-bdf312ddbd80';
-    $display->content['new-c23354b9-cc8b-4e01-90d5-bdf312ddbd80'] = $pane;
-    $display->panels['footer'][2] = 'new-c23354b9-cc8b-4e01-90d5-bdf312ddbd80';
+    $pane->uuid = '74d97c0b-a060-407f-8252-eeade165c498';
+    $display->content['new-74d97c0b-a060-407f-8252-eeade165c498'] = $pane;
+    $display->panels['footer'][2] = 'new-74d97c0b-a060-407f-8252-eeade165c498';
     $pane = new stdClass();
-    $pane->pid = 'new-9a880338-7283-4577-8d6d-9ea59df32c39';
+    $pane->pid = 'new-2bf62318-4585-4aff-bf4d-9eb9cfc8a29e';
     $pane->panel = 'header';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'fpid:1967';
-    $pane->shown = TRUE;
+    $pane->subtype = 'fpid:1946';
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'view_mode' => 'full',
@@ -410,14 +433,43 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '9a880338-7283-4577-8d6d-9ea59df32c39';
-    $display->content['new-9a880338-7283-4577-8d6d-9ea59df32c39'] = $pane;
-    $display->panels['header'][0] = 'new-9a880338-7283-4577-8d6d-9ea59df32c39';
+    $pane->uuid = '2bf62318-4585-4aff-bf4d-9eb9cfc8a29e';
+    $display->content['new-2bf62318-4585-4aff-bf4d-9eb9cfc8a29e'] = $pane;
+    $display->panels['header'][0] = 'new-2bf62318-4585-4aff-bf4d-9eb9cfc8a29e';
     $pane = new stdClass();
-    $pane->pid = 'new-1b0a85db-fccb-4840-8e16-c3895186b3b1';
+    $pane->pid = 'new-8f415114-d4cb-4b73-800d-25d901cf0da1';
+    $pane->panel = 'header';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<a href="/student-leaders-campaign"><img class="panopoly-image-full" src="/sites/default/files/general/1000SL-logo.png"></a>',
+      'format' => 'full_html',
+      'substitute' => 1,
+      'name' => 'slc_logo_link',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-leaders',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '8f415114-d4cb-4b73-800d-25d901cf0da1';
+    $display->content['new-8f415114-d4cb-4b73-800d-25d901cf0da1'] = $pane;
+    $display->panels['header'][1] = 'new-8f415114-d4cb-4b73-800d-25d901cf0da1';
+    $pane = new stdClass();
+    $pane->pid = 'new-034291d2-8181-4b39-a10b-a0034f82cbc7';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
-    $pane->subtype = 'block-38';
+    $pane->subtype = 'block-41';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -436,14 +488,14 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '1b0a85db-fccb-4840-8e16-c3895186b3b1';
-    $display->content['new-1b0a85db-fccb-4840-8e16-c3895186b3b1'] = $pane;
-    $display->panels['sidebar'][0] = 'new-1b0a85db-fccb-4840-8e16-c3895186b3b1';
+    $pane->uuid = '034291d2-8181-4b39-a10b-a0034f82cbc7';
+    $display->content['new-034291d2-8181-4b39-a10b-a0034f82cbc7'] = $pane;
+    $display->panels['sidebar'][0] = 'new-034291d2-8181-4b39-a10b-a0034f82cbc7';
     $pane = new stdClass();
-    $pane->pid = 'new-2dbbd07b-2184-420e-b3dc-09414ca9ec15';
+    $pane->pid = 'new-d09f6f01-0692-4432-90d0-88510ee52b19';
     $pane->panel = 'sidebar';
     $pane->type = 'block';
-    $pane->subtype = 'block-37';
+    $pane->subtype = 'block-36';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -462,11 +514,11 @@ function slc_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '2dbbd07b-2184-420e-b3dc-09414ca9ec15';
-    $display->content['new-2dbbd07b-2184-420e-b3dc-09414ca9ec15'] = $pane;
-    $display->panels['sidebar'][1] = 'new-2dbbd07b-2184-420e-b3dc-09414ca9ec15';
+    $pane->uuid = 'd09f6f01-0692-4432-90d0-88510ee52b19';
+    $display->content['new-d09f6f01-0692-4432-90d0-88510ee52b19'] = $pane;
+    $display->panels['sidebar'][1] = 'new-d09f6f01-0692-4432-90d0-88510ee52b19';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-1b0a85db-fccb-4840-8e16-c3895186b3b1';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view__student_leaders_campaign_page'] = $handler;
 

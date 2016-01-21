@@ -13,6 +13,225 @@ function slc_panelizer_defaults() {
   $panelizer = new stdClass();
   $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
   $panelizer->api_version = 1;
+  $panelizer->name = 'node:page:slc_basic_page';
+  $panelizer->title = 'SLC Basic Page';
+  $panelizer->panelizer_type = 'node';
+  $panelizer->panelizer_key = 'page';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'standard';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'page_manager';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array(
+    'panels_breadcrumbs_state' => 1,
+    'panels_breadcrumbs_titles' => '1000 Student Leaderssss
+%node:title_field
+',
+    'panels_breadcrumbs_paths' => 'student-leaders-campaign
+<none>',
+    'panels_breadcrumbs_home' => 1,
+  );
+  $display = new panels_display();
+  $display->layout = 'moscone';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'header' => NULL,
+      'sidebar' => NULL,
+      'contentmain' => NULL,
+      'footer' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '%node:title';
+  $display->uuid = 'cd970c38-9793-4e7b-9842-f7f8b2c17529';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-b322239c-abe5-4dfd-876a-a8ff2abf9a2d';
+    $pane->panel = 'contentmain';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link' => 0,
+      'markup' => 'h1',
+      'id' => '',
+      'class' => '',
+      'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-title',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'b322239c-abe5-4dfd-876a-a8ff2abf9a2d';
+    $display->content['new-b322239c-abe5-4dfd-876a-a8ff2abf9a2d'] = $pane;
+    $display->panels['contentmain'][0] = 'new-b322239c-abe5-4dfd-876a-a8ff2abf9a2d';
+    $pane = new stdClass();
+    $pane->pid = 'new-0d36aae8-996d-4e20-a63a-3b207f03c9f5';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:title_field';
+    $pane->shown = FALSE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'title_linked',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => array(),
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-title',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '0d36aae8-996d-4e20-a63a-3b207f03c9f5';
+    $display->content['new-0d36aae8-996d-4e20-a63a-3b207f03c9f5'] = $pane;
+    $display->panels['contentmain'][1] = 'new-0d36aae8-996d-4e20-a63a-3b207f03c9f5';
+    $pane = new stdClass();
+    $pane->pid = 'new-92c58408-69d2-4147-9661-a67b93738d5c';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:body';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'text_default',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'news__content',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '92c58408-69d2-4147-9661-a67b93738d5c';
+    $display->content['new-92c58408-69d2-4147-9661-a67b93738d5c'] = $pane;
+    $display->panels['contentmain'][2] = 'new-92c58408-69d2-4147-9661-a67b93738d5c';
+    $pane = new stdClass();
+    $pane->pid = 'new-45bbe1e1-263d-4bc4-b93f-915f4805bc62';
+    $pane->panel = 'header';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'fpid:1946';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-leaders',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '45bbe1e1-263d-4bc4-b93f-915f4805bc62';
+    $display->content['new-45bbe1e1-263d-4bc4-b93f-915f4805bc62'] = $pane;
+    $display->panels['header'][0] = 'new-45bbe1e1-263d-4bc4-b93f-915f4805bc62';
+    $pane = new stdClass();
+    $pane->pid = 'new-092f4244-aed7-462b-97ad-efcd1fbc0f1f';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'block-41';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-panel top',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '092f4244-aed7-462b-97ad-efcd1fbc0f1f';
+    $display->content['new-092f4244-aed7-462b-97ad-efcd1fbc0f1f'] = $pane;
+    $display->panels['sidebar'][0] = 'new-092f4244-aed7-462b-97ad-efcd1fbc0f1f';
+    $pane = new stdClass();
+    $pane->pid = 'new-b3fea502-6d66-4cb5-8828-2fc2aeb82614';
+    $pane->panel = 'sidebar';
+    $pane->type = 'block';
+    $pane->subtype = 'block-36';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '<none>',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'slc-panel',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b3fea502-6d66-4cb5-8828-2fc2aeb82614';
+    $display->content['new-b3fea502-6d66-4cb5-8828-2fc2aeb82614'] = $pane;
+    $display->panels['sidebar'][1] = 'new-b3fea502-6d66-4cb5-8828-2fc2aeb82614';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = 'new-92c58408-69d2-4147-9661-a67b93738d5c';
+  $panelizer->display = $display;
+  $export['node:page:slc_basic_page'] = $panelizer;
+
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
   $panelizer->name = 'node:student_leaders_campaign:default';
   $panelizer->title = 'Default';
   $panelizer->panelizer_type = 'node';

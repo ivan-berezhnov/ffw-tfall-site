@@ -9,7 +9,7 @@ a .orange2 {
   color: #e69740;
 }
 .panel-panel .slug {
-  font-weight: normal;
+  font-weight: normal !important;
 }
 .panel-panel .news__content p {
   color: #4d4d4d;
@@ -52,7 +52,6 @@ form#user-profile-form,
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
 }
-
 .panel-panel .view-slc-landing.view-display-id-panel_pane_1 .views-field-title h3 {
   margin: 10px 0;
   font-size: 25px;
@@ -67,12 +66,19 @@ form#user-profile-form,
   color: #000;
   margin-top: 20px;
 }
-.panel-panel .view-slc-landing .flexslider-link > a {
+.panel-panel .view-slc-landing-slider p {
+  letter-spacing: 0;
+}
+.panel-panel .view-slc-landing-slider .flexslider-link > a {
   color: #fff;
   font-family: "News Gothic Demi Bold","News Gothic","Arial Narrow",Arial,sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.panel-panel .view-slc-landing-slider .flexslider-preview p {
+  font-weight: normal;
+  font-size: 16px;
 }
 .slc-panel.top .pane-content {
   background: #cf4753;
@@ -100,10 +106,10 @@ form#user-profile-form,
   letter-spacing: 2px;  
 }
 .slc-panel .page-section.xlbutton > a:hover {
-  color: #cf4753;
+  color: #fff;
 }
 .slc-panel .page-section.xlbutton a .headlinearrows {
-  color: #cf4753;
+  color: #fff;
 }
 .slc-panel .page-section.headlines a {
   color: #cf4753;

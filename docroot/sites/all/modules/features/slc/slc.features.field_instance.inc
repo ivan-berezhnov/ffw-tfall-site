@@ -157,7 +157,7 @@ function slc_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_age_grade',
-    'label' => 'What are the ages or grades of the students you worked with in this example?',
+    'label' => 'Age of students',
     'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -177,7 +177,7 @@ function slc_field_default_field_instances() {
         'size' => 125,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -282,7 +282,7 @@ function slc_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_photos_caption',
-    'label' => 'Photos & caption',
+    'label' => 'Photos',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -341,7 +341,7 @@ function slc_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_project_summary',
     'label' => 'Project Summary',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'linkit' => array(
@@ -359,7 +359,7 @@ function slc_field_default_field_instances() {
         'maxlength_js_enforce' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
-        'rows' => 2,
+        'rows' => 5,
       ),
       'type' => 'text_textarea',
       'weight' => 2,
@@ -408,7 +408,7 @@ function slc_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_question1',
     'label' => 'Reflection Question 1: Please describe how your students exercised their leadership and the impact they had.',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'linkit' => array(
@@ -426,10 +426,10 @@ function slc_field_default_field_instances() {
         'maxlength_js_enforce' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
-        'rows' => 3,
+        'rows' => 6,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -475,7 +475,7 @@ function slc_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_question2',
     'label' => 'Reflection Question 2: What role did you play in supporting your students’ leadership?',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'linkit' => array(
@@ -493,10 +493,10 @@ function slc_field_default_field_instances() {
         'maxlength_js_enforce' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
+        'rows' => 6,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -542,7 +542,7 @@ function slc_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_question3',
     'label' => 'Reflection Question 3: What did you and your students learn in this activity that will endure beyond today?',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'linkit' => array(
@@ -560,10 +560,10 @@ function slc_field_default_field_instances() {
         'maxlength_js_enforce' => 0,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'maxlength_js_truncate_html' => 0,
-        'rows' => 5,
+        'rows' => 6,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -994,7 +994,7 @@ Please make sure to abide by any policies of your school or country that govern 
     ),
     'entity_type' => 'node',
     'field_name' => 'field_student_names',
-    'label' => 'Names of students or group',
+    'label' => 'Student Leaders',
     'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -1014,7 +1014,7 @@ Please make sure to abide by any policies of your school or country that govern 
         'size' => 125,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -1388,7 +1388,7 @@ Please make sure to abide by any policies of your school or country that govern 
     ),
     'entity_type' => 'node',
     'field_name' => 'field_video_link_caption',
-    'label' => 'Video link & caption',
+    'label' => 'Video links',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -1411,6 +1411,7 @@ Please make sure to abide by any policies of your school or country that govern 
   t('<strong>Example:</strong> https://www.facebook.com/teachforall');
   t('<strong>Example:</strong> https://www.instagram.com/teachforall');
   t('Add up to 6 images that demonstrate or support the project, along with captions. The types of documents allowed are: jpg, png. ');
+  t('Age of students');
   t('Descriptive Headline');
   t('Email Address');
   t('Facebook');
@@ -1421,23 +1422,22 @@ Please make sure to abide by any policies of your school or country that govern 
   t('Instagram');
   t('Last Name');
   t('Main Image');
-  t('Names of students or group');
-  t('Photos & caption');
+  t('Photos');
   t('Picture');
   t('Project Summary');
   t('Provide the link to the page of the Vimeo or YouTube video (other video links will not work).  Paste the link the page, not the embed code. ');
   t('Reflection Question 1: Please describe how your students exercised their leadership and the impact they had.');
   t('Reflection Question 2: What role did you play in supporting your students’ leadership?');
   t('Reflection Question 3: What did you and your students learn in this activity that will endure beyond today?');
+  t('Student Leaders');
   t('Supporting docs');
   t('Supporting information links');
   t('This headline will be used to describe your project. Maximum 60 characters.');
   t('This is a brief summary of your project that will be displayed on the website. This field is required. There are also some optional Reflection Questions below that will allow you to provide more information. ');
   t('Twitter');
   t('Video link');
-  t('Video link & caption');
+  t('Video links');
   t('What Teach For All partner organization are you a part of?');
-  t('What are the ages or grades of the students you worked with in this example?');
 
   return $field_instances;
 }

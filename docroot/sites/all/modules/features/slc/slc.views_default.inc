@@ -40,7 +40,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_partner']['table'] = 'field_data_field_partner';
   $handler->display->display_options['fields']['field_partner']['field'] = 'field_partner';
   $handler->display->display_options['fields']['field_partner']['label'] = '';
-  $handler->display->display_options['fields']['field_partner']['element_class'] = 'basic__content orange';
+  $handler->display->display_options['fields']['field_partner']['element_class'] = 'slug';
   $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_partner']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Main Image */
@@ -54,15 +54,6 @@ function slc_views_default_views() {
     'image_style' => '2_column_layout_image',
     'image_link' => 'content',
   );
-  /* Field: Content: Descriptive Headline */
-  $handler->display->display_options['fields']['field_slc_headline']['id'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
-  $handler->display->display_options['fields']['field_slc_headline']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_slc_headline']['element_type'] = 'h2';
-  $handler->display->display_options['fields']['field_slc_headline']['element_class'] = 'black';
-  $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -139,7 +130,7 @@ function slc_views_default_views() {
   $handler->display->display_options['title'] = 'Explore Student Leadership';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '12';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '28';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -170,15 +161,6 @@ function slc_views_default_views() {
     'image_style' => '2_column_layout_image',
     'image_link' => 'content',
   );
-  /* Field: Content: Descriptive Headline */
-  $handler->display->display_options['fields']['field_slc_headline']['id'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
-  $handler->display->display_options['fields']['field_slc_headline']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_slc_headline']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['field_slc_headline']['element_class'] = 'black';
-  $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -264,252 +246,6 @@ function slc_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
 
-  /* Display: News */
-  $handler = $view->new_display('page', 'News', 'page');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'News';
-  $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'container news-page';
-  $handler->display->display_options['display_description'] = 'display list of news';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '7';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['footer'] = FALSE;
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Content: Author */
-  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
-  $handler->display->display_options['relationships']['uid']['table'] = 'node';
-  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  $handler->display->display_options['relationships']['uid']['required'] = TRUE;
-  /* Relationship: Content: Entity translation: translations */
-  $handler->display->display_options['relationships']['entity_translations']['id'] = 'entity_translations';
-  $handler->display->display_options['relationships']['entity_translations']['table'] = 'node';
-  $handler->display->display_options['relationships']['entity_translations']['field'] = 'entity_translations';
-  $handler->display->display_options['relationships']['entity_translations']['required'] = TRUE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Marquee Image */
-  $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['label'] = '';
-  $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_news_image']['settings'] = array(
-    'image_style' => 'news_thumbnail',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
-  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['label'] = '';
-  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Marquee Blurb */
-  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
-  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
-  /* Field: User: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Field: Field: Embedded Video */
-  $handler->display->display_options['fields']['field_embedded_video']['id'] = 'field_embedded_video';
-  $handler->display->display_options['fields']['field_embedded_video']['table'] = 'field_data_field_embedded_video';
-  $handler->display->display_options['fields']['field_embedded_video']['field'] = 'field_embedded_video';
-  $handler->display->display_options['fields']['field_embedded_video']['label'] = '';
-  $handler->display->display_options['fields']['field_embedded_video']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_embedded_video']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_embedded_video']['click_sort_column'] = 'video_url';
-  $handler->display->display_options['fields']['field_embedded_video']['settings'] = array(
-    'video_style' => 'normal',
-  );
-  /* Field: Content: Link */
-  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
-  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
-  $handler->display->display_options['fields']['view_node']['label'] = '';
-  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
-  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
-  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
-  $handler->display->display_options['fields']['field_author']['label'] = '';
-  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
-  $handler->display->display_options['path'] = 'news-view';
-
-  /* Display: Latest News */
-  $handler = $view->new_display('page', 'Latest News', 'page_1');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Latest News';
-  $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'container news-latest';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: Content: Author */
-  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
-  $handler->display->display_options['relationships']['uid']['table'] = 'node';
-  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  $handler->display->display_options['relationships']['uid']['required'] = TRUE;
-  /* Relationship: Content: Entity translation: translations */
-  $handler->display->display_options['relationships']['entity_translations']['id'] = 'entity_translations';
-  $handler->display->display_options['relationships']['entity_translations']['table'] = 'node';
-  $handler->display->display_options['relationships']['entity_translations']['field'] = 'entity_translations';
-  $handler->display->display_options['relationships']['entity_translations']['required'] = TRUE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Marquee Image */
-  $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
-  $handler->display->display_options['fields']['field_news_image']['label'] = '';
-  $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_image']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_news_image']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_news_image']['settings'] = array(
-    'image_style' => 'news_thumbnail',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Network Learning image */
-  $handler->display->display_options['fields']['field_network_learning_image']['id'] = 'field_network_learning_image';
-  $handler->display->display_options['fields']['field_network_learning_image']['table'] = 'field_data_field_network_learning_image';
-  $handler->display->display_options['fields']['field_network_learning_image']['field'] = 'field_network_learning_image';
-  $handler->display->display_options['fields']['field_network_learning_image']['label'] = '';
-  $handler->display->display_options['fields']['field_network_learning_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_network_learning_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_network_learning_image']['settings'] = array(
-    'image_style' => 'news_thumbnail',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Category */
-  $handler->display->display_options['fields']['field_category']['id'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['table'] = 'field_data_field_category';
-  $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
-  $handler->display->display_options['fields']['field_category']['label'] = '';
-  $handler->display->display_options['fields']['field_category']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_category']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_category']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Marquee Blurb */
-  $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
-  $handler->display->display_options['fields']['field_news_byline']['label'] = '';
-  $handler->display->display_options['fields']['field_news_byline']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_news_byline']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_news_byline']['hide_empty'] = TRUE;
-  /* Field: Content: Blurb */
-  $handler->display->display_options['fields']['field_network_learning_byline']['id'] = 'field_network_learning_byline';
-  $handler->display->display_options['fields']['field_network_learning_byline']['table'] = 'field_data_field_network_learning_byline';
-  $handler->display->display_options['fields']['field_network_learning_byline']['field'] = 'field_network_learning_byline';
-  $handler->display->display_options['fields']['field_network_learning_byline']['label'] = '';
-  $handler->display->display_options['fields']['field_network_learning_byline']['element_label_colon'] = FALSE;
-  /* Field: User: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'users';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['name']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_user'] = FALSE;
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'short';
-  /* Field: Content: Author */
-  $handler->display->display_options['fields']['field_author']['id'] = 'field_author';
-  $handler->display->display_options['fields']['field_author']['table'] = 'field_data_field_author';
-  $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
-  $handler->display->display_options['fields']['field_author']['label'] = '';
-  $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_author']['element_default_classes'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'network_learning' => 'network_learning',
-    'news' => 'news',
-  );
-  /* Filter criterion: Entity translation: Language */
-  $handler->display->display_options['filters']['language']['id'] = 'language';
-  $handler->display->display_options['filters']['language']['table'] = 'entity_translation';
-  $handler->display->display_options['filters']['language']['field'] = 'language';
-  $handler->display->display_options['filters']['language']['relationship'] = 'entity_translations';
-  $handler->display->display_options['filters']['language']['value'] = array(
-    '***CURRENT_LANGUAGE***' => '***CURRENT_LANGUAGE***',
-  );
-  /* Filter criterion: Entity translation: Translation status */
-  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
-  $handler->display->display_options['filters']['status_1']['table'] = 'entity_translation';
-  $handler->display->display_options['filters']['status_1']['field'] = 'status';
-  $handler->display->display_options['filters']['status_1']['relationship'] = 'entity_translations';
-  $handler->display->display_options['filters']['status_1']['value'] = '1';
-  $handler->display->display_options['path'] = 'news-latest-view';
-
   /* Display: SLC Flexslider */
   $handler = $view->new_display('block', 'SLC Flexslider', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
@@ -558,6 +294,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '55';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
@@ -589,6 +326,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
   $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
   $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_headline']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
   /* Field: Content: Marquee Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
@@ -607,6 +345,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['view_node']['alter']['text'] = '[view_node] <span class="orange2">>></span>';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
@@ -620,6 +359,38 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['view_node_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['view_node_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node_1']['text'] = 'GO TO STORY';
+  /* Field: Content: Project Summary */
+  $handler->display->display_options['fields']['field_project_summary']['id'] = 'field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['table'] = 'field_data_field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['field'] = 'field_project_summary';
+  $handler->display->display_options['fields']['field_project_summary']['label'] = '';
+  $handler->display->display_options['fields']['field_project_summary']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_project_summary']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_project_summary']['element_class'] = 'flexslider-preview';
+  $handler->display->display_options['fields']['field_project_summary']['element_label_colon'] = FALSE;
+  /* Field: Content: What Teach For All partner organization are you a part of? */
+  $handler->display->display_options['fields']['field_partner']['id'] = 'field_partner';
+  $handler->display->display_options['fields']['field_partner']['table'] = 'field_data_field_partner';
+  $handler->display->display_options['fields']['field_partner']['field'] = 'field_partner';
+  $handler->display->display_options['fields']['field_partner']['label'] = '';
+  $handler->display->display_options['fields']['field_partner']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_partner']['element_class'] = 'slug';
+  $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_partner']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="flexslider-info">
+<div class="slug">[field_partner] </div>
+<div class="news__flexslider__">
+<h2>[title] </h2>
+<div class="flexslider-preview">[field_project_summary] </div>
+</div>
+<div class="flexslider-link"> [view_node] </div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Type */
@@ -677,21 +448,14 @@ function slc_views_default_views() {
     'image_style' => '2_column_layout_image',
     'image_link' => '',
   );
-  /* Field: Content: Descriptive Headline */
-  $handler->display->display_options['fields']['field_slc_headline']['id'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
-  $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
-  /* Field: Content: Names of students or group */
+  /* Field: Content: Student Leaders */
   $handler->display->display_options['fields']['field_student_names']['id'] = 'field_student_names';
   $handler->display->display_options['fields']['field_student_names']['table'] = 'field_data_field_student_names';
   $handler->display->display_options['fields']['field_student_names']['field'] = 'field_student_names';
-  $handler->display->display_options['fields']['field_student_names']['label'] = 'Project Team';
   $handler->display->display_options['fields']['field_student_names']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_student_names']['element_label_class'] = 'slug-medium';
   $handler->display->display_options['fields']['field_student_names']['element_label_colon'] = FALSE;
-  /* Field: Content: What are the ages or grades of the students you worked with in this example? */
+  /* Field: Content: Age of students */
   $handler->display->display_options['fields']['field_age_grade']['id'] = 'field_age_grade';
   $handler->display->display_options['fields']['field_age_grade']['table'] = 'field_data_field_age_grade';
   $handler->display->display_options['fields']['field_age_grade']['field'] = 'field_age_grade';
@@ -707,7 +471,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_submitters_lname']['id'] = 'field_submitters_lname';
   $handler->display->display_options['fields']['field_submitters_lname']['table'] = 'field_data_field_submitters_lname';
   $handler->display->display_options['fields']['field_submitters_lname']['field'] = 'field_submitters_lname';
-  $handler->display->display_options['fields']['field_submitters_lname']['label'] = 'Project Leader';
+  $handler->display->display_options['fields']['field_submitters_lname']['label'] = 'Adult Supporter';
   $handler->display->display_options['fields']['field_submitters_lname']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_submitters_lname']['alter']['text'] = '[field_submitters_fname] [field_submitters_lname]';
   $handler->display->display_options['fields']['field_submitters_lname']['element_label_type'] = 'div';
@@ -770,7 +534,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_question3']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_question3']['element_label_class'] = 'NGMedium';
   $handler->display->display_options['fields']['field_question3']['element_label_colon'] = FALSE;
-  /* Field: Content: Photos & caption */
+  /* Field: Content: Photos */
   $handler->display->display_options['fields']['field_photos_caption']['id'] = 'field_photos_caption';
   $handler->display->display_options['fields']['field_photos_caption']['table'] = 'field_data_field_photos_caption';
   $handler->display->display_options['fields']['field_photos_caption']['field'] = 'field_photos_caption';
@@ -786,7 +550,7 @@ function slc_views_default_views() {
     'view_mode' => 'full',
   );
   $handler->display->display_options['fields']['field_photos_caption']['delta_offset'] = '0';
-  /* Field: Content: Video link & caption */
+  /* Field: Content: Video links */
   $handler->display->display_options['fields']['field_video_link_caption']['id'] = 'field_video_link_caption';
   $handler->display->display_options['fields']['field_video_link_caption']['table'] = 'field_data_field_video_link_caption';
   $handler->display->display_options['fields']['field_video_link_caption']['field'] = 'field_video_link_caption';
@@ -839,21 +603,16 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_partner']['table'] = 'field_data_field_partner';
   $handler->display->display_options['fields']['field_partner']['field'] = 'field_partner';
   $handler->display->display_options['fields']['field_partner']['label'] = '';
-  $handler->display->display_options['fields']['field_partner']['element_class'] = 'basic__content orange';
+  $handler->display->display_options['fields']['field_partner']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_partner']['element_class'] = 'slug';
   $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_partner']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: Content: Descriptive Headline */
-  $handler->display->display_options['fields']['field_slc_headline']['id'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
-  $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
-  $handler->display->display_options['fields']['field_slc_headline']['element_type'] = 'h1';
-  $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
   /* Field: Content: Main Image */
   $handler->display->display_options['fields']['field_slc_main_image']['id'] = 'field_slc_main_image';
   $handler->display->display_options['fields']['field_slc_main_image']['table'] = 'field_data_field_slc_main_image';
   $handler->display->display_options['fields']['field_slc_main_image']['field'] = 'field_slc_main_image';
   $handler->display->display_options['fields']['field_slc_main_image']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_main_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_slc_main_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slc_main_image']['element_wrapper_class'] = 'span8';
   $handler->display->display_options['fields']['field_slc_main_image']['click_sort_column'] = 'fid';
@@ -861,16 +620,15 @@ function slc_views_default_views() {
     'image_style' => '2_column_layout_image',
     'image_link' => '',
   );
-  /* Field: Content: Names of students or group */
+  /* Field: Content: Student Leaders */
   $handler->display->display_options['fields']['field_student_names']['id'] = 'field_student_names';
   $handler->display->display_options['fields']['field_student_names']['table'] = 'field_data_field_student_names';
   $handler->display->display_options['fields']['field_student_names']['field'] = 'field_student_names';
-  $handler->display->display_options['fields']['field_student_names']['label'] = 'Project Team';
   $handler->display->display_options['fields']['field_student_names']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_student_names']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_student_names']['element_label_class'] = 'slug-medium';
   $handler->display->display_options['fields']['field_student_names']['element_label_colon'] = FALSE;
-  /* Field: Content: What are the ages or grades of the students you worked with in this example? */
+  /* Field: Content: Age of students */
   $handler->display->display_options['fields']['field_age_grade']['id'] = 'field_age_grade';
   $handler->display->display_options['fields']['field_age_grade']['table'] = 'field_data_field_age_grade';
   $handler->display->display_options['fields']['field_age_grade']['field'] = 'field_age_grade';
@@ -887,7 +645,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_submitters_lname']['id'] = 'field_submitters_lname';
   $handler->display->display_options['fields']['field_submitters_lname']['table'] = 'field_data_field_submitters_lname';
   $handler->display->display_options['fields']['field_submitters_lname']['field'] = 'field_submitters_lname';
-  $handler->display->display_options['fields']['field_submitters_lname']['label'] = 'Project Leader';
+  $handler->display->display_options['fields']['field_submitters_lname']['label'] = 'Adult Supporter';
   $handler->display->display_options['fields']['field_submitters_lname']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_submitters_lname']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_submitters_lname']['alter']['text'] = '[field_submitters_fname] [field_submitters_lname]';
@@ -902,31 +660,26 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_project_summary']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_project_summary']['element_label_class'] = 'slug-medium';
   $handler->display->display_options['fields']['field_project_summary']['element_label_colon'] = FALSE;
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="basic__content orange">Names of students or group</div>
-<div class="basic__content">[field_student_names] </div>
-<div class="basic__content orange">Leader</div>
-<div class="basic__content">[field_submitters_lname] </div>
-<div class="basic__content orange">What are the ages or grades of the students you worked with in this example?</div>
-<div class="basic__content">[field_age_grade] </div>';
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'span4';
   /* Field: Content: Facebook */
   $handler->display->display_options['fields']['field_slc_facebook']['id'] = 'field_slc_facebook';
   $handler->display->display_options['fields']['field_slc_facebook']['table'] = 'field_data_field_slc_facebook';
   $handler->display->display_options['fields']['field_slc_facebook']['field'] = 'field_slc_facebook';
   $handler->display->display_options['fields']['field_slc_facebook']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_facebook']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_facebook']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_facebook']['alter']['text'] = '<a href="[field_slc_facebook]">Connect on Facebook</a>';
   $handler->display->display_options['fields']['field_slc_facebook']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slc_facebook']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_facebook']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_slc_facebook']['type'] = 'link_plain';
   /* Field: Content: Instagram */
   $handler->display->display_options['fields']['field_slc_instagram']['id'] = 'field_slc_instagram';
   $handler->display->display_options['fields']['field_slc_instagram']['table'] = 'field_data_field_slc_instagram';
   $handler->display->display_options['fields']['field_slc_instagram']['field'] = 'field_slc_instagram';
   $handler->display->display_options['fields']['field_slc_instagram']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_instagram']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_instagram']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_instagram']['alter']['text'] = '<a href="[field_slc_instagram] ">Connect on Instagram</a>';
   $handler->display->display_options['fields']['field_slc_instagram']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slc_instagram']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_instagram']['empty_zero'] = TRUE;
@@ -936,34 +689,90 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_twitter']['table'] = 'field_data_field_slc_twitter';
   $handler->display->display_options['fields']['field_slc_twitter']['field'] = 'field_slc_twitter';
   $handler->display->display_options['fields']['field_slc_twitter']['label'] = '';
+  $handler->display->display_options['fields']['field_slc_twitter']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_twitter']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_slc_twitter']['alter']['text'] = '<a href="[field_slc_twitter] ">Connect on Twitter</a>';
   $handler->display->display_options['fields']['field_slc_twitter']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slc_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['click_sort_column'] = 'url';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="slc-upper-image">
+<div class="slc-partner slug">[field_partner] </div>
+<div class="slc-main-image">[field_slc_main_image]</div>
+<div class="slc-share">
+<div class="NGMedium large orange">SHARE THIS PAGE </div><div class="sociallinks"><a class="social-media icon-twitter" target="_blank" href="https://twitter.com/TeachForAll"></a>  <a class="social-media icon-facebook" target="_blank" href="https://facebook.com/teachforall"></a>  <a class="social-media icon-linkedin" target="_blank" href="https://www.linkedin.com/company/teach-for-all"></a> <a class="social-media icon-vimeo" target="_blank" href="https://vimeo.com/teachforall"></a></div>
+</div>
+</div>';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_wrapper_class'] = 'span8';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="slc-upper-content">
+<div class="slug">Student Leaders</div>
+<div class="basic__content">[field_student_names] </div>
+<div class="slug">Adult Supporter</div>
+<div class="basic__content">[field_submitters_lname] </div>
+<div class="basic__content">[field_slc_facebook] </div>
+<div class="basic__content">[field_slc_instagram] </div>
+<div class="basic__content">[field_slc_twitter] </div>
+<div class="slug">Age of Students</div>
+<div class="basic__content">[field_age_grade] </div>
+</div>
+';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_class'] = 'span4';
   /* Field: Content: Reflection Question 1: Please describe how your students exercised their leadership and the impact they had. */
   $handler->display->display_options['fields']['field_question1']['id'] = 'field_question1';
   $handler->display->display_options['fields']['field_question1']['table'] = 'field_data_field_question1';
   $handler->display->display_options['fields']['field_question1']['field'] = 'field_question1';
   $handler->display->display_options['fields']['field_question1']['label'] = 'Please describe how your students exercised their leadership and the impact they had.';
+  $handler->display->display_options['fields']['field_question1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_question1']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_question1']['element_label_class'] = 'NGMedium';
   $handler->display->display_options['fields']['field_question1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_question1']['element_wrapper_class'] = 'span12';
   /* Field: Content: Reflection Question 2: What role did you play in supporting your students’ leadership? */
   $handler->display->display_options['fields']['field_question2']['id'] = 'field_question2';
   $handler->display->display_options['fields']['field_question2']['table'] = 'field_data_field_question2';
   $handler->display->display_options['fields']['field_question2']['field'] = 'field_question2';
   $handler->display->display_options['fields']['field_question2']['label'] = 'What role did you play in supporting your students’ leadership?';
+  $handler->display->display_options['fields']['field_question2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_question2']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_question2']['element_label_class'] = 'NGMedium';
   $handler->display->display_options['fields']['field_question2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_question2']['element_wrapper_class'] = 'span12';
   /* Field: Content: Reflection Question 3: What did you and your students learn in this activity that will endure beyond today? */
   $handler->display->display_options['fields']['field_question3']['id'] = 'field_question3';
   $handler->display->display_options['fields']['field_question3']['table'] = 'field_data_field_question3';
   $handler->display->display_options['fields']['field_question3']['field'] = 'field_question3';
   $handler->display->display_options['fields']['field_question3']['label'] = 'What did you and your students learn in this activity that will endure beyond today?';
+  $handler->display->display_options['fields']['field_question3']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_question3']['element_label_type'] = 'div';
   $handler->display->display_options['fields']['field_question3']['element_label_class'] = 'NGMedium';
   $handler->display->display_options['fields']['field_question3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_question3']['element_wrapper_class'] = 'span12';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_2']['id'] = 'nothing_2';
+  $handler->display->display_options['fields']['nothing_2']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_2']['label'] = '';
+  $handler->display->display_options['fields']['nothing_2']['alter']['text'] = '<h3">Please describe how your students exercised their leadership and the impact they had.</h3>
+[field_question1] 
+
+<h3">What role did you play in supporting your students’ leadership?</h3>
+[field_question2] 
+
+<h3">What did you and your students learn in this activity that will endure beyond today?</h3>
+[field_question3] ';
+  $handler->display->display_options['fields']['nothing_2']['element_label_colon'] = FALSE;
 
   /* Display: SLC page images & video */
   $handler = $view->new_display('panel_pane', 'SLC page images & video', 'panel_pane_3');
@@ -976,7 +785,7 @@ function slc_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Photos & caption */
+  /* Field: Content: Photos */
   $handler->display->display_options['fields']['field_photos_caption']['id'] = 'field_photos_caption';
   $handler->display->display_options['fields']['field_photos_caption']['table'] = 'field_data_field_photos_caption';
   $handler->display->display_options['fields']['field_photos_caption']['field'] = 'field_photos_caption';
@@ -994,7 +803,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_photos_caption']['multi_type'] = 'ul';
   $handler->display->display_options['fields']['field_photos_caption']['separator'] = '';
   $handler->display->display_options['fields']['field_photos_caption']['field_api_classes'] = TRUE;
-  /* Field: Content: Video link & caption */
+  /* Field: Content: Video links */
   $handler->display->display_options['fields']['field_video_link_caption']['id'] = 'field_video_link_caption';
   $handler->display->display_options['fields']['field_video_link_caption']['table'] = 'field_data_field_video_link_caption';
   $handler->display->display_options['fields']['field_video_link_caption']['field'] = 'field_video_link_caption';

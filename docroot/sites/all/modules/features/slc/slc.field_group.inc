@@ -21,7 +21,7 @@ function slc_field_group_info() {
   $field_group->parent_name = 'group_pics_videos_docs';
   $field_group->data = array(
     'label' => 'Pictures',
-    'weight' => '7',
+    'weight' => '3',
     'children' => array(
       0 => 'field_photos_caption',
       1 => 'field_slc_main_image',
@@ -42,6 +42,36 @@ function slc_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_pics_videos_docs|node|student_leaders_campaign|form';
+  $field_group->group_name = 'group_pics_videos_docs';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'student_leaders_campaign';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Supporting Pictures, Videos and Resources',
+    'weight' => '3',
+    'children' => array(
+      0 => 'group_pic_caption',
+      1 => 'group_support_docs',
+      2 => 'group_vid_caption',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Supporting Pictures, Videos and Resources',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => 'main-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $export['group_pics_videos_docs|node|student_leaders_campaign|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_slc_info_reflection|node|student_leaders_campaign|form';
   $field_group->group_name = 'group_slc_info_reflection';
   $field_group->entity_type = 'node';
@@ -50,15 +80,14 @@ function slc_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Project Information and Reflection',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_age_grade',
-      1 => 'field_student_names',
-      2 => 'field_question1',
-      3 => 'field_question2',
-      4 => 'field_question3',
-      5 => 'field_slc_headline',
-      6 => 'title',
+      1 => 'field_question1',
+      2 => 'field_question2',
+      3 => 'field_question3',
+      4 => 'field_student_names',
+      5 => 'title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -87,8 +116,8 @@ function slc_field_group_info() {
     'weight' => '21',
     'children' => array(
       0 => 'field_slc_facebook',
-      1 => 'field_slc_twitter',
-      2 => 'field_slc_instagram',
+      1 => 'field_slc_instagram',
+      2 => 'field_slc_twitter',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -114,7 +143,7 @@ function slc_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Internal',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_project_summary',
     ),
@@ -142,12 +171,12 @@ function slc_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Submitter & Group Information',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
-      0 => 'field_submitters_fname',
-      1 => 'field_submitters_lname',
-      2 => 'field_submitters_email',
-      3 => 'field_partner',
+      0 => 'field_partner',
+      1 => 'field_submitters_email',
+      2 => 'field_submitters_fname',
+      3 => 'field_submitters_lname',
       4 => 'group_socialmedia',
     ),
     'format_type' => 'fieldset',
@@ -174,7 +203,7 @@ function slc_field_group_info() {
   $field_group->parent_name = 'group_pics_videos_docs';
   $field_group->data = array(
     'label' => 'Supporting Resources',
-    'weight' => '10',
+    'weight' => '5',
     'children' => array(
       0 => 'field_support_docs',
       1 => 'field_support_info_links',
@@ -203,7 +232,7 @@ function slc_field_group_info() {
   $field_group->parent_name = 'group_pics_videos_docs';
   $field_group->data = array(
     'label' => 'Videos ',
-    'weight' => '9',
+    'weight' => '4',
     'children' => array(
       0 => 'field_video_link_caption',
     ),

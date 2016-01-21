@@ -8,6 +8,12 @@
  * Implements hook_ctools_plugin_api().
  */
 function slc_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  if ($module == "ctools_custom_content" && $api == "ctools_content") {
+    return array("version" => "1");
+  }
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -92,7 +98,8 @@ function slc_node_info() {
     'student_leaders_campaign' => array(
       'name' => t('Student Leaders Campaign'),
       'base' => 'node_content',
-      'description' => t('How are you working with the students you serve to build their leadership? We want to hear stories of acts of student leadership, big and small. How have your students shown their ability to be problem solvers, critical thinkers, effective communicators, empathetic friends, creative innovators, or collaborative teammates? What role did you play in cultivating these skills and action as a teacher, mentor, coach, partner or friend? What did you and your students learn that will endure beyond today? We want to hear your story. Please take a few minutes to submit your story and share it with the Teach For All community.'),
+      'description' => t('<h1>Share Your Story</h1>
+How are you helping students build their leadership? We want to know about acts of student leadership, big and small. How have your students shown their ability to be problem solvers, critical thinkers, effective communicators, empathetic friends, creative innovators, or collaborative teammates? What role did you play in cultivating these skills and actions as a teacher, mentor, coach, collaborator, or friend? What did you and your students learn that will endure beyond today? Please take a few minutes to submit your story below and share it with the Teach For All community. Remember to read the <a href="/student-leaders-campaign-faq" target="_blank">Frequently Asked Questions </a> section and <a hred="/student-leaders-campaign-contact-form" target="_blank">Contact Us </a> if you have additional questions. '),
       'has_title' => '1',
       'title_label' => t('Brief Project Headline'),
       'help' => '',

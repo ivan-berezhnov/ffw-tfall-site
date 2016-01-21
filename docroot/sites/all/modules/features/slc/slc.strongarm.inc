@@ -102,19 +102,19 @@ function slc_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
@@ -149,7 +149,9 @@ function slc_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_student_leaders_campaign';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'status',
+  );
   $export['node_options_student_leaders_campaign'] = $strongarm;
 
   $strongarm = new stdClass();
