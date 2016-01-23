@@ -483,9 +483,16 @@ table#field-photos-caption-values tbody tr.draggable td {
   margin-bottom: 25px;
 }
 .slc-share {
+  color: #e59740;
   display: inline-block;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  margin-right: 10px;
   margin-top: 20px;
   width: 100%;
+}
+.pane-slc-landing-panel-pane-1.featured_stories {
+  margin-top: 20px;
 }
 .views-field.views-field-nothing-2 {
   clear: both;
