@@ -482,6 +482,10 @@ table#field-photos-caption-values tbody tr.draggable td {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+.pane-custom.pane-1.slc-shareintro {
+  float: left;
+  margin-top: -20px;
+}
 .slc-share {
   color: #e59740;
   display: inline-block;
@@ -490,6 +494,9 @@ table#field-photos-caption-values tbody tr.draggable td {
   margin-right: 10px;
   margin-top: 20px;
   width: 100%;
+}
+.slc-share .st_twitter_large .stLarge, .slc-share .st_facebook_large .stLarge {
+  background-color: #90998b;
 }
 .pane-slc-landing-panel-pane-1.featured_stories {
   margin-top: 20px;
