@@ -455,13 +455,19 @@ table#field-photos-caption-values tbody tr.draggable td {
   clear: both;
 }
 /** SLC landing  **/
-
+.slc-campaign-page .span8 {
+  margin-left: 0;
+}
 .row-fluid .view-slc-landing.view-id-slc_landing.view-display-id-panel_pane_2 .views-row.span3 {
   margin: 0 0.95%;
   min-height: 280px;
 }
 .view-slc-landing.view-id-slc_landing.view-display-id-panel_pane_2 .views-field-field-slc-main-image {
   height: 150px;
+}
+h1.black.slc-main-title {
+  color: #4d4d4d;
+  text-align: left;
 }
 .panel-panel .slc-title h1 {
   margin-bottom: 20px;
@@ -490,6 +496,9 @@ table#field-photos-caption-values tbody tr.draggable td {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+.slc-upper-image {
+  margin: 20px 0;
+}
 .slc-shareintro {
   float: left;
   margin-top: -20px;
@@ -497,7 +506,7 @@ table#field-photos-caption-values tbody tr.draggable td {
 .slc-share {
   color: #e59740;
   display: inline-block;
-  font-weight: "News Gothic","Arial Narrow",Arial,sans-serif;
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
   font-size: 22px;
   letter-spacing: 0.05em;
   margin-right: 10px;
