@@ -47,6 +47,9 @@ form#user-profile-form,
   line-height: 29px;
   display: none;
 }
+.panel-panel .view-slc-landing-slider .flexslider-info {
+  bottom: 5px;
+}
 .panel-panel .view-slc-landing-slider .flexslider-info h2 a {
   color: #fff;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -82,7 +85,7 @@ form#user-profile-form,
 }
 .slc-panel.top .pane-content {
   background: #cf4753;
-  padding: 15px 10px;
+  padding: 0;
   margin-bottom: 20px;
 }
 .slc-panel .pane-content{
@@ -103,7 +106,8 @@ form#user-profile-form,
   color: #fff;
   font-family:  "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 22px;
-  letter-spacing: 2px;  
+  letter-spacing: 2px; 
+  line-height: 44px; 
 }
 .slc-panel .page-section.xlbutton > a:hover {
   color: #fff;
@@ -452,8 +456,12 @@ table#field-photos-caption-values tbody tr.draggable td {
 }
 /** SLC landing  **/
 
-.row-fluid .view-slc-landing .views-row.span3 {
+.row-fluid .view-slc-landing.view-id-slc_landing.view-display-id-panel_pane_2 .views-row.span3 {
   margin: 0 0.95%;
+  min-height: 280px;
+}
+.view-slc-landing.view-id-slc_landing.view-display-id-panel_pane_2 .views-field-field-slc-main-image {
+  height: 150px;
 }
 .panel-panel .slc-title h1 {
   margin-bottom: 20px;
@@ -495,7 +503,7 @@ table#field-photos-caption-values tbody tr.draggable td {
   margin-top: 20px;
   width: 100%;
 }
-.slc-share .st_twitter_large .stLarge, .slc-share .st_facebook_large .stLarge {
+.pane-sharethis .st_twitter_large .stLarge, .pane-sharethis .st_facebook_large .stLarge {
   background-color: #90998b;
 }
 .pane-slc-landing-panel-pane-1.featured_stories {
