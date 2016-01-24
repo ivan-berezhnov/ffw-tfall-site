@@ -156,7 +156,6 @@ form#user-profile-form,
 #student-leaders-campaign-node-form .counter {
   color: #91998c;
   font-size: 0.85em;
-  font-style: italic;
 }
 #student-leaders-campaign-node-form #node-edit .panel-pane.pane-node-form-author.pane-form label,
 #student-leaders-campaign-node-form #node-edit .panel-pane.pane-node-form-publishing.pane-form label,
@@ -214,7 +213,7 @@ form#user-profile-form,
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 #student-leaders-campaign-node-form .text-format-wrapper .description {
@@ -227,19 +226,20 @@ form#user-profile-form,
 }
 
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
-  background: #e69740 none repeat scroll 0 0;
+  background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;
   border-radius: 0;
   box-shadow: 0 0 0 0 #d2d2d2;
   color: #fff;
   cursor: pointer;
-  font: normal 12px/32px "Fedra Serif", Georgia, "Times New Roman", serif;
-  height: 33px;
+  font: normal 22px/44px "News Gothic","Arial Narrow",Arial,sans-serif;
+  height: auto;
   margin-bottom: 0.5em;
   margin-right: 1em;
   outline: medium none;
   padding: 2px 13px 1px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit:hover {
@@ -369,7 +369,9 @@ table#field-video-link-caption-values tbody tr.draggable td,
 table#field-photos-caption-values tbody tr.draggable td {
   padding: 20px 10px;
 }
-
+#student-leaders-campaign-node-form #node-edit .form-item.form-type-textfield.form-item-name label {
+  width: 100%;
+}
 /*** project page   ***/
 .slc-campaign-page .fieldable-panels-pane {
   text-align: center;
@@ -549,4 +551,12 @@ h1.black.slc-main-title {
 }
 .panel-panel .slc-contact img {
     width: auto;
+}
+/*** slc basic pages   ***/
+
+.slc-basic-page .panel-panel h2 a {
+  color: #cf4753;
+}
+.slc-basic-page .panel-panel h2 a:hover {
+  color: #e69740;
 }

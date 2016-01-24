@@ -98,10 +98,9 @@ function slc_node_info() {
     'student_leaders_campaign' => array(
       'name' => t('Student Leaders Campaign'),
       'base' => 'node_content',
-      'description' => t('<h1>Share Your Story</h1>
-How are you helping students build their leadership? We want to know about acts of student leadership, big and small. How have your students shown their ability to be problem solvers, critical thinkers, effective communicators, empathetic friends, creative innovators, or collaborative teammates? What role did you play in cultivating these skills and actions as a teacher, mentor, coach, collaborator, or friend? What did you and your students learn that will endure beyond today? Please take a few minutes to submit your story below and share it with the Teach For All community. Remember to read the <a href="/student-leaders-campaign-faq" target="_blank">Frequently Asked Questions </a> section and <a hred="/student-leaders-campaign-contact-form" target="_blank">Contact Us </a> if you have additional questions. '),
+      'description' => t('Project submission form for Student Leaders Campaign'),
       'has_title' => '1',
-      'title_label' => t('Brief Project Headline'),
+      'title_label' => t('Project Headline'),
       'help' => '',
     ),
   );

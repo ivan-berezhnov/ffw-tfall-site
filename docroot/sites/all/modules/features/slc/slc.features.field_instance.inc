@@ -121,7 +121,7 @@ function slc_field_default_field_instances() {
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'What are the ages or grades of the students you worked with in this submission?*',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -235,7 +235,7 @@ function slc_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -244,7 +244,7 @@ function slc_field_default_field_instances() {
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Add up to 6 images that demonstrate or support the project, along with captions. The types of documents allowed are: jpg, png. ',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -646,71 +646,6 @@ function slc_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-student_leaders_campaign-field_slc_headline'
-  $field_instances['node-student_leaders_campaign-field_slc_headline'] = array(
-    'bundle' => 'student_leaders_campaign',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This headline will be used to describe your project. Maximum 60 characters.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 16,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'global_organization' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'our_model' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_slc_headline',
-    'label' => 'Descriptive Headline',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 1,
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'size' => 120,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-student_leaders_campaign-field_slc_instagram'
   $field_instances['node-student_leaders_campaign-field_slc_instagram'] = array(
     'bundle' => 'student_leaders_campaign',
@@ -956,8 +891,7 @@ function slc_field_default_field_instances() {
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'If your student leadership example includes 5 or fewer students, please give their first names.  Otherwise provide the name of the group or organization. <br>
-Please make sure to abide by any policies of your school or country that govern the publishing of students names and photos.
+    'description' => 'Please provide the name of the school, group or organization these student leaders are a part of. If it is a small group of students, you can submit their first names. Please make sure to abide by any policies of your school, organization or country that govern the publishing of students names and photos.
 ',
     'display' => array(
       'default' => array(
@@ -1023,7 +957,7 @@ Please make sure to abide by any policies of your school or country that govern 
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Email address is collected for internal use only. This information will not be made public.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1079,7 +1013,7 @@ Please make sure to abide by any policies of your school or country that govern 
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -1345,7 +1279,7 @@ Please make sure to abide by any policies of your school or country that govern 
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Provide the link to the page of the Vimeo or YouTube video (other video links will not work).  Paste the link the page, not the embed code. ',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1410,34 +1344,31 @@ Please make sure to abide by any policies of your school or country that govern 
   t('<strong>Example:</strong> @teachforall');
   t('<strong>Example:</strong> https://www.facebook.com/teachforall');
   t('<strong>Example:</strong> https://www.instagram.com/teachforall');
-  t('Add up to 6 images that demonstrate or support the project, along with captions. The types of documents allowed are: jpg, png. ');
   t('Age of students');
-  t('Descriptive Headline');
   t('Email Address');
+  t('Email address is collected for internal use only. This information will not be made public.');
   t('Facebook');
   t('First Name');
-  t('If your student leadership example includes 5 or fewer students, please give their first names.  Otherwise provide the name of the group or organization. <br>
-Please make sure to abide by any policies of your school or country that govern the publishing of students names and photos.
-');
   t('Instagram');
   t('Last Name');
   t('Main Image');
   t('Photos');
   t('Picture');
+  t('Please provide the name of the school, group or organization these student leaders are a part of. If it is a small group of students, you can submit their first names. Please make sure to abide by any policies of your school, organization or country that govern the publishing of students names and photos.
+');
   t('Project Summary');
-  t('Provide the link to the page of the Vimeo or YouTube video (other video links will not work).  Paste the link the page, not the embed code. ');
   t('Reflection Question 1: Please describe how your students exercised their leadership and the impact they had.');
   t('Reflection Question 2: What role did you play in supporting your students’ leadership?');
   t('Reflection Question 3: What did you and your students learn in this activity that will endure beyond today?');
   t('Student Leaders');
   t('Supporting docs');
   t('Supporting information links');
-  t('This headline will be used to describe your project. Maximum 60 characters.');
   t('This is a brief summary of your project that will be displayed on the website. This field is required. There are also some optional Reflection Questions below that will allow you to provide more information. ');
   t('Twitter');
   t('Video link');
   t('Video links');
   t('What Teach For All partner organization are you a part of?');
+  t('What are the ages or grades of the students you worked with in this submission?*');
 
   return $field_instances;
 }

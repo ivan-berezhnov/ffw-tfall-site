@@ -147,7 +147,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_partner']['table'] = 'field_data_field_partner';
   $handler->display->display_options['fields']['field_partner']['field'] = 'field_partner';
   $handler->display->display_options['fields']['field_partner']['label'] = '';
-  $handler->display->display_options['fields']['field_partner']['element_class'] = 'basic__content orange';
+  $handler->display->display_options['fields']['field_partner']['element_class'] = 'slug';
   $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_partner']['type'] = 'taxonomy_term_reference_plain';
   /* Field: Content: Main Image */
@@ -321,7 +321,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '170',
   );
-  /* Field: Content: Descriptive Headline */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_slc_headline']['id'] = 'field_slc_headline';
   $handler->display->display_options['fields']['field_slc_headline']['table'] = 'field_data_field_slc_headline';
   $handler->display->display_options['fields']['field_slc_headline']['field'] = 'field_slc_headline';
@@ -756,6 +756,23 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_partner']['element_class'] = 'slug';
   $handler->display->display_options['fields']['field_partner']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_partner']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
+  $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_3']['label'] = '';
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '<div class="slc-partner slug">[field_partner] </div>
+<h1 class="black slc-main-title">[title] </h1>';
+  $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['element_wrapper_class'] = 'span12';
   /* Field: Content: Main Image */
   $handler->display->display_options['fields']['field_slc_main_image']['id'] = 'field_slc_main_image';
   $handler->display->display_options['fields']['field_slc_main_image']['table'] = 'field_data_field_slc_main_image';
@@ -868,11 +885,9 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="slc-upper-image">
-<div class="slc-partner slug">[field_partner] </div>
-<div class="slc-main-image">[field_slc_main_image]</div>
-<div class="slc-share">
-[php]
-</div>
+  <div class="slc-main-image">[field_slc_main_image]</div>
+  <div class="slc-shareintro"><div class="slc-share">SHARE THIS PAGE | #1000StudentLeaders</div></div>
+  <div class="pane-sharethis">  [php]  </div>
 </div>';
   $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_1']['element_wrapper_class'] = 'span8';
@@ -885,10 +900,10 @@ function slc_views_default_views() {
 <div class="slug">Student Leaders</div>
 <div class="basic__content">[field_student_names] </div>
 <div class="slug">Adult Supporter</div>
-<div class="basic__content">[field_submitters_lname] </div>
-<div class="basic__content">[field_slc_facebook] </div>
-<div class="basic__content">[field_slc_instagram] </div>
-<div class="basic__content">[field_slc_twitter] </div>
+<div class="basic__content supporter">[field_submitters_lname] </div>
+<div class="sharethis">[field_slc_facebook] </div>
+<div class="sharethis">[field_slc_instagram] </div>
+<div class="sharethis">[field_slc_twitter] </div>
 <div class="slug">Age of Students</div>
 <div class="basic__content">[field_age_grade] </div>
 </div>

@@ -31,13 +31,44 @@ function slc_field_group_info() {
       'label' => 'Pictures',
       'instance_settings' => array(
         'required_fields' => 0,
+        'id' => '',
         'classes' => 'sub-fieldset',
-        'description' => 'Add up to 6 images that demonstrate or support the project, along with captions. The types of documents allowed are: jpg, png. Note that the first image will be used as the main image. You can use the handle at the left of the images to drag and reorder images. ',
+        'description' => 'Please upload up to 6 picture that demonstrate your submission.The types of image files we can accept are: png, gif, jpg, jpeg.  Please make sure to abide by any policies of your school, organization or country that govern the publishing of students names and photos. Any inappropriate content will not be accepted. ',
       ),
       'formatter' => 'collapsed',
     ),
   );
   $field_groups['group_pic_caption|node|student_leaders_campaign|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_pics_videos_docs|node|student_leaders_campaign_|form';
+  $field_group->group_name = 'group_pics_videos_docs';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'student_leaders_campaign';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Supporting Pictures, Videos, Documents',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_vid_caption',
+      1 => 'group_pic_caption',
+      2 => 'group_support_docs',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'label' => 'Supporting Pictures, Videos, Documents',
+      'instance_settings' => array(
+        'required_fields' => 1,
+        'classes' => 'main-fieldset',
+        'description' => '',
+      ),
+      'formatter' => 'collapsed',
+    ),
+  );
+  $field_groups['group_pics_videos_docs|node|student_leaders_campaign_|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -113,7 +144,7 @@ function slc_field_group_info() {
   $field_group->parent_name = 'group_submitter_info';
   $field_group->data = array(
     'label' => 'Social Media',
-    'weight' => '21',
+    'weight' => '18',
     'children' => array(
       0 => 'field_slc_facebook',
       1 => 'field_slc_instagram',
@@ -124,8 +155,9 @@ function slc_field_group_info() {
       'label' => 'Social Media',
       'instance_settings' => array(
         'required_fields' => 0,
+        'id' => '',
         'classes' => 'sub-fieldset',
-        'description' => 'Add links to your Facebook, Twitter & Instagram accounts so we can follow you or your group. This will be displayed on the website.',
+        'description' => 'If you are active on social media and would like your Facebook, Twitter or Instagram ID made public so others can connect with you, please include those links below. Remember our hashtag #1000StudentLeaders',
       ),
       'formatter' => 'collapsed',
     ),
@@ -213,8 +245,9 @@ function slc_field_group_info() {
       'label' => 'Supporting Resources',
       'instance_settings' => array(
         'required_fields' => 0,
+        'id' => '',
         'classes' => 'sub-fieldset',
-        'description' => 'Upload up to 5 documents that support or are related to your project. The following types of documents are allowed: txt, pdf, doc, docx',
+        'description' => 'You can submit additional resources related to your submission by uploading them as documents or pasting the weblink. You can upload up to 3 supporting resources and submit up to 5 weblinks. These supporting resources are for internal use only and will not be made public on the campaign website. The types of files we can accept are: txt, pdf, doc, docx. Any inappropriate content will not be accepted.',
       ),
       'formatter' => 'collapsed',
     ),
@@ -241,8 +274,9 @@ function slc_field_group_info() {
       'label' => 'Videos ',
       'instance_settings' => array(
         'required_fields' => 0,
+        'id' => '',
         'classes' => 'sub-fieldset',
-        'description' => 'Provide the link to the page of the Vimeo or YouTube video (other video links will not work). Paste the link the page, not the embed code.
+        'description' => 'Please submit a link to up to 2 videos that demonstrate your submission. Currently, we are only able to accept links to videos posted on YouTube or Vimeo.  Other video links (such as Facebook or Google) will not work. Please be sure to paste the link to the page, not the embed code. Any inappropriate content will not be accepted.
 ',
       ),
       'formatter' => 'collapsed',
@@ -258,6 +292,7 @@ function slc_field_group_info() {
   t('Social Media');
   t('Submitter & Group Information');
   t('Supporting Pictures, Videos and Resources');
+  t('Supporting Pictures, Videos, Documents');
   t('Supporting Resources');
   t('Videos ');
 
