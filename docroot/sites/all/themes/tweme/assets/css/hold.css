@@ -490,13 +490,14 @@ table#field-photos-caption-values tbody tr.draggable td {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-.pane-custom.pane-1.slc-shareintro {
+.slc-shareintro {
   float: left;
   margin-top: -20px;
 }
 .slc-share {
   color: #e59740;
   display: inline-block;
+  font-weight: "News Gothic","Arial Narrow",Arial,sans-serif;
   font-size: 22px;
   letter-spacing: 0.05em;
   margin-right: 10px;
