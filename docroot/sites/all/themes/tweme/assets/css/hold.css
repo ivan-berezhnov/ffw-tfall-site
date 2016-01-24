@@ -498,7 +498,7 @@ h1.black.slc-main-title {
   margin-bottom: 25px;
 }
 .slc-upper-image {
-  margin: 0px 0 20px;
+  margin: 5px 0 20px;
 }
 .slc-main-image {
   margin-bottom: 20px;
@@ -528,9 +528,25 @@ h1.black.slc-main-title {
   clear: both;
   padding-top: 10px;
 }
-.slc-campaign-page .sharethis {
+.basic__content.supporter {
+  margin-bottom: 0;
+}
+.slc-campaign-page .sharethis a{
   color: #cf4753;
   font-size: 12px;
   font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
+  margin-left: 5px;
 }
-
+/*** contact us   ***/
+.slc-contact .btn-primary {
+  background-color: #cf4753;
+}
+.slc-contact .form-actions {
+  border-top: 0 solid #e5e5e5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 19px 20px 20px;
+}
+.panel-panel .slc-contact img {
+    width: auto;
+}
