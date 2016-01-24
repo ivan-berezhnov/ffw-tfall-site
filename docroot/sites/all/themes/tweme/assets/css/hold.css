@@ -468,6 +468,7 @@ table#field-photos-caption-values tbody tr.draggable td {
 h1.black.slc-main-title {
   color: #4d4d4d;
   text-align: left;
+  margin: 10px 0 20px;
 }
 .panel-panel .slc-title h1 {
   margin-bottom: 20px;
@@ -497,7 +498,10 @@ h1.black.slc-main-title {
   margin-bottom: 25px;
 }
 .slc-upper-image {
-  margin: 20px 0;
+  margin: 0px 0 20px;
+}
+.slc-main-image {
+  margin-bottom: 20px;
 }
 .slc-shareintro {
   float: left;
@@ -516,11 +520,17 @@ h1.black.slc-main-title {
 .pane-sharethis .st_twitter_large .stLarge, .pane-sharethis .st_facebook_large .stLarge {
   background-color: #90998b;
 }
+
 .pane-slc-landing-panel-pane-1.featured_stories {
   margin-top: 20px;
 }
 .views-field.views-field-nothing-2 {
   clear: both;
   padding-top: 10px;
+}
+.slc-campaign-page .sharethis {
+  color: #cf4753;
+  font-size: 12px;
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
 }
 
