@@ -8,7 +8,9 @@
 .lnames, .fnames {
   width: auto;
 }
-
+form#webtolead label, form#webtolead input, form#webtolead button, form#webtolead select, form#webtolead textarea {
+  font-size: 16px;
+}
 /*  slc  */
 
 .white2,
