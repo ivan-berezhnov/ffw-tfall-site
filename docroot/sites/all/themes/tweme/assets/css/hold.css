@@ -245,7 +245,7 @@ form#user-profile-form,
 .form-type-link-field .form-item {
   margin: 0;
 }
-#webtoleadinput input#edit-submit,
+#webtolead input#edit-submit,
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
   background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;
