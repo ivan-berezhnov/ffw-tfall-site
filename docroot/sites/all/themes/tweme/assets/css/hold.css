@@ -139,9 +139,6 @@ form#user-profile-form,
   color: #4d4d4d;
   text-decoration: underline;
 }
-.slc-panel .page-section.headlines a:hover {
-  color: #cf4753;
-} 
 .slc-panel .page-section.headlines a .headlinearrows {
   color: #cf4753;
   font-size: 22px;
