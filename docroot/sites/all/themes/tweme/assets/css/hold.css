@@ -238,7 +238,7 @@ form#user-profile-form,
 .form-type-link-field .form-item {
   margin: 0;
 }
-
+#webtoleadinput#edit-submit input#edit-submit,
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
   background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;
@@ -259,7 +259,7 @@ form#user-profile-form,
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit:hover {
   background: #cf4753 none repeat scroll 0 0;
 }
-#webtolead input#edit-submit,
+
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-draft {
   background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;
