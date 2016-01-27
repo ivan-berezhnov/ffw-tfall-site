@@ -10,17 +10,20 @@
       </div>
     </div>
     <div class="span3">
-      <div class="stats">
-        <?php print t('Subscribe to our Newsletter'); ?>
-      </div>
     </div>
     <div class="span3 sidebar-right">
-  	  <div class="constant-contact">
+         <div class="stats">
+ 
+      </div> 
+          <div class="stats newsletter">
+<a href="/subscribe-to-newsletter"><?php print t('Subscribe to our Newsletter'); ?></a>
+      </div>
+<!--   	  <div class="constant-contact">
         <?php
         //including the file with the constant contact submit form block.
-        include ($GLOBALS['theme_path']."/includes/templates/t4all_constant_contact_block.inc");
+        // include ($GLOBALS['theme_path']."/includes/templates/t4all_constant_contact_block.inc");
         ?>
-      </div>
+      </div> -->
         <?php $_render = views_embed_view('tfall_tweets','block'); print render($_render); //twitter block ?>
         <?php $widget_facebook = widget_facebook_embed_homepage() //facebook widget; ?>
         <?php print render($widget_facebook); ?>

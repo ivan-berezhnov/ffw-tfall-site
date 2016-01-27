@@ -11,6 +11,13 @@
 form#webtolead label, form#webtolead input, form#webtolead button, form#webtolead select, form#webtolead textarea {
   font-size: 16px;
 }
+.stats.newsletter {
+ text-align: center; 
+ margin-bottom: 10px; 
+}
+.stats.newsletter a {
+ font-family:"Fedra Serif",Georgia,"Times New Roman",serif;
+}
 /*  slc  */
 
 .white2,
@@ -238,7 +245,7 @@ form#user-profile-form,
 .form-type-link-field .form-item {
   margin: 0;
 }
-#webtoleadinput#edit-submit input#edit-submit,
+#webtoleadinput input#edit-submit,
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit {
   background: #cf4753 none repeat scroll 0 0;
   border: 0 solid #ccc;

@@ -187,13 +187,13 @@
         </div>
         <div class="footer__contact-us"><a href="/contact-us"><?php print t('Contact Us'); ?></a></div>
         <div class="footer__contact-us">
-          <p><?php print t('Subscribe to our Newsletter'); ?></p>
-          <div class="constant-contact">
+          <a class="btn btn-primary" href="/subscribe-to-newsletter"><?php print t('Subscribe to our Newsletter'); ?></a>
+<!--           <div class="constant-contact">
             <?php
             //including the file with the constant contact submit form block.
-            include ($directory."/includes/templates/t4all_constant_contact_block.inc");
+            // include ($directory."/includes/templates/t4all_constant_contact_block.inc");
             ?>
-          </div>
+          </div> -->
         </div>
         <div class="footer__copyright">
           <p><?php print t('Copyright &#169; 2016<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
