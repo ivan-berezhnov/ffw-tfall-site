@@ -1,5 +1,15 @@
 /* hold.css */
 /*  Temp styles - kappaluppa  */
+/* web to lead form  */
+.fnames {
+  float: left;
+ } 
+.lnames, .fnames {
+  width: auto;
+}
+
+/*  slc  */
+
 .white2,
 a .white2 {
   color: #fff;
@@ -333,7 +343,9 @@ form#user-profile-form,
 }
 #edit-field-video-link-caption table,
 #edit-field-photos-caption table,
-#edit-field-support-info-links table {
+#edit-field-support-info-links table,
+table#field-slc-video-links-values,
+table#edit-field-slc-photos-und-table {
   width: 100%;
 }
 #edit-field-video-link-caption table#field-video-link-caption-values  tr.even,
@@ -356,6 +368,11 @@ form#user-profile-form,
 #field-support-info-links-values input {
   width: 80%;
 }
+#student-leaders-campaign-node-form #node-edit .tabledrag-toggle-weight-wrapper {
+  display: none;
+  text-align: right;
+}
+
 #student-leaders-campaign-node-form #node-edit tr.draggable label {
   font-size: 18px;
 }
