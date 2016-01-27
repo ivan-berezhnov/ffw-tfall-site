@@ -3,6 +3,7 @@
 /* web to lead form  */
 .fnames {
   float: left;
+  margin-right: 20px;
  } 
 .lnames, .fnames {
   width: auto;
@@ -134,6 +135,10 @@ form#user-profile-form,
   text-decoration: none;
   text-transform: none;
 } 
+.slc-panel .page-section.headlines a:hover {
+  color: #4d4d4d;
+  text-decoration: underline;
+}
 .slc-panel .page-section.headlines a:hover {
   color: #cf4753;
 } 
