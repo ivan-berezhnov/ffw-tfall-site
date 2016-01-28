@@ -275,7 +275,7 @@ function slc_views_default_views() {
     'image_style' => 'flexslider_full',
     'image_link' => 'content',
   );
-  /* Field: Content: Marquee Image */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_news_image']['id'] = 'field_news_image';
   $handler->display->display_options['fields']['field_news_image']['table'] = 'field_data_field_news_image';
   $handler->display->display_options['fields']['field_news_image']['field'] = 'field_news_image';
@@ -328,7 +328,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_headline']['label'] = '';
   $handler->display->display_options['fields']['field_slc_headline']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_slc_headline']['element_label_colon'] = FALSE;
-  /* Field: Content: Marquee Blurb */
+  /* Field: Content: Blurb */
   $handler->display->display_options['fields']['field_news_byline']['id'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
@@ -665,6 +665,7 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_slc_twitter']['type'] = 'link_plain';
   /* Field: Content: Reflection Question 1: Please describe how your students exercised their leadership and the impact they had. */
   $handler->display->display_options['fields']['field_question1']['id'] = 'field_question1';
   $handler->display->display_options['fields']['field_question1']['table'] = 'field_data_field_question1';
@@ -857,12 +858,12 @@ function slc_views_default_views() {
   $handler->display->display_options['fields']['field_slc_twitter']['label'] = '';
   $handler->display->display_options['fields']['field_slc_twitter']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_slc_twitter']['alter']['text'] = '<a href="[field_slc_twitter] ">Connect on Twitter</a>';
+  $handler->display->display_options['fields']['field_slc_twitter']['alter']['text'] = '<a href="[field_slc_twitter-url]">Connect on Twitter</a>';
   $handler->display->display_options['fields']['field_slc_twitter']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slc_twitter']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_slc_twitter']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_slc_twitter']['type'] = 'link_plain';
+  $handler->display->display_options['fields']['field_slc_twitter']['type'] = 'link_separate';
   /* Field: Global: PHP */
   $handler->display->display_options['fields']['php']['id'] = 'php';
   $handler->display->display_options['fields']['php']['table'] = 'views';

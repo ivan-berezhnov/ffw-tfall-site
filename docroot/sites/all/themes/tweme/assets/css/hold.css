@@ -59,6 +59,7 @@ a .orange2 {
 }
 .captcha form-wrapper,
 .login-forgot,
+form#user-pass-reset,
 form#user-profile-form,
 .form-item.form-type-password.form-item-pass,
 .form-item.form-type-textfield.form-item-name,
