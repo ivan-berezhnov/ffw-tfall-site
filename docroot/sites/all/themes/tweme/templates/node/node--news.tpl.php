@@ -76,7 +76,9 @@
     	  </div>
             <div class="span3">
       <div class="stats newsletter">
-<a href="/subscribe-to-newsletter"><?php print t('Subscribe to our Newsletter'); ?></a>
+           <a href="/subscribe-to-newsletter">
+           <div class="full-list"><?php print t('Subscribe to our Newsletter'); ?> <span class="orange2">>></span></div>
+           </a>
       </div>
     </div>
         <div class="span3 sidebar-right">

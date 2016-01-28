@@ -6,6 +6,7 @@
   margin-right: 20px;
  } 
 .lnames, .fnames {
+  display: inline-block;
   width: auto;
 }
 form#webtolead label, form#webtolead input, form#webtolead button, form#webtolead select, form#webtolead textarea {
@@ -15,8 +16,13 @@ form#webtolead label, form#webtolead input, form#webtolead button, form#webtolea
  text-align: center; 
  margin-bottom: 10px; 
 }
-.stats.newsletter a {
-  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+.newsletterform input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+.content > form#webtolead {
+  margin: 0 auto;
+  width: 50%;
 }
 /*  slc  */
 

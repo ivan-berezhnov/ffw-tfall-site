@@ -187,7 +187,7 @@
         </div>
         <div class="footer__contact-us"><a href="/contact-us"><?php print t('Contact Us'); ?></a></div>
         <div class="footer__contact-us">
-          <a class="btn btn-primary" href="/subscribe-to-newsletter"><?php print t('Subscribe to our Newsletter'); ?></a>
+          <a href="/subscribe-to-newsletter"><?php print t('Subscribe to our Newsletter'); ?></a>
 <!--           <div class="constant-contact">
             <?php
             //including the file with the constant contact submit form block.
