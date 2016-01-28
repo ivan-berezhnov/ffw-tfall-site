@@ -24,6 +24,9 @@ form#webtolead label, form#webtolead input, form#webtolead button, form#webtolea
   margin: 0 auto;
   width: 40%;
 }
+.subscribesubmit {
+  text-align: center;
+}
 /*  slc  */
 
 .white2,
@@ -267,6 +270,7 @@ form#user-profile-form,
   padding: 2px 13px 1px;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: .15em;
 }
 
 #student-leaders-campaign-node-form #node-edit .form-actions input#edit-submit:hover {
