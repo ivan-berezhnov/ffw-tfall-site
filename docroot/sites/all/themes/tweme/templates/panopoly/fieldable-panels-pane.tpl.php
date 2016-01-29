@@ -1,6 +1,7 @@
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print render($title_suffix); ?>
   <?php print render($content['field_basic_text_text']); ?>
+  <?php print render($content['field_basic_image_image']); ?>
   <?php
 
   if (isset($field_video_file)) {
@@ -8,6 +9,9 @@
     if ($filemime == 'video/youtube' || $filemime == 'video/vimeo') {
       if (isset ($field_video_pane_thumbnail)){
       print create_video_file_template($field_video_file, $field_video_pane_thumbnail);
+      }
+      else{
+        print create_video_file_template($field_video_file);
       }
     }
   }    
