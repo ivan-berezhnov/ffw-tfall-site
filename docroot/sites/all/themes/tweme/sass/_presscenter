@@ -1,0 +1,12 @@
+.panel-pane.pane-menu-tree.pane-menu-press-center {
+  background: #91998c none repeat scroll 0 0;
+}
+.panel-panel .menu-descriptions menu p {
+  color: #000;
+  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 1rem;
+  margin-bottom: 1em;
+}
