@@ -1,0 +1,5 @@
+name = presscenterpanelizer export module
+description = Export objects from CTools
+dependencies[] = panelizer
+package = Chaos tool suite
+core = 7.x
