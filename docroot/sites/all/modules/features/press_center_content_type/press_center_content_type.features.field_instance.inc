@@ -249,7 +249,7 @@ function press_center_content_type_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'file',
       'settings' => array(
         'allowed_schemes' => array(
           'public' => 'public',
@@ -264,7 +264,7 @@ function press_center_content_type_field_default_field_instances() {
         ),
         'browser_plugins' => array(
           'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
+          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
           'media_internet' => 0,
           'upload' => 0,
           'youtube' => 0,
@@ -284,7 +284,7 @@ function press_center_content_type_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'media_generic',
+      'type' => 'file_generic',
       'weight' => 4,
     ),
   );

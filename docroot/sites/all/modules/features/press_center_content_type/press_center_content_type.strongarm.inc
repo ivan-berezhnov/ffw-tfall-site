@@ -100,7 +100,7 @@ function press_center_content_type_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_press_center';
   $strongarm->value = array(
-    0 => 'main-menu',
+    0 => 'menu-press-center',
   );
   $export['menu_options_press_center'] = $strongarm;
 
@@ -108,7 +108,7 @@ function press_center_content_type_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_press_center';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'menu-press-center:0';
   $export['menu_parent_press_center'] = $strongarm;
 
   $strongarm = new stdClass();
