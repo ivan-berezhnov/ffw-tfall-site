@@ -68,7 +68,7 @@ function press_center_content_type_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 10,
+      'weight' => 7,
     ),
   );
 
@@ -193,7 +193,7 @@ function press_center_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -364,7 +364,7 @@ function press_center_content_type_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 6,
     ),
   );
 
@@ -411,7 +411,7 @@ function press_center_content_type_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_pc_image',
-    'label' => 'Image',
+    'label' => 'Image needed for video links',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -463,7 +463,7 @@ function press_center_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'media_generic',
-      'weight' => 13,
+      'weight' => 8,
     ),
   );
 
@@ -719,7 +719,7 @@ function press_center_content_type_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 2,
     ),
   );
 
@@ -779,7 +779,7 @@ function press_center_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 7,
+      'weight' => 4,
     ),
   );
 
@@ -846,7 +846,7 @@ function press_center_content_type_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 8,
+      'weight' => 5,
     ),
   );
 
@@ -857,7 +857,7 @@ function press_center_content_type_field_default_field_instances() {
   t('Credit name(s)');
   t('Downloadable files');
   t('External link');
-  t('Image');
+  t('Image needed for video links');
   t('Partner');
   t('Press kit file info');
   t('Press type');
