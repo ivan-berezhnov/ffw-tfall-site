@@ -9115,6 +9115,18 @@ h2.news__title {
 .press-center .view-id-press_center h3 a:hover {
   color: #cf4753;
 }
+/* line 99, ../sass/_presscenter.scss */
+.press-center .flexslider-info h2 a {
+  color: #fff !important;
+}
+/* line 102, ../sass/_presscenter.scss */
+.press-center .flexslider-preview {
+  padding-right: 20px;
+}
+/* line 105, ../sass/_presscenter.scss */
+.press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
+  margin-top: 40px;
+}
 
 /**
 * #Table of Contents
