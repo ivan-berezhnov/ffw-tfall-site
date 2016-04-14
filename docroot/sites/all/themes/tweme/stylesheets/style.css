@@ -9185,6 +9185,10 @@ h2.news__title {
 .press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
   margin-top: 40px;
 }
+/* line 151, ../sass/_presscenter.scss */
+.press-center .flexslider-link a {
+  color: #fff !important;
+}
 
 /**
 * #Table of Contents
