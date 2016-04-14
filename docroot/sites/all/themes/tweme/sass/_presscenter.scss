@@ -2,6 +2,7 @@
 .panel-pane.pane-block.pane-menu-menu-press-center {
   background: #91998c none repeat scroll 0 0;
   margin-right: 20px;
+  margin-bottom: 40px;
   padding: 20px;
   ul li.leaf {
 	  list-style-image: none;
@@ -56,9 +57,22 @@
   margin-bottom: 10px;
 }
 .press-center { 
+	.moscone-container-inner.moscone-header-inner {
+	  display: none;
+	}
+	.moscone-container.moscone-header.clearfix.panel-panel.row-fluid {
+	  display: none;
+	}
 	.landing .full-list {
 		margin-top: 20px;
 	}
+	.phelan-column1-inner {
+	  margin-bottom: 40px;
+	  margin-right: 20px;
+	}
+	#block-views-tfall-tweets-block, .teachforall-twitter-block {
+	  margin-top: 40px;
+	}	
 	.presskitupper {
 		min-height: 160px;
 		h3, a {
@@ -87,6 +101,9 @@
 		}    
 	}	
 	.view-id-press_center {
+		.publicationname {
+			font-family: "News Gothic Medium Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
+		}
 		.views-field.views-field-field-pc-image.span4 {
 		  position: relative;
 		}	
