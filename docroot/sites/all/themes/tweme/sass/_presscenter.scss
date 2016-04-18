@@ -10,7 +10,25 @@
   }
   ul {
 	margin: 0 0 0px;
-	padding: 0 0 0 10px;
+	padding: 0px;
+	li.leaf.first {
+	  margin: 0;
+	  padding: 0;
+	  text-align: center;
+	  a {
+		  color: #000;
+		  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+		  font-size: 1rem;
+		  font-weight: normal;
+		  letter-spacing: 0.2em;
+		  line-height: 1.5em;
+		  text-transform: uppercase;  	  
+	  }
+	}
+	li.leaf {
+	  margin: 0 0 0 .25em;
+	  text-align: left;
+	}	
   }
   li a{
     color: #000;
@@ -22,11 +40,6 @@
     font-weight: normal;
     text-transform: none;
   } 
-	a::after {
-	  color: #e69740;
-	  content: " >>";
-	  font-size: .75em;
-	}
 	a.active::after {
 		 color: #cf4753;
 	}   
@@ -95,6 +108,7 @@
 		    color: #4d4d4d;
 		    font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
 		    font-size: 1.125rem;
+		    letter-spacing: 0;
 		    &:hover {
 		    	color: #cf4753;
 		    }
