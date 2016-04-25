@@ -812,7 +812,7 @@ function slc_field_default_field_instances() {
     'bundle' => 'student_leaders_campaign',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '<strong>Example:</strong> https://twitter.com/@teachforall',
+    'description' => '<strong>Example:</strong> https://twitter.com/teachforall',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1341,7 +1341,7 @@ function slc_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('<strong>Example:</strong> https://twitter.com/@teachforall');
+  t('<strong>Example:</strong> https://twitter.com/teachforall');
   t('<strong>Example:</strong> https://www.facebook.com/teachforall');
   t('<strong>Example:</strong> https://www.instagram.com/teachforall');
   t('Age of students');
