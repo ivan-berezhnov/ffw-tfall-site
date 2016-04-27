@@ -9069,43 +9069,83 @@ h2.news__title {
   color: #fff;
 }
 
-/* line 50, ../sass/_presscenter.scss */
+/* line 49, ../sass/_presscenter.scss */
+#press-inquiries h2 {
+  color: #e69740;
+  font-family: "News Gothic Demi Bold","News Gothic","Arial Narrow",Arial,sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+/* line 57, ../sass/_presscenter.scss */
+#press-inquiries h3 {
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+}
+/* line 62, ../sass/_presscenter.scss */
+#press-inquiries p {
+  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.2rem;
+}
+/* line 67, ../sass/_presscenter.scss */
+#press-inquiries p a {
+  font-size: 14px;
+}
+
+/* line 73, ../sass/_presscenter.scss */
+#quick-links h3 {
+  padding-bottom: 10px;
+}
+/* line 75, ../sass/_presscenter.scss */
+#quick-links h3 a {
+  color: #000;
+}
+/* line 77, ../sass/_presscenter.scss */
+#quick-links h3 a:hover {
+  color: #cf4753;
+}
+
+/* line 83, ../sass/_presscenter.scss */
 .pane-press-center h2.pane-title {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-/* line 55, ../sass/_presscenter.scss */
+/* line 88, ../sass/_presscenter.scss */
 .press-center .moscone-container-inner.moscone-header-inner {
   display: none;
 }
-/* line 58, ../sass/_presscenter.scss */
+/* line 91, ../sass/_presscenter.scss */
 .press-center .moscone-container.moscone-header.clearfix.panel-panel.row-fluid {
   display: none;
 }
-/* line 61, ../sass/_presscenter.scss */
+/* line 94, ../sass/_presscenter.scss */
 .press-center .landing .full-list, .press-center .landing .landing-forum p + a, .landing-forum .press-center .landing p + a {
   margin-top: 20px;
 }
-/* line 64, ../sass/_presscenter.scss */
+/* line 97, ../sass/_presscenter.scss */
 .press-center .phelan-column1-inner {
   margin-bottom: 40px;
   margin-right: 20px;
 }
-/* line 68, ../sass/_presscenter.scss */
+/* line 101, ../sass/_presscenter.scss */
 .press-center #block-views-tfall-tweets-block, .press-center .teachforall-twitter-block {
   margin-top: 40px;
 }
-/* line 71, ../sass/_presscenter.scss */
+/* line 104, ../sass/_presscenter.scss */
 .press-center .presskitupper {
   min-height: 160px;
 }
-/* line 73, ../sass/_presscenter.scss */
+/* line 106, ../sass/_presscenter.scss */
 .press-center .presskitupper h3, .press-center .presskitupper a {
   color: #4d4d4d;
   font-size: 1.125rem;
 }
-/* line 77, ../sass/_presscenter.scss */
+/* line 110, ../sass/_presscenter.scss */
 .press-center .presskitupper p {
   color: #4d4d4d;
   font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
@@ -9115,30 +9155,34 @@ h2.news__title {
   line-height: 1.2rem;
   margin-bottom: 1em;
 }
-/* line 87, ../sass/_presscenter.scss */
+/* line 120, ../sass/_presscenter.scss */
 .press-center .presskitupper2 {
   min-height: 160px;
 }
-/* line 89, ../sass/_presscenter.scss */
+/* line 122, ../sass/_presscenter.scss */
 .press-center .presskitupper2 p a {
   color: #4d4d4d;
   font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
   font-size: 1.125rem;
   letter-spacing: 0;
 }
-/* line 94, ../sass/_presscenter.scss */
+/* line 127, ../sass/_presscenter.scss */
 .press-center .presskitupper2 p a:hover {
   color: #cf4753;
 }
-/* line 100, ../sass/_presscenter.scss */
+/* line 134, ../sass/_presscenter.scss */
 .press-center .view-id-press_center .publicationname {
   font-family: "News Gothic Medium Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 103, ../sass/_presscenter.scss */
+/* line 137, ../sass/_presscenter.scss */
 .press-center .view-id-press_center .views-field.views-field-field-pc-image.span4, .press-center .view-id-press_center .views-field.views-field-field-pc-image.node--video--teaser {
   position: relative;
 }
-/* line 106, ../sass/_presscenter.scss */
+/* line 140, ../sass/_presscenter.scss */
+.press-center .view-id-press_center .views-field.views-field-field-pc-summary {
+  margin-top: 10px;
+}
+/* line 143, ../sass/_presscenter.scss */
 .press-center .view-id-press_center .icon-play {
   background-color: #4d4d4d;
   color: #ffb151;
@@ -9148,45 +9192,45 @@ h2.news__title {
   position: absolute;
   top: 10px;
 }
-/* line 115, ../sass/_presscenter.scss */
+/* line 152, ../sass/_presscenter.scss */
 .press-center .view-id-press_center.view-display-id-page_1 .field-content > h2, .press-center .view-id-press_center.view-display-id-page_2 .field-content > h2 {
   margin-bottom: 5px;
   margin-top: 0;
 }
-/* line 120, ../sass/_presscenter.scss */
+/* line 157, ../sass/_presscenter.scss */
 .press-center .view-id-press_center.view-display-id-block_3 .field-content > h2, .press-center .view-id-press_center.view-display-id-block_4 .field-content > h2 {
   margin-bottom: 0px;
   margin-top: 0;
 }
-/* line 125, ../sass/_presscenter.scss */
+/* line 162, ../sass/_presscenter.scss */
 .press-center .view-id-press_center .views-row {
   margin-bottom: 20px;
 }
-/* line 128, ../sass/_presscenter.scss */
+/* line 165, ../sass/_presscenter.scss */
 .press-center .view-id-press_center h3 {
   margin-bottom: 0px;
 }
-/* line 130, ../sass/_presscenter.scss */
+/* line 167, ../sass/_presscenter.scss */
 .press-center .view-id-press_center h3 a {
   color: #4d4d4d;
 }
-/* line 132, ../sass/_presscenter.scss */
+/* line 169, ../sass/_presscenter.scss */
 .press-center .view-id-press_center h3 a:hover {
   color: #cf4753;
 }
-/* line 138, ../sass/_presscenter.scss */
+/* line 175, ../sass/_presscenter.scss */
 .press-center .flexslider-info h2 a {
   color: #fff !important;
 }
-/* line 141, ../sass/_presscenter.scss */
+/* line 178, ../sass/_presscenter.scss */
 .press-center .flexslider-preview {
   padding-right: 20px;
 }
-/* line 144, ../sass/_presscenter.scss */
+/* line 181, ../sass/_presscenter.scss */
 .press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
   margin-top: 40px;
 }
-/* line 147, ../sass/_presscenter.scss */
+/* line 184, ../sass/_presscenter.scss */
 .press-center .flexslider-link a {
   color: #fff !important;
 }
