@@ -101,7 +101,7 @@
 
             <?php if ($is_field_field_schools_set): ?>
               <div class="no__stat">
-                <strong><?php print render($content['field_schools']); ?></strong><?php print t(' regions: '); ?>
+                <strong><?php print render($content['field_schools']); ?></strong><?php print t(' region(s): '); ?>
                 <?php if (isset($content['field_city_1'])): ?>
                   <?php print render($content['field_city_1']); ?>
                 <?php endif; ?>
