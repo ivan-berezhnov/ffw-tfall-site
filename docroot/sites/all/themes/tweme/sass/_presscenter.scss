@@ -3,7 +3,7 @@
   background: #91998c none repeat scroll 0 0;
   margin-right: 20px;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 10px 20px;
   ul li.leaf {
 	  list-style-image: none;
 	  list-style-type: none;
@@ -11,59 +11,41 @@
   ul {
 	margin: 0 0 0px;
 	padding: 0px;
-	li.leaf.first {
-	  margin: 0;
-	  padding: 0;
-	  text-align: center;
-	  a {
-		  color: #000;
-		  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
-		  font-size: 1rem;
-		  font-weight: normal;
-		  letter-spacing: 0.2em;
-		  line-height: 1.5em;
-		  text-transform: uppercase;  	  
-	  }
-	}
 	li.leaf {
-	  margin: 0 0 0 1.25em;
+	  margin: 0;
 	  text-align: left;
 	}	
   }
-  li a{
-    color: #000;
-    font-weight: normal;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 30px;
-    margin: 0 0 0px;
-    font-weight: normal;
-    text-transform: none;
-  } 
+	li {
+	padding: 0.4em 0.5em 0 0;
+	  a{
+	    color: #e0dbc9;
+	    font-weight: normal;
+	    text-align: center;
+	    font-size: 20px;
+	    line-height: 30px;
+	    margin: 0 0 0px;
+	    font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+	    font-weight: normal;
+	    text-transform: none;
+	  }
+	} 
+	a::after {
+	  color: #e69740;
+	  content: " >";
+	}	
+	a.active {
+	  color: #fff;
+	} 	
 	a.active::after {
-		 color: #cf4753;
-	}   
+	  content: " ";
+	} 
+	a::hover {
+	  color: #fff;
+	}  		  		  
 }
 
-.panel-pane.pane-block.pane-menu-menu-press-center  {
-	 li a {
-	  color: #fff;
-	  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
-	  font-weight: normal;
-	  &.active {
-		  color: #cf4753;
-		}
-	}
-	p {
-	  color: #000;
-	  font-family: "News Gothic","Arial Narrow",Arial,sans-serif;
-	  font-size: 1rem;
-	  font-weight: normal;
-	  letter-spacing: 0;
-	  line-height: 1.2rem;
-	  margin-bottom: 1em;
-	}
-}
+
 
 .pane-press-center h2.pane-title {
   margin-top: 0;
