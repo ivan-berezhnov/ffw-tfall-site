@@ -28,12 +28,19 @@
 	    font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
 	    font-weight: normal;
 	    text-transform: none;
+		&:hover {
+		  color: #fff;
+		} 	    
 	  }
 	} 
 	a::after {
-	  color: #e69740;
+	  color: #ffb151;
 	  content: " >";
-	}	
+		&:hover {
+		  color: #fff;
+		} 	  
+	}
+
 	a.active {
 	  color: #fff;
 	} 	
@@ -55,7 +62,7 @@
 	  text-transform: uppercase;
 	}
 	h3 {
-		color: #000;
+		color: #4d4d4d;
 		font-size: 18px;
 		margin: 0;
 	}
@@ -68,12 +75,15 @@
 			font-size: 14px;
 		}
 	}
+	.sidecontent {
+	  margin-bottom: 20px;
+	}	
 }
 #quick-links {
 	h3 {
 	  padding-bottom: 10px;
 		a {
-			color: #000;
+			color: #4d4d4d;
 			&:hover {
 				color: #cf4753;
 			}
@@ -82,7 +92,7 @@
 }
 .pane-press-center h2.pane-title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .press-center { 
 	.moscone-container-inner.moscone-header-inner {
@@ -129,6 +139,10 @@
 		    }
 		}    
 	}
+	.presskitmini h2.pane-title{
+		margin-bottom: 20px;
+		margin-top: 0;
+	}
 	
 	.view-id-press_center {
 		.publicationname {
@@ -161,6 +175,9 @@
 		}		
 		 .views-row {
 		  margin-bottom: 20px;
+		}
+		h2 a {
+			color: #4d4d4d;
 		}
 		h3 {
 			margin-bottom: 0px;
