@@ -188,6 +188,14 @@
 				}
 			}	
 		}
+		.pagination-centered {
+		  padding-bottom: 40px;
+		}
+		.views-field.views-field-field-pc-image.span4,
+		.views-field.views-field-field-pc-image.node--video--teaser {
+		  margin-bottom: 10px;
+		  position: relative;
+		}				
 	}
 	.flexslider-info h2 a {
 	  color: #fff !important;
