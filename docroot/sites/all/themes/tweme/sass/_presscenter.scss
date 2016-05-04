@@ -18,7 +18,7 @@
   }
 	li {
 	padding: 0.4em 0.5em 0 0;
-	    @media (max-width: 980px) {
+	    @media only screen and (min-width: 601px) and (max-width: 980px) {
 	    		padding: 0.4em 0.5em .5em 0;
 	    }
 	  a{
@@ -43,7 +43,7 @@
 		  color: #fff;
 		} 	  
 	}
-    @media (max-width: 980px) {
+    @media only screen and (min-width: 601px) and (max-width: 980px) {
 		a::after {
 		  content: "";	  
 		}	

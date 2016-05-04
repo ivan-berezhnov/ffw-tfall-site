@@ -9034,7 +9034,7 @@ h2.news__title {
 .panel-pane.pane-block.pane-menu-menu-press-center li {
   padding: 0.4em 0.5em 0 0;
 }
-@media (max-width: 980px) {
+@media only screen and (min-width: 601px) and (max-width: 980px) {
   /* line 19, ../sass/_presscenter.scss */
   .panel-pane.pane-block.pane-menu-descriptions-menu-press-center li,
   .panel-pane.pane-block.pane-menu-menu-press-center li {
@@ -9070,7 +9070,7 @@ h2.news__title {
 .panel-pane.pane-block.pane-menu-menu-press-center a::after:hover {
   color: #fff;
 }
-@media (max-width: 980px) {
+@media only screen and (min-width: 601px) and (max-width: 980px) {
   /* line 47, ../sass/_presscenter.scss */
   .panel-pane.pane-block.pane-menu-descriptions-menu-press-center a::after,
   .panel-pane.pane-block.pane-menu-menu-press-center a::after {
