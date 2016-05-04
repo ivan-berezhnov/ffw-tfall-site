@@ -38,6 +38,12 @@ function pubteachforall_menus_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
+        'menu-menu-student-leaders' => array(
+          'module' => 'menu',
+          'delta' => 'menu-student-leaders',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
       ),
     ),
   );

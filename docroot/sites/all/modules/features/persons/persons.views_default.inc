@@ -113,7 +113,6 @@ function persons_views_default_views() {
   /* Display: Board Page */
   $handler = $view->new_display('page', 'Board Page', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Board';
   $handler->display->display_options['display_description'] = 'List of Board Members';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
@@ -202,7 +201,6 @@ function persons_views_default_views() {
   /* Display: Leadership Page */
   $handler = $view->new_display('page', 'Leadership Page', 'page_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Leadership Team';
   $handler->display->display_options['display_description'] = 'List of Leaders';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
@@ -292,7 +290,6 @@ function persons_views_default_views() {
   /* Display: Network CEOs */
   $handler = $view->new_display('page', 'Network CEOs', 'page_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Network CEOs';
   $handler->display->display_options['display_description'] = 'List of CEOs';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
@@ -375,7 +372,7 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
   $handler->display->display_options['fields']['field_job_title']['label'] = '';
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
-  /* Field: Content: Partner */
+  /* Field: Content: Organization */
   $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
   $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
   $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
