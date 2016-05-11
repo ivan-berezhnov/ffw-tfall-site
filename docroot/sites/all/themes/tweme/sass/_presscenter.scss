@@ -26,7 +26,7 @@
 	    font-weight: normal;
 	    text-align: center;
 	    font-size: 20px;
-	    line-height: 25px;
+	    line-height: 1.1em;
 	    margin: 0 0 10px;
 	    font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
 	    font-weight: normal;
@@ -59,7 +59,9 @@
 	  color: #fff;
 	}  		  		  
 }
-
+.i18n-es .panel-pane.pane-block.pane-menu-menu-press-center a::after {
+  content: "";
+}
 #press-inquiries {
 	h2 {
 	  color: #e69740;
