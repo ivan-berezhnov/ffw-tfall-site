@@ -37,7 +37,7 @@ function widget_map_theme($existing, $type, $theme, $path) {
 	return array(
 		'widget_map' => array(
 			'template' => 'templates/widget-map',
-			'variables' => array('title' => t('NATIONAL ORGANIZATIONS')),
+			'variables' => array('title' => t('NETWORK PARTNERS')),
 		),
 		'widget_map_detailed' => array(
 			'template' => 'templates/widget-map-detailed',
