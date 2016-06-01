@@ -120,7 +120,7 @@
   <div class="button-center-div">
     <div class="fake-table">
       <div class="fake-table-cell">
-        <a class="btn__red mobilemap" href="/our-network-and-impact/national-organizations" title="National Organizations"><?php print t('See All National Organizations'); ?></a>
+        <a class="btn__red mobilemap" href="/our-network-and-impact/national-organizations" title="National Organizations"><?php print t('See All Network Partners'); ?></a>
       </div>
     </div>
   </div>
