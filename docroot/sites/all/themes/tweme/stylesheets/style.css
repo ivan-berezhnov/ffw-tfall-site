@@ -9309,8 +9309,8 @@ h2.news__title {
 }
 
 /* line 242, ../sass/_presscenter.scss */
-.node--video--teaser a::after {
-  background-color: rgba(0, 0, 0, 0.25);
+.bundle-video .pane-content .press a::after {
+  background-color: rgba(0, 0, 0, 0.15);
   background-image: url("../images/play.png");
   background-position: center center;
   background-repeat: no-repeat;
