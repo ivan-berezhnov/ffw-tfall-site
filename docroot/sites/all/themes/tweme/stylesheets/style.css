@@ -2178,7 +2178,7 @@ img {
 /* line 1470, ../sass/_teachforall.scss */
 #mobileworldmap {
   text-align: center;
-  background-image: url(../images/worldmap-940.jpg);
+  background-image: url(../images/worldmap-2016-940.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -9287,6 +9287,42 @@ h2.news__title {
 /* line 221, ../sass/_presscenter.scss */
 .press-center .flexslider-link a {
   color: #fff !important;
+}
+
+/* line 225, ../sass/_presscenter.scss */
+.row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
+  margin: 0 .8%;
+  min-height: 280px;
+}
+
+/* line 231, ../sass/_presscenter.scss */
+.press-center .view-press-video-archive .views-field.views-field-created {
+  margin-bottom: 5px;
+}
+/* line 234, ../sass/_presscenter.scss */
+.press-center .view-press-video-archive .views-field.views-field-title h3 {
+  margin-top: 10px;
+}
+/* line 236, ../sass/_presscenter.scss */
+.press-center .view-press-video-archive .views-field.views-field-title h3 a {
+  color: #4d4d4d;
+}
+
+/* line 242, ../sass/_presscenter.scss */
+.node--video--teaser a::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
 }
 
 /**

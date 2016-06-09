@@ -222,3 +222,35 @@
 	  color: #fff !important;
 	}		
 }
+.row-fluid .view-press-video-archive .views-row.span4 {
+  margin: 0 .8%;
+  min-height: 280px;
+}
+
+.press-center .view-press-video-archive {
+	.views-field.views-field-created {
+	  margin-bottom: 5px;
+	}
+	.views-field.views-field-title h3 {
+		margin-top: 10px;		
+		a {
+		  color: #4d4d4d;
+		}
+	}
+}
+
+.node--video--teaser a::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("../images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
+}
