@@ -239,18 +239,4 @@
 	}
 }
 
-.views-field.views-field-field-news-image .press a::after{
-  background-color: rgba(0, 0, 0, 0.15);
-  background-image: url("../images/play.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 80px auto;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transition: all 0.2s ease 0s;
-  width: 100%;
-  z-index: 10;
-}
+
