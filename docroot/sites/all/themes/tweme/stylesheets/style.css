@@ -9306,38 +9306,42 @@ h2.news__title {
   padding-top: 0;
   position: relative;
 }
-/* line 242, ../sass/_presscenter.scss */
+/* line 241, ../sass/_presscenter.scss */
+.press-center .view.view-press-video-archive .news__image {
+  margin: 10px 0;
+}
+/* line 245, ../sass/_presscenter.scss */
 .press-center .flexslider-info h2 a {
   color: #fff !important;
 }
-/* line 245, ../sass/_presscenter.scss */
+/* line 248, ../sass/_presscenter.scss */
 .press-center .flexslider-preview {
   padding-right: 20px;
 }
-/* line 248, ../sass/_presscenter.scss */
+/* line 251, ../sass/_presscenter.scss */
 .press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
   margin-top: 40px;
 }
-/* line 251, ../sass/_presscenter.scss */
+/* line 254, ../sass/_presscenter.scss */
 .press-center .flexslider-link a {
   color: #fff !important;
 }
 
-/* line 255, ../sass/_presscenter.scss */
+/* line 258, ../sass/_presscenter.scss */
 .row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
   margin: 0 .8%;
   min-height: 285px;
 }
 
-/* line 261, ../sass/_presscenter.scss */
+/* line 264, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-created {
   margin-bottom: 5px;
 }
-/* line 264, ../sass/_presscenter.scss */
+/* line 267, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 {
   margin-top: 10px;
 }
-/* line 266, ../sass/_presscenter.scss */
+/* line 269, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 a {
   color: #4d4d4d;
 }
