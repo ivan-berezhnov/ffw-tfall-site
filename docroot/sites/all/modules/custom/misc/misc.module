@@ -104,6 +104,10 @@ function misc_entity_info_alter(&$entity_info) {
         'label' => 'Global organization',
         'custom settings' => TRUE,
     );
+    $entity_info['node']['view modes']['videoarchive'] = array(
+        'label' => 'Video archive',
+        'custom settings' => TRUE,
+    );    
 }
 
 /*
