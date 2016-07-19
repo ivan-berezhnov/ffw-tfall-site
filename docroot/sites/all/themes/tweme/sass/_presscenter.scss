@@ -257,14 +257,17 @@
 }
 .row-fluid .view-press-video-archive .views-row.span4 {
   margin: 0 .8%;
-  min-height: 285px;
+  min-height: 269px;
 }
  @media screen and (min-width: 980px) and (max-width: 1199px) {
 	.row-fluid .view-press-video-archive .views-row.span4 {
 	  margin: 0 .8%;
-	  min-height: 260px;
 	  width: 46%;
-	}	
+	}
+	.view-leadership-videos	.views-row.span4 {
+	  margin: 0 .8%;
+	  width: 46%;
+	}
  }
 .press-center .view-press-video-archive {
 	.views-field.views-field-created {
