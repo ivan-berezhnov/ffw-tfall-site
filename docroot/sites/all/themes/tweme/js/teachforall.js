@@ -3,11 +3,11 @@
   Drupal.behaviors.suppressAbout = {
   attach: function (context, settings) {
 
-      $(function() {
-        $("#block-menu-menu-uber-nav a[title='About']",context).click(function(e) {
-          e.preventDefault();// suppress the 'About' link in the responsive uber nav
-        });
-      });
+      // $(function() {
+      //   $("#block-menu-menu-uber-nav a[title='About']",context).click(function(e) {
+      //     e.preventDefault();// suppress the 'About' link in the responsive uber nav
+      //   });
+      // });
 
       //modernzr panel videos
       if($('html',context).hasClass('no-touch')){

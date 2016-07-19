@@ -15,6 +15,7 @@ function permissions_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'admin_menu',
@@ -25,6 +26,7 @@ function permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'system',
@@ -39,30 +41,13 @@ function permissions_user_default_permissions() {
     'module' => 'views',
   );
 
-  // Exported permission: 'access backup and migrate'.
-  $permissions['access backup and migrate'] = array(
-    'name' => 'access backup and migrate',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
-  );
-
-  // Exported permission: 'access backup files'.
-  $permissions['access backup files'] = array(
-    'name' => 'access backup files',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
-  );
-
   // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -136,15 +121,6 @@ function permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'system',
-  );
-
-  // Exported permission: 'administer backup and migrate'.
-  $permissions['administer backup and migrate'] = array(
-    'name' => 'administer backup and migrate',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
   );
 
   // Exported permission: 'administer blocks'.
@@ -273,6 +249,7 @@ function permissions_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -649,15 +626,6 @@ function permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete backup files'.
-  $permissions['delete backup files'] = array(
-    'name' => 'delete backup files',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
   );
 
   // Exported permission: 'delete own national_organization content'.
@@ -1079,6 +1047,7 @@ function permissions_user_default_permissions() {
     'name' => 'manipulate all queues',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -1089,6 +1058,7 @@ function permissions_user_default_permissions() {
     'name' => 'manipulate queues',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'nodequeue',
@@ -1103,29 +1073,12 @@ function permissions_user_default_permissions() {
     'module' => 'pathauto',
   );
 
-  // Exported permission: 'perform backup'.
-  $permissions['perform backup'] = array(
-    'name' => 'perform backup',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
-  );
-
-  // Exported permission: 'restore from backup'.
-  $permissions['restore from backup'] = array(
-    'name' => 'restore from backup',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'backup_migrate',
-  );
-
   // Exported permission: 'revert revisions'.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -1137,6 +1090,7 @@ function permissions_user_default_permissions() {
     'name' => 'search content',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -1166,6 +1120,7 @@ function permissions_user_default_permissions() {
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'search',
@@ -1187,6 +1142,7 @@ function permissions_user_default_permissions() {
     'name' => 'use text format full_html',
     'roles' => array(
       'Content editor' => 'Content editor',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
     ),
     'module' => 'filter',
@@ -1198,6 +1154,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
@@ -1210,6 +1167,7 @@ function permissions_user_default_permissions() {
     'roles' => array(
       'Content editor' => 'Content editor',
       'Content reviewer' => 'Content reviewer',
+      'SLC Reviewer' => 'SLC Reviewer',
       'administrator' => 'administrator',
       'editor' => 'editor',
     ),
