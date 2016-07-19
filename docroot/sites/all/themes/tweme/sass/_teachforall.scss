@@ -1893,7 +1893,10 @@ img {max-width: 100%;}
   color: $grey4;
   @include font-size(16);
 }
-
+.row-fluid.news__node-links .container {
+  float: left;
+  width: auto;
+}
 .news__author-info, .network-learning__author-info {
   @include font-size(14);
 

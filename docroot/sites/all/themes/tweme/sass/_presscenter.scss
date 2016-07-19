@@ -18,7 +18,7 @@
   background: #91998c none repeat scroll 0 0;
   margin-right: 20px;
   margin-bottom: 40px;
-  padding: 10px 20px;
+  padding: 10px 10px 15px 20px;
   ul li.leaf {
 	  list-style-image: none;
 	  list-style-type: none;
@@ -241,6 +241,10 @@
 		.news__image {
 		  margin: 10px 0;
 		}
+		.pagination {
+		  margin-bottom: 0;
+		  margin-top: -7px;
+		}
 	}
 	.flexslider-info h2 a {
 	  color: #fff !important;
@@ -257,7 +261,7 @@
 }
 .row-fluid .view-press-video-archive .views-row.span4 {
   margin: 0 .8%;
-  min-height: 269px;
+  min-height: 274px;
 }
  @media screen and (min-width: 980px) and (max-width: 1199px) {
 	.row-fluid .view-press-video-archive .views-row.span4 {
@@ -279,6 +283,9 @@
 		a {
 		  color: #4d4d4d;
 		}
+	}
+	@media screen and (max-width: 767px) {
+		margin-top: 10px;
 	}
 }
 
