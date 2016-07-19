@@ -9321,57 +9321,115 @@ h2.news__title {
   margin-bottom: 0;
   margin-top: -10px;
 }
-/* line 249, ../sass/_presscenter.scss */
+/* line 248, ../sass/_presscenter.scss */
+.press-center .view.view-press-video-archive .node--news--videoarchive a:hover::after {
+  background-color: transparent;
+}
+/* line 251, ../sass/_presscenter.scss */
+.press-center .view.view-press-video-archive .node--news--videoarchive a::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("/sites/all/themes/tweme/images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
+}
+/* line 267, ../sass/_presscenter.scss */
 .press-center .flexslider-info h2 a {
   color: #fff !important;
 }
-/* line 252, ../sass/_presscenter.scss */
+/* line 270, ../sass/_presscenter.scss */
 .press-center .flexslider-preview {
   padding-right: 20px;
 }
-/* line 255, ../sass/_presscenter.scss */
+/* line 273, ../sass/_presscenter.scss */
 .press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
   margin-top: 40px;
 }
-/* line 258, ../sass/_presscenter.scss */
+/* line 276, ../sass/_presscenter.scss */
 .press-center .flexslider-link a {
   color: #fff !important;
 }
 
-/* line 262, ../sass/_presscenter.scss */
+/* line 280, ../sass/_presscenter.scss */
 .row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
   margin: 0 .8%;
   min-height: 274px;
 }
 
+/* line 285, ../sass/_presscenter.scss */
+.view-leadership-videos h3 {
+  color: #4d4d4d;
+}
+/* line 288, ../sass/_presscenter.scss */
+.view-leadership-videos .news__image {
+  margin: 0 0 10px;
+}
+/* line 291, ../sass/_presscenter.scss */
+.view-leadership-videos .view-leadership-videos .views-row {
+  margin: 0 0.8% !important;
+  min-height: 320px !important;
+}
+/* line 295, ../sass/_presscenter.scss */
+.view-leadership-videos .news__video {
+  padding-top: 0px !important;
+}
+/* line 298, ../sass/_presscenter.scss */
+.view-leadership-videos .node--news--videoarchive a:hover::after {
+  background-color: transparent;
+}
+/* line 301, ../sass/_presscenter.scss */
+.view-leadership-videos .node--news--videoarchive a::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("/sites/all/themes/tweme/images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
+}
+
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 267, ../sass/_presscenter.scss */
+  /* line 318, ../sass/_presscenter.scss */
   .row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
     margin: 0 .8%;
     width: 46%;
   }
 
-  /* line 271, ../sass/_presscenter.scss */
+  /* line 322, ../sass/_presscenter.scss */
   .view-leadership-videos .views-row.span4, .view-leadership-videos .views-row.node--video--teaser {
     margin: 0 .8%;
     width: 46%;
     height: 340px;
   }
 }
-/* line 278, ../sass/_presscenter.scss */
+/* line 329, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-created {
   margin-bottom: 5px;
 }
-/* line 281, ../sass/_presscenter.scss */
+/* line 332, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 {
   margin-top: 10px;
 }
-/* line 283, ../sass/_presscenter.scss */
+/* line 334, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 a {
   color: #4d4d4d;
 }
 @media screen and (max-width: 767px) {
-  /* line 277, ../sass/_presscenter.scss */
+  /* line 328, ../sass/_presscenter.scss */
   .press-center .view-press-video-archive {
     margin-top: 10px;
   }
