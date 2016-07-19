@@ -9344,17 +9344,18 @@ h2.news__title {
   .view-leadership-videos .views-row.span4, .view-leadership-videos .views-row.node--video--teaser {
     margin: 0 .8%;
     width: 46%;
+    height: 340px;
   }
 }
-/* line 273, ../sass/_presscenter.scss */
+/* line 274, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-created {
   margin-bottom: 5px;
 }
-/* line 276, ../sass/_presscenter.scss */
+/* line 277, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 {
   margin-top: 10px;
 }
-/* line 278, ../sass/_presscenter.scss */
+/* line 279, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 a {
   color: #4d4d4d;
 }
