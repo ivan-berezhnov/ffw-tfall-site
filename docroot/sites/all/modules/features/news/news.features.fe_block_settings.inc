@@ -13,7 +13,7 @@ function news_default_fe_block_settings() {
   $export['version'] = '2.0';
 
   $export['sharethis-sharethis_block'] = array(
-    'cache' => 1,
+    'cache' => 4,
     'custom' => 0,
     'delta' => 'sharethis_block',
     'i18n_block_language' => array(),

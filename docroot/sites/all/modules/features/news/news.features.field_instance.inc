@@ -452,6 +452,70 @@ function news_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-news-field_news_slideshow'
+  $field_instances['node-news-field_news_slideshow'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'You may embed a pre-existing Slideshow here. Add a Slideshow as a reference in this field and it will display at the top of the main content area.',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'teaser',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 10,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_news_slideshow',
+    'label' => 'Slideshow Reference',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 41,
+    ),
+  );
+
   // Exported field_instance: 'node-news-title_field'
   $field_instances['node-news-title_field'] = array(
     'bundle' => 'news',
@@ -566,7 +630,9 @@ function news_field_default_field_instances() {
   t('Image');
   t('Image Credit');
   t('Name');
+  t('Slideshow Reference');
   t('Title');
+  t('You may embed a pre-existing Slideshow here. Add a Slideshow as a reference in this field and it will display at the top of the main content area.');
 
   return $field_instances;
 }
