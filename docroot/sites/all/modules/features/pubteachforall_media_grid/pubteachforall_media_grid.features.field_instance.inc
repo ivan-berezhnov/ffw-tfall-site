@@ -302,6 +302,12 @@ function pubteachforall_media_grid_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_content_bottom',
@@ -356,6 +362,12 @@ function pubteachforall_media_grid_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -427,6 +439,12 @@ function pubteachforall_media_grid_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_media_block',
@@ -477,6 +495,12 @@ function pubteachforall_media_grid_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

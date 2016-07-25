@@ -51,6 +51,12 @@ function our_model_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_leaders_spotlights',
@@ -106,6 +112,12 @@ function our_model_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -181,6 +193,12 @@ function our_model_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -265,6 +283,12 @@ function our_model_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ourmodelintro_leaders',
@@ -319,6 +343,12 @@ function our_model_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -383,6 +413,12 @@ function our_model_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ourmodelintro_teachers',
@@ -440,6 +476,12 @@ function our_model_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -508,6 +550,12 @@ function our_model_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_teachers_spotlights',
@@ -562,6 +610,12 @@ function our_model_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

@@ -166,6 +166,12 @@ function tfa_slideshow_field_default_field_instances() {
         'type' => 'file_rendered',
         'weight' => 0,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_slideshow_slides',

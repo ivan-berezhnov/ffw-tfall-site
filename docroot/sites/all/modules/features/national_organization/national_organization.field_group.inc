@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function national_organization_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -35,7 +35,7 @@ function national_organization_field_group_info() {
       ),
     ),
   );
-  $export['group_about|node|national_organization|form'] = $field_group;
+  $field_groups['group_about|node|national_organization|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -64,7 +64,7 @@ function national_organization_field_group_info() {
       ),
     ),
   );
-  $export['group_context_info|node|national_organization|form'] = $field_group;
+  $field_groups['group_context_info|node|national_organization|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -96,7 +96,13 @@ function national_organization_field_group_info() {
       ),
     ),
   );
-  $export['group_snapshot_info|node|national_organization|form'] = $field_group;
+  $field_groups['group_snapshot_info|node|national_organization|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('About');
+  t('Local context info');
+  t('Program snapshot info');
+
+  return $field_groups;
 }

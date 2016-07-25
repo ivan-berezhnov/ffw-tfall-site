@@ -1,7 +1,7 @@
 name = T4A Slideshow
 core = 7.x
 package = Features
-version = 7.x-1.0
+version = 7.x-1.01
 project = tfa_slideshow
 dependencies[] = ctools
 dependencies[] = features

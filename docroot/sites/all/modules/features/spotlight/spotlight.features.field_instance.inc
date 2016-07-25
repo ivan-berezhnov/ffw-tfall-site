@@ -51,6 +51,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 2,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
@@ -110,6 +116,12 @@ function spotlight_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -184,6 +196,12 @@ function spotlight_field_default_field_instances() {
           'image_style' => 'spotlight_ourmodel',
         ),
         'type' => 'image',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -266,6 +284,12 @@ function spotlight_field_default_field_instances() {
         'type' => 'i18n_list_default',
         'weight' => 1,
       ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'node',
     'field_name' => 'field_spotlight_type',
@@ -319,6 +343,12 @@ function spotlight_field_default_field_instances() {
         'weight' => 1,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -397,6 +427,12 @@ function spotlight_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',

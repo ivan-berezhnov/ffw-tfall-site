@@ -1,7 +1,7 @@
 name = SLC
 core = 7.x
 package = SLC
-version = 7.x-1.13
+version = 7.x-1.14
 project = slc
 dependencies[] = block
 dependencies[] = context

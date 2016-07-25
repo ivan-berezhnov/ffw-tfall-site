@@ -587,9 +587,10 @@ $local_settings_filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'settings.l
 if (file_exists($local_settings_filename)) {
     require_once $local_settings_filename;
 }
-if(!getenv("AMAZEEIO_SITENAME")) {
+//if(!getenv("AMAZEEIO_SITENAME")) {
   //memcache settings for performance
-  $conf['cache_backends'][] = './sites/all/modules/contrib/memcache/memcache.inc';
-  $conf['cache_default_class'] = 'MemCacheDrupal';
-  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
-}
+//  $conf['cache_backends'][] = './sites/all/modules/contrib/memcache/memcache.inc';
+//  $conf['cache_default_class'] = 'MemCacheDrupal';
+//  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+//}
+$conf['stage_file_proxy_origin'] = 'http://www.teachforall.org'; // no trailing slash

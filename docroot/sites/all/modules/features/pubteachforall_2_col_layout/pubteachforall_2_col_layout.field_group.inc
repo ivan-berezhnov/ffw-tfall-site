@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function pubteachforall_2_col_layout_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -39,7 +39,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_image_row|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_image_row|field_collection_item|field_2_column_row|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -72,7 +72,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_info_row|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_info_row|field_collection_item|field_2_column_row|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -106,7 +106,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_info_wrapper|field_collection_item|field_2_column_row|form'] = $field_group;
+  $field_groups['group_info_wrapper|field_collection_item|field_2_column_row|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -137,7 +137,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_link_wrapper|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_link_wrapper|field_collection_item|field_2_column_row|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -168,7 +168,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_link_wrapper|node|page_2_col_layout|default'] = $field_group;
+  $field_groups['group_link_wrapper|node|page_2_col_layout|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -199,7 +199,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_row_byline|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_row_byline|field_collection_item|field_2_column_row|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -230,7 +230,7 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_row_headline|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_row_headline|field_collection_item|field_2_column_row|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -262,7 +262,11 @@ function pubteachforall_2_col_layout_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_row_wrapper|field_collection_item|field_2_column_row|default'] = $field_group;
+  $field_groups['group_row_wrapper|field_collection_item|field_2_column_row|default'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Information Wrapper');
+
+  return $field_groups;
 }

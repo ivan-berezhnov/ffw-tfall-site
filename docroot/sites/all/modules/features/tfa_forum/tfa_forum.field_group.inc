@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function tfa_forum_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -39,7 +39,7 @@ function tfa_forum_field_group_info() {
       ),
     ),
   );
-  $export['group_tfa_forum_moderator|node|tfa_forum_post|form'] = $field_group;
+  $field_groups['group_tfa_forum_moderator|node|tfa_forum_post|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -70,7 +70,12 @@ function tfa_forum_field_group_info() {
       ),
     ),
   );
-  $export['group_tfa_opinion_author_info|node|tfa_opinion|form'] = $field_group;
+  $field_groups['group_tfa_opinion_author_info|node|tfa_opinion|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Author Information');
+  t('Moderator Information');
+
+  return $field_groups;
 }

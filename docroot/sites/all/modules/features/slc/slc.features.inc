@@ -56,6 +56,7 @@ function slc_fe_nodequeue_export_fields() {
     'reference' => 0,
     'reverse' => 0,
     'i18n' => 0,
+    'insert_at_front' => NULL,
     'subqueues' => 1,
     'types' => array(
       0 => 'student_leaders_campaign',
@@ -79,6 +80,7 @@ function slc_fe_nodequeue_export_fields() {
     'reference' => 0,
     'reverse' => 0,
     'i18n' => 0,
+    'insert_at_front' => NULL,
     'subqueues' => 1,
     'types' => array(
       0 => 'student_leaders_campaign',
