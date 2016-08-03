@@ -1,0 +1,82 @@
+
+
+#navigation #navigation-region ul .level-1 {
+  font-family: 'Georgia','New Century Schoolbook','Nimbus Roman No9 L','serif';
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#preheader-second-region #site-slogan {
+  text-align: center;
+}
+
+#navigation-region ul .level-1 {
+  text-align: center;
+}
+
+#header {
+  background-repeat: no-repeat;
+}
+
+#navigation-region .content ul {
+  text-align: center;
+}
+
+#sidebar-a .media-thumbnail-frame img {
+  background-image: url("images/map_4.jpg");
+}
+
+#main h2 a {
+  font-family: 'Georgia','New Century Schoolbook','Nimbus Roman No9 L','serif';
+  font-weight: normal;
+  color: #761a18;
+}
+
+.page-width .lining {
+  background-image: url("images/tfall_conference_header_2.jpg");
+}
+
+#page {
+  background-repeat: no-repeat;
+  background-image: none;
+  background-color: #eae7e2;
+  font-size: 14px;
+}
+
+#navigation-region li a {
+  background-repeat: repeat;
+  letter-spacing: 2.2px;
+  font-weight: normal;
+  font-family: 'Georgia','New Century Schoolbook','Nimbus Roman No9 L','serif';
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 43px;
+}
+
+#main .content h2 {
+  background-repeat: repeat;
+}
+
+#header #preheader-second-region #site-name a {
+  background-color: #eae7e2;
+  background-image: url("images/tfall_conference_header_0.jpg");
+}
+
+#preheader-second-region #site-name a {
+  font-family: 'Georgia','New Century Schoolbook','Nimbus Roman No9 L','serif';
+  font-size: 32px;
+  font-weight: normal;
+  background-image: none;
+  text-align: center;
+}
+
+#header #preheader .page-element #site-name a {
+  background-image: none;
+}
+
+#header-region #site-slogan {
+  font-size: 24px;
+}
+

@@ -1,0 +1,225 @@
+
+body {
+  background-color: #000000;
+  color: #000000;
+}
+
+.wrapper-footer h2 {
+}
+
+a:hover {
+  color: #e57502;
+}
+
+.wrapper a[href*=add] {
+  background-color: transparent;
+}
+
+.wrapper-content {
+  background-color: #ffffff;
+}
+
+.sidebar.left {
+}
+
+.sidebar.right {
+}
+
+.comment-wrapper h2 {
+}
+
+.comment {
+}
+
+.comment h3 {
+}
+
+.comment .links {
+}
+
+.comment-new-form {
+}
+
+.menu-dropdown .menu .menu {
+}
+
+.form-submit {
+  color: #ffffff;
+}
+
+.forum th {
+}
+
+.forum th + th {
+}
+
+a:link {
+  color: #8c0000;
+}
+
+a:visited {
+  color: #8c0000;
+}
+
+p {
+  color: #3d3589;
+}
+
+ul {
+  color: #3d3589;
+}
+
+ol {
+  color: #3d3589;
+}
+
+dl {
+  color: #3d3589;
+}
+
+.wrapper-header a {
+  color: #ffffab;
+}
+
+.wrapper-footer {
+  color: #ffffab;
+}
+
+.wrapper-footer a {
+  color: #ffffff;
+}
+
+.site-name a {
+  color: #ffffff;
+}
+
+.wrapper-header a:hover {
+  color: #ffc71b;
+}
+
+.wrapper-footer a:hover {
+  color: #ffc71b;
+}
+
+li a.active {
+  color: #ffc71b;
+}
+
+.site-name a:hover {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .active-trail > a {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .expanded:hover > a {
+  color: #ffc71b;
+}
+
+.menu-dropdown .menu .active-trail:hover > a {
+  color: #ffc71b;
+}
+
+.menu-dropdown .menu .menu li:hover > a {
+  color: #ffc71b;
+}
+
+.menu-dropdown .menu .menu a.active {
+  color: #ffffff;
+}
+
+.menu-dropdown .menu .menu .active-trail > a {
+  color: #ffffff;
+}
+
+#block-feedback-feedback a {
+  color: #ffffff;
+}
+
+.messages {
+  color: #000000;
+}
+
+.messages ul {
+  color: #000000;
+}
+
+.messages ul li {
+  color: #000000;
+}
+
+#block-feedback-feedback a:hover {
+  background-color: #000000;
+}
+
+.site-slogan {
+  color: #ababab;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  color: #000000;
+}
+
+h3 {
+  color: #000000;
+}
+
+h4 {
+  color: #000000;
+}
+
+h5 {
+  color: #000000;
+}
+
+h6 {
+  color: #000000;
+}
+
+.rotating-banner {
+  color: #000000;
+}
+
+#gardens_ie7 tr.even td,#gardens_ie7 tr.odd td {
+  border-bottom-color: transparent;
+}
+
+
+#main #page-title {
+  color: #8c0000;
+}
+
+body {
+  background-color: #8c0000;
+}
+
+#main .content h2 {
+  color: #8c0000;
+  background-color: #ffffff;
+}
+
+#preheader-second-region #site-slogan {
+  color: #ffffff;
+}
+
+#preheader-second-region .level-1 a {
+  color: #ffffff;
+}
+
+#header-region #site-slogan {
+  color: #ffffff;
+}
+
+#navigation-region .block {
+  color: #8c0000;
+}
+
+#preheader-first-region #site-name a {
+  color: #ffffff;
+}
+

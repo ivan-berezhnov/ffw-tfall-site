@@ -1,0 +1,19 @@
+.not-front h1  {
+  display: none;
+}
+
+
+
+#block-gardens-client-login .content {color: #fffdfb}
+
+#block-gardens-client-login .content a:last-child {
+  display: none;
+}
+
+.not-logged-in #page-title {display: none;}
+
+.not-logged-in #block-system-main {display: none;}
+
+.page-openid #user-login legend {
+height: 1.3846em;
+}
