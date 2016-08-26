@@ -1,7 +1,7 @@
 name = T4A Slideshow
 core = 7.x
 package = Features
-version = 7.x-1.01
+version = 7.x-1.02
 project = tfa_slideshow
 dependencies[] = ctools
 dependencies[] = features
@@ -60,3 +60,4 @@ features[variable][] = metatag_enable_node__slideshow
 features[variable][] = node_options_slideshow
 features[variable][] = node_preview_slideshow
 features[variable][] = node_submitted_slideshow
+project path = sites/all/modules/features

@@ -344,7 +344,7 @@ function pubteachforall_marquee_views_default_views() {
   $handler->display->display_options['fields']['field_news_byline']['table'] = 'field_data_field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['field'] = 'field_news_byline';
   $handler->display->display_options['fields']['field_news_byline']['label'] = '';
-  $handler->display->display_options['fields']['field_news_byline']['alter']['max_length'] = '125';
+  $handler->display->display_options['fields']['field_news_byline']['alter']['max_length'] = '130';
   $handler->display->display_options['fields']['field_news_byline']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['field_news_byline']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_news_byline']['element_type'] = 'div';
