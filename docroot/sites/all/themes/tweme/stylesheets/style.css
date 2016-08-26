@@ -9322,10 +9322,12 @@ h2.news__title {
   margin-top: -10px;
 }
 /* line 248, ../sass/_presscenter.scss */
+.press-center .view.view-press-video-archive .node--network_learning--videoarchive a:hover::after,
 .press-center .view.view-press-video-archive .node--news--videoarchive a:hover::after {
   background-color: transparent;
 }
-/* line 251, ../sass/_presscenter.scss */
+/* line 252, ../sass/_presscenter.scss */
+.press-center .view.view-press-video-archive .node--network_learning--videoarchive a::after,
 .press-center .view.view-press-video-archive .node--news--videoarchive a::after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url("/sites/all/themes/tweme/images/play.png");
@@ -9341,52 +9343,52 @@ h2.news__title {
   width: 100%;
   z-index: 10;
 }
-/* line 267, ../sass/_presscenter.scss */
+/* line 269, ../sass/_presscenter.scss */
 .press-center .flexslider-info h2 a {
   color: #fff !important;
 }
-/* line 270, ../sass/_presscenter.scss */
+/* line 272, ../sass/_presscenter.scss */
 .press-center .flexslider-preview {
   padding-right: 20px;
 }
-/* line 273, ../sass/_presscenter.scss */
+/* line 275, ../sass/_presscenter.scss */
 .press-center #press-center-landing .view-press-center-slider.view-id-press_center_slider {
   margin-top: 40px;
 }
-/* line 276, ../sass/_presscenter.scss */
+/* line 278, ../sass/_presscenter.scss */
 .press-center .flexslider-link a {
   color: #fff !important;
 }
 
-/* line 280, ../sass/_presscenter.scss */
+/* line 282, ../sass/_presscenter.scss */
 .row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
   margin: 0 .8%;
   min-height: 274px;
 }
 
-/* line 285, ../sass/_presscenter.scss */
+/* line 287, ../sass/_presscenter.scss */
 .view-leadership-videos h3 {
   color: #4d4d4d;
   min-height: 75px;
 }
-/* line 289, ../sass/_presscenter.scss */
+/* line 291, ../sass/_presscenter.scss */
 .view-leadership-videos .news__image {
   margin: 0 0 10px;
 }
-/* line 292, ../sass/_presscenter.scss */
+/* line 294, ../sass/_presscenter.scss */
 .view-leadership-videos .view-leadership-videos .views-row {
   margin: 0 0.8% 20px !important;
   min-height: 320px !important;
 }
-/* line 296, ../sass/_presscenter.scss */
+/* line 298, ../sass/_presscenter.scss */
 .view-leadership-videos .news__video {
   padding-top: 0px !important;
 }
-/* line 299, ../sass/_presscenter.scss */
+/* line 301, ../sass/_presscenter.scss */
 .view-leadership-videos .node--news--videoarchive a:hover::after {
   background-color: transparent;
 }
-/* line 302, ../sass/_presscenter.scss */
+/* line 304, ../sass/_presscenter.scss */
 .view-leadership-videos .node--news--videoarchive a::after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url("/sites/all/themes/tweme/images/play.png");
@@ -9404,33 +9406,33 @@ h2.news__title {
 }
 
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 319, ../sass/_presscenter.scss */
+  /* line 321, ../sass/_presscenter.scss */
   .row-fluid .view-press-video-archive .views-row.span4, .row-fluid .view-press-video-archive .views-row.node--video--teaser {
     margin: 0 .8%;
     width: 46%;
   }
 
-  /* line 323, ../sass/_presscenter.scss */
+  /* line 325, ../sass/_presscenter.scss */
   .view-leadership-videos .views-row.span4, .view-leadership-videos .views-row.node--video--teaser {
     margin: 0 .8%;
     width: 46%;
     height: 340px;
   }
 }
-/* line 330, ../sass/_presscenter.scss */
+/* line 332, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-created {
   margin-bottom: 5px;
 }
-/* line 333, ../sass/_presscenter.scss */
+/* line 335, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 {
   margin-top: 10px;
 }
-/* line 335, ../sass/_presscenter.scss */
+/* line 337, ../sass/_presscenter.scss */
 .press-center .view-press-video-archive .views-field.views-field-title h3 a {
   color: #4d4d4d;
 }
 @media screen and (max-width: 767px) {
-  /* line 329, ../sass/_presscenter.scss */
+  /* line 331, ../sass/_presscenter.scss */
   .press-center .view-press-video-archive {
     margin-top: 10px;
   }

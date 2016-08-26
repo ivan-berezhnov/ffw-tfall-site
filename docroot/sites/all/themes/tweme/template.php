@@ -137,7 +137,21 @@ function tweme_preprocess_field__field_embedded_video(&$vars, $hook) {
       $vars['items'][$item]['#prefix'] = '<a class="video" href="'. $video_uri .'" rel="shadowbox">';
       $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
     }
-  }  
+  }
+  if ($vars['element']['#bundle'] === 'network_learning') {
+    foreach ($vars['element']['#items'] as $item => $value) {
+      $video_data = unserialize($value['video_data']);
+      $video_uri = '';
+      if ($video_data['handler'] === 'vimeo') {
+        $video_uri = 'http://player.vimeo.com/video/' . $video_data['id'] . '/?autoplay=1';
+      }
+      if ($video_data['handler'] === 'youtube') {
+        $video_uri = $value['video_url'] . '/?autoplay=1';
+      }
+      $vars['items'][$item]['#prefix'] = '<a class="video" href="'. $video_uri .'" rel="shadowbox">';
+      $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
+    }
+  }      
 }
 
 /**
