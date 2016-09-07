@@ -3861,6 +3861,16 @@ img {
 * #Front
 **/
 /* line 3002, ../sass/_teachforall.scss */
+.front #block-block-82 {
+  border-top: 2px solid #4d4d4d;
+  clear: both;
+  display: inline-block;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+/* line 3011, ../sass/_teachforall.scss */
 .front #main {
   padding-bottom: 13px;
 }
@@ -3869,17 +3879,17 @@ img {
 /**
 * #News - Landing, #Network Learning - Landing
 **/
-/* line 3015, ../sass/_teachforall.scss */
+/* line 3024, ../sass/_teachforall.scss */
 .flexslider .slides > li {
   position: relative;
 }
 
-/* line 3021, ../sass/_teachforall.scss */
+/* line 3030, ../sass/_teachforall.scss */
 .news__image-video-wrapper {
   position: relative;
 }
 
-/* line 3028, ../sass/_teachforall.scss */
+/* line 3037, ../sass/_teachforall.scss */
 .view-news .icon-play,
 .view-network-learning .icon-play,
 .view-press .icon-play {
@@ -3893,7 +3903,7 @@ img {
   font-size: 1.25rem;
 }
 @media screen and (max-width: 979px) {
-  /* line 3028, ../sass/_teachforall.scss */
+  /* line 3037, ../sass/_teachforall.scss */
   .view-news .icon-play,
   .view-network-learning .icon-play,
   .view-press .icon-play {
@@ -3904,16 +3914,16 @@ img {
   }
 }
 
-/* line 3046, ../sass/_teachforall.scss */
+/* line 3055, ../sass/_teachforall.scss */
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
 }
-/* line 3051, ../sass/_teachforall.scss */
+/* line 3060, ../sass/_teachforall.scss */
 .page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3051, ../sass/_teachforall.scss */
+  /* line 3060, ../sass/_teachforall.scss */
   .page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
     font-size: 12px;
     font-size: 0.75rem;
@@ -3921,16 +3931,16 @@ img {
   }
 }
 
-/* line 3061, ../sass/_teachforall.scss */
+/* line 3070, ../sass/_teachforall.scss */
 .news-flexslider, .network-learning-flexslider {
   margin-bottom: 30px;
 }
-/* line 3064, ../sass/_teachforall.scss */
+/* line 3073, ../sass/_teachforall.scss */
 .news-flexslider h2, .network-learning-flexslider h2 {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3064, ../sass/_teachforall.scss */
+  /* line 3073, ../sass/_teachforall.scss */
   .news-flexslider h2, .network-learning-flexslider h2 {
     margin-top: 0;
     padding-bottom: 18px;
@@ -3938,29 +3948,29 @@ img {
     font-size: 0.875rem;
   }
 }
-/* line 3076, ../sass/_teachforall.scss */
+/* line 3085, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-paging li a, .network-learning-flexslider .flex-control-paging li a {
   background-color: #91998c;
   border-radius: 0;
 }
-/* line 3079, ../sass/_teachforall.scss */
+/* line 3088, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-paging li a.flex-active, .network-learning-flexslider .flex-control-paging li a.flex-active {
   background-color: #e69740;
 }
-/* line 3085, ../sass/_teachforall.scss */
+/* line 3094, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
   bottom: 12px;
   right: 10px;
   width: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 3085, ../sass/_teachforall.scss */
+  /* line 3094, ../sass/_teachforall.scss */
   .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
     left: 14px;
     text-align: left;
   }
 }
-/* line 3095, ../sass/_teachforall.scss */
+/* line 3104, ../sass/_teachforall.scss */
 .news-flexslider .flexslider, .network-learning-flexslider .flexslider {
   background: transparent;
   border: none;
@@ -3969,7 +3979,7 @@ img {
   margin: 0;
 }
 
-/* line 3105, ../sass/_teachforall.scss */
+/* line 3114, ../sass/_teachforall.scss */
 .view-nodequeue-supporter-list .flexslider {
   background: transparent;
   border: none;
@@ -3978,12 +3988,12 @@ img {
   margin: 0;
 }
 
-/* line 3114, ../sass/_teachforall.scss */
+/* line 3123, ../sass/_teachforall.scss */
 .flexslider-wrapper {
   position: relative;
 }
 
-/* line 3118, ../sass/_teachforall.scss */
+/* line 3127, ../sass/_teachforall.scss */
 .flexslider-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3997,21 +4007,21 @@ img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 3118, ../sass/_teachforall.scss */
+  /* line 3127, ../sass/_teachforall.scss */
   .flexslider-info {
     padding-right: 20px;
   }
 }
-/* line 3133, ../sass/_teachforall.scss */
+/* line 3142, ../sass/_teachforall.scss */
 .flexslider-info h2 a {
   color: #fff;
 }
-/* line 3136, ../sass/_teachforall.scss */
+/* line 3145, ../sass/_teachforall.scss */
 .flexslider-info h2 a:hover {
   color: #cf4753;
 }
 
-/* line 3143, ../sass/_teachforall.scss */
+/* line 3152, ../sass/_teachforall.scss */
 .flexslider-preview {
   color: #91998c;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -4023,11 +4033,11 @@ img {
   font-style: normal;
 }
 
-/* line 3148, ../sass/_teachforall.scss */
+/* line 3157, ../sass/_teachforall.scss */
 .flexslider-link {
   margin-top: 5px;
 }
-/* line 3150, ../sass/_teachforall.scss */
+/* line 3159, ../sass/_teachforall.scss */
 .flexslider-link a {
   color: #fff;
   letter-spacing: 1px;
@@ -4036,7 +4046,7 @@ img {
   font-size: 0.75rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 3156, ../sass/_teachforall.scss */
+/* line 3165, ../sass/_teachforall.scss */
 .flexslider-link a:hover {
   color: #cf4753;
 }
@@ -4045,12 +4055,12 @@ img {
 /**
 * #Privacy Policy
 **/
-/* line 3169, ../sass/_teachforall.scss */
+/* line 3178, ../sass/_teachforall.scss */
 .privacy-policy-contact div {
   float: left;
   display: block;
 }
-/* line 3174, ../sass/_teachforall.scss */
+/* line 3183, ../sass/_teachforall.scss */
 .privacy-policy-contact .labels {
   margin-right: 10px;
 }
@@ -4059,7 +4069,7 @@ img {
 /**
 * #A Global Problem
 **/
-/* line 3186, ../sass/_teachforall.scss */
+/* line 3195, ../sass/_teachforall.scss */
 #worldmap.worldmap__details {
   background-color: #92b4a6;
 }
@@ -4068,35 +4078,35 @@ img {
 /**
 * #Search
 **/
-/* line 3198, ../sass/_teachforall.scss */
+/* line 3207, ../sass/_teachforall.scss */
 .page-search #main {
   min-height: 390px;
 }
 
-/* line 3204, ../sass/_teachforall.scss */
+/* line 3213, ../sass/_teachforall.scss */
 .search-form .container-inline {
   margin: 0 auto;
   width: 260px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3204, ../sass/_teachforall.scss */
+  /* line 3213, ../sass/_teachforall.scss */
   .search-form .container-inline {
     margin: 0;
     width: 100%;
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 3211, ../sass/_teachforall.scss */
+  /* line 3220, ../sass/_teachforall.scss */
   .search-form .container-inline input {
     width: 200px;
   }
 }
 
-/* line 3219, ../sass/_teachforall.scss */
+/* line 3228, ../sass/_teachforall.scss */
 .search-result {
   margin-bottom: 30px;
 }
-/* line 3221, ../sass/_teachforall.scss */
+/* line 3230, ../sass/_teachforall.scss */
 .search-result:last-child {
   margin-bottom: 0;
 }
@@ -4106,76 +4116,76 @@ img {
 * #National Organizations - Landing
 **/
 @media screen and (max-width: 767px) {
-  /* line 3232, ../sass/_teachforall.scss */
+  /* line 3241, ../sass/_teachforall.scss */
   .unifying-principles__right-col {
     padding-top: 30px;
   }
 }
 
-/* line 3238, ../sass/_teachforall.scss */
+/* line 3247, ../sass/_teachforall.scss */
 .nov2__intro {
   margin-bottom: 30px;
 }
 
-/* line 3242, ../sass/_teachforall.scss */
+/* line 3251, ../sass/_teachforall.scss */
 .view-nos-az {
   margin: 30px 0 0 0;
 }
-/* line 3244, ../sass/_teachforall.scss */
+/* line 3253, ../sass/_teachforall.scss */
 .view-nos-az h2 {
   margin-top: 0;
 }
-/* line 3246, ../sass/_teachforall.scss */
+/* line 3255, ../sass/_teachforall.scss */
 .view-nos-az h2 a {
   color: #3c3835;
 }
-/* line 3248, ../sass/_teachforall.scss */
+/* line 3257, ../sass/_teachforall.scss */
 .view-nos-az h2 a:hover {
   color: #cf4753;
 }
-/* line 3253, ../sass/_teachforall.scss */
+/* line 3262, ../sass/_teachforall.scss */
 .view-nos-az .item {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 3256, ../sass/_teachforall.scss */
+/* line 3265, ../sass/_teachforall.scss */
 .view-nos-az .item:last-child {
   margin-bottom: 0;
 }
 
-/* line 3262, ../sass/_teachforall.scss */
+/* line 3271, ../sass/_teachforall.scss */
 .unifying-principles {
   background-color: #DFD9C9;
   margin: 30px 0 0 0;
   padding: 30px 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 3262, ../sass/_teachforall.scss */
+  /* line 3271, ../sass/_teachforall.scss */
   .unifying-principles {
     padding: 20px 10px;
   }
 }
-/* line 3269, ../sass/_teachforall.scss */
+/* line 3278, ../sass/_teachforall.scss */
 .unifying-principles strong {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
-/* line 3273, ../sass/_teachforall.scss */
+/* line 3282, ../sass/_teachforall.scss */
 .unifying-principles .title-small {
   margin-bottom: 20px;
 }
-/* line 3276, ../sass/_teachforall.scss */
+/* line 3285, ../sass/_teachforall.scss */
 .unifying-principles ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 3282, ../sass/_teachforall.scss */
+/* line 3291, ../sass/_teachforall.scss */
 .unifying-principles li {
   padding-left: 1em;
   text-indent: -.7em;
 }
-/* line 3287, ../sass/_teachforall.scss */
+/* line 3296, ../sass/_teachforall.scss */
 .unifying-principles li:before {
   content: "\2022 \0020";
   color: #e69740;
@@ -4186,44 +4196,44 @@ img {
 * #News - Latest, #Network Learning - Latest
 **/
 @media screen and (max-width: 767px) {
-  /* line 3303, ../sass/_teachforall.scss */
+  /* line 3312, ../sass/_teachforall.scss */
   .page-news-latest #main .teachforall-twitter-block,
   .page-network-learning-latest #main .teachforall-twitter-block {
     margin-top: 30px;
   }
 }
 
-/* line 3318, ../sass/_teachforall.scss */
+/* line 3327, ../sass/_teachforall.scss */
 .panel-2col-bricks .center-wrapper .panel-panel {
   margin-bottom: 20px;
 }
 
-/* line 3326, ../sass/_teachforall.scss */
+/* line 3335, ../sass/_teachforall.scss */
 div#panels-ipe-control-container {
   visibility: hidden !important;
 }
 
-/* line 3328, ../sass/_teachforall.scss */
+/* line 3337, ../sass/_teachforall.scss */
 .pane-content .panel-display {
   width: 100%;
 }
 
-/* line 3332, ../sass/_teachforall.scss */
+/* line 3341, ../sass/_teachforall.scss */
 .pane-bundle-video {
   margin-bottom: 10px;
 }
-/* line 3335, ../sass/_teachforall.scss */
+/* line 3344, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a {
   display: block;
   position: relative;
   speak: none;
   text-align: center;
 }
-/* line 3341, ../sass/_teachforall.scss */
+/* line 3350, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a:hover:after {
   background-color: transparent;
 }
-/* line 3345, ../sass/_teachforall.scss */
+/* line 3354, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a:after {
   background-color: rgba(0, 0, 0, 0.15);
   background-image: url(../images/play.png);
@@ -4243,7 +4253,7 @@ div#panels-ipe-control-container {
   z-index: 10;
 }
 
-/* line 3366, ../sass/_teachforall.scss */
+/* line 3375, ../sass/_teachforall.scss */
 .panel-panel .slug {
   font-size: 11px;
   font-size: 0.6875rem;
@@ -4254,31 +4264,31 @@ div#panels-ipe-control-container {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-/* line 3377, ../sass/_teachforall.scss */
+/* line 3386, ../sass/_teachforall.scss */
 .panel-panel img, .panel-panel iframe {
   width: 100%;
 }
-/* line 3381, ../sass/_teachforall.scss */
+/* line 3390, ../sass/_teachforall.scss */
 .panel-panel h1, .panel-panel h2, .panel-panel h3, .panel-panel h4, .panel-panel h5, .panel-panel a {
   color: #e69740;
 }
-/* line 3384, ../sass/_teachforall.scss */
+/* line 3393, ../sass/_teachforall.scss */
 .panel-panel h1 {
   text-align: center;
 }
-/* line 3387, ../sass/_teachforall.scss */
+/* line 3396, ../sass/_teachforall.scss */
 .panel-panel h2 {
   font-size: 25px;
 }
-/* line 3390, ../sass/_teachforall.scss */
+/* line 3399, ../sass/_teachforall.scss */
 .panel-panel h2 a {
   color: #000;
 }
-/* line 3392, ../sass/_teachforall.scss */
+/* line 3401, ../sass/_teachforall.scss */
 .panel-panel h2 a:hover {
   color: #cf4753;
 }
-/* line 3397, ../sass/_teachforall.scss */
+/* line 3406, ../sass/_teachforall.scss */
 .panel-panel p {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -4293,59 +4303,59 @@ div#panels-ipe-control-container {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 3405, ../sass/_teachforall.scss */
+/* line 3414, ../sass/_teachforall.scss */
 .panel-panel p a {
   color: #cf4753;
 }
-/* line 3409, ../sass/_teachforall.scss */
+/* line 3418, ../sass/_teachforall.scss */
 .panel-panel .full-list, .panel-panel .landing-forum p + a, .landing-forum .panel-panel p + a {
   color: #fff;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 3413, ../sass/_teachforall.scss */
+/* line 3422, ../sass/_teachforall.scss */
 .panel-panel .full-list:after, .panel-panel .landing-forum p + a:after, .landing-forum .panel-panel p + a:after {
   color: #e69740;
   content: " >>";
 }
-/* line 3417, ../sass/_teachforall.scss */
+/* line 3426, ../sass/_teachforall.scss */
 .panel-panel .full-list:hover, .panel-panel .landing-forum p + a:hover, .landing-forum .panel-panel p + a:hover {
   color: #e69740;
 }
-/* line 3421, ../sass/_teachforall.scss */
+/* line 3430, ../sass/_teachforall.scss */
 .panel-panel .btn__red, .panel-panel .view-persons .view-footer a.btn, .view-persons .view-footer .panel-panel a.btn, .panel-panel .view-supporters .view-footer .btn, .view-supporters .view-footer .panel-panel .btn {
   color: #fff;
 }
-/* line 3423, ../sass/_teachforall.scss */
+/* line 3432, ../sass/_teachforall.scss */
 .panel-panel .btn__red:hover, .panel-panel .view-persons .view-footer a.btn:hover, .view-persons .view-footer .panel-panel a.btn:hover, .panel-panel .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .panel-panel .btn:hover {
   color: #fff;
   opacity: 0.8;
 }
-/* line 3428, ../sass/_teachforall.scss */
+/* line 3437, ../sass/_teachforall.scss */
 .panel-panel .panel-panel-inner {
   margin-right: 0 !important;
 }
-/* line 3433, ../sass/_teachforall.scss */
+/* line 3442, ../sass/_teachforall.scss */
 .panel-panel .reverse .panel-panel {
   float: right;
   text-align: right;
 }
-/* line 3436, ../sass/_teachforall.scss */
+/* line 3445, ../sass/_teachforall.scss */
 .panel-panel .reverse .panel-panel .panel-panel-inner {
   margin-right: 0;
   margin-left: 0 !important;
 }
-/* line 3441, ../sass/_teachforall.scss */
+/* line 3450, ../sass/_teachforall.scss */
 .panel-panel .reverse .phelan-column2 {
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 3446, ../sass/_teachforall.scss */
+/* line 3455, ../sass/_teachforall.scss */
 .panel-panel .reverse .phelan-column1 .panel-panel-inner {
   margin-right: 0 !important;
   margin-left: 20px;
 }
 
-/* line 3454, ../sass/_teachforall.scss */
+/* line 3463, ../sass/_teachforall.scss */
 .comment--user-wrapper .stats,
 .comment--user-wrapper .slug {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -4357,7 +4367,7 @@ div#panels-ipe-control-container {
   font-style: normal;
 }
 
-/* line 3461, ../sass/_teachforall.scss */
+/* line 3470, ../sass/_teachforall.scss */
 .large-image img {
   height: auto;
   margin-bottom: 20px;
@@ -4367,35 +4377,35 @@ div#panels-ipe-control-container {
   margin-right: auto;
 }
 @media screen and (max-width: 640px) {
-  /* line 3461, ../sass/_teachforall.scss */
+  /* line 3470, ../sass/_teachforall.scss */
   .large-image img {
     margin-bottom: 10px;
   }
 }
 
-/* line 3473, ../sass/_teachforall.scss */
+/* line 3482, ../sass/_teachforall.scss */
 .rolph-container {
   width: 82.97872340425532%;
   margin: 0 auto;
 }
 
-/* line 3478, ../sass/_teachforall.scss */
+/* line 3487, ../sass/_teachforall.scss */
 .page-press .region-content {
   margin: 0 auto;
   max-width: 1170px;
 }
 
-/* line 3483, ../sass/_teachforall.scss */
+/* line 3492, ../sass/_teachforall.scss */
 .press-sidebar {
   float: right !important;
   position: relative;
   z-index: 100;
 }
-/* line 3487, ../sass/_teachforall.scss */
+/* line 3496, ../sass/_teachforall.scss */
 .press-sidebar div {
   clear: both;
 }
-/* line 3490, ../sass/_teachforall.scss */
+/* line 3499, ../sass/_teachforall.scss */
 .press-sidebar .full-list, .press-sidebar .landing-forum p + a, .landing-forum .press-sidebar p + a {
   margin: 20px 0 0;
 }
@@ -9436,6 +9446,15 @@ h2.news__title {
   .press-center .view-press-video-archive {
     margin-top: 10px;
   }
+}
+
+/* line 2, ../sass/_ourimpact.scss */
+.bean-2-col-graphic-text img {
+  float: left;
+}
+/* line 5, ../sass/_ourimpact.scss */
+.bean-2-col-graphic-text p {
+  margin-left: 25%;
 }
 
 /**
