@@ -347,7 +347,7 @@ function impact_field_default_field_instances() {
         'module' => 'video_embed_field',
         'settings' => array(
           'description' => 1,
-          'image_link' => '',
+          'image_link' => 'source',
           'image_style' => 'video_teaser',
         ),
         'type' => 'video_embed_field_thumbnail',

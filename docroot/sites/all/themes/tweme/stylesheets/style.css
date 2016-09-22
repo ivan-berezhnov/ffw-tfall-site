@@ -9526,6 +9526,23 @@ h2.news__title {
   margin-bottom: 45px;
 }
 
+/* line 70, ../sass/_ourimpact.scss */
+.field-group-format-wrapper a ::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("/sites/all/themes/tweme/images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
+}
+
 /**
 * #Table of Contents
 **/
