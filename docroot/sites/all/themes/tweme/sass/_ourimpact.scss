@@ -1,3 +1,25 @@
+
+.bean-section-intro {
+	.content {
+		margin: 0 auto;
+		max-width: 960px;
+		text-align: center;
+		width: 100%;
+	}
+}
+.bean-graphic-over-text {
+	.content {
+		color: $greenteal;
+		line-height: 1;
+		text-align: center;
+		.largetext {
+			font-size: 70.5px;
+		}
+		.mediumtext {
+			font-size: 40.5px;
+		}
+	}
+}
 .bean-2-col-graphic-text  {
 	img {
 	  float: left;
@@ -5,4 +27,44 @@
 	p {
 	  margin-left: 25%;
 	}
+}
+.bean-2-tier-video-caption {
+	padding-left: 15px;
+    padding-right: 15px;
+	h3 {
+		display: none;
+	}
+	.attribution {
+		color: #000;
+		font-size: 14px;
+		text-align: right;
+		text-transform: uppercase;
+		@include NewsGothicRegular;
+		&:before {
+			content: "-";
+			margin-right: 3px;
+		}
+	}
+}
+.ourimpact {
+	color: $greenolive;
+	.region-content {
+	  background: #ddd;
+	  margin: 0 auto;
+	  max-width: 1170px;
+	  width: 1170px;
+	}
+	.block.block-bean {
+		h2 {
+			color: $bluegrey;
+			font-size: 40px;
+			@include NewsGothicRegular;
+			padding-bottom: 35px;
+			text-align: center;
+		}
+		.entity-bean {
+			margin-bottom: 45px;
+		}
+	}
+
 }

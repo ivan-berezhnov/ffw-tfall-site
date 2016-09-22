@@ -27,9 +27,9 @@
  * @see template_process()
  */
 ?>
-<div class="span12 <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <div class="content large-body"<?php print $content_attributes; ?>>
+  <div class="content"<?php print $content_attributes; ?>>
     <?php
       print render($content);
     ?>
