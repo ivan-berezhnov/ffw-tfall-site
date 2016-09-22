@@ -9509,12 +9509,11 @@ h2.news__title {
 }
 /* line 51, ../sass/_ourimpact.scss */
 .ourimpact .region-content {
-  background: #ddd;
   margin: 0 auto;
   max-width: 1170px;
   width: 1170px;
 }
-/* line 58, ../sass/_ourimpact.scss */
+/* line 57, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean h2 {
   color: #5d6f79;
   font-size: 40px;
@@ -9522,7 +9521,7 @@ h2.news__title {
   padding-bottom: 35px;
   text-align: center;
 }
-/* line 65, ../sass/_ourimpact.scss */
+/* line 64, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean .entity-bean {
   margin-bottom: 45px;
 }
