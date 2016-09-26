@@ -17,8 +17,8 @@ drush @$drush_alias updatedb -y
 echo "Clearing cache:"
 drush @$drush_alias cc all
 
-echo "Reverting all features:"
-drush @$drush_alias fra -y
+#echo "Reverting all features:"
+#drush @$drush_alias fra -y
 
-echo "Clearing cache:"
-drush @$drush_alias cc all
+#echo "Clearing cache:"
+#drush @$drush_alias cc all
