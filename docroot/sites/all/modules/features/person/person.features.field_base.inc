@@ -133,6 +133,7 @@ function person_field_default_field_bases() {
         'CEO' => 'CEO',
         'Board member' => 'Board member',
         'Leader' => 'Leader',
+        'Global Ambassador' => 'Global Ambassador',
       ),
       'allowed_values_function' => '',
       'entity_translation_sync' => FALSE,

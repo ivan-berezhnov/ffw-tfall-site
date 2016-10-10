@@ -124,7 +124,6 @@ function persons_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Page Title';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<h2 class="page-title">Board</h2>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Text area */
@@ -372,7 +371,7 @@ function persons_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['field'] = 'field_job_title';
   $handler->display->display_options['fields']['field_job_title']['label'] = '';
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
-  /* Field: Content: Organization */
+  /* Field: Content: Partner */
   $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
   $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
   $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
@@ -446,6 +445,82 @@ function persons_views_default_views() {
   $handler->display->display_options['filters']['status_1']['relationship'] = 'entity_translations';
   $handler->display->display_options['filters']['status_1']['value'] = '1';
   $handler->display->display_options['path'] = 'about/ceo';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['enabled'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'person' => 'person',
+  );
+  /* Filter criterion: Content: Type (field_person_type) */
+  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
+  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
+    'Global Ambassador' => 'Global Ambassador',
+  );
+  $handler->display->display_options['block_description'] = 'Global Amabssadors';
+
+  /* Display: Attachment */
+  $handler = $view->new_display('attachment', 'Attachment', 'attachment_1');
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="page-title">Global Ambassadors</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg_ckeditor';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<h2 class="page-title">Board</h2>';
+  $handler->display->display_options['footer']['area']['format'] = 'wysiwyg_ckeditor';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'person' => 'person',
+  );
+  /* Filter criterion: Content: Type (field_person_type) */
+  $handler->display->display_options['filters']['field_person_type_value']['id'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['table'] = 'field_data_field_person_type';
+  $handler->display->display_options['filters']['field_person_type_value']['field'] = 'field_person_type_value';
+  $handler->display->display_options['filters']['field_person_type_value']['value'] = array(
+    'Global Ambassador' => 'Global Ambassador',
+  );
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'page_1' => 0,
+    'page_2' => 0,
+    'block_1' => 0,
+  );
   $export['persons_view'] = $view;
 
   return $export;
