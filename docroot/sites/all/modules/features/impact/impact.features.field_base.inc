@@ -32,6 +32,68 @@ function impact_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_bean_field_groups'
+  $field_bases['field_bean_field_groups'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bean_field_groups',
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_bean_group'
+  $field_bases['field_bean_group'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_bean_group',
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'groupoffour' => 'groupoffour',
+          'groupofthree' => 'groupofthree',
+          'groupoftwo' => 'groupoftwo',
+          'section_intro' => 'section_intro',
+        ),
+      ),
+      'target_type' => 'bean',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_first_bean'
   $field_bases['field_first_bean'] = array(
     'active' => 1,

@@ -22,7 +22,7 @@ function impact_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'bean',
@@ -67,7 +67,7 @@ function impact_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'bean',
@@ -347,7 +347,7 @@ function impact_field_default_field_instances() {
         'module' => 'video_embed_field',
         'settings' => array(
           'description' => 1,
-          'image_link' => 'source',
+          'image_link' => '',
           'image_style' => 'video_teaser',
         ),
         'type' => 'video_embed_field_thumbnail',
@@ -381,12 +381,19 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 2,
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'graphic_over_text' => array(
         'label' => 'hidden',
@@ -433,11 +440,18 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_plain',
+        'type' => 'text_default',
         'weight' => 3,
       ),
       'graphic_over_text' => array(
@@ -485,6 +499,13 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -534,6 +555,16 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -603,11 +634,21 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
+          'links' => 1,
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
@@ -640,6 +681,16 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -677,6 +728,16 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -714,6 +775,16 @@ function impact_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'alt_teaser' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -1091,9 +1162,129 @@ function impact_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_bean_field_groups-field_bean_group'
+  $field_instances['field_collection_item-field_bean_field_groups-field_bean_group'] = array(
+    'bundle' => 'field_bean_field_groups',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_bean_group',
+    'label' => 'Bean Group',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'node-bean_block_page-field_bean_field_groups'
+  $field_instances['node-bean_block_page-field_bean_field_groups'] = array(
+    'bundle' => 'bean_block_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 0,
+          'edit' => '',
+          'translate' => '',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 3,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'global_organization' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'our_model' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'videoarchive' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bean_field_groups',
+    'label' => 'Bean Field Groups',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 1,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Attribution');
+  t('Bean Field Groups');
+  t('Bean Group');
   t('Description');
   t('Embedded Video');
   t('First bean');

@@ -149,7 +149,7 @@ function impact_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'field_large_text',
     ),
@@ -265,6 +265,102 @@ function impact_field_group_info() {
     ),
   );
   $field_groups['group_mediumtext|bean|graphic_over_text|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_regulartext|bean|2_col_graphic_text|default';
+  $field_group->group_name = 'group_regulartext';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = '2_col_graphic_text';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_regular_text',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'regulartext',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_regulartext|bean|2_col_graphic_text|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_regulartext|bean|graphic_over_text|default';
+  $field_group->group_name = 'group_regulartext';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'graphic_over_text';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '7',
+    'children' => array(
+      0 => 'field_regular_text',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'regulartext',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_regulartext|bean|graphic_over_text|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_topimage|bean|2_col_graphic_text|default';
+  $field_group->group_name = 'group_topimage';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = '2_col_graphic_text';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_top_image',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'topimage',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_topimage|bean|2_col_graphic_text|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */

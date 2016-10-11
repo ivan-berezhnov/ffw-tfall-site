@@ -1,0 +1,46 @@
+diff --git a/bean.module b/bean.module
+index cd522f7..8c4f5f4 100644
+--- a/bean.module
++++ b/bean.module
+@@ -881,12 +881,6 @@ function bean_block_view($delta = '') {
+     );
+   }
+ 
+-  if (!empty($return['content']) && module_exists('contextual')) {
+-    $return['content']['#contextual_links']['bean'] = array(
+-      'block', array($bean->Identifier(), 'edit')
+-    );
+-  }
+-
+   return $return;
+ }
+ 
+diff --git a/bean.tpl.php b/bean.tpl.php
+index dcdb9dc..3027b0a 100644
+--- a/bean.tpl.php
++++ b/bean.tpl.php
+@@ -28,7 +28,7 @@
+  */
+ ?>
+ <div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+-
++  <?php print render($title_suffix); ?>
+   <div class="content"<?php print $content_attributes; ?>>
+     <?php
+       print render($content);
+diff --git a/plugins/BeanPlugin.class.php b/plugins/BeanPlugin.class.php
+index 4ac9f14..cd3435f 100644
+--- a/plugins/BeanPlugin.class.php
++++ b/plugins/BeanPlugin.class.php
+@@ -101,6 +101,11 @@ abstract class BeanPlugin implements BeanTypePluginInterface {
+    *   Return a renderable content array.
+    */
+   public function view($bean, $content, $view_mode = 'default', $langcode = NULL) {
++    if (!empty($content) && module_exists('contextual')) {
++      $content['bean'][$bean->Identifier()]['#contextual_links']['bean'] = array(
++        'block', array($bean->Identifier(), 'edit')
++      );
++    }
+     return $content;
+   }
+ }

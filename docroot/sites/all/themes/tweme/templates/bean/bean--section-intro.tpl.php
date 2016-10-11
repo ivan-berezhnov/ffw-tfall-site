@@ -28,7 +28,7 @@
  */
 ?>
 <div class="span12 <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
+    <?php print render($title_suffix) ?>
   <div class="content large-body"<?php print $content_attributes; ?>>
     <?php
       print render($content);
