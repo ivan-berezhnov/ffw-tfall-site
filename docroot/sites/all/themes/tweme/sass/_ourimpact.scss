@@ -38,9 +38,6 @@
 			color: $greenolive;
 			font-size: 18px;
 			padding: 0 5px;
-			strong {
-				color: #000;
-			}
 		}
 	}
 }
@@ -56,7 +53,8 @@
 	.topimage {
 	  text-align: center;
 	}
-	.summary p {
+	.details,
+	.summary {
 		color: #000;
 		font-size: 18px;
 		margin-top: 10px;
@@ -270,13 +268,22 @@
 	  border: medium none;
 	  padding: 10px 0;
 	}
+	strong {
+		color: #000;
+	}
+	p {
+		font-size: 18px;
+	}	
 }
 .field-group-format-wrapper a:hover::after {
   background: transparent;
 }  
 
-.field-group-format-wrapper  a::after {
-  background-image: url("../images/play.png");
+
+
+.entity-bean.bean-2-tier-video-caption a.video::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("/sites/all/themes/tweme/images/play.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 80px auto;
@@ -288,5 +295,17 @@
   transition: all 0.2s ease 0s;
   width: 100%;
   z-index: 10;
+}
+.entity-bean.bean-2-tier-video-caption .content a {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.entity-bean.bean-2-tier-video-caption .content a {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
 }	
-
+.entity-bean.bean-2-tier-video-caption .content a:hover::after {
+  background-color: transparent
+}
