@@ -1,25 +1,46 @@
-
 .bean-section-intro {
-	.content {
+	margin-bottom: 30px;
+	.header {
+		@include NGMedium;
+		color: $bluegrey;
+		font-size: 40px;
+		margin-bottom: 40px;
+		margin-top: 60px;
+		text-align: center;		
+		@media screen and (min-width: 980px) {
+			padding: 0 180px;
+		}
+	}
+	.introtext {
 		margin: 0 auto;
-		max-width: 960px;
 		text-align: center;
-		width: 100%;
+		@media screen and (min-width: 980px) {
+			padding: 0 180px;
+		}		
 	}
 }
 .bean-graphic-over-text {
 	.content {
-		color: $greenteal;
 		line-height: 1;
 		text-align: center;
+		.topimage {
+		  margin-bottom: 17px;
+		}		
 		.largetext {
 			font-size: 70.5px;
+			color: $greenteal;
 		}
 		.mediumtext {
 			font-size: 40.5px;
+			color: $greenteal;
 		}
 		.regulartext {
-			color: inherit;
+			color: $greenolive;
+			font-size: 18px;
+			padding: 0 5px;
+			strong {
+				color: #000;
+			}
 		}
 	}
 }
@@ -35,9 +56,20 @@
 	.topimage {
 	  text-align: center;
 	}
-	.attribution {
+	.summary p {
 		color: #000;
-		font-size: 14px;
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.read-more,
+	.less-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		@include NewsGothicRegular;			
+	}
+	.attribution p {
+		color: #000;
+		font-size: 11px;
 		text-align: right;
 		text-transform: uppercase;
 		@include NewsGothicRegular;
@@ -47,15 +79,20 @@
 		}
 	}	
 }
+
 .bean-2-tier-video-caption {
 	padding-left: 10px;
     padding-right: 10px;
 	h3 {
 		display: none;
 	}
+	.description {
+		font-size: 18px;
+		margin-top: 10px;
+	}	
 	.attribution {
 		color: #000;
-		font-size: 14px;
+		font-size: 11px;
 		text-align: right;
 		text-transform: uppercase;
 		@include NewsGothicRegular;
@@ -73,15 +110,23 @@
 	  width: 1170px;
 	}
 	.block.block-bean {
+		color: $greenolive;
 		h2 {
 			color: $bluegrey;
 			font-size: 40px;
-			@include NewsGothicRegular;
+			font-family: "News Gothic";
 			padding-bottom: 35px;
 			text-align: center;
 		}
 		.entity-bean {
 			margin-bottom: 45px;
+				h2 {
+					color: $bluegrey;
+					font-size: 40px;
+					font-family: "News Gothic";
+					padding-bottom: 35px;
+					text-align: center;
+				}	
 		}
 	}
 }
@@ -102,6 +147,7 @@
   z-index: 10;
 }
 .node.node-bean-block-page {
+	color: $greenolive;
 	@media screen and (max-width: 590px) {
 		
 		.span12.entity.entity-bean.bean-section-intro {
@@ -222,8 +268,7 @@
 	}	
 	.field-collection-view {
 	  border: medium none;
-	  margin: 20px 0;
-	  padding: 0;
+	  padding: 10px 0;
 	}
 }
 .field-group-format-wrapper a:hover::after {
