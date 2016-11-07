@@ -1,0 +1,16 @@
+name = Press Center Views
+description = Views for press center, leadership, videoarchives
+core = 7.x
+package = Press Center
+version = 7.x-1.0
+project = press_center_views
+dependencies[] = flexslider_views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = leadership_videos
+features[views_view][] = press_center
+features[views_view][] = press_center_slider
+features[views_view][] = press_video_archive
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/features

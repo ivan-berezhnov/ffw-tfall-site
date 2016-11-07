@@ -165,7 +165,21 @@ if ($vars['element']['#bundle'] === '2_tier_video_caption') {
       $vars['items'][$item]['#prefix'] = '<a class="video" href="'. $video_uri .'" rel="shadowbox">';
       $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
     }
-  }       
+  } 
+if ($vars['element']['#bundle'] === 'press_center') {
+    foreach ($vars['element']['#items'] as $item => $value) {
+      $video_data = unserialize($value['video_data']);
+      $video_uri = '';
+      if ($video_data['handler'] === 'vimeo') {
+        $video_uri = 'http://player.vimeo.com/video/' . $video_data['id'] . '/?autoplay=1';
+      }
+      if ($video_data['handler'] === 'youtube') {
+        $video_uri = $value['video_url'] . '/?autoplay=1';
+      }
+      $vars['items'][$item]['#prefix'] = '<a class="video" href="'. $video_uri .'" rel="shadowbox">';
+      $vars['items'][$item]['#suffix'] = '</a>' . $vars['items'][$item]['#suffix'];
+    }
+  }         
 }
 
 /**

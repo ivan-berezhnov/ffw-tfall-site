@@ -8,7 +8,7 @@
   <div class="row-fluid">
     <div class="span12">
       <div class="top-section__blurb">
-        <?php print render($content['field_globalproblem_subheader']); ?>
+        <?php print render($content['field_header_image']); ?>
       </div>
     </div>
   </div>

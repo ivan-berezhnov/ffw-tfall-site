@@ -37,6 +37,12 @@ function featured_videos_context_default_contexts() {
           'region' => 'net_learning_front',
           'weight' => '-9',
         ),
+        'block-86' => array(
+          'module' => 'block',
+          'delta' => '86',
+          'region' => 'net_learning_front',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
