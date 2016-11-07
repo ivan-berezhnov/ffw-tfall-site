@@ -23,8 +23,8 @@ function press_center_content_type_field_group_info() {
     'label' => 'Partner Press fields',
     'weight' => '9',
     'children' => array(
-      0 => 'field_pc_partner',
-      1 => 'field_pc_country',
+      0 => 'field_pc_country',
+      1 => 'field_pc_partner',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -50,10 +50,10 @@ function press_center_content_type_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Press Kit Info',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
-      0 => 'field_pc_press_kit_info',
-      1 => 'field_pc_download',
+      0 => 'field_pc_download',
+      1 => 'field_pc_press_kit_info',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -80,14 +80,14 @@ function press_center_content_type_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Press & Video Info',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
-      0 => 'field_pc_publication_name',
+      0 => 'field_pc_article_language',
       1 => 'field_pc_credit_names',
-      2 => 'field_pc_summary',
-      3 => 'field_pc_external_link',
-      4 => 'field_pc_article_language',
-      5 => 'field_pc_image',
+      2 => 'field_pc_external_link',
+      3 => 'field_pc_image',
+      4 => 'field_pc_publication_name',
+      5 => 'field_pc_summary',
       6 => 'group_partnerpressfields',
     ),
     'format_type' => 'fieldset',
