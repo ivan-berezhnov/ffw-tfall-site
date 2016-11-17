@@ -121,7 +121,7 @@ function press_center_content_type_field_default_field_instances() {
         'settings' => array(
           'description' => 0,
           'image_link' => '',
-          'image_style' => 'news_video_thumbnail',
+          'image_style' => 'network_learning_front_thumbnail',
         ),
         'type' => 'video_embed_field_thumbnail',
         'weight' => 1,

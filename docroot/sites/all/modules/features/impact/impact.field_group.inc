@@ -333,6 +333,34 @@ function impact_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_multiplefieldsets|bean|2_col_graphic_text|form';
+  $field_group->group_name = 'group_multiplefieldsets';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = '2_col_graphic_text';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Multiple fieldsets',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_multiples',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => 'group-multiplefieldsets field-group-fieldset',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_multiplefieldsets|bean|2_col_graphic_text|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_regulartext|bean|2_col_graphic_text|default';
   $field_group->group_name = 'group_regulartext';
   $field_group->entity_type = 'bean';
@@ -393,6 +421,38 @@ function impact_field_group_info() {
     ),
   );
   $field_groups['group_regulartext|bean|graphic_over_text|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_regulartext|field_collection_item|field_multiples|default';
+  $field_group->group_name = 'group_regulartext';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_multiples';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_regular_text',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'regulartext',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_regulartext|field_collection_item|field_multiples|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -493,6 +553,38 @@ function impact_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_topimage|field_collection_item|field_multiples|default';
+  $field_group->group_name = 'group_topimage';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_multiples';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_top_image',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'topimage',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_topimage|field_collection_item|field_multiples|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_video|bean|2_tier_video_caption|default';
   $field_group->group_name = 'group_video';
   $field_group->entity_type = 'bean';
@@ -522,8 +614,42 @@ function impact_field_group_info() {
   );
   $field_groups['group_video|bean|2_tier_video_caption|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_video|bean|2_tier_video_caption|form';
+  $field_group->group_name = 'group_video';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = '2_tier_video_caption';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Video',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_embedded_video',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'open',
+      'instance_settings' => array(
+        'description' => '',
+        'show_label' => 1,
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+        'classes' => 'group-video field-group-div',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_video|bean|2_tier_video_caption|form'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Multiple fieldsets');
+  t('Video');
   t('attribution');
   t('description');
   t('large text');

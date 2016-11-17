@@ -10,6 +10,47 @@
 function impact_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'bean-2_col_graphic_text-field_multiples'
+  $field_instances['bean-2_col_graphic_text-field_multiples'] = array(
+    'bundle' => '2_col_graphic_text',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'translate' => 'Translate',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_multiples',
+    'label' => 'Multiples',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'field_collection_embed',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'bean-2_col_graphic_text-field_regular_text'
   $field_instances['bean-2_col_graphic_text-field_regular_text'] = array(
     'bundle' => '2_col_graphic_text',
@@ -49,7 +90,7 @@ function impact_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -107,7 +148,7 @@ function impact_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -1212,6 +1253,107 @@ function impact_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_multiples-field_regular_text'
+  $field_instances['field_collection_item-field_multiples-field_regular_text'] = array(
+    'bundle' => 'field_multiples',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_regular_text',
+    'label' => 'Regular text',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_multiples-field_top_image'
+  $field_instances['field_collection_item-field_multiples-field_top_image'] = array(
+    'bundle' => 'field_multiples',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_top_image',
+    'label' => 'Top image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'node-bean_block_page-field_bean_field_groups'
   $field_instances['node-bean_block_page-field_bean_field_groups'] = array(
     'bundle' => 'bean_block_page',
@@ -1295,6 +1437,7 @@ function impact_field_default_field_instances() {
   t('Intro text');
   t('Large text');
   t('Medium text');
+  t('Multiples');
   t('Regular text');
   t('Second bean');
   t('Section title');
