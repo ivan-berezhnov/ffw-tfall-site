@@ -180,120 +180,125 @@
 /**
 * #WYSIWYG Classes
 **/
-/* line 49, ../sass/_variables.scss */
+/* line 50, ../sass/_variables.scss */
 .beige {
   color: #dfd9c9;
 }
 
-/* line 53, ../sass/_variables.scss */
+/* line 54, ../sass/_variables.scss */
 .orange {
   color: #e69740;
 }
 
-/* line 57, ../sass/_variables.scss */
+/* line 58, ../sass/_variables.scss */
 .orange2 {
   color: #ffb151;
 }
 
-/* line 61, ../sass/_variables.scss */
+/* line 62, ../sass/_variables.scss */
 .red {
   color: #cf4753;
 }
 
-/* line 65, ../sass/_variables.scss */
+/* line 66, ../sass/_variables.scss */
 .black {
   color: #000;
 }
 
-/* line 69, ../sass/_variables.scss */
+/* line 70, ../sass/_variables.scss */
 .dovegrey {
   color: #91998c;
 }
 
-/* line 73, ../sass/_variables.scss */
+/* line 74, ../sass/_variables.scss */
 .almostblack {
   color: #4d4d4d;
 }
 
-/* line 77, ../sass/_variables.scss */
+/* line 78, ../sass/_variables.scss */
 .navbargrey {
   color: #3c3835;
 }
 
-/* line 81, ../sass/_variables.scss */
+/* line 82, ../sass/_variables.scss */
 .lightgrey {
   color: #999999;
 }
 
-/* line 86, ../sass/_variables.scss */
+/* line 85, ../sass/_variables.scss */
+.lightteal {
+  color: #91c2c0;
+}
+
+/* line 90, ../sass/_variables.scss */
 h1 .beige, h2 .beige, h3 .beige, h4 .beige {
   color: #dfd9c9;
 }
-/* line 90, ../sass/_variables.scss */
+/* line 94, ../sass/_variables.scss */
 h1 .orange, h2 .orange, h3 .orange, h4 .orange {
   color: #e69740;
 }
-/* line 94, ../sass/_variables.scss */
+/* line 98, ../sass/_variables.scss */
 h1 .orange2, h2 .orange2, h3 .orange2, h4 .orange2 {
   color: #ffb151;
 }
-/* line 98, ../sass/_variables.scss */
+/* line 102, ../sass/_variables.scss */
 h1 .red, h2 .red, h3 .red, h4 .red {
   color: #cf4753;
 }
-/* line 101, ../sass/_variables.scss */
+/* line 105, ../sass/_variables.scss */
 h1 .black, h2 .black, h3 .black, h4 .black {
   color: #000;
 }
 
-/* line 108, ../sass/_variables.scss */
+/* line 112, ../sass/_variables.scss */
 .NewsGothic {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: #91998c;
 }
 
-/* line 113, ../sass/_variables.scss */
+/* line 117, ../sass/_variables.scss */
 .NGLightRegular {
   font-family: "News Gothic Light", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 116, ../sass/_variables.scss */
+/* line 120, ../sass/_variables.scss */
 .NGLightOblique {
   font-family: "News Gothic Light Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 119, ../sass/_variables.scss */
+/* line 123, ../sass/_variables.scss */
 .NGMedium {
   font-family: "News Gothic Medium", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 122, ../sass/_variables.scss */
+/* line 126, ../sass/_variables.scss */
 .NGMediumOblique {
   font-family: "News Gothic Medium Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 125, ../sass/_variables.scss */
+/* line 129, ../sass/_variables.scss */
 .NGDemiBold {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 128, ../sass/_variables.scss */
+/* line 132, ../sass/_variables.scss */
 .NGDemiBoldOblique {
   font-family: "News Gothic Demi Bold Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 131, ../sass/_variables.scss */
+/* line 135, ../sass/_variables.scss */
 .NGBold {
   font-family: "News Gothic Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 134, ../sass/_variables.scss */
+/* line 138, ../sass/_variables.scss */
 .NGBoldOblique {
   font-family: "News Gothic Bold Oblique", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 137, ../sass/_variables.scss */
+/* line 141, ../sass/_variables.scss */
 .FedraSerif {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -306,7 +311,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   font-style: normal;
 }
 
-/* line 142, ../sass/_variables.scss */
+/* line 146, ../sass/_variables.scss */
 .FSRegular {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -317,13 +322,13 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   font-style: normal;
 }
 
-/* line 145, ../sass/_variables.scss */
+/* line 149, ../sass/_variables.scss */
 .FSItalic {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
 
-/* line 148, ../sass/_variables.scss */
+/* line 152, ../sass/_variables.scss */
 .FSBold {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
 }
@@ -333,29 +338,29 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   font-style: normal;
 }
 
-/* line 151, ../sass/_variables.scss */
+/* line 155, ../sass/_variables.scss */
 .FSBoldItalic {
   font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
 
-/* line 157, ../sass/_variables.scss */
+/* line 161, ../sass/_variables.scss */
 .cke_combopanel__styles {
   width: 290px !important;
   height: 320px !important;
 }
-/* line 160, ../sass/_variables.scss */
+/* line 164, ../sass/_variables.scss */
 .cke_combopanel__styles .cke_panel_frame {
   width: 290px !important;
   height: 320px !important;
 }
-/* line 164, ../sass/_variables.scss */
+/* line 168, ../sass/_variables.scss */
 .cke_combopanel__styles .cke_panel_container {
   width: 290px !important;
   height: 320px !important;
 }
 
-/* line 175, ../sass/_variables.scss */
+/* line 179, ../sass/_variables.scss */
 .cke_panel_block .beige:before {
   content: "";
   float: left;
@@ -366,7 +371,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #dfd9c9;
 }
-/* line 183, ../sass/_variables.scss */
+/* line 187, ../sass/_variables.scss */
 .cke_panel_block .orange:before {
   content: "";
   float: left;
@@ -377,7 +382,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #e69740;
 }
-/* line 191, ../sass/_variables.scss */
+/* line 195, ../sass/_variables.scss */
 .cke_panel_block .orange2:before {
   content: "";
   float: left;
@@ -388,11 +393,11 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #ffb151;
 }
-/* line 198, ../sass/_variables.scss */
+/* line 202, ../sass/_variables.scss */
 .cke_panel_block .red {
   width: 290px !important;
 }
-/* line 200, ../sass/_variables.scss */
+/* line 204, ../sass/_variables.scss */
 .cke_panel_block .red:before {
   content: "";
   float: left;
@@ -403,7 +408,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #cf4753;
 }
-/* line 208, ../sass/_variables.scss */
+/* line 212, ../sass/_variables.scss */
 .cke_panel_block .black:before {
   content: "";
   float: left;
@@ -414,7 +419,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #000;
 }
-/* line 216, ../sass/_variables.scss */
+/* line 220, ../sass/_variables.scss */
 .cke_panel_block .dovegrey:before {
   content: "";
   float: left;
@@ -425,7 +430,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #91998c;
 }
-/* line 224, ../sass/_variables.scss */
+/* line 228, ../sass/_variables.scss */
 .cke_panel_block .almostblack:before {
   content: "";
   float: left;
@@ -436,7 +441,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #4d4d4d;
 }
-/* line 232, ../sass/_variables.scss */
+/* line 236, ../sass/_variables.scss */
 .cke_panel_block .navbargrey:before {
   content: "";
   float: left;
@@ -447,7 +452,7 @@ h1 .black, h2 .black, h3 .black, h4 .black {
   border-bottom: 7.5px solid transparent;
   border-left: 15px solid #3c3835;
 }
-/* line 240, ../sass/_variables.scss */
+/* line 244, ../sass/_variables.scss */
 .cke_panel_block .lightgrey:before {
   content: "";
   float: left;

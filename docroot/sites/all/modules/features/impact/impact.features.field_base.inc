@@ -460,6 +460,27 @@ function impact_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_section_footer'
+  $field_bases['field_section_footer'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_section_footer',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_section_title'
   $field_bases['field_section_title'] = array(
     'active' => 1,
@@ -568,43 +589,6 @@ function impact_field_default_field_bases() {
         ),
         'target_bundles' => array(
           'graphic_over_text' => 'graphic_over_text',
-        ),
-      ),
-      'target_type' => 'bean',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_three_beans'
-  $field_bases['field_three_beans'] = array(
-    'active' => 1,
-    'cardinality' => 3,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_three_beans',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          '2_tier_graphic_read_more' => '2_tier_graphic_read_more',
-          '2_tier_video_caption' => '2_tier_video_caption',
         ),
       ),
       'target_type' => 'bean',

@@ -859,6 +859,49 @@ function impact_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-groupoffour-field_section_footer'
+  $field_instances['bean-groupoffour-field_section_footer'] = array(
+    'bundle' => 'groupoffour',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_section_footer',
+    'label' => 'Section footer',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'bean-groupoffour-field_sectiontitle'
   $field_instances['bean-groupoffour-field_sectiontitle'] = array(
     'bundle' => 'groupoffour',
@@ -1023,6 +1066,49 @@ function impact_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-groupofthree-field_section_footer'
+  $field_instances['bean-groupofthree-field_section_footer'] = array(
+    'bundle' => 'groupofthree',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_section_footer',
+    'label' => 'Section footer',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'bean-groupofthree-field_sectiontitle'
   $field_instances['bean-groupofthree-field_sectiontitle'] = array(
     'bundle' => 'groupofthree',
@@ -1103,39 +1189,6 @@ function impact_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'bean-groupofthree-field_three_beans'
-  $field_instances['bean-groupofthree-field_three_beans'] = array(
-    'bundle' => 'groupofthree',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'bean',
-    'field_name' => 'field_three_beans',
-    'label' => 'three beans',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'bean-groupoftwo-field_first_bean_of2'
   $field_instances['bean-groupoftwo-field_first_bean_of2'] = array(
     'bundle' => 'groupoftwo',
@@ -1207,6 +1260,49 @@ function impact_field_default_field_instances() {
       ),
       'type' => 'options_buttons',
       'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'bean-groupoftwo-field_section_footer'
+  $field_instances['bean-groupoftwo-field_section_footer'] = array(
+    'bundle' => 'groupoftwo',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_section_footer',
+    'label' => 'Section footer',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
     ),
   );
 
@@ -1296,6 +1392,49 @@ function impact_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'bean-section_intro-field_section_footer'
+  $field_instances['bean-section_intro-field_section_footer'] = array(
+    'bundle' => 'section_intro',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'field_section_footer',
+    'label' => 'Section footer',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'linkit' => array(
+        'enable' => 0,
+        'insert_plugin' => '',
+      ),
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'maxlength_js' => '',
+        'maxlength_js_enforce' => 0,
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        'maxlength_js_truncate_html' => 0,
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'bean-section_intro-field_section_title'
   $field_instances['bean-section_intro-field_section_title'] = array(
     'bundle' => 'section_intro',
@@ -1307,7 +1446,7 @@ function impact_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'bean',
@@ -1390,7 +1529,7 @@ function impact_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'bean',
@@ -1412,7 +1551,7 @@ function impact_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -1650,12 +1789,12 @@ function impact_field_default_field_instances() {
   t('Multiples');
   t('Regular text');
   t('Second bean');
+  t('Section footer');
   t('Section title');
   t('The Title of the block.');
   t('Third bean');
   t('Title');
   t('Top image');
-  t('three beans');
 
   return $field_instances;
 }

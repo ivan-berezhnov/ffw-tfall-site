@@ -32,6 +32,7 @@ $grey10:  #393939;
 $bluegrey:     #5d6f79;
 $greenolive:   #91998c;
 $greenteal:    #8fc3c1;
+$lightteal:    #91c2c0;
 $nearwhite: #eee;
 $white:   #fff;
 $nearblack: #030303;
@@ -80,6 +81,9 @@ $base-font-size: 16;
 
 .lightgrey {
   color: $grey7;
+}
+.lightteal {
+  color: $lightteal;
 }
 
 h1, h2, h3, h4 {
