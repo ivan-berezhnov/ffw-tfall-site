@@ -77,6 +77,108 @@ function impact_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_beanssection|bean|groupoffour|default';
+  $field_group->group_name = 'group_beanssection';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupoffour';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_first_bean_of4',
+      1 => 'field_fourth_bean_of4',
+      2 => 'field_second_bean_of4',
+      3 => 'field_third_bean_of4',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'beanssection',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_beanssection|bean|groupoffour|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_beanssection|bean|groupofthree|default';
+  $field_group->group_name = 'group_beanssection';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupofthree';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_first_bean',
+      1 => 'field_second_bean',
+      2 => 'field_third_bean',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'beanssection',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_beanssection|bean|groupofthree|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_beanssection|bean|groupoftwo|default';
+  $field_group->group_name = 'group_beanssection';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupoftwo';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_first_bean_of2',
+      1 => 'field_second_bean_of2',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'beanssection',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_beanssection|bean|groupoftwo|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_description|bean|2_tier_video_caption|default';
   $field_group->group_name = 'group_description';
   $field_group->entity_type = 'bean';
@@ -151,16 +253,16 @@ function impact_field_group_info() {
     'label' => '',
     'weight' => '0',
     'children' => array(
-      0 => 'field_section_title',
+      0 => 'field_sectiontitle',
     ),
     'format_type' => 'div',
     'format_settings' => array(
       'label' => '',
       'instance_settings' => array(
         'id' => '',
-        'classes' => 'header',
+        'classes' => 'titlesectiondiv',
         'description' => '',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
@@ -192,7 +294,7 @@ function impact_field_group_info() {
         'id' => '',
         'classes' => 'introtext',
         'description' => '',
-        'show_label' => '1',
+        'show_label' => '0',
         'label_element' => 'h3',
         'effect' => 'none',
         'speed' => 'fast',
@@ -245,7 +347,7 @@ function impact_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'large text',
-    'weight' => '2',
+    'weight' => '4',
     'children' => array(
       0 => 'field_large_text',
     ),
@@ -309,7 +411,7 @@ function impact_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'medium text',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_medium_text',
     ),
@@ -457,6 +559,102 @@ function impact_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_sectiontitle|bean|groupoffour|default';
+  $field_group->group_name = 'group_sectiontitle';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupoffour';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_sectiontitle',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'titlesectiondiv',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_sectiontitle|bean|groupoffour|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_sectiontitle|bean|groupofthree|default';
+  $field_group->group_name = 'group_sectiontitle';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupofthree';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_sectiontitle',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'sectiontitlediv',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_sectiontitle|bean|groupofthree|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_sectiontitle|bean|groupoftwo|default';
+  $field_group->group_name = 'group_sectiontitle';
+  $field_group->entity_type = 'bean';
+  $field_group->bundle = 'groupoftwo';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => '',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_sectiontitle',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => '',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'titlesectiondiv',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_sectiontitle|bean|groupoftwo|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_topimage|bean|2_col_graphic_text|default';
   $field_group->group_name = 'group_topimage';
   $field_group->entity_type = 'bean';
@@ -529,7 +727,7 @@ function impact_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
-    'weight' => '0',
+    'weight' => '1',
     'children' => array(
       0 => 'field_top_image',
     ),

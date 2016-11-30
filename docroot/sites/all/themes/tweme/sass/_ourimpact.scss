@@ -1,3 +1,8 @@
+.bean-groupoftwo,
+.bean-groupofthree,
+.bean-groupoffour {
+	margin-bottom: 25px;	
+}
 .bean-section-intro {
 	margin-bottom: 30px;
 	.header {
@@ -12,12 +17,11 @@
 		}
 	}
 	.introtext {
-		margin: 0 auto;
-		text-align: center;
+
 		@media screen and (min-width: 980px) {
 			padding: 0 180px;
 		}		
-	}
+	}	
 }
 .bean-graphic-over-text {
 	.content {
@@ -145,9 +149,23 @@
   z-index: 10;
 }
 .node.node-bean-block-page {
+	.titlesectiondiv {
+
+	  margin-bottom: 30px;
+	  margin-top: 10px;
+	}
+	.beanssection {
+
+	  display: inline-block;
+	  padding-top: 3px;
+	}
+	.bean-groupoftwo,
+	.bean-groupofthree,
+	.bean-groupoffour {
+		margin-bottom: 25px;
+	}	
 	color: $greenolive;
 	@media screen and (max-width: 590px) {
-		
 		.span12.entity.entity-bean.bean-section-intro {
 		  margin: 10px 0;
 		}			
@@ -182,7 +200,6 @@
 		}									
 	}
 	@media screen and (min-width: 591px) and (max-width: 767px) {
-		
 		.span12.entity.entity-bean.bean-section-intro {
 		  margin: 10px 0;
 		}			
@@ -215,7 +232,6 @@
 		}					
 	}
 	@media screen and (min-width: 768px) and (max-width: 979px) {
-		
 		.entity.entity-bean.bean-graphic-over-text {
 		  float: left;
 		  width: 45%;
@@ -266,7 +282,6 @@
 	}	
 	.field-collection-view {
 	  border: medium none;
-	  padding: 10px 0;
 	}
 	strong {
 		color: #000;
@@ -278,8 +293,6 @@
 .field-group-format-wrapper a:hover::after {
   background: transparent;
 }  
-
-
 
 .entity-bean.bean-2-tier-video-caption a.video::after {
   background-color: rgba(0, 0, 0, 0.25);
