@@ -150,15 +150,17 @@
 }
 .node.node-bean-block-page {
 	.titlesectiondiv {
-
 	  margin-bottom: 30px;
 	  margin-top: 10px;
 	}
 	.bean-groupoftwo .beanssection {
-
 	  display: inline-block;
 	  padding-top: 3px;
 	}
+	.sectionfooter {
+	  clear: both;
+	  padding-top: 1rem;
+	}	
 	.bean-groupoftwo,
 	.bean-groupofthree,
 	.bean-groupoffour {
