@@ -9013,6 +9013,13 @@ h2.news__title {
   }
 }
 
+/* line 76, ../sass/_typography.scss */
+.greyheadline {
+  font-family: "News Gothic Medium", "News Gothic", "Arial Narrow", Arial, sans-serif;
+  color: #5d6f79;
+  font-size: 40px;
+}
+
 /* line 1, ../sass/_salesforceforms.scss */
 .fnames {
   float: left;
