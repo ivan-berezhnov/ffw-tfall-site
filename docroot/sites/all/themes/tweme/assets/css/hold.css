@@ -12,10 +12,7 @@
 form#webtolead label, form#webtolead input, form#webtolead button, form#webtolead select, form#webtolead textarea {
   font-size: 16px;
 }
-.stats.newsletter {
- text-align: center; 
- margin-bottom: 10px; 
-}
+
 .newsletterform input[type="checkbox"] {
   height: 20px;
   width: 20px;
