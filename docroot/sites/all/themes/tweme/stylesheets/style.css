@@ -707,7 +707,18 @@ body {
   margin-bottom: 0;
 }
 
-/* line 169, ../sass/_teachforall.scss */
+/* line 168, ../sass/_teachforall.scss */
+.medium-body {
+  color: #4d4d4d;
+  font-family: "Fedra Serif",Georgia,"Times New Roman",serif;
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 177, ../sass/_teachforall.scss */
 .large-body, .node-type-page-our-model #main .our-model-section .intro p {
   color: #91998c;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -722,12 +733,12 @@ body {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 175, ../sass/_teachforall.scss */
+/* line 183, ../sass/_teachforall.scss */
 .large-body:last-child, .node-type-page-our-model #main .our-model-section .intro p:last-child {
   margin-bottom: 0;
 }
 
-/* line 180, ../sass/_teachforall.scss */
+/* line 188, ../sass/_teachforall.scss */
 .block-quote {
   color: #91998c;
   font-size: 36px;
@@ -736,7 +747,7 @@ body {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 187, ../sass/_teachforall.scss */
+/* line 195, ../sass/_teachforall.scss */
 .page-section {
   color: #4d4d4d;
   font-size: 16px;
@@ -746,13 +757,13 @@ body {
   text-transform: uppercase;
 }
 
-/* line 195, ../sass/_teachforall.scss */
+/* line 203, ../sass/_teachforall.scss */
 .title-small {
   letter-spacing: 3px;
   text-align: center;
 }
 
-/* line 201, ../sass/_teachforall.scss */
+/* line 209, ../sass/_teachforall.scss */
 .footer-link-beige, #footer .content > ul > li > a {
   font-size: 11px;
   font-size: 0.6875rem;
@@ -766,32 +777,32 @@ body {
   font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 207, ../sass/_teachforall.scss */
+/* line 215, ../sass/_teachforall.scss */
 .footer-link-beige:hover, #footer .content > ul > li > a:hover {
   color: #fff;
 }
 
-/* line 212, ../sass/_teachforall.scss */
+/* line 220, ../sass/_teachforall.scss */
 .footer-link-grey, .privacy-policy {
   font-size: 17px;
   font-size: 1.0625rem;
   color: #999;
 }
-/* line 216, ../sass/_teachforall.scss */
+/* line 224, ../sass/_teachforall.scss */
 .footer-link-grey:hover, .privacy-policy:hover {
   color: #fff;
 }
 
-/* line 221, ../sass/_teachforall.scss */
+/* line 229, ../sass/_teachforall.scss */
 .node {
   margin-bottom: 0;
 }
 
-/* line 225, ../sass/_teachforall.scss */
+/* line 233, ../sass/_teachforall.scss */
 .pagination {
   margin-bottom: 0;
 }
-/* line 228, ../sass/_teachforall.scss */
+/* line 236, ../sass/_teachforall.scss */
 .pagination > .item-list > ul {
   margin-bottom: 0;
 }
@@ -800,12 +811,12 @@ body {
 /**
 * #Global Elements
 **/
-/* line 240, ../sass/_teachforall.scss */
+/* line 248, ../sass/_teachforall.scss */
 table td {
   vertical-align: top;
 }
 
-/* line 245, ../sass/_teachforall.scss */
+/* line 253, ../sass/_teachforall.scss */
 .breadcrumb {
   background: none;
   color: #91998c;
@@ -814,32 +825,32 @@ table td {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 251, ../sass/_teachforall.scss */
+/* line 259, ../sass/_teachforall.scss */
 .breadcrumb a {
   color: #91998c;
 }
-/* line 253, ../sass/_teachforall.scss */
+/* line 261, ../sass/_teachforall.scss */
 .breadcrumb a:hover {
   color: #cf4753;
 }
 
-/* line 259, ../sass/_teachforall.scss */
+/* line 267, ../sass/_teachforall.scss */
 tbody {
   border: none;
 }
 
-/* line 261, ../sass/_teachforall.scss */
+/* line 269, ../sass/_teachforall.scss */
 textarea:focus, input:focus {
   outline: 0 !important;
 }
 
-/* line 265, ../sass/_teachforall.scss */
+/* line 273, ../sass/_teachforall.scss */
 .jump-link {
   margin: 50px 0 30px 0;
   text-align: center;
 }
 
-/* line 270, ../sass/_teachforall.scss */
+/* line 278, ../sass/_teachforall.scss */
 .site-slogan {
   margin: 25px 0 10px;
   color: #91998c;
@@ -849,7 +860,7 @@ textarea:focus, input:focus {
   line-height: 24px;
 }
 @media screen and (min-width: 371px) and (max-width: 475px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -857,7 +868,7 @@ textarea:focus, input:focus {
   }
 }
 @media screen and (min-width: 476px) and (max-width: 590px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     font-size: 24px;
     font-size: 1.5rem;
@@ -865,34 +876,34 @@ textarea:focus, input:focus {
   }
 }
 @media screen and (min-width: 591px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     line-height: 40px;
   }
 }
 @media screen and (min-width: 591px) and (max-width: 979px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     font-size: 32px;
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     font-size: 28px;
     font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 270, ../sass/_teachforall.scss */
+  /* line 278, ../sass/_teachforall.scss */
   .site-slogan {
     font-size: 32px;
     font-size: 2rem;
   }
 }
 
-/* line 298, ../sass/_teachforall.scss */
+/* line 306, ../sass/_teachforall.scss */
 .full-list, .landing-forum p + a {
   background-color: #4d4d4d;
   color: #fff;
@@ -904,20 +915,20 @@ textarea:focus, input:focus {
   font-size: 0.875rem;
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 299, ../sass/_teachforall.scss */
+/* line 307, ../sass/_teachforall.scss */
 .full-list a, .landing-forum p + a a {
   color: #fff;
 }
-/* line 301, ../sass/_teachforall.scss */
+/* line 309, ../sass/_teachforall.scss */
 .full-list a:hover, .landing-forum p + a a:hover {
   color: #ffb151;
 }
-/* line 313, ../sass/_teachforall.scss */
+/* line 321, ../sass/_teachforall.scss */
 .full-list:hover, .landing-forum p + a:hover {
   color: #ffb151;
 }
 
-/* line 317, ../sass/_teachforall.scss */
+/* line 325, ../sass/_teachforall.scss */
 .full-list-inline {
   background-color: #4d4d4d;
   color: #fff;
@@ -930,20 +941,20 @@ textarea:focus, input:focus {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
   width: 250px;
 }
-/* line 318, ../sass/_teachforall.scss */
+/* line 326, ../sass/_teachforall.scss */
 .full-list-inline a {
   color: #fff;
 }
-/* line 320, ../sass/_teachforall.scss */
+/* line 328, ../sass/_teachforall.scss */
 .full-list-inline a:hover {
   color: #ffb151;
 }
-/* line 333, ../sass/_teachforall.scss */
+/* line 341, ../sass/_teachforall.scss */
 .full-list-inline:hover {
   color: #ffb151;
 }
 
-/* line 337, ../sass/_teachforall.scss */
+/* line 345, ../sass/_teachforall.scss */
 .full-list-donate {
   background-color: #e69740;
   color: #fff;
@@ -957,11 +968,11 @@ textarea:focus, input:focus {
   font-weight: normal;
   width: 250px;
 }
-/* line 338, ../sass/_teachforall.scss */
+/* line 346, ../sass/_teachforall.scss */
 .full-list-donate a {
   color: #4d4d4d;
 }
-/* line 340, ../sass/_teachforall.scss */
+/* line 348, ../sass/_teachforall.scss */
 .full-list-donate a:hover {
   color: #4d4d4d;
 }
@@ -970,44 +981,44 @@ textarea:focus, input:focus {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 353, ../sass/_teachforall.scss */
+/* line 361, ../sass/_teachforall.scss */
 .full-list-donate:hover {
   color: #4d4d4d;
 }
 
-/* line 357, ../sass/_teachforall.scss */
+/* line 365, ../sass/_teachforall.scss */
 a .NewsGothic-dark {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 0.875rem;
   color: #4d4d4d;
 }
 
-/* line 364, ../sass/_teachforall.scss */
+/* line 372, ../sass/_teachforall.scss */
 .search-form .input-append .btn {
   border: 1px solid #ccc;
 }
 
-/* line 371, ../sass/_teachforall.scss */
+/* line 379, ../sass/_teachforall.scss */
 .content p:last-child {
   margin-bottom: 0;
 }
 
-/* line 376, ../sass/_teachforall.scss */
+/* line 384, ../sass/_teachforall.scss */
 label, input, button, select, textarea {
   font-size: 17px;
   font-size: 1.0625rem;
 }
 
-/* line 383, ../sass/_teachforall.scss */
+/* line 391, ../sass/_teachforall.scss */
 html.js input.form-autocomplete {
   background-position: 100% 9px;
 }
-/* line 386, ../sass/_teachforall.scss */
+/* line 394, ../sass/_teachforall.scss */
 html.js input.throbbing {
   background-position: 100% -12px;
 }
 
-/* line 393, ../sass/_teachforall.scss */
+/* line 401, ../sass/_teachforall.scss */
 .btn {
   background-color: #dfd9c9;
   background-image: none;
@@ -1017,16 +1028,16 @@ html.js input.throbbing {
   font-family: inherit;
 }
 
-/* line 402, ../sass/_teachforall.scss */
+/* line 410, ../sass/_teachforall.scss */
 .btn-primary {
   background-color: #e69740;
 }
-/* line 404, ../sass/_teachforall.scss */
+/* line 412, ../sass/_teachforall.scss */
 .btn-primary:hover, .btn-primary:focus {
   background-color: #cf4753;
 }
 
-/* line 410, ../sass/_teachforall.scss */
+/* line 418, ../sass/_teachforall.scss */
 .btn__red, .view-persons .view-footer a.btn, .view-supporters .view-footer .btn {
   text-shadow: none;
   font-size: 11px;
@@ -1049,33 +1060,33 @@ html.js input.throbbing {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 422, ../sass/_teachforall.scss */
+/* line 430, ../sass/_teachforall.scss */
 .btn__red:hover, .view-persons .view-footer a.btn:hover, .view-supporters .view-footer .btn:hover {
   background: #db4b57;
   color: #fff;
 }
-/* line 426, ../sass/_teachforall.scss */
+/* line 434, ../sass/_teachforall.scss */
 .btn__red.mobilemap, .view-persons .view-footer a.mobilemap.btn, .view-supporters .view-footer .mobilemap.btn {
   text-align: center;
   margin: 0 auto 0;
 }
 
-/* line 433, ../sass/_teachforall.scss */
+/* line 441, ../sass/_teachforall.scss */
 #mobileworldmap .btn__red.mobilemap, #mobileworldmap .view-persons .view-footer a.mobilemap.btn, .view-persons .view-footer #mobileworldmap a.mobilemap.btn, #mobileworldmap .view-supporters .view-footer .mobilemap.btn, .view-supporters .view-footer #mobileworldmap .mobilemap.btn {
   padding: 4px 20px !important;
 }
 
-/* line 439, ../sass/_teachforall.scss */
+/* line 447, ../sass/_teachforall.scss */
 .nav-tabs {
   padding-top: 20px;
 }
 
-/* line 443, ../sass/_teachforall.scss */
+/* line 451, ../sass/_teachforall.scss */
 div.messages {
   margin: 20px 0;
 }
 
-/* line 447, ../sass/_teachforall.scss */
+/* line 455, ../sass/_teachforall.scss */
 .page-node .content .title {
   color: #e69740;
   font-weight: normal;
@@ -1087,23 +1098,23 @@ div.messages {
   font-size: 1.625rem;
 }
 
-/* line 457, ../sass/_teachforall.scss */
+/* line 465, ../sass/_teachforall.scss */
 #main {
   padding: 0 0 20px 0;
 }
 
-/* line 462, ../sass/_teachforall.scss */
+/* line 470, ../sass/_teachforall.scss */
 .node-type-national-organization #main {
   padding: 20px 0 0 0;
 }
 
-/* line 467, ../sass/_teachforall.scss */
+/* line 475, ../sass/_teachforall.scss */
 .page-title {
   margin-bottom: 30px;
   text-align: center;
 }
 
-/* line 473, ../sass/_teachforall.scss */
+/* line 481, ../sass/_teachforall.scss */
 h2.page-title {
   color: #e69740;
   letter-spacing: .2em;
@@ -1114,7 +1125,7 @@ h2.page-title {
   font-size: 1.625rem;
 }
 @media screen and (max-width: 350px) {
-  /* line 473, ../sass/_teachforall.scss */
+  /* line 481, ../sass/_teachforall.scss */
   h2.page-title {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1122,7 +1133,7 @@ h2.page-title {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 488, ../sass/_teachforall.scss */
+  /* line 496, ../sass/_teachforall.scss */
   h2, .h2 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -1132,12 +1143,12 @@ h2.page-title {
 /**
 * #Objects
 **/
-/* line 498, ../sass/_teachforall.scss */
+/* line 506, ../sass/_teachforall.scss */
 .field__text-area {
   margin-bottom: 20px;
 }
 
-/* line 502, ../sass/_teachforall.scss */
+/* line 510, ../sass/_teachforall.scss */
 .rounded-button {
   position: absolute;
   bottom: 40px;
@@ -1147,7 +1158,7 @@ h2.page-title {
   width: 100%;
   z-index: 9998;
 }
-/* line 510, ../sass/_teachforall.scss */
+/* line 518, ../sass/_teachforall.scss */
 .rounded-button span {
   background-color: #91998c;
   color: #fff;
@@ -1157,7 +1168,7 @@ h2.page-title {
   border-radius: 20px;
 }
 
-/* line 518, ../sass/_teachforall.scss */
+/* line 526, ../sass/_teachforall.scss */
 .slug {
   font-size: 11px;
   font-size: 0.6875rem;
@@ -1169,7 +1180,7 @@ h2.page-title {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 528, ../sass/_teachforall.scss */
+/* line 536, ../sass/_teachforall.scss */
 .slug-medium {
   color: #e69740;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -1186,7 +1197,7 @@ h2.page-title {
   font-style: normal;
 }
 
-/* line 532, ../sass/_teachforall.scss */
+/* line 540, ../sass/_teachforall.scss */
 .slug-large {
   color: #e69740;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -1203,13 +1214,13 @@ h2.page-title {
   font-style: normal;
 }
 
-/* line 540, ../sass/_teachforall.scss */
+/* line 548, ../sass/_teachforall.scss */
 .social-media-inline {
   display: inline-block;
   margin: 0;
 }
 
-/* line 544, ../sass/_teachforall.scss */
+/* line 552, ../sass/_teachforall.scss */
 .stats {
   color: #91998c;
   line-height: 22px;
@@ -1218,17 +1229,17 @@ h2.page-title {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   padding-right: 21px;
 }
-/* line 550, ../sass/_teachforall.scss */
+/* line 558, ../sass/_teachforall.scss */
 .stats.newsletter {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 554, ../sass/_teachforall.scss */
+/* line 562, ../sass/_teachforall.scss */
 .stats.inline {
   margin: 10px 0 0 0;
 }
 
-/* line 558, ../sass/_teachforall.scss */
+/* line 566, ../sass/_teachforall.scss */
 .stats-donate {
   color: #91998c;
   line-height: 22px;
@@ -1243,12 +1254,12 @@ h2.page-title {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 564, ../sass/_teachforall.scss */
+/* line 572, ../sass/_teachforall.scss */
 .stats-donate.newsletter {
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 568, ../sass/_teachforall.scss */
+/* line 576, ../sass/_teachforall.scss */
 .stats-donate.inline {
   margin: 10px 0 0 0;
 }
@@ -1257,24 +1268,24 @@ h2.page-title {
 /**
 * #Header
 **/
-/* line 579, ../sass/_teachforall.scss */
+/* line 587, ../sass/_teachforall.scss */
 .header {
   margin-top: 10px;
   position: relative;
 }
 
-/* line 584, ../sass/_teachforall.scss */
+/* line 592, ../sass/_teachforall.scss */
 .site-name {
   clear: both;
   text-align: center;
 }
-/* line 587, ../sass/_teachforall.scss */
+/* line 595, ../sass/_teachforall.scss */
 .site-name img {
   margin: 20px 0;
 }
 
 @media screen and (max-width: 1025px) {
-  /* line 593, ../sass/_teachforall.scss */
+  /* line 601, ../sass/_teachforall.scss */
   .header .donate {
     float: none;
     display: inline-block;
@@ -1284,7 +1295,7 @@ h2.page-title {
   }
 }
 @media screen and (max-width: 374px) {
-  /* line 593, ../sass/_teachforall.scss */
+  /* line 601, ../sass/_teachforall.scss */
   .header .donate {
     margin: 0 -1px 0 0;
     max-height: 25px;
@@ -1293,7 +1304,7 @@ h2.page-title {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1025px) {
-  /* line 593, ../sass/_teachforall.scss */
+  /* line 601, ../sass/_teachforall.scss */
   .header .donate {
     margin: 0 0 0 0;
     max-height: 30px;
@@ -1302,13 +1313,13 @@ h2.page-title {
   }
 }
 @media screen and (min-width: 1026px) {
-  /* line 611, ../sass/_teachforall.scss */
+  /* line 619, ../sass/_teachforall.scss */
   .header .donate a {
     float: left;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 618, ../sass/_teachforall.scss */
+  /* line 626, ../sass/_teachforall.scss */
   .header .social-media[class*=" icon-"] {
     float: none;
     display: inline-block;
@@ -1319,7 +1330,7 @@ h2.page-title {
   }
 }
 @media screen and (max-width: 374px) {
-  /* line 618, ../sass/_teachforall.scss */
+  /* line 626, ../sass/_teachforall.scss */
   .header .social-media[class*=" icon-"] {
     margin: 0 -1px 0 0;
     padding: 2px;
@@ -1328,7 +1339,7 @@ h2.page-title {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1025px) {
-  /* line 618, ../sass/_teachforall.scss */
+  /* line 626, ../sass/_teachforall.scss */
   .header .social-media[class*=" icon-"] {
     margin: 0 0 0 0;
     padding: 4px;
@@ -1337,7 +1348,7 @@ h2.page-title {
   }
 }
 
-/* line 640, ../sass/_teachforall.scss */
+/* line 648, ../sass/_teachforall.scss */
 .donate {
   background-color: #e69740;
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -1352,19 +1363,19 @@ h2.page-title {
   font-family: "Fedra Serif Bold Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 647, ../sass/_teachforall.scss */
+/* line 655, ../sass/_teachforall.scss */
 .donate a {
   color: #fff;
   padding: 2px 5px 0;
 }
-/* line 651, ../sass/_teachforall.scss */
+/* line 659, ../sass/_teachforall.scss */
 .donate:hover {
   background-color: #cf4753;
   color: #fff;
   cursor: pointer;
 }
 
-/* line 657, ../sass/_teachforall.scss */
+/* line 665, ../sass/_teachforall.scss */
 .social-media {
   background-color: #91998c;
   color: #fff;
@@ -1375,22 +1386,22 @@ h2.page-title {
   font-size: 17px;
   font-size: 1.0625rem;
 }
-/* line 665, ../sass/_teachforall.scss */
+/* line 673, ../sass/_teachforall.scss */
 .social-media:hover {
   background-color: #cf4753;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 671, ../sass/_teachforall.scss */
+/* line 679, ../sass/_teachforall.scss */
 .social-media[class*=" icon-"] {
   vertical-align: middle;
 }
 
-/* line 675, ../sass/_teachforall.scss */
+/* line 683, ../sass/_teachforall.scss */
 .social-media-large {
   background-color: #91998c;
-  color: #fff;
+  color: #fff !important;
   line-height: 1.25em;
   padding: 0px 6px;
   margin: 0 8px 0 0;
@@ -1398,37 +1409,37 @@ h2.page-title {
   font-size: 37px;
   font-size: 2.3125rem;
 }
-/* line 683, ../sass/_teachforall.scss */
+/* line 691, ../sass/_teachforall.scss */
 .social-media-large:hover {
   background-color: #cf4753;
   color: #fff;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 689, ../sass/_teachforall.scss */
+/* line 697, ../sass/_teachforall.scss */
 .social-media-large[class*=" icon-"] {
   vertical-align: middle;
 }
 
-/* line 693, ../sass/_teachforall.scss */
+/* line 701, ../sass/_teachforall.scss */
 .donate-social-media-block {
   float: right;
 }
 
 @media screen and (min-width: 1026px) {
-  /* line 696, ../sass/_teachforall.scss */
+  /* line 704, ../sass/_teachforall.scss */
   .language-switcher-block {
     float: left;
   }
 }
 
-/* line 701, ../sass/_teachforall.scss */
+/* line 709, ../sass/_teachforall.scss */
 .language-switcher-locale-url {
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-/* line 705, ../sass/_teachforall.scss */
+/* line 713, ../sass/_teachforall.scss */
 .language-switcher-locale-url li {
   height: 8px;
   line-height: .4em;
@@ -1437,11 +1448,11 @@ h2.page-title {
   list-style: none;
   float: left;
 }
-/* line 712, ../sass/_teachforall.scss */
+/* line 720, ../sass/_teachforall.scss */
 .language-switcher-locale-url li.active {
   display: none;
 }
-/* line 716, ../sass/_teachforall.scss */
+/* line 724, ../sass/_teachforall.scss */
 .language-switcher-locale-url a {
   color: #92998d;
   letter-spacing: .1em;
@@ -1451,11 +1462,11 @@ h2.page-title {
   font-size: 0.6875rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 724, ../sass/_teachforall.scss */
+/* line 732, ../sass/_teachforall.scss */
 .language-switcher-locale-url a.active {
   color: #e69740;
 }
-/* line 727, ../sass/_teachforall.scss */
+/* line 735, ../sass/_teachforall.scss */
 .language-switcher-locale-url a:hover {
   color: #e69740;
 }
@@ -1464,23 +1475,23 @@ h2.page-title {
 /**
 * #Primary Navigation
 **/
-/* line 738, ../sass/_teachforall.scss */
+/* line 746, ../sass/_teachforall.scss */
 .sidr-toggle {
   position: absolute;
   left: 0;
   top: 0;
 }
 @media screen and (min-width: 980px) {
-  /* line 738, ../sass/_teachforall.scss */
+  /* line 746, ../sass/_teachforall.scss */
   .sidr-toggle {
     display: none;
   }
 }
-/* line 745, ../sass/_teachforall.scss */
+/* line 753, ../sass/_teachforall.scss */
 .sidr-toggle button {
   outline: none;
 }
-/* line 748, ../sass/_teachforall.scss */
+/* line 756, ../sass/_teachforall.scss */
 .sidr-toggle .btn-navbar {
   float: left;
   padding: 8px;
@@ -1488,12 +1499,12 @@ h2.page-title {
 }
 
 @media screen and (max-width: 1025px) {
-  /* line 755, ../sass/_teachforall.scss */
+  /* line 763, ../sass/_teachforall.scss */
   .navbar {
     display: none;
   }
 }
-/* line 759, ../sass/_teachforall.scss */
+/* line 767, ../sass/_teachforall.scss */
 .navbar .navbar-inner {
   background-color: #3c3835;
   background-image: none;
@@ -1502,48 +1513,48 @@ h2.page-title {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 759, ../sass/_teachforall.scss */
+  /* line 767, ../sass/_teachforall.scss */
   .navbar .navbar-inner {
     background: none;
     box-shadow: none;
     margin-top: -40px;
   }
 }
-/* line 772, ../sass/_teachforall.scss */
+/* line 780, ../sass/_teachforall.scss */
 .navbar .navbar-inner ul {
   margin: 0;
 }
-/* line 776, ../sass/_teachforall.scss */
+/* line 784, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container {
   display: none;
   height: 40px;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 776, ../sass/_teachforall.scss */
+  /* line 784, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container {
     display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 776, ../sass/_teachforall.scss */
+  /* line 784, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container {
     width: 724px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 776, ../sass/_teachforall.scss */
+  /* line 784, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container {
     width: 940px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 776, ../sass/_teachforall.scss */
+  /* line 784, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container {
     width: 1170px;
   }
 }
-/* line 796, ../sass/_teachforall.scss */
+/* line 804, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
   letter-spacing: .2em;
@@ -1557,14 +1568,14 @@ h2.page-title {
   font-style: normal;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 796, ../sass/_teachforall.scss */
+  /* line 804, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation {
     font-size: 11px;
     font-size: 0.6875rem;
     letter-spacing: 1px;
   }
 }
-/* line 807, ../sass/_teachforall.scss */
+/* line 815, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li {
   position: relative;
   float: left;
@@ -1575,54 +1586,54 @@ h2.page-title {
   margin: 0;
   padding: 0;
 }
-/* line 817, ../sass/_teachforall.scss */
+/* line 825, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li:hover {
   background-color: #e69740;
 }
-/* line 821, ../sass/_teachforall.scss */
+/* line 829, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li a {
   display: block;
   color: #dfd9c9;
 }
-/* line 825, ../sass/_teachforall.scss */
+/* line 833, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation li a:hover {
   color: #fff;
 }
-/* line 833, ../sass/_teachforall.scss */
+/* line 841, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu {
   height: 40px;
   text-align: center;
 }
-/* line 836, ../sass/_teachforall.scss */
+/* line 844, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li {
   display: inline-block;
   float: none;
   text-align: center;
 }
-/* line 840, ../sass/_teachforall.scss */
+/* line 848, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li > a {
   background: url(../images/prod/nav-border.png) left center no-repeat;
   padding: 0 20px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 840, ../sass/_teachforall.scss */
+  /* line 848, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li > a {
     padding: 0 40px;
   }
 }
-/* line 848, ../sass/_teachforall.scss */
+/* line 856, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:first-child > a {
   background: none;
 }
-/* line 853, ../sass/_teachforall.scss */
+/* line 861, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover > a {
   color: #fff;
 }
-/* line 857, ../sass/_teachforall.scss */
+/* line 865, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover + li > a {
   background: none;
 }
-/* line 861, ../sass/_teachforall.scss */
+/* line 869, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu {
   display: block;
   background-color: #4d4d4d;
@@ -1632,7 +1643,7 @@ h2.page-title {
   z-index: 999;
   text-transform: none;
 }
-/* line 870, ../sass/_teachforall.scss */
+/* line 878, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li {
   line-height: 20px;
   border-top: 1px solid #92998d;
@@ -1642,7 +1653,7 @@ h2.page-title {
   padding: 0;
   width: 100%;
 }
-/* line 881, ../sass/_teachforall.scss */
+/* line 889, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
   font-size: 14px;
   font-size: 0.875rem;
@@ -1654,24 +1665,24 @@ h2.page-title {
   line-height: 1em;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 881, ../sass/_teachforall.scss */
+  /* line 889, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 12px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 881, ../sass/_teachforall.scss */
+  /* line 889, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 20px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 881, ../sass/_teachforall.scss */
+  /* line 889, ../sass/_teachforall.scss */
   .navbar .navbar-inner .container .region-main-navigation .content > .menu > li:hover .menu li a {
     padding: 5px 42px;
   }
 }
-/* line 906, ../sass/_teachforall.scss */
+/* line 914, ../sass/_teachforall.scss */
 .navbar .navbar-inner .container .region-main-navigation .content > .menu .menu {
   display: none;
 }
@@ -1680,21 +1691,21 @@ h2.page-title {
 /**
 * #Uber Navigation
 **/
-/* line 922, ../sass/_teachforall.scss */
+/* line 930, ../sass/_teachforall.scss */
 .uber-nav {
   margin-top: -5px;
 }
 @media screen and (max-width: 1025px) {
-  /* line 924, ../sass/_teachforall.scss */
+  /* line 932, ../sass/_teachforall.scss */
   .uber-nav .block-menu {
     display: none;
   }
 }
-/* line 930, ../sass/_teachforall.scss */
+/* line 938, ../sass/_teachforall.scss */
 .uber-nav .content > .menu {
   position: relative;
 }
-/* line 932, ../sass/_teachforall.scss */
+/* line 940, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li {
   border-right: 1px solid #e69740;
   float: left;
@@ -1704,37 +1715,37 @@ h2.page-title {
   padding: 0;
   position: relative;
 }
-/* line 940, ../sass/_teachforall.scss */
+/* line 948, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li:hover, .uber-nav .content > .menu > li.active {
   border-color: #fff;
 }
-/* line 944, ../sass/_teachforall.scss */
+/* line 952, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li:last-child {
   border-right: none;
 }
-/* line 947, ../sass/_teachforall.scss */
+/* line 955, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li > a {
   margin-left: -1px;
   padding-left: 12px;
 }
-/* line 950, ../sass/_teachforall.scss */
+/* line 958, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li > a:hover {
   background-color: #e69740;
   color: #fff;
 }
-/* line 954, ../sass/_teachforall.scss */
+/* line 962, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li > a.active {
   color: #cf4753;
 }
-/* line 956, ../sass/_teachforall.scss */
+/* line 964, ../sass/_teachforall.scss */
 .uber-nav .content > .menu > li > a.active:hover {
   color: #fff;
 }
-/* line 963, ../sass/_teachforall.scss */
+/* line 971, ../sass/_teachforall.scss */
 .uber-nav .content > .menu li:hover .menu {
   display: block;
 }
-/* line 969, ../sass/_teachforall.scss */
+/* line 977, ../sass/_teachforall.scss */
 .uber-nav a {
   color: #92998d;
   letter-spacing: .1em;
@@ -1744,15 +1755,15 @@ h2.page-title {
   font-size: 0.6875rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 977, ../sass/_teachforall.scss */
+/* line 985, ../sass/_teachforall.scss */
 .uber-nav a:hover {
   color: #cf4753;
 }
-/* line 981, ../sass/_teachforall.scss */
+/* line 989, ../sass/_teachforall.scss */
 .uber-nav ul {
   margin-left: 0;
 }
-/* line 985, ../sass/_teachforall.scss */
+/* line 993, ../sass/_teachforall.scss */
 .uber-nav .menu .menu {
   display: none;
   background-color: #fff;
@@ -1764,7 +1775,7 @@ h2.page-title {
   z-index: 9999;
   text-align: left;
 }
-/* line 995, ../sass/_teachforall.scss */
+/* line 1003, ../sass/_teachforall.scss */
 .uber-nav .menu .menu a {
   border: none;
   font-weight: normal;
@@ -1777,30 +1788,30 @@ h2.page-title {
   padding: 0;
   text-transform: none;
 }
-/* line 1005, ../sass/_teachforall.scss */
+/* line 1013, ../sass/_teachforall.scss */
 .uber-nav .menu .menu a:hover {
   background-color: transparent;
   color: #cf4753;
 }
-/* line 1009, ../sass/_teachforall.scss */
+/* line 1017, ../sass/_teachforall.scss */
 .uber-nav .menu .menu a.active {
   background-color: transparent;
 }
-/* line 1013, ../sass/_teachforall.scss */
+/* line 1021, ../sass/_teachforall.scss */
 .uber-nav .menu .menu li {
   display: block;
   padding-top: 0;
 }
-/* line 1016, ../sass/_teachforall.scss */
+/* line 1024, ../sass/_teachforall.scss */
 .uber-nav .menu .menu li:first-child {
   margin-top: 2px;
 }
-/* line 1026, ../sass/_teachforall.scss */
+/* line 1034, ../sass/_teachforall.scss */
 .uber-nav ul li {
   list-style-type: none;
   list-style-image: none;
 }
-/* line 1029, ../sass/_teachforall.scss */
+/* line 1037, ../sass/_teachforall.scss */
 .uber-nav ul li.expanded, .uber-nav ul li.leaf {
   list-style-type: none;
   list-style-image: none;
@@ -1810,22 +1821,22 @@ h2.page-title {
 /**
 * #Feeds
 **/
-/* line 1044, ../sass/_teachforall.scss */
+/* line 1052, ../sass/_teachforall.scss */
 #feeds {
   background-color: #e69740;
   padding: 28px 0 40px;
 }
-/* line 1051, ../sass/_teachforall.scss */
+/* line 1059, ../sass/_teachforall.scss */
 #feeds .row-fluid .span3.facebook .fb-like-box iframe {
   background: #fff;
 }
 @media screen and (max-width: 767px) {
-  /* line 1044, ../sass/_teachforall.scss */
+  /* line 1052, ../sass/_teachforall.scss */
   #feeds {
     padding: 0;
     background: #fff;
   }
-  /* line 1064, ../sass/_teachforall.scss */
+  /* line 1072, ../sass/_teachforall.scss */
   #feeds .row-fluid .span9 {
     background: #e69740;
     padding: 30px 0;
@@ -1836,24 +1847,24 @@ h2.page-title {
     display: table;
     clear: both;
   }
-  /* line 1071, ../sass/_teachforall.scss */
+  /* line 1079, ../sass/_teachforall.scss */
   #feeds .row-fluid .span3.facebook .fb-like-box {
     max-height: 209px;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1081, ../sass/_teachforall.scss */
+  /* line 1089, ../sass/_teachforall.scss */
   #feeds .row-fluid .span9 {
     width: 65.74585635359117%;
   }
-  /* line 1085, ../sass/_teachforall.scss */
+  /* line 1093, ../sass/_teachforall.scss */
   #feeds .row-fluid .span3.facebook {
     width: 31.491712707182323%;
     text-align: right;
   }
 }
-/* line 1092, ../sass/_teachforall.scss */
+/* line 1100, ../sass/_teachforall.scss */
 #feeds h3 {
   color: #fff;
   font-weight: normal;
@@ -1863,7 +1874,7 @@ h2.page-title {
   text-transform: uppercase;
 }
 @media screen and (max-width: 450px) {
-  /* line 1100, ../sass/_teachforall.scss */
+  /* line 1108, ../sass/_teachforall.scss */
   #feeds .facebook {
     clear: both;
   }
@@ -1872,55 +1883,55 @@ h2.page-title {
 /**
 * #Footer
 **/
-/* line 1111, ../sass/_teachforall.scss */
+/* line 1119, ../sass/_teachforall.scss */
 #footer {
   background-color: #4d4d4d;
   border: none;
   padding: 30px 0;
 }
-/* line 1116, ../sass/_teachforall.scss */
+/* line 1124, ../sass/_teachforall.scss */
 #footer ul {
   margin: 0;
 }
 @media screen and (min-width: 980px) {
-  /* line 1121, ../sass/_teachforall.scss */
+  /* line 1129, ../sass/_teachforall.scss */
   #footer .donate a {
     display: block;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1111, ../sass/_teachforall.scss */
+  /* line 1119, ../sass/_teachforall.scss */
   #footer {
     padding-bottom: 0;
   }
-  /* line 1133, ../sass/_teachforall.scss */
+  /* line 1141, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 15px;
     font-size: 0.9375rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1139, ../sass/_teachforall.scss */
+  /* line 1147, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 17px;
     font-size: 1.0625rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1146, ../sass/_teachforall.scss */
+  /* line 1154, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"].footer-links {
     width: 42%;
     float: left;
     margin-right: 6%;
     margin-left: 5%;
   }
-  /* line 1153, ../sass/_teachforall.scss */
+  /* line 1161, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"].footer-links-2 {
     width: 42%;
     float: left;
     margin-right: 5%;
   }
-  /* line 1159, ../sass/_teachforall.scss */
+  /* line 1167, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div {
     clear: left;
     border-top: 1px dotted grey;
@@ -1929,20 +1940,20 @@ h2.page-title {
     margin-bottom: 20px;
     display: inline-block;
   }
-  /* line 1168, ../sass/_teachforall.scss */
+  /* line 1176, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li:nth-child(odd) {
     width: 42%;
     float: left;
     margin-right: 6%;
     margin-left: 5%;
   }
-  /* line 1175, ../sass/_teachforall.scss */
+  /* line 1183, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li:nth-child(even) {
     width: 42%;
     float: left;
     margin-right: 5%;
   }
-  /* line 1185, ../sass/_teachforall.scss */
+  /* line 1193, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1950,7 +1961,7 @@ h2.page-title {
     clear: both;
     padding: 0 5% 20px;
   }
-  /* line 1189, ../sass/_teachforall.scss */
+  /* line 1197, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
     font-size: 0.875rem;
@@ -1960,7 +1971,7 @@ h2.page-title {
   }
 }
 @media screen and (max-width: 767px) and (max-width: 500px) {
-  /* line 1189, ../sass/_teachforall.scss */
+  /* line 1197, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate {
     padding: 0;
     margin: 0 0 10px 0;
@@ -1971,16 +1982,16 @@ h2.page-title {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1202, ../sass/_teachforall.scss */
+  /* line 1210, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate a {
     display: block;
     padding: 4px 5px 0;
   }
-  /* line 1207, ../sass/_teachforall.scss */
+  /* line 1215, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .footer__search {
     display: none;
   }
-  /* line 1210, ../sass/_teachforall.scss */
+  /* line 1218, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .social-media {
     display: inline-block;
     margin-right: 10px;
@@ -1988,27 +1999,27 @@ h2.page-title {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1224, ../sass/_teachforall.scss */
+  /* line 1232, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"]:first-child + div + div .content > ul.menu > li a[title=Search] {
     display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1236, ../sass/_teachforall.scss */
+  /* line 1244, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li > a {
     font-size: 14px;
     font-size: 0.875rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1242, ../sass/_teachforall.scss */
+  /* line 1250, ../sass/_teachforall.scss */
   #footer .row-fluid [class*="span2"] .content > ul.menu > li ul li a {
     font-size: 16px;
     font-size: 1rem;
     display: inline-block;
     margin-bottom: 5px;
   }
-  /* line 1252, ../sass/_teachforall.scss */
+  /* line 1260, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .donate {
     font-size: 14px;
     font-size: 0.875rem;
@@ -2018,19 +2029,19 @@ h2.page-title {
     line-height: 32px;
     height: 30px;
   }
-  /* line 1260, ../sass/_teachforall.scss */
+  /* line 1268, ../sass/_teachforall.scss */
   #footer .row-fluid .span2 + .span3 .social-media {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 10px;
   }
 }
-/* line 1270, ../sass/_teachforall.scss */
+/* line 1278, ../sass/_teachforall.scss */
 #footer .footer-links .block-block, #footer .footer-links-2 .block-block {
   display: none;
 }
 
-/* line 1276, ../sass/_teachforall.scss */
+/* line 1284, ../sass/_teachforall.scss */
 .footer__contact-us {
   clear: both;
   color: #DFD9C9;
@@ -2047,36 +2058,36 @@ h2.page-title {
   font-style: normal;
 }
 @media screen and (max-width: 767px) {
-  /* line 1276, ../sass/_teachforall.scss */
+  /* line 1284, ../sass/_teachforall.scss */
   .footer__contact-us {
     float: left;
     width: 100%;
   }
 }
-/* line 1289, ../sass/_teachforall.scss */
+/* line 1297, ../sass/_teachforall.scss */
 .footer__contact-us form label {
   font-size: 11px;
   font-size: 0.6875rem;
 }
-/* line 1292, ../sass/_teachforall.scss */
+/* line 1300, ../sass/_teachforall.scss */
 .footer__contact-us form .form-text {
   background-color: #dfd9c9;
   border-radius: 10px;
   width: 83%;
 }
-/* line 1298, ../sass/_teachforall.scss */
+/* line 1306, ../sass/_teachforall.scss */
 .footer__contact-us a {
   color: #dfd9c9;
   letter-spacing: .2em;
   font-size: 11px;
   font-size: 0.6875rem;
 }
-/* line 1302, ../sass/_teachforall.scss */
+/* line 1310, ../sass/_teachforall.scss */
 .footer__contact-us a:hover {
   color: #fff;
 }
 
-/* line 1308, ../sass/_teachforall.scss */
+/* line 1316, ../sass/_teachforall.scss */
 .footer__copyright {
   color: #999;
   margin-top: 20px;
@@ -2084,54 +2095,54 @@ h2.page-title {
   clear: both;
 }
 
-/* line 1319, ../sass/_teachforall.scss */
+/* line 1327, ../sass/_teachforall.scss */
 .footer__contact {
   color: #999;
   width: 80%;
 }
 
-/* line 1325, ../sass/_teachforall.scss */
+/* line 1333, ../sass/_teachforall.scss */
 .footer-links a {
   margin-left: 0;
 }
-/* line 1328, ../sass/_teachforall.scss */
+/* line 1336, ../sass/_teachforall.scss */
 .footer-links .content {
   width: 150px;
 }
 @media screen and (max-width: 979px) {
-  /* line 1328, ../sass/_teachforall.scss */
+  /* line 1336, ../sass/_teachforall.scss */
   .footer-links .content {
     width: 100%;
   }
 }
-/* line 1335, ../sass/_teachforall.scss */
+/* line 1343, ../sass/_teachforall.scss */
 .footer-links .content > ul > li:nth-of-type(4), .footer-links .content > ul > li:nth-of-type(5) {
   display: none;
 }
 
-/* line 1347, ../sass/_teachforall.scss */
+/* line 1355, ../sass/_teachforall.scss */
 .footer-links-2 .content > ul > li {
   margin-bottom: 20px;
 }
-/* line 1349, ../sass/_teachforall.scss */
+/* line 1357, ../sass/_teachforall.scss */
 .footer-links-2 .content > ul > li:nth-of-type(1), .footer-links-2 .content > ul > li:nth-of-type(2), .footer-links-2 .content > ul > li:nth-of-type(3) {
   display: none;
 }
 
-/* line 1362, ../sass/_teachforall.scss */
+/* line 1370, ../sass/_teachforall.scss */
 .footer-menu .menu .menu .last {
   margin-bottom: 10px;
 }
-/* line 1367, ../sass/_teachforall.scss */
+/* line 1375, ../sass/_teachforall.scss */
 .footer-menu ul {
   margin: 0;
 }
-/* line 1375, ../sass/_teachforall.scss */
+/* line 1383, ../sass/_teachforall.scss */
 .footer-menu .content > ul > li {
   padding: 0;
 }
 
-/* line 1383, ../sass/_teachforall.scss */
+/* line 1391, ../sass/_teachforall.scss */
 #footer .content > ul > li {
   list-style-type: none;
   list-style-image: none;
@@ -2139,28 +2150,28 @@ h2.page-title {
   line-height: 1em;
   padding: 0;
 }
-/* line 1390, ../sass/_teachforall.scss */
+/* line 1398, ../sass/_teachforall.scss */
 #footer .content > ul > li > ul li {
   list-style-type: none;
   list-style-image: none;
   margin: 0;
 }
-/* line 1394, ../sass/_teachforall.scss */
+/* line 1402, ../sass/_teachforall.scss */
 #footer .content > ul > li > ul li a {
   font-size: 16px;
   font-size: 1rem;
   color: #999;
 }
 
-/* line 1406, ../sass/_teachforall.scss */
+/* line 1414, ../sass/_teachforall.scss */
 .footer__search {
   margin: 10px 0;
 }
-/* line 1409, ../sass/_teachforall.scss */
+/* line 1417, ../sass/_teachforall.scss */
 .footer__search form {
   margin-bottom: 20px;
 }
-/* line 1413, ../sass/_teachforall.scss */
+/* line 1421, ../sass/_teachforall.scss */
 .footer__search p, .footer__search a {
   color: #dfd9c9;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -2175,15 +2186,15 @@ h2.page-title {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 1422, ../sass/_teachforall.scss */
+/* line 1430, ../sass/_teachforall.scss */
 .footer__search a:hover {
   color: #fff;
 }
-/* line 1427, ../sass/_teachforall.scss */
+/* line 1435, ../sass/_teachforall.scss */
 .footer__search .navbar-search {
   float: none;
 }
-/* line 1429, ../sass/_teachforall.scss */
+/* line 1437, ../sass/_teachforall.scss */
 .footer__search .navbar-search .search-query {
   background-color: #dfd9c9;
   -moz-border-radius: 10px;
@@ -2191,13 +2202,13 @@ h2.page-title {
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 1429, ../sass/_teachforall.scss */
+  /* line 1437, ../sass/_teachforall.scss */
   .footer__search .navbar-search .search-query {
     max-width: 125px;
   }
 }
 @media screen and (min-width: 980px) and (max-width: 1199px) {
-  /* line 1429, ../sass/_teachforall.scss */
+  /* line 1437, ../sass/_teachforall.scss */
   .footer__search .navbar-search .search-query {
     max-width: 141px;
   }
@@ -2207,7 +2218,7 @@ h2.page-title {
 /**
 * #Images
 **/
-/* line 1450, ../sass/_teachforall.scss */
+/* line 1458, ../sass/_teachforall.scss */
 img {
   max-width: 100%;
 }
@@ -2216,31 +2227,31 @@ img {
 /**
 * #Supporters Widget
 **/
-/* line 1460, ../sass/_teachforall.scss */
+/* line 1468, ../sass/_teachforall.scss */
 .view-nodequeue-supporter-list .flexslider * {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-/* line 1467, ../sass/_teachforall.scss */
+/* line 1475, ../sass/_teachforall.scss */
 .widget_supporters {
   background-color: #fff;
   padding: 20px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  /* line 1471, ../sass/_teachforall.scss */
+  /* line 1479, ../sass/_teachforall.scss */
   .widget_supporters .view-nodequeue-supporter-list {
     margin: 0 auto;
     width: 50%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 1471, ../sass/_teachforall.scss */
+  /* line 1479, ../sass/_teachforall.scss */
   .widget_supporters .view-nodequeue-supporter-list {
     width: 80%;
   }
 }
-/* line 1481, ../sass/_teachforall.scss */
+/* line 1489, ../sass/_teachforall.scss */
 .widget_supporters .title {
   color: #ffb151;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -2254,16 +2265,16 @@ img {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 1488, ../sass/_teachforall.scss */
+/* line 1496, ../sass/_teachforall.scss */
 .widget_supporters ul {
   padding: 0px;
   margin: 0px;
 }
-/* line 1491, ../sass/_teachforall.scss */
+/* line 1499, ../sass/_teachforall.scss */
 .widget_supporters ul li a {
   margin: 0px;
 }
-/* line 1495, ../sass/_teachforall.scss */
+/* line 1503, ../sass/_teachforall.scss */
 .widget_supporters p {
   color: #999;
   font-size: 17px;
@@ -2271,19 +2282,19 @@ img {
   line-height: 21px;
 }
 
-/* line 1502, ../sass/_teachforall.scss */
+/* line 1510, ../sass/_teachforall.scss */
 .fb-like-box {
   background-color: #fff;
 }
 
 /* responsive fb like box */
-/* line 1507, ../sass/_teachforall.scss */
+/* line 1515, ../sass/_teachforall.scss */
 #fb-root {
   display: none;
 }
 
 /* To fill the container and nothing else */
-/* line 1512, ../sass/_teachforall.scss */
+/* line 1520, ../sass/_teachforall.scss */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;
 }
@@ -2292,13 +2303,13 @@ img {
 /**
 * #MapBox
 **/
-/* line 1526, ../sass/_teachforall.scss */
+/* line 1534, ../sass/_teachforall.scss */
 .no__logo {
   width: 150px;
   height: 84px;
 }
 
-/* line 1536, ../sass/_teachforall.scss */
+/* line 1544, ../sass/_teachforall.scss */
 #worldmap {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2307,17 +2318,17 @@ img {
   position: relative;
 }
 @media screen and (max-width: 1024px) {
-  /* line 1536, ../sass/_teachforall.scss */
+  /* line 1544, ../sass/_teachforall.scss */
   #worldmap {
     display: none;
   }
 }
-/* line 1543, ../sass/_teachforall.scss */
+/* line 1551, ../sass/_teachforall.scss */
 #worldmap .container {
   width: 100%;
 }
 @media screen and (max-width: 1025px) {
-  /* line 1546, ../sass/_teachforall.scss */
+  /* line 1554, ../sass/_teachforall.scss */
   .touch #worldmap {
     width: 100%;
     margin: 0;
@@ -2326,7 +2337,7 @@ img {
   }
 }
 
-/* line 1556, ../sass/_teachforall.scss */
+/* line 1564, ../sass/_teachforall.scss */
 #mobileworldmap {
   text-align: center;
   background-image: url(../images/worldmap-2016-940.jpg);
@@ -2340,31 +2351,31 @@ img {
   position: relative;
 }
 @media screen and (min-width: 1025px) {
-  /* line 1556, ../sass/_teachforall.scss */
+  /* line 1564, ../sass/_teachforall.scss */
   #mobileworldmap {
     display: none;
   }
 }
-/* line 1569, ../sass/_teachforall.scss */
+/* line 1577, ../sass/_teachforall.scss */
 #mobileworldmap .btn__red, #mobileworldmap .view-persons .view-footer a.btn, .view-persons .view-footer #mobileworldmap a.btn, #mobileworldmap .view-supporters .view-footer .btn, .view-supporters .view-footer #mobileworldmap .btn {
   padding: 4px 10px !important;
   letter-spacing: 1px !important;
 }
 @media screen and (max-width: 1025px) {
-  /* line 1573, ../sass/_teachforall.scss */
+  /* line 1581, ../sass/_teachforall.scss */
   .touch #mobileworldmap {
     display: block;
   }
 }
 
-/* line 1580, ../sass/_teachforall.scss */
+/* line 1588, ../sass/_teachforall.scss */
 .fake-table {
   display: table;
   width: 100%;
   height: 100%;
 }
 
-/* line 1585, ../sass/_teachforall.scss */
+/* line 1593, ../sass/_teachforall.scss */
 .fake-table-cell {
   display: table-cell;
   width: 100%;
@@ -2373,7 +2384,7 @@ img {
   text-align: center;
 }
 
-/* line 1592, ../sass/_teachforall.scss */
+/* line 1600, ../sass/_teachforall.scss */
 .button-center-div {
   text-align: center;
   position: absolute;
@@ -2383,18 +2394,18 @@ img {
   height: 100%;
 }
 @media screen and (min-width: 1025px) {
-  /* line 1592, ../sass/_teachforall.scss */
+  /* line 1600, ../sass/_teachforall.scss */
   .button-center-div {
     display: none;
   }
 }
 
-/* line 1605, ../sass/_teachforall.scss */
+/* line 1613, ../sass/_teachforall.scss */
 .worldmap__national-orgs {
   background-color: #80b4e4;
 }
 
-/* line 1612, ../sass/_teachforall.scss */
+/* line 1620, ../sass/_teachforall.scss */
 .worldmap__title {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2410,74 +2421,74 @@ img {
   font-size: .9em;
 }
 
-/* line 1625, ../sass/_teachforall.scss */
+/* line 1633, ../sass/_teachforall.scss */
 #map {
   background-color: #80b4e4;
   width: 100%;
   height: 580px;
 }
-/* line 1630, ../sass/_teachforall.scss */
+/* line 1638, ../sass/_teachforall.scss */
 #map .leaflet-map-pane {
   width: 100%;
 }
-/* line 1634, ../sass/_teachforall.scss */
+/* line 1642, ../sass/_teachforall.scss */
 #map .popup img {
   width: 130px;
   float: left;
   margin-right: 10px;
 }
-/* line 1639, ../sass/_teachforall.scss */
+/* line 1647, ../sass/_teachforall.scss */
 #map .popup h2 {
   line-height: 1;
   font-weight: bold;
   font-size: 11px;
 }
-/* line 1645, ../sass/_teachforall.scss */
+/* line 1653, ../sass/_teachforall.scss */
 #map .popup h3 {
   margin-bottom: 4px;
   color: #4d4d4d;
   font-size: 20px;
 }
 
-/* line 1653, ../sass/_teachforall.scss */
+/* line 1661, ../sass/_teachforall.scss */
 .leaflet-bar {
   border: none;
   border-radius: 0;
 }
-/* line 1656, ../sass/_teachforall.scss */
+/* line 1664, ../sass/_teachforall.scss */
 .leaflet-bar a {
   background-color: #4d4d4d;
   border: none;
   color: #fff;
   padding: 0 0 2px 1px;
 }
-/* line 1661, ../sass/_teachforall.scss */
+/* line 1669, ../sass/_teachforall.scss */
 .leaflet-bar a:first-child {
   border-radius: 0;
   margin-bottom: 2px;
 }
-/* line 1665, ../sass/_teachforall.scss */
+/* line 1673, ../sass/_teachforall.scss */
 .leaflet-bar a:last-child {
   border-radius: 0;
 }
-/* line 1668, ../sass/_teachforall.scss */
+/* line 1676, ../sass/_teachforall.scss */
 .leaflet-bar a:hover {
   background-color: #4d4d4d;
   border: none;
   color: #e69740;
 }
 
-/* line 1676, ../sass/_teachforall.scss */
+/* line 1684, ../sass/_teachforall.scss */
 .leaflet-popup-pane {
   z-index: 9999;
 }
-/* line 1678, ../sass/_teachforall.scss */
+/* line 1686, ../sass/_teachforall.scss */
 .leaflet-popup-pane a {
   color: #91998c;
   display: block;
   overflow: hidden;
 }
-/* line 1682, ../sass/_teachforall.scss */
+/* line 1690, ../sass/_teachforall.scss */
 .leaflet-popup-pane a span {
   display: block;
   text-transform: uppercase;
@@ -2488,22 +2499,22 @@ img {
   font-weight: bold;
   margin-top: 3px;
 }
-/* line 1692, ../sass/_teachforall.scss */
+/* line 1700, ../sass/_teachforall.scss */
 .leaflet-popup-pane a span:hover {
   color: #cf4753;
 }
 
-/* line 1699, ../sass/_teachforall.scss */
+/* line 1707, ../sass/_teachforall.scss */
 .leaflet-popup-content-wrapper {
   -moz-box-shadow: 3px 3px 14px #888;
   -webkit-box-shadow: 3px 3px 14px #888;
   box-shadow: 3px 3px 14px #888;
 }
-/* line 1702, ../sass/_teachforall.scss */
+/* line 1710, ../sass/_teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content {
   margin: 9px;
 }
-/* line 1705, ../sass/_teachforall.scss */
+/* line 1713, ../sass/_teachforall.scss */
 .leaflet-popup-content-wrapper .leaflet-popup-content h2 {
   font-size: 11px;
   color: #e69740;
@@ -2515,7 +2526,7 @@ img {
   margin-bottom: 4px;
 }
 
-/* line 1720, ../sass/_teachforall.scss */
+/* line 1728, ../sass/_teachforall.scss */
 .worldmap__details #map {
   background-color: #92b4a6;
 }
@@ -2524,38 +2535,38 @@ img {
 /**
 * #Twitter
 **/
-/* line 1731, ../sass/_teachforall.scss */
+/* line 1739, ../sass/_teachforall.scss */
 #block-views-tfall-tweets-block-2 {
   margin: 0 1%;
 }
 @media screen and (max-width: 979px) and (min-width: 768px) {
-  /* line 1731, ../sass/_teachforall.scss */
+  /* line 1739, ../sass/_teachforall.scss */
   #block-views-tfall-tweets-block-2 {
     margin: 0 0 0 2%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 1731, ../sass/_teachforall.scss */
+  /* line 1739, ../sass/_teachforall.scss */
   #block-views-tfall-tweets-block-2 {
     display: none;
   }
 }
 
 @media screen and (max-width: 979px) {
-  /* line 1741, ../sass/_teachforall.scss */
+  /* line 1749, ../sass/_teachforall.scss */
   #block-views-tfall-tweets-block-3 {
     display: none;
   }
 }
 
-/* line 1747, ../sass/_teachforall.scss */
+/* line 1755, ../sass/_teachforall.scss */
 #block-views-tfall-tweets-block,
 .teachforall-twitter-block {
   background-color: #e69740;
   margin-bottom: 20px;
   padding: 20px;
 }
-/* line 1753, ../sass/_teachforall.scss */
+/* line 1761, ../sass/_teachforall.scss */
 #block-views-tfall-tweets-block h2,
 .teachforall-twitter-block h2 {
   color: #fff;
@@ -2568,86 +2579,86 @@ img {
   line-height: 18px;
 }
 
-/* line 1764, ../sass/_teachforall.scss */
+/* line 1772, ../sass/_teachforall.scss */
 .tweets {
   margin-bottom: 20px;
 }
-/* line 1767, ../sass/_teachforall.scss */
+/* line 1775, ../sass/_teachforall.scss */
 .views-row-last .tweets {
   margin-bottom: 4px;
 }
-/* line 1771, ../sass/_teachforall.scss */
+/* line 1779, ../sass/_teachforall.scss */
 .tweets .tweets__info {
   color: #000;
   text-transform: uppercase;
   font-size: 12px;
   font-size: 0.75rem;
 }
-/* line 1775, ../sass/_teachforall.scss */
+/* line 1783, ../sass/_teachforall.scss */
 .tweets .tweets__info .field-content {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 1778, ../sass/_teachforall.scss */
+/* line 1786, ../sass/_teachforall.scss */
 .tweets .tweets__info .placeholder {
   font-style: italic;
 }
-/* line 1781, ../sass/_teachforall.scss */
+/* line 1789, ../sass/_teachforall.scss */
 .tweets .tweets__info a {
   color: #000;
 }
-/* line 1786, ../sass/_teachforall.scss */
+/* line 1794, ../sass/_teachforall.scss */
 .tweets .tweets__text {
   font-size: 17px;
   font-size: 1.0625rem;
   color: #fff;
   word-wrap: break-word;
 }
-/* line 1791, ../sass/_teachforall.scss */
+/* line 1799, ../sass/_teachforall.scss */
 .tweets .tweets__text a {
   color: #fff;
 }
-/* line 1794, ../sass/_teachforall.scss */
+/* line 1802, ../sass/_teachforall.scss */
 .tweets .tweets__text a:hover {
   color: #cf4753;
 }
 
-/* line 1801, ../sass/_teachforall.scss */
+/* line 1809, ../sass/_teachforall.scss */
 .region-twitter-front {
   padding-top: 5px;
 }
-/* line 1804, ../sass/_teachforall.scss */
+/* line 1812, ../sass/_teachforall.scss */
 .region-twitter-front .teachforall-twitter-block {
   margin-bottom: 0;
   padding: 0 20px 0 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 1801, ../sass/_teachforall.scss */
+  /* line 1809, ../sass/_teachforall.scss */
   .region-twitter-front {
     padding: 0 20px;
   }
 }
-/* line 1813, ../sass/_teachforall.scss */
+/* line 1821, ../sass/_teachforall.scss */
 .region-twitter-front .block-views {
   float: left;
   width: 31%;
 }
 @media screen and (max-width: 979px) {
-  /* line 1813, ../sass/_teachforall.scss */
+  /* line 1821, ../sass/_teachforall.scss */
   .region-twitter-front .block-views {
     width: 48%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 1813, ../sass/_teachforall.scss */
+  /* line 1821, ../sass/_teachforall.scss */
   .region-twitter-front .block-views {
     width: 100%;
   }
 }
-/* line 1826, ../sass/_teachforall.scss */
+/* line 1834, ../sass/_teachforall.scss */
 .region-twitter-front .block-views h2 {
   display: none;
 }
-/* line 1830, ../sass/_teachforall.scss */
+/* line 1838, ../sass/_teachforall.scss */
 .region-twitter-front .block-views .views-row-last .tweets {
   margin-bottom: 0;
 }
@@ -2656,31 +2667,31 @@ img {
 /**
 * #ShareThis
 **/
-/* line 1842, ../sass/_teachforall.scss */
+/* line 1850, ../sass/_teachforall.scss */
 .block-sharethis {
   float: left;
   width: 88px;
 }
-/* line 1846, ../sass/_teachforall.scss */
+/* line 1854, ../sass/_teachforall.scss */
 .block-sharethis .stButton {
   margin: 0 8px 0 0;
   background-color: #4d4d4d;
   line-height: 27px;
   overflow: hidden;
 }
-/* line 1851, ../sass/_teachforall.scss */
+/* line 1859, ../sass/_teachforall.scss */
 .block-sharethis .stButton .stLarge:hover {
   opacity: 1;
 }
 
-/* line 1857, ../sass/_teachforall.scss */
+/* line 1865, ../sass/_teachforall.scss */
 .archive-link {
   display: block;
   float: left;
   width: 175px;
 }
 
-/* line 1865, ../sass/_teachforall.scss */
+/* line 1873, ../sass/_teachforall.scss */
 .st_twitter_large .stLarge,
 .st_facebook_large .stLarge {
   background-color: #4d4d4d;
@@ -2693,19 +2704,19 @@ img {
   font-size: 20px;
   font-size: 1.25rem;
 }
-/* line 1874, ../sass/_teachforall.scss */
+/* line 1882, ../sass/_teachforall.scss */
 .st_twitter_large .stLarge:hover,
 .st_facebook_large .stLarge:hover {
   background-color: #cf4753;
 }
 
-/* line 1881, ../sass/_teachforall.scss */
+/* line 1889, ../sass/_teachforall.scss */
 .st_facebook_large .stLarge:before {
   font-family: 'icomoon';
   content: "\e602";
 }
 
-/* line 1888, ../sass/_teachforall.scss */
+/* line 1896, ../sass/_teachforall.scss */
 .st_twitter_large .stLarge:before {
   font-family: 'icomoon';
   content: "\e604";
@@ -2715,19 +2726,19 @@ img {
 /**
 * #Facebook Comments
 **/
-/* line 1900, ../sass/_teachforall.scss */
+/* line 1908, ../sass/_teachforall.scss */
 .facebook-comments-box {
   padding: 30px 0 0 0;
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  /* line 1900, ../sass/_teachforall.scss */
+  /* line 1908, ../sass/_teachforall.scss */
   .facebook-comments-box {
     padding-top: 10px;
   }
 }
 
-/* line 1908, ../sass/_teachforall.scss */
+/* line 1916, ../sass/_teachforall.scss */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe[style] {
   width: 100% !important;
 }
@@ -2737,7 +2748,7 @@ img {
 /**
 * #News Listing, #Network Learning Listing
 **/
-/* line 1924, ../sass/_teachforall.scss */
+/* line 1932, ../sass/_teachforall.scss */
 .news-page .views-row-odd,
 .news-page .views-row-even, .news-latest .views-row-odd,
 .news-latest .views-row-even,
@@ -2746,7 +2757,7 @@ img {
 .network-learning-latest .views-row-even {
   margin-bottom: 30px;
 }
-/* line 1928, ../sass/_teachforall.scss */
+/* line 1936, ../sass/_teachforall.scss */
 .news-page .views-row-last, .news-latest .views-row-last,
 .network-learning-page .views-row-last, .network-learning-latest .views-row-last {
   border-bottom: none;
@@ -2754,7 +2765,7 @@ img {
   padding-bottom: 0;
 }
 @media screen and (max-width: 370px) {
-  /* line 1933, ../sass/_teachforall.scss */
+  /* line 1941, ../sass/_teachforall.scss */
   .news-page .span3, .news-latest .span3,
   .network-learning-page .span3, .network-learning-latest .span3 {
     float: none;
@@ -2763,7 +2774,7 @@ img {
   }
 }
 @media screen and (min-width: 371px) and (max-width: 767px) {
-  /* line 1933, ../sass/_teachforall.scss */
+  /* line 1941, ../sass/_teachforall.scss */
   .news-page .span3, .news-latest .span3,
   .network-learning-page .span3, .network-learning-latest .span3 {
     float: left;
@@ -2772,7 +2783,7 @@ img {
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 1946, ../sass/_teachforall.scss */
+  /* line 1954, ../sass/_teachforall.scss */
   .news-page .span9, .news-latest .span9,
   .network-learning-page .span9, .network-learning-latest .span9 {
     float: none;
@@ -2780,36 +2791,36 @@ img {
   }
 }
 @media screen and (min-width: 371px) and (max-width: 767px) {
-  /* line 1946, ../sass/_teachforall.scss */
+  /* line 1954, ../sass/_teachforall.scss */
   .news-page .span9, .news-latest .span9,
   .network-learning-page .span9, .network-learning-latest .span9 {
     float: left;
     width: 68%;
   }
 }
-/* line 1957, ../sass/_teachforall.scss */
+/* line 1965, ../sass/_teachforall.scss */
 .news-page img, .news-latest img,
 .network-learning-page img, .network-learning-latest img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 1957, ../sass/_teachforall.scss */
+  /* line 1965, ../sass/_teachforall.scss */
   .news-page img, .news-latest img,
   .network-learning-page img, .network-learning-latest img {
     margin-bottom: 5px;
   }
 }
-/* line 1965, ../sass/_teachforall.scss */
+/* line 1973, ../sass/_teachforall.scss */
 .news-page h3 a, .news-latest h3 a,
 .network-learning-page h3 a, .network-learning-latest h3 a {
   color: #4d4d4d;
 }
-/* line 1967, ../sass/_teachforall.scss */
+/* line 1975, ../sass/_teachforall.scss */
 .news-page h3 a:hover, .news-latest h3 a:hover,
 .network-learning-page h3 a:hover, .network-learning-latest h3 a:hover {
   color: #cf4753;
 }
-/* line 1972, ../sass/_teachforall.scss */
+/* line 1980, ../sass/_teachforall.scss */
 .news-page .small-body, .news-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-page a, .news-page .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser .news-page a, .news-page .node-type-page-global-organization .our-model-section .spotlights p, .node-type-page-global-organization .our-model-section .spotlights .news-page p, .news-latest .small-body, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .span4 .news-latest a, .news-latest .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser .news-latest a, .news-latest .node-type-page-global-organization .our-model-section .spotlights p, .node-type-page-global-organization .our-model-section .spotlights .news-latest p,
 .network-learning-page .small-body,
 .network-learning-page .node-type-page-our-model #main .our-model-section .spotlights .span4 a,
@@ -2821,25 +2832,25 @@ img {
   margin-bottom: 5px;
 }
 
-/* line 1977, ../sass/_teachforall.scss */
+/* line 1985, ../sass/_teachforall.scss */
 .news__landing-byline, .network-learning__landing-byline {
   color: #999;
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 1981, ../sass/_teachforall.scss */
+/* line 1989, ../sass/_teachforall.scss */
 .row-fluid.news__node-links .container {
   float: left;
   width: auto;
 }
 
-/* line 1985, ../sass/_teachforall.scss */
+/* line 1993, ../sass/_teachforall.scss */
 .news__author-info, .network-learning__author-info {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 1988, ../sass/_teachforall.scss */
+/* line 1996, ../sass/_teachforall.scss */
 .news__author-info div, .network-learning__author-info div {
   display: inline;
 }
@@ -2855,51 +2866,51 @@ img {
   clear: both;
 }
 @media screen and (max-width: 680px) {
-  /* line 2004, ../sass/_teachforall.scss */
+  /* line 2012, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-one-col {
     display: block;
   }
-  /* line 2008, ../sass/_teachforall.scss */
+  /* line 2016, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col {
     display: none;
   }
 }
 @media screen and (min-width: 681px) {
-  /* line 2014, ../sass/_teachforall.scss */
+  /* line 2022, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-one-col {
     display: none;
   }
-  /* line 2018, ../sass/_teachforall.scss */
+  /* line 2026, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col {
     display: block;
   }
-  /* line 2021, ../sass/_teachforall.scss */
+  /* line 2029, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col .left-col, .view-persons .view-content .view-persons-two-col .right-col {
     float: left;
     width: 49%;
   }
-  /* line 2026, ../sass/_teachforall.scss */
+  /* line 2034, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col .left-col {
     margin-right: 1%;
     clear: left;
   }
-  /* line 2031, ../sass/_teachforall.scss */
+  /* line 2039, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col .right-col {
     margin-left: 1%;
   }
 }
-/* line 2037, ../sass/_teachforall.scss */
+/* line 2045, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row {
   display: inline-block;
   width: 100%;
   margin-top: 30px;
 }
-/* line 2042, ../sass/_teachforall.scss */
+/* line 2050, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row:first-child {
   margin-top: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 2037, ../sass/_teachforall.scss */
+  /* line 2045, ../sass/_teachforall.scss */
   .view-persons .view-content .views-row {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2912,14 +2923,14 @@ img {
     clear: both;
   }
 }
-/* line 2051, ../sass/_teachforall.scss */
+/* line 2059, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-image {
   display: block;
   float: left;
   width: 30%;
 }
 @media screen and (max-width: 370px) {
-  /* line 2051, ../sass/_teachforall.scss */
+  /* line 2059, ../sass/_teachforall.scss */
   .view-persons .view-content .views-row .person-image {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2929,12 +2940,12 @@ img {
     padding: 0 0 20px;
   }
 }
-/* line 2063, ../sass/_teachforall.scss */
+/* line 2071, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-image img {
   width: 100%;
   height: auto;
 }
-/* line 2069, ../sass/_teachforall.scss */
+/* line 2077, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2945,7 +2956,7 @@ img {
   padding-left: 15px;
 }
 @media screen and (max-width: 370px) {
-  /* line 2069, ../sass/_teachforall.scss */
+  /* line 2077, ../sass/_teachforall.scss */
   .view-persons .view-content .views-row .person-copy {
     display: inline-block;
     float: none;
@@ -2953,18 +2964,18 @@ img {
     padding: 0;
   }
 }
-/* line 2083, ../sass/_teachforall.scss */
+/* line 2091, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-title {
   float: left;
 }
-/* line 2085, ../sass/_teachforall.scss */
+/* line 2093, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-title a {
   color: #030303;
   font-size: 18px;
   font-size: 1.125rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 2092, ../sass/_teachforall.scss */
+/* line 2100, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-job-title {
   float: left;
   clear: left;
@@ -2974,7 +2985,7 @@ img {
   margin-bottom: 10px;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 2101, ../sass/_teachforall.scss */
+/* line 2109, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio, .view-persons .view-content .views-row .person-copy .person-bio-truncated {
   font-size: 16px;
   font-size: 1rem;
@@ -2984,19 +2995,19 @@ img {
   clear: left;
   color: #4d4d4d;
 }
-/* line 2109, ../sass/_teachforall.scss */
+/* line 2117, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio.is-visible, .view-persons .view-content .views-row .person-copy .person-bio-truncated.is-visible {
   display: block;
 }
-/* line 2113, ../sass/_teachforall.scss */
+/* line 2121, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio :first-child, .view-persons .view-content .views-row .person-copy .person-bio-truncated :first-child {
   margin: 0;
 }
-/* line 2117, ../sass/_teachforall.scss */
+/* line 2125, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .person-bio p, .view-persons .view-content .views-row .person-copy .person-bio-truncated p {
   margin: 10px 0 0 0;
 }
-/* line 2122, ../sass/_teachforall.scss */
+/* line 2130, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .read-more-btn, .view-persons .view-content .views-row .person-copy .collapse-btn {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -3008,17 +3019,17 @@ img {
   cursor: pointer;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 2132, ../sass/_teachforall.scss */
+/* line 2140, ../sass/_teachforall.scss */
 .view-persons .view-content .views-row .person-copy .read-more-btn.is-visible, .view-persons .view-content .views-row .person-copy .collapse-btn.is-visible {
   display: block;
 }
 @media screen and (min-width: 681px) {
-  /* line 2143, ../sass/_teachforall.scss */
+  /* line 2151, ../sass/_teachforall.scss */
   .view-persons .view-content .view-persons-two-col .views-row .person-copy .person-job-title {
     min-height: 40px;
   }
 }
-/* line 2152, ../sass/_teachforall.scss */
+/* line 2160, ../sass/_teachforall.scss */
 .view-persons .view-footer {
   clear: both;
   text-align: center;
@@ -3029,7 +3040,7 @@ img {
 /**
 * #Supporters
 **/
-/* line 2169, ../sass/_teachforall.scss */
+/* line 2177, ../sass/_teachforall.scss */
 .view-supporters {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3039,46 +3050,46 @@ img {
   text-align: center;
   margin: 0 auto;
 }
-/* line 2177, ../sass/_teachforall.scss */
+/* line 2185, ../sass/_teachforall.scss */
 .view-supporters .view-header h2 {
   margin-bottom: 5px;
 }
-/* line 2181, ../sass/_teachforall.scss */
+/* line 2189, ../sass/_teachforall.scss */
 .view-supporters .view-header p {
   margin-bottom: 30px;
 }
-/* line 2186, ../sass/_teachforall.scss */
+/* line 2194, ../sass/_teachforall.scss */
 .view-supporters h3 {
   color: #e69740;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 2px;
 }
-/* line 2192, ../sass/_teachforall.scss */
+/* line 2200, ../sass/_teachforall.scss */
 .view-supporters h3 + p {
   margin-bottom: 19px;
 }
-/* line 2197, ../sass/_teachforall.scss */
+/* line 2205, ../sass/_teachforall.scss */
 .view-supporters p {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 40px;
 }
-/* line 2203, ../sass/_teachforall.scss */
+/* line 2211, ../sass/_teachforall.scss */
 .view-supporters .supporter-links {
   max-width: 80%;
   margin: 5px auto 32px;
 }
-/* line 2206, ../sass/_teachforall.scss */
+/* line 2214, ../sass/_teachforall.scss */
 .view-supporters .supporter-links a {
   color: #000;
 }
-/* line 2208, ../sass/_teachforall.scss */
+/* line 2216, ../sass/_teachforall.scss */
 .view-supporters .supporter-links a:hover {
   color: #cf4753;
 }
-/* line 2212, ../sass/_teachforall.scss */
+/* line 2220, ../sass/_teachforall.scss */
 .view-supporters .supporter-links > div {
   display: inline-block;
   color: #000;
@@ -3090,44 +3101,44 @@ img {
   margin-bottom: 8px;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 2221, ../sass/_teachforall.scss */
+/* line 2229, ../sass/_teachforall.scss */
 .view-supporters .supporter-links > div.views-row-last {
   border-right: 0;
 }
 @media screen and (max-width: 330px) {
-  /* line 2229, ../sass/_teachforall.scss */
+  /* line 2237, ../sass/_teachforall.scss */
   .view-supporters h3.global-champions + p {
     word-spacing: -1px;
   }
 }
 @media screen and (max-width: 690px) {
-  /* line 2236, ../sass/_teachforall.scss */
+  /* line 2244, ../sass/_teachforall.scss */
   .view-supporters {
     padding: 0;
   }
-  /* line 2239, ../sass/_teachforall.scss */
+  /* line 2247, ../sass/_teachforall.scss */
   .view-supporters p {
     max-width: 400px;
     margin: 0 auto 10px;
     padding: 0;
   }
-  /* line 2245, ../sass/_teachforall.scss */
+  /* line 2253, ../sass/_teachforall.scss */
   .view-supporters .supporter-links {
     max-width: none;
   }
-  /* line 2248, ../sass/_teachforall.scss */
+  /* line 2256, ../sass/_teachforall.scss */
   .view-supporters .supporter-links > div {
     border: 0;
     display: block;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 2258, ../sass/_teachforall.scss */
+  /* line 2266, ../sass/_teachforall.scss */
   .view-supporters p {
     padding: 0;
   }
 }
-/* line 2264, ../sass/_teachforall.scss */
+/* line 2272, ../sass/_teachforall.scss */
 .view-supporters .view-footer {
   padding-top: 15px;
 }
@@ -3136,12 +3147,12 @@ img {
 /**
 * #Network Learning
 **/
-/* line 2279, ../sass/_teachforall.scss */
+/* line 2287, ../sass/_teachforall.scss */
 .network-learning-front-block {
   margin-bottom: 10px;
   padding-top: 30px;
 }
-/* line 2283, ../sass/_teachforall.scss */
+/* line 2291, ../sass/_teachforall.scss */
 .network-learning-front-block a.network-learning-main {
   font-size: 16px;
   font-size: 1rem;
@@ -3161,45 +3172,45 @@ img {
   font-style: normal;
 }
 @media screen and (max-width: 768px) {
-  /* line 2283, ../sass/_teachforall.scss */
+  /* line 2291, ../sass/_teachforall.scss */
   .network-learning-front-block a.network-learning-main {
     margin-bottom: 0;
   }
 }
-/* line 2298, ../sass/_teachforall.scss */
+/* line 2306, ../sass/_teachforall.scss */
 .network-learning-front-block a.network-learning-main:hover {
   color: #cf4753;
 }
-/* line 2303, ../sass/_teachforall.scss */
+/* line 2311, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
   margin-bottom: 15px;
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
-  /* line 2303, ../sass/_teachforall.scss */
+  /* line 2311, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     margin-top: 0;
   }
 }
-/* line 2311, ../sass/_teachforall.scss */
+/* line 2319, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
-  /* line 2311, ../sass/_teachforall.scss */
+  /* line 2319, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-top: 30px;
   }
 }
-/* line 2318, ../sass/_teachforall.scss */
+/* line 2326, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a {
   display: block;
 }
-/* line 2321, ../sass/_teachforall.scss */
+/* line 2329, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
   width: 100%;
 }
-/* line 2327, ../sass/_teachforall.scss */
+/* line 2335, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-tag, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-tag {
   font-size: 12px;
   font-size: 0.75rem;
@@ -3209,7 +3220,7 @@ img {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-/* line 2337, ../sass/_teachforall.scss */
+/* line 2345, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a {
   font-size: 22px;
   font-size: 1.375rem;
@@ -3223,24 +3234,24 @@ img {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 2343, ../sass/_teachforall.scss */
+/* line 2351, ../sass/_teachforall.scss */
 .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-title a:hover, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-title a:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 767px) {
-  /* line 2303, ../sass/_teachforall.scss */
+  /* line 2311, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block, .network-learning-front-block .view-display-id-network_learning_front_block_spanish {
     text-align: center;
   }
-  /* line 2352, ../sass/_teachforall.scss */
+  /* line 2360, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block:first-child, .network-learning-front-block .view-display-id-network_learning_front_block_spanish:first-child {
     margin-top: 0;
   }
-  /* line 2356, ../sass/_teachforall.scss */
+  /* line 2364, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image {
     margin-bottom: 10px;
   }
-  /* line 2359, ../sass/_teachforall.scss */
+  /* line 2367, ../sass/_teachforall.scss */
   .network-learning-front-block .view-display-id-network_learning_front_block .nl-front-image a img, .network-learning-front-block .view-display-id-network_learning_front_block_spanish .nl-front-image a img {
     max-width: 370px;
   }
@@ -3251,12 +3262,12 @@ img {
 /**
 * #National Organizations
 **/
-/* line 2375, ../sass/_teachforall.scss */
+/* line 2383, ../sass/_teachforall.scss */
 .no__main-img {
   width: 100%;
 }
 
-/* line 2383, ../sass/_teachforall.scss */
+/* line 2391, ../sass/_teachforall.scss */
 .no__ceo h2 a,
 .no__ceo .node a {
   font-size: 18px;
@@ -3264,67 +3275,67 @@ img {
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
 
-/* line 2393, ../sass/_teachforall.scss */
+/* line 2401, ../sass/_teachforall.scss */
 .no__image img {
   width: 100%;
 }
 
-/* line 2402, ../sass/_teachforall.scss */
+/* line 2410, ../sass/_teachforall.scss */
 .no__info-block {
   color: #cf4753;
   margin-bottom: 20px;
 }
-/* line 2405, ../sass/_teachforall.scss */
+/* line 2413, ../sass/_teachforall.scss */
 .no__info-block img {
   width: 100%;
 }
-/* line 2408, ../sass/_teachforall.scss */
+/* line 2416, ../sass/_teachforall.scss */
 .no__info-block .field-item {
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 2411, ../sass/_teachforall.scss */
+/* line 2419, ../sass/_teachforall.scss */
 .no__info-block a {
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: bold;
 }
 
-/* line 2417, ../sass/_teachforall.scss */
+/* line 2425, ../sass/_teachforall.scss */
 .no__stats {
   color: #91998c;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 2421, ../sass/_teachforall.scss */
+/* line 2429, ../sass/_teachforall.scss */
 .no__stats strong {
   color: #000;
   font-weight: normal;
 }
 
-/* line 2427, ../sass/_teachforall.scss */
+/* line 2435, ../sass/_teachforall.scss */
 .no__stat {
   margin-bottom: 10px;
 }
-/* line 2429, ../sass/_teachforall.scss */
+/* line 2437, ../sass/_teachforall.scss */
 .no__stat:last-child {
   margin-bottom: 0;
 }
 
-/* line 2436, ../sass/_teachforall.scss */
+/* line 2444, ../sass/_teachforall.scss */
 .node .content .no__spotlights {
   line-height: 1em;
   text-transform: none;
 }
-/* line 2439, ../sass/_teachforall.scss */
+/* line 2447, ../sass/_teachforall.scss */
 .node .content .no__spotlights img {
   height: auto;
   margin-bottom: 10px;
   width: 100%;
 }
 
-/* line 2449, ../sass/_teachforall.scss */
+/* line 2457, ../sass/_teachforall.scss */
 .node-type-national-organization .fb-like-box {
   margin-bottom: 20px;
 }
@@ -3333,26 +3344,26 @@ img {
 /**
 * #Spotlight
 **/
-/* line 2461, ../sass/_teachforall.scss */
+/* line 2469, ../sass/_teachforall.scss */
 .node-type-spotlight .page-title {
   display: none;
 }
-/* line 2463, ../sass/_teachforall.scss */
+/* line 2471, ../sass/_teachforall.scss */
 .node-type-spotlight .page-title.spotlight-type {
   display: block;
 }
-/* line 2467, ../sass/_teachforall.scss */
+/* line 2475, ../sass/_teachforall.scss */
 .node-type-spotlight .title {
   color: #e69740;
 }
-/* line 2471, ../sass/_teachforall.scss */
+/* line 2479, ../sass/_teachforall.scss */
 .node-type-spotlight .content img {
   height: auto;
   margin: 10px 0;
   width: 100%;
 }
 @media screen and (max-width: 500px) {
-  /* line 2471, ../sass/_teachforall.scss */
+  /* line 2479, ../sass/_teachforall.scss */
   .node-type-spotlight .content img {
     float: none;
     margin: 0 auto;
@@ -3366,7 +3377,7 @@ img {
 /**
 * #Person
 **/
-/* line 2493, ../sass/_teachforall.scss */
+/* line 2501, ../sass/_teachforall.scss */
 .node-type-person .content {
   margin-bottom: 10px;
 }
@@ -3376,14 +3387,14 @@ img {
   display: table;
   clear: both;
 }
-/* line 2497, ../sass/_teachforall.scss */
+/* line 2505, ../sass/_teachforall.scss */
 .node-type-person .content .person-image {
   display: block;
   float: left;
   width: 30%;
 }
 @media screen and (max-width: 370px) {
-  /* line 2497, ../sass/_teachforall.scss */
+  /* line 2505, ../sass/_teachforall.scss */
   .node-type-person .content .person-image {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -3393,12 +3404,12 @@ img {
     padding: 0 0 20px;
   }
 }
-/* line 2509, ../sass/_teachforall.scss */
+/* line 2517, ../sass/_teachforall.scss */
 .node-type-person .content .person-image img {
   width: 100%;
   height: auto;
 }
-/* line 2515, ../sass/_teachforall.scss */
+/* line 2523, ../sass/_teachforall.scss */
 .node-type-person .content .person-copy {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3409,14 +3420,14 @@ img {
   padding-left: 20px;
 }
 @media screen and (max-width: 370px) {
-  /* line 2515, ../sass/_teachforall.scss */
+  /* line 2523, ../sass/_teachforall.scss */
   .node-type-person .content .person-copy {
     float: none;
     width: 100%;
     padding: 0;
   }
 }
-/* line 2528, ../sass/_teachforall.scss */
+/* line 2536, ../sass/_teachforall.scss */
 .node-type-person .content .person-copy .person-title {
   color: #91998c;
   font-size: 18px;
@@ -3424,7 +3435,7 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 2535, ../sass/_teachforall.scss */
+/* line 2543, ../sass/_teachforall.scss */
 .node-type-person .content .person-copy .person-bio {
   color: #4d4d4d;
   font-size: 16px;
@@ -3435,16 +3446,16 @@ img {
 /**
 * #News - Node
 **/
-/* line 2550, ../sass/_teachforall.scss */
+/* line 2558, ../sass/_teachforall.scss */
 .node-type-news .page-title {
   display: none;
 }
-/* line 2552, ../sass/_teachforall.scss */
+/* line 2560, ../sass/_teachforall.scss */
 .node-type-news .page-title.date {
   display: block;
 }
 
-/* line 2558, ../sass/_teachforall.scss */
+/* line 2566, ../sass/_teachforall.scss */
 .news__video {
   position: relative;
   padding-bottom: 56.25%;
@@ -3452,7 +3463,7 @@ img {
   padding-top: 25px;
   height: 0;
 }
-/* line 2563, ../sass/_teachforall.scss */
+/* line 2571, ../sass/_teachforall.scss */
 .news__video iframe {
   position: absolute;
   top: 0;
@@ -3461,16 +3472,16 @@ img {
   height: 100%;
 }
 
-/* line 2572, ../sass/_teachforall.scss */
+/* line 2580, ../sass/_teachforall.scss */
 .news__image {
   margin: 20px 0;
 }
-/* line 2574, ../sass/_teachforall.scss */
+/* line 2582, ../sass/_teachforall.scss */
 .news__image img {
   width: 100%;
 }
 
-/* line 2579, ../sass/_teachforall.scss */
+/* line 2587, ../sass/_teachforall.scss */
 .news__image-caption {
   color: #000;
   margin-top: 3px;
@@ -3479,7 +3490,7 @@ img {
   font-size: 0.875rem;
 }
 
-/* line 2586, ../sass/_teachforall.scss */
+/* line 2594, ../sass/_teachforall.scss */
 .news__video-caption {
   color: #000;
   font-style: italic;
@@ -3488,7 +3499,7 @@ img {
   font-size: 0.875rem;
 }
 
-/* line 2593, ../sass/_teachforall.scss */
+/* line 2601, ../sass/_teachforall.scss */
 .news__content {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -3503,28 +3514,28 @@ img {
   font-style: normal;
 }
 
-/* line 2600, ../sass/_teachforall.scss */
+/* line 2608, ../sass/_teachforall.scss */
 .news__node-links {
   margin-top: 30px;
 }
-/* line 2603, ../sass/_teachforall.scss */
+/* line 2611, ../sass/_teachforall.scss */
 .news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
   min-width: 179px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2603, ../sass/_teachforall.scss */
+  /* line 2611, ../sass/_teachforall.scss */
   .news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 372px) {
-  /* line 2603, ../sass/_teachforall.scss */
+  /* line 2611, ../sass/_teachforall.scss */
   .news__node-links .full-list, .news__node-links .landing-forum p + a, .landing-forum .news__node-links p + a {
     margin-top: 20px;
   }
 }
 
-/* line 2618, ../sass/_teachforall.scss */
+/* line 2626, ../sass/_teachforall.scss */
 .news__byline h3 {
   color: #999;
 }
@@ -3533,16 +3544,16 @@ img {
 /**
 * #1 Column Layout
 **/
-/* line 2629, ../sass/_teachforall.scss */
+/* line 2637, ../sass/_teachforall.scss */
 .one-col-layout__image {
   margin: 20px 0;
 }
-/* line 2631, ../sass/_teachforall.scss */
+/* line 2639, ../sass/_teachforall.scss */
 .one-col-layout__image img {
   width: 100%;
 }
 
-/* line 2636, ../sass/_teachforall.scss */
+/* line 2644, ../sass/_teachforall.scss */
 .one-col-layout__video {
   margin-bottom: 20px;
   position: relative;
@@ -3551,7 +3562,7 @@ img {
   padding-top: 25px;
   height: 0;
 }
-/* line 2642, ../sass/_teachforall.scss */
+/* line 2650, ../sass/_teachforall.scss */
 .one-col-layout__video iframe {
   position: absolute;
   top: 0;
@@ -3560,11 +3571,11 @@ img {
   height: 100%;
 }
 
-/* line 2653, ../sass/_teachforall.scss */
+/* line 2661, ../sass/_teachforall.scss */
 .node-page-1-col-layout h2 a {
   color: #4d4d4d;
 }
-/* line 2655, ../sass/_teachforall.scss */
+/* line 2663, ../sass/_teachforall.scss */
 .node-page-1-col-layout h2 a:hover {
   color: #cf4753;
 }
@@ -3573,90 +3584,90 @@ img {
 /**
 * #2 Column Layout
 **/
-/* line 2668, ../sass/_teachforall.scss */
+/* line 2676, ../sass/_teachforall.scss */
 .field-collection-container {
   border: none;
   margin-bottom: 0;
 }
 
-/* line 2673, ../sass/_teachforall.scss */
+/* line 2681, ../sass/_teachforall.scss */
 .field-collection-view {
   border: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 2680, ../sass/_teachforall.scss */
+/* line 2688, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-container {
   margin-bottom: 50px;
 }
-/* line 2683, ../sass/_teachforall.scss */
+/* line 2691, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-view {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2683, ../sass/_teachforall.scss */
+  /* line 2691, ../sass/_teachforall.scss */
   .node-page-2-col-layout .field-collection-view {
     margin-bottom: 30px;
   }
 }
-/* line 2697, ../sass/_teachforall.scss */
+/* line 2705, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-view:last-child {
   margin-bottom: 0;
 }
-/* line 2701, ../sass/_teachforall.scss */
+/* line 2709, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-view img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 2701, ../sass/_teachforall.scss */
+  /* line 2709, ../sass/_teachforall.scss */
   .node-page-2-col-layout .field-collection-view img {
     margin-bottom: 20px;
   }
 }
-/* line 2709, ../sass/_teachforall.scss */
+/* line 2717, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-view:nth-child(even) .group_image_row {
   float: right;
 }
-/* line 2712, ../sass/_teachforall.scss */
+/* line 2720, ../sass/_teachforall.scss */
 .node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
   padding-right: 2.564102564102564%;
   text-align: right;
 }
 @media screen and (max-width: 767px) {
-  /* line 2712, ../sass/_teachforall.scss */
+  /* line 2720, ../sass/_teachforall.scss */
   .node-page-2-col-layout .field-collection-view:nth-child(even) .group-info-row {
     padding: 0;
     text-align: left;
   }
 }
 
-/* line 2724, ../sass/_teachforall.scss */
+/* line 2732, ../sass/_teachforall.scss */
 .group-row-wrapper {
   position: relative;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2730, ../sass/_teachforall.scss */
+  /* line 2738, ../sass/_teachforall.scss */
   .group-row-wrapper .group-link-wrapper {
     text-align: center;
   }
 }
-/* line 2738, ../sass/_teachforall.scss */
+/* line 2746, ../sass/_teachforall.scss */
 .group-info-row > div {
   margin-bottom: 10px;
 }
-/* line 2740, ../sass/_teachforall.scss */
+/* line 2748, ../sass/_teachforall.scss */
 .group-info-row > div:last-child {
   margin-bottom: 0;
 }
 
-/* line 2746, ../sass/_teachforall.scss */
+/* line 2754, ../sass/_teachforall.scss */
 .group_row_headline {
   text-transform: uppercase;
 }
 
-/* line 2750, ../sass/_teachforall.scss */
+/* line 2758, ../sass/_teachforall.scss */
 .group_row_byline {
   color: #999;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -3671,13 +3682,13 @@ img {
   font-style: normal;
 }
 
-/* line 2759, ../sass/_teachforall.scss */
+/* line 2767, ../sass/_teachforall.scss */
 .group_info_row a:after {
   color: #e69740;
   content: " >>";
 }
 
-/* line 2768, ../sass/_teachforall.scss */
+/* line 2776, ../sass/_teachforall.scss */
 .node-page-2-col-layout .content > .group_link_wrapper {
   margin-bottom: 30px;
   text-align: center;
@@ -3687,48 +3698,48 @@ img {
 /**
 * #Global Problem
 **/
-/* line 2780, ../sass/_teachforall.scss */
+/* line 2788, ../sass/_teachforall.scss */
 .top-section {
   position: relative;
 }
 @media screen and (max-width: 767px) {
-  /* line 2780, ../sass/_teachforall.scss */
+  /* line 2788, ../sass/_teachforall.scss */
   .top-section {
     margin-bottom: 20px;
   }
 }
-/* line 2787, ../sass/_teachforall.scss */
+/* line 2795, ../sass/_teachforall.scss */
 .top-section img {
   width: 100%;
 }
 
-/* line 2792, ../sass/_teachforall.scss */
+/* line 2800, ../sass/_teachforall.scss */
 .top-section__title {
   line-height: 1em;
   font-size: 34px;
   font-size: 2.125rem;
 }
 @media screen and (max-width: 980px) {
-  /* line 2792, ../sass/_teachforall.scss */
+  /* line 2800, ../sass/_teachforall.scss */
   .top-section__title {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-/* line 2801, ../sass/_teachforall.scss */
+/* line 2809, ../sass/_teachforall.scss */
 .top-section__subheader {
   margin-bottom: 30px;
 }
 
-/* line 2805, ../sass/_teachforall.scss */
+/* line 2813, ../sass/_teachforall.scss */
 .top-section__subheader,
 .top-section__description {
   font-size: 18px;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 980px) {
-  /* line 2805, ../sass/_teachforall.scss */
+  /* line 2813, ../sass/_teachforall.scss */
   .top-section__subheader,
   .top-section__description {
     line-height: 1.2em;
@@ -3737,7 +3748,7 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 2805, ../sass/_teachforall.scss */
+  /* line 2813, ../sass/_teachforall.scss */
   .top-section__subheader,
   .top-section__description {
     font-size: 18px;
@@ -3745,7 +3756,7 @@ img {
   }
 }
 
-/* line 2819, ../sass/_teachforall.scss */
+/* line 2827, ../sass/_teachforall.scss */
 .top-section__info-wrapper {
   color: #fff;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
@@ -3756,7 +3767,7 @@ img {
   left: 30px;
 }
 @media screen and (max-width: 1199px) {
-  /* line 2819, ../sass/_teachforall.scss */
+  /* line 2827, ../sass/_teachforall.scss */
   .top-section__info-wrapper {
     top: 47%;
     right: 20px;
@@ -3764,7 +3775,7 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 2819, ../sass/_teachforall.scss */
+  /* line 2827, ../sass/_teachforall.scss */
   .top-section__info-wrapper {
     top: auto;
     bottom: 20px;
@@ -3773,18 +3784,18 @@ img {
   }
 }
 
-/* line 2840, ../sass/_teachforall.scss */
+/* line 2848, ../sass/_teachforall.scss */
 .top-section__blurb {
   margin: 30px 0;
   text-align: center;
 }
 
-/* line 2846, ../sass/_teachforall.scss */
+/* line 2854, ../sass/_teachforall.scss */
 .global-problem__body {
   margin: 30px 0 0 0;
 }
 
-/* line 2850, ../sass/_teachforall.scss */
+/* line 2858, ../sass/_teachforall.scss */
 .widget-map__blurb {
   color: #999;
   font-weight: bold;
@@ -3796,7 +3807,7 @@ img {
 /**
 * #Donate
 **/
-/* line 2863, ../sass/_teachforall.scss */
+/* line 2871, ../sass/_teachforall.scss */
 .slug-large.donate-title {
   text-align: center;
 }
@@ -3805,15 +3816,15 @@ img {
 /**
 * #Our Model
 **/
-/* line 2876, ../sass/_teachforall.scss */
+/* line 2884, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .page-title {
   margin-bottom: 33px;
 }
-/* line 2880, ../sass/_teachforall.scss */
+/* line 2888, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section {
   margin-top: 30px;
 }
-/* line 2883, ../sass/_teachforall.scss */
+/* line 2891, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section h3 {
   color: #e69740;
   font-size: 17px;
@@ -3824,67 +3835,67 @@ img {
   text-align: center;
   margin-bottom: 13px;
 }
-/* line 2893, ../sass/_teachforall.scss */
+/* line 2901, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section .intro {
   margin-bottom: 7px;
   text-align: center;
 }
-/* line 2904, ../sass/_teachforall.scss */
+/* line 2912, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 2908, ../sass/_teachforall.scss */
+/* line 2916, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a:hover, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a:hover {
   color: #cf4753;
 }
-/* line 2912, ../sass/_teachforall.scss */
+/* line 2920, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-section .spotlights .span4 a img, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a img {
   width: 100%;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2919, ../sass/_teachforall.scss */
+  /* line 2927, ../sass/_teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4 a, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a {
     display: block;
     text-align: center;
     margin-top: 15px;
   }
-  /* line 2924, ../sass/_teachforall.scss */
+  /* line 2932, ../sass/_teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4 a img, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser a img {
     max-width: 500px;
     display: block;
     margin: 0 auto 5px;
   }
-  /* line 2931, ../sass/_teachforall.scss */
+  /* line 2939, ../sass/_teachforall.scss */
   .node-type-page-our-model #main .our-model-section .spotlights .span4:first-child a, .node-type-page-our-model #main .our-model-section .spotlights .node--video--teaser:first-child a {
     margin-top: 0;
   }
 }
-/* line 2939, ../sass/_teachforall.scss */
+/* line 2947, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-banner {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  /* line 2943, ../sass/_teachforall.scss */
+  /* line 2951, ../sass/_teachforall.scss */
   .node-type-page-our-model #main .our-model-banner img {
     width: 100%;
     max-width: 500px;
   }
 }
-/* line 2949, ../sass/_teachforall.scss */
+/* line 2957, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-banner .field__text-area {
   margin-bottom: 0;
 }
-/* line 2953, ../sass/_teachforall.scss */
+/* line 2961, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .our-model-banner + .our-model-section {
   margin-top: 39px;
 }
-/* line 2958, ../sass/_teachforall.scss */
+/* line 2966, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .btn__red, .node-type-page-our-model #main .view-persons .view-footer a.btn, .view-persons .view-footer .node-type-page-our-model #main a.btn, .node-type-page-our-model #main .view-supporters .view-footer .btn, .view-supporters .view-footer .node-type-page-our-model #main .btn {
   display: inline-block;
 }
-/* line 2960, ../sass/_teachforall.scss */
+/* line 2968, ../sass/_teachforall.scss */
 .node-type-page-our-model #main .btn__red:hover, .node-type-page-our-model #main .view-persons .view-footer a.btn:hover, .view-persons .view-footer .node-type-page-our-model #main a.btn:hover, .node-type-page-our-model #main .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .node-type-page-our-model #main .btn:hover {
   color: #fff;
 }
@@ -3893,53 +3904,53 @@ img {
 /**
 * #Global Organization
 **/
-/* line 2975, ../sass/_teachforall.scss */
+/* line 2983, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .slug-large {
   padding: 20px 0 30px 0;
   text-align: center;
 }
-/* line 2979, ../sass/_teachforall.scss */
+/* line 2987, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 2979, ../sass/_teachforall.scss */
+  /* line 2987, ../sass/_teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights {
     margin-bottom: 0;
     text-align: center;
   }
 }
-/* line 2985, ../sass/_teachforall.scss */
+/* line 2993, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights a {
   color: #4d4d4d;
 }
-/* line 2988, ../sass/_teachforall.scss */
+/* line 2996, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights a:hover {
   color: #cf4753;
 }
-/* line 2992, ../sass/_teachforall.scss */
+/* line 3000, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights p {
   color: #91998c;
   margin-top: 5px;
 }
-/* line 2996, ../sass/_teachforall.scss */
+/* line 3004, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights p:hover {
   color: #cf4753;
 }
 @media screen and (max-width: 767px) {
-  /* line 2992, ../sass/_teachforall.scss */
+  /* line 3000, ../sass/_teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights p {
     margin-bottom: 20px;
   }
 }
-/* line 3003, ../sass/_teachforall.scss */
+/* line 3011, ../sass/_teachforall.scss */
 .node-type-page-global-organization .our-model-section .spotlights img {
   height: auto;
   margin-bottom: 20px;
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 3003, ../sass/_teachforall.scss */
+  /* line 3011, ../sass/_teachforall.scss */
   .node-type-page-global-organization .our-model-section .spotlights img {
     margin-bottom: 10px;
   }
@@ -3949,7 +3960,7 @@ img {
 /**
 * #Results
 **/
-/* line 3024, ../sass/_teachforall.scss */
+/* line 3032, ../sass/_teachforall.scss */
 .node-type-page-results .our-model-banner .infographic img {
   height: auto;
   width: 100%;
@@ -3960,36 +3971,36 @@ img {
 * #Media Block
 **/
 @media screen and (max-width: 767px) {
-  /* line 3039, ../sass/_teachforall.scss */
+  /* line 3047, ../sass/_teachforall.scss */
   .media-block img {
     width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 3038, ../sass/_teachforall.scss */
+  /* line 3046, ../sass/_teachforall.scss */
   .media-block {
     margin-bottom: 20px;
   }
 }
-/* line 3047, ../sass/_teachforall.scss */
+/* line 3055, ../sass/_teachforall.scss */
 .media-block:last-child {
   margin-bottom: 0;
 }
 
-/* line 3052, ../sass/_teachforall.scss */
+/* line 3060, ../sass/_teachforall.scss */
 .collection__media-block {
   margin-top: 20px;
 }
-/* line 3054, ../sass/_teachforall.scss */
+/* line 3062, ../sass/_teachforall.scss */
 .collection__media-block .field-collection-view {
   margin-bottom: 20px;
 }
-/* line 3056, ../sass/_teachforall.scss */
+/* line 3064, ../sass/_teachforall.scss */
 .collection__media-block .field-collection-view:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 3060, ../sass/_teachforall.scss */
+  /* line 3068, ../sass/_teachforall.scss */
   .collection__media-block .field-collection-container {
     margin-bottom: 20px;
   }
@@ -3999,7 +4010,7 @@ img {
 /**
 * #Join Our Staff
 **/
-/* line 3073, ../sass/_teachforall.scss */
+/* line 3081, ../sass/_teachforall.scss */
 .join-our-staff__iframe {
   margin: 0 auto;
   width: 750px;
@@ -4010,7 +4021,7 @@ img {
 /**
 * #Front
 **/
-/* line 3087, ../sass/_teachforall.scss */
+/* line 3095, ../sass/_teachforall.scss */
 .front #block-block-82 {
   border-top: 2px solid #4d4d4d;
   clear: both;
@@ -4020,7 +4031,7 @@ img {
   text-align: center;
   width: 100%;
 }
-/* line 3096, ../sass/_teachforall.scss */
+/* line 3104, ../sass/_teachforall.scss */
 .front #main {
   padding-bottom: 13px;
 }
@@ -4029,17 +4040,17 @@ img {
 /**
 * #News - Landing, #Network Learning - Landing
 **/
-/* line 3109, ../sass/_teachforall.scss */
+/* line 3117, ../sass/_teachforall.scss */
 .flexslider .slides > li {
   position: relative;
 }
 
-/* line 3115, ../sass/_teachforall.scss */
+/* line 3123, ../sass/_teachforall.scss */
 .news__image-video-wrapper {
   position: relative;
 }
 
-/* line 3122, ../sass/_teachforall.scss */
+/* line 3130, ../sass/_teachforall.scss */
 .view-news .icon-play,
 .view-network-learning .icon-play,
 .view-press .icon-play {
@@ -4053,7 +4064,7 @@ img {
   font-size: 1.25rem;
 }
 @media screen and (max-width: 979px) {
-  /* line 3122, ../sass/_teachforall.scss */
+  /* line 3130, ../sass/_teachforall.scss */
   .view-news .icon-play,
   .view-network-learning .icon-play,
   .view-press .icon-play {
@@ -4064,16 +4075,16 @@ img {
   }
 }
 
-/* line 3140, ../sass/_teachforall.scss */
+/* line 3148, ../sass/_teachforall.scss */
 .page-news #main .page-title, .page-network-learning #main .page-title {
   margin-bottom: 35px;
 }
-/* line 3145, ../sass/_teachforall.scss */
+/* line 3153, ../sass/_teachforall.scss */
 .page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
   margin-top: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3145, ../sass/_teachforall.scss */
+  /* line 3153, ../sass/_teachforall.scss */
   .page-news .full-list, .page-news .landing-forum p + a, .landing-forum .page-news p + a, .page-network-learning .full-list, .page-network-learning .landing-forum p + a, .landing-forum .page-network-learning p + a {
     font-size: 12px;
     font-size: 0.75rem;
@@ -4081,16 +4092,16 @@ img {
   }
 }
 
-/* line 3155, ../sass/_teachforall.scss */
+/* line 3163, ../sass/_teachforall.scss */
 .news-flexslider, .network-learning-flexslider {
   margin-bottom: 30px;
 }
-/* line 3158, ../sass/_teachforall.scss */
+/* line 3166, ../sass/_teachforall.scss */
 .news-flexslider h2, .network-learning-flexslider h2 {
   margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3158, ../sass/_teachforall.scss */
+  /* line 3166, ../sass/_teachforall.scss */
   .news-flexslider h2, .network-learning-flexslider h2 {
     margin-top: 0;
     padding-bottom: 18px;
@@ -4098,29 +4109,29 @@ img {
     font-size: 0.875rem;
   }
 }
-/* line 3170, ../sass/_teachforall.scss */
+/* line 3178, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-paging li a, .network-learning-flexslider .flex-control-paging li a {
   background-color: #91998c;
   border-radius: 0;
 }
-/* line 3173, ../sass/_teachforall.scss */
+/* line 3181, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-paging li a.flex-active, .network-learning-flexslider .flex-control-paging li a.flex-active {
   background-color: #e69740;
 }
-/* line 3179, ../sass/_teachforall.scss */
+/* line 3187, ../sass/_teachforall.scss */
 .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
   bottom: 12px;
   right: 10px;
   width: auto;
 }
 @media screen and (max-width: 767px) {
-  /* line 3179, ../sass/_teachforall.scss */
+  /* line 3187, ../sass/_teachforall.scss */
   .news-flexslider .flex-control-nav, .network-learning-flexslider .flex-control-nav {
     left: 14px;
     text-align: left;
   }
 }
-/* line 3189, ../sass/_teachforall.scss */
+/* line 3197, ../sass/_teachforall.scss */
 .news-flexslider .flexslider, .network-learning-flexslider .flexslider {
   background: transparent;
   border: none;
@@ -4129,7 +4140,7 @@ img {
   margin: 0;
 }
 
-/* line 3199, ../sass/_teachforall.scss */
+/* line 3207, ../sass/_teachforall.scss */
 .view-nodequeue-supporter-list .flexslider {
   background: transparent;
   border: none;
@@ -4138,12 +4149,12 @@ img {
   margin: 0;
 }
 
-/* line 3208, ../sass/_teachforall.scss */
+/* line 3216, ../sass/_teachforall.scss */
 .flexslider-wrapper {
   position: relative;
 }
 
-/* line 3212, ../sass/_teachforall.scss */
+/* line 3220, ../sass/_teachforall.scss */
 .flexslider-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -4157,21 +4168,21 @@ img {
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  /* line 3212, ../sass/_teachforall.scss */
+  /* line 3220, ../sass/_teachforall.scss */
   .flexslider-info {
     padding-right: 20px;
   }
 }
-/* line 3227, ../sass/_teachforall.scss */
+/* line 3235, ../sass/_teachforall.scss */
 .flexslider-info h2 a {
   color: #fff;
 }
-/* line 3230, ../sass/_teachforall.scss */
+/* line 3238, ../sass/_teachforall.scss */
 .flexslider-info h2 a:hover {
   color: #cf4753;
 }
 
-/* line 3237, ../sass/_teachforall.scss */
+/* line 3245, ../sass/_teachforall.scss */
 .flexslider-preview {
   color: #91998c;
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -4183,11 +4194,11 @@ img {
   font-style: normal;
 }
 
-/* line 3242, ../sass/_teachforall.scss */
+/* line 3250, ../sass/_teachforall.scss */
 .flexslider-link {
   margin-top: 5px;
 }
-/* line 3244, ../sass/_teachforall.scss */
+/* line 3252, ../sass/_teachforall.scss */
 .flexslider-link a {
   color: #fff;
   letter-spacing: 1px;
@@ -4196,7 +4207,7 @@ img {
   font-size: 0.75rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 3250, ../sass/_teachforall.scss */
+/* line 3258, ../sass/_teachforall.scss */
 .flexslider-link a:hover {
   color: #cf4753;
 }
@@ -4205,12 +4216,12 @@ img {
 /**
 * #Privacy Policy
 **/
-/* line 3263, ../sass/_teachforall.scss */
+/* line 3271, ../sass/_teachforall.scss */
 .privacy-policy-contact div {
   float: left;
   display: block;
 }
-/* line 3268, ../sass/_teachforall.scss */
+/* line 3276, ../sass/_teachforall.scss */
 .privacy-policy-contact .labels {
   margin-right: 10px;
 }
@@ -4219,7 +4230,7 @@ img {
 /**
 * #A Global Problem
 **/
-/* line 3280, ../sass/_teachforall.scss */
+/* line 3288, ../sass/_teachforall.scss */
 #worldmap.worldmap__details {
   background-color: #92b4a6;
 }
@@ -4228,35 +4239,35 @@ img {
 /**
 * #Search
 **/
-/* line 3292, ../sass/_teachforall.scss */
+/* line 3300, ../sass/_teachforall.scss */
 .page-search #main {
   min-height: 390px;
 }
 
-/* line 3298, ../sass/_teachforall.scss */
+/* line 3306, ../sass/_teachforall.scss */
 .search-form .container-inline {
   margin: 0 auto;
   width: 260px;
 }
 @media screen and (max-width: 767px) {
-  /* line 3298, ../sass/_teachforall.scss */
+  /* line 3306, ../sass/_teachforall.scss */
   .search-form .container-inline {
     margin: 0;
     width: 100%;
   }
 }
 @media screen and (max-width: 370px) {
-  /* line 3305, ../sass/_teachforall.scss */
+  /* line 3313, ../sass/_teachforall.scss */
   .search-form .container-inline input {
     width: 200px;
   }
 }
 
-/* line 3313, ../sass/_teachforall.scss */
+/* line 3321, ../sass/_teachforall.scss */
 .search-result {
   margin-bottom: 30px;
 }
-/* line 3315, ../sass/_teachforall.scss */
+/* line 3323, ../sass/_teachforall.scss */
 .search-result:last-child {
   margin-bottom: 0;
 }
@@ -4266,76 +4277,76 @@ img {
 * #National Organizations - Landing
 **/
 @media screen and (max-width: 767px) {
-  /* line 3326, ../sass/_teachforall.scss */
+  /* line 3334, ../sass/_teachforall.scss */
   .unifying-principles__right-col {
     padding-top: 30px;
   }
 }
 
-/* line 3332, ../sass/_teachforall.scss */
+/* line 3340, ../sass/_teachforall.scss */
 .nov2__intro {
   margin-bottom: 30px;
 }
 
-/* line 3336, ../sass/_teachforall.scss */
+/* line 3344, ../sass/_teachforall.scss */
 .view-nos-az {
   margin: 30px 0 0 0;
 }
-/* line 3338, ../sass/_teachforall.scss */
+/* line 3346, ../sass/_teachforall.scss */
 .view-nos-az h2 {
   margin-top: 0;
 }
-/* line 3340, ../sass/_teachforall.scss */
+/* line 3348, ../sass/_teachforall.scss */
 .view-nos-az h2 a {
   color: #3c3835;
 }
-/* line 3342, ../sass/_teachforall.scss */
+/* line 3350, ../sass/_teachforall.scss */
 .view-nos-az h2 a:hover {
   color: #cf4753;
 }
-/* line 3347, ../sass/_teachforall.scss */
+/* line 3355, ../sass/_teachforall.scss */
 .view-nos-az .item {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 3350, ../sass/_teachforall.scss */
+/* line 3358, ../sass/_teachforall.scss */
 .view-nos-az .item:last-child {
   margin-bottom: 0;
 }
 
-/* line 3356, ../sass/_teachforall.scss */
+/* line 3364, ../sass/_teachforall.scss */
 .unifying-principles {
   background-color: #DFD9C9;
   margin: 30px 0 0 0;
   padding: 30px 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 3356, ../sass/_teachforall.scss */
+  /* line 3364, ../sass/_teachforall.scss */
   .unifying-principles {
     padding: 20px 10px;
   }
 }
-/* line 3363, ../sass/_teachforall.scss */
+/* line 3371, ../sass/_teachforall.scss */
 .unifying-principles strong {
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
   font-weight: normal;
 }
-/* line 3367, ../sass/_teachforall.scss */
+/* line 3375, ../sass/_teachforall.scss */
 .unifying-principles .title-small {
   margin-bottom: 20px;
 }
-/* line 3370, ../sass/_teachforall.scss */
+/* line 3378, ../sass/_teachforall.scss */
 .unifying-principles ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 3376, ../sass/_teachforall.scss */
+/* line 3384, ../sass/_teachforall.scss */
 .unifying-principles li {
   padding-left: 1em;
   text-indent: -.7em;
 }
-/* line 3381, ../sass/_teachforall.scss */
+/* line 3389, ../sass/_teachforall.scss */
 .unifying-principles li:before {
   content: "\2022 \0020";
   color: #e69740;
@@ -4346,44 +4357,44 @@ img {
 * #News - Latest, #Network Learning - Latest
 **/
 @media screen and (max-width: 767px) {
-  /* line 3397, ../sass/_teachforall.scss */
+  /* line 3405, ../sass/_teachforall.scss */
   .page-news-latest #main .teachforall-twitter-block,
   .page-network-learning-latest #main .teachforall-twitter-block {
     margin-top: 30px;
   }
 }
 
-/* line 3412, ../sass/_teachforall.scss */
+/* line 3420, ../sass/_teachforall.scss */
 .panel-2col-bricks .center-wrapper .panel-panel {
   margin-bottom: 20px;
 }
 
-/* line 3420, ../sass/_teachforall.scss */
+/* line 3428, ../sass/_teachforall.scss */
 div#panels-ipe-control-container {
   visibility: hidden !important;
 }
 
-/* line 3422, ../sass/_teachforall.scss */
+/* line 3430, ../sass/_teachforall.scss */
 .pane-content .panel-display {
   width: 100%;
 }
 
-/* line 3426, ../sass/_teachforall.scss */
+/* line 3434, ../sass/_teachforall.scss */
 .pane-bundle-video {
   margin-bottom: 10px;
 }
-/* line 3429, ../sass/_teachforall.scss */
+/* line 3437, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a {
   display: block;
   position: relative;
   speak: none;
   text-align: center;
 }
-/* line 3435, ../sass/_teachforall.scss */
+/* line 3443, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a:hover:after {
   background-color: transparent;
 }
-/* line 3439, ../sass/_teachforall.scss */
+/* line 3447, ../sass/_teachforall.scss */
 .pane-bundle-video .pane-content a:after {
   background-color: rgba(0, 0, 0, 0.15);
   background-image: url(../images/play.png);
@@ -4403,7 +4414,7 @@ div#panels-ipe-control-container {
   z-index: 10;
 }
 
-/* line 3460, ../sass/_teachforall.scss */
+/* line 3468, ../sass/_teachforall.scss */
 .panel-panel .slug {
   font-size: 11px;
   font-size: 0.6875rem;
@@ -4414,31 +4425,31 @@ div#panels-ipe-control-container {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
-/* line 3471, ../sass/_teachforall.scss */
+/* line 3479, ../sass/_teachforall.scss */
 .panel-panel img, .panel-panel iframe {
   width: 100%;
 }
-/* line 3475, ../sass/_teachforall.scss */
+/* line 3483, ../sass/_teachforall.scss */
 .panel-panel h1, .panel-panel h2, .panel-panel h3, .panel-panel h4, .panel-panel h5, .panel-panel a {
   color: #e69740;
 }
-/* line 3478, ../sass/_teachforall.scss */
+/* line 3486, ../sass/_teachforall.scss */
 .panel-panel h1 {
   text-align: center;
 }
-/* line 3481, ../sass/_teachforall.scss */
+/* line 3489, ../sass/_teachforall.scss */
 .panel-panel h2 {
   font-size: 25px;
 }
-/* line 3484, ../sass/_teachforall.scss */
+/* line 3492, ../sass/_teachforall.scss */
 .panel-panel h2 a {
   color: #000;
 }
-/* line 3486, ../sass/_teachforall.scss */
+/* line 3494, ../sass/_teachforall.scss */
 .panel-panel h2 a:hover {
   color: #cf4753;
 }
-/* line 3491, ../sass/_teachforall.scss */
+/* line 3499, ../sass/_teachforall.scss */
 .panel-panel p {
   font-family: "Fedra Serif", Georgia, "Times New Roman", serif;
   font-weight: normal;
@@ -4453,59 +4464,59 @@ div#panels-ipe-control-container {
   font-family: "Fedra Serif Italic", "Fedra Serif", Georgia, "Times New Roman", serif;
   font-style: normal;
 }
-/* line 3499, ../sass/_teachforall.scss */
+/* line 3507, ../sass/_teachforall.scss */
 .panel-panel p a {
   color: #cf4753;
 }
-/* line 3503, ../sass/_teachforall.scss */
+/* line 3511, ../sass/_teachforall.scss */
 .panel-panel .full-list, .panel-panel .landing-forum p + a, .landing-forum .panel-panel p + a {
   color: #fff;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 3507, ../sass/_teachforall.scss */
+/* line 3515, ../sass/_teachforall.scss */
 .panel-panel .full-list:after, .panel-panel .landing-forum p + a:after, .landing-forum .panel-panel p + a:after {
   color: #e69740;
   content: " >>";
 }
-/* line 3511, ../sass/_teachforall.scss */
+/* line 3519, ../sass/_teachforall.scss */
 .panel-panel .full-list:hover, .panel-panel .landing-forum p + a:hover, .landing-forum .panel-panel p + a:hover {
   color: #e69740;
 }
-/* line 3515, ../sass/_teachforall.scss */
+/* line 3523, ../sass/_teachforall.scss */
 .panel-panel .btn__red, .panel-panel .view-persons .view-footer a.btn, .view-persons .view-footer .panel-panel a.btn, .panel-panel .view-supporters .view-footer .btn, .view-supporters .view-footer .panel-panel .btn {
   color: #fff;
 }
-/* line 3517, ../sass/_teachforall.scss */
+/* line 3525, ../sass/_teachforall.scss */
 .panel-panel .btn__red:hover, .panel-panel .view-persons .view-footer a.btn:hover, .view-persons .view-footer .panel-panel a.btn:hover, .panel-panel .view-supporters .view-footer .btn:hover, .view-supporters .view-footer .panel-panel .btn:hover {
   color: #fff;
   opacity: 0.8;
 }
-/* line 3522, ../sass/_teachforall.scss */
+/* line 3530, ../sass/_teachforall.scss */
 .panel-panel .panel-panel-inner {
   margin-right: 0 !important;
 }
-/* line 3527, ../sass/_teachforall.scss */
+/* line 3535, ../sass/_teachforall.scss */
 .panel-panel .reverse .panel-panel {
   float: right;
   text-align: right;
 }
-/* line 3530, ../sass/_teachforall.scss */
+/* line 3538, ../sass/_teachforall.scss */
 .panel-panel .reverse .panel-panel .panel-panel-inner {
   margin-right: 0;
   margin-left: 0 !important;
 }
-/* line 3535, ../sass/_teachforall.scss */
+/* line 3543, ../sass/_teachforall.scss */
 .panel-panel .reverse .phelan-column2 {
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 3540, ../sass/_teachforall.scss */
+/* line 3548, ../sass/_teachforall.scss */
 .panel-panel .reverse .phelan-column1 .panel-panel-inner {
   margin-right: 0 !important;
   margin-left: 20px;
 }
 
-/* line 3548, ../sass/_teachforall.scss */
+/* line 3556, ../sass/_teachforall.scss */
 .comment--user-wrapper .stats,
 .comment--user-wrapper .slug {
   font-family: "Fedra Serif Bold", "Fedra Serif", Georgia, "Times New Roman", serif;
@@ -4517,7 +4528,7 @@ div#panels-ipe-control-container {
   font-style: normal;
 }
 
-/* line 3555, ../sass/_teachforall.scss */
+/* line 3563, ../sass/_teachforall.scss */
 .large-image img {
   height: auto;
   margin-bottom: 20px;
@@ -4527,35 +4538,35 @@ div#panels-ipe-control-container {
   margin-right: auto;
 }
 @media screen and (max-width: 640px) {
-  /* line 3555, ../sass/_teachforall.scss */
+  /* line 3563, ../sass/_teachforall.scss */
   .large-image img {
     margin-bottom: 10px;
   }
 }
 
-/* line 3567, ../sass/_teachforall.scss */
+/* line 3575, ../sass/_teachforall.scss */
 .rolph-container {
   width: 82.97872340425532%;
   margin: 0 auto;
 }
 
-/* line 3572, ../sass/_teachforall.scss */
+/* line 3580, ../sass/_teachforall.scss */
 .page-press .region-content {
   margin: 0 auto;
   max-width: 1170px;
 }
 
-/* line 3577, ../sass/_teachforall.scss */
+/* line 3585, ../sass/_teachforall.scss */
 .press-sidebar {
   float: right !important;
   position: relative;
   z-index: 100;
 }
-/* line 3581, ../sass/_teachforall.scss */
+/* line 3589, ../sass/_teachforall.scss */
 .press-sidebar div {
   clear: both;
 }
-/* line 3584, ../sass/_teachforall.scss */
+/* line 3592, ../sass/_teachforall.scss */
 .press-sidebar .full-list, .press-sidebar .landing-forum p + a, .landing-forum .press-sidebar p + a {
   margin: 20px 0 0;
 }
