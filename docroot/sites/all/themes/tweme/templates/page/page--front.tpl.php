@@ -33,7 +33,8 @@
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
-  	    <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
+        <a href="https://www.instagram.com/teachforall/" target="_blank" class="social-media icon-instagram"></a>
+        <!-- <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>  -->
       </div>
   	  <div class="language-switcher-block">
         <?php $block = module_invoke('locale', 'block_view', 'language'); print $block['content']; ?>
@@ -179,7 +180,8 @@
         <a href="https://facebook.com/teachforall" target="_blank" class="social-media icon-facebook"></a>
         <a href="https://www.linkedin.com/company/teach-for-all" target="_blank" class="social-media icon-linkedin"></a>
         <a href="https://vimeo.com/teachforall" target="_blank" class="social-media icon-vimeo"></a>
-		<a href="/news/feed" target="_blank" class="social-media icon-feed"></a>
+        <a href="https://www.instagram.com/teachforall/" target="_blank" class="social-media icon-instagram"></a>
+        <!-- <a href="/news/feed" target="_blank" class="social-media icon-feed"></a>  -->
 
         <div class="footer__search">
           <p><?php print t('Search the Site'); ?></p>
