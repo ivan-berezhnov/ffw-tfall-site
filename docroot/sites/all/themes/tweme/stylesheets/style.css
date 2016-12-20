@@ -1227,7 +1227,7 @@ h2.page-title {
   font-size: 18px;
   font-size: 1.125rem;
   font-family: "News Gothic Demi Bold", "News Gothic", "Arial Narrow", Arial, sans-serif;
-  padding-right: 21px;
+  padding-right: 0px;
 }
 /* line 558, ../sass/_teachforall.scss */
 .stats.newsletter {
@@ -9665,7 +9665,7 @@ h2.news__title {
 }
 /* line 37, ../sass/_ourimpact.scss */
 .bean-graphic-over-text .content .mediumtext {
-  font-size: 40.5px;
+  font-size: 35.5px;
   color: #8fc3c1;
 }
 /* line 41, ../sass/_ourimpact.scss */
@@ -9675,34 +9675,43 @@ h2.news__title {
   padding: 0 5px;
 }
 
-/* line 51, ../sass/_ourimpact.scss */
+/* line 49, ../sass/_ourimpact.scss */
+.bean-2-col-graphic-text .field-collection-view {
+  margin-bottom: 25px;
+}
+/* line 52, ../sass/_ourimpact.scss */
+.bean-2-col-graphic-text .field-collection-view.field-collection-view-final {
+  margin-bottom: 0;
+}
+
+/* line 56, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 54, ../sass/_ourimpact.scss */
+/* line 59, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more h3 {
   display: none;
 }
-/* line 57, ../sass/_ourimpact.scss */
+/* line 62, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more .topimage {
   text-align: center;
 }
-/* line 60, ../sass/_ourimpact.scss */
+/* line 65, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more .details,
 .bean-2-tier-graphic-read-more .summary {
   color: #000;
   font-size: 18px;
   margin-top: 10px;
 }
-/* line 66, ../sass/_ourimpact.scss */
+/* line 71, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more .read-more,
 .bean-2-tier-graphic-read-more .less-link {
-  font-size: 11px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
-  font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
+  font-family: "News Gothic Demi Bold","News Gothic","Arial Narrow",Arial,sans-serif;
 }
-/* line 72, ../sass/_ourimpact.scss */
+/* line 77, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more .attribution p {
   color: #000;
   font-size: 11px;
@@ -9710,27 +9719,27 @@ h2.news__title {
   text-transform: uppercase;
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 78, ../sass/_ourimpact.scss */
+/* line 83, ../sass/_ourimpact.scss */
 .bean-2-tier-graphic-read-more .attribution p:before {
   content: "-";
   margin-right: 3px;
 }
 
-/* line 85, ../sass/_ourimpact.scss */
+/* line 90, ../sass/_ourimpact.scss */
 .bean-2-tier-video-caption {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 88, ../sass/_ourimpact.scss */
+/* line 93, ../sass/_ourimpact.scss */
 .bean-2-tier-video-caption h3 {
   display: none;
 }
-/* line 91, ../sass/_ourimpact.scss */
+/* line 96, ../sass/_ourimpact.scss */
 .bean-2-tier-video-caption .description {
   font-size: 18px;
   margin-top: 10px;
 }
-/* line 95, ../sass/_ourimpact.scss */
+/* line 100, ../sass/_ourimpact.scss */
 .bean-2-tier-video-caption .attribution {
   color: #000;
   font-size: 11px;
@@ -9738,27 +9747,27 @@ h2.news__title {
   text-transform: uppercase;
   font-family: "News Gothic", "Arial Narrow", Arial, sans-serif;
 }
-/* line 101, ../sass/_ourimpact.scss */
+/* line 106, ../sass/_ourimpact.scss */
 .bean-2-tier-video-caption .attribution:before {
   content: "-";
   margin-right: 3px;
 }
 
-/* line 107, ../sass/_ourimpact.scss */
+/* line 112, ../sass/_ourimpact.scss */
 .ourimpact {
   color: #91998c;
 }
-/* line 109, ../sass/_ourimpact.scss */
+/* line 114, ../sass/_ourimpact.scss */
 .ourimpact .region-content {
   margin: 0 auto;
   max-width: 1170px;
   width: 1170px;
 }
-/* line 114, ../sass/_ourimpact.scss */
+/* line 119, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean {
   color: #91998c;
 }
-/* line 116, ../sass/_ourimpact.scss */
+/* line 121, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean h2 {
   color: #5d6f79;
   font-size: 40px;
@@ -9766,11 +9775,11 @@ h2.news__title {
   padding-bottom: 35px;
   text-align: center;
 }
-/* line 123, ../sass/_ourimpact.scss */
+/* line 128, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean .entity-bean {
   margin-bottom: 45px;
 }
-/* line 125, ../sass/_ourimpact.scss */
+/* line 130, ../sass/_ourimpact.scss */
 .ourimpact .block.block-bean .entity-bean h2 {
   color: #5d6f79;
   font-size: 40px;
@@ -9779,7 +9788,7 @@ h2.news__title {
   text-align: center;
 }
 
-/* line 136, ../sass/_ourimpact.scss */
+/* line 141, ../sass/_ourimpact.scss */
 .field-group-format-wrapper a ::after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url("/sites/all/themes/tweme/images/play.png");
@@ -9796,192 +9805,208 @@ h2.news__title {
   z-index: 10;
 }
 
-/* line 151, ../sass/_ourimpact.scss */
+/* line 156, ../sass/_ourimpact.scss */
 .node.node-bean-block-page {
   color: #91998c;
 }
-/* line 152, ../sass/_ourimpact.scss */
+/* line 157, ../sass/_ourimpact.scss */
 .node.node-bean-block-page .titlesectiondiv {
   margin-bottom: 20px;
   margin-top: 30px;
 }
-/* line 156, ../sass/_ourimpact.scss */
+/* line 161, ../sass/_ourimpact.scss */
 .node.node-bean-block-page .bean-groupoftwo .beanssection {
   display: inline-block;
   padding-top: 3px;
 }
-/* line 160, ../sass/_ourimpact.scss */
+/* line 165, ../sass/_ourimpact.scss */
 .node.node-bean-block-page .sectionfooter {
   clear: both;
   padding-top: 1rem;
 }
-/* line 164, ../sass/_ourimpact.scss */
+/* line 169, ../sass/_ourimpact.scss */
 .node.node-bean-block-page .bean-groupoftwo,
 .node.node-bean-block-page .bean-groupofthree,
 .node.node-bean-block-page .bean-groupoffour {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 590px) {
-  /* line 171, ../sass/_ourimpact.scss */
+  /* line 176, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .span12.entity.entity-bean.bean-section-intro {
     margin: 10px 0;
   }
-  /* line 174, ../sass/_ourimpact.scss */
+  /* line 179, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-graphic-over-text {
     float: none;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 179, ../sass/_ourimpact.scss */
+  /* line 184, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption {
     float: left;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 184, ../sass/_ourimpact.scss */
+  /* line 189, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more {
     float: left;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 189, ../sass/_ourimpact.scss */
+  /* line 194, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text {
     float: left;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 193, ../sass/_ourimpact.scss */
+  /* line 198, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .topimage {
     float: left;
     width: 34%;
     text-align: center;
   }
-  /* line 198, ../sass/_ourimpact.scss */
+  /* line 203, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .regulartext {
     float: left;
     width: 65%;
   }
 }
 @media screen and (min-width: 591px) and (max-width: 767px) {
-  /* line 205, ../sass/_ourimpact.scss */
+  /* line 210, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .span12.entity.entity-bean.bean-section-intro {
     margin: 10px 0;
   }
-  /* line 208, ../sass/_ourimpact.scss */
+  /* line 213, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-graphic-over-text {
     float: left;
     width: 50%;
   }
-  /* line 212, ../sass/_ourimpact.scss */
+  /* line 217, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more,
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption {
     float: left;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 217, ../sass/_ourimpact.scss */
+  /* line 222, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more .collapsible.video.speed-fast,
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption .collapsible.video.speed-fast {
     text-align: center;
   }
-  /* line 221, ../sass/_ourimpact.scss */
+  /* line 226, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text {
     float: left;
     margin-bottom: 20px;
     width: 100%;
   }
-  /* line 225, ../sass/_ourimpact.scss */
+  /* line 230, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .topimage {
     float: left;
     width: 34%;
     text-align: center;
   }
-  /* line 230, ../sass/_ourimpact.scss */
+  /* line 235, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .regulartext {
     float: left;
     width: 65%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  /* line 237, ../sass/_ourimpact.scss */
+  /* line 242, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-graphic-over-text {
     float: left;
     width: 45%;
   }
-  /* line 241, ../sass/_ourimpact.scss */
+  /* line 246, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more,
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption {
     float: left;
+    margin-bottom: 25px;
     width: 45%;
   }
-  /* line 245, ../sass/_ourimpact.scss */
+  /* line 251, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more .collapsible.video.speed-fast,
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption .collapsible.video.speed-fast {
     text-align: center;
   }
-  /* line 249, ../sass/_ourimpact.scss */
+  /* line 255, ../sass/_ourimpact.scss */
+  .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more:nth-of-type(3n),
+  .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption:nth-of-type(3n) {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    clear: both;
+  }
+  /* line 262, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text {
     float: left;
   }
-  /* line 251, ../sass/_ourimpact.scss */
+  /* line 264, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .topimage {
     float: none;
     width: 100%;
     text-align: center;
   }
-  /* line 256, ../sass/_ourimpact.scss */
+  /* line 269, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .regulartext {
     float: none;
     width: 100%;
   }
 }
 @media screen and (min-width: 980px) {
-  /* line 263, ../sass/_ourimpact.scss */
+  /* line 276, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-graphic-read-more,
   .node.node-bean-block-page .entity.entity-bean.bean-2-tier-video-caption {
     float: left;
     max-width: 32.5%;
   }
-  /* line 268, ../sass/_ourimpact.scss */
+  /* line 281, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-graphic-over-text {
     float: left;
     width: 25%;
   }
-  /* line 272, ../sass/_ourimpact.scss */
+  /* line 285, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text {
     float: left;
   }
-  /* line 274, ../sass/_ourimpact.scss */
+  /* line 287, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .topimage {
     float: left;
     width: 34%;
     text-align: center;
   }
-  /* line 279, ../sass/_ourimpact.scss */
+  /* line 292, ../sass/_ourimpact.scss */
   .node.node-bean-block-page .entity.entity-bean.bean-2-col-graphic-text .regulartext {
     float: left;
     width: 65%;
   }
 }
-/* line 285, ../sass/_ourimpact.scss */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* line 299, ../sass/_ourimpact.scss */
+  .node.node-bean-block-page .entity.entity-bean.bean-graphic-over-text {
+    float: left;
+    width: 45%;
+  }
+}
+/* line 304, ../sass/_ourimpact.scss */
 .node.node-bean-block-page .field-collection-view {
   border: medium none;
 }
-/* line 288, ../sass/_ourimpact.scss */
+/* line 307, ../sass/_ourimpact.scss */
 .node.node-bean-block-page strong {
   color: #000;
 }
-/* line 291, ../sass/_ourimpact.scss */
+/* line 310, ../sass/_ourimpact.scss */
 .node.node-bean-block-page p {
   font-size: 18px;
 }
 
-/* line 295, ../sass/_ourimpact.scss */
+/* line 314, ../sass/_ourimpact.scss */
 .field-group-format-wrapper a:hover::after {
   background: transparent;
 }
 
-/* line 299, ../sass/_ourimpact.scss */
+/* line 318, ../sass/_ourimpact.scss */
 .entity-bean.bean-2-tier-video-caption a.video::after {
   background-color: rgba(0, 0, 0, 0.25);
   background-image: url("/sites/all/themes/tweme/images/play.png");
@@ -9998,13 +10023,13 @@ h2.news__title {
   z-index: 10;
 }
 
-/* line 314, ../sass/_ourimpact.scss */
+/* line 333, ../sass/_ourimpact.scss */
 .entity-bean.bean-2-tier-video-caption .content a {
   margin-bottom: 20px;
   text-align: left;
 }
 
-/* line 318, ../sass/_ourimpact.scss */
+/* line 337, ../sass/_ourimpact.scss */
 .entity-bean.bean-2-tier-video-caption .content a {
   display: block;
   margin-bottom: 10px;
@@ -10012,7 +10037,7 @@ h2.news__title {
   text-align: center;
 }
 
-/* line 324, ../sass/_ourimpact.scss */
+/* line 343, ../sass/_ourimpact.scss */
 .entity-bean.bean-2-tier-video-caption .content a:hover::after {
   background-color: transparent;
 }

@@ -35,7 +35,7 @@
 			color: $greenteal;
 		}
 		.mediumtext {
-			font-size: 40.5px;
+			font-size: 35.5px;
 			color: $greenteal;
 		}
 		.regulartext {
@@ -46,7 +46,12 @@
 	}
 }
 .bean-2-col-graphic-text  {
-
+	.field-collection-view {
+	  margin-bottom: 25px;
+	}
+	.field-collection-view.field-collection-view-final {
+	  margin-bottom: 0;
+	}
 }
 .bean-2-tier-graphic-read-more {
 	padding-left: 10px;
@@ -65,9 +70,9 @@
 	}
 	.read-more,
 	.less-link {
-		font-size: 11px;
+		font-size: 0.8125rem;
 		text-transform: uppercase;
-		@include NewsGothicRegular;			
+		font-family: "News Gothic Demi Bold","News Gothic","Arial Narrow",Arial,sans-serif;			
 	}
 	.attribution p {
 		color: #000;
@@ -241,11 +246,19 @@
 		.entity.entity-bean.bean-2-tier-graphic-read-more, 
 		.entity.entity-bean.bean-2-tier-video-caption {
 		  float: left;
+		  margin-bottom: 25px;
 		  width: 45%;
 		  	.collapsible.video.speed-fast {
 			  text-align: center;
 			}
-		}			
+		}
+		.entity.entity-bean.bean-2-tier-graphic-read-more:nth-of-type(3n),
+		.entity.entity-bean.bean-2-tier-video-caption:nth-of-type(3n) {
+		  display: block;
+		  float: none;
+		  margin: 0 auto;
+		  clear: both;
+		}					
 		.entity.entity-bean.bean-2-col-graphic-text {
 		  float: left;
 			.topimage {
@@ -281,7 +294,13 @@
 			  width: 65%;
 			}				  				
 		}						
-	}	
+	}
+	@media screen and (min-width: 768px) and (max-width: 1200px) {
+		.entity.entity-bean.bean-graphic-over-text {
+		  float: left;
+		  width: 45%;
+		}
+	}			
 	.field-collection-view {
 	  border: medium none;
 	}
