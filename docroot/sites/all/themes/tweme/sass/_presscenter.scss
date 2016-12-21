@@ -134,8 +134,17 @@
 	  margin-right: 20px;
 	}
 	#block-views-tfall-tweets-block, .teachforall-twitter-block {
-	  margin-top: 40px;
+	  
 	}
+	#block-views-tfall-tweets-block h2, .teachforall-twitter-block h2 {
+	  color: #fff;
+	  font-size: 1.125rem;
+	  letter-spacing: 4px;
+	  line-height: 18px;
+	  margin-top: 0;
+	  text-align: center;
+	  text-transform: uppercase;
+	}	
 	.pagination ul > li > a, 
 	.pagination ul > li > span {
 		color: #cf4753 !important;
