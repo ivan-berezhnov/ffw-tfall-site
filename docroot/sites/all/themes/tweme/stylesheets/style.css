@@ -1261,7 +1261,7 @@ h2.page-title {
 }
 /* line 576, ../sass/_teachforall.scss */
 .stats-donate.inline {
-  margin: 10px 0 0 0;
+  margin: 10px 0 10px 0;
 }
 
 /**/
@@ -9620,6 +9620,47 @@ h2.news__title {
   .press-center .view-press-video-archive {
     margin-top: 10px;
   }
+}
+
+/* line 357, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos h3 {
+  color: #4d4d4d;
+}
+/* line 360, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos .news__video {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  position: relative;
+}
+/* line 366, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos .news__image {
+  margin: 10px 0;
+}
+/* line 369, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos .pagination {
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+/* line 373, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos .node--press_center--videoarchive a:hover::after {
+  background-color: transparent;
+}
+/* line 376, ../sass/_presscenter.scss */
+.page-global-conference-2016-videos .view-leadership-videos .node--press_center--videoarchive a::after {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url("/sites/all/themes/tweme/images/play.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0s;
+  width: 100%;
+  z-index: 10;
 }
 
 /* line 1, ../sass/_ourimpact.scss */

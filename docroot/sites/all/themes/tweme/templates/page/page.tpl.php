@@ -179,7 +179,7 @@ include ($directory."/includes/templates/t4all_custom_node_refresh.inc");
           </div> -->
         </div>
         <div class="footer__copyright">
-          <p><?php print t('Copyright &#169; 2016<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
+          <p><?php print t('Copyright &#169; 2017<br /> TeachForAll, Inc.<br /> All rights reserved.'); ?></p>
         </div>
         <ul>
           <li><a class="privacy-policy" href="/privacy-policy"><?php print t('Privacy Policy'); ?></a></li>
