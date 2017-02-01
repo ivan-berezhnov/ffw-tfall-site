@@ -4,6 +4,3 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
-.sass-cache/*
-/sites/all/themes/tweme/.sass-cache/*
-sass-cache/*
