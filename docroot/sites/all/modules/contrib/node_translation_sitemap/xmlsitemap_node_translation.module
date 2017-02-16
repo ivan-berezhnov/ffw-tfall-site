@@ -20,6 +20,24 @@ function xmlsitemap_node_translation_xmlsitemap_process_node_links(array $nids){
   xmlsitemap_node_translation_xmlsitemap_process_node_translation_links($nids);
 }
 
+/**
+ * Implements hook_xmlsitemap_rebuild_clear().
+ */
+function xmlsitemap_node_translation_xmlsitemap_rebuild_clear($entities, $save_custom) {
+  if (in_array('node', $entities)) {
+  $query = db_delete('xmlsitemap');
+  $query->condition('type', db_like('node_translation_') . '%', 'LIKE');
+
+  // If we want to save the custom data, make sure to exclude any links
+  // that are not using default inclusion or priority.
+  if ($save_custom) {
+    $query->condition('status_override', 0);
+    $query->condition('priority_override', 0);
+  }
+
+  $query->execute();
+  }
+}
 
 /**
  * Implements hook_cron().
@@ -67,6 +85,10 @@ function xmlsitemap_node_translation_node_insert(stdClass $node) {
  * Implements hook_node_update().
  */
 function xmlsitemap_node_translation_node_update(stdClass $node) {
+  // Delete the old translations if exist.
+  xmlsitemap_node_translation_node_delete($node);
+
+  // Create the new links and store them in xmlsitemap table.
   $links = xmlsitemap_node_translation_create_link($node);
   foreach($links as $link){
     xmlsitemap_link_save($link);
@@ -77,7 +99,9 @@ function xmlsitemap_node_translation_node_update(stdClass $node) {
  * Implements hook_node_delete().
  */
 function xmlsitemap_node_translation_node_delete(stdClass $node) {
-  xmlsitemap_link_delete('node', $node->nid);
+  foreach(language_list() as $language) {
+    xmlsitemap_link_delete('node_translation_' . $language->language, $node->nid);
+  }
 }
 
 /**
@@ -120,52 +144,28 @@ function xmlsitemap_node_translation_comment_delete(stdClass $comment) {
  */
 function xmlsitemap_node_translation_create_link(stdClass $node) {
   // Get active languages list.
-  $languages = language_list();
+  $languages = language_list('enabled');
 
   // Get current node's original language.
   $original_language = entity_language('node', $node);
 
   // Remove original language form the language list.
-  if(isset($languages[$original_language])){
-    unset($languages[$original_language]);
+  if(isset($languages[1][$original_language])){
+    unset($languages[1][$original_language]);
   }
+
+  // Get default node sitemap link.
+  $link = xmlsitemap_node_create_link($node);
 
   $node_translation_sitemap = array();
 
   // For each translation language.
-  foreach($languages as $language){
+  foreach($languages[1] as $language) {
     // If tranlsation exists and is active.
-    if(isset($node->translations->data[$language->language]) and $node->translations->data[$language->language]['status'] == 1){
-      $node_translation_sitemap[$language->language] = array();
-      if ($node->nid && $link = xmlsitemap_link_load('node_translation_' . $language->language, $node->nid)) {
-        $node_translation_sitemap[$language->language] = $link;
-      }
-
-      $settings = xmlsitemap_link_bundle_load('node', $node->type);
-      $uri = entity_uri('node', $node);
-
-      $node_translation_sitemap[$language->language] += array(
-        'type' => 'node_translation_' . $language->language,
-        'id' => $node->nid,
-        'subtype' => $node->type,
-        'status' => $settings['status'],
-        'status_default' => $settings['status'],
-        'status_override' => 0,
-        'priority' => $settings['priority'],
-        'priority_default' => $settings['priority'],
-        'priority_override' => 0,
-      );
-
-      // Always recalculate changefreq and changecount.
-      $timestamps = xmlsitemap_node_get_timestamps($node);
-      $node_translation_sitemap[$language->language]['changefreq'] = $node->nid ? xmlsitemap_calculate_changefreq($timestamps) : 0;
-      $node_translation_sitemap[$language->language]['changecount'] = $node->nid ? count($timestamps) - 1 : 0;
-
-      // The following values must always be checked because they are volatile.
-      $node_translation_sitemap[$language->language]['loc'] = $uri['path'];
-      $node_translation_sitemap[$language->language]['lastmod'] = count($timestamps) ? max($timestamps) : 0;
-      $node_translation_sitemap[$language->language]['access'] = $node->nid ? xmlsitemap_node_view_access($node, drupal_anonymous_user()) : 1;
-      $node_translation_sitemap[$language->language]['language'] = $language->language;
+    if (isset($node->translations->data[$language->language]) and $node->translations->data[$language->language]['status'] == 1) {
+      $link['language'] = $language->language;
+      $link['type'] = 'node_translation_' . $language->language;
+      $node_translation_sitemap[$language->language] = $link;
     }
   }
 

@@ -6,9 +6,9 @@ dependencies[] = xmlsitemap
 dependencies[] = xmlsitemap_node
 dependencies[] = entity_translation
 
-; Information added by drupal.org packaging script on 2013-09-05
-version = "7.x-1.1"
+; Information added by Drupal.org packaging script on 2016-06-27
+version = "7.x-1.2"
 core = "7.x"
 project = "node_translation_sitemap"
-datestamp = "1378381596"
+datestamp = "1467043141"
 
