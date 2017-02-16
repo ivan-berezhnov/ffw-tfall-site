@@ -129,11 +129,12 @@ function field_collection_item_add($field_name, $entity_type, $entity_id, $revis
   // That way the link is going to be created when the item is saved.
   $field_collection_item->setHostEntity($entity_type, $entity, $langcode, FALSE);
 
-  $title = ($field['cardinality'] == 1) ? $instance['label'] : t('Add new !instance_label', array('!instance_label' => $field_collection_item->translatedInstanceLabel()));
+  $label = $field_collection_item->translatedInstanceLabel();
+  $title = ($field['cardinality'] == 1) ? $label : t('Add new !instance_label', array('!instance_label' => $label));
   drupal_set_title($title);
 
   // Make sure the current user has access to create a field collection item.
-  if (!field_collection_item_access('create', $field_collection_item)) {
+  if (!entity_access('create', 'field_collection_item', $field_collection_item)) {
     return MENU_ACCESS_DENIED;
   }
   return drupal_get_form('field_collection_item_form', $field_collection_item);

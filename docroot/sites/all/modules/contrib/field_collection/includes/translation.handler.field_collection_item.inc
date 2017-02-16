@@ -29,27 +29,25 @@ class EntityTranslationFieldCollectionItemHandler extends EntityTranslationDefau
    * {@inheritdoc}
    */
   public function getAccess($op) {
-    return field_collection_item_access($op, $this->entity);
+    return entity_access($op, 'field_collection_item', $this->entity);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getLanguage() {
-    $langcode = $this->entity->langcode() ? $this->entity->langcode() : LANGUAGE_NONE;
-    // Use the field language as entity language.
-    if ($langcode == LANGUAGE_NONE) {
-      // If the current field is untranslatable, try inherit the host entity
-      // language.
-      if (($host_entity_type = $this->entity->hostEntityType()) && entity_translation_enabled($host_entity_type) && ($host_entity = $this->entity->hostEntity())) {
-        $handler = $this->factory->getHandler($host_entity_type, $host_entity);
-        $langcode = $handler->getLanguage();
-      }
-      // If the host entity is not translatable, use the default language
-      // fallback.
-      else {
-        $langcode = parent::getLanguage();
-      }
+    // Do not use $this->entity->langcode() as this will finally call
+    // field_collection_entity_language() which again calls us!
+    // If the current field is untranslatable, try inherit the host entity
+    // language.
+    if (($host_entity_type = $this->entity->hostEntityType()) && entity_translation_enabled($host_entity_type) && ($host_entity = $this->entity->hostEntity())) {
+      $handler = $this->factory->getHandler($host_entity_type, $host_entity);
+      $langcode = $handler->getFormLanguage();
+    }
+    // If the host entity is not translatable, use the default language
+    // fallback.
+    else {
+      $langcode = parent::getLanguage();
     }
     return $langcode;
   }
