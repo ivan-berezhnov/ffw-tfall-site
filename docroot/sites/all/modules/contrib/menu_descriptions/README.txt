@@ -33,7 +33,7 @@ settings for your needs, and that's it - you're done!
 
 Theming
 ~~~~~~~
-There are three theme functions for themers:
+There is one theme function and two template files for themers:
 
 - theme_menu_descriptions_menu($variables('menu_tree' => array $tree))
       Themes the entire menu tree with descriptions.  The $tree array is the
@@ -48,10 +48,14 @@ There are three theme functions for themers:
             [description] => string - the description,
             [format] => string - the input / text format of the [description]
 
-- theme_menu_descriptions_link($variables('link' => array $link))
-      Called by theme_menu_descriptions_menu and themes the links.  Gets passed
-      the [link] element of the menu item.
+- menu-descriptions-menu-item.tpl.php
+      Called by theme_menu_descriptions_menu and themes each menu items.  See
+      the file for the variables that are passed to the template.  The default
+      template themes each link in a <dt> element, and each description in a
+      <dt> element, both with appropriate classes.
 
-- theme_menu_descriptions_description($variables('description' => object $description, 'class' => string $class))
-      Also called by theme_menu_descriptions_menu and themes the description
-      portion itself.
+- menu-descriptions-menu.tpl.php
+      Also called by theme_menu_descriptions_menu and themes the wrapper that
+      goes around the entire menu.  See the file for the variables that are
+      passed to the template.  The default templates themes the menu in a
+      surrounding <dl> element, which is required for <dt>-<dd> elements.
