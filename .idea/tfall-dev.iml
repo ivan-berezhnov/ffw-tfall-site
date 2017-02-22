@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP Runtime" type="php">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </CLASSES>
+        <SOURCES>
+          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$USER_HOME$/Composer/vendor/composer" />
+          <root url="file://$USER_HOME$/Composer/vendor/doctrine/instantiator" />
+          <root url="file://$USER_HOME$/Composer/vendor/drupal/coder" />
+          <root url="file://$USER_HOME$/Composer/vendor/myclabs/deep-copy" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpspec/prophecy" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-code-coverage" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-file-iterator" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-text-template" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-timer" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-token-stream" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/phpunit" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/comparator" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/diff" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/environment" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/exporter" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/global-state" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/object-enumerator" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/recursion-context" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/resource-operations" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/version" />
+          <root url="file://$USER_HOME$/Composer/vendor/squizlabs/php_codesniffer" />
+          <root url="file://$USER_HOME$/Composer/vendor/symfony/yaml" />
+          <root url="file://$USER_HOME$/Composer/vendor/webmozart/assert" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Composer/vendor/composer" />
+          <root url="file://$USER_HOME$/Composer/vendor/doctrine/instantiator" />
+          <root url="file://$USER_HOME$/Composer/vendor/drupal/coder" />
+          <root url="file://$USER_HOME$/Composer/vendor/myclabs/deep-copy" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/reflection-common" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/reflection-docblock" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpdocumentor/type-resolver" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpspec/prophecy" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-code-coverage" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-file-iterator" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-text-template" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-timer" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/php-token-stream" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/phpunit" />
+          <root url="file://$USER_HOME$/Composer/vendor/phpunit/phpunit-mock-objects" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/code-unit-reverse-lookup" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/comparator" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/diff" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/environment" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/exporter" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/global-state" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/object-enumerator" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/recursion-context" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/resource-operations" />
+          <root url="file://$USER_HOME$/Composer/vendor/sebastian/version" />
+          <root url="file://$USER_HOME$/Composer/vendor/squizlabs/php_codesniffer" />
+          <root url="file://$USER_HOME$/Composer/vendor/symfony/yaml" />
+          <root url="file://$USER_HOME$/Composer/vendor/webmozart/assert" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$USER_HOME$/Composer/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$USER_HOME$/Composer/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
