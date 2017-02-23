@@ -1,9 +1,8 @@
 <?php
 
-
 /**
+ * @file
  * General utility file for the teach for all site.
- *
  */
 
 module_load_include('inc', 't4allsite', 'test_menu');

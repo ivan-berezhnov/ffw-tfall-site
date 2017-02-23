@@ -1,3 +1,9 @@
+<?php
+
+/**
+ * @file
+ */
+?>
 <h2>TFALL: 'Launch a Program' Email Submission</h2>
 <br /><br />
 First Name: <?php print $content['firstname']; ?> <br />
