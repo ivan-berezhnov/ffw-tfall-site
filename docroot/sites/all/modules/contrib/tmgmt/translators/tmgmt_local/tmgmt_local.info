@@ -28,3 +28,10 @@ files[] = views/handlers/tmgmt_local_task_handler_field_progress.inc
 files[] = views/handlers/tmgmt_local_task_handler_field_item_operations.inc
 files[] = views/handlers/tmgmt_local_task_handler_field_wordcount.inc
 files[] = views/handlers/tmgmt_local_task_handler_filter_eligible.inc
+
+; Information added by Drupal.org packaging script on 2016-07-01
+version = "7.x-1.0-rc2"
+core = "7.x"
+project = "tmgmt"
+datestamp = "1467358441"
+

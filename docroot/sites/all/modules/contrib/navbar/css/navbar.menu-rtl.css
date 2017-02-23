@@ -1,7 +1,10 @@
+
 /**
- * @file navbar.menu-rtl.css
+ * @file navbar.menu.css
+ *
+ * RTL styling for navbar.menu.css
  */
-.drupal-navbar .navbar-tray-vertical .navbar-handle + a {
+.navbar .vertical .handle + a {
   margin-left: 3em;
   margin-right: 0;
 }
@@ -9,11 +12,11 @@
 /**
  * Handle.
  */
-.drupal-navbar .navbar-icon.navbar-handle {
+.navbar .icon.handle {
   left: 0;
   right: auto;
 }
-.drupal-navbar .navbar-icon.navbar-handle:before {
+.navbar .icon.handle:before {
   left: auto;
   right: 0;
 }

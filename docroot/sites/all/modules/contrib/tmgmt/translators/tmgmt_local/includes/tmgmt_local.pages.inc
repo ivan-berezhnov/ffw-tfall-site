@@ -163,12 +163,6 @@ function tmgmt_local_translation_form($form, &$form_state, TMGMTLocalTaskItem $t
 
   // Add the form actions as well.
   $form['actions']['#type'] = 'actions';
-  $form['actions']['save_as_completed_next'] = array(
-    '#type' => 'submit',
-    '#validate' => array('tmgmt_local_translation_form_save_as_completed_validate'),
-    '#submit' => array('tmgmt_local_translation_form_save_submit', 'tmgmt_local_translation_form_save_as_completed_submit', 'tmgmt_local_translation_form_submit_next'),
-    '#value' => t('Save as completed & next item'),
-  );
   $form['actions']['save_as_completed'] = array(
     '#type' => 'submit',
     '#validate' => array('tmgmt_local_translation_form_save_as_completed_validate'),
@@ -270,17 +264,6 @@ function tmgmt_local_translation_form_save_submit($form, &$form_state) {
   $task = $form_state['task'];
   $uri = $task->uri();
   $form_state['redirect'] = $uri['path'];
-}
-
-/**
- * Form submit callback to go the the next task item.
- */
-function tmgmt_local_translation_form_submit_next($form, &$form_state) {
-  $next_item = tmgmt_local_task_item_load_next($form_state['task_item']->tltid, $form_state['task_item']->tltiid, 0);
-  if (!empty($next_item)) {
-    $uri = $next_item->uri();
-    $form_state['redirect'] = $uri['path'];
-  }
 }
 
 /**

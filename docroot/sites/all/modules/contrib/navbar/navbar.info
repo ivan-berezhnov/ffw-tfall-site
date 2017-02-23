@@ -3,12 +3,11 @@ description = A very simple mobile friendly toolbar that lets you switch between
 core = 7.x
 
 dependencies[] = breakpoints
-dependencies[] = libraries
+dependencies[] = libraries (>=2.x)
 
-
-; Information added by drush on 2014-05-22
-version = "7.x-1.0-alpha10+8-dev"
+; Information added by drupal.org packaging script on 2013-04-17
+version = "7.x-1.0-alpha10"
 core = "7.x"
 project = "navbar"
-datestamp = "1400719431"
+datestamp = "1366242011"
 

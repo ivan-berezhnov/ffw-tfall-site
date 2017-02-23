@@ -122,7 +122,15 @@ function tmgmt_entity_get_translatable_entities($entity_type, $property_conditio
 
   $id_key = $entity_info['entity keys']['id'];
   $query = db_select($entity_info['base table'], 'e');
+  $query->addTag('tmgmt_entity_get_translatable_entities');
   $query->addField('e', $id_key);
+
+  // Language neutral entities are not translatable. Filter them out. To do
+  // that: join {entity_translation} table, but only records with source column
+  // empty. The {entity_translation}.language will represent the original entity
+  // language in that case.
+  $source_table_alias = $query->leftJoin('entity_translation', NULL, "%alias.entity_type = :entity_type AND %alias.entity_id = e.$id_key AND %alias.source = ''", array(':entity_type' => $entity_type));
+  $query->condition("$source_table_alias.language", LANGUAGE_NONE, '<>');
 
   // Searching for sources with missing translation.
   if (!empty($property_conditions['target_status']) && !empty($property_conditions['target_language']) && in_array($property_conditions['target_language'], $languages)) {
@@ -239,6 +247,8 @@ function tmgmt_entity_get_translatable_entities($entity_type, $property_conditio
  */
 function tmgmt_entity_tmgmt_source_suggestions(array $items, TMGMTJob $job) {
   $suggestions = array();
+  // Get all translatable entity types.
+  $entity_types = array_filter(variable_get('entity_translation_entity_types', array()));
 
   foreach ($items as $item) {
     if (($item instanceof TMGMTJobItem) && ($item->plugin == 'entity') || ($item->plugin == 'node')) {
@@ -248,8 +258,6 @@ function tmgmt_entity_tmgmt_source_suggestions(array $items, TMGMTJob $job) {
       list(, , $bundle) = entity_extract_ids($item->item_type, $entity);
       $field_instances = field_info_instances($item->item_type, $bundle);
 
-      // Get all translatable entity types.
-      $entity_types = array_filter(variable_get('entity_translation_entity_types', array()));
 
       // Loop over all fields, check if they are NOT translatable. Only if a
       // field is not translatable we may suggest a referenced entity. If so,
@@ -291,10 +299,10 @@ function tmgmt_entity_tmgmt_source_suggestions(array $items, TMGMTJob $job) {
 
           case 'entityreference':
             $target_type = $field['settings']['target_type'];
-            // Make sure only tranlatable entity types are suggested
+            // Make sure only tranlatable entity types are suggested.
             if (isset($entity_types[$target_type]) && ($field_items = field_get_items($item->item_type, $entity, $field_name))) {
-              // Add all referenced entities as suggestion
-              foreach($field_items as $field_item) {
+              // Add all referenced entities as suggestion.
+              foreach ($field_items as $field_item) {
                 $ref_entity = entity_load_single($target_type, $field_item['target_id']);
 
                 // Check if there is already a translation available for this
@@ -307,57 +315,9 @@ function tmgmt_entity_tmgmt_source_suggestions(array $items, TMGMTJob $job) {
                   }
                 }
 
-                // Add suggestion
+                // Add suggestion.
                 $suggestions[] = array(
                   'job_item' => tmgmt_job_item_create('entity', $target_type, $field_item['target_id']),
-                  'reason' => t('Field @label', array('@label' => $instance['label'])),
-                  'from_item' => $item->tjiid,
-                );
-              }
-            }
-            break;
-
-          case 'field_collection':
-            if (isset($entity_types['field_collection_item']) && ($field_items = field_get_items($item->item_type, $entity, $field['field_name']))) {
-              foreach($field_items as $field_item) {
-                $field_collection_entity = entity_load_single('field_collection_item', $field_item['value']);
-
-                // Check if there is already a translation
-                $handler = entity_translation_get_handler('field_collection_item', $field_collection_entity);
-                if ($handler instanceof EntityTranslationHandlerInterface) {
-                  $translations = $handler->getTranslations();
-                  if (!isset($translations->data[$job->target_language])) {
-                    $suggestions[] = array(
-                      'job_item' => tmgmt_job_item_create('entity', 'field_collection_item', $field_collection_entity->item_id),
-                      'reason' => t('Field @label', array('@label' => $instance['label'])),
-                      'from_item' => $item->tjiid,
-                    );
-                  }
-                }
-              }
-            }
-            break;
-
-          case 'field_collection':
-            // Make sure only translatable entity types are suggested.
-            if (isset($entity_types['field_collection_item']) && ($field_items = field_get_items($item->item_type, $entity, $field_name))) {
-              // Add all referenced entities as suggestion
-              foreach($field_items as $field_item) {
-                $referenced_field_collection = entity_load_single('field_collection_item', $field_item['value']);
-
-                // Check if there is already a translation available for this
-                // entity. If so, just continue with the next one.
-                $handler = entity_translation_get_handler('field_collection_item', $referenced_field_collection);
-                if ($handler instanceof EntityTranslationHandlerInterface) {
-                  $translations = $handler->getTranslations();
-                  if (isset($translations->data[$job->target_language])) {
-                    continue;
-                  }
-                }
-
-                // Add suggestion
-                $suggestions[] = array(
-                  'job_item' => tmgmt_job_item_create('entity', 'field_collection_item', $field_item['value']),
                   'reason' => t('Field @label', array('@label' => $instance['label'])),
                   'from_item' => $item->tjiid,
                 );

@@ -37,20 +37,18 @@ function file_entity_download_page($file) {
   }
 
   $headers = array(
-    'Content-Type' => mime_header_encode($file->filemime),
+    'Content-Type' => 'force-download',
     'Content-Disposition' => 'attachment; filename="' . $file->filename . '"',
     'Content-Length' => $file->filesize,
     'Content-Transfer-Encoding' => 'binary',
     'Pragma' => 'no-cache',
     'Cache-Control' => 'must-revalidate, post-check=0, pre-check=0',
     'Expires' => '0',
+    'Accept-Ranges' => 'bytes',
   );
 
   // Let other modules alter the download headers.
   drupal_alter('file_download_headers', $headers, $file);
-
-  // Let other modules know the file is being downloaded.
-  module_invoke_all('file_transfer', $file->uri, $headers);
 
   file_transfer($file->uri, $headers);
 }
