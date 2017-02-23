@@ -127,8 +127,7 @@ function constant_contact_delete_list($id)
 {
 	$node = array('id' => $id);
 	$html = '<p>Please confirm you would like to delete this contact list?</p>';
-	$_render = drupal_get_form('constant_contact_delete_list_form', $node);
-	$html .= drupal_render($_render);
+	$html .= drupal_render(drupal_get_form('constant_contact_delete_list_form', $node));
 	return $html;
 }
 

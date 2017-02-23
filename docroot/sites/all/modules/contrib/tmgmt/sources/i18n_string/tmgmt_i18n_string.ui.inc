@@ -20,6 +20,7 @@ class TMGMTI18nStringDefaultSourceUIController extends TMGMTDefaultSourceUIContr
   public function overviewFormHeader() {
     $languages = array();
     foreach (language_list() as $langcode => $language) {
+      $langcode = str_replace('-', '', $langcode);
       $languages['langcode-' . $langcode] = array(
         'data' => check_plain($language->name),
       );
@@ -90,12 +91,14 @@ class TMGMTI18nStringDefaultSourceUIController extends TMGMTDefaultSourceUIContr
         );
         // Load entity translation specific data.
         foreach (language_list() as $langcode => $language) {
+          $langcode = str_replace('-', '', $langcode);
+
           $translation_status = 'current';
 
           if ($langcode == $source_language) {
             $translation_status = 'original';
           }
-          elseif ($i18n_string->{$langcode} === NULL) {
+          elseif ($i18n_string->{'lang_' . $langcode} === NULL) {
             $translation_status = 'missing';
           }
 
@@ -226,6 +229,7 @@ class TMGMTI18nStringDefaultSourceUIController extends TMGMTDefaultSourceUIContr
     );
 
     foreach (language_list() as $langcode => $language) {
+      $langcode = str_replace('-', '', $langcode);
       $row['langcode-' . $langcode] = theme('tmgmt_ui_translation_language_status_single', array(
         'translation_status' => $data['translation_statuses'][$langcode],
         'job_item' => isset($data['current_job_items'][$langcode]) ? $data['current_job_items'][$langcode] : NULL,

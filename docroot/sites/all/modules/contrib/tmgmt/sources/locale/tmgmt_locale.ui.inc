@@ -30,6 +30,10 @@ class TMGMTLocaleSourceUIController extends TMGMTDefaultSourceUIController {
     $select = db_select('locales_source', 'ls')
       ->fields('ls', array('lid', 'source'));
 
+    $select->addTag('tmgmt_sources_search');
+    $select->addMetaData('plugin', 'locale');
+    $select->addMetaData('type', $textgroup);
+
     $select->condition('ls.textgroup', $textgroup);
     if (!empty($search_label)) {
       $select->condition('ls.source', "%$search_label%", 'LIKE');
@@ -48,16 +52,15 @@ class TMGMTLocaleSourceUIController extends TMGMTDefaultSourceUIController {
       $table_alias = $select->leftJoin('locales_target', db_escape_field("lt_$langcode"), "ls.lid = %alias.lid AND %alias.language = '$langcode'");
       $langcode_to_filed_alias_map[$langcode] = $select->addField($table_alias, 'language');
     }
-    unset($field_alias);
+
     $select = $select->extend('PagerDefault')->limit(variable_get('tmgmt_source_list_limit', 20));
     $rows = $select->execute()->fetchAll();
-    foreach ($rows as &$row) {
+    foreach ($rows as $row) {
       foreach ($langcode_to_filed_alias_map as $langcode => $field_alias) {
         $row->{$langcode} = $row->{$field_alias};
         unset($row->{$field_alias});
       }
     }
-    unset($row);
 
     return $rows;
   }

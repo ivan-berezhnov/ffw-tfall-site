@@ -3,24 +3,24 @@
  *
  * RTL styling for navbar.base.css
  */
-html.js .drupal-navbar {
+html.js .navbar {
   left: auto;
   right: 0;
 }
-.js .drupal-navbar .navbar-bar .navbar-tab,
-.js .drupal-navbar .navbar-tray-horizontal .navbar-tab  {
+.js .navbar .bar .tab,
+.js .navbar .horizontal .tab  {
   float: right;
 }
 /**
  * Administration menu.
  */
-.js .drupal-navbar .navbar-bar {
+.js .navbar .bar {
   left: auto;
   right: 0;
 }
 @media only screen and (min-width: 16.5em) {
-  .js .drupal-navbar .navbar-bar .navbar-tab,
-  .js .drupal-navbar .navbar-tray-horizontal li {
+  .js .navbar .bar .tab,
+  .js .navbar .horizontal li {
     float: right;
   }
 }
@@ -28,27 +28,27 @@ html.js .drupal-navbar {
 /**
  * navbar tray.
  */
-.drupal-navbar .navbar-tray-vertical {
+.navbar .vertical {
   left: auto;
   right: -100%;
 }
-.drupal-navbar .navbar-tray-horizontal {
+.navbar .horizontal {
   left: auto;
   right: 0;
 }
-.drupal-navbar .navbar-tray-vertical > .navbar-lining,
-.drupal-navbar .navbar-tray-vertical > .navbar-lining:before {
+.navbar .vertical > .lining,
+.navbar .vertical > .lining:before {
   left: auto;
   right: -100%;
 }
-.drupal-navbar .navbar-tray-vertical.active,
-.drupal-navbar .navbar-tray-vertical.active > .navbar-lining {
+.navbar .vertical.active,
+.navbar .vertical.active > .lining {
   left: auto;
   right: 0;
 }
 
 @media only screen and (min-width: 16.5em) {
-  .drupal-navbar .navbar-tray-vertical.active > .navbar-lining:before {
+  .navbar .vertical.active > .lining:before {
     left: auto;
     right: -1px;
   }
@@ -70,10 +70,10 @@ html.js .drupal-navbar {
  * Hide the orientation toggle from browsers that do not interpret
  * media queries. They get a standard horizontal navbar.
  */
-.drupal-navbar .navbar-tray-horizontal .navbar-toggle-orientation {
+.navbar .horizontal .toggle-orientation {
   left: 0;
   right: auto;
 }
-.drupal-navbar .navbar-tray-vertical .navbar-toggle-orientation {
+.navbar .vertical .toggle-orientation {
   float: left;
 }

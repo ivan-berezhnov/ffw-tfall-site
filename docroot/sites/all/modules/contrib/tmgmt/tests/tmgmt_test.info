@@ -7,3 +7,10 @@ files[] = tmgmt_test.plugin.source.inc
 files[] = tmgmt_test.plugin.html_source.inc
 files[] = tmgmt_test.plugin.translator.inc
 files[] = tmgmt_test.ui.translator.inc
+
+; Information added by Drupal.org packaging script on 2016-07-01
+version = "7.x-1.0-rc2"
+core = "7.x"
+project = "tmgmt"
+datestamp = "1467358441"
+

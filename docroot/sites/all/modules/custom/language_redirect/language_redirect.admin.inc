@@ -1,6 +1,13 @@
 <?php
 
-//AXXX
+/**
+ * @file
+ * AXXX.
+ */
+
+/**
+ *
+ */
 function language_redirect_config_form($form, &$form_state) {
   $form['description']['#markup'] = t('In all fields please use language codes that could be found in the Code column of the <a href="!url" target="_blank">language list</a>.', array(
     '!url' => url('admin/config/regional/language'),

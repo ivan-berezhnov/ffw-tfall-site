@@ -1,45 +1,50 @@
 <?php
 
-/*
- * implements hook_menu
+/**
+ * @file
+ * Implements hook_menu.
  */
 
+/**
+ *
+ */
 function misc_menu() {
-    module_load_include('inc', 'pathauto');
+  module_load_include('inc', 'pathauto');
 
-    $customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'press', 'press/latest', 'contact-thank-you');
+  $customnodes = array('news', 'news/latest', 'network-learning', 'network-learning/latest', 'press', 'press/latest', 'contact-thank-you');
 
-    foreach ($customnodes as $key)
-        $items[$key] = array(
-            'page callback' => 'theme_render_template',
-            'page arguments' => array(drupal_get_path('theme', variable_get('theme_default')) . '/templates/node/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
-            'access callback' => TRUE,
-        );
+  foreach ($customnodes as $key) {
+    $items[$key] = array(
+      'page callback' => 'theme_render_template',
+      'page arguments' => array(drupal_get_path('theme', variable_get('theme_default')) . '/templates/node/node-unformatted--' . pathauto_cleanstring($key) . '.tpl.php', array()),
+      'access callback' => TRUE,
+    );
+  }
 
-    return $items;
+  return $items;
 }
 
-/*
+/**
  * Implements hook_views_invalidate_cache (runs when a change is made to views.
  *
  * Used to set a flag when a view is updated in order that the menu cache is rebuilt.
  * This allows the custom pages built in misc_menu to be refreshed with the updated views.
- * The refresh functionality is implemented in page.tpl.php
+ * The refresh functionality is implemented in page.tpl.php.
  */
-function misc_views_invalidate_cache(){
-   variable_set('custom_node_menu_rebuilt', FALSE);
+function misc_views_invalidate_cache() {
+  variable_set('custom_node_menu_rebuilt', FALSE);
 }
 
-/*
- * implements hook_theme()
+/**
+ * Implements hook_theme()
  */
 function misc_theme() {
-    return array(
-        'misc_contact_form_email' => array(
-            'template' => 'templates/contact_form_email',
-            'arguments' => array('content' => null),
-        ),
-    );
+  return array(
+    'misc_contact_form_email' => array(
+      'template' => 'templates/contact_form_email',
+      'arguments' => array('content' => NULL),
+    ),
+  );
 }
 
 /**
@@ -60,18 +65,19 @@ function misc_field_widget_media_generic_form_alter(&$element, &$form_state, $co
 }
 
 /**
- * implements hook_form_alter
+ * Implements hook_form_alter.
+ *
  * @param $form
  * @param $form_state
  * @param $form_id
  */
 function misc_form_alter(&$form, &$form_state, $form_id) {
 
-    if($form_id == 'national_organization_node_form'){
-        $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
-    }
+  if ($form_id == 'national_organization_node_form') {
+    $form['field_national_organization_twit'][LANGUAGE_NONE][0]['#format'] = 'full_html';
+  }
 
-  if($form_id == 'constant_contact_signup_form_1'){
+  if ($form_id == 'constant_contact_signup_form_1') {
     unset($form['captcha']);
     $form['submit']['#value'] = t('Subscribe to our newsletter');
     $form['#submit'][] = 'misc_constant_contact_signup_form_submit';
@@ -79,108 +85,110 @@ function misc_form_alter(&$form, &$form_state, $form_id) {
 
 }
 
-/*
+/**
  * Function to override the constant_contact_signup_form_submit in order that it doesn't go to the homepage if the
- * block settings for the redirect url aren't set. Set status msg to "Success, you are now subscribed to our newsletter"
+ * block settings for the redirect url aren't set. Set status msg to "Success, you are now subscribed to our newsletter".
  */
-function misc_constant_contact_signup_form_submit($form, &$form_state)
-{
-if ($_SESSION['messages']['status']['0'] === "Success, you are now subscribed to our mailing list"){
-  $_SESSION['messages']['status']['0'] = "Success! You are now subscribed to our newsletter.";
-}
+function misc_constant_contact_signup_form_submit($form, &$form_state) {
+  if ($_SESSION['messages']['status']['0'] === "Success, you are now subscribed to our mailing list") {
+    $_SESSION['messages']['status']['0'] = "Success! You are now subscribed to our newsletter.";
+  }
   unset($form_state['redirect']);
 }
 
-/*
- * implements hook_entity_info_alter
+/**
+ * Implements hook_entity_info_alter.
  */
-
 function misc_entity_info_alter(&$entity_info) {
-    $entity_info['node']['view modes']['our_model'] = array(
-        'label' => 'Our Model',
-        'custom settings' => TRUE,
-    );
-    $entity_info['node']['view modes']['global_organization'] = array(
-        'label' => 'Global organization',
-        'custom settings' => TRUE,
-    );
-    $entity_info['node']['view modes']['videoarchive'] = array(
-        'label' => 'Video archive',
-        'custom settings' => TRUE,
-    );    
+  $entity_info['node']['view modes']['our_model'] = array(
+    'label' => 'Our Model',
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['global_organization'] = array(
+    'label' => 'Global organization',
+    'custom settings' => TRUE,
+  );
+  $entity_info['node']['view modes']['videoarchive'] = array(
+    'label' => 'Video archive',
+    'custom settings' => TRUE,
+  );
 }
 
-/*
- * contact us form
+/**
+ * Contact us form.
  */
 function misc_widget_contact_form() {
-    module_load_include('inc', 'misc', 'includes/misc_contact.form');
+  module_load_include('inc', 'misc', 'includes/misc_contact.form');
   $_render = drupal_get_form('misc_contact_form');
   return render($_render);
 }
 
-/*
- * implements hook_mail()
+/**
+ * Implements hook_mail()
  */
 function misc_mail($key, &$message, $params) {
 
-    switch ($key) {
-        case 'contact_form':
-            $message['subject'] = t('Contact email from website');
-            $langcode = $message['language']->language;
-            $message['body'][] = theme('misc_contact_form_email', array('content' => $params));
-            break;
-    }
+  switch ($key) {
+    case 'contact_form':
+      $message['subject'] = t('Contact email from website');
+      $langcode = $message['language']->language;
+      $message['body'][] = theme('misc_contact_form_email', array('content' => $params));
+      break;
+  }
 }
-
 
 /**
  * Implements hook_block_info()
+ *
  * @author AlexB
  */
-function misc_block_info()
-{
-    $blocks['contact_form'] = array(
-        'info' => t('Contact form'),
-        'status' => TRUE,
-        'region' => 'content',
-        'weight' => 0,
-        'visibility' => 1,
-    );
+function misc_block_info() {
+  $blocks['contact_form'] = array(
+    'info' => t('Contact form'),
+    'status' => TRUE,
+    'region' => 'content',
+    'weight' => 0,
+    'visibility' => 1,
+  );
 
-    return $blocks;
+  return $blocks;
 }
 
 /**
- * Implements hook_block_view
+ * Implements hook_block_view.
+ *
  * @author AlexB
  */
-function misc_block_view($delta = '')
-{
-    switch($delta){
-        case 'contact_form':
-            $block['title'] = '';
-            $block['content'] = contact_block_contents($delta);
-            return $block;
-            break;
-    }
+function misc_block_view($delta = '') {
+  switch ($delta) {
+    case 'contact_form':
+      $block['title'] = '';
+      $block['content'] = contact_block_contents($delta);
+      return $block;
+
+    break;
+  }
 }
 
 /**
  * A module defined block content function.
+ *
  * @author AlexB
  */
-function contact_block_contents($delta)
-{
-    switch($delta){
-        case 'contact_form':
-            $contact_form = misc_widget_contact_form();
-            return $contact_form;
-            break;
-    }
+function contact_block_contents($delta) {
+  switch ($delta) {
+    case 'contact_form':
+      $contact_form = misc_widget_contact_form();
+      return $contact_form;
+
+    break;
+  }
 
 }
 
+/**
+ *
+ */
 function _misc_enable_translation() {
   $entities = array(
     'taxonomy_term' => array(
@@ -248,13 +256,11 @@ function _misc_enable_translation() {
       'tfa_supporter' => array(
         'replace_fields' => array('title'),
       ),
-    )
+    ),
   );
-
 
   foreach ($entities as $entity_type => $definition) {
     foreach ($definition as $bundle => $data) {
-
 
       if (!empty($data['replace_fields'])) {
         foreach ($data['replace_fields'] as $field_name) {
@@ -266,9 +272,6 @@ function _misc_enable_translation() {
       }
     }
   }
-
-
-
 
   $fields = array(
     'body',
@@ -315,7 +318,6 @@ function _misc_enable_translation() {
 
   );
 
-
   // Enable translation for the specified fields.
   module_load_include('admin.inc', 'entity_translation');
   foreach ($fields as $field_name) {
@@ -323,7 +325,8 @@ function _misc_enable_translation() {
     if (empty($field['translatable'])) {
       entity_translation_translatable_form_submit(array(), array(
         'values' => array(
-          'translatable' => '0', // Should be a string.
+      // Should be a string.
+          'translatable' => '0',
           'copy_all_languages' => TRUE,
         ),
         'field' => $field,

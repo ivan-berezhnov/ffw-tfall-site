@@ -90,7 +90,7 @@ function navbar_element_info() {
       'id' => 'navbar-administration',
       // The 'overlay-displace-top' class pushes the overlay down, so it appears
       // below the navbar.
-      'class' => array('drupal-navbar', 'overlay-displace-top'),
+      'class' => array('navbar', 'overlay-displace-top'),
       'role' => 'navigation',
     ),
     // Metadata for the administration bar.
@@ -98,7 +98,7 @@ function navbar_element_info() {
       '#heading' => t('Navbar items'),
       '#attributes' => array(
         'id' => 'navbar-bar',
-        'class' => array('navbar-bar', 'clearfix'),
+        'class' => array('bar', 'clearfix'),
         'data-offset-top' => array(),
       ),
     ),
@@ -309,7 +309,7 @@ function navbar_pre_render_item($element) {
       $element['tray']['#wrapper_attributes'] = array();
     }
     $element['tray']['#wrapper_attributes'] += $attributes;
-    $element['tray']['#wrapper_attributes']['class'][] = 'navbar-tray';
+    $element['tray']['#wrapper_attributes']['class'][] = 'tray';
     $element['tray']['#wrapper_attributes']['class'][] = 'overlay-displace-top';
 
     if (!isset($element['tray']['#theme_wrappers'])) {
@@ -334,7 +334,7 @@ function template_preprocess_navbar_tab_wrapper(&$variables) {
   if (!isset($variables['element']['#wrapper_attributes'])) {
     $variables['element']['#wrapper_attributes'] = array();
   }
-  $variables['element']['#wrapper_attributes']['class'][] = 'navbar-tab';
+  $variables['element']['#wrapper_attributes']['class'][] = 'tab';
 }
 
 /**
@@ -387,7 +387,7 @@ function theme_navbar_tab_wrapper(&$variables) {
 function theme_navbar_tray_wrapper(&$variables) {
   if (!empty($variables['element']['#children'])) {
     $element = $variables['element'];
-    return '<div' . drupal_attributes($element['#wrapper_attributes']) . '><div class="navbar-lining clearfix">' . $element['#children'] . '</div></div>';
+    return '<div' . drupal_attributes($element['#wrapper_attributes']) . '><div class="lining clearfix">' . $element['#children'] . '</div></div>';
   }
 }
 
@@ -440,7 +440,7 @@ function navbar_navbar() {
       '#options' => array(
         'attributes' => array(
           'title' => t('Home page'),
-          'class' => array('navbar-icon', 'navbar-icon-home'),
+          'class' => array('icon', 'icon-home'),
         ),
       ),
     ),
@@ -485,7 +485,7 @@ function navbar_navbar() {
       '#options' => array(
         'attributes' => array(
           'title' => t('Admin menu'),
-          'class' => array('navbar-icon', 'navbar-icon-menu', 'navbar-tab',),
+          'class' => array('icon', 'icon-menu', 'navbar-tab',),
         ),
       ),
     ),
@@ -529,7 +529,7 @@ function navbar_navbar() {
         '#options' => array(
           'attributes' => array(
             'title' => t('My account'),
-            'class' => array('navbar-icon', 'navbar-icon-user', 'navbar-tab',),
+            'class' => array('icon', 'icon-user', 'navbar-tab',),
           ),
         ),
       ),
@@ -570,7 +570,7 @@ function navbar_navbar() {
           '#options' => array(
             'attributes' => array(
               'title' => t('Shortcuts'),
-              'class' => array('navbar-icon', 'navbar-icon-shortcut', 'navbar-tab',),
+              'class' => array('icon', 'icon-shortcut', 'navbar-tab',),
             ),
           ),
         ),
@@ -626,8 +626,8 @@ function navbar_menu_navigation_links(&$tree) {
     $tree[$key]['link']['localized_options']['attributes'] = array(
       'id' => 'navbar-link-' . str_replace(array('/', '<', '>'), array('-', '', ''), $item['link']['link_path']),
       'class' => array(
-        'navbar-icon',
-        'navbar-icon-' . strtolower(str_replace(' ', '-', $item['link']['link_title'])),
+        'icon',
+        'icon-' . strtolower(str_replace(' ', '-', $item['link']['link_title'])),
       ),
     );
   }
@@ -714,7 +714,6 @@ function navbar_library() {
     ),
     'dependencies' => array(
       array('system', 'jquery'),
-      array('navbar', 'navbar.jquery.on-off-shim'),
       array('navbar', 'underscore'),
       array('navbar', 'backbone'),
       array('navbar', 'navbar.matchmedia'),
@@ -790,17 +789,6 @@ function navbar_library() {
     ),
   );
 
-  $libraries['navbar.jquery.on-off-shim'] = array(
-    'title' => 'Shims the jQuery on and off methods for version previous to 1.7.',
-    'version' => VERSION,
-    'js' => array(
-      $path . '/js/jquery.on-off-shim.js' => array('group' => JS_LIBRARY),
-    ),
-    'dependencies' => array(
-      array('system', 'jquery'),
-    ),
-  );
-
   // Underscore
   $libraries['underscore'] = navbar_convert_libraries_to_library(libraries_load('underscore'), array(
     'group' => JS_LIBRARY,
@@ -840,7 +828,7 @@ function navbar_libraries_info() {
   $libraries['underscore'] = array(
     'name' => 'Underscore',
     'vendor url' => 'http://documentcloud.github.io/backbone/',
-    'download url' => 'https://github.com/documentcloud/underscore/tree/1.4.4',
+    'download url' => 'https://github.com/documentcloud/underscore/tags',
     'files' => array(
       'js' => array(
         'underscore-min.js',
@@ -852,7 +840,7 @@ function navbar_libraries_info() {
   $libraries['backbone'] = array(
     'name' => 'Backbone',
     'vendor url' => 'http://documentcloud.github.io/backbone/',
-    'download url' => 'https://github.com/documentcloud/backbone/tree/1.0.0',
+    'download url' => 'https://github.com/documentcloud/backbone/tags',
     'files' => array(
       'js' => array(
         'backbone-min.js',

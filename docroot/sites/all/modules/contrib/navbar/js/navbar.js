@@ -197,15 +197,15 @@ Drupal.navbar = Drupal.navbar || {
    */
   View: Backbone.View.extend({
     events: {
-      'click .navbar-bar .navbar-tab': 'onTabClick',
-      'click .navbar-toggle-orientation button': 'onOrientationToggleClick'
+      'click .bar .navbar-tab': 'onTabClick',
+      'click .toggle-orientation button': 'onOrientationToggleClick'
     },
 
     /**
      * Implements Backbone.View.prototype.initialize().
      */
-    initialize: function (options) {
-      this.strings = options.strings;
+    initialize: function () {
+      this.strings = this.options.strings;
 
       this.model.bind('change:activeTab', this.render, this);
       this.model.bind('change:orientation', this.render, this);
@@ -213,8 +213,8 @@ Drupal.navbar = Drupal.navbar || {
       this.model.bind('change:offsets', this.adjustPlacement, this);
 
       // Add the tray orientation toggles.
-      this.$el.find('.navbar-tray')
-        .find('.navbar-lining')
+      this.$el.find('.tray')
+        .find('.lining')
         .append(Drupal.theme('navbarOrientationToggle'));
 
       // Trigger an activeTab change so that listening scripts can respond on
@@ -251,19 +251,13 @@ Drupal.navbar = Drupal.navbar || {
      * @param jQuery.Event event
      */
     onTabClick: function (event) {
-      // The polyfilled on and off events on the jQuery fn obect are not working
-      // perfectly with Backbone views. All click events within the view's el
-      // are being delegated, so we need to check here that we have the right
-      // element before acting with it.
-      if ($(event.target).is('.navbar-tab')) {
-        var tab = this.model.get('activeTab');
+      var tab = this.model.get('activeTab');
 
-        // Set the event target as the active item if it is not already.
-        this.model.set('activeTab', (!tab || event.target !== tab) ? event.target : null);
+      // Set the event target as the active item if it is not already.
+      this.model.set('activeTab', (!tab || event.target !== tab) ? event.target : null);
 
-        event.preventDefault();
-        event.stopPropagation();
-      }
+      event.preventDefault();
+      event.stopPropagation();
     },
 
     /**
@@ -272,31 +266,25 @@ Drupal.navbar = Drupal.navbar || {
      * @param jQuery.Event event
      */
     onOrientationToggleClick: function (event) {
-      // The polyfilled on and off events on the jQuery fn obect are not working
-      // perfectly with Backbone views. All click events within the view's el
-      // are being delegated, so we need to check here that we have the right
-      // element before acting with it.
-      if ($(event.target).is('.navbar-toggle-orientation button')) {
-        var orientation = this.model.get('orientation');
-        // Determine the toggle-to orientation.
-        var antiOrientation = (orientation === 'vertical') ? 'horizontal' : 'vertical';
-        var locked = (antiOrientation === 'vertical') ? true : false;
-        // Remember the locked state.
-        if (locked) {
-          localStorage.setItem('Drupal.navbar.trayVerticalLocked', 'true');
-        }
-        else {
-          localStorage.removeItem('Drupal.navbar.trayVerticalLocked');
-        }
-        // Update the model.
-        this.model.set({
-          locked: locked,
-          orientation: antiOrientation
-        });
-
-        event.preventDefault();
-        event.stopPropagation();
+      var orientation = this.model.get('orientation');
+      // Determine the toggle-to orientation.
+      var antiOrientation = (orientation === 'vertical') ? 'horizontal' : 'vertical';
+      var locked = (antiOrientation === 'vertical') ? true : false;
+      // Remember the locked state.
+      if (locked) {
+        localStorage.setItem('Drupal.navbar.trayVerticalLocked', 'true');
       }
+      else {
+        localStorage.removeItem('Drupal.navbar.trayVerticalLocked');
+      }
+      // Update the model.
+      this.model.set({
+        locked: locked,
+        orientation: antiOrientation
+      });
+
+      event.preventDefault();
+      event.stopPropagation();
     },
 
     /**
@@ -342,7 +330,7 @@ Drupal.navbar = Drupal.navbar || {
           localStorage.setItem('Drupal.navbar.activeTabID', JSON.stringify(id));
         }
         // Activate the associated tray.
-        $tray = this.$el.find('[data-navbar-tray="' + name + '"].navbar-tray');
+        $tray = this.$el.find('[data-navbar-tray="' + name + '"].tray');
         if ($tray.length) {
           $tray.addClass('active');
           this.model.set('activeTray', $tray.get(0));
@@ -364,12 +352,12 @@ Drupal.navbar = Drupal.navbar || {
         localStorage.removeItem('Drupal.navbar.activeTabID');
       }
       // Disable non-selected tabs.
-      this.$el.find('.navbar-bar .navbar-tab')
+      this.$el.find('.bar .navbar-tab')
         .not($tab)
         .removeClass('active')
         .attr('aria-pressed', 'false');
       // Disable non-selected trays.
-      this.$el.find('.navbar-tray')
+      this.$el.find('.tray')
         .not($tray)
         .removeClass('active');
     },
@@ -383,14 +371,14 @@ Drupal.navbar = Drupal.navbar || {
       // the tray orientation toggle.
       var antiOrientation = (orientation === 'vertical') ? 'horizontal' : 'vertical';
       // Update the orientation of the trays.
-      var $trays = this.$el.find('.navbar-tray')
-        .removeClass('navbar-tray-horizontal navbar-tray-vertical')
-        .addClass('navbar-tray-' + orientation);
+      var $trays = this.$el.find('.tray')
+        .removeClass('horizontal vertical')
+        .addClass(orientation);
 
       // Update the tray orientation toggle button.
-      var iconClass = 'navbar-icon-toggle-' + orientation;
-      var iconAntiClass = 'navbar-icon-toggle-' + antiOrientation;
-      this.$el.find('.navbar-toggle-orientation button')
+      var iconClass = 'icon-toggle-' + orientation;
+      var iconAntiClass = 'icon-toggle-' + antiOrientation;
+      this.$el.find('.toggle-orientation button')
         .val(antiOrientation)
         .text(this.strings[antiOrientation])
         .removeClass(iconClass)
@@ -401,9 +389,9 @@ Drupal.navbar = Drupal.navbar || {
       // Remove data-offset attributes from the trays so they can be refreshed.
       $trays.removeAttr('data-offset-left').removeAttr('data-offset-right').removeAttr('data-offset-top');
       // If an active vertical tray exists, mark it as an offset element.
-      $trays.filter('.navbar-tray-vertical.active').attr('data-offset-' + edge, '');
+      $trays.filter('.vertical.active').attr('data-offset-' + edge, '');
       // If an active horizontal tray exists, mark it as an offset element.
-      $trays.filter('.navbar-tray-horizontal.active').attr('data-offset-top', '');
+      $trays.filter('.horizontal.active').attr('data-offset-top', '');
       // Trigger a recalculation of viewport displacing elements.
       Drupal.displace();
 
@@ -439,10 +427,10 @@ Drupal.navbar = Drupal.navbar || {
      */
     adjustPlacement: function () {
       // Set the top of the all the trays to the height of the bar.
-      var barHeight = this.$el.find('.navbar-bar').outerHeight();
+      var barHeight = this.$el.find('.bar').outerHeight();
       var height = barHeight;
       var bhpx =  barHeight + 'px';
-      var $trays = this.$el.find('.navbar-tray');
+      var $trays = this.$el.find('.tray');
       var tray;
       for (var i = 0, il = $trays.length; i < il; i++) {
         tray = $trays[i];
@@ -511,8 +499,8 @@ Drupal.navbar = Drupal.navbar || {
  *   The corresponding HTML.
  */
 Drupal.theme.navbarOrientationToggle = function () {
-  return '<div class="navbar-toggle-orientation"><div class="navbar-lining">' +
-    '<button class="navbar-icon" type="button"></button>' +
+  return '<div class="toggle-orientation"><div class="lining">' +
+    '<button class="icon" type="button"></button>' +
     '</div></div>';
 };
 

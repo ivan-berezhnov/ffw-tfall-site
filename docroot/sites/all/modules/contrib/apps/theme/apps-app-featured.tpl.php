@@ -6,9 +6,7 @@
       </div>
       <div class="left">
         <h1><?php print $name ?></h1>
-        <?php if (isset($rating)): ?>
-          <?php print drupal_render($rating); ?>
-        <?php endif; ?>
+        <?php print drupal_render($rating); ?>
       </div>
       <div class="app-screenshot"><?php print $screenshot ?><div class="screenshot-shadow"></div></div>
     </div>

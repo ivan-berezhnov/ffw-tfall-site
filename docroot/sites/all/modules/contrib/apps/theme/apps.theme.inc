@@ -42,10 +42,7 @@ function apps_preprocess_apps_app_teaser(&$vars) {
   
   //add rating information for theming
   $vars['app']['teaser'] = TRUE;
-
-  if (variable_get('apps_allow_voting', FALSE)) {
-    $vars['rating'] = theme('apps_voting_widget', $vars['app']);
-  }
+  $vars['rating'] = theme('apps_voting_widget', $vars['app']);
   
   //action link
   $vars['action'] = l('Details', $link);
@@ -77,38 +74,37 @@ function apps_preprocess_apps_app_page(&$vars) {
   $vars['description'] = $vars['app']['description'];
   $vars['name'] = $vars['app']['name'];
   $vars['author'] = l($vars['app']['author'], $vars['app']['author_url']);
-  $vars['version'] = $vars['app']['version'];
+  $vars['version'] = t('Version') . ' ' . $vars['app']['version'];
   if ($vars['app']['status'] === APPS_INCOMPATIBLE) {
-    $incompatible_deps = array();
-    $incompatible_message = '';
+    $incompatable_deps = array();
+    $incompatable_message = '';
     foreach($vars['app']['dependencies'] as $dep) {
       if ($dep['status'] === APPS_INCOMPATIBLE) {
-        $incompatible_deps[] = "{$dep['version']['name']} {$dep['version']['original_version']}";
+        $incompatable_deps[] = "{$dep['version']['name']} {$dep['version']['original_version']}";
       }
     }
-    if (!empty($incompatible_deps)) {
-      $incompatible_message = "Incompatible - requires " . implode(", ", $incompatible_deps);
+    if (!empty($incompatable_deps)) {
+      $incompatable_message = "Incompatible - requires " . implode(", ", $incompatable_deps);
     }
     else {
       //this should never run
-      $incompatible_message = "Incompatible with current install";
+      $incompatable_message = "Incompatible with current install";
     }
-    $vars['status'] = $incompatible_message;
+    //drupal_set_message($incompatable_message, 'error');
+    $vars['status'] = $incompatable_message;
   }
   
   //Title texts for App Detail Page
   $vars['author_title'] = t('Author');
   $vars['version_title'] = t('Version');
+  $vars['rating_title'] = t('Customer Rating');
   $vars['description_title'] = t('Description');
 
-  $vars['app']['teaser'] = FALSE;
+  //Override the rating key with the full widget
+  $vars['rating_caption'] = t('Average rating for this version:');
 
-  if (variable_get('apps_allow_voting', FALSE)) {
-    $vars['rating_title'] = t('Customer Rating');
-    //Override the rating key with the full widget
-    $vars['rating_caption'] = t('Average rating for this version:');
-    $vars['rating'] = theme('apps_voting_widget', $vars['app']);
-  }
+  $vars['app']['teaser'] = FALSE;
+  $vars['rating'] = theme('apps_voting_widget', $vars['app']);
 }
 
 
@@ -123,10 +119,9 @@ function apps_preprocess_apps_app_featured(&$vars) {
     $vars['screenshot'] = theme('image_style', $vars['app']['screenshots'][0]);
   }
   $vars['description'] = $vars['app']['description'];
-
-  if (variable_get('apps_allow_voting', FALSE)) {
-    $vars['rating'] = theme('apps_voting_widget', $vars['app']);
-  }
+  
+  //add rating information for theming
+  $vars['rating'] = theme('apps_voting_widget', $vars['app']);
 
   //action link
   $link = apps_app_page_path($vars['app']);

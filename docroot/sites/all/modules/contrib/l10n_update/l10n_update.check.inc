@@ -71,14 +71,6 @@ function l10n_update_check_projects($projects, $languages = NULL, $check_local =
       $source = l10n_update_source_build($project, $lang);
       if ($update = l10n_update_source_check($source, $check_local, $check_remote)) {
         $result[$name][$lang] = $update;
-      } else {
-        if (count($parts = explode('-', $lang, 2)) > 1) {
-          $source = l10n_update_source_build($project, $parts[0]);
-          if ($update = l10n_update_source_check($source, $check_local, $check_remote)) {
-            $update->language = $lang;
-            $result[$name][$lang] = $update;
-          }
-        }
       }
     }
   }

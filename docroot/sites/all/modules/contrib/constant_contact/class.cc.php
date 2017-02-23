@@ -236,8 +236,6 @@ class cc {
 		$this->http_user = $this->api_key . "%" . $api_username;
 		$this->http_pass = $api_password;
 		$this->http_set_content_type($this->http_default_content_type);
-
-		$this->list_meta_data = new stdClass();
 	}
 
 
@@ -684,7 +682,7 @@ class cc {
 	 *
 	 * @access 	public
 	 */
-	function  create_contact($email, $lists = array(), $additional_fields = array())
+	function create_contact($email, $lists = array(), $additional_fields = array())
 	{
 		$lists_url = str_replace('https:', 'http:', $this->api_url . "lists");
 

@@ -45,6 +45,10 @@ function tmgmt_i18n_string_get_strings($type, $search_label = NULL, $target_lang
   $languages = drupal_map_assoc(array_keys(language_list()));
   $select = db_select('i18n_string', 'i18n_s');
 
+  $select->addTag('tmgmt_sources_search');
+  $select->addMetaData('plugin', 'i18n_string');
+  $select->addMetaData('type', $type);
+
   $select->condition('i18n_s.textgroup', $info['string translation']['textgroup']);
 
   if (!empty($target_language) && in_array($target_language, $languages)) {
@@ -81,15 +85,10 @@ function tmgmt_i18n_string_get_strings($type, $search_label = NULL, $target_lang
     $select->condition('ls.source', "%$search_label%", 'LIKE');
   }
 
-  // Join locale targets for each language.
-  // We want all joined fields to be named as langcodes, but langcodes could
-  // contain hyphens in their names, which is not allowed by the most database
-  // engines. So we create a langcode-to-filed_alias map, and rename fields
-  // later.
-  $langcode_to_filed_alias_map = array();
   foreach ($languages as $langcode) {
-    $table_alias = $select->leftJoin('locales_target', db_escape_field("lt_$langcode"), "i18n_s.lid = %alias.lid AND %alias.language = '$langcode'");
-    $langcode_to_filed_alias_map[$langcode] = $select->addField($table_alias, 'language');
+    $langcode = str_replace('-', '', $langcode);
+    $select->leftJoin('locales_target', "lt_$langcode", "i18n_s.lid = %alias.lid AND %alias.language = '$langcode'");
+    $select->addField("lt_$langcode", 'language', "lang_$langcode");
   }
   $select->fields("i18n_s", array('lid', 'textgroup', 'context', 'type', 'objectid'));
 
@@ -102,16 +101,7 @@ function tmgmt_i18n_string_get_strings($type, $search_label = NULL, $target_lang
 
   $select = $select->extend('PagerDefault')->limit(variable_get('tmgmt_source_list_limit', 20));
 
-  $rows = $select->execute()->fetchAll();
-  foreach ($rows as &$row) {
-    foreach ($langcode_to_filed_alias_map as $langcode => $field_alias) {
-      $row->{$langcode} = $row->{$field_alias};
-      unset($row->{$field_alias});
-    }
-  }
-  unset($row);
-  
-  return $rows;
+  return $select->execute()->fetchAll();
 }
 
 /**
@@ -245,6 +235,45 @@ function tmgmt_i18n_string_i18n_object_info_alter(&$info) {
  */
 function tmgmt_i18n_string_get_wrapper($type, $i18n_string) {
   $object_key = i18n_object_info($type, 'key');
+
+  // Special handling for i18nviews.
+  if ($type == 'views') {
+    // The construct method needs the full view object.
+    $view = views_get_view($i18n_string->objectid);
+    $wrapper = i18n_get_object($type, $i18n_string->objectid, $view);
+    return $wrapper;
+  }
+
+  // Special handling for i18n_panels.
+  $panels_objects = array(
+    'pane_configuration' => 'panels_pane',
+    'display_configuration' => 'panels_display',
+  );
+  if (in_array($type, array_keys($panels_objects))) {
+    ctools_include('export');
+    $wrapper = FALSE;
+    switch ($type) {
+      case 'display_configuration':
+        $object_array = ctools_export_load_object($panels_objects[$type], 'conditions', array('uuid' => $i18n_string->objectid));
+        $wrapper = i18n_get_object($type, $i18n_string->objectid, $object_array[$i18n_string->objectid]);
+        break;
+
+      case 'pane_configuration':
+        $obj = db_query("SELECT * FROM {panels_pane} WHERE uuid = :uuid", array(':uuid' => $i18n_string->objectid))->fetchObject();
+        if ($obj) {
+          $pane = ctools_export_unpack_object($panels_objects[$type], $obj);
+          $translation = i18n_panels_get_i18n_translation_object($pane);
+          $translation->uuid = $pane->uuid;
+          $wrapper = i18n_get_object($type, $i18n_string->objectid, $translation);
+        }
+        break;
+
+      default:
+        break;
+    }
+    return $wrapper;
+  }
+
   // Special handling if the object has two keys. Assume that they
   // mean type and object id.
    if ($type == 'field') {
@@ -283,3 +312,31 @@ function tmgmt_i18n_string_get_wrapper($type, $i18n_string) {
   }
 }
 
+/**
+ * Implements hook_tmgmt_source_suggestions()
+ */
+function tmgmt_i18n_string_tmgmt_source_suggestions(array $items, TMGMTJob $job) {
+  $suggestions = array();
+
+  foreach ($items as $item) {
+    if (($item instanceof TMGMTJobItem) && ($item->item_type == 'node')) {
+      // Load translatable menu items related to this node.
+      $query = db_select('menu_links', 'ml')
+        ->condition('ml.link_path', 'node/' . $item->item_id)
+        ->fields('ml', array('mlid'));
+      $query->join('menu_custom', 'mc', 'ml.menu_name = mc.menu_name AND mc.i18n_mode = ' . I18N_MODE_MULTIPLE);
+      $results = $query->execute()->fetchAllAssoc('mlid');
+      foreach ($results as $result) {
+        $menu_link = menu_link_load($result->mlid);
+        // Add suggestion.
+        $suggestions[] = array(
+          'job_item' => tmgmt_job_item_create('i18n_string', 'menu_link', "menu:item:{$result->mlid}"),
+          'reason' => t('Menu link @title', array('@title' => $menu_link['link_title'])),
+          'from_item' => $item->tjiid,
+        );
+      }
+    }
+  }
+
+  return $suggestions;
+}
